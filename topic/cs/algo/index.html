@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>algo · 计算机 Computer Science | 问答</title>
+<meta name="description" content="algo（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="algo · 计算机 Computer Science | 问答">
+<meta property="og:description" content="algo（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/algo/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/algo/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>algo</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>algo <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#0a7770a4a284">贪心算法适合什么样的问题？</a></li><li><a href="#0c9127036f88">什么是稳定的排序算法？</a></li><li><a href="#47d85c9144b0">Dijkstra 算法如何求最短路径？</a></li><li><a href="#d502dbfe805c">动态规划的核心思想是什么？</a></li><li><a href="#f8157d95ed6b">快速排序的基本思想是什么？</a></li><li><a href="#2ce429d47869">二分查找是怎么工作的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="0a7770a4a284">
+      <h2 class="qz" lang="zh">贪心算法适合什么样的问题？</h2>
+      <p class="qen" lang="en">What kind of problems suit greedy algorithms?</p>
+      <div class="azh" lang="zh">当问题具备最优子结构和贪心选择性质（即局部最优能推出全局最优）时，贪心算法高效且简单，例如霍夫曼编码、最小生成树的 Kruskal；否则需要动态规划。</div>
+      <div class="aen" lang="en">Greedy works when a problem has optimal substructure and the greedy-choice property (local optima lead to a global optimum), e.g. Huffman coding or Kruskal; otherwise use DP.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#算法</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="0c9127036f88">
+      <h2 class="qz" lang="zh">什么是稳定的排序算法？</h2>
+      <p class="qen" lang="en">What is a stable sorting algorithm?</p>
+      <div class="azh" lang="zh">稳定排序保证相等键的元素在排序后保持原有相对顺序，便于多关键字依次排序（如先按日期再按名称）；归并排序、插入排序稳定，快排、堆排序通常不稳定。</div>
+      <div class="aen" lang="en">A stable sort keeps equal-key elements in their original relative order, enabling multi-key sorting (e.g. date then name); merge and insertion sort are stable, quicksort and heapsort usually are not.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#排序</a> <a class="tag" href="#">#算法</a>
+    </article>
+
+
+    <article class="qitem" id="47d85c9144b0">
+      <h2 class="qz" lang="zh">Dijkstra 算法如何求最短路径？</h2>
+      <p class="qen" lang="en">How does Dijkstra&#x27;s algorithm find shortest paths?</p>
+      <div class="azh" lang="zh">Dijkstra 用优先队列反复取出当前距离最小的未访问节点，松弛其邻居的距离，要求边权非负；时间复杂度依赖堆实现为 O((V+E) log V)。</div>
+      <div class="aen" lang="en">Dijkstra repeatedly extracts the unvisited node with the smallest distance and relaxes its neighbors, requiring non-negative weights; with a heap it runs in O((V+E) log V).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#图</a> <a class="tag" href="#">#最短路径</a>
+    </article>
+
+
+    <article class="qitem" id="d502dbfe805c">
+      <h2 class="qz" lang="zh">动态规划的核心思想是什么？</h2>
+      <p class="qen" lang="en">What is the core idea of dynamic programming?</p>
+      <div class="azh" lang="zh">动态规划通过把问题拆成重叠子问题，用记忆化或填表避免重复计算，并把最优解构建在子问题最优解之上，典型应用有背包、最长公共子序列等。</div>
+      <div class="aen" lang="en">Dynamic programming breaks a problem into overlapping subproblems solved once and reused, building the optimal solution from optimal sub-solutions, as in knapsack or longest common subsequence.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#算法</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="f8157d95ed6b">
+      <h2 class="qz" lang="zh">快速排序的基本思想是什么？</h2>
+      <p class="qen" lang="en">What is the basic idea of quicksort?</p>
+      <div class="azh" lang="zh">快排选一个基准值把数组分区为小于和大于基准的两部分，再对两区递归排序；平均 O(n log n)，最坏退化为 O(n²)，常用随机化基准来避免最坏情况。</div>
+      <div class="aen" lang="en">Quicksort picks a pivot, partitions the array into smaller and larger parts, then recursively sorts them; average O(n log n), worst O(n²), often avoided via randomized pivots.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#排序</a> <a class="tag" href="#">#分治</a>
+    </article>
+
+
+    <article class="qitem" id="2ce429d47869">
+      <h2 class="qz" lang="zh">二分查找是怎么工作的？</h2>
+      <p class="qen" lang="en">How does binary search work?</p>
+      <div class="azh" lang="zh">在已排序数组中，二分查找每次取中点与目标比较，丢弃一半区间，重复直到找到或区间为空，时间复杂度 O(log n)。</div>
+      <div class="aen" lang="en">On a sorted array, binary search compares the midpoint to the target and discards half the range each step, repeating until found or empty, in O(log n) time.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#查找</a> <a class="tag" href="#">#算法</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

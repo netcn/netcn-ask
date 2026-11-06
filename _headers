@@ -1,0 +1,47 @@
+# 问答 ask.netcn.org · Cloudflare Pages 头部规则(2026-08-23)
+# 原则:内容寻址产物(/data/* 除清单外)永久缓存;代码与入口文档必须可及时更新。
+
+# —— 安全头(全局)——
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# —— 入口与文档:绝不长缓存 ——
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/404.html
+  Cache-Control: no-cache
+/cat/*
+  Cache-Control: no-cache
+/sitemap.xml
+  Cache-Control: max-age=3600
+/robots.txt
+  Cache-Control: max-age=3600
+/manifest.webmanifest
+  Cache-Control: no-cache
+
+# —— 代码资产:未做文件名哈希,短缓存强制复验 ——
+/assets/js/*
+  Cache-Control: public, max-age=300, must-revalidate
+/assets/css/*
+  Cache-Control: public, max-age=300, must-revalidate
+/shell/*
+  Cache-Control: public, max-age=300, must-revalidate
+
+# —— 图标:2026-11-06 换成蘑菇，短缓存以便后续调整 ——
+/assets/icons/*
+  Cache-Control: public, max-age=86400, must-revalidate
+/favicon.ico
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# —— 业务数据:哈希命名分片永久缓存;但清单/联想词典是固定名,必须排除 ——
+/data/manifest.json
+  Cache-Control: no-cache
+/data/suggest.json
+  Cache-Control: no-cache
+/data/*
+  Cache-Control: public, max-age=31536000, immutable

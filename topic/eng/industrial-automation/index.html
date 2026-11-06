@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工业自动化 industrial-automation · 工程技术 Engineering | 问答</title>
+<meta name="description" content="工业自动化（工程技术）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="工业自动化 industrial-automation · 工程技术 Engineering | 问答">
+<meta property="og:description" content="工业自动化（工程技术）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/industrial-automation/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/industrial-automation/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>工业自动化</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>工业自动化 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#253c62d7d534">现场总线和工业以太网相比传统模拟信号好在哪里？</a></li><li><a href="#2b29a36d30bb">工业控制系统为什么特别强调实时性而不只是快？</a></li><li><a href="#312e57d15328">气动调节阀为什么要区分气开和气关？</a></li><li><a href="#4a9e2b5bc0d2">SCADA和DCS在工厂里分工有什么不同？</a></li><li><a href="#a9263d1f7aea">什么是安全仪表系统和SIL等级？</a></li><li><a href="#34e4c1673c11">PLC的梯形图为什么长得像继电器电路？</a></li><li><a href="#ca60d209ee0a">急停按钮为什么通常要用硬线回路而不是走程序？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="253c62d7d534">
+      <h2 class="qz" lang="zh">现场总线和工业以太网相比传统模拟信号好在哪里？</h2>
+      <p class="qen" lang="en">What advantages do fieldbus and industrial Ethernet have over traditional analogue signalling?</p>
+      <div class="azh" lang="zh">传统四到二十毫安模拟信号一根线只能传一个变量，而且无法回传设备状态。现场总线用一对线挂接多台设备，除测量值还能传诊断信息、量程和标定参数，接线量和端子数大幅减少。工业以太网进一步提高带宽，支持时间敏感调度实现确定性通信，便于与上层信息系统直接互通。代价是需要网络规划、诊断工具和网络安全防护。</div>
+      <div class="aen" lang="en">A traditional four-to-twenty milliamp loop carries only one variable per pair of wires and cannot report device status. A fieldbus hangs many devices on one pair and carries diagnostics, range and calibration data as well as the measurement, cutting wiring and terminal counts dramatically. Industrial Ethernet raises bandwidth further and supports time-sensitive scheduling for deterministic communication, integrating directly with higher-level information systems. The trade-offs are the need for network design, diagnostic tools and cybersecurity protection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEC 61131-3（PLC）；ISO 3691-4（AGV 安全）；Groover《自动化生产系统》</p>
+        <p lang="en">IEC 61131-3 (PLC); ISO 3691-4 (AGV safety); Groover, Automation, Production Systems, and Computer-Integrated Manufacturing</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3752129W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3752129W：Automation, Production </a></p>
+        
+      </details>
+      <a class="tag" href="#">#现场总线</a> <a class="tag" href="#">#工业以太网</a> <a class="tag" href="#">#确定性通信</a>
+    </article>
+
+
+    <article class="qitem" id="2b29a36d30bb">
+      <h2 class="qz" lang="zh">工业控制系统为什么特别强调实时性而不只是快？</h2>
+      <p class="qen" lang="en">Why do industrial control systems stress real-time behaviour rather than just speed?</p>
+      <div class="azh" lang="zh">控制回路要求每个采样周期都在确定时间内完成采集、运算和输出，偶尔的延迟会直接破坏控制品质甚至引发事故。实时性关注的是最坏情况下的响应时间上界和抖动，而不是平均速度快。因此工业控制器使用实时操作系统、固定周期任务调度和确定性网络，宁可牺牲平均吞吐量来换取时间可预测性。</div>
+      <div class="aen" lang="en">A control loop must complete acquisition, computation and output within a bounded time every sampling period, since an occasional delay directly degrades control quality or even causes an incident. Real-time behaviour is about the worst-case bound on response time and its jitter, not about high average speed. Industrial controllers therefore use real-time operating systems, fixed-cycle task scheduling and deterministic networks, sacrificing average throughput for predictability in time.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#实时性</a> <a class="tag" href="#">#确定性</a> <a class="tag" href="#">#控制周期</a>
+    </article>
+
+
+    <article class="qitem" id="312e57d15328">
+      <h2 class="qz" lang="zh">气动调节阀为什么要区分气开和气关？</h2>
+      <p class="qen" lang="en">Why are pneumatic control valves classified as air-to-open or air-to-close?</p>
+      <div class="azh" lang="zh">气开阀在失去气源时靠弹簧回到全关，气关阀失气时回到全开。选择依据是失气或停电这一故障状态下，哪种阀位对工艺更安全：燃料进气阀通常选气开，失气即切断燃料；换热器冷却水阀常选气关，失气时全开保证冷却。这体现了故障安全位的设计思想，属于工艺安全分析的一部分。</div>
+      <div class="aen" lang="en">An air-to-open valve springs fully closed when air supply is lost, while an air-to-close valve springs fully open. The choice depends on which position is safer for the process in the failure state of lost air or power: a fuel gas valve is usually air-to-open so fuel is cut off on failure, whereas a cooling water valve on a heat exchanger is often air-to-close so it opens fully and keeps cooling. This reflects the fail-safe position principle and forms part of process safety analysis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#调节阀</a> <a class="tag" href="#">#故障安全位</a> <a class="tag" href="#">#工艺安全</a>
+    </article>
+
+
+    <article class="qitem" id="4a9e2b5bc0d2">
+      <h2 class="qz" lang="zh">SCADA和DCS在工厂里分工有什么不同？</h2>
+      <p class="qen" lang="en">How do SCADA and DCS differ in a plant?</p>
+      <div class="azh" lang="zh">SCADA偏向对地理上分散的站点做数据采集与监控，例如输油管线、电网变电站和水厂，通信距离长、以采集和远程操作为主，控制逻辑多下放到现场设备。DCS则面向单一大型连续过程，例如化工装置和电厂，强调众多回路的紧耦合闭环调节和统一组态，控制器与操作站在同一厂区高速网络内。近年二者功能不断融合，界限已经模糊。</div>
+      <div class="aen" lang="en">SCADA is oriented to acquiring data from and supervising geographically dispersed sites such as pipelines, grid substations and waterworks, with long communication links, emphasis on monitoring and remote operation, and control logic largely delegated to field devices. A DCS targets one large continuous process such as a chemical plant or power station, stressing tightly coupled closed-loop regulation of many loops with unified configuration, its controllers and operator stations on one high-speed plant network. In recent years the two have converged and the boundary has blurred.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Industry 4.0（Kagermann 等）；ISO 23247（智能制造）；MES/SCADA 工业标准</p>
+        <p lang="en">Industry 4.0 (Kagermann et al.); ISO 23247 (smart manufacturing); MES/SCADA industrial standards</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#SCADA</a> <a class="tag" href="#">#DCS</a> <a class="tag" href="#">#监控系统</a>
+    </article>
+
+
+    <article class="qitem" id="a9263d1f7aea">
+      <h2 class="qz" lang="zh">什么是安全仪表系统和SIL等级？</h2>
+      <p class="qen" lang="en">What are safety instrumented systems and SIL levels?</p>
+      <div class="azh" lang="zh">安全仪表系统独立于常规控制系统，专门在工艺参数越限时执行联锁停车，把风险降到可接受水平。SIL即安全完整性等级，用要求时失效概率的量级来分级，等级越高要求的可靠性越高，通常需要冗余传感器、表决逻辑和定期功能测试。设计要点是安全功能必须与基本控制功能分离，避免同一个故障同时让控制和保护失效。</div>
+      <div class="aen" lang="en">A safety instrumented system is independent of the normal control system and exists to execute interlock shutdowns when process variables exceed limits, reducing risk to a tolerable level. SIL, the safety integrity level, grades these functions by the probability of failure on demand, with higher levels demanding greater reliability, typically through redundant sensors, voting logic and periodic proof testing. A key design principle is separating the safety function from basic control so one fault cannot disable both control and protection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rausand, M.与Høyland, A.《系统可靠性理论：模型、统计方法与应用》第2版，Wiley，2004年</p>
+        <p lang="en">Rausand, M. &amp; Hoyland, A., System Reliability Theory: Models, Statistical Methods, and Applications, 2nd ed., Wiley, 2004</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/systemreliabilit0000raus" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 systemreliabilit0000raus：System reliability t</a></p>
+        
+      </details>
+      <a class="tag" href="#">#安全仪表</a> <a class="tag" href="#">#SIL</a> <a class="tag" href="#">#功能安全</a>
+    </article>
+
+
+    <article class="qitem" id="34e4c1673c11">
+      <h2 class="qz" lang="zh">PLC的梯形图为什么长得像继电器电路？</h2>
+      <p class="qen" lang="en">Why does a PLC ladder diagram look like a relay circuit?</p>
+      <div class="azh" lang="zh">早期工厂控制全靠继电器接线实现逻辑，电气工程师熟悉的是触点串并联的电路图。PLC取代继电器柜时，为了让这些工程师无需重新学习，就把程序画成两条电源轨之间的横向梯级，用常开常闭触点和线圈符号表示逻辑。这种表示直观、易于现场排查，因此至今仍是工业界主流编程语言之一。</div>
+      <div class="aen" lang="en">Early factory control implemented logic entirely with wired relays, and electrical engineers were fluent in diagrams of series and parallel contacts. When PLCs replaced relay cabinets, programs were drawn as horizontal rungs between two power rails using normally-open and normally-closed contact and coil symbols so those engineers needed no retraining. The notation is intuitive and easy to troubleshoot on the floor, which is why it remains one of the mainstream industrial programming languages.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEC 61131-3（PLC）；ISO 3691-4（AGV 安全）；Groover《自动化生产系统》</p>
+        <p lang="en">IEC 61131-3 (PLC); ISO 3691-4 (AGV safety); Groover, Automation, Production Systems, and Computer-Integrated Manufacturing</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3752129W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3752129W：Automation, Production </a></p>
+        
+      </details>
+      <a class="tag" href="#">#PLC</a> <a class="tag" href="#">#梯形图</a> <a class="tag" href="#">#工业编程</a>
+    </article>
+
+
+    <article class="qitem" id="ca60d209ee0a">
+      <h2 class="qz" lang="zh">急停按钮为什么通常要用硬线回路而不是走程序？</h2>
+      <p class="qen" lang="en">Why is an emergency stop usually hard-wired rather than handled in software?</p>
+      <div class="azh" lang="zh">急停必须在控制器死机、程序跑飞或通信中断时依然有效，所以不能依赖软件执行。工程上把急停按钮串入安全继电器或安全控制器的硬线回路，直接切断驱动器使能和动力，路径尽可能短。按钮采用常闭触点，断线或接触不良同样会触发停机，这种失效导向安全的设计是安全回路的基本原则。</div>
+      <div class="aen" lang="en">An emergency stop must still work when the controller crashes, the program misbehaves or communication drops, so it cannot depend on software. In practice the button is wired into the hard-wired circuit of a safety relay or safety controller that directly removes drive enable and power, keeping the path as short as possible. The contacts are normally closed so a broken wire or bad contact also triggers a stop, and this fail-safe orientation is a basic principle of safety circuits.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#急停</a> <a class="tag" href="#">#安全回路</a> <a class="tag" href="#">#失效导向安全</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

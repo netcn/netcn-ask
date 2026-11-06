@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>databases · 计算机 Computer Science | 问答</title>
+<meta name="description" content="databases（计算机）分类下的 51 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 51 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="databases · 计算机 Computer Science | 问答">
+<meta property="og:description" content="databases（计算机）分类下的 51 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 51 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/databases/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/databases/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>databases</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>databases <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>51</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#02e7913d15ea">什么是数据库范式（规范化）？</a></li><li><a href="#11573c7a782f">OLTP 和 OLAP 有什么区别？</a></li><li><a href="#48912df03ef9">SQL 注入攻击是怎么发生的？怎么防御？</a></li><li><a href="#4bfe9815d2e2">什么是触发器和存储过程？</a></li><li><a href="#4f2457ace41d">什么是分布式数据库？</a></li><li><a href="#7a2b2f60f1c2">数据库事务的 ACID 分别指什么？</a></li><li><a href="#922daeb46976">关系模型把数据组织成『表』这一思想是谁提出的，有什么好处？</a></li><li><a href="#a7b07f4f6bd0">数据库范式是什么意思？</a></li><li><a href="#a8b78261b41a">MVCC 是怎么做到读不阻塞写、写不阻塞读的？</a></li><li><a href="#b4b938e31df0">什么是 CAP 定理？</a></li><li><a href="#c6ef8b37a4c8">什么是数据库分片（Sharding）？</a></li><li><a href="#db08dc9f0884">什么是最终一致性？</a></li><li><a href="#e5069160683c">流处理中的&quot;精确一次&quot;（exactly-once）语义是怎么实现的？为什么难？</a></li><li><a href="#ee67ceeed678">数据库查询优化一般做什么？</a></li><li><a href="#fc5d7ba04f4d">数据库事务的 ACID 属性分别指什么？</a></li><li><a href="#05b95506bc57">关系型数据库为什么叫“关系”？</a></li><li><a href="#0607bc8ec145">ORM 里的 N+1 查询问题是怎么产生的，怎么消除？</a></li><li><a href="#12e67c62ed0f">什么是 LSM 树，为什么适合写密集场景？</a></li><li><a href="#134b22298143">数据库索引是什么？</a></li><li><a href="#23ccbe0de773">NoSQL 数据库是什么？它通常在什么场景下优于关系数据库？</a></li><li><a href="#384bf4a6d714">什么是数据备份，为什么重要？</a></li><li><a href="#3ad8e343b77b">删掉大量数据之后，为什么数据库文件的体积并没有变小？</a></li><li><a href="#3c2e2d1ec959">数据仓库和数据湖有什么不同？它们各自适合什么场景？</a></li><li><a href="#459dde379722">什么是数据仓库？</a></li><li><a href="#46e82a04fa59">数据库中的主键（primary key）和外键（foreign key）分别是什</a></li><li><a href="#4c54d63e04ac">什么是数据库索引？</a></li><li><a href="#53429996bc0a">数据库为什么要先写日志再改数据页（预写日志）？</a></li><li><a href="#5de1155deba7">什么是键值存储？</a></li><li><a href="#7afd76ef4550">什么是数据库规范化？</a></li><li><a href="#7e131cc5702f">SQL 中的 JOIN 是做什么的？内连接和左外连接有何不同？</a></li><li><a href="#80c5fd11a4aa">什么是 NoSQL 数据库？</a></li><li><a href="#8958393c896d">什么是数据库视图？</a></li><li><a href="#982b9c8de022">什么是主键？</a></li><li><a href="#9fe72a8a17b4">什么是数据冗余，为什么不好？</a></li><li><a href="#bfccae170297">什么是 SQL？</a></li><li><a href="#c073d70840f3">流处理（stream processing）与批处理有什么本质区别？</a></li><li><a href="#ca840c831101">NoSQL 数据库和关系型数据库有什么不同？</a></li><li><a href="#cf5a80c229ce">SQL 和 NoSQL 数据库有什么区别？</a></li><li><a href="#cs_19_001">写前日志(WAL)协议为什么要求日志记录先于其描述的数据页写入稳定存储?违反这一</a></li><li><a href="#cs_19_017">两个事务在快照隔离下各自顺利提交,组合效果却违反了数据库不变式——写偏斜是如何发</a></li><li><a href="#cs_24_015">银行转账扣了钱却没到账怎么办?事务的 ACID 是怎么兜底的?</a></li><li><a href="#d60d36c76c95">什么是 SQL 中的 JOIN（连接）？</a></li><li><a href="#ddd6273a7c27">SQL 是做什么的？为什么它统治数据库几十年？</a></li><li><a href="#1e5892cdbe88">什么是数据库？</a></li><li><a href="#3198919ba3c4">什么是数据冗余，它有什么问题？</a></li><li><a href="#480d0d09b895">数据库和普通文件有什么区别？</a></li><li><a href="#5d445a91d1b8">数据库里的「表」是什么？</a></li><li><a href="#8fa061936107">什么是「读已提交」和「可重复读」隔离级别？</a></li><li><a href="#a55b973c8792">主键和外键分别是什么？</a></li><li><a href="#e3d180209905">数据库的备份与恢复为什么重要？</a></li><li><a href="#fcc8a4757555">什么是关系型数据库？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="02e7913d15ea">
+      <h2 class="qz" lang="zh">什么是数据库范式（规范化）？</h2>
+      <p class="qen" lang="en">What is database normalization?</p>
+      <div class="azh" lang="zh">规范化通过把一张大表拆成多张结构合理的表并定义关联，来减少数据冗余和更新异常。常见范式从第一范式到第三范式逐级加强约束，BCNF 进一步消除函数依赖带来的异常。</div>
+      <div class="aen" lang="en">Normalization splits one large table into well-structured ones with defined relationships to reduce redundancy and update anomalies. Common normal forms tighten constraints from 1NF through 3NF, and BCNF further removes anomalies from certain functional dependencies.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据库系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Database System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#规范化</a> <a class="tag" href="#">#范式</a> <a class="tag" href="#">#数据冗余</a>
+    </article>
+
+
+    <article class="qitem" id="11573c7a782f">
+      <h2 class="qz" lang="zh">OLTP 和 OLAP 有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between OLTP and OLAP?</p>
+      <div class="azh" lang="zh">OLTP 面向日常交易，强调大量短小、实时的增删改查，如下单和扣款。OLAP 面向分析，处理大规模历史数据做聚合和报表，如销售趋势。两者在设计、索引和存储上差异很大。</div>
+      <div class="aen" lang="en">OLTP serves daily transactions, emphasizing many short real-time inserts, updates, and queries like orders and payments. OLAP serves analysis, crunching large historical data for aggregation and reports like sales trends. Their design, indexing, and storage differ greatly.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#OLTP</a> <a class="tag" href="#">#OLAP</a> <a class="tag" href="#">#数据分析</a>
+    </article>
+
+
+    <article class="qitem" id="48912df03ef9">
+      <h2 class="qz" lang="zh">SQL 注入攻击是怎么发生的？怎么防御？</h2>
+      <p class="qen" lang="en">How do SQL injection attacks work, and how are they prevented?</p>
+      <div class="azh" lang="zh">如果程序把用户输入直接拼进 SQL 语句，攻击者输入的引号和关键字就会改变语句语义，例如让“密码校验”恒为真或删除整张表。防御的核心是参数化查询：把输入当作数据而非可执行代码传给数据库。此外还要做输入校验、最小权限和错误信息脱敏。</div>
+      <div class="aen" lang="en">When a program concatenates user input directly into SQL, an attacker&#x27;s quotes and keywords change the statement&#x27;s meaning—turning a password check always true or dropping whole tables. The core defense is parameterized queries, which pass input as data, not executable code. Input validation, least privilege, and sanitized error messages add further protection.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SQL注入</a> <a class="tag" href="#">#参数化查询</a> <a class="tag" href="#">#输入校验</a>
+    </article>
+
+
+    <article class="qitem" id="4bfe9815d2e2">
+      <h2 class="qz" lang="zh">什么是触发器和存储过程？</h2>
+      <p class="qen" lang="en">What are triggers and stored procedures?</p>
+      <div class="azh" lang="zh">触发器是在表发生插入、更新或删除时自动执行的规则，常用于审计和约束。存储过程是预先编译好、可重复调用的数据库程序，能封装复杂逻辑。二者都放在数据库端运行，减少网络往返。</div>
+      <div class="aen" lang="en">A trigger is a rule that runs automatically on insert, update, or delete, often for auditing and constraints. A stored procedure is a precompiled, reusable database program that encapsulates logic. Both run inside the database, cutting network round-trips.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#触发器</a> <a class="tag" href="#">#存储过程</a> <a class="tag" href="#">#数据库逻辑</a>
+    </article>
+
+
+    <article class="qitem" id="4f2457ace41d">
+      <h2 class="qz" lang="zh">什么是分布式数据库？</h2>
+      <p class="qen" lang="en">What is a distributed database?</p>
+      <div class="azh" lang="zh">分布式数据库把数据分散存储在多台机器上，通过网络协同提供统一访问。它能水平扩展、提升容错，但带来一致性和分区容错等难题。Spanner、Cassandra 是代表。</div>
+      <div class="aen" lang="en">A distributed database spreads data across many machines that cooperate to present unified access. It scales horizontally and improves fault tolerance but introduces consistency and partition-tolerance challenges. Spanner and Cassandra are examples.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#扩展</a> <a class="tag" href="#">#容错</a>
+    </article>
+
+
+    <article class="qitem" id="7a2b2f60f1c2">
+      <h2 class="qz" lang="zh">数据库事务的 ACID 分别指什么？</h2>
+      <p class="qen" lang="en">What do the ACID properties of a database transaction mean?</p>
+      <div class="azh" lang="zh">原子性要求事务要么全部执行要么全部回滚，失败即撤销；一致性保证事务前后数据始终满足约束；隔离性让并发事务互相看不到对方的中间状态；持久性确保提交后的修改在断电后依然保留。实现依靠预写日志（崩溃后重放恢复）、锁机制和可配置的隔离级别。这些保证是银行转账这类操作不出错的基础。</div>
+      <div class="aen" lang="en">Atomicity requires a transaction to fully complete or fully roll back on failure; Consistency guarantees data obeys constraints before and after; Isolation keeps concurrent transactions from seeing each other&#x27;s intermediate states; Durability preserves committed changes even across power loss. These rest on write-ahead logging (replay to recover after crashes), locking, and configurable isolation levels. Together they keep operations like bank transfers error-free.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ACID</a> <a class="tag" href="#">#事务</a> <a class="tag" href="#">#回滚</a>
+    </article>
+
+
+    <article class="qitem" id="922daeb46976">
+      <h2 class="qz" lang="zh">关系模型把数据组织成『表』这一思想是谁提出的，有什么好处？</h2>
+      <p class="qen" lang="en">Who proposed organizing data into &#x27;tables&#x27; as the relational model, and why is it powerful?</p>
+      <div class="azh" lang="zh">Codd 在 1970 年提出关系模型，用二维表、行、列和主键/外键表达数据及其关联，并用关系代数做查询，使数据独立于存储细节。它催生了 SQL 和现代数据库管理系统。</div>
+      <div class="aen" lang="en">Codd proposed the relational model in 1970, representing data and relationships with two-dimensional tables, rows, columns, and primary/foreign keys, queried via relational algebra, decoupling data from storage. It gave rise to SQL and modern DBMSs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Codd《大型共享数据库的数据关系模型》(CACM, 1970)；Date《数据库系统导论》</p>
+        <p lang="en">Codd, &#x27;A Relational Model of Data&#x27; (CACM, 1970); Date, &#x27;An Introduction to Database Systems&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1723385/" target="_blank" rel="noopener">核验依据 1 ISBN 9787508338774（豆瓣书目条目: 数据库系统导论）；本条出处含多部著作，此标识只担保上面点名</a> · <a class="evlink" href="https://openlibrary.org/works/OL1840931W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1840931W：An introduction to data</a></p>
+        
+      </details>
+      <a class="tag" href="#">#关系模型</a> <a class="tag" href="#">#Codd</a> <a class="tag" href="#">#关系代数</a> <a class="tag" href="#">#SQL</a>
+    </article>
+
+
+    <article class="qitem" id="a7b07f4f6bd0">
+      <h2 class="qz" lang="zh">数据库范式是什么意思？</h2>
+      <p class="qen" lang="en">What do database normal forms mean?</p>
+      <div class="azh" lang="zh">范式是设计关系表时减少数据冗余、避免更新异常的一组规则，从第一范式到第五范式逐级严格。例如第三范式要求非主键字段不依赖其他非主键字段。适度范式化可防止数据不一致，但过度范式化会降低查询性能。</div>
+      <div class="aen" lang="en">Normal forms are rules for designing relational tables that reduce redundancy and avoid update anomalies, from first to fifth normal form, each stricter. For example, third normal form requires non-key attributes not to depend on other non-key attributes. Reasonable normalization prevents inconsistency but excessive normalization hurts query performance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">数据库设计理论（Codd）</p>
+        <p lang="en">Database design theory (Codd)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#范式</a> <a class="tag" href="#">#规范化</a> <a class="tag" href="#">#冗余</a>
+    </article>
+
+
+    <article class="qitem" id="a8b78261b41a">
+      <h2 class="qz" lang="zh">MVCC 是怎么做到读不阻塞写、写不阻塞读的？</h2>
+      <p class="qen" lang="en">How does MVCC let readers avoid blocking writers and writers avoid blocking readers?</p>
+      <div class="azh" lang="zh">多版本并发控制在更新时不覆盖原行，而是写入一个新版本并标记创建它和删除它的事务号，旧版本仍留在数据文件或回滚段中。每个事务启动时取一个快照（记录哪些事务号对它可见），读取时沿版本链挑出对该快照有效的那一版，于是读操作无需共享锁，也不会被并发写挡住。代价是死版本会堆积，需要 PostgreSQL 的 VACUUM 或 InnoDB 的 purge 线程清理，长事务会阻碍回收并放大表膨胀。</div>
+      <div class="aen" lang="en">Under multi-version concurrency control an update never overwrites the row; it appends a new version tagged with the transaction ids that created and deleted it, while older versions remain in the heap or an undo area. Each transaction takes a snapshot of which transaction ids are visible to it and walks the version chain for the version valid under that snapshot, so reads need no shared locks and are never blocked by concurrent writes. The cost is accumulating dead versions, reclaimed by VACUUM in PostgreSQL and purge threads in InnoDB, and long-running transactions hold reclamation back and cause bloat.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">PostgreSQL 17 官方文档第 13 章 Concurrency Control；Bernstein 与 Goodman《Concurrency Control in Distributed Database Systems》(ACM Computing Surveys, 1981)</p>
+        <p lang="en">PostgreSQL 17 documentation, ch. 13 &quot;Concurrency Control&quot;; Bernstein &amp; Goodman, &quot;Concurrency Control in Distributed Database Systems,&quot; ACM Computing Surveys (1981)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/356842.356846" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/356842.356846（复合著录按段核验：本标识只担保第二段 Be</a></p>
+        
+      </details>
+      <a class="tag" href="#">#MVCC</a> <a class="tag" href="#">#快照隔离</a> <a class="tag" href="#">#事务</a> <a class="tag" href="#">#版本链</a>
+    </article>
+
+
+    <article class="qitem" id="b4b938e31df0">
+      <h2 class="qz" lang="zh">什么是 CAP 定理？</h2>
+      <p class="qen" lang="en">What is the CAP theorem?</p>
+      <div class="azh" lang="zh">CAP 定理指出分布式系统在网络分区发生时，只能在一致性（C）和可用性（A）之间取舍，无法三者兼得。</div>
+      <div class="aen" lang="en">The CAP theorem says a distributed system facing a network partition must trade off between consistency (C) and availability (A); it cannot have all three.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CAP</a> <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#定理</a>
+    </article>
+
+
+    <article class="qitem" id="c6ef8b37a4c8">
+      <h2 class="qz" lang="zh">什么是数据库分片（Sharding）？</h2>
+      <p class="qen" lang="en">What is database sharding?</p>
+      <div class="azh" lang="zh">分片是把一个大型数据库按某种规则（如用户 ID 取模）水平拆分成多个更小、独立的数据库实例，分布到不同服务器上。它能突破单机容量和性能上限，实现水平扩展。代价是跨分片查询和事务变得更复杂。</div>
+      <div class="aen" lang="en">Sharding splits a large database horizontally by some rule, such as hashing the user ID, into smaller independent instances on different servers. It breaks through single-machine capacity and performance limits, enabling horizontal scaling. The cost is more complex cross-shard queries and transactions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分片</a> <a class="tag" href="#">#水平扩展</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="db08dc9f0884">
+      <h2 class="qz" lang="zh">什么是最终一致性？</h2>
+      <p class="qen" lang="en">What is eventual consistency?</p>
+      <div class="azh" lang="zh">在分布式数据库中，更新后不同节点可能暂时不一致，但经过一段时间会收敛到相同状态，换取更高的可用性和性能。</div>
+      <div class="aen" lang="en">In distributed databases, replicas may temporarily disagree after an update but converge to the same state, trading strict consistency for higher availability and performance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性</a> <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#可用性</a>
+    </article>
+
+
+    <article class="qitem" id="e5069160683c">
+      <h2 class="qz" lang="zh">流处理中的&quot;精确一次&quot;（exactly-once）语义是怎么实现的？为什么难？</h2>
+      <p class="qen" lang="en">How is exactly-once semantics achieved in stream processing, and why is it hard?</p>
+      <div class="azh" lang="zh">精确一次要求每条事件对结果的影响恰好一次，即使节点崩溃重试也不重不漏。实现需要组合多种机制：屏障对齐的检查点（把算子状态与输入偏移一起快照）、故障后从最近的检查点重放、以及把输出以幂等或两阶段提交的方式写入外部系统。难点在端到端协调：重放时既要重新处理未提交的事件，又不能重复提交已经生效的结果。</div>
+      <div class="aen" lang="en">Exactly-once requires each event to affect the result exactly once, with no duplicates or losses even when nodes crash and retry. Implementation combines several mechanisms: checkpointing with barrier alignment (snapshotting operator state together with input offsets), replaying from the latest checkpoint after a failure, and writing outputs idempotently or via two-phase commit to external sinks. The hard part is end-to-end coordination: replay must reprocess uncommitted events without double-committing results that already took effect.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#精确一次</a> <a class="tag" href="#">#流处理</a> <a class="tag" href="#">#检查点</a>
+    </article>
+
+
+    <article class="qitem" id="ee67ceeed678">
+      <h2 class="qz" lang="zh">数据库查询优化一般做什么？</h2>
+      <p class="qen" lang="en">What does database query optimization generally do?</p>
+      <div class="azh" lang="zh">查询优化器会评估多种执行计划，选择估计代价最低的一种，例如决定用哪个索引、以什么顺序连接表。它依赖统计信息判断数据分布。写好查询和及时更新统计都能显著提升性能。</div>
+      <div class="aen" lang="en">The query optimizer evaluates several execution plans and picks the one with lowest estimated cost, such as which index to use and join order. It relies on statistics about data distribution. Good queries and fresh statistics both boost performance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#查询优化</a> <a class="tag" href="#">#执行计划</a> <a class="tag" href="#">#索引</a>
+    </article>
+
+
+    <article class="qitem" id="fc5d7ba04f4d">
+      <h2 class="qz" lang="zh">数据库事务的 ACID 属性分别指什么？</h2>
+      <p class="qen" lang="en">What do the ACID properties of a database transaction mean?</p>
+      <div class="azh" lang="zh">ACID 指原子性（Atomicity，事务要么全做要么全不做）、一致性（Consistency，事务使数据库从一个合法状态变到另一个）、隔离性（Isolation，并发事务彼此不干扰）、持久性（Durability，一旦提交结果永久保存）。该术语由黑德与罗伊特在 1983 年系统总结，是可靠数据库系统的设计目标。实现上通常依赖日志、锁和崩溃恢复机制。</div>
+      <div class="aen" lang="en">ACID stands for Atomicity (all-or-nothing execution), Consistency (a transaction moves the database from one valid state to another), Isolation (concurrent transactions do not interfere), and Durability (once committed, changes persist). The term was systematized by Haerder and Reuter in 1983 and is the design goal of reliable database systems. Implementation relies on logging, locking, and crash-recovery mechanisms.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Haerder &amp; Reuter 1983；Silberschatz 等《数据库系统概念》</p>
+        <p lang="en">Haerder &amp; Reuter (1983); Silberschatz et al., Database System Concepts</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1854539W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL1854539W：Database system concept</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ACID</a> <a class="tag" href="#">#事务</a> <a class="tag" href="#">#原子性</a> <a class="tag" href="#">#持久性</a>
+    </article>
+
+
+    <article class="qitem" id="05b95506bc57">
+      <h2 class="qz" lang="zh">关系型数据库为什么叫“关系”？</h2>
+      <p class="qen" lang="en">Why is a relational database called &quot;relational&quot;?</p>
+      <div class="azh" lang="zh">因为它的数据组织成“关系”——也就是二维表，行是记录、列是字段，表之间通过主键和外键建立联系。关系模型是 Codd 在1970年提出的数学化模型，以集合论为基础，让查询基于逻辑条件而非手写的遍历方式。</div>
+      <div class="aen" lang="en">Because data is organized as relations—two-dimensional tables where rows are records and columns are fields, linked by primary and foreign keys. The relational model is a mathematical framework introduced by Codd in 1970, built on set theory, so queries express logical conditions rather than manual traversal steps.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#关系模型</a> <a class="tag" href="#">#主键</a> <a class="tag" href="#">#外键</a>
+    </article>
+
+
+    <article class="qitem" id="0607bc8ec145">
+      <h2 class="qz" lang="zh">ORM 里的 N+1 查询问题是怎么产生的，怎么消除？</h2>
+      <p class="qen" lang="en">What causes the N+1 query problem in ORMs, and how is it eliminated?</p>
+      <div class="azh" lang="zh">程序先用一条 SQL 查出 N 个主对象，随后在循环里为每个对象各发一条 SQL 去取关联数据，总共 1+N 次往返；单条查询都很快，但每条语句的网络与解析开销随 N 线性叠加，列表页因此明显变慢。解决办法是一次性批量取回关联数据，用 JOIN 或 IN (...) 做预加载，例如 Hibernate 的 join fetch、Django 的 select_related/prefetch_related、Rails 的 includes。诊断时打开 SQL 日志或看 APM 调用链，若单次请求的查询条数随列表条目数增长就该怀疑。</div>
+      <div class="aen" lang="en">The code issues one query for N parent rows and then, inside a loop, one more query per row to load its association, giving 1+N round trips; each query is fast, but per-statement network and parsing cost grows linearly with N and list pages crawl. The fix is eager loading — fetch the children in a single JOIN or IN (...) batch, as with Hibernate join fetch, Django select_related/prefetch_related or Rails includes. To detect it, log SQL or inspect an APM trace and look for a request whose query count scales with the number of items displayed.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Martin Fowler《Patterns of Enterprise Application Architecture》(2002) 中 Lazy Load 模式一节</p>
+        <p lang="en">Martin Fowler, &quot;Patterns of Enterprise Application Architecture&quot; (2002), the Lazy Load pattern</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Patterns+of+Enterprise+Application+Architecture" target="_blank" rel="noopener">核验依据 1 ISBN 9780321127426 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#N+1查询</a> <a class="tag" href="#">#ORM</a> <a class="tag" href="#">#预加载</a> <a class="tag" href="#">#查询性能</a>
+    </article>
+
+
+    <article class="qitem" id="12e67c62ed0f">
+      <h2 class="qz" lang="zh">什么是 LSM 树，为什么适合写密集场景？</h2>
+      <p class="qen" lang="en">What is an LSM tree and why suits write-heavy workloads?</p>
+      <div class="azh" lang="zh">LSM 树把随机写先落入内存再批量顺序刷到磁盘的有序文件，把大量随机写转化为顺序写，写入极快，读则需合并多层；被 LevelDB、RocksDB、Cassandra 等采用。</div>
+      <div class="aen" lang="en">An LSM tree buffers random writes in memory then flushes them as sorted files sequentially, turning random writes into fast sequential ones; reads merge levels. Used by LevelDB, RocksDB, Cassandra.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">O&#x27;Neil 等 1996</p>
+        <p lang="en">O&#x27;Neil et al. 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="134b22298143">
+      <h2 class="qz" lang="zh">数据库索引是什么？</h2>
+      <p class="qen" lang="en">What is a database index?</p>
+      <div class="azh" lang="zh">索引是数据库为了加速查询而在表上建立的额外数据结构（如 B+ 树），类似书的目录。它让按某列查找不必全表扫描，但会占用空间并在写入时增加维护开销。</div>
+      <div class="aen" lang="en">An index is an extra data structure (such as a B+ tree) built on a table to speed up queries, much like a book&#x27;s table of contents. It lets lookups by a column skip a full scan, but consumes space and adds overhead on writes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据库系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Database System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#索引</a> <a class="tag" href="#">#B+树</a> <a class="tag" href="#">#查询加速</a>
+    </article>
+
+
+    <article class="qitem" id="23ccbe0de773">
+      <h2 class="qz" lang="zh">NoSQL 数据库是什么？它通常在什么场景下优于关系数据库？</h2>
+      <p class="qen" lang="en">What is a NoSQL database, and when does it typically outperform a relational one?</p>
+      <div class="azh" lang="zh">NoSQL 是一类非关系型、常放宽 ACID 以换取水平扩展与灵活模式的数据库，主要分为文档、键值、列族和图四种模型。它在海量数据、模式易变或需要跨多台机器横向扩展（如社交网络、物联网时序）时优于传统关系库。代价通常是较弱的一致性保证，需要应用层处理。该术语在 2009 年前后随大数据浪潮被广为使用。</div>
+      <div class="aen" lang="en">NoSQL refers to non-relational databases that often relax ACID in exchange for horizontal scalability and flexible schemas, mainly in four models: document, key-value, column-family, and graph. It outperforms relational databases for massive volumes, evolving schemas, or scale-out across many machines (e.g., social networks, IoT time series). The trade-off is typically weaker consistency handled at the application level. The term gained wide use around 2009 amid the big-data wave.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cattell 2010《Scalable SQL and NoSQL Data Stores》（ACM SIGMOD Record 39(4)）；DeCandia 等 2007（Amazon Dynamo，SOSP）；Silberschatz 等《数据库系统概念》NoSQL 章节</p>
+        <p lang="en">Cattell (2010), &#x27;Scalable SQL and NoSQL Data Stores&#x27;, ACM SIGMOD Record 39(4); DeCandia et al. (2007), Dynamo, SOSP; Silberschatz et al., Database System Concepts (NoSQL chapter)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）；本条出处含多部著作，此标识只担保上面点名</a></p>
+        
+      </details>
+      <a class="tag" href="#">#NoSQL</a> <a class="tag" href="#">#水平扩展</a> <a class="tag" href="#">#文档数据库</a> <a class="tag" href="#">#大数据</a>
+    </article>
+
+
+    <article class="qitem" id="384bf4a6d714">
+      <h2 class="qz" lang="zh">什么是数据备份，为什么重要？</h2>
+      <p class="qen" lang="en">What is a data backup and why is it important?</p>
+      <div class="azh" lang="zh">备份是把重要数据另外存一份副本，当硬盘损坏、中毒或误删时，还能用备份把数据找回来。</div>
+      <div class="aen" lang="en">A backup is a separate copy of important data so that if a disk fails, malware strikes, or files are deleted, you can recover them.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#备份</a> <a class="tag" href="#">#恢复</a> <a class="tag" href="#">#数据</a>
+    </article>
+
+
+    <article class="qitem" id="3ad8e343b77b">
+      <h2 class="qz" lang="zh">删掉大量数据之后，为什么数据库文件的体积并没有变小？</h2>
+      <p class="qen" lang="en">Why doesn&#x27;t the database file shrink after you delete a large number of rows?</p>
+      <div class="azh" lang="zh">多数存储引擎的 DELETE 只把行标记为死亡并把所在页放回内部空闲列表，留给后续插入复用，并不把空间交还文件系统，这样可以避免昂贵的文件收缩与随后再次扩展。于是磁盘占用保持原状，只是内部出现空洞，PostgreSQL 里称为表膨胀。真正回收需要重写数据文件：PostgreSQL 的 VACUUM FULL 或 pg_repack、MySQL InnoDB 的 OPTIMIZE TABLE、SQLite 的 VACUUM，这些操作会加重锁或需要额外磁盘空间，通常安排在维护窗口执行。</div>
+      <div class="aen" lang="en">In most engines DELETE only marks rows dead and returns their pages to an internal free list for reuse by later inserts, rather than handing space back to the filesystem, which avoids costly truncation followed by re-extension. So the file keeps its size while filling with holes — what PostgreSQL calls table bloat. Genuinely reclaiming it requires rewriting the data file with VACUUM FULL or pg_repack in PostgreSQL, OPTIMIZE TABLE for InnoDB, or VACUUM in SQLite, all of which take heavy locks or extra disk space and are therefore scheduled in maintenance windows.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">PostgreSQL 17 官方文档 24.1 节 Routine Vacuuming；SQLite 官方文档 VACUUM 命令说明</p>
+        <p lang="en">PostgreSQL 17 documentation §24.1 &quot;Routine Vacuuming&quot;; SQLite documentation, the VACUUM command</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#表膨胀</a> <a class="tag" href="#">#VACUUM</a> <a class="tag" href="#">#空闲空间</a> <a class="tag" href="#">#存储管理</a>
+    </article>
+
+
+    <article class="qitem" id="3c2e2d1ec959">
+      <h2 class="qz" lang="zh">数据仓库和数据湖有什么不同？它们各自适合什么场景？</h2>
+      <p class="qen" lang="en">How do data warehouses and data lakes differ, and when is each a good fit?</p>
+      <div class="azh" lang="zh">数据仓库面向分析，先定义好 schema（schema-on-write），存储经过清洗、结构化的数据，查询稳定高效，适合报表和商业智能；数据湖保留数据的原始格式（schema-on-read，读取时才解析），能容纳结构化、半结构化和非结构化数据，灵活但缺乏治理时容易沦为&quot;数据沼泽&quot;。</div>
+      <div class="aen" lang="en">A data warehouse targets analytics with a predefined schema (schema-on-write), holding cleaned, structured data for fast, reliable reporting and business intelligence. A data lake keeps data in its raw format (schema-on-read, parsed when queried), accommodating structured, semi-structured and unstructured data flexibly — but without governance it easily becomes a &quot;data swamp&quot;.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据仓库</a> <a class="tag" href="#">#数据湖</a> <a class="tag" href="#">#数据分析</a>
+    </article>
+
+
+    <article class="qitem" id="459dde379722">
+      <h2 class="qz" lang="zh">什么是数据仓库？</h2>
+      <p class="qen" lang="en">What is a data warehouse?</p>
+      <div class="azh" lang="zh">数据仓库是面向分析、集成了来自多个业务系统的历史数据的存储，专门支持报表和决策。它与日常事务型数据库不同，强调读多写少和按主题组织。常见建立在星型或雪花模型之上。</div>
+      <div class="aen" lang="en">A data warehouse is a store oriented to analytics, integrating historical data from multiple business systems to support reporting and decisions. Unlike day-to-day transactional databases, it emphasizes read-heavy use and organization by subject. It is commonly built on star or snowflake schemas.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">数据仓库概念（Inmon/Kimball）</p>
+        <p lang="en">Data warehouse concept (Inmon/Kimball)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据仓库</a> <a class="tag" href="#">#OLAP</a> <a class="tag" href="#">#分析</a>
+    </article>
+
+
+    <article class="qitem" id="46e82a04fa59">
+      <h2 class="qz" lang="zh">数据库中的主键（primary key）和外键（foreign key）分别是什么？</h2>
+      <p class="qen" lang="en">What are a primary key and a foreign key in a database?</p>
+      <div class="azh" lang="zh">主键是表中唯一标识每一行的列或列组合，取值不可重复且不能为空，是关系模型的基石。外键是引用另一表主键的列，用来建立表与表之间的关联并保证引用完整性。这两个概念由科德在 1970 年提出的关系模型奠定，至今仍是关系数据库设计的核心。</div>
+      <div class="aen" lang="en">A primary key is a column or combination of columns that uniquely identifies each row in a table; its values must be unique and not null, forming the foundation of the relational model. A foreign key is a column that references the primary key of another table, establishing relationships and enforcing referential integrity. Both concepts were established by Codd&#x27;s 1970 relational model and remain central to relational database design.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Codd 1970（Communications of the ACM）；Silberschatz 等《数据库系统概念》</p>
+        <p lang="en">Codd (1970), Communications of the ACM; Silberschatz et al., Database System Concepts</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）；本条出处含多部著作，此标识只担保上面点名</a> · <a class="evlink" href="https://openlibrary.org/works/OL1854539W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1854539W：Database system concept</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主键</a> <a class="tag" href="#">#外键</a> <a class="tag" href="#">#关系模型</a> <a class="tag" href="#">#科德</a>
+    </article>
+
+
+    <article class="qitem" id="4c54d63e04ac">
+      <h2 class="qz" lang="zh">什么是数据库索引？</h2>
+      <p class="qen" lang="en">What is a database index?</p>
+      <div class="azh" lang="zh">索引是数据库中加速查询的数据结构，类似书的目录，让系统不必逐行扫描就能定位记录。最常见的是基于 B+ 树的索引。但索引会占用额外空间并拖慢写入，需要权衡创建。</div>
+      <div class="aen" lang="en">An index is a data structure that speeds up database queries, like a book&#x27;s table of contents, letting the system locate records without scanning every row. The most common is a B+ tree index. But indexes use extra space and slow writes, so they must be chosen with care.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#索引</a> <a class="tag" href="#">#查询</a> <a class="tag" href="#">#B+树</a>
+    </article>
+
+
+    <article class="qitem" id="53429996bc0a">
+      <h2 class="qz" lang="zh">数据库为什么要先写日志再改数据页（预写日志）？</h2>
+      <p class="qen" lang="en">Why do databases write a log record before modifying data pages (write-ahead logging)?</p>
+      <div class="azh" lang="zh">提交时把随机分布的数据页全部刷盘很慢，而把变更记录顺序追加到日志文件很快；只要日志已落盘，事务就可以宣布提交，数据页留待稍后惰性写回。崩溃恢复时按日志重做已提交但未写回的修改，并回滚未提交的修改，从而同时保证持久性与原子性。ARIES 协议进一步引入检查点和日志序列号，把恢复时需要扫描的范围限制在最近一个检查点之后，这套方案被现代引擎普遍采用。</div>
+      <div class="aen" lang="en">Flushing scattered data pages at every commit is slow, whereas appending change records sequentially to a log is fast; once the log record is durable the transaction can report success and the pages can be written back lazily. After a crash, recovery replays committed changes that never reached the data files and rolls back uncommitted ones, delivering durability and atomicity together. The ARIES protocol adds checkpoints and log sequence numbers so recovery need only scan from the last checkpoint, and it underpins most modern engines.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Mohan, Haderle, Lindsay, Pirahesh,《ARIES》,ACM Transactions on Database Systems,1992 (DOI: 10.1145/128765.128770)</p>
+        <p lang="en">Mohan, Haderle, Lindsay, Pirahesh, &#x27;ARIES&#x27;, ACM Transactions on Database Systems, 1992, DOI: 10.1145/128765.128770</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/128765.128770" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/128765.128770</a></p>
+        
+      </details>
+      <a class="tag" href="#">#预写日志</a> <a class="tag" href="#">#WAL</a> <a class="tag" href="#">#崩溃恢复</a> <a class="tag" href="#">#ARIES</a>
+    </article>
+
+
+    <article class="qitem" id="5de1155deba7">
+      <h2 class="qz" lang="zh">什么是键值存储？</h2>
+      <p class="qen" lang="en">What is a key-value store?</p>
+      <div class="azh" lang="zh">键值存储是最简单的 NoSQL 模型，数据以“键—值”对形式保存，通过键直接读写，速度极快。它适合缓存、会话和配置等简单场景。Redis 和 DynamoDB 是常见例子。</div>
+      <div class="aen" lang="en">A key-value store is the simplest NoSQL model, saving data as key-value pairs accessed directly by key, very fast. It fits caching, sessions, and config. Redis and DynamoDB are common examples.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#键值</a> <a class="tag" href="#">#NoSQL</a> <a class="tag" href="#">#缓存</a>
+    </article>
+
+
+    <article class="qitem" id="7afd76ef4550">
+      <h2 class="qz" lang="zh">什么是数据库规范化？</h2>
+      <p class="qen" lang="en">What is database normalization?</p>
+      <div class="azh" lang="zh">规范化是一套把表拆细、消除重复数据的设计方法，常用到第一到第三范式。它减少更新异常，让数据更一致。过度规范化也可能让查询需要太多连接，因此实际会折中。</div>
+      <div class="aen" lang="en">Normalization splits tables and removes duplication, typically through first to third normal forms. It reduces update anomalies and keeps data consistent. Over-normalizing can force too many joins, so practice seeks a balance.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#规范化</a> <a class="tag" href="#">#范式</a> <a class="tag" href="#">#设计</a>
+    </article>
+
+
+    <article class="qitem" id="7e131cc5702f">
+      <h2 class="qz" lang="zh">SQL 中的 JOIN 是做什么的？内连接和左外连接有何不同？</h2>
+      <p class="qen" lang="en">What does a JOIN do in SQL, and how do inner and left outer joins differ?</p>
+      <div class="azh" lang="zh">JOIN 把两个或多个表按关联列组合成一张结果集，源自科德的关系代数。内连接（INNER JOIN）只保留两表都匹配的行；左外连接（LEFT JOIN）保留左表全部行，右表无匹配时以空值填充。恰当地选择连接类型决定了查询结果是否丢失单边数据。</div>
+      <div class="aen" lang="en">A JOIN combines two or more tables into a result set based on related columns, derived from Codd&#x27;s relational algebra. An INNER JOIN keeps only rows that match in both tables, while a LEFT (outer) JOIN keeps all rows from the left table and fills unmatched right-side columns with nulls. Choosing the right join type determines whether one-sided data is preserved or dropped.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">ISO/IEC 9075（SQL 标准）连接运算部分；Codd 1970（Communications of the ACM 13(6)）；Silberschatz 等《数据库系统概念》关系代数与 SQL 章节</p>
+        <p lang="en">ISO/IEC 9075 (SQL standard), join operations; Codd (1970), CACM 13(6); Silberschatz et al., Database System Concepts (relational algebra and SQL chapters)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）；本条出处含多部著作，此标识只担保上面点名</a></p>
+        
+      </details>
+      <a class="tag" href="#">#JOIN</a> <a class="tag" href="#">#内连接</a> <a class="tag" href="#">#外连接</a> <a class="tag" href="#">#关系代数</a>
+    </article>
+
+
+    <article class="qitem" id="80c5fd11a4aa">
+      <h2 class="qz" lang="zh">什么是 NoSQL 数据库？</h2>
+      <p class="qen" lang="en">What is a NoSQL database?</p>
+      <div class="azh" lang="zh">NoSQL 泛指非关系型数据库，包括文档、键值、列族和图等多种模型。它们通常放弃严格模式和跨行事务，以换取易扩展和高性能。适合结构多变或海量数据的场景。</div>
+      <div class="aen" lang="en">NoSQL broadly means non-relational stores: document, key-value, column-family, and graph models. They usually drop strict schemas and cross-row transactions for easy scaling and performance. They suit evolving or massive data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#NoSQL</a> <a class="tag" href="#">#文档库</a> <a class="tag" href="#">#扩展性</a>
+    </article>
+
+
+    <article class="qitem" id="8958393c896d">
+      <h2 class="qz" lang="zh">什么是数据库视图？</h2>
+      <p class="qen" lang="en">What is a database view?</p>
+      <div class="azh" lang="zh">视图是一条被保存的查询，对外表现为一张虚拟表，本身不存数据。它可隐藏复杂逻辑、限制敏感字段的暴露。修改底层表时，视图内容会自动随之变化。</div>
+      <div class="aen" lang="en">A view is a saved query presented as a virtual table that stores no data itself. It can hide complex logic and limit exposure of sensitive columns. When the underlying tables change, the view reflects it automatically.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#视图</a> <a class="tag" href="#">#虚拟表</a> <a class="tag" href="#">#权限</a>
+    </article>
+
+
+    <article class="qitem" id="982b9c8de022">
+      <h2 class="qz" lang="zh">什么是主键？</h2>
+      <p class="qen" lang="en">What is a primary key?</p>
+      <div class="azh" lang="zh">主键是表中用来唯一标识每一行记录的字段（或字段组合），其值不允许重复也不允许为空。它确保每条数据可被准确找到，并常作为其他表建立关联的依据。</div>
+      <div class="aen" lang="en">A primary key is a column (or combination) that uniquely identifies each row in a table; its values must be unique and not null. It ensures each record can be located precisely and often anchors relationships with other tables.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据库系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Database System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主键</a> <a class="tag" href="#">#唯一标识</a> <a class="tag" href="#">#关系表</a>
+    </article>
+
+
+    <article class="qitem" id="9fe72a8a17b4">
+      <h2 class="qz" lang="zh">什么是数据冗余，为什么不好？</h2>
+      <p class="qen" lang="en">What is data redundancy and why is it bad?</p>
+      <div class="azh" lang="zh">数据冗余指同一信息在多处重复存储，既浪费空间，又容易在不同副本间出现不一致。</div>
+      <div class="aen" lang="en">Data redundancy means storing the same information in many places; it wastes space and risks inconsistency between copies.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#冗余</a> <a class="tag" href="#">#规范化</a>
+    </article>
+
+
+    <article class="qitem" id="bfccae170297">
+      <h2 class="qz" lang="zh">什么是 SQL？</h2>
+      <p class="qen" lang="en">What is SQL?</p>
+      <div class="azh" lang="zh">SQL 是用于和关系型数据库对话的语言，用它来查询、插入、更新和删除表中的数据。</div>
+      <div class="aen" lang="en">SQL is the language used to talk to relational databases, letting you query, insert, update, and delete data in tables.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SQL</a> <a class="tag" href="#">#查询</a> <a class="tag" href="#">#关系型</a>
+    </article>
+
+
+    <article class="qitem" id="c073d70840f3">
+      <h2 class="qz" lang="zh">流处理（stream processing）与批处理有什么本质区别？</h2>
+      <p class="qen" lang="en">What fundamentally distinguishes stream processing from batch processing?</p>
+      <div class="azh" lang="zh">批处理把已经落盘的一整批数据离线计算完，延迟高但吞吐大；流处理对源源不断到达的事件持续计算，低延迟、结果持续输出，适合实时监控、风控、推荐等场景。Apache Flink 等系统提供事件时间、窗口聚合和精确一次语义来处理乱序与重放。</div>
+      <div class="aen" lang="en">Batch processing runs offline over a whole dataset already on disk — high latency, high throughput. Stream processing computes continuously over events as they arrive, with low latency and ongoing output, suiting real-time monitoring, fraud detection and recommendation. Systems like Apache Flink offer event time, windowing and exactly-once semantics to handle disorder and replay.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#流处理</a> <a class="tag" href="#">#批处理</a> <a class="tag" href="#">#Flink</a>
+    </article>
+
+
+    <article class="qitem" id="ca840c831101">
+      <h2 class="qz" lang="zh">NoSQL 数据库和关系型数据库有什么不同？</h2>
+      <p class="qen" lang="en">How do NoSQL databases differ from relational databases?</p>
+      <div class="azh" lang="zh">关系型数据库强调固定的表结构和多表关联，ACID 事务强一致；NoSQL 常牺牲部分一致性换取扩展性，按键值、文档、列族或图组织数据，适合海量数据水平扩展和高并发读写。典型取舍是“最终一致性”：数据稍后到达一致，但系统可以跨机器线性扩容。</div>
+      <div class="aen" lang="en">Relational databases stress fixed schemas, joins, and strong ACID consistency; NoSQL systems often relax consistency for scalability, organizing data as key-value, document, column-family, or graph stores suited to huge data and high-concurrency reads and writes. The classic trade-off is eventual consistency—data converges shortly after, while the cluster can scale out linearly across machines.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#NoSQL</a> <a class="tag" href="#">#CAP</a> <a class="tag" href="#">#扩展性</a>
+    </article>
+
+
+    <article class="qitem" id="cf5a80c229ce">
+      <h2 class="qz" lang="zh">SQL 和 NoSQL 数据库有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between SQL and NoSQL databases?</p>
+      <div class="azh" lang="zh">SQL 数据库用固定的表结构和强一致性，适合复杂查询和事务。NoSQL 更灵活，可存文档、键值或图，强调水平扩展和高吞吐。选择取决于数据结构和扩展需求。</div>
+      <div class="aen" lang="en">SQL databases use fixed table schemas and strong consistency, good for complex queries and transactions. NoSQL is more flexible, storing documents, key-values, or graphs, and stresses horizontal scaling and throughput. The choice depends on data shape and scaling needs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SQL</a> <a class="tag" href="#">#NoSQL</a> <a class="tag" href="#">#扩展</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_001">
+      <h2 class="qz" lang="zh">写前日志(WAL)协议为什么要求日志记录先于其描述的数据页写入稳定存储?违反这一顺序会导致什么后果?</h2>
+      <p class="qen" lang="en">Why does the write-ahead logging protocol insist that log records reach stable storage before the pages they describe, and what breaks when that order is reversed?</p>
+      <div class="azh" lang="zh">恢复算法靠日志重做已提交事务的修改、撤销尚未落盘事务的修改;若数据页先于日志到达磁盘,崩溃后可能留下一条没有任何撤销记录可依的修改,原子性即被破坏。先写日志保证了任意磁盘页状态都能由日志中的前像与后像重建,这正是 ARIES 一类恢复方法的正确性根基。</div>
+      <div class="aen" lang="en">Recovery redoes committed changes from log entries and undoes uncommitted ones with undo records, so a page flushed ahead of its log could leave a modification on disk that no undo information can reverse, breaking atomicity. Logging first guarantees every on-disk page state is rebuildable from before- and after-images in the log. That rule is the correctness backbone of ARIES-style recovery.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Mohan, Haderle, Lindsay, Pirahesh,《ARIES》,ACM Transactions on Database Systems,1992 (DOI: 10.1145/128765.128770)</p>
+        <p lang="en">Mohan, Haderle, Lindsay, Pirahesh, &#x27;ARIES&#x27;, ACM Transactions on Database Systems, 1992, DOI: 10.1145/128765.128770</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/128765.128770" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/128765.128770</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#恢复机制</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_017">
+      <h2 class="qz" lang="zh">两个事务在快照隔离下各自顺利提交,组合效果却违反了数据库不变式——写偏斜是如何发生的?</h2>
+      <p class="qen" lang="en">How can two transactions each pass snapshot isolation cleanly yet together violate an invariant the database never promised to protect?</p>
+      <div class="azh" lang="zh">快照隔离让每个事务读取一致的历史快照,而冲突检测只覆盖写-写冲突,读写依赖完全不在检查范围之内。值班医生的例子里,两人在各自快照中都看到值班人数不少于二,于是各自把本人设为休假并更新不同的行;任何一个事务单独串行执行都会留下一名值班医生,唯有并发交错才会让名单清空——引擎看不到任何写-写冲突,便放行了这两个本不该同时成立的提交。Berenson 等对 ANSI SQL 隔离级别定义的述评暴露了这类异常的模糊地带,后来的可串行化快照隔离通过跟踪危险的写读依赖环才把写偏斜纳入拒绝范围。</div>
+      <div class="aen" lang="en">Snapshot isolation gives each transaction a consistent historical snapshot and detects only write-write conflicts, leaving read-write dependencies entirely unchecked. In the on-call doctors scenario, both read at least two doctors on duty from their snapshots and each sets herself off-call while updating her own row; either transaction serialized alone would still leave one doctor on duty, and only their concurrent interleaving empties the roster — yet the engine sees no conflict and commits both. Berenson et al.&#x27;s critique exposed such gaps in the ANSI SQL isolation definitions, and serializable snapshot isolation later closed them by tracking dangerous cycles of write-read dependencies.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Berenson 等,《A critique of ANSI SQL isolation levels》,ACM SIGMOD Record,1995 (DOI: 10.1145/568271.223785)</p>
+        <p lang="en">Berenson et al., &#x27;A critique of ANSI SQL isolation levels&#x27;, ACM SIGMOD Record, 1995, DOI: 10.1145/568271.223785</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/568271.223785" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/568271.223785</a></p>
+        
+      </details>
+      <a class="tag" href="#">#事务隔离</a> <a class="tag" href="#">#并发控制</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_015">
+      <h2 class="qz" lang="zh">银行转账扣了钱却没到账怎么办?事务的 ACID 是怎么兜底的?</h2>
+      <p class="qen" lang="en">Money left account A but never reached B — how do transaction ACID properties prevent this limbo?</p>
+      <div class="azh" lang="zh">转账被包进一个事务:减款与加款要么全成,要么全回滚,绝不停在中间——原子性。一致性靠约束(余额非负等)确保状态转移合法;隔离性靠锁或多版本并发控制(MVCC)屏蔽并发事务的半成品,杜绝脏读与丢失更新;持久性靠预写日志(WAL),改动先落日志再改数据页,崩溃后重放已提交、回滚未提交。于是只剩两种结局:整笔转账永久生效,或者什么都没发生。分布式场景把四性扩展到多机难度陡增,这正是共识协议存在的原因。</div>
+      <div class="aen" lang="en">The transfer wraps in one transaction: debit and credit both succeed or both roll back — never stranded between (atomicity). Constraints such as non-negative balances keep the database legal (consistency); locking or MVCC isolates concurrent transactions so dirty reads and lost updates vanish (isolation); durability rides a write-ahead log — changes hit the log before data pages, and crash recovery redoes committed work while undoing stragglers. The feared scenario resolves to exactly two endings: fully applied forever, or nothing at all. Distributed databases stretch ACID across machines at steep difficulty — which is exactly why consensus protocols exist.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz、Korth 与 Sudarshan,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ACID</a> <a class="tag" href="#">#预写日志</a> <a class="tag" href="#">#MVCC</a>
+    </article>
+
+
+    <article class="qitem" id="d60d36c76c95">
+      <h2 class="qz" lang="zh">什么是 SQL 中的 JOIN（连接）？</h2>
+      <p class="qen" lang="en">What is a JOIN in SQL?</p>
+      <div class="azh" lang="zh">JOIN 把两张表按关联字段组合成一张结果集，常见有内连接、左连接等。内连接只保留两边匹配的行，左连接保留左表全部并补空。它让你能用一次查询跨表取数。</div>
+      <div class="aen" lang="en">A JOIN combines two tables by a related column into one result, with inner and left joins being common. Inner join keeps only matched rows; left join keeps all left rows and fills nulls. It lets you fetch across tables in one query.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#JOIN</a> <a class="tag" href="#">#关联</a> <a class="tag" href="#">#SQL</a>
+    </article>
+
+
+    <article class="qitem" id="ddd6273a7c27">
+      <h2 class="qz" lang="zh">SQL 是做什么的？为什么它统治数据库几十年？</h2>
+      <p class="qen" lang="en">What does SQL do, and why has it dominated databases for decades?</p>
+      <div class="azh" lang="zh">SQL 是操作关系型数据库的声明式语言：你描述“想要什么”，数据库优化器决定“怎么做”。一条 SELECT 就能完成筛选、连接、分组、排序，无需写遍历循环。这种高层、面向集合的表达方式易学、可移植，使它成为数据库的事实标准。</div>
+      <div class="aen" lang="en">SQL is the declarative language for relational databases: you say what you want, and the optimizer decides how. A single SELECT handles filtering, joining, grouping, and sorting without writing loops. This high-level, set-oriented expressiveness—easy to learn and portable—has made SQL the de facto database standard.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SQL</a> <a class="tag" href="#">#声明式</a> <a class="tag" href="#">#查询</a>
+    </article>
+
+
+    <article class="qitem" id="1e5892cdbe88">
+      <h2 class="qz" lang="zh">什么是数据库？</h2>
+      <p class="qen" lang="en">What is a database?</p>
+      <div class="azh" lang="zh">数据库是专门用来有组织地存放、查找和管理大量数据的系统，像一座超大的、可快速检索的电子档案柜。</div>
+      <div class="aen" lang="en">A database is a system for organizing, finding, and managing large amounts of data, like a giant electronic filing cabinet you can search quickly.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#数据</a>
+    </article>
+
+
+    <article class="qitem" id="3198919ba3c4">
+      <h2 class="qz" lang="zh">什么是数据冗余，它有什么问题？</h2>
+      <p class="qen" lang="en">What is data redundancy and why is it a problem?</p>
+      <div class="azh" lang="zh">数据冗余指同一信息在多处重复存储，例如客户地址在每张订单里都抄一遍。它浪费空间，还容易导致更新不一致——改了一处忘了另一处。规范化设计正是为了减少这类冗余。</div>
+      <div class="aen" lang="en">Data redundancy means the same information is stored in many places, like copying a customer&#x27;s address into every order. It wastes space and risks inconsistency when one copy is updated but another is not. Normalization exists to reduce such redundancy.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#冗余</a> <a class="tag" href="#">#一致性</a> <a class="tag" href="#">#规范化</a>
+    </article>
+
+
+    <article class="qitem" id="480d0d09b895">
+      <h2 class="qz" lang="zh">数据库和普通文件有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a database and an ordinary file?</p>
+      <div class="azh" lang="zh">普通文件只是把文字存起来，查找和共享都不方便；数据库则按结构化方式组织数据，并提供强大的查询、并发和安全控制。它能让成百上千人同时安全地读写同一份数据。几乎所有现代应用背后都有数据库支撑。</div>
+      <div class="aen" lang="en">An ordinary file just stores text, making search and sharing awkward; a database organizes data structurally and offers powerful query, concurrency, and security control. It lets hundreds of users safely read and write the same data at once. Almost every modern application is backed by a database.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#文件</a> <a class="tag" href="#">#结构化</a>
+    </article>
+
+
+    <article class="qitem" id="5d445a91d1b8">
+      <h2 class="qz" lang="zh">数据库里的「表」是什么？</h2>
+      <p class="qen" lang="en">What is a table in a database?</p>
+      <div class="azh" lang="zh">数据库的表像一张大表格，由许多行和列组成：每一列是一种信息（如姓名、年龄），每一行是一个具体对象（如一个人）。它把杂乱的数据整整齐齐地排好，方便查找。</div>
+      <div class="aen" lang="en">A database table is like a big grid of rows and columns: each column is a kind of information (name, age) and each row is one concrete object (a person). It lines messy data up neatly so it is easy to find.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据库系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Database System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#表</a> <a class="tag" href="#">#行</a> <a class="tag" href="#">#列</a>
+    </article>
+
+
+    <article class="qitem" id="8fa061936107">
+      <h2 class="qz" lang="zh">什么是「读已提交」和「可重复读」隔离级别？</h2>
+      <p class="qen" lang="en">What are the &#x27;read committed&#x27; and &#x27;repeatable read&#x27; isolation levels?</p>
+      <div class="azh" lang="zh">读已提交只允许看到已提交的数据，避免脏读但可能出现不可重复读；可重复读保证同一事务内多次读同一行结果一致，进一步避免不可重复读，但仍可能幻读，具体由数据库实现决定。</div>
+      <div class="aen" lang="en">Read committed only sees committed data, avoiding dirty reads but allowing non-repeatable reads; repeatable read keeps repeated reads of a row consistent within a transaction, avoiding non-repeatable reads but possibly allowing phantoms, depending on the DB.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Database System Concepts</p>
+        <p lang="en">Database System Concepts</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#隔离</a>
+    </article>
+
+
+    <article class="qitem" id="a55b973c8792">
+      <h2 class="qz" lang="zh">主键和外键分别是什么？</h2>
+      <p class="qen" lang="en">What are primary and foreign keys?</p>
+      <div class="azh" lang="zh">主键是唯一标识表中每一行的字段，不能重复也不能为空。外键是引用另一张表主键的字段，用来建立表之间的关联。它们共同保证数据的唯一性和引用完整性。</div>
+      <div class="aen" lang="en">A primary key uniquely identifies each row and cannot repeat or be empty. A foreign key references another table&#x27;s primary key to link the tables. Together they ensure uniqueness and referential integrity.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主键</a> <a class="tag" href="#">#外键</a> <a class="tag" href="#">#完整性</a>
+    </article>
+
+
+    <article class="qitem" id="e3d180209905">
+      <h2 class="qz" lang="zh">数据库的备份与恢复为什么重要？</h2>
+      <p class="qen" lang="en">Why are database backup and recovery important?</p>
+      <div class="azh" lang="zh">硬件故障、误删或勒索软件都可能让数据丢失，备份是最后一道防线。恢复演练能确保在灾难发生时真的能找回数据。常见策略包括全量备份加增量备份。</div>
+      <div class="aen" lang="en">Hardware failure, accidental deletion, or ransomware can all lose data, and backup is the last line of defense. Recovery drills ensure data can actually be restored in a disaster. Common strategies combine full and incremental backups.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#备份</a> <a class="tag" href="#">#恢复</a> <a class="tag" href="#">#容灾</a>
+    </article>
+
+
+    <article class="qitem" id="fcc8a4757555">
+      <h2 class="qz" lang="zh">什么是关系型数据库？</h2>
+      <p class="qen" lang="en">What is a relational database?</p>
+      <div class="azh" lang="zh">关系型数据库把数据组织成一张张带行和列的表，表与表之间可以通过共同字段建立关联。它用 SQL 进行查询，并强调数据的一致性和结构清晰。MySQL、PostgreSQL 都是典型代表。</div>
+      <div class="aen" lang="en">A relational database organizes data into tables of rows and columns, with relationships between tables via shared fields. It is queried with SQL and emphasizes consistency and clear structure. MySQL and PostgreSQL are typical examples.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#关系型</a> <a class="tag" href="#">#表</a> <a class="tag" href="#">#SQL</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

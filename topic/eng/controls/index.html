@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>controls · 工程技术 Engineering | 问答</title>
+<meta name="description" content="controls（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="controls · 工程技术 Engineering | 问答">
+<meta property="og:description" content="controls（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/controls/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/controls/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>controls</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>controls <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#5aa1138f35c9">经典控制里的“根轨迹”和“奈奎斯特判据”分别用什么方式判断系统稳不稳定？</a></li><li><a href="#883eb3ff2419">李雅普诺夫稳定性理论和“看特征值”有什么不同，为什么非线性系统离不开它？</a></li><li><a href="#e4d8a8d0e37d">什么是状态空间模型和“观测器”，当某些状态无法直接测量时怎么估计？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="5aa1138f35c9">
+      <h2 class="qz" lang="zh">经典控制里的“根轨迹”和“奈奎斯特判据”分别用什么方式判断系统稳不稳定？</h2>
+      <p class="qen" lang="en">In classical control, how do the root locus and Nyquist criterion each judge whether a system is stable?</p>
+      <div class="azh" lang="zh">根轨迹看闭环极点随增益在复数平面上的移动，一旦越过虚轴就失稳；奈奎斯特则看开环频率响应曲线是否包围临界点来判断闭环稳定。一个在时域、一个在频域，殊途同归。</div>
+      <div class="aen" lang="en">Root locus tracks how closed-loop poles move in the complex plane with gain—crossing the imaginary axis means instability. Nyquist checks whether the open-loop frequency curve encircles a critical point. One is time-domain, the other frequency-domain, but both agree.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">K. Ogata,《现代控制工程》第5版,Pearson,2010,PID控制章节</p>
+        <p lang="en">K. Ogata, Modern Control Engineering, 5th ed., Pearson, 2010, PID control chapter</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#根轨迹</a> <a class="tag" href="#">#奈奎斯特</a> <a class="tag" href="#">#稳定性</a>
+    </article>
+
+
+    <article class="qitem" id="883eb3ff2419">
+      <h2 class="qz" lang="zh">李雅普诺夫稳定性理论和“看特征值”有什么不同，为什么非线性系统离不开它？</h2>
+      <p class="qen" lang="en">How does Lyapunov stability theory differ from &#x27;looking at eigenvalues&#x27;, and why is it essential for nonlinear systems?</p>
+      <div class="azh" lang="zh">线性系统可凭特征值符号判定稳定，但非线性系统没有固定特征值。李雅普诺夫直接构造一个“能量函数”，只要它随时间下降就证明系统会回到平衡，不必求解方程。</div>
+      <div class="aen" lang="en">Linear systems can be judged by eigenvalue signs, but nonlinear ones have no fixed eigenvalues. Lyapunov directly builds an &#x27;energy function&#x27;; if it keeps decreasing, the system returns to equilibrium—without solving the equations.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Khalil，《非线性系统》（第3版）</p>
+        <p lang="en">Khalil, &#x27;Nonlinear Systems&#x27; (3rd ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35786714/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121427763（豆瓣书目条目: 非线性系统）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#李雅普诺夫</a> <a class="tag" href="#">#非线性</a> <a class="tag" href="#">#能量函数</a>
+    </article>
+
+
+    <article class="qitem" id="e4d8a8d0e37d">
+      <h2 class="qz" lang="zh">什么是状态空间模型和“观测器”，当某些状态无法直接测量时怎么估计？</h2>
+      <p class="qen" lang="en">What is a state-space model and an observer, and how do you estimate states you cannot measure directly?</p>
+      <div class="azh" lang="zh">状态空间用一组变量完整描述系统演化，观测器则利用可测输出和模型，反推出那些装不了传感器的内部状态。就像通过体温和心率推测身体内部状况一样。</div>
+      <div class="aen" lang="en">State space describes a system by a set of variables; an observer uses measurable outputs and the model to infer internal states lacking sensors. It is like guessing internal condition from temperature and heart rate.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Kailath，《线性系统》</p>
+        <p lang="en">Kailath, &#x27;Linear Systems&#x27;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#状态空间</a> <a class="tag" href="#">#观测器</a> <a class="tag" href="#">#估计</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

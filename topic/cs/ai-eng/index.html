@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai_eng ai-eng · 计算机 Computer Science | 问答</title>
+<meta name="description" content="ai_eng（计算机）分类下的 41 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 41 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ai_eng ai-eng · 计算机 Computer Science | 问答">
+<meta property="og:description" content="ai_eng（计算机）分类下的 41 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 41 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/ai-eng/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/ai-eng/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>ai_eng</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>ai_eng <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>41</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#04409fbdd8b3">什么是 dropout 和正则化？它们怎样抑制过拟合？</a></li><li><a href="#0b538b33b7fe">什么是混淆矩阵、精确率和召回率？</a></li><li><a href="#111a510b4bf2">反向传播是怎么让神经网络学习的？</a></li><li><a href="#13af34a380bb">RLHF（基于人类反馈的强化学习）是怎么让大模型更&quot;听话&quot;的？</a></li><li><a href="#1611b63c79c2">什么是 Transformer 架构？它为什么重要？</a></li><li><a href="#4be79d23138e">什么是梯度下降（Gradient Descent）？</a></li><li><a href="#73fd901b83f4">Transformer 为什么用&quot;多头&quot;注意力而不是单头注意力？每个头学到什么？</a></li><li><a href="#9480db0d4489">大语言模型是怎么“学会”生成文本的？</a></li><li><a href="#981f01ed28cb">大模型推理里的 KV 缓存是什么，为什么长对话会吃掉大量显存？</a></li><li><a href="#a78c5cf1118c">什么是模型剪枝（Pruning）？和量化有什么不同？</a></li><li><a href="#b88ce0b70742">什么是推理（Inference）优化？模型怎么跑得更快？</a></li><li><a href="#d4bdb34b3ab9">什么是过拟合？怎么判断和处理？</a></li><li><a href="#db07cb8cb223">模型量化是怎么让大模型&quot;瘦身&quot;的？从 FP16 到 INT8 为什么会损失精度？</a></li><li><a href="#dc8383a0a8ce">什么是大模型的规模定律，Chinchilla 纠正了此前的什么误区？</a></li><li><a href="#dec8a9de5396">什么是注意力机制（Attention）？</a></li><li><a href="#e3eafa53608f">什么是迁移学习（Transfer Learning）？</a></li><li><a href="#f1bf5a4feaf5">什么是对抗样本（Adversarial Example）？</a></li><li><a href="#18497778be6f">大模型为什么常常数不清一个单词里有几个字母？</a></li><li><a href="#30be1b934f66">什么是微调（Fine-tuning）？和大模型有什么关系？</a></li><li><a href="#5c9445281e76">强化学习是怎么训练的？和普通机器学习有什么不同？</a></li><li><a href="#66d1c3320b5a">调用大模型时的 temperature 和 top-p 参数各自在改什么？</a></li><li><a href="#6ddf40f7113a">Transformer 的注意力机制是做什么的？&quot;注意力&quot;体现在哪里？</a></li><li><a href="#7dc656124980">什么是 RAG（检索增强生成）？</a></li><li><a href="#8d3b9a8f0fc8">多模态大模型和纯文本模型有什么不同？它怎么把图片和文字放在一起理解？</a></li><li><a href="#9064f0ce75aa">计算机是怎么“看”懂图片的？</a></li><li><a href="#92744d879958">什么是边缘 AI（Edge AI）？为什么不在云端跑？</a></li><li><a href="#968636e4e69a">什么是提示工程？为什么换个提问方式，同一个模型效果会差很多？</a></li><li><a href="#9fc42a50cdfe">视频网站怎么知道你想看什么？</a></li><li><a href="#adb2edc6b9a1">什么是 AI 智能体（agent）？它和只会一问一答的聊天模型有什么不同？</a></li><li><a href="#b382c6f70f5e">知识蒸馏是怎么把大模型&quot;教&quot;给小模型的？</a></li><li><a href="#b420a3510d4b">什么是 MLOps？</a></li><li><a href="#b99aaf6efc42">神经网络训练里的 epoch 和 batch 是什么？</a></li><li><a href="#cs_25_009">AI 是怎么学会认出小猫的?它真的认识猫吗?</a></li><li><a href="#cs_25_012">验证码明明很麻烦,网站为什么坚持要用它?它在防谁?</a></li><li><a href="#e6f42041a951">为什么大语言模型会一本正经地说错话？&quot;幻觉&quot;是怎么产生的？</a></li><li><a href="#f868b9faa50e">什么是强化学习？和 AlphaGo 有什么关系？</a></li><li><a href="#fbd5d7b2f270">什么是模型漂移（Model Drift）？为什么上线后还要监控？</a></li><li><a href="#fd25588ab649">监督学习和无监督学习有什么不同？</a></li><li><a href="#feff6be83d61">机器学习里为什么要把数据分成训练、验证、测试三份？</a></li><li><a href="#269d1c5ec791">什么是数据标注（Labeling）？</a></li><li><a href="#cf576efbf879">训练数据和测试数据为什么要分开？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="04409fbdd8b3">
+      <h2 class="qz" lang="zh">什么是 dropout 和正则化？它们怎样抑制过拟合？</h2>
+      <p class="qen" lang="en">What are dropout and regularization, and how do they curb overfitting?</p>
+      <div class="azh" lang="zh">正则化对过大的参数施加惩罚，逼模型更简洁；dropout 训练时随机关掉部分神经元，防止大家过度依赖彼此，提升泛化。</div>
+      <div class="aen" lang="en">Regularization penalizes large weights for simplicity; dropout randomly turns off neurons during training to stop over-reliance, improving generalization.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#正则化</a> <a class="tag" href="#">#dropout</a>
+    </article>
+
+
+    <article class="qitem" id="0b538b33b7fe">
+      <h2 class="qz" lang="zh">什么是混淆矩阵、精确率和召回率？</h2>
+      <p class="qen" lang="en">What are a confusion matrix, precision, and recall?</p>
+      <div class="azh" lang="zh">混淆矩阵列出预测对错的各种情况。精确率是预测为正的里真正正的比例，召回率是真正为正的里被找出来的比例，两者常需权衡。</div>
+      <div class="aen" lang="en">A confusion matrix shows prediction outcomes. Precision is of those predicted positive how many truly are; recall is of all true positives how many we found, often a trade-off.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#评估指标</a> <a class="tag" href="#">#分类</a>
+    </article>
+
+
+    <article class="qitem" id="111a510b4bf2">
+      <h2 class="qz" lang="zh">反向传播是怎么让神经网络学习的？</h2>
+      <p class="qen" lang="en">How does backpropagation train a neural network?</p>
+      <div class="azh" lang="zh">前向传播算出预测与真实标签之间的损失；反向传播从输出层往回，用链式法则逐层计算损失对每个权重的偏导，也就是每个参数该往哪个方向调、调多少；再按梯度下降用学习率更新权重，让损失变小。如此反复迭代直到收敛。关键洞察是：链式法则让梯度能高效地在整张计算图上传递。</div>
+      <div class="aen" lang="en">Forward propagation computes a loss between prediction and true label; backpropagation then walks backward from the output, using the chain rule to compute the loss gradient with respect to every weight—which direction and how far each parameter should move—and gradient descent updates the weights by the learning rate to shrink the loss. Repeating this converges. The key insight: the chain rule lets gradients flow efficiently across the whole computation graph.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rumelhart, Hinton, Williams,《Learning representations by back-propagating errors》,Nature,1986 (DOI: 10.1038/323533a0)</p>
+        <p lang="en">Rumelhart, Hinton, Williams, &#x27;Learning representations by back-propagating errors&#x27;, Nature, 1986, DOI: 10.1038/323533a0</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1038/323533a0" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1038/323533a0</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反向传播</a> <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#链式法则</a>
+    </article>
+
+
+    <article class="qitem" id="13af34a380bb">
+      <h2 class="qz" lang="zh">RLHF（基于人类反馈的强化学习）是怎么让大模型更&quot;听话&quot;的？</h2>
+      <p class="qen" lang="en">How does RLHF (reinforcement learning from human feedback) make LLMs more helpful and aligned?</p>
+      <div class="azh" lang="zh">RLHF 分三步：先用指令数据做有监督微调；再让人类对多个候选回答排序，训练奖励模型拟合这些偏好；最后用 PPO 等强化学习算法以奖励模型为反馈更新策略模型，并通过 KL 惩罚约束它不要偏离参考模型太远。ChatGPT 等模型借此对齐人类偏好、减少有害和偏离指令的输出。</div>
+      <div class="aen" lang="en">RLHF has three steps: supervised fine-tuning on instruction data; training a reward model on human preference rankings of candidate answers; then optimizing the policy with a reinforcement-learning algorithm like PPO using that reward, with a KL penalty keeping it close to the reference model. Models like ChatGPT use it to align with human preferences and reduce harmful or off-instruction outputs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ouyang 等,《Training Language Models to Follow Instructions with Human Feedback》,Advances in Neural Information Processing Systems 35,2022 (DOI: 10.52202/068431-2011)</p>
+        <p lang="en">Ouyang et al., &#x27;Training Language Models to Follow Instructions with Human Feedback&#x27;, Advances in Neural Information Processing Systems 35, 2022, DOI: 10.52202/068431-2011</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/068431-2011" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.52202/068431-2011</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RLHF</a> <a class="tag" href="#">#强化学习</a> <a class="tag" href="#">#对齐</a>
+    </article>
+
+
+    <article class="qitem" id="1611b63c79c2">
+      <h2 class="qz" lang="zh">什么是 Transformer 架构？它为什么重要？</h2>
+      <p class="qen" lang="en">What is the Transformer architecture, and why does it matter?</p>
+      <div class="azh" lang="zh">Transformer 用自注意力机制并行处理序列，擅长捕捉长距离关系，且易于在 GPU 上并行训练，是 GPT、BERT 等大模型的基石。</div>
+      <div class="aen" lang="en">The Transformer uses self-attention to process sequences in parallel, captures long-range relations, and trains efficiently on GPUs, the foundation of GPT, BERT, and more.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="4be79d23138e">
+      <h2 class="qz" lang="zh">什么是梯度下降（Gradient Descent）？</h2>
+      <p class="qen" lang="en">What is gradient descent?</p>
+      <div class="azh" lang="zh">训练就是不断调参数让错误更小。梯度下降沿损失最陡下降方向一小步一小步挪动参数，像摸黑下山找最低点。</div>
+      <div class="aen" lang="en">Training minimizes error by tuning parameters. Gradient descent steps parameters along the steepest descent of loss, like walking downhill in the dark to find the bottom.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#训练</a>
+    </article>
+
+
+    <article class="qitem" id="73fd901b83f4">
+      <h2 class="qz" lang="zh">Transformer 为什么用&quot;多头&quot;注意力而不是单头注意力？每个头学到什么？</h2>
+      <p class="qen" lang="en">Why does Transformer use multi-head attention instead of a single head? What does each head learn?</p>
+      <div class="azh" lang="zh">单头注意力只有一个注意力分布，难以同时建模句法、指代、语义等不同类型的关系。多头把 Query、Key、Value 投影到 h 个不同的低维子空间并行计算注意力，再把输出拼接后投影回来。不同头会分化出不同职责——有的关注相邻词，有的捕捉指代和句法依赖，既增强了表达能力，又天然可并行。</div>
+      <div class="aen" lang="en">A single attention head has one attention distribution, which struggles to model syntax, coreference and semantics simultaneously. Multi-head projects Query, Key, Value into h separate low-dimensional subspaces, computes attention in parallel, then concatenates and re-projects the outputs. Heads specialize — some track adjacent words, others capture coreference or syntactic dependencies — boosting expressiveness while remaining naturally parallel.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">arXiv（Attention Is All You Need, 2017）</p>
+        <p lang="en">arXiv (Vaswani et al., Attention Is All You Need, 2017)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#多头注意力</a> <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#自注意力</a>
+    </article>
+
+
+    <article class="qitem" id="9480db0d4489">
+      <h2 class="qz" lang="zh">大语言模型是怎么“学会”生成文本的？</h2>
+      <p class="qen" lang="en">How do large language models learn to generate text?</p>
+      <div class="azh" lang="zh">大模型在互联网规模文本上训练，任务是“预测下一个词”。Transformer 的注意力机制让模型根据上下文给不同位置的词加权，捕捉长距离依赖；经过大量预训练，模型内部表示隐式编码了语法、事实和推理模式。生成时逐词自回归采样，所以它在“计算下一个词的概率”，而不是检索现成句子。</div>
+      <div class="aen" lang="en">LLMs train on internet-scale text by predicting the next token. The Transformer&#x27;s attention mechanism weights words by relevance to the context, capturing long-range dependencies; after massive pretraining, internal representations implicitly encode grammar, facts, and reasoning patterns. Generation is autoregressive, sampling word by word—it computes probabilities for the next token rather than retrieving stored sentences.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（Transformer 论文，Attention Is All You Need）</p>
+        <p lang="en">arXiv (Attention Is All You Need)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#大语言模型</a> <a class="tag" href="#">#注意力机制</a> <a class="tag" href="#">#预训练</a>
+    </article>
+
+
+    <article class="qitem" id="981f01ed28cb">
+      <h2 class="qz" lang="zh">大模型推理里的 KV 缓存是什么，为什么长对话会吃掉大量显存？</h2>
+      <p class="qen" lang="en">What is the KV cache in LLM inference, and why do long conversations eat so much GPU memory?</p>
+      <div class="azh" lang="zh">自回归生成每一步都要让新 token 对之前所有位置做注意力，若每步重算全部键（K）与值（V），计算量随序列长度平方增长；KV 缓存把每层每个已生成位置的 K、V 存下来复用，把单步计算降到线性。代价是显存占用大约等于 2 × 层数 × 头数 × 头维度 × 序列长度 × 批大小 × 每个数值的字节数，随上下文长度线性增长，长上下文时常超过权重本身。工程上用多查询或分组查询注意力减少 KV 头数、用 PagedAttention 分页管理碎片、以及对缓存做量化来压缩。</div>
+      <div class="aen" lang="en">Autoregressive decoding makes each new token attend to every earlier position, and recomputing all keys and values at every step would cost work quadratic in sequence length; the KV cache stores per-layer K and V for already-generated positions so each step becomes linear. The price is memory of roughly 2 × layers × heads × head_dim × sequence_length × batch × bytes_per_value, which grows linearly with context and for long contexts often exceeds the model weights. Serving systems shrink it with multi-query or grouped-query attention (fewer KV heads), paged allocation as in PagedAttention, and quantizing the cache itself.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Pope 等《Efficiently Scaling Transformer Inference》(MLSys 2023)；Kwon 等《Efficient Memory Management for Large Language Model Serving with PagedAttention》(SOSP 2023)</p>
+        <p lang="en">Pope et al., &quot;Efficiently Scaling Transformer Inference,&quot; MLSys (2023); Kwon et al., &quot;Efficient Memory Management for Large Language Model Serving with PagedAttention,&quot; SOSP (2023)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#KV缓存</a> <a class="tag" href="#">#推理优化</a> <a class="tag" href="#">#注意力</a> <a class="tag" href="#">#显存占用</a>
+    </article>
+
+
+    <article class="qitem" id="a78c5cf1118c">
+      <h2 class="qz" lang="zh">什么是模型剪枝（Pruning）？和量化有什么不同？</h2>
+      <p class="qen" lang="en">What is model pruning, and how does it differ from quantization?</p>
+      <div class="azh" lang="zh">剪枝是直接删除模型中不重要的连接或神经元，让网络变稀疏；量化是降低数值精度。两者都为了更小更快，可结合使用。</div>
+      <div class="aen" lang="en">Pruning removes unimportant connections or neurons to make the network sparse; quantization lowers numeric precision. Both shrink and speed up models and can combine.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#剪枝</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="b88ce0b70742">
+      <h2 class="qz" lang="zh">什么是推理（Inference）优化？模型怎么跑得更快？</h2>
+      <p class="qen" lang="en">What is inference optimization, and how do models run faster?</p>
+      <div class="azh" lang="zh">推理是模型上线后做预测。优化手段有量化（用更少位数）、剪枝（删冗余连接）、用专用芯片（GPU、NPU）和批处理。</div>
+      <div class="aen" lang="en">Inference is prediction after deployment. It is sped up by quantization, pruning, specialized chips such as GPU and NPU, and batching.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#推理</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="d4bdb34b3ab9">
+      <h2 class="qz" lang="zh">什么是过拟合？怎么判断和处理？</h2>
+      <p class="qen" lang="en">What is overfitting, and how is it detected and handled?</p>
+      <div class="azh" lang="zh">过拟合是模型把训练数据里的噪声也背下来了，训练误差很低，换新数据却表现差——本质是模型复杂度过高，容量超过了真实规律。判断方法：训练集与验证集/测试集准确率差距拉大。应对手段：收集更多数据、正则化（L1/L2 惩罚大权重）、Dropout 随机丢弃神经元、早停和交叉验证选超参。</div>
+      <div class="aen" lang="en">Overfitting means the model memorizes noise in the training data: training error is tiny but performance on new data collapses—essentially the model&#x27;s complexity exceeds the true underlying pattern. It shows up when accuracy on training data far exceeds validation/test accuracy. Remedies: more data, regularization (L1/L2 penalties on large weights), dropout randomly disabling neurons, early stopping, and cross-validation for hyperparameters.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#过拟合</a> <a class="tag" href="#">#正则化</a> <a class="tag" href="#">#验证集</a>
+    </article>
+
+
+    <article class="qitem" id="db07cb8cb223">
+      <h2 class="qz" lang="zh">模型量化是怎么让大模型&quot;瘦身&quot;的？从 FP16 到 INT8 为什么会损失精度？</h2>
+      <p class="qen" lang="en">How does quantization slim down large models, and why does going from FP16 to INT8 cost accuracy?</p>
+      <div class="azh" lang="zh">量化把权重和激活从浮点（FP16/FP32）映射到低精度整数（INT8 甚至 4bit），显著减少内存、带宽与计算量，推理速度大增。精度损失源于舍入误差和数值范围压缩：INT8 只有 256 个取值档位，细小数值被抹平。业界用校准数据选择缩放因子、逐通道量化、混合精度等手段弥补，GPTQ 等后训练量化能在精度几乎无损的情况下压缩模型。</div>
+      <div class="aen" lang="en">Quantization maps weights and activations from floating point (FP16/FP32) to low-precision integers (INT8 or even 4-bit), drastically cutting memory, bandwidth and compute while boosting inference speed. The accuracy loss comes from rounding error and range compression: INT8 has only 256 levels, flattening fine numerical detail. Calibration-based scale selection, per-channel quantization and mixed precision help, and post-training methods like GPTQ compress models with almost no accuracy loss.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（GPTQ, 2022）</p>
+        <p lang="en">arXiv (Frantar et al., GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers, 2022)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#量化</a> <a class="tag" href="#">#模型压缩</a> <a class="tag" href="#">#推理优化</a>
+    </article>
+
+
+    <article class="qitem" id="dc8383a0a8ce">
+      <h2 class="qz" lang="zh">什么是大模型的规模定律，Chinchilla 纠正了此前的什么误区？</h2>
+      <p class="qen" lang="en">What are neural scaling laws, and what did Chinchilla correct about earlier practice?</p>
+      <div class="azh" lang="zh">规模定律指模型的交叉熵损失随参数量、训练 token 数和算力按平滑的幂律下降，因此性能在相当宽的范围内可以外推预测。Kaplan 等 2020 年的结果倾向于在固定算力下优先把参数堆大；Hoffmann 等 2022 年的 Chinchilla 工作重做了扫描实验，发现算力最优配置下参数量与训练 token 数应大致等比例增长，约每个参数配 20 个 token，说明此前的巨型模型普遍训练不足。按此配方训练的 700 亿参数 Chinchilla 在多项基准上胜过 2800 亿参数的 Gopher，直接改变了业界的取舍方向。</div>
+      <div class="aen" lang="en">Scaling laws describe how a language model&#x27;s cross-entropy loss falls as a smooth power law in parameters, training tokens and compute, which makes performance predictable by extrapolation across orders of magnitude. Kaplan et al. (2020) implied that a fixed compute budget should be spent mostly on parameters; Hoffmann et al.&#x27;s 2022 Chinchilla study redid the sweep and found the compute-optimal recipe grows parameters and tokens roughly in proportion, about 20 tokens per parameter, meaning earlier giant models were badly undertrained. A 70-billion-parameter Chinchilla trained that way outperformed the 280-billion Gopher on many benchmarks and shifted the field toward smaller models fed far more data.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Kaplan 等《Scaling Laws for Neural Language Models》(arXiv:2001.08361, 2020)；Hoffmann 等《Training Compute-Optimal Large Language Models》(NeurIPS 2022)</p>
+        <p lang="en">Kaplan et al., &quot;Scaling Laws for Neural Language Models&quot; (arXiv:2001.08361, 2020); Hoffmann et al., &quot;Training Compute-Optimal Large Language Models,&quot; NeurIPS (2022)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#规模定律</a> <a class="tag" href="#">#Chinchilla</a> <a class="tag" href="#">#算力最优</a> <a class="tag" href="#">#训练数据量</a>
+    </article>
+
+
+    <article class="qitem" id="dec8a9de5396">
+      <h2 class="qz" lang="zh">什么是注意力机制（Attention）？</h2>
+      <p class="qen" lang="en">What is the attention mechanism?</p>
+      <div class="azh" lang="zh">注意力让模型在处理一个词时动态关注输入里最相关的其他部分，而不是一视同仁，因此能捕捉长距离依赖，是现代大模型的核心。</div>
+      <div class="aen" lang="en">Attention lets a model focus on the most relevant parts of input when processing each item, capturing long-range relations, the core of modern large models.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#注意力</a> <a class="tag" href="#">#Transformer</a>
+    </article>
+
+
+    <article class="qitem" id="e3eafa53608f">
+      <h2 class="qz" lang="zh">什么是迁移学习（Transfer Learning）？</h2>
+      <p class="qen" lang="en">What is transfer learning?</p>
+      <div class="azh" lang="zh">迁移学习把在一个任务上学到的知识用到另一个相关任务，比如用大规模图像模型微调来识别医学影像，省时省力。</div>
+      <div class="aen" lang="en">Transfer learning reuses knowledge from one task for a related one, e.g., fine-tuning a big image model for medical scans, saving time and data.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#迁移学习</a> <a class="tag" href="#">#模型</a>
+    </article>
+
+
+    <article class="qitem" id="f1bf5a4feaf5">
+      <h2 class="qz" lang="zh">什么是对抗样本（Adversarial Example）？</h2>
+      <p class="qen" lang="en">What is an adversarial example?</p>
+      <div class="azh" lang="zh">对抗样本是对输入做人眼几乎看不出的微小改动，却让模型自信地判错（如把熊猫认成长臂猿），暴露模型脆弱性。</div>
+      <div class="aen" lang="en">An adversarial example applies tiny, human-invisible changes that make a model confidently wrong, e.g., a panda labeled a gibbon, exposing fragility.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#对抗样本</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="18497778be6f">
+      <h2 class="qz" lang="zh">大模型为什么常常数不清一个单词里有几个字母？</h2>
+      <p class="qen" lang="en">Why do large language models often miscount the letters inside a word?</p>
+      <div class="azh" lang="zh">模型看不到字符，它读到的是分词器切出的 token；BPE 之类的子词算法可能把 strawberry 切成 str、aw、berry 这样两三块，每块只是一个整数编号。字母层面的结构在嵌入向量里被压缩掉了，模型只能从训练文本中间接学到常见词的拼写，遇到罕见词或要求逐字计数就容易出错。让它先把单词一个字母一个字母地拆开写出来，或者把计数交给代码工具执行，都能显著提高正确率。</div>
+      <div class="aen" lang="en">The model never sees characters; it sees tokens produced by a tokenizer, and subword schemes such as BPE may split strawberry into two or three chunks like str, aw and berry, each merely an integer id. Letter-level structure is compressed away in the embedding, so the model can only infer spelling indirectly from training text and stumbles on rare words or explicit counting requests. Asking it to spell the word out one letter at a time, or delegating the count to a code tool, raises accuracy sharply.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Sennrich、Haddow 与 Birch《Neural Machine Translation of Rare Words with Subword Units》(ACL 2016)</p>
+        <p lang="en">Sennrich, Haddow &amp; Birch, &quot;Neural Machine Translation of Rare Words with Subword Units,&quot; ACL (2016)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1508.07909" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1508.07909：Neural Machine Translation o</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分词器</a> <a class="tag" href="#">#BPE</a> <a class="tag" href="#">#token</a> <a class="tag" href="#">#拼写计数</a>
+    </article>
+
+
+    <article class="qitem" id="30be1b934f66">
+      <h2 class="qz" lang="zh">什么是微调（Fine-tuning）？和大模型有什么关系？</h2>
+      <p class="qen" lang="en">What is fine-tuning, and how does it relate to large models?</p>
+      <div class="azh" lang="zh">微调是在已训练好的大模型基础上，用特定领域数据继续训练，让它学会专业任务，比从零训练省得多。</div>
+      <div class="aen" lang="en">Fine-tuning continues training a pre-trained large model on domain data so it learns a specialized task, far cheaper than training from scratch.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#微调</a> <a class="tag" href="#">#大模型</a>
+    </article>
+
+
+    <article class="qitem" id="5c9445281e76">
+      <h2 class="qz" lang="zh">强化学习是怎么训练的？和普通机器学习有什么不同？</h2>
+      <p class="qen" lang="en">How does reinforcement learning train, and how is it different from ordinary machine learning?</p>
+      <div class="azh" lang="zh">强化学习没有现成标签，智能体在环境里试错，通过动作获得奖励或惩罚来学习策略，目标是最大化长期累计奖励。AlphaGo 就靠和自己对弈强化训练。它和“喂标签学映射”的监督学习最大的不同是：训练数据来自智能体自己的行为序列，奖励稀疏且带有延迟。</div>
+      <div class="aen" lang="en">Reinforcement learning has no ready-made labels: an agent explores an environment, taking actions and receiving rewards or penalties, learning a policy that maximizes long-run cumulative reward. AlphaGo trained this way by playing against itself. The biggest difference from supervised “learn a mapping from labels” is that training data comes from the agent&#x27;s own action sequences, with sparse, delayed rewards.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Nature（AlphaGo 论文）</p>
+        <p lang="en">Nature (AlphaGo paper)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#强化学习</a> <a class="tag" href="#">#奖励</a> <a class="tag" href="#">#策略</a>
+    </article>
+
+
+    <article class="qitem" id="66d1c3320b5a">
+      <h2 class="qz" lang="zh">调用大模型时的 temperature 和 top-p 参数各自在改什么？</h2>
+      <p class="qen" lang="en">What do the temperature and top-p settings actually change when calling a language model?</p>
+      <div class="azh" lang="zh">模型每步输出词表上的一个概率分布，temperature 先把 logits 除以 T 再做 softmax：T 小于 1 让分布更尖锐、输出更保守也更容易重复，T 大于 1 让分布更平坦、更发散也更易出错，T 趋于 0 等价于每步取最大概率的贪心解码。top-p 也叫核采样，换一个思路：把候选按概率从高到低累加，只保留累计概率达到 p 的最小集合，归一化后再采样，从而动态截掉长尾里数量庞大但概率极低的词。两者常配合使用，事实性任务倾向低温度加较小的 p，创意写作则相反。</div>
+      <div class="aen" lang="en">At each step the model emits a probability distribution over the vocabulary; temperature divides the logits by T before the softmax, so T below 1 sharpens it into safer but more repetitive text, T above 1 flattens it into more diverse but error-prone text, and T approaching 0 becomes greedy decoding. Top-p, or nucleus sampling, takes a different route: it sorts candidates by probability, keeps the smallest set whose cumulative mass reaches p, renormalizes and samples from that, dynamically cutting off the enormous low-probability tail. The two are usually combined — low temperature with a modest p for factual work, the opposite for creative writing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Holtzman 等《The Curious Case of Neural Text Degeneration》(ICLR 2020)；OpenAI API 官方文档 Chat Completions 参数说明</p>
+        <p lang="en">Holtzman et al., &quot;The Curious Case of Neural Text Degeneration,&quot; ICLR (2020); OpenAI API documentation, Chat Completions parameters</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#温度采样</a> <a class="tag" href="#">#核采样</a> <a class="tag" href="#">#top-p</a> <a class="tag" href="#">#解码策略</a>
+    </article>
+
+
+    <article class="qitem" id="6ddf40f7113a">
+      <h2 class="qz" lang="zh">Transformer 的注意力机制是做什么的？&quot;注意力&quot;体现在哪里？</h2>
+      <p class="qen" lang="en">What does the attention mechanism in Transformers do? Where does the &quot;attention&quot; show up?</p>
+      <div class="azh" lang="zh">注意力让模型在编码或生成每个词时，动态地为序列中其他位置分配不同的权重，重点参考与当前词相关的信息。缩放点积注意力用 Query 与 Key 的相似度作为权重，经 softmax 归一化后对 Value 加权求和，从而把&quot;该关注什么&quot;变成可学习的参数。</div>
+      <div class="aen" lang="en">Attention lets the model, when encoding or generating each token, dynamically assign different weights to other positions in the sequence, focusing on the parts relevant to the current token. Scaled dot-product attention scores the similarity between Query and Key, normalizes it with softmax, and takes the weighted sum of Values, making &quot;what to attend to&quot; a learnable parameter.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">arXiv（Attention Is All You Need, 2017）</p>
+        <p lang="en">arXiv (Vaswani et al., Attention Is All You Need, 2017)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#注意力机制</a> <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#深度学习</a>
+    </article>
+
+
+    <article class="qitem" id="7dc656124980">
+      <h2 class="qz" lang="zh">什么是 RAG（检索增强生成）？</h2>
+      <p class="qen" lang="en">What is RAG (retrieval-augmented generation)?</p>
+      <div class="azh" lang="zh">RAG 在生成回答前先从知识库检索相关资料，再把资料交给大模型参考，从而减少胡编并让答案带上最新、可查证的信息。</div>
+      <div class="aen" lang="en">RAG retrieves relevant documents before answering, then feeds them to the model, reducing hallucinations and adding fresh, citable information.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#RAG</a> <a class="tag" href="#">#大模型</a>
+    </article>
+
+
+    <article class="qitem" id="8d3b9a8f0fc8">
+      <h2 class="qz" lang="zh">多模态大模型和纯文本模型有什么不同？它怎么把图片和文字放在一起理解？</h2>
+      <p class="qen" lang="en">How do multimodal LLMs differ from text-only ones, and how do they bring images and text together?</p>
+      <div class="azh" lang="zh">多模态模型能同时处理文本、图像、音频等多种输入。常见做法是用独立的视觉编码器（如 CLIP/ViT）把图像变成向量序列，经投影层映射到大语言模型的语义空间，再与文本 token 一起交给 Transformer 处理，从而实现看图问答、图文生成等能力。</div>
+      <div class="aen" lang="en">Multimodal models handle text, images, audio and more together. A typical design uses a separate vision encoder such as CLIP/ViT to turn images into vector sequences, projects them into the large language model&#x27;s semantic space, and feeds them to the Transformer alongside text tokens — enabling image-grounded Q&amp;A and image-plus-text generation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Liu、Li、Wu 与 Lee,《Visual Instruction Tuning》,Advances in Neural Information Processing Systems 36,2023 (DOI: 10.52202/075280-1516)</p>
+        <p lang="en">Liu, Li, Wu &amp; Lee, &#x27;Visual Instruction Tuning&#x27;, Advances in Neural Information Processing Systems 36, 2023, DOI: 10.52202/075280-1516</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/075280-1516" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.52202/075280-1516</a></p>
+        
+      </details>
+      <a class="tag" href="#">#多模态</a> <a class="tag" href="#">#视觉语言模型</a> <a class="tag" href="#">#大模型</a>
+    </article>
+
+
+    <article class="qitem" id="9064f0ce75aa">
+      <h2 class="qz" lang="zh">计算机是怎么“看”懂图片的？</h2>
+      <p class="qen" lang="en">How does a computer &quot;see&quot; and understand images?</p>
+      <div class="azh" lang="zh">图片对电脑只是像素数值矩阵。卷积神经网络用卷积核滑动扫描，从低级特征（边缘、颜色块）逐层组合出高级特征（眼睛、轮子），最后全连接层输出类别概率。这种层次化特征学习让视觉识别在2012年取得突破，现在连自动驾驶的车道、行人检测都靠它。</div>
+      <div class="aen" lang="en">To a computer an image is just a matrix of pixel numbers. Convolutional neural networks slide kernels over the image, building from low-level features (edges, color blobs) to high-level ones (eyes, wheels) layer by layer, with a final fully connected layer outputting class probabilities. This hierarchical feature learning broke through in 2012 and now powers lane and pedestrian detection in self-driving cars.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第9章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 9 (Convolutional Networks)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机视觉</a> <a class="tag" href="#">#卷积神经网络</a> <a class="tag" href="#">#特征提取</a>
+    </article>
+
+
+    <article class="qitem" id="92744d879958">
+      <h2 class="qz" lang="zh">什么是边缘 AI（Edge AI）？为什么不在云端跑？</h2>
+      <p class="qen" lang="en">What is edge AI, and why not just run it in the cloud?</p>
+      <div class="azh" lang="zh">边缘 AI 把模型放在手机、摄像头等本地设备上跑。好处是延迟低、保护隐私、断网也能用，缺点是算力有限。</div>
+      <div class="aen" lang="en">Edge AI runs models on local devices like phones and cameras, low latency, privacy, and offline use, at the cost of limited compute.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#边缘AI</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="968636e4e69a">
+      <h2 class="qz" lang="zh">什么是提示工程？为什么换个提问方式，同一个模型效果会差很多？</h2>
+      <p class="qen" lang="en">What is prompt engineering, and why does rephrasing a question change the same model&#x27;s output so much?</p>
+      <div class="azh" lang="zh">提示工程是设计输入文本让大模型输出更符合预期的方法。模型对指令措辞、示例和约束非常敏感：让模型&quot;一步步思考&quot;（思维链）能显著提高多步推理的准确率，给出 few-shot 示例可引导输出格式与风格，明确约束能减少跑题和幻觉。</div>
+      <div class="aen" lang="en">Prompt engineering designs input text to steer an LLM&#x27;s output toward the desired result. Models are highly sensitive to wording, examples and constraints: asking for step-by-step reasoning (chain-of-thought) markedly improves multi-step accuracy, few-shot examples guide output format and style, and explicit constraints reduce off-topic or hallucinated answers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wei 等,《Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models》,Advances in Neural Information Processing Systems 35,2022 (DOI: 10.52202/068431-1800)</p>
+        <p lang="en">Wei et al., &#x27;Chain-Of-Thought Prompting Elicits Reasoning in Large Language Models&#x27;, Advances in Neural Information Processing Systems 35, 2022, DOI: 10.52202/068431-1800</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/068431-1800" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.52202/068431-1800</a></p>
+        
+      </details>
+      <a class="tag" href="#">#提示工程</a> <a class="tag" href="#">#思维链</a> <a class="tag" href="#">#大模型</a>
+    </article>
+
+
+    <article class="qitem" id="9fc42a50cdfe">
+      <h2 class="qz" lang="zh">视频网站怎么知道你想看什么？</h2>
+      <p class="qen" lang="en">How do video sites know what you want to watch?</p>
+      <div class="azh" lang="zh">主流方法是协同过滤：认为相似用户喜欢相似内容，“和你口味相同的人还看了什么”就会推给你；基于内容的方法则按标签、题材匹配你喜欢的特征。系统还要排序、去重、兼顾探索新内容。冷启动难题是新人或新作品没有数据，常用热度、画像特征来兜底。</div>
+      <div class="aen" lang="en">The dominant approach is collaborative filtering: similar users like similar items, so “what people with your taste also watched” gets recommended; content-based methods match features like genres to your preferences. Systems then rank, de-duplicate, and balance exploration. The cold-start problem—new users or items with no data—is often handled with popularity and profile features.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Covington 等《Deep Neural Networks for YouTube Recommendations》(RecSys 2016);Yi 等《Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations》(RecSys 2019)</p>
+        <p lang="en">Covington et al., Deep Neural Networks for YouTube Recommendations, RecSys 2016; Yi et al., Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations, RecSys 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/2959100.2959190" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/2959100.2959190（复合著录按段核验：本标识只担保第一段 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#推荐系统</a> <a class="tag" href="#">#协同过滤</a> <a class="tag" href="#">#冷启动</a>
+    </article>
+
+
+    <article class="qitem" id="adb2edc6b9a1">
+      <h2 class="qz" lang="zh">什么是 AI 智能体（agent）？它和只会一问一答的聊天模型有什么不同？</h2>
+      <p class="qen" lang="en">What is an AI agent, and how is it different from a chatbot that only answers one question at a time?</p>
+      <div class="azh" lang="zh">智能体在大模型之外增加了&quot;感知-规划-行动&quot;的闭环：它把任务拆成子目标，调用搜索、代码执行、API 等工具，观察返回结果再修正下一步行动，直到完成多步任务。ReAct 等范式让模型交替进行推理与行动，把语言模型从对话工具变成能自主完成任务的工作流。</div>
+      <div class="aen" lang="en">Agents add a perceive-plan-act loop around the LLM: they break tasks into subgoals, call tools such as search, code execution or APIs, observe the results, and adjust the next action until a multi-step task is finished. Paradigms like ReAct interleave reasoning and acting, turning language models from chat tools into workflows that can complete tasks autonomously.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（ReAct, 2022）</p>
+        <p lang="en">arXiv (Yao et al., ReAct: Synergizing Reasoning and Acting in Language Models, 2022)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#AI 智能体</a> <a class="tag" href="#">#ReAct</a> <a class="tag" href="#">#工具调用</a>
+    </article>
+
+
+    <article class="qitem" id="b382c6f70f5e">
+      <h2 class="qz" lang="zh">知识蒸馏是怎么把大模型&quot;教&quot;给小模型的？</h2>
+      <p class="qen" lang="en">How does knowledge distillation &quot;teach&quot; a small model using a large one?</p>
+      <div class="azh" lang="zh">蒸馏让小模型（student）学习大模型（teacher）的软概率输出，而不只是硬标签，从而吸收&quot;相比 B，A 更接近 C&quot;这类细粒度判断。训练时通常用温度参数软化概率分布。DistilBERT 用蒸馏把 BERT 的体积缩小约 40%，推理更快，同时保留了约 97% 的能力。</div>
+      <div class="aen" lang="en">Distillation makes a student model learn the teacher&#x27;s soft probability outputs rather than only hard labels, absorbing fine-grained judgments such as &quot;A is closer to C than B is&quot;. A temperature parameter softens the distribution during training. DistilBERT uses distillation to shrink BERT by about 40%, running faster while retaining roughly 97% of its capabilities.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（DistilBERT, 2019）</p>
+        <p lang="en">arXiv (Sanh et al., DistilBERT, a distilled version of BERT, 2019)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#知识蒸馏</a> <a class="tag" href="#">#模型压缩</a> <a class="tag" href="#">#DistilBERT</a>
+    </article>
+
+
+    <article class="qitem" id="b420a3510d4b">
+      <h2 class="qz" lang="zh">什么是 MLOps？</h2>
+      <p class="qen" lang="en">What is MLOps?</p>
+      <div class="azh" lang="zh">MLOps 是把机器学习模型像软件一样持续训练、测试、部署和监控的实践，确保模型上线后还能稳定更新、及时发现退化。</div>
+      <div class="aen" lang="en">MLOps is the practice of continuously training, testing, deploying, and monitoring ML models like software, keeping them updated and catching degradation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MLOps</a> <a class="tag" href="#">#工程</a>
+    </article>
+
+
+    <article class="qitem" id="b99aaf6efc42">
+      <h2 class="qz" lang="zh">神经网络训练里的 epoch 和 batch 是什么？</h2>
+      <p class="qen" lang="en">What are epoch and batch in neural network training?</p>
+      <div class="azh" lang="zh">一个 epoch 是模型把全部训练数据看一遍；batch 是每次更新前用的一小撮数据。分 batch 是为了用有限显存逐步学习。</div>
+      <div class="aen" lang="en">One epoch means the model has seen all training data once; a batch is the small chunk used before each update. Batching lets learning fit in limited memory.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#训练</a> <a class="tag" href="#">#批次</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_009">
+      <h2 class="qz" lang="zh">AI 是怎么学会认出小猫的?它真的认识猫吗?</h2>
+      <p class="qen" lang="en">How does AI learn to spot cats? Does it really know cats?</p>
+      <div class="azh" lang="zh">工程师给AI看成千上万张猫的照片,它自己摸索出规律:尖耳朵、胡须、圆眼睛常一起出现——见到类似组合就喊猫。它并不懂什么是毛茸茸和喵喵叫,只是超级擅长找图案规律。所以有时会把豹纹地毯认成豹子,闹出可爱的笑话。</div>
+      <div class="aen" lang="en">Engineers show AI thousands of cat photos and it hunts patterns itself: pointy ears plus whiskers plus round eyes often appear together — similar combos get labeled cat. It never knows soft fur or meows; it is just superb at pattern spotting, sometimes mistaking leopard-print rugs for leopards.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">韩启德总主编《十万个为什么》(第六版),少年儿童出版社,2013</p>
+        <p lang="en">Han Qide chief ed., Ten Thousand Whys, 6th edition, Juvenile and Children Publishing House, 2013, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#人工智能</a> <a class="tag" href="#">#图像识别</a> <a class="tag" href="#">#机器学习</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_012">
+      <h2 class="qz" lang="zh">验证码明明很麻烦,网站为什么坚持要用它?它在防谁?</h2>
+      <p class="qen" lang="en">CAPTCHAs are annoying — who exactly are websites fighting?</p>
+      <div class="azh" lang="zh">验证码全称是全自动区分计算机和人类的图灵测试。抢票软件和刷号机器人能瞬间提交成千上万次请求,人类做不到;扭曲的文字或选红绿灯图片正是机器难以识别、人类轻松通过的关卡。讽刺的是AI进步让旧验证码纷纷失守,新一代开始用行为分析隐形判断。这是人机之间持续的军备竞赛。</div>
+      <div class="aen" lang="en">CAPTCHA abbreviates a Turing test separating computers from humans. Ticket bots submit thousands of requests per second; people cannot. Warped text or traffic-light pictures pass humans yet block machines. Ironically advancing AI cracks old codes, so new ones judge invisible behavior patterns. It is an ongoing human-versus-bot arms race.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">韩启德总主编《十万个为什么》(第六版),少年儿童出版社,2013</p>
+        <p lang="en">Han Qide chief ed., Ten Thousand Whys, 6th edition, Juvenile and Children Publishing House, 2013, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#验证码</a> <a class="tag" href="#">#图灵测试</a> <a class="tag" href="#">#反机器人</a>
+    </article>
+
+
+    <article class="qitem" id="e6f42041a951">
+      <h2 class="qz" lang="zh">为什么大语言模型会一本正经地说错话？&quot;幻觉&quot;是怎么产生的？</h2>
+      <p class="qen" lang="en">Why do LLMs confidently say wrong things? Where does hallucination come from?</p>
+      <div class="azh" lang="zh">大模型的核心是预测下一个词，它追求&quot;流畅合理&quot;而非&quot;与事实一致&quot;，在知识盲区会编造看似可信的内容，这就是幻觉。成因包括训练数据中的噪声、模型知识边界模糊、解码时偏向高频表达等；检索增强生成（RAG）、要求给出处和事实核查能有效缓解。</div>
+      <div class="aen" lang="en">LLMs are fundamentally next-token predictors that optimize for fluency rather than factual accuracy, so they fabricate plausible-sounding content at the edge of their knowledge — that is hallucination. Causes include noisy training data, fuzzy knowledge boundaries and decoding bias toward common patterns; retrieval-augmented generation (RAG), citation requirements and fact-checking mitigate it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（Huang 等, A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023）</p>
+        <p lang="en">arXiv (Huang et al., A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#幻觉</a> <a class="tag" href="#">#大模型</a> <a class="tag" href="#">#检索增强</a>
+    </article>
+
+
+    <article class="qitem" id="f868b9faa50e">
+      <h2 class="qz" lang="zh">什么是强化学习？和 AlphaGo 有什么关系？</h2>
+      <p class="qen" lang="en">What is reinforcement learning, and how is it linked to AlphaGo?</p>
+      <div class="azh" lang="zh">强化学习让智能体通过试错加奖励学策略，做对得高分、做错得低分。AlphaGo 用它与人类棋谱结合，学会下围棋。</div>
+      <div class="aen" lang="en">Reinforcement learning trains an agent by trial, error, and reward, good moves score high. AlphaGo combined it with human games to learn Go.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#强化学习</a> <a class="tag" href="#">#智能体</a>
+    </article>
+
+
+    <article class="qitem" id="fbd5d7b2f270">
+      <h2 class="qz" lang="zh">什么是模型漂移（Model Drift）？为什么上线后还要监控？</h2>
+      <p class="qen" lang="en">What is model drift, and why monitor after deployment?</p>
+      <div class="azh" lang="zh">现实数据会随时间变化（如用户口味变了），导致模型效果下降，这叫漂移。监控能早发现退化并触发重新训练。</div>
+      <div class="aen" lang="en">Real-world data shifts over time, e.g., user tastes change, degrading the model; this is drift. Monitoring catches it early and triggers retraining.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#模型漂移</a> <a class="tag" href="#">#MLOps</a>
+    </article>
+
+
+    <article class="qitem" id="fd25588ab649">
+      <h2 class="qz" lang="zh">监督学习和无监督学习有什么不同？</h2>
+      <p class="qen" lang="en">What is the difference between supervised and unsupervised learning?</p>
+      <div class="azh" lang="zh">监督学习用“带标签”的数据训练——每个样本都有正确答案，模型学习输入到输出的映射，用于分类（垃圾邮件识别）和回归（房价预测）。无监督学习只有数据没有标签，模型自己发现结构，典型任务是聚类（用户分群）和降维。差别就在“有没有老师告诉它正确答案”。</div>
+      <div class="aen" lang="en">Supervised learning trains on labeled data—every sample has the correct answer—so the model learns input-to-output mappings for classification (spam detection) and regression (housing price prediction). Unsupervised learning has only data, and the model finds structure itself, typically clustering (segmenting users) and dimensionality reduction. The difference is whether a “teacher” provides correct answers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#监督学习</a> <a class="tag" href="#">#无监督学习</a> <a class="tag" href="#">#标签</a>
+    </article>
+
+
+    <article class="qitem" id="feff6be83d61">
+      <h2 class="qz" lang="zh">机器学习里为什么要把数据分成训练、验证、测试三份？</h2>
+      <p class="qen" lang="en">Why split data into training, validation, and test sets in machine learning?</p>
+      <div class="azh" lang="zh">训练集用来调权重，验证集用来选超参数和监控过拟合，测试集只在最后评估一次，模拟“从没见过的新数据”。如果拿测试集反复调参，模型会悄悄适应它，评估分数虚高，发布后实际效果缩水。严格分离才能给出可信的性能估计。</div>
+      <div class="aen" lang="en">The training set fits weights, the validation set tunes hyperparameters and monitors overfitting, and the test set is evaluated exactly once at the end, simulating unseen data. Reusing the test set to tune parameters lets the model quietly adapt to it, inflating scores that then drop in production. Strict separation is the only way to get an honest performance estimate.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ian Goodfellow、Yoshua Bengio 与 Aaron Courville,《Deep Learning》,MIT Press,2016</p>
+        <p lang="en">Ian Goodfellow, Yoshua Bengio &amp; Aaron Courville, Deep Learning, MIT Press, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#训练集</a> <a class="tag" href="#">#验证集</a> <a class="tag" href="#">#测试集</a>
+    </article>
+
+
+    <article class="qitem" id="269d1c5ec791">
+      <h2 class="qz" lang="zh">什么是数据标注（Labeling）？</h2>
+      <p class="qen" lang="en">What is data labeling?</p>
+      <div class="azh" lang="zh">标注就是给人看的图片、文字等打上正确答案标签，比如圈出图片里的猫并写上猫，模型才能从中学习。</div>
+      <div class="aen" lang="en">Labeling means tagging data with correct answers, e.g., drawing a box around a cat and writing cat, so the model can learn from it.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据标注</a> <a class="tag" href="#">#训练</a>
+    </article>
+
+
+    <article class="qitem" id="cf576efbf879">
+      <h2 class="qz" lang="zh">训练数据和测试数据为什么要分开？</h2>
+      <p class="qen" lang="en">Why split training and testing data?</p>
+      <div class="azh" lang="zh">用同一批数据训练和打分，模型可能只是背答案。分开测试才能公平检验它在没见过的数据上是否真会做题。</div>
+      <div class="aen" lang="en">Scoring on the same data used to train lets the model just memorize answers. A separate test fairly checks performance on unseen data.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据集</a> <a class="tag" href="#">#评估</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

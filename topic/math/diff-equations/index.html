@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>diff-equations · 数学 Mathematics | 问答</title>
+<meta name="description" content="diff-equations（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="diff-equations · 数学 Mathematics | 问答">
+<meta property="og:description" content="diff-equations（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/diff-equations/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/diff-equations/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>diff-equations</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>diff-equations <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_22_003">初值问题 dy/dx=y^(2/3)、y(0)=0 的解为什么不唯一？这涉及皮卡</a></li><li><a href="#math_22_019">二阶线性微分方程在常点附近的解总能展开成普通幂级数；为什么遇到正则奇点就必须改用</a></li><li><a href="#math_22_011">解一阶线性微分方程 y′ + p(x)y = q(x) 时，为什么两边乘以积分因</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_22_003">
+      <h2 class="qz" lang="zh">初值问题 dy/dx=y^(2/3)、y(0)=0 的解为什么不唯一？这涉及皮卡存在唯一性定理的哪个条件？</h2>
+      <p class="qen" lang="en">Why does the initial value problem dy/dx=y^(2/3), y(0)=0 fail to have a unique solution, and which hypothesis of the Picard existence-uniqueness theorem is involved?</p>
+      <div class="azh" lang="zh">常值函数 y≡0 是一个解；且对任意 c≥0，令 x≤c 时 y=0、x&gt;c 时 y=(x-c)^3/27，两段光滑拼接且满足方程，故有无穷多解。根源是右端 f(y)=y^(2/3) 连续但对 y 的偏导 (2/3)y^(-1/3) 在 0 附近无界，破坏了局部利普希茨条件；皮卡-林德洛夫定理靠它收缩迭代锁定唯一解。</div>
+      <div class="aen" lang="en">The constant function y≡0 is one solution, and for any c≥0 we may splice: set y=0 for x≤c and y=(x-c)^3/27 for x&gt;c. The pieces join smoothly at c and satisfy the equation on each side, so there are infinitely many solutions. The culprit is f(y)=y^(2/3): it is continuous, yet its partial derivative in y, (2/3)y^(-1/3), blows up near y=0, so f fails to be locally Lipschitz in y. The Picard-Lindelof theorem relies on this condition to contract its iterates onto one solution; where it fails, uniqueness is lost.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">E. A. Coddington 与 N. Levinson，《Theory of Ordinary Differential Equations》（常微分方程理论），McGraw-Hill，1955，第1章第1-2节</p>
+        <p lang="en">E. A. Coddington &amp; N. Levinson, Theory of Ordinary Differential Equations, McGraw-Hill, 1955, Chapter 1, Sections 1-2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Theory+of+Ordinary+Differential+Equations" target="_blank" rel="noopener">核验依据 1 ISBN 9780898747553 (1955)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微分方程</a> <a class="tag" href="#">#存在唯一性</a> <a class="tag" href="#">#利普希茨条件</a>
+    </article>
+
+
+    <article class="qitem" id="math_22_019">
+      <h2 class="qz" lang="zh">二阶线性微分方程在常点附近的解总能展开成普通幂级数；为什么遇到正则奇点就必须改用弗罗贝尼乌斯法 y = x^r Σ a_n x^n？它多捕捉到了什么？</h2>
+      <p class="qen" lang="en">Solutions of second-order linear ODEs near an ordinary point expand as ordinary power series; why must the Frobenius ansatz y = x^r Σ a_n x^n take over at a regular singular point, and what does it capture beyond power series?</p>
+      <div class="azh" lang="zh">常点处系数解析，递推顺利闭合；正则奇点处系数含极点，纯幂级数无法平衡最高阶导数的奇性。代入 y = x^r Σ a_n x^n 后最低次幂给出指标方程 r(r-1)+p₀r+q₀=0 定出 r，再逐阶求 a_n；两根差非整数得两个独立解，为整数或重根则第二解含 x^r ln x 型项，幂律与对数奇性一并捕获，贝塞尔方程即经典案例。</div>
+      <div class="aen" lang="en">At an ordinary point the coefficients are analytic and recurrences close the power series neatly; at a regular singular point they carry poles, and a pure power series cannot balance the singularity of the highest derivative. Substituting y = x^r Σ a_n x^n, the lowest power yields the indicial equation r(r-1)+p₀r+q₀=0 fixing r, after which the a_n follow order by order. Roots differing by a non-integer give two independent solutions; an integer gap or double root forces a logarithmic term x^r ln x. The method captures power-law factors and logarithmic behavior alike, Bessel&#x27;s equation being the classic case.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">W. E. Boyce 与 R. C. DiPrima《Elementary Differential Equations and Boundary Value Problems》（第11版），Wiley，2017，第5章</p>
+        <p lang="en">W. E. Boyce &amp; R. C. DiPrima, Elementary Differential Equations and Boundary Value Problems, 11th ed., Wiley, 2017, Chapter 5</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elementary+Differential+Equations" target="_blank" rel="noopener">核验依据 1 ISBN 9780470115053 (2017)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elementary+Differential+Equations+and+Boundary+Value+Problems" target="_blank" rel="noopener">核验依据 2 ISBN 9780470115053 (2017)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微分方程</a> <a class="tag" href="#">#弗罗贝尼乌斯法</a> <a class="tag" href="#">#正则奇点</a> <a class="tag" href="#">#级数解</a>
+    </article>
+
+
+    <article class="qitem" id="math_22_011">
+      <h2 class="qz" lang="zh">解一阶线性微分方程 y′ + p(x)y = q(x) 时，为什么两边乘以积分因子 μ(x) = exp(∫p(x)dx)，方程就变得可以直接积分？</h2>
+      <p class="qen" lang="en">When solving the first-order linear ODE y′ + p(x)y = q(x), why does multiplying through by the integrating factor μ(x) = exp(∫p(x)dx) turn it into something you can integrate right away?</p>
+      <div class="azh" lang="zh">关键在乘积求导法则：恒有 (μy)′ = μ′y + μy′。取 μ = exp(∫p dx) 使 μ′ = pμ，则 μ(y′ + py) 恰好合成单一导数 (μy)′，方程变为 (μy)′ = μq，积分得 μy = ∫μq dx + C。积分因子把耦合的两项打包成一个整体导数，故一阶线性方程总有显式通解公式。</div>
+      <div class="aen" lang="en">The key is the product rule: (μy)′ = μ′y + μy′ holds identically. Choosing μ = exp(∫p dx) forces μ′ = pμ, so the left side μ(y′ + py) merges into the single derivative (μy)′; the equation becomes (μy)′ = μq, and integrating gives μy = ∫μq dx + C. An integrating factor packages two coupled unknown terms into one total derivative — which is precisely why every first-order linear equation admits an explicit general solution.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">W. E. Boyce 与 R. C. DiPrima《Elementary Differential Equations and Boundary Value Problems》（第11版），Wiley，2017，§2.2</p>
+        <p lang="en">W. E. Boyce &amp; R. C. DiPrima, Elementary Differential Equations and Boundary Value Problems, 11th ed., Wiley, 2017, §2.2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elementary+Differential+Equations" target="_blank" rel="noopener">核验依据 1 ISBN 9780470115053 (2017)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elementary+Differential+Equations+and+Boundary+Value+Problems" target="_blank" rel="noopener">核验依据 2 ISBN 9780470115053 (2017)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微分方程</a> <a class="tag" href="#">#积分因子</a> <a class="tag" href="#">#一阶线性方程</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>distributed · 计算机 Computer Science | 问答</title>
+<meta name="description" content="distributed（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="distributed · 计算机 Computer Science | 问答">
+<meta property="og:description" content="distributed（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/distributed/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/distributed/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>distributed</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>distributed <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>10</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#21cf58c7c4fb">共识算法 Raft 是如何选出主节点（leader）的？</a></li><li><a href="#7376e729b311">两阶段提交（2PC）的阻塞问题指什么？</a></li><li><a href="#cs_22_003">分布式存储宣称的线性一致性到底向客户端承诺了什么？</a></li><li><a href="#cs_22_019">Raft 一致性算法为什么需要任期号和随机化的选举超时？投票前的“日志至少一样新</a></li><li><a href="#d223b80617ec">CAP 定理说一致性、可用性、分区容错三者为何不能同时满足？</a></li><li><a href="#01a3fa938b84">一致性哈希（consistent hashing）怎么减少节点增减时的数据迁移？</a></li><li><a href="#cs_22_011">某 Dynamo 风格键值存储将每份数据复制到 3 个节点，写操作需得到其中 2</a></li><li><a href="#0325b378f329">什么是“最终一致性”？</a></li><li><a href="#395b5be25ad7">为什么把任务分给很多台电脑（分布式）反而比一台更难？</a></li><li><a href="#fa254d93a643">什么是幂等性，为什么在分布式系统里很重要？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="21cf58c7c4fb">
+      <h2 class="qz" lang="zh">共识算法 Raft 是如何选出主节点（leader）的？</h2>
+      <p class="qen" lang="en">How does the Raft consensus algorithm elect a leader?</p>
+      <div class="azh" lang="zh">Raft 中节点在“跟随者、候选者、领导者”三态间切换。跟随者超过选举超时未收到心跳就变成候选者，投自己一票并向他人拉票；拿到多数票的成为 leader，并定期发心跳维持权威。随机化的超时时间降低了平票重试的冲突。</div>
+      <div class="aen" lang="en">In Raft nodes cycle follower/candidate/leader. A follower that times out without a heartbeat becomes a candidate, votes for itself and asks peers for votes; the one with a majority becomes leader and sends heartbeats. Randomized timeouts avoid tied re-votes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Raft</a> <a class="tag" href="#">#共识</a>
+    </article>
+
+
+    <article class="qitem" id="7376e729b311">
+      <h2 class="qz" lang="zh">两阶段提交（2PC）的阻塞问题指什么？</h2>
+      <p class="qen" lang="en">What is the blocking problem in two-phase commit (2PC)?</p>
+      <div class="azh" lang="zh">2PC 由协调者先让各参与者“准备”，再发“提交”。若协调者在发出提交前崩溃，参与者已锁定资源却不知道该提交还是回滚，只能一直等待，造成资源阻塞。它用强一致换来了可用性脆弱。</div>
+      <div class="aen" lang="en">2PC has a coordinator ask participants to &#x27;prepare&#x27;, then &#x27;commit&#x27;. If the coordinator crashes before committing, participants hold locked resources with no decision and must wait—blocking. It trades availability for strong consistency.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#2PC</a> <a class="tag" href="#">#事务</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_003">
+      <h2 class="qz" lang="zh">分布式存储宣称的线性一致性到底向客户端承诺了什么？</h2>
+      <p class="qen" lang="en">What does linearizability actually promise to clients of a distributed system?</p>
+      <div class="azh" lang="zh">线性一致性要求每个操作看起来都在其调用与返回之间的某一瞬间原子地生效，且所有客户端看到同一个实时顺序：一旦某次写操作完成，之后发起的任何读都必须返回这次写入的值或更新的值。这等于把整个分布式服务对外呈现为一份数据的单一副本。最终一致性弱得多：只承诺停止更新后副本终将收敛，收敛之前允许读到旧数据。</div>
+      <div class="aen" lang="en">Linearizability requires every operation to take effect atomically at some instant between its invocation and its response, with all clients observing the same real-time order: once a write completes, any read issued afterwards must return that written value or a newer one. The whole service thereby behaves externally as a single copy of the data. Eventual consistency promises far less - merely that replicas converge once updates stop, while stale reads remain possible until then.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">M. Herlihy 与 J. Wing《Linearizability: A Correctness Condition for Concurrent Objects》，ACM Transactions on Programming Languages and Systems 第12卷第3期，1990，DOI: 10.1145/78969.78972</p>
+        <p lang="en">M. Herlihy &amp; J. Wing, &#x27;Linearizability: A Correctness Condition for Concurrent Objects&#x27;, ACM TOPLAS 12(3), 1990, DOI: 10.1145/78969.78972</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/78969.78972" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/78969.78972：Linearizability: a corre</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式系统</a> <a class="tag" href="#">#一致性模型</a> <a class="tag" href="#">#线性一致性</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_019">
+      <h2 class="qz" lang="zh">Raft 一致性算法为什么需要任期号和随机化的选举超时？投票前的“日志至少一样新”检查保证了什么？</h2>
+      <p class="qen" lang="en">Why does the Raft consensus algorithm need term numbers and randomized election timeouts? What does the &quot;log at least as up-to-date&quot; check before granting a vote guarantee?</p>
+      <div class="azh" lang="zh">Raft 把时间切成单调递增的任期，每个任期最多选出一位领导者。收不到心跳的跟随者会自增任期并发起拉票；随机化超时让各节点参选时刻错开，避免选票长期瓜分陷入活锁。候选人须附上自己最后一条日志的任期与索引，投票者仅当对方日志不旧于自己时才投——这确保已提交的日志不会被缺失它的新领导者覆盖，是安全性的基石。</div>
+      <div class="aen" lang="en">Raft splits time into monotonically increasing terms, and each term elects at most one leader. A follower that stops hearing heartbeats increments its term and campaigns; randomizing the election timeout staggers candidacies so votes are rarely split forever. Candidates attach their last log entry&#x27;s term and index, and voters grant a vote only if that log is at least as up-to-date as their own. This prevents committed entries from ever being overwritten by a new leader missing them — the cornerstone of Raft&#x27;s safety.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ongaro、Ousterhout，《寻找一种易于理解的一致性算法》，USENIX ATC 2014</p>
+        <p lang="en">Ongaro &amp; Ousterhout, In Search of an Understandable Consensus Algorithm, USENIX ATC 2014</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#共识算法</a> <a class="tag" href="#">#领导者选举</a> <a class="tag" href="#">#日志复制</a>
+    </article>
+
+
+    <article class="qitem" id="d223b80617ec">
+      <h2 class="qz" lang="zh">CAP 定理说一致性、可用性、分区容错三者为何不能同时满足？</h2>
+      <p class="qen" lang="en">Why can&#x27;t consistency, availability and partition tolerance all hold per CAP?</p>
+      <div class="azh" lang="zh">网络分区（P）在分布式系统中不可避免；一旦发生分区，你要么拒绝部分请求以保一致性（C），要么继续响应但可能返回旧数据以保可用性（A）。因此实际系统只能在 P 前提下二选一，而不是三者兼得。</div>
+      <div class="aen" lang="en">Network partitions (P) are unavoidable in distributed systems; when one happens you must either reject some requests to keep consistency (C) or keep responding with possibly stale data for availability (A). So under P you pick C or A, not both.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CAP</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="01a3fa938b84">
+      <h2 class="qz" lang="zh">一致性哈希（consistent hashing）怎么减少节点增减时的数据迁移？</h2>
+      <p class="qen" lang="en">How does consistent hashing reduce data movement when nodes join or leave?</p>
+      <div class="azh" lang="zh">它把节点和数据都映射到一个首尾相接的哈希环上，每个数据只交给环上顺时针最近的节点。新增或移除一个节点时，只有它相邻区间的数据需要迁移，而不是全部重新分配，从而把动荡降到最低。</div>
+      <div class="aen" lang="en">It maps both nodes and data onto a circular hash ring, each item going to the nearest node clockwise. Adding or removing one node only moves the data in its neighboring arc, not everything, minimizing churn.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_011">
+      <h2 class="qz" lang="zh">某 Dynamo 风格键值存储将每份数据复制到 3 个节点，写操作需得到其中 2 个节点（W=2）确认，读操作需访问其中 2 个节点（R=2）。请解释为什么任何一次成功读取都能读到最新写入的数据。</h2>
+      <p class="qen" lang="en">A Dynamo-style key-value store replicates every piece of data onto 3 nodes; a write needs confirmation from 2 nodes (W=2) and a read consults 2 nodes (R=2). Explain why every successful read returns the most recently written data.</p>
+      <div class="azh" lang="zh">关键在于读集合与写集合必然相交：两个节点的子集取自同一个三节点集合，由抽屉原理至少共享一个节点。写入成功后，交集节点已持有最新版本号，读取时比较版本号即可选出最新数据，因此无需分布式事务便能得到一致的读写效果。该机制还可调节 R 与 W 的取值，在读写延迟与一致性之间做工程权衡。</div>
+      <div class="aen" lang="en">The crux is that the read set and the write set must intersect: any two-element subsets drawn from the same three-node collection share at least one node by the pigeonhole principle. After a successful write, that intersecting node already holds the newest version number, and readers compare versions to pick the latest value, so consistent reads need no distributed transactions. The scheme also lets engineers tune R and W to trade off read latency, write latency, and consistency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">G. DeCandia 等人论文 Dynamo：亚马逊的高可用键值存储，发表于 SOSP 2007，DOI: 10.1145/1294261.1294281</p>
+        <p lang="en">G. DeCandia et al., Dynamo: Amazon&#x27;s Highly Available Key-value Store, Proc. SOSP 2007, DOI: 10.1145/1294261.1294281</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1294261.1294281" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/1294261.1294281：Dynamo（2007，按著录自报 DO</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式系统</a> <a class="tag" href="#">#仲裁机制</a> <a class="tag" href="#">#一致性</a>
+    </article>
+
+
+    <article class="qitem" id="0325b378f329">
+      <h2 class="qz" lang="zh">什么是“最终一致性”？</h2>
+      <p class="qen" lang="en">What is &#x27;eventual consistency&#x27;?</p>
+      <div class="azh" lang="zh">最终一致性是说：如果暂时不再写入，过一段时间后所有副本会自动变成相同的数据。它允许系统先快速响应、各副本暂时不一致，适合对实时一致要求不高的场景，比如社交动态的时间线。</div>
+      <div class="aen" lang="en">Eventual consistency means that if writes stop, all replicas will become identical after some time. The system can respond fast with temporarily differing copies—fine for feeds where instant agreement isn&#x27;t critical.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="395b5be25ad7">
+      <h2 class="qz" lang="zh">为什么把任务分给很多台电脑（分布式）反而比一台更难？</h2>
+      <p class="qen" lang="en">Why is splitting work across many computers harder than using one?</p>
+      <div class="azh" lang="zh">因为多台机器会各自出错、网络会延迟或断开，而且它们对“现在发生了什么”看法可能不一致。要让它们像一台机器那样可靠协作，就得额外处理同步、容错和冲突，所以更难。</div>
+      <div class="aen" lang="en">Machines fail independently, networks lag or drop, and they may disagree on &#x27;what happened&#x27;. Making them cooperate reliably like one machine means handling sync, faults and conflicts—so it&#x27;s harder.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#容错</a>
+    </article>
+
+
+    <article class="qitem" id="fa254d93a643">
+      <h2 class="qz" lang="zh">什么是幂等性，为什么在分布式系统里很重要？</h2>
+      <p class="qen" lang="en">What is idempotency and why does it matter in distributed systems?</p>
+      <div class="azh" lang="zh">幂等指同一操作执行一次或多次结果相同；网络重试和重复消息很常见，接口设计成幂等可避免重复扣款、重复下单等错误，常用去重键或状态机实现。</div>
+      <div class="aen" lang="en">Idempotency means repeating an operation yields the same result; since retries and duplicates are common in networks, idempotent APIs prevent double-charging or double-ordering, often via dedup keys or state machines.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#可靠性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

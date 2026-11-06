@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>complexity · 数学 Mathematics | 问答</title>
+<meta name="description" content="complexity（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="complexity · 数学 Mathematics | 问答">
+<meta property="og:description" content="complexity（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/complexity/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/complexity/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>complexity</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>complexity <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#e57e9d86c21e">为什么‘旅行商’和‘背包’这类问题让我们头疼？</a></li><li><a href="#math_26_015">P与NP问题到底在问什么？假如某个NP完全问题——例如旅行商问题的判定版本——被</a></li><li><a href="#3ca8189b6a34">快速排序平均为什么是 O(n log n)？</a></li><li><a href="#876102ab0cb7">傅里叶变换把信号拆成了什么？</a></li><li><a href="#f1062a911398">动态规划和‘暴力枚举’差在哪？</a></li><li><a href="#ee0b9ee2c322">为什么‘排序’是计算机里的基本功？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="e57e9d86c21e">
+      <h2 class="qz" lang="zh">为什么‘旅行商’和‘背包’这类问题让我们头疼？</h2>
+      <p class="qen" lang="en">Why do problems like TSP and knapsack give us headaches?</p>
+      <div class="azh" lang="zh">它们属于 NP 难：目前没有已知能在多项式时间内精确求解的算法，输入稍大就爆炸式变难。实际靠近似、动态规划或启发式在可接受误差内解决。</div>
+      <div class="aen" lang="en">They are NP-hard: no known polynomial-time exact algorithm, and difficulty explodes with size. In practice we use approximation, dynamic programming or heuristics within acceptable error.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Applegate、Bixby、Chvatal 与 Cook,《The Traveling Salesman Problem》,Princeton University Press,2006</p>
+        <p lang="en">D. L. Applegate et al., The Traveling Salesman Problem, Princeton University Press, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Traveling+Salesman+Problem" target="_blank" rel="noopener">核验依据 1 ISBN 9780691129938 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#NP难</a>
+    </article>
+
+
+    <article class="qitem" id="math_26_015">
+      <h2 class="qz" lang="zh">P与NP问题到底在问什么？假如某个NP完全问题——例如旅行商问题的判定版本——被找到多项式时间算法，密码学与复杂性理论将发生怎样的连锁崩塌？</h2>
+      <p class="qen" lang="en">What is the P versus NP question really asking — and if some NP-complete problem, say the decision version of the traveling salesman problem, were found a polynomial-time algorithm, what chain reaction would sweep through cryptography and complexity theory?</p>
+      <div class="azh" lang="zh">它在问：凡是答案容易验证的问题，是否都同样容易解答？P类问题可在多项式时间内求出答案，NP类问题的候选答案可在多项式时间内核对；二者是否相等悬置逾五十年，位列克雷数学研究所千禧年七大难题之首。一旦某个NP完全问题获得多项式算法，依据库克-列文定理的多项式归约，所有NP问题随之可解，RSA等公钥体系的难度根基将即刻瓦解。</div>
+      <div class="aen" lang="en">It asks whether every problem whose answers are easy to verify is also easy to solve. Problems in P admit polynomial-time solutions; candidate answers to problems in NP can be checked in polynomial time; whether the two classes coincide has hung open for over half a century, heading the Clay Mathematics Institute&#x27;s seven Millennium Problems. The moment any NP-complete problem gains a polynomial algorithm, polynomial reductions via the Cook-Levin theorem make all NP problems tractable too, instantly dissolving the hardness foundation of public-key schemes such as RSA.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. A. Cook,《The complexity of theorem-proving procedures》,Proceedings of the third annual ACM symposium on Theory of computing (STOC),1971 (DOI: 10.1145/800157.805047)</p>
+        <p lang="en">S. A. Cook, &#x27;The complexity of theorem-proving procedures&#x27;, Proceedings of the third annual ACM symposium on Theory of computing (STOC), 1971, DOI: 10.1145/800157.805047</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/800157.805047" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/800157.805047</a></p>
+        
+      </details>
+      <a class="tag" href="#">#P/NP问题</a> <a class="tag" href="#">#NP完全</a> <a class="tag" href="#">#库克-列文定理</a>
+    </article>
+
+
+    <article class="qitem" id="3ca8189b6a34">
+      <h2 class="qz" lang="zh">快速排序平均为什么是 O(n log n)？</h2>
+      <p class="qen" lang="en">Why is quicksort average O(n log n)?</p>
+      <div class="azh" lang="zh">每次划分把数组大致对半分，需约 log n 层，每层总计扫描 O(n) 个元素，故平均 O(n log n)。最坏（已排序且总选端点）会退化到 O(n²)。</div>
+      <div class="aen" lang="en">Each partition splits the array roughly in half, needing about log n levels, and each level scans O(n) elements total, giving average O(n log n). The worst case (sorted input, bad pivot) degrades to O(n²).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Martzloff, J.-C., 《中国数学史》, Springer</p>
+        <p lang="en">Martzloff, J.-C., &#x27;A History of Chinese Mathematics&#x27;, Springer</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL32240873W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL32240873W：A History of Chinese M</a></p>
+        
+      </details>
+      <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#排序</a>
+    </article>
+
+
+    <article class="qitem" id="876102ab0cb7">
+      <h2 class="qz" lang="zh">傅里叶变换把信号拆成了什么？</h2>
+      <p class="qen" lang="en">What does the Fourier transform decompose a signal into?</p>
+      <div class="azh" lang="zh">它把随时间变化的信号分解成不同频率的正弦波叠加，让你看到‘含有哪些频率、各占多少’。音乐均衡器和图像压缩都建立在它之上。</div>
+      <div class="aen" lang="en">It breaks a time signal into a sum of sine waves of different frequencies, revealing which frequencies are present and how strongly. Audio equalizers and image compression build on it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">同济大学数学系 编,《高等数学》第7版,高等教育出版社,2014</p>
+        <p lang="en">Tongji University Dept. of Math, Advanced Mathematics, 7th ed., Higher Education Press, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26311133/" target="_blank" rel="noopener">核验依据 2 ISBN 9787040396638（豆瓣书目条目: 高等数学·上册）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#傅里叶</a> <a class="tag" href="#">#频率</a>
+    </article>
+
+
+    <article class="qitem" id="f1062a911398">
+      <h2 class="qz" lang="zh">动态规划和‘暴力枚举’差在哪？</h2>
+      <p class="qen" lang="en">How does dynamic programming differ from &#x27;brute-force enumeration&#x27;?</p>
+      <div class="azh" lang="zh">暴力把子问题重复算很多遍；动态规划把已算的结果存起来复用（记忆化），把指数级开销压成多项式。典型如最长公共子序列、背包问题。</div>
+      <div class="aen" lang="en">Brute force recomputes subproblems repeatedly; dynamic programming stores and reuses results (memoization), turning exponential cost into polynomial. Classic for longest common subsequence and knapsack.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bellman《动态规划》(1957)；Cormen 等《算法导论》</p>
+        <p lang="en">Bellman, &#x27;Dynamic Programming&#x27; (1957); Cormen et al., &#x27;Introduction to Algorithms&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#动态规划</a>
+    </article>
+
+
+    <article class="qitem" id="ee0b9ee2c322">
+      <h2 class="qz" lang="zh">为什么‘排序’是计算机里的基本功？</h2>
+      <p class="qen" lang="en">Why is &#x27;sorting&#x27; a basic skill in computing?</p>
+      <div class="azh" lang="zh">许多任务（查找、去重、合并、中位数）都先排序会更快；而比较排序的理论下界是 O(n log n)，是算法课的第一个重要结论。</div>
+      <div class="aen" lang="en">Many tasks (search, dedupe, merge, median) get faster after sorting; the theoretical lower bound for comparison sorting is O(n log n), a first key result in algorithms.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》Cormen 等</p>
+        <p lang="en">Introduction to Algorithms by Cormen Leiserson Rivest and Stein</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#排序</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

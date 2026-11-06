@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>信息论与编码 information-theory-coding · 数学 Mathematics | 问答</title>
+<meta name="description" content="信息论与编码（数学）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="信息论与编码 information-theory-coding · 数学 Mathematics | 问答">
+<meta property="og:description" content="信息论与编码（数学）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/information-theory-coding/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/information-theory-coding/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>信息论与编码</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>信息论与编码 <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>10</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#809de1584c5a">什么是霍夫曼编码？它为何能实现最优的前缀无歧义压缩？</a></li><li><a href="#cb6216e7828c">柯尔莫哥洛夫复杂度是什么？</a></li><li><a href="#d1975798c3ea">信道容量定理（香农定理）的核心结论是什么？为何存在不可逾越的可靠传输速率上限？</a></li><li><a href="#039a2a42956c">什么是哈希函数的基本性质？它为什么难以被逆向？</a></li><li><a href="#0ddcb727b191">什么是率失真理论？它如何在允许失真的前提下给出压缩极限？</a></li><li><a href="#2906f4cdd7bc">无损压缩为什么不能把任何文件都压得更小？</a></li><li><a href="#63321693d6fd">什么是里德-所罗门码？它为何广泛应用于光盘与深空通信？</a></li><li><a href="#69e8ccbb5f0a">什么是香农熵？它如何度量一个随机源的不确定性？</a></li><li><a href="#a09d992bf993">什么是互信息？它与条件熵有何关系？</a></li><li><a href="#math_20_012">Hamming(7,4) 码只靠 3 个校验位就能定位并纠正 7 位分组中的任意</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="809de1584c5a">
+      <h2 class="qz" lang="zh">什么是霍夫曼编码？它为何能实现最优的前缀无歧义压缩？</h2>
+      <p class="qen" lang="en">What is Huffman coding, and why does it achieve optimal prefix-free compression?</p>
+      <div class="azh" lang="zh">霍夫曼编码按符号概率自底向上合并最小概率节点构建二叉树，高频符号得到短码、低频符号得到长码。所得码字是前缀码（任一码字不是他者前缀），且在所有前缀码中平均码长最短，达到熵给出的下界（取整后），因而是最优可变长编码。</div>
+      <div class="aen" lang="en">Huffman coding builds a binary tree by repeatedly merging the two least-probable nodes, giving short codes to frequent symbols and long codes to rare ones. The resulting codewords form a prefix code (no codeword is a prefix of another) and, among all prefix-free codes, minimize average length, approaching the entropy lower bound (after rounding), thus optimal variable-length coding.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#霍夫曼</a> <a class="tag" href="#">#前缀码</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="cb6216e7828c">
+      <h2 class="qz" lang="zh">柯尔莫哥洛夫复杂度是什么？</h2>
+      <p class="qen" lang="en">What is Kolmogorov complexity?</p>
+      <div class="azh" lang="zh">它是生成某字符串的最短程序长度，衡量其‘内在随机性’。无法被简短描述的对象（如随机序列）复杂度高；但它本身不可计算（没有通用算法能算出最短程序）。</div>
+      <div class="aen" lang="en">It is the length of the shortest program that outputs a string, measuring its intrinsic randomness. Objects not briefly describable (like random sequences) have high complexity—but it is uncomputable in general.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cover, T. M. &amp; Thomas, J. A.《Elements of Information Theory》,Wiley</p>
+        <p lang="en">Cover, T. M. &amp; Thomas, J. A., Elements of Information Theory, Wiley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#随机性</a>
+    </article>
+
+
+    <article class="qitem" id="d1975798c3ea">
+      <h2 class="qz" lang="zh">信道容量定理（香农定理）的核心结论是什么？为何存在不可逾越的可靠传输速率上限？</h2>
+      <p class="qen" lang="en">What is the core conclusion of the channel capacity theorem (Shannon&#x27;s theorem), and why is there an unsurpassable upper bound on reliable transmission rate?</p>
+      <div class="azh" lang="zh">香农定理给出有噪信道容量 $C=B\log_2(1+S/N)$，即在带宽 B 与信噪比 S/N 下可实现任意小错误概率的最大速率。低于 C 时可编码逼近零误码，高于 C 则无论怎样编码都必有误码——这是通信的理论极限。</div>
+      <div class="aen" lang="en">Shannon&#x27;s theorem gives the noisy-channel capacity $C=B\log_2(1+S/N)$, the maximum rate with arbitrarily small error for bandwidth B and signal-to-noise ratio S/N. Below C one can encode to near-zero error; above C no coding can avoid errors, setting a fundamental communication limit.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信道容量</a> <a class="tag" href="#">#香农定理</a> <a class="tag" href="#">#信噪比</a>
+    </article>
+
+
+    <article class="qitem" id="039a2a42956c">
+      <h2 class="qz" lang="zh">什么是哈希函数的基本性质？它为什么难以被逆向？</h2>
+      <p class="qen" lang="en">What are the basic properties of a hash function, and why is it hard to invert?</p>
+      <div class="azh" lang="zh">密码学哈希把任意长度输入映射为固定长度输出，需满足确定性、快速计算、抗碰撞（难找两输入同输出）与单向性（由输出难反推输入）。由于输出空间远小于输入空间且映射高度混合，逆向需穷举，计算上不可行。</div>
+      <div class="aen" lang="en">A cryptographic hash maps arbitrary input to fixed-length output, requiring determinism, efficiency, collision resistance (hard to find two inputs with the same output), and one-wayness (hard to recover input from output). Since the output space is much smaller than the input space and the mapping is highly mixed, inversion requires infeasible brute force.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《应用密码学》Schneier</p>
+        <p lang="en">Applied Cryptography by Bruce Schneier</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1088180/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111075882（豆瓣书目条目: 应用密码学）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#单向性</a> <a class="tag" href="#">#抗碰撞</a>
+    </article>
+
+
+    <article class="qitem" id="0ddcb727b191">
+      <h2 class="qz" lang="zh">什么是率失真理论？它如何在允许失真的前提下给出压缩极限？</h2>
+      <p class="qen" lang="en">What is rate-distortion theory, and how does it give the compression limit when some distortion is allowed?</p>
+      <div class="azh" lang="zh">率失真理论在允许最大失真 D 的约束下，求编码所需的最小速率 $R(D)=\min I(X;\hat X)$，其中 $\hat X$ 是重建值。它说明有损压缩存在权衡曲线：允许失真越大，所需比特率越低，由互信息的最小值界定，是 JPEG、MP3 等标准的理论根基。</div>
+      <div class="aen" lang="en">Rate-distortion theory finds the minimum rate $R(D)=\min I(X;\hat X)$ needed to reproduce a source within maximum distortion D, where $\hat X$ is the reconstruction. It shows a trade-off curve for lossy compression: more allowed distortion means fewer bits, bounded by the minimum mutual information, underpinning standards like JPEG and MP3.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#率失真</a> <a class="tag" href="#">#有损压缩</a> <a class="tag" href="#">#互信息</a>
+    </article>
+
+
+    <article class="qitem" id="2906f4cdd7bc">
+      <h2 class="qz" lang="zh">无损压缩为什么不能把任何文件都压得更小？</h2>
+      <p class="qen" lang="en">Why can&#x27;t lossless compression shrink every file?</p>
+      <div class="azh" lang="zh">若每个文件都能无损变小，反复压缩会无限变小，最后只能映射到单一文件，不可能还原。所以随机或已压缩的数据往往‘压不动’。</div>
+      <div class="aen" lang="en">If every file could shrink losslessly, repeated compression would shrink infinitely to a single file, impossible to invert. So random or already-compressed data usually cannot be compressed further.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cover, T. M. &amp; Thomas, J. A.《Elements of Information Theory》,Wiley</p>
+        <p lang="en">Cover, T. M. &amp; Thomas, J. A., Elements of Information Theory, Wiley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#压缩</a> <a class="tag" href="#">#信息论</a>
+    </article>
+
+
+    <article class="qitem" id="63321693d6fd">
+      <h2 class="qz" lang="zh">什么是里德-所罗门码？它为何广泛应用于光盘与深空通信？</h2>
+      <p class="qen" lang="en">What are Reed-Solomon codes, and why are they widely used in optical discs and deep-space communication?</p>
+      <div class="azh" lang="zh">里德-所罗门码是基于有限域上多项式的纠错码，把数据视为多项式系数，在多余点上采样作为冗余。它能纠正成块突发错误（整段字节丢失），在 CD/DVD、二维码与旅行者号深空链路中表现优异，因为突发错误比随机位错更常见。</div>
+      <div class="aen" lang="en">Reed-Solomon codes are error-correcting codes over finite fields that treat data as polynomial coefficients and sample at extra points for redundancy. They correct burst errors (whole byte blocks lost), performing excellently in CDs/DVDs, QR codes, and Voyager deep-space links, where bursts are more common than random bit flips.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《纠错码理论》MacWilliams 与 Sloane</p>
+        <p lang="en">The Theory of Error-Correcting Codes by MacWilliams and Sloane</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#里德-所罗门</a> <a class="tag" href="#">#突发错误</a> <a class="tag" href="#">#有限域</a>
+    </article>
+
+
+    <article class="qitem" id="69e8ccbb5f0a">
+      <h2 class="qz" lang="zh">什么是香农熵？它如何度量一个随机源的不确定性？</h2>
+      <p class="qen" lang="en">What is Shannon entropy, and how does it measure the uncertainty of a random source?</p>
+      <div class="azh" lang="zh">香农熵定义为 $H(X)=-\sum_i p_i\log_2 p_i$，其中 $p_i$ 是各结果概率。熵越大表示结果越难预测：确定事件的熵为 0，均匀分布的熵最大。它以比特为单位，量化了信息源的平均信息量。</div>
+      <div class="aen" lang="en">Shannon entropy is $H(X)=-\sum_i p_i\log_2 p_i$, where $p_i$ are outcome probabilities. Larger entropy means harder prediction: a certain event has entropy 0 and a uniform distribution maximizes it. Measured in bits, it quantifies the average information content of a source.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#香农熵</a> <a class="tag" href="#">#信息量</a> <a class="tag" href="#">#不确定性</a>
+    </article>
+
+
+    <article class="qitem" id="a09d992bf993">
+      <h2 class="qz" lang="zh">什么是互信息？它与条件熵有何关系？</h2>
+      <p class="qen" lang="en">What is mutual information, and how is it related to conditional entropy?</p>
+      <div class="azh" lang="zh">互信息 $I(X;Y)=H(X)-H(X|Y)$ 度量从 Y 中获得关于 X 的信息量，也等于 $H(Y)-H(Y|X)$。它衡量两变量间的统计依赖：独立时互信息为 0，完全相关时等于各自熵。它对称且非负。</div>
+      <div class="aen" lang="en">Mutual information $I(X;Y)=H(X)-H(X|Y)$ measures the information about X gained from Y, equivalently $H(Y)-H(Y|X)$. It captures statistical dependence between variables: zero when independent, equal to the individual entropy when perfectly correlated. It is symmetric and nonnegative.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#互信息</a> <a class="tag" href="#">#条件熵</a> <a class="tag" href="#">#依赖</a>
+    </article>
+
+
+    <article class="qitem" id="math_20_012">
+      <h2 class="qz" lang="zh">Hamming(7,4) 码只靠 3 个校验位就能定位并纠正 7 位分组中的任意单比特错误,这套机制具体怎么运作?为什么 3 个校验位不多不少正好够用?</h2>
+      <p class="qen" lang="en">How does the Hamming(7,4) code pinpoint and repair any single flipped bit in a 7-bit block using only 3 parity bits, and why are exactly 3 check bits neither more nor less than enough?</p>
+      <div class="azh" lang="zh">给 7 个位置写下 1 到 7 的二进制编号后,三个校验方程分别看管索引某一位为 1 的那些位置:第 1 位覆盖全部奇数位置,第 2 位覆盖 2、3、6、7,第 4 位覆盖 4 到 7。收方重算三个奇偶得到的 3 比特伴随式,其数值本身就是出错位置的二进制编号,000 则代表无错。从计数角度看,纠单错必须区分 8 种情形——7 个可能位置加上无错,而 3 个校验位恰好提供 2^3=8 种状态,一种不浪费,这也是它被称为完备码的原因。</div>
+      <div class="aen" lang="en">Write the seven positions numbered 1 through 7 in binary and let each of the three parity equations watch exactly those indices with a 1 in one bit: bit one covers all odd indices, bit two covers 2, 3, 6 and 7, and bit four covers 4 through 7. On reception the receiver recomputes three parities, and the resulting 3-bit syndrome numerically equals the binary index of the flipped bit, with 000 signaling no error at all. Counted information-theoretically, single-error correction must distinguish 8 outcomes — 7 possible locations plus no error — and 3 check bits supply exactly 2^3=8 states with none squandered, which is why the scheme is called a perfect code.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">R. W. Hamming, Error Detecting and Error Correcting Codes, Bell System Technical Journal, vol. 29, no. 2, pp. 147-160, 1950</p>
+        <p lang="en">R. W. Hamming, Error Detecting and Error Correcting Codes, Bell System Technical Journal 29 (1950) 147-160</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" rel="noopener">核验依据 1 DOI 10.1002/j.1538-7305.1950.tb00463.x</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编码理论</a> <a class="tag" href="#">#汉明码</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>control-theory · 数学 Mathematics | 问答</title>
+<meta name="description" content="control-theory（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="control-theory · 数学 Mathematics | 问答">
+<meta property="og:description" content="control-theory（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/control-theory/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/control-theory/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>control-theory</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>control-theory <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_23_004">在反馈控制中，为什么只有比例作用的控制器常常留下稳态误差，而加入积分作用就能消除</a></li><li><a href="#math_23_012">对线性时不变系统 x′ = Ax + Bu，状态反馈 u = −Kx 能把闭环极</a></li><li><a href="#math_23_020">负反馈为什么能降低系统行为对被控对象参数变化的敏感度并抑制环内扰动？这样做的代价</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_23_004">
+      <h2 class="qz" lang="zh">在反馈控制中，为什么只有比例作用的控制器常常留下稳态误差，而加入积分作用就能消除它？</h2>
+      <p class="qen" lang="en">In feedback control, why does a purely proportional controller usually leave a steady-state error, and how does adding integral action eliminate it?</p>
+      <div class="azh" lang="zh">稳态误差由终值定理决定：单位反馈系统的稳态误差大致等于参考值除以开环增益，纯比例控制无论增益多大都无法让误差归零。加入积分环节后控制器带有因子 1/s：只要误差不为零，积分输出就会持续累积、继续驱动执行机构，直到误差消失为止。这正是内模原理的体现——控制器内部必须包含扰动或参考信号自身的动态模型。</div>
+      <div class="aen" lang="en">The steady-state error is governed by the final-value theorem: in a unity-feedback loop it is essentially the reference divided by the open-loop gain, so proportional control alone cannot drive it to zero however large the gain. Adding an integral term gives the controller a factor 1/s: whenever the error is nonzero, its integral keeps accumulating and keeps driving the actuator, changing until the error vanishes. This embodies the internal model principle — the controller must contain a model of the disturbance or reference signal dynamics.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. A. Francis 与 W. M. Wonham“控制理论的内模原理”(The internal model principle of control theory)，Automatica 第12卷第5期第457–465页，1976，DOI 10.1016/0005-1098(76)90006-5。</p>
+        <p lang="en">B. A. Francis &amp; W. M. Wonham, &quot;The internal model principle of control theory&quot;, Automatica 12(5):457–465, 1976, DOI 10.1016/0005-1098(76)90006-5.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1016/0005-1098(76)90006-6" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1016/0005-1098(76)90006-6：The internal mo</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反馈控制</a> <a class="tag" href="#">#积分作用</a> <a class="tag" href="#">#稳态误差</a> <a class="tag" href="#">#内模原理</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_012">
+      <h2 class="qz" lang="zh">对线性时不变系统 x′ = Ax + Bu，状态反馈 u = −Kx 能把闭环极点配置到任意指定位置的条件是什么？为什么这个条件恰好就是可控性？</h2>
+      <p class="qen" lang="en">For the linear time-invariant system x′ = Ax + Bu, under what condition can the state feedback u = −Kx place the closed-loop poles at arbitrary prescribed locations? And why is that condition exactly controllability?</p>
+      <div class="azh" lang="zh">条件是可控性矩阵 [B, AB, …, A^(n−1)B] 满秩（Kalman 秩条件）。满秩时化为可控标准形，K 的分量直接成为闭环特征多项式的系数，任给期望多项式即可解出 K（如 Ackermann 公式）。若有与输入解耦的特征方向，其特征值不随 K 改变，故该条件既必要又充分。</div>
+      <div class="aen" lang="en">Full rank of the controllability matrix [B, AB, …, A^(n−1)B] — the Kalman rank condition. Under full rank, a coordinate change brings the pair into controller canonical form, where the entries of K appear directly as coefficients of the closed-loop characteristic polynomial, so any desired polynomial determines K (Ackermann’s formula is one recipe). An eigendirection decoupled from the input keeps its eigenvalue no matter how K is chosen, making the rank condition both necessary and sufficient.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chen, C.-T.，《线性系统理论与设计》(Linear System Theory and Design)，第3版，Oxford University Press，1999年。</p>
+        <p lang="en">Chen, C.-T., Linear System Theory and Design, 3rd ed., Oxford University Press, 1999.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2715713W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2715713W：Linear system theory an</a></p>
+        
+      </details>
+      <a class="tag" href="#">#状态反馈</a> <a class="tag" href="#">#极点配置</a> <a class="tag" href="#">#可控性</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_020">
+      <h2 class="qz" lang="zh">负反馈为什么能降低系统行为对被控对象参数变化的敏感度并抑制环内扰动？这样做的代价是什么？</h2>
+      <p class="qen" lang="en">Why does negative feedback reduce the sensitivity of system behavior to plant parameter variations and suppress disturbances arising inside the loop, and what price is paid?</p>
+      <div class="azh" lang="zh">记环路增益为 L，对象参数的相对变化反映到闭环响应时约缩小为原来的 1/(1+L)，环内扰动同样被该因子衰减。增益越大，性能越不依赖对对象的精确建模，鲁棒性与抗扰力越强；但高增益会侵蚀相位裕度，可能引起振荡甚至失稳，须在敏感度与稳定裕度间折中。反馈凭实时测量自动纠偏，是与开环控制的本质分野。</div>
+      <div class="aen" lang="en">With loop gain L, a fractional variation of the plant reaches the closed-loop response multiplied by about 1/(1+L), and disturbances entering inside the loop are attenuated by the same factor. Larger gain means less dependence on accurately knowing the plant and stronger robustness, but eroding phase margin can cause oscillation or instability, so a trade-off is unavoidable. Feedback corrects errors from live measurements, its essential divide from open-loop control.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">K.J. Åström、R.M. Murray《Feedback Systems: An Introduction for Scientists and Engineers（反馈系统）》，Princeton University Press，2008 年</p>
+        <p lang="en">K.J. Åström &amp; R.M. Murray, Feedback Systems: An Introduction for Scientists and Engineers, Princeton University Press, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17801284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17801284W：Feedback systems : an </a></p>
+        
+      </details>
+      <a class="tag" href="#">#负反馈</a> <a class="tag" href="#">#灵敏度函数</a> <a class="tag" href="#">#环路增益</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

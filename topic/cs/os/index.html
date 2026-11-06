@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>os · 计算机 Computer Science | 问答</title>
+<meta name="description" content="os（计算机）分类下的 35 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 35 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="os · 计算机 Computer Science | 问答">
+<meta property="og:description" content="os（计算机）分类下的 35 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 35 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/os/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/os/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>os</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>os <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>35</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#24693c66d858">什么是调度算法？</a></li><li><a href="#3046a21cb6e3">什么是分页（paging）？</a></li><li><a href="#3e04b2fc9985">页表（page table）和 TLB 是怎么协作实现虚拟内存的？</a></li><li><a href="#40c48d6e2e5f">一致性哈希的&quot;虚拟节点&quot;解决什么问题？为什么能改善数据倾斜？</a></li><li><a href="#473d2193c457">什么是用户态和内核态？</a></li><li><a href="#78cd6bbaf267">虚拟内存解决了什么问题？</a></li><li><a href="#ba760426c353">Paxos 解决什么问题？为什么它需要 Prepare 与 Accept 两个阶</a></li><li><a href="#bdab62efa76f">Raft 用哪些机制让共识算法更易理解？它是怎么选出领导者的？</a></li><li><a href="#058b6e37e2b8">一致性哈希解决了传统&quot;取模哈希&quot;在节点增删时的什么问题？</a></li><li><a href="#23e9943c051c">什么是系统调用？</a></li><li><a href="#3de6f2fe01df">什么是进程和线程？</a></li><li><a href="#4c887711f1fd">Docker 容器和虚拟机的主要区别是什么？为什么容器启动更快？</a></li><li><a href="#50ecc2e6e894">常见的 CPU 调度算法有哪些？</a></li><li><a href="#5f154d4e6aa6">写时复制（copy-on-write）是怎么优化 fork 的？</a></li><li><a href="#5f3095d99788">文件系统在操作系统里做什么？</a></li><li><a href="#658aa2bf2a3f">死锁产生的四个必要条件是什么？</a></li><li><a href="#8498d0663832">什么是死锁？</a></li><li><a href="#86709902111d">MapReduce 把大规模数据处理拆成哪两个阶段？它适合什么样的任务？</a></li><li><a href="#8fd5fbd3db04">负载均衡器在网络中起什么作用？常见的调度策略有哪些？</a></li><li><a href="#a59c8f6cbbc1">上下文切换（context switch）的开销主要来自哪里？</a></li><li><a href="#a655c39ec7de">CAP 定理说了什么？分布式系统真能同时保证一致性、可用性和分区容错吗？</a></li><li><a href="#afae6282f21c">消息队列在分布式系统中有什么作用？&quot;异步解耦&quot;指什么？</a></li><li><a href="#be0a8e26d2cb">无服务器计算（Serverless）是&quot;没有服务器&quot;吗？FaaS 是什么意思？</a></li><li><a href="#cs_22_002">什么是写时复制（Copy-on-Write）？它为什么能让 fork() 几乎瞬</a></li><li><a href="#cs_24_003">一次进程上下文切换时内核究竟做了什么?切换的主要开销其实在哪里?</a></li><li><a href="#df27e2d1861f">两阶段提交（2PC）如何保证多个数据库要么全部提交、要么全部回滚？</a></li><li><a href="#0c5b4a764a49">手机为什么会自己把切到后台的 App 关掉？</a></li><li><a href="#1ce4fd25871a">电脑是怎么“同时”做好几件事的？</a></li><li><a href="#491b32e3ff75">电脑或手机出毛病时，为什么「重启一下」经常真的有用？</a></li><li><a href="#6b499645b618">电脑按下开关以后，为什么要等一会儿才能用？</a></li><li><a href="#9af25420a850">电脑卡住时，关掉程序为什么有用？</a></li><li><a href="#caca815c1ee4">什么是文件，电脑怎么整理它们？</a></li><li><a href="#cs_24_004">fork 之后父子进程看起来各有一份完整的内存,为什么系统几乎一瞬间就完成了复制</a></li><li><a href="#dea9efedf041">电脑怎么同时做很多件事？</a></li><li><a href="#dfc4829a2671">什么是操作系统？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="24693c66d858">
+      <h2 class="qz" lang="zh">什么是调度算法？</h2>
+      <p class="qen" lang="en">What is a scheduling algorithm?</p>
+      <div class="azh" lang="zh">调度算法决定哪个就绪任务先使用 CPU，常见策略有先来先服务、轮转、优先级调度等，目标是公平与高效。</div>
+      <div class="aen" lang="en">A scheduling algorithm decides which ready task gets the CPU next, with strategies like first-come-first-served, round-robin, and priority scheduling, aiming for fairness and efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#调度</a> <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#算法</a>
+    </article>
+
+
+    <article class="qitem" id="3046a21cb6e3">
+      <h2 class="qz" lang="zh">什么是分页（paging）？</h2>
+      <p class="qen" lang="en">What is paging?</p>
+      <div class="azh" lang="zh">分页把内存和硬盘都切成固定大小的页，按需把页在两者之间搬动，简化了内存管理并避免了外部碎片。</div>
+      <div class="aen" lang="en">Paging divides memory and disk into fixed-size pages, moving them between the two on demand, simplifying management and avoiding external fragmentation.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分页</a> <a class="tag" href="#">#内存</a> <a class="tag" href="#">#管理</a>
+    </article>
+
+
+    <article class="qitem" id="3e04b2fc9985">
+      <h2 class="qz" lang="zh">页表（page table）和 TLB 是怎么协作实现虚拟内存的？</h2>
+      <p class="qen" lang="en">How do the page table and TLB cooperate to implement virtual memory?</p>
+      <div class="azh" lang="zh">CPU 发出虚拟地址，MMU 查页表把它翻译成物理地址；页表存在内存里、查找较慢，于是用一小块极快的 TLB 缓存最近的翻译结果。TLB 命中可瞬间完成，未命中才去查多级页表，可能还要处理缺页。</div>
+      <div class="aen" lang="en">The CPU issues a virtual address; the MMU translates it via the page table in RAM, which is slow, so a tiny fast TLB caches recent translations. A TLB hit resolves instantly; a miss walks the multi-level page table and may trigger a page fault.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#虚拟内存</a> <a class="tag" href="#">#TLB</a>
+    </article>
+
+
+    <article class="qitem" id="40c48d6e2e5f">
+      <h2 class="qz" lang="zh">一致性哈希的&quot;虚拟节点&quot;解决什么问题？为什么能改善数据倾斜？</h2>
+      <p class="qen" lang="en">What problem do virtual nodes solve in consistent hashing, and why do they reduce data skew?</p>
+      <div class="azh" lang="zh">真实节点少且哈希位置分散不均匀时，环上各节点负责的弧段长短差异很大，造成数据严重倾斜。虚拟节点给每个物理节点复制出几十到几百个哈希位置散布在环上，使负载分布趋于均匀，还能按机器性能设置不同权重；节点增减时数据迁移也更平滑，Cassandra、Redis Cluster 等均采用此设计。</div>
+      <div class="aen" lang="en">With few real nodes scattered unevenly on the ring, the arcs each node owns vary wildly, causing severe data skew. Virtual nodes give each physical node dozens to hundreds of hashed positions spread around the ring, smoothing the load distribution, and allow per-machine weights; adding or removing nodes migrates data more evenly. Cassandra and Redis Cluster adopt this design.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cattell 2010《Scalable SQL and NoSQL Data Stores》（ACM SIGMOD Record 39(4)）；DeCandia 等 2007（Amazon Dynamo，SOSP）；Silberschatz 等《数据库系统概念》NoSQL 章节</p>
+        <p lang="en">Cattell (2010), &#x27;Scalable SQL and NoSQL Data Stores&#x27;, ACM SIGMOD Record 39(4); DeCandia et al. (2007), Dynamo, SOSP; Silberschatz et al., Database System Concepts (NoSQL chapter)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）；本条出处含多部著作，此标识只担保上面点名</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#虚拟节点</a> <a class="tag" href="#">#分布式存储</a>
+    </article>
+
+
+    <article class="qitem" id="473d2193c457">
+      <h2 class="qz" lang="zh">什么是用户态和内核态？</h2>
+      <p class="qen" lang="en">What are user mode and kernel mode?</p>
+      <div class="azh" lang="zh">CPU 用特权级区分两种模式：用户态运行普通应用、权限受限；内核态运行操作系统、可访问硬件与全部内存，敏感操作通过系统调用陷入内核以保障安全。</div>
+      <div class="aen" lang="en">The CPU uses privilege levels: user mode runs apps with restricted rights; kernel mode runs the OS with full hardware and memory access, and sensitive ops trap into the kernel via system calls for safety.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Operating Systems (Silberschatz)</p>
+        <p lang="en">Operating Systems (Silberschatz)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#OS</a> <a class="tag" href="#">#特权</a>
+    </article>
+
+
+    <article class="qitem" id="78cd6bbaf267">
+      <h2 class="qz" lang="zh">虚拟内存解决了什么问题？</h2>
+      <p class="qen" lang="en">What problem does virtual memory solve?</p>
+      <div class="azh" lang="zh">虚拟内存为每个进程提供独立的连续地址空间，并通过页表映射到物理内存，实现内存隔离、按需分页（只加载用到的页）以及用磁盘交换扩展可用内存。</div>
+      <div class="aen" lang="en">Virtual memory gives each process a private contiguous address space mapped via page tables to physical RAM, enabling isolation, demand paging (load only used pages) and disk-backed expansion of memory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Operating Systems (Silberschatz)</p>
+        <p lang="en">Operating Systems (Silberschatz)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#OS</a> <a class="tag" href="#">#内存</a>
+    </article>
+
+
+    <article class="qitem" id="ba760426c353">
+      <h2 class="qz" lang="zh">Paxos 解决什么问题？为什么它需要 Prepare 与 Accept 两个阶段？</h2>
+      <p class="qen" lang="en">What problem does Paxos solve, and why does it need Prepare and Accept phases?</p>
+      <div class="azh" lang="zh">Paxos 让一组可能崩溃、消息可能丢失的节点对一个值达成共识，是分布式一致性协议的基石。Prepare 阶段用递增的提案编号询问并收集&quot;多数派已接受的最大编号值&quot;；Accept 阶段提交该值并由多数派接受。编号约束保证了安全性——绝不会出现两个不同值都被多数派接受的情况，即使部分节点失效也能继续推进。</div>
+      <div class="aen" lang="en">Paxos makes a set of crash-prone, message-losing nodes agree on a single value — the foundation of distributed consensus protocols. The Prepare phase uses increasing proposal numbers to gather the highest-numbered value already accepted by a majority; the Accept phase commits that value to a majority. The numbering discipline guarantees safety — two different values can never both be accepted by majorities — and progress continues despite partial failures.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Paxos</a> <a class="tag" href="#">#共识</a> <a class="tag" href="#">#分布式一致性</a>
+    </article>
+
+
+    <article class="qitem" id="bdab62efa76f">
+      <h2 class="qz" lang="zh">Raft 用哪些机制让共识算法更易理解？它是怎么选出领导者的？</h2>
+      <p class="qen" lang="en">What mechanisms make Raft easier to understand, and how does it elect a leader?</p>
+      <div class="azh" lang="zh">Raft 把共识拆成领导选举、日志复制、安全性三个相对独立的子问题，并引入强领导者、任期号、日志匹配、选举限制等简化规则。节点处于跟随者/候选者/领导者三态：跟随者超时未收到心跳就转为候选者，递增任期号并请求投票，获得多数票即当选。任期号保证任何时刻至多一个有效领导者，投票限制保证日志的完整性。</div>
+      <div class="aen" lang="en">Raft decomposes consensus into leader election, log replication and safety, adding simplifying rules such as a strong leader, term numbers, log matching and election restrictions. Nodes are followers, candidates or leaders: a follower that times out without a heartbeat becomes a candidate, bumps its term, requests votes, and wins with a majority. Terms ensure at most one valid leader at any time, and voting restrictions preserve log integrity.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ongaro 与 Ousterhout《Raft 共识算法》(USENIX ATC, 2014)</p>
+        <p lang="en">Ongaro &amp; Ousterhout, &#x27;In Search of an Understandable Consensus Algorithm (Raft)&#x27; (USENIX ATC, 2014)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Raft</a> <a class="tag" href="#">#领导选举</a> <a class="tag" href="#">#日志复制</a>
+    </article>
+
+
+    <article class="qitem" id="058b6e37e2b8">
+      <h2 class="qz" lang="zh">一致性哈希解决了传统&quot;取模哈希&quot;在节点增删时的什么问题？</h2>
+      <p class="qen" lang="en">What problem with hash-modulo distribution does consistent hashing solve when nodes are added or removed?</p>
+      <div class="azh" lang="zh">传统的 hash(key) mod n 在节点数 n 变化时几乎要迁移全部键。一致性哈希把键和节点都映射到同一个环上，每个键归属于环上第一个遇到的节点；节点增删只影响环上相邻的一小段，通常只有约 1/n 的键需要迁移，因此非常适合缓存和分布式存储的动态扩容。</div>
+      <div class="aen" lang="en">With hash(key) mod n, changing the node count n migrates almost every key. Consistent hashing maps both keys and nodes onto one ring, assigning each key to the first node encountered; adding or removing a node affects only a small neighboring arc, so typically only about 1/n of keys migrate — ideal for caches and distributed storage under dynamic scaling.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">G. DeCandia 等人论文 Dynamo：亚马逊的高可用键值存储，发表于 SOSP 2007，DOI: 10.1145/1294261.1294281</p>
+        <p lang="en">G. DeCandia et al., Dynamo: Amazon&#x27;s Highly Available Key-value Store, Proc. SOSP 2007, DOI: 10.1145/1294261.1294281</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1294261.1294281" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/1294261.1294281：Dynamo（2007，按著录自报 DO</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#分布式存储</a> <a class="tag" href="#">#缓存</a>
+    </article>
+
+
+    <article class="qitem" id="23e9943c051c">
+      <h2 class="qz" lang="zh">什么是系统调用？</h2>
+      <p class="qen" lang="en">What is a system call?</p>
+      <div class="azh" lang="zh">系统调用是用户程序请求内核服务的受控接口（如读写文件、创建进程），通过软中断或特殊指令从用户态切换到内核态执行，结束后返回。</div>
+      <div class="aen" lang="en">A system call is the controlled interface by which user programs request kernel services (file I/O, process creation); it traps from user mode into kernel mode via interrupt and returns after execution.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Operating Systems (Silberschatz)</p>
+        <p lang="en">Operating Systems (Silberschatz)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#OS</a> <a class="tag" href="#">#内核</a>
+    </article>
+
+
+    <article class="qitem" id="3de6f2fe01df">
+      <h2 class="qz" lang="zh">什么是进程和线程？</h2>
+      <p class="qen" lang="en">What are processes and threads?</p>
+      <div class="azh" lang="zh">进程是程序运行时的独立实例，拥有自己的内存；线程是进程内的执行单位，同一进程的线程共享内存，可并行工作。</div>
+      <div class="aen" lang="en">A process is an independent running instance of a program with its own memory; a thread is a unit of execution within a process that shares memory and can work in parallel.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#进程</a> <a class="tag" href="#">#线程</a> <a class="tag" href="#">#并发</a>
+    </article>
+
+
+    <article class="qitem" id="4c887711f1fd">
+      <h2 class="qz" lang="zh">Docker 容器和虚拟机的主要区别是什么？为什么容器启动更快？</h2>
+      <p class="qen" lang="en">What is the main difference between Docker containers and virtual machines? Why do containers start faster?</p>
+      <div class="azh" lang="zh">虚拟机通过 Hypervisor 虚拟出整套硬件并运行一个完整的客户操作系统；容器则共享宿主机的内核，用命名空间（namespace）隔离进程视图、用 cgroups 限制资源，只打包应用及其依赖。容器没有启动内核的开销，因此秒级启动、资源占用更小，但隔离性弱于虚拟机。</div>
+      <div class="aen" lang="en">Virtual machines emulate a full set of hardware and run a complete guest operating system via a hypervisor; containers share the host kernel, isolating process views with namespaces and limiting resources with cgroups, packaging only the application and its dependencies. Without the cost of booting a kernel, containers start in seconds and use fewer resources, though their isolation is weaker than a VM&#x27;s.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《操作系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Operating System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Operating+System+Concepts" target="_blank" rel="noopener">核验依据 1 ISBN 9780470577233 (2019)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Docker</a> <a class="tag" href="#">#容器</a> <a class="tag" href="#">#虚拟化</a>
+    </article>
+
+
+    <article class="qitem" id="50ecc2e6e894">
+      <h2 class="qz" lang="zh">常见的 CPU 调度算法有哪些？</h2>
+      <p class="qen" lang="en">What are common CPU scheduling algorithms?</p>
+      <div class="azh" lang="zh">常见算法包括先来先服务、短作业优先、时间片轮转、多级反馈队列和完全公平调度（CFS）；目标是平衡吞吐量、响应时间和公平性。</div>
+      <div class="aen" lang="en">Common algorithms include FCFS, shortest-job-first, round-robin, multi-level feedback queues and CFS; the goal is balancing throughput, response time and fairness.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Operating Systems (Silberschatz)</p>
+        <p lang="en">Operating Systems (Silberschatz)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#OS</a> <a class="tag" href="#">#调度</a>
+    </article>
+
+
+    <article class="qitem" id="5f154d4e6aa6">
+      <h2 class="qz" lang="zh">写时复制（copy-on-write）是怎么优化 fork 的？</h2>
+      <p class="qen" lang="en">How does copy-on-write optimize fork?</p>
+      <div class="azh" lang="zh">fork 创建子进程时并不立即复制整个内存，而是让父子共享同一份物理页并标记为只读；只有当某一方真正写入某页时，才复制那一页。这样大多数 fork 几乎零拷贝，极大加快进程创建。</div>
+      <div class="aen" lang="en">fork doesn&#x27;t copy memory immediately; parent and child share pages marked read-only, and only when one writes a page is that page actually copied. Most forks thus cost almost nothing, speeding up process creation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#写时复制</a> <a class="tag" href="#">#fork</a>
+    </article>
+
+
+    <article class="qitem" id="5f3095d99788">
+      <h2 class="qz" lang="zh">文件系统在操作系统里做什么？</h2>
+      <p class="qen" lang="en">What does a file system do in an operating system?</p>
+      <div class="azh" lang="zh">文件系统负责把硬盘上的数据组织成文件和文件夹，并记录它们存放在哪些位置，方便你保存和查找。</div>
+      <div class="aen" lang="en">A file system organizes disk data into files and folders and tracks where each is stored, so you can save and find things.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#文件系统</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="658aa2bf2a3f">
+      <h2 class="qz" lang="zh">死锁产生的四个必要条件是什么？</h2>
+      <p class="qen" lang="en">What are the four necessary conditions for a deadlock?</p>
+      <div class="azh" lang="zh">互斥、持有并等待、不可剥夺、循环等待，四者同时成立才会死锁。只要打破任意一个（例如强制按序申请资源、允许抢占），就能防止死锁发生。</div>
+      <div class="aen" lang="en">Mutual exclusion, hold-and-wait, no preemption, and circular wait must all hold for a deadlock. Breaking any one—e.g. ordering resource requests or allowing preemption—prevents it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#死锁</a> <a class="tag" href="#">#并发</a>
+    </article>
+
+
+    <article class="qitem" id="8498d0663832">
+      <h2 class="qz" lang="zh">什么是死锁？</h2>
+      <p class="qen" lang="en">What is a deadlock?</p>
+      <div class="azh" lang="zh">死锁是多个进程互相持有对方需要的资源并都不放手，导致谁也无法继续前进的僵局，常见条件是循环等待。</div>
+      <div class="aen" lang="en">A deadlock is when processes each hold a resource the others need and none release, so none can proceed; circular wait is a classic condition.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#死锁</a> <a class="tag" href="#">#并发</a> <a class="tag" href="#">#资源</a>
+    </article>
+
+
+    <article class="qitem" id="86709902111d">
+      <h2 class="qz" lang="zh">MapReduce 把大规模数据处理拆成哪两个阶段？它适合什么样的任务？</h2>
+      <p class="qen" lang="en">Into which two phases does MapReduce split large-scale data processing, and what tasks suit it?</p>
+      <div class="azh" lang="zh">MapReduce 先由 Map 阶段对每个数据块并行处理并产生中间键值对，再由 Reduce 阶段把相同键的值聚合。系统自动处理分片、调度、容错和排序，适合计数、统计、排序这类可以&quot;分而治之&quot;的批处理任务；需要多次迭代和共享状态的任务（如图计算）则效率不高。</div>
+      <div class="aen" lang="en">MapReduce first runs a Map phase that processes each data block in parallel, emitting intermediate key-value pairs, then a Reduce phase aggregates values sharing the same key. The framework handles partitioning, scheduling, fault tolerance and sorting, suiting batch jobs like counting, statistics and sorting that divide-and-conquer well; workloads needing many iterations and shared state, such as graph algorithms, fit it poorly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Dean 与 Ghemawat《MapReduce: 大规模数据处理》(OSDI, 2004)；Google 内部实践</p>
+        <p lang="en">Dean &amp; Ghemawat, &#x27;MapReduce: Simplified Data Processing&#x27; (OSDI, 2004); Google engineering</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MapReduce</a> <a class="tag" href="#">#大数据</a> <a class="tag" href="#">#并行计算</a>
+    </article>
+
+
+    <article class="qitem" id="8fd5fbd3db04">
+      <h2 class="qz" lang="zh">负载均衡器在网络中起什么作用？常见的调度策略有哪些？</h2>
+      <p class="qen" lang="en">What do load balancers do in a network, and what scheduling strategies are common?</p>
+      <div class="azh" lang="zh">负载均衡器把进入的请求分发到多台后端服务器，避免单台机器过载，从而提升整体吞吐量和可用性。常见的调度策略包括轮询（round-robin）、加权轮询、最少连接数、IP/会话哈希，以及基于后端响应时间的动态策略。</div>
+      <div class="aen" lang="en">Load balancers distribute incoming requests across multiple backend servers to prevent any single machine from being overloaded, improving overall throughput and availability. Common scheduling strategies include round-robin, weighted round-robin, least-connections, IP/session hashing, and dynamic policies based on backend response times.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#负载均衡</a> <a class="tag" href="#">#调度</a> <a class="tag" href="#">#高可用</a>
+    </article>
+
+
+    <article class="qitem" id="a59c8f6cbbc1">
+      <h2 class="qz" lang="zh">上下文切换（context switch）的开销主要来自哪里？</h2>
+      <p class="qen" lang="en">Where does the overhead of a context switch come from?</p>
+      <div class="azh" lang="zh">切换时要保存当前线程的寄存器、程序计数器等状态，再加载下一个线程的状态，并往往导致 CPU 缓存和 TLB 部分失效，使后续指令变慢。频繁切换会让大量时间花在“换人”而非“干活”上。</div>
+      <div class="aen" lang="en">Switching saves the current thread&#x27;s registers and program counter, loads the next one&#x27;s, and often invalidates parts of the CPU cache and TLB, slowing later instructions. Too-frequent switches waste time on &#x27;swapping&#x27; rather than work.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#上下文切换</a> <a class="tag" href="#">#OS</a>
+    </article>
+
+
+    <article class="qitem" id="a655c39ec7de">
+      <h2 class="qz" lang="zh">CAP 定理说了什么？分布式系统真能同时保证一致性、可用性和分区容错吗？</h2>
+      <p class="qen" lang="en">What does the CAP theorem state? Can a distributed system really guarantee consistency, availability and partition tolerance at once?</p>
+      <div class="azh" lang="zh">CAP 定理指出：分布式系统在一致性（Consistency）、可用性（Availability）和分区容错性（Partition tolerance）中最多同时满足两个。网络分区无法避免，所以当分区发生时必须在一致性与可用性之间取舍，许多系统选择可用性优先，接受短暂的不一致，即最终一致。</div>
+      <div class="aen" lang="en">The CAP theorem states that a distributed system can satisfy at most two of consistency, availability and partition tolerance. Network partitions are unavoidable, so during a partition the system must choose between consistency and availability; many systems prefer availability and accept brief inconsistency — eventual consistency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brewer 2000；Gilbert &amp; Lynch 2002；Coulouris《分布式系统》</p>
+        <p lang="en">Brewer (2000); Gilbert &amp; Lynch (2002); Coulouris, Distributed Systems</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3609847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3609847W：Distributed systems（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#CAP 定理</a> <a class="tag" href="#">#分布式系统</a> <a class="tag" href="#">#一致性</a>
+    </article>
+
+
+    <article class="qitem" id="afae6282f21c">
+      <h2 class="qz" lang="zh">消息队列在分布式系统中有什么作用？&quot;异步解耦&quot;指什么？</h2>
+      <p class="qen" lang="en">What role do message queues play in distributed systems? What does &quot;asynchronous decoupling&quot; mean?</p>
+      <div class="azh" lang="zh">消息队列让生产者和消费者互不依赖：生产者把消息投递给队列就可以返回，消费者在空闲时异步取走并处理。它能缓冲突发的流量高峰（削峰填谷）、在多个消费者之间分配任务，还能暂存已投递但未确认的消息，配合重试机制容忍消费者故障。</div>
+      <div class="aen" lang="en">Message queues decouple producers from consumers: a producer publishes a message and returns, and consumers pull and process messages asynchronously when ready. Queues buffer traffic spikes, distribute work across multiple consumers, and retain unacknowledged messages so that combined with retries they can tolerate consumer failures.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brewer 2000；Gilbert &amp; Lynch 2002；Coulouris《分布式系统》</p>
+        <p lang="en">Brewer (2000); Gilbert &amp; Lynch (2002); Coulouris, Distributed Systems</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3609847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3609847W：Distributed systems（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#消息队列</a> <a class="tag" href="#">#异步</a> <a class="tag" href="#">#解耦</a>
+    </article>
+
+
+    <article class="qitem" id="be0a8e26d2cb">
+      <h2 class="qz" lang="zh">无服务器计算（Serverless）是&quot;没有服务器&quot;吗？FaaS 是什么意思？</h2>
+      <p class="qen" lang="en">Is serverless computing really &quot;without servers&quot;? What does FaaS mean?</p>
+      <div class="azh" lang="zh">无服务器并不是没有服务器，而是把服务器的部署、扩容和运维完全交给云平台，开发者只需上传函数代码。FaaS（函数即服务）按事件触发执行函数、按调用次数和运行时长计费，空闲时零成本，适合突发性强的工作负载；缺点是冷启动延迟和供应商锁定。</div>
+      <div class="aen" lang="en">Serverless does not mean there are no servers — it means the cloud platform handles deployment, scaling and operations while developers merely upload function code. FaaS (Function-as-a-Service) executes functions on events and bills by invocations and runtime, costing nothing while idle, which suits bursty workloads; its downsides include cold-start latency and vendor lock-in.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（Jonas 等, Cloud Programming Simplified: A Berkeley View on Serverless Computing, 2019）</p>
+        <p lang="en">arXiv (Jonas et al., Cloud Programming Simplified: A Berkeley View on Serverless Computing, 2019)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#无服务器</a> <a class="tag" href="#">#FaaS</a> <a class="tag" href="#">#云计算</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_002">
+      <h2 class="qz" lang="zh">什么是写时复制（Copy-on-Write）？它为什么能让 fork() 几乎瞬间完成？</h2>
+      <p class="qen" lang="en">What is copy-on-write, and why does it make fork() nearly instantaneous?</p>
+      <div class="azh" lang="zh">fork() 不再立刻复制父进程的整个地址空间，而是让父子进程共享全部物理页，并把双方页表项改成只读。任何一方第一次写入某页时，MMU 触发保护性缺页异常，内核此时才复制这一页并恢复写权限。复制的开销从一次性付清整个空间，推迟到只为真正被写的页逐页支付；fork 后紧跟 exec 的常见场景中，多数页面根本无需复制。</div>
+      <div class="aen" lang="en">fork() no longer duplicates the parent&#x27;s entire address space up front; parent and child instead share every physical page, with both sets of page-table entries marked read-only. The first write to a shared page raises a protection page fault, and only then does the kernel copy that single page and restore write permission. Copying cost thus shifts from paying for everything at once to paying page by page for pages actually written - and when exec() follows immediately, most pages are never copied at all.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">D. P. Bovet 与 M. Cesati,《Understanding the Linux Kernel》(《深入理解 Linux 内核》)第2版,O&#x27;Reilly Media,2005,第9章</p>
+        <p lang="en">D. P. Bovet &amp; M. Cesati, Understanding the Linux Kernel, 2nd ed., O&#x27;Reilly Media, 2005, Chapter 9</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Understanding+the+Linux+Kernel" target="_blank" rel="noopener">核验依据 1 ISBN 9780596005658 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#fork</a> <a class="tag" href="#">#写时复制</a> <a class="tag" href="#">#缺页异常</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_003">
+      <h2 class="qz" lang="zh">一次进程上下文切换时内核究竟做了什么?切换的主要开销其实在哪里?</h2>
+      <p class="qen" lang="en">What does the kernel actually do during a process context switch, and where does most of its cost really lie?</p>
+      <div class="azh" lang="zh">内核先挂起当前进程,把程序计数器、通用寄存器与状态标志保存到它的内核栈和进程描述符,再从就绪队列选出下一个进程,恢复其寄存器并切换页表基址(CR3),最后用中断返回指令回到用户态。看得见的开销只是这几微秒的保存与恢复;更大的隐性开销在于更换地址空间会冲刷 TLB 并污染缓存,新进程随后要为大量访存缺失买单。</div>
+      <div class="aen" lang="en">The kernel suspends the current process, saving its program counter, general-purpose registers and status flags onto the kernel stack and process descriptor, then picks a ready task, restores its registers and switches the page-table base (CR3) before an interrupt-return instruction re-enters user mode. The visible cost is those few microseconds of save and restore; the hidden cost dominates, because changing address spaces flushes the TLB and pollutes caches, leaving the new process to pay for many memory misses afterward.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz、Galvin、Gagne《Operating System Concepts》第10版,Wiley,2018;Tanenbaum《Modern Operating Systems》,Pearson</p>
+        <p lang="en">Silberschatz, Galvin, Gagne, Operating System Concepts, 10th ed., Wiley, 2018; Tanenbaum, Modern Operating Systems, Pearson</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Operating+System+Concepts" target="_blank" rel="noopener">核验依据 1 ISBN 9780470577233 (2019)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#上下文切换</a> <a class="tag" href="#">#进程调度</a> <a class="tag" href="#">#TLB 失效</a>
+    </article>
+
+
+    <article class="qitem" id="df27e2d1861f">
+      <h2 class="qz" lang="zh">两阶段提交（2PC）如何保证多个数据库要么全部提交、要么全部回滚？</h2>
+      <p class="qen" lang="en">How does two-phase commit (2PC) make multiple databases all commit or all abort?</p>
+      <div class="azh" lang="zh">2PC 由一个协调者主导：第一阶段&quot;准备&quot;，协调者询问所有参与者能否提交，各参与者写准备日志并回复；第二阶段&quot;提交/中止&quot;，协调者根据所有回复统一决定，若全员可提交就广播提交，否则广播回滚。这保证了原子性，但协调者若发生故障，参与者可能长时间阻塞等待。</div>
+      <div class="aen" lang="en">2PC is led by a coordinator: in the prepare phase it asks every participant whether it can commit, and each participant writes a prepare log and replies; in the commit/abort phase the coordinator decides based on all replies — commit only if everyone agreed, otherwise abort — and broadcasts the decision. This guarantees atomicity, but if the coordinator fails, participants may block indefinitely.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#两阶段提交</a> <a class="tag" href="#">#分布式事务</a> <a class="tag" href="#">#原子性</a>
+    </article>
+
+
+    <article class="qitem" id="0c5b4a764a49">
+      <h2 class="qz" lang="zh">手机为什么会自己把切到后台的 App 关掉？</h2>
+      <p class="qen" lang="en">Why does a phone kill apps that you left running in the background?</p>
+      <div class="azh" lang="zh">手机内存有限，又不像桌面系统那样大量依赖交换分区，所以内存吃紧时系统必须主动回收。Android 的低内存守护进程按重要性给进程排序：前台 App 最后被杀，其次是仍可见的、承载服务的，最先被回收的是纯缓存的空进程，所以你切走后不再可见的 App 最容易被清掉。这也是应用必须在 onPause/onStop 里保存状态并支持恢复的原因，否则用户切回来会发现进度丢失。</div>
+      <div class="aen" lang="en">Phones have limited RAM and, unlike desktops, lean very little on swap, so the system must reclaim memory itself when it gets tight. Android&#x27;s low-memory killer daemon ranks processes by importance — foreground apps last, then visible ones, then those hosting services, and cached empty processes first — so the app you just switched away from is the earliest candidate. That is why apps are expected to persist state in onPause/onStop and restore it later; otherwise the user comes back to find their progress gone.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Android 官方开发者文档《Processes and app lifecycle》与《The activity lifecycle》</p>
+        <p lang="en">Android Developers documentation, &quot;Processes and app lifecycle&quot; and &quot;The activity lifecycle&quot;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#后台进程</a> <a class="tag" href="#">#低内存回收</a> <a class="tag" href="#">#Android</a> <a class="tag" href="#">#应用生命周期</a>
+    </article>
+
+
+    <article class="qitem" id="1ce4fd25871a">
+      <h2 class="qz" lang="zh">电脑是怎么“同时”做好几件事的？</h2>
+      <p class="qen" lang="en">How does a computer do several things &#x27;at once&#x27;?</p>
+      <div class="azh" lang="zh">它其实像一位飞快变魔术的厨师：把时间切成极短的小片，这片做饭、下片洗菜，快到看起来像在同时做。这叫“轮流切换”，让我们觉得电脑一心多用。</div>
+      <div class="aen" lang="en">It&#x27;s like a super-fast chef: it cuts time into tiny slices, cooking in one slice and washing in the next, so fast it looks simultaneous. This &#x27;taking turns&#x27; makes the computer seem to multitask.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#多任务</a> <a class="tag" href="#">#切换</a>
+    </article>
+
+
+    <article class="qitem" id="491b32e3ff75">
+      <h2 class="qz" lang="zh">电脑或手机出毛病时，为什么「重启一下」经常真的有用？</h2>
+      <p class="qen" lang="en">Why does restarting a computer or phone so often actually fix the problem?</p>
+      <div class="azh" lang="zh">长时间运行的程序会积累泄漏的内存、失效的缓存、没释放的锁和互相矛盾的内部状态，这些错误彼此纠缠，很难在不停机的情况下修好。重启把这一切丢弃，让系统回到经过充分测试的初始状态，所有资源重新分配，于是症状消失。软件工程里有意利用这一点的设计思路叫「仅崩溃软件」：把组件做成随时可安全重启、重要状态存在可恢复的存储里，用重启代替复杂的错误处理。</div>
+      <div class="aen" lang="en">A process running for a long time accumulates leaked memory, stale caches, unreleased locks and inconsistent internal state, and those faults interact in ways that are very hard to repair while it keeps running. A restart discards all of it and returns the system to the well-tested state it was designed to begin from, with every resource freshly allocated, so the symptom disappears. Researchers turned this into a design principle called crash-only software: make components safe to restart at any moment, keep important state in recoverable storage, and use restart in place of intricate error handling.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Candea 与 Fox《Crash-Only Software》(USENIX HotOS IX, 2003)</p>
+        <p lang="en">Candea &amp; Fox, &quot;Crash-Only Software,&quot; USENIX HotOS IX (2003)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#重启</a> <a class="tag" href="#">#状态累积</a> <a class="tag" href="#">#仅崩溃软件</a> <a class="tag" href="#">#可靠性</a>
+    </article>
+
+
+    <article class="qitem" id="6b499645b618">
+      <h2 class="qz" lang="zh">电脑按下开关以后，为什么要等一会儿才能用？</h2>
+      <p class="qen" lang="en">Why do you have to wait a little while after pressing a computer&#x27;s power button?</p>
+      <div class="azh" lang="zh">开机时机器先运行主板上的固件，也就是 UEFI 或 BIOS，它要做一次开机自检，数一数有多少内存、看看接了哪些硬盘和键盘鼠标。查完以后固件才去硬盘里找操作系统，把它读进内存并交出控制权，操作系统接着启动一大堆驱动和后台服务。这些步骤必须一个接一个完成，所以要等；换成固态硬盘或打开快速启动能省掉一部分等待。</div>
+      <div class="aen" lang="en">When you press power, the firmware on the motherboard — UEFI or BIOS — runs first and performs a self-test, counting how much memory is installed and checking which disks, keyboard and mouse are attached. Only then does it look for an operating system on the disk, load it into memory and hand over control, after which the system starts many drivers and background services. All of those steps must happen one after another, which is why you wait, and an SSD or fast startup removes part of it.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">UEFI Forum《Unified Extensible Firmware Interface (UEFI) Specification, Version 2.10》第 2 章</p>
+        <p lang="en">UEFI Forum, &quot;Unified Extensible Firmware Interface (UEFI) Specification, Version 2.10,&quot; ch. 2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/uefi-specification-version-2.10" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 uefi-specification-version-2.10：Unified Exten</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开机</a> <a class="tag" href="#">#自检</a> <a class="tag" href="#">#UEFI</a> <a class="tag" href="#">#引导过程</a>
+    </article>
+
+
+    <article class="qitem" id="9af25420a850">
+      <h2 class="qz" lang="zh">电脑卡住时，关掉程序为什么有用？</h2>
+      <p class="qen" lang="en">Why does closing a program help when a computer freezes?</p>
+      <div class="azh" lang="zh">卡住常因某程序占用过多内存或 CPU，关掉它释放资源，系统就能继续响应其他任务。</div>
+      <div class="aen" lang="en">A freeze often means one program hogs memory or CPU; closing it frees resources so the system can respond to other tasks again.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#系统</a> <a class="tag" href="#">#性能</a>
+    </article>
+
+
+    <article class="qitem" id="caca815c1ee4">
+      <h2 class="qz" lang="zh">什么是文件，电脑怎么整理它们？</h2>
+      <p class="qen" lang="en">What is a file and how does a computer organize them?</p>
+      <div class="azh" lang="zh">文件是电脑里一段存起来的信息，比如一张画或一首歌；电脑用文件夹把文件分门别类地放进&quot;柜子&quot;里。</div>
+      <div class="aen" lang="en">A file is a saved piece of information like a picture or song; computers use folders to sort files into categorized &#x27;cabinets&#x27;.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#文件</a> <a class="tag" href="#">#文件夹</a> <a class="tag" href="#">#组织</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_004">
+      <h2 class="qz" lang="zh">fork 之后父子进程看起来各有一份完整的内存,为什么系统几乎一瞬间就完成了复制?</h2>
+      <p class="qen" lang="en">After fork, parent and child seem to own complete copies of the memory image, so how can the system finish duplicating it almost instantly?</p>
+      <div class="azh" lang="zh">因为系统并没有立刻复制整份内存。fork 只复制页表:两边映射同一批物理页并统一标成只读,耗时仅毫秒级;之后任何一方第一次写入某个共享页都会触发缺页异常,内核此时才分配新的物理页、复制内容,并把双方对应的页表项改回可写。这种写时复制机制让 fork 加 exec 的典型流程近乎零成本,也是内存去重等技术的基础。</div>
+      <div class="aen" lang="en">Nothing is copied up front. fork duplicates only the page tables: both sides map the same physical frames, all marked read-only, which takes milliseconds. The first write from either side raises a page fault, and only then does the kernel allocate a fresh frame, copy the contents and turn both entries writable again. This copy-on-write scheme makes the classic fork-plus-exec pattern nearly free and underpins memory-deduplication techniques.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rashid 等,Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures,ASPLOS,1987;McKusick、Neville-Neil《The Design and Implementation of the FreeBSD Operating System》,Addison-Wesley,2004</p>
+        <p lang="en">Rashid et al., Machine-Independent Virtual Memory Management for Paged Uniprocessor and Multiprocessor Architectures, ASPLOS, 1987; McKusick and Neville-Neil, The Design and Implementation of the FreeBSD Operating System, Addison-Wesley, 2004</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/36205.36181" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/36205.36181：Machine-independent virt</a></p>
+        
+      </details>
+      <a class="tag" href="#">#写时复制</a> <a class="tag" href="#">#fork</a> <a class="tag" href="#">#虚拟内存</a>
+    </article>
+
+
+    <article class="qitem" id="dea9efedf041">
+      <h2 class="qz" lang="zh">电脑怎么同时做很多件事？</h2>
+      <p class="qen" lang="en">How can a computer do many things at once?</p>
+      <div class="azh" lang="zh">电脑的&quot;大脑&quot;很快地在不同任务间来回切换，快到看起来像同时在做，这叫多任务。</div>
+      <div class="aen" lang="en">The computer&#x27;s brain switches between tasks so quickly it looks like doing them at once; this is called multitasking.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#多任务</a> <a class="tag" href="#">#操作系统</a>
+    </article>
+
+
+    <article class="qitem" id="dfc4829a2671">
+      <h2 class="qz" lang="zh">什么是操作系统？</h2>
+      <p class="qen" lang="en">What is an operating system?</p>
+      <div class="azh" lang="zh">操作系统是管理电脑硬件、并为你运行的其他程序提供舞台的软件，比如 Windows、macOS 和 Linux。</div>
+      <div class="aen" lang="en">An operating system is software that manages a computer&#x27;s hardware and provides a stage for other programs, like Windows, macOS, and Linux.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#基础</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

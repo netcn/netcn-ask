@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>complexity · 计算机 Computer Science | 问答</title>
+<meta name="description" content="complexity（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="complexity · 计算机 Computer Science | 问答">
+<meta property="og:description" content="complexity（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/complexity/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/complexity/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>complexity</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>complexity <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#370e7bd563f2">为什么“P 对 NP”问题被列为千禧年难题？</a></li><li><a href="#6332b90c0622">摊还分析（amortized analysis）和 worst-case 分析有</a></li><li><a href="#e33aa8d6ed83">主定理（Master Theorem）是用来算什么的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="370e7bd563f2">
+      <h2 class="qz" lang="zh">为什么“P 对 NP”问题被列为千禧年难题？</h2>
+      <p class="qen" lang="en">Why is &#x27;P vs NP&#x27; one of the Millennium Prize problems?</p>
+      <div class="azh" lang="zh">P 是能快速验证并快速求解的问题类，NP 是能快速验证答案的问题类。若 P=NP，则大量看似难解的问题（如旅行商、整数分解的某些变体）都能快速求解，会颠覆密码学与优化；若不等则解释为何这些难题至今无解。它既影响理论也影响现实安全。</div>
+      <div class="aen" lang="en">P is problems solvable fast, NP problems whose answers are fast to verify. If P=NP, many hard problems (TSP, scheduling) become fast to solve, upending cryptography and optimization; if not, it explains why they resist solution. It bridges theory and real security.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Michael Sipser,《Introduction to the Theory of Computation》第3版,Cengage Learning,2012</p>
+        <p lang="en">M. Sipser, Introduction to the Theory of Computation, 3rd ed., Cengage Learning, 2012</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#P-NP</a> <a class="tag" href="#">#复杂性</a>
+    </article>
+
+
+    <article class="qitem" id="6332b90c0622">
+      <h2 class="qz" lang="zh">摊还分析（amortized analysis）和 worst-case 分析有什么区别？</h2>
+      <p class="qen" lang="en">How does amortized analysis differ from worst-case analysis?</p>
+      <div class="azh" lang="zh">最坏情况分析看单次操作的最大开销，而摊还分析看一系列操作的总开销除以次数，允许偶尔很贵、平时很便宜。例如动态数组偶尔扩容很慢，但平均每次插入仍是常数时间。</div>
+      <div class="aen" lang="en">Worst-case looks at the cost of a single operation; amortized analysis averages the total cost of a sequence, allowing rare expensive steps. A dynamic array occasionally resizes slowly, yet average insertion stays O(1).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#摊还</a> <a class="tag" href="#">#复杂度</a>
+    </article>
+
+
+    <article class="qitem" id="e33aa8d6ed83">
+      <h2 class="qz" lang="zh">主定理（Master Theorem）是用来算什么的？</h2>
+      <p class="qen" lang="en">What is the Master Theorem used to compute?</p>
+      <div class="azh" lang="zh">主定理给出分治递归 T(n)=a·T(n/b)+f(n) 的渐近解，通过比较递归规模与合并代价 f(n) 的大小，直接判断时间复杂度属于 O(n^log_b a)、O(f(n)) 还是二者相乘的对数级别，省去展开递归树。</div>
+      <div class="aen" lang="en">The Master Theorem solves divide-and-conquer recurrences T(n)=aT(n/b)+f(n) by comparing the recursive part n^log_b a with the combine cost f(n), directly yielding the asymptotic bound without expanding the recursion tree.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主定理</a> <a class="tag" href="#">#递归</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

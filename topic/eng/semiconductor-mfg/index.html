@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>semiconductor-mfg · 工程技术 Engineering | 问答</title>
+<meta name="description" content="semiconductor-mfg（工程技术）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="semiconductor-mfg · 工程技术 Engineering | 问答">
+<meta property="og:description" content="semiconductor-mfg（工程技术）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/semiconductor-mfg/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/semiconductor-mfg/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>semiconductor-mfg</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>semiconductor-mfg <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#eng_26_007">平面晶体管微缩到20nm节点附近为什么越来越难关断？FinFET又是靠什么夺回对</a></li><li><a href="#eng_26_005">芯片制造中的化学机械抛光（CMP）只是精细打磨吗？它凭什么让整片晶圆兼有全局平坦</a></li><li><a href="#eng_26_006">光源只有193纳米的DUV光刻机，为什么反而能印出线宽远小于波长的芯片图形？</a></li><li><a href="#eng_26_008">现代芯片掺杂为什么普遍采用离子注入？注入完成后为什么还必须进行高温退火？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="eng_26_007">
+      <h2 class="qz" lang="zh">平面晶体管微缩到20nm节点附近为什么越来越难关断？FinFET又是靠什么夺回对沟道的静电控制的？</h2>
+      <p class="qen" lang="en">Why did planar transistors grow ever harder to turn off as scaling approached the 20 nm node, and how do FinFETs retake electrostatic control of the channel?</p>
+      <div class="azh" lang="zh">直答：漏极电场穿透沟道下方的硅体直达源极，栅极失去对沟道势垒的掌控，阈值电压滚降与亚阈漏电随尺寸缩短急剧恶化;FinFET把沟道立成竖直薄鳍，让栅极三面包裹导电通道。机理：栅控强弱取决于栅长与硅体厚度之比，薄鳍把沟道厚度压到几十纳米以下，漏场对源端势垒的影响随之锐减，DIBL与阈值滚降显著缓解，亚阈摆幅向60mV/dec的理论极限逼近，器件得以在更低电压下继续微缩。</div>
+      <div class="aen" lang="en">The drain field punches through the silicon body under the channel straight to the source, the gate loses command of the barrier, and threshold roll-off plus subthreshold leakage worsen sharply as dimensions shrink. A FinFET stands the channel up as a thin vertical fin that the gate wraps on both sides and the top. Gate authority scales with the ratio of gate length to body thickness: squeezing the fin below a few tens of nanometers starves the drain field of influence over the source-side barrier, easing DIBL and roll-off, driving the subthreshold swing toward the 60 mV/dec limit, and letting devices keep scaling at lower voltage.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chenming Hu 等,《FinFET-a self-aligned double-gate MOSFET scalable to 20 nm》,IEEE Transactions on Electron Devices,2000 (DOI: 10.1109/16.887014)</p>
+        <p lang="en">Chenming Hu et al., &#x27;FinFET-a self-aligned double-gate MOSFET scalable to 20 nm&#x27;, IEEE Transactions on Electron Devices, 2000, DOI: 10.1109/16.887014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/16.887014" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/16.887014</a></p>
+        
+      </details>
+      <a class="tag" href="#">#FinFET</a> <a class="tag" href="#">#短沟道效应</a> <a class="tag" href="#">#亚阈摆幅</a>
+    </article>
+
+
+    <article class="qitem" id="eng_26_005">
+      <h2 class="qz" lang="zh">芯片制造中的化学机械抛光（CMP）只是精细打磨吗？它凭什么让整片晶圆兼有全局平坦度和近原子级光滑表面？</h2>
+      <p class="qen" lang="en">Is chemical mechanical polishing in chip fabrication just fine grinding? How does it give an entire wafer both global planarity and a near-atomically smooth surface?</p>
+      <div class="azh" lang="zh">直答：CMP并非单纯机械研磨，而是化学转化与机械去除的耦合，正是这种耦合使其能兼顾全局平坦化与低粗糙度。机理：浆料中的氧化剂先将晶圆表层氧化成较软或易溶的反应层;高速旋转的抛光垫携带纳米磨粒扫过表面，凸起处接触压强大、新鲜反应物补给快而被优先去除，凹陷处接触弱、化学层得以保留，去除速率大体服从Preston经验式。铜大马士革互连与浅槽隔离的平整表面都依赖这道工序。</div>
+      <div class="aen" lang="en">CMP couples chemistry with mechanical removal rather than simply grinding harder: oxidants in the slurry first convert the wafer surface into a softer, readily soluble reaction layer. A fast-spinning pad carrying nanoparticle abrasives then sweeps the surface, where high spots see higher contact pressure and faster replenishment of reactant and are removed preferentially, while recesses barely touch the pad and survive, with removal rates roughly following Preston&#x27;s empirical equation. Copper damascene interconnects and shallow trench isolation both rely on this step for their flat surfaces.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J.M. Steigerwald、S.P. Murarka、R.J. Gutmann《Chemical Mechanical Planarization of Microelectronic Materials》，John Wiley &amp; Sons，1997年</p>
+        <p lang="en">J.M. Steigerwald, S.P. Murarka &amp; R.J. Gutmann, Chemical Mechanical Planarization of Microelectronic Materials, John Wiley &amp; Sons, 1997</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Chemical+Mechanical+Planarization+of+Microelectronic+Materials" target="_blank" rel="noopener">核验依据 1 ISBN 9780471138273 (1997)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#化学机械抛光</a> <a class="tag" href="#">#全局平坦化</a> <a class="tag" href="#">#大马士革工艺</a>
+    </article>
+
+
+    <article class="qitem" id="eng_26_006">
+      <h2 class="qz" lang="zh">光源只有193纳米的DUV光刻机，为什么反而能印出线宽远小于波长的芯片图形？</h2>
+      <p class="qen" lang="en">Why can a DUV scanner whose light source is merely 193 nm print chip patterns far smaller than that wavelength?</p>
+      <div class="azh" lang="zh">直答：依靠增大数值孔径、压低工艺因子k1并辅以多重曝光，把瑞利判据R=k1λ/NA推近极限，线宽便可小于光源波长。机理：浸没式光刻在镜头与晶圆间充入折射率约1.44的超纯水，光在水中波长缩短，有效NA由干式约0.93升至1.35以上；离轴照明与相移掩模再把k1压向0.3，单次曝光即能分辨约40nm级半节距，更小节点靠自对准双重或四重图形化实现。</div>
+      <div class="aen" lang="en">By raising the numerical aperture, driving the process factor k1 down and adding multiple exposures, the Rayleigh bound R=k1λ/NA is pushed toward its limit until features shrink below the wavelength itself. Immersion lithography fills the lens-to-wafer gap with ultrapure water of refractive index about 1.44, shortening the wavelength inside and lifting effective NA from roughly 0.93 dry to over 1.35; off-axis illumination and phase-shift masks press k1 toward 0.3 so a single exposure resolves 40 nm-class half-pitches, with self-aligned double or quadruple patterning carrying smaller nodes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B.J. Lin《Optical Lithography: Here Is Why》，SPIE Press，2009年</p>
+        <p lang="en">B.J. Lin, Optical Lithography: Here Is Why, SPIE Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Optical+Lithography:+Here+Is+Why" target="_blank" rel="noopener">核验依据 1 ISBN 9780819475602 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#浸没式光刻</a> <a class="tag" href="#">#数值孔径</a> <a class="tag" href="#">#多重图形化</a>
+    </article>
+
+
+    <article class="qitem" id="eng_26_008">
+      <h2 class="qz" lang="zh">现代芯片掺杂为什么普遍采用离子注入？注入完成后为什么还必须进行高温退火？</h2>
+      <p class="qen" lang="en">Why has modern chip doping shifted to ion implantation, and why must wafers be annealed at high temperature once implantation is done?</p>
+      <div class="azh" lang="zh">直答：离子注入靠束流积分精确计量剂量、靠能量控制深度，常温即可完成掺入;但高能离子会把硅原子撞离晶格位置形成损伤层，不经退火修复，杂质无法占据替位位置、几乎不导电。机理：注入深度服从可用LSS理论预言的峰形分布，约7度倾角入射可避开沟道效应;快速热退火在数秒内把晶圆升到1000℃以上，固相外延沿原晶向重结晶消除缺陷，替位杂质近乎全部电激活，而结深扩散被限制在纳米量级。</div>
+      <div class="aen" lang="en">Implantation meters dose by integrated beam current and tunes depth through ion energy, doping at near room temperature; yet energetic ions knock lattice atoms out of place and leave a damage layer that keeps dopants off substitutional sites, so they stay electrically inert until annealing. Depth follows a peaked profile predicted by LSS theory, with about seven degrees of wafer tilt suppressing channeling. Rapid thermal annealing ramps the wafer above 1000 degrees C within seconds: solid-phase epitaxy regrows the layer along the original lattice, annihilating defects and activating nearly every dopant, while junction smearing stays at the nanometer scale.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">E. Rimini《Ion Implantation: Basics to Device Fabrication》，Kluwer Academic Publishers，1995年</p>
+        <p lang="en">E. Rimini, Ion Implantation: Basics to Device Fabrication, Kluwer Academic Publishers, 1995</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Ion+Implantation:+Basics+to+Device+Fabrication" target="_blank" rel="noopener">核验依据 1 ISBN 9781461359524 (1994)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#离子注入</a> <a class="tag" href="#">#晶格损伤</a> <a class="tag" href="#">#快速热退火</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

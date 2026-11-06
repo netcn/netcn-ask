@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>形式化验证 formal-verification · 计算机 Computer Science | 问答</title>
+<meta name="description" content="形式化验证（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="形式化验证 formal-verification · 计算机 Computer Science | 问答">
+<meta property="og:description" content="形式化验证（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/formal-verification/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/formal-verification/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>形式化验证</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>形式化验证 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>9</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#56f92ad3b8c9">符号模型检测如何用二叉决策图（BDD）把指数级状态空间压缩到可处理规模？</a></li><li><a href="#cab949abd1f1">CompCert 这类经过验证的编译器为什么能保证目标代码与源语义一致？</a></li><li><a href="#cs_19_016">分离逻辑引入分离合取,解决了霍尔逻辑处理堆程序时的哪个根本痛点?</a></li><li><a href="#cs_24_010">测试一万次没出错,和「数学上证明不出错」,差在哪一步?编译器自己也能被证明吗?</a></li><li><a href="#402c5bb9ffba">有界模型检测（BMC）如何利用 SAT 求解器检查固定步数内是否出错？</a></li><li><a href="#43bbe9b6eb40">交互式定理证明器（如 Coq、Isabelle）适合验证哪类性质，为什么需要人工</a></li><li><a href="#5bfab422228b">形式化验证与传统的软件测试有何本质区别？</a></li><li><a href="#cs_19_008">LTL 与 CTL 的表达能力为何互不包含?各举一个只能被其中一方表达的性质。</a></li><li><a href="#d97fb4f9a70e">模型检测（model checking）是怎样自动判断有限状态系统是否满足时序性</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="56f92ad3b8c9">
+      <h2 class="qz" lang="zh">符号模型检测如何用二叉决策图（BDD）把指数级状态空间压缩到可处理规模？</h2>
+      <p class="qen" lang="en">How does symbolic model checking use binary decision diagrams (BDDs) to compress an exponential state space into a tractable one?</p>
+      <div class="azh" lang="zh">符号模型检测不逐个枚举状态，而是用 BDD 紧凑表示状态集合与迁移关系，通过关系映像（image computation）批量计算后继。BDD 的共享结构与化简能在许多实际系统中把指数规模压缩为多项式级表示。</div>
+      <div class="aen" lang="en">Symbolic model checking does not enumerate states one by one; it represents sets of states and transitions compactly with BDDs and computes successors in bulk via image computation. The shared structure and reduction of BDDs compress exponential size to polynomial representation in many real systems.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">McMillan, Symbolic Model Checking, Kluwer 1993</p>
+        <p lang="en">McMillan, Symbolic Model Checking, Kluwer 1993</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19905239W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19905239W：Symbolic Model Checkin</a></p>
+        
+      </details>
+      <a class="tag" href="#">#符号模型检测</a> <a class="tag" href="#">#BDD</a> <a class="tag" href="#">#状态爆炸</a>
+    </article>
+
+
+    <article class="qitem" id="cab949abd1f1">
+      <h2 class="qz" lang="zh">CompCert 这类经过验证的编译器为什么能保证目标代码与源语义一致？</h2>
+      <p class="qen" lang="en">Why can a verified compiler like CompCert guarantee that target code matches source semantics?</p>
+      <div class="azh" lang="zh">CompCert 用 Coq 证明了每个编译阶段都保持程序语义（bisimulation），从而排除了传统编译器中由优化引入的错误。它是首个经机器验证、可用于安全关键系统的 C 编译器。</div>
+      <div class="aen" lang="en">CompCert proves in Coq that each compilation phase preserves program semantics (bisimulation), ruling out errors introduced by optimizations that plague traditional compilers. It was the first machine-verified C compiler suitable for safety-critical systems.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Blazy,《CompCert: A Journey through the Landscape of Mechanized Semantics for Verified Compilation (Keynote)》, Proceedings of the 12th ACM SIGPLAN International Conference, 2023 (DOI: 10.1145/3573105.3579107)</p>
+        <p lang="en">Blazy, &#x27;CompCert: A Journey through the Landscape of Mechanized Semantics for Verified Compilation (Keynote)&#x27;, Proceedings of the 12th ACM SIGPLAN International Conference, 2023, DOI: 10.1145/3573105.3579107</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/3573105.3579107" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/3573105.3579107</a></p>
+        
+      </details>
+      <a class="tag" href="#">#验证编译器</a> <a class="tag" href="#">#CompCert</a> <a class="tag" href="#">#语义保持</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_016">
+      <h2 class="qz" lang="zh">分离逻辑引入分离合取,解决了霍尔逻辑处理堆程序时的哪个根本痛点?</h2>
+      <p class="qen" lang="en">Which fundamental obstacle of Hoare logic for heap-manipulating programs does separating conjunction remove?</p>
+      <div class="azh" lang="zh">经典霍尔逻辑论证修改堆的程序时必须显式写出帧公理,逐一声明所有未被触及的存储单元不受影响,规格随程序规模急剧膨胀。分离逻辑用分离合取 P*Q 断言两份资源同时成立且占用互不相交的内存,规格只需描述命令自己触碰的足迹,帧规则随后自动把结论推广到整个堆。Reynolds 在 2002 年的系统阐述让这一局部推理思想成为 Facebook Infer、VeriFast 等工业级指针分析工具的逻辑基础。</div>
+      <div class="aen" lang="en">Reasoning about heap mutation under classic Hoare logic forces frame axioms enumerating every untouched memory cell, so specifications swell with program size. Separating conjunction P * Q asserts two resources hold simultaneously while occupying disjoint storage, letting a specification describe only the footprint a command touches, after which the frame rule lifts any proved triple to arbitrary extra heap for free. Since Reynolds formulated the discipline systematically in 2002, this local reasoning has underpinned industrial pointer-analysis tools such as Facebook Infer and VeriFast.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Reynolds《Separation Logic: A Logic for Shared Mutable Data Structures》,LICS 2002</p>
+        <p lang="en">J. C. Reynolds, &quot;Separation Logic: A Logic for Shared Mutable Data Structures&quot;, LICS 2002</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/lics.2002.1029817" target="_blank" rel="noopener">核验依据 1 DOI 10.1109/lics.2002.1029817</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分离逻辑</a> <a class="tag" href="#">#局部推理</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_010">
+      <h2 class="qz" lang="zh">测试一万次没出错,和「数学上证明不出错」,差在哪一步?编译器自己也能被证明吗?</h2>
+      <p class="qen" lang="en">What separates ten thousand passed tests from a mathematical proof of correctness — can even a compiler be proven right?</p>
+      <div class="azh" lang="zh">测试只能证明bug存在,永远不能证明不存在:输入空间无限,抽样必有死角。形式化验证换路而行:把程序与规约译成逻辑公式,以定理证明器或模型检测穷尽所有行为,产出机器可检查的证明。里程碑是CompCert——勒鲁瓦用Coq证明C编译器从源码到汇编每一步变换都语义保持,现用于空客与轨交信号的认证工具链。代价同样真实:规约错则证明完美地错,人力成本高一个量级,故留给密码协议、飞行控制等失效代价最高的场景。</div>
+      <div class="aen" lang="en">Testing shows bugs exist, never that they don&#x27;t: input spaces are infinite and samples leave corners dark. Formal verification changes lanes — translate program and specification alike into logic, then exhaust all behaviors with theorem provers or model checkers, yielding machine-checked proofs. The milestone is CompCert: Leroy used Coq to prove semantic preservation for every pass of a realistic C compiler down to assembly, now inside certification toolchains for Airbus and metro signaling. The cost is honest too: a wrong specification yields perfectly wrong proofs, at an order-of-magnitude labor premium — so industry spends it where failure hurts most: crypto protocols, flight control, compilers.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Leroy,《Formal verification of a realistic compiler》,Communications of the ACM 第52卷,2009</p>
+        <p lang="en">X. Leroy, Formal verification of a realistic compiler, Communications of the ACM 52, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1538788.1538814" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/1538788.1538814：Formal verification </a></p>
+        
+      </details>
+      <a class="tag" href="#">#形式化验证</a> <a class="tag" href="#">#CompCert</a> <a class="tag" href="#">#定理证明</a>
+    </article>
+
+
+    <article class="qitem" id="402c5bb9ffba">
+      <h2 class="qz" lang="zh">有界模型检测（BMC）如何利用 SAT 求解器检查固定步数内是否出错？</h2>
+      <p class="qen" lang="en">How does bounded model checking (BMC) use a SAT solver to check for errors within a fixed number of steps?</p>
+      <div class="azh" lang="zh">BMC 把「在 k 步内是否存在违反性质的反例」编码为命题逻辑公式，交给 SAT 求解器判定。它能在有界深度内找到反例，但无法证明更深或全局的性质，需配合循环归纳。</div>
+      <div class="aen" lang="en">BMC encodes the question of whether a counterexample violating the property exists within k steps as a propositional formula and hands it to a SAT solver. It can find counterexamples within the bound but cannot prove global properties beyond it without loop unwinding or induction.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Biere et al., Bounded Model Checking, 2003</p>
+        <p lang="en">Biere et al., Bounded Model Checking, 2003</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#有界模型检测</a> <a class="tag" href="#">#SAT</a> <a class="tag" href="#">#反例</a>
+    </article>
+
+
+    <article class="qitem" id="43bbe9b6eb40">
+      <h2 class="qz" lang="zh">交互式定理证明器（如 Coq、Isabelle）适合验证哪类性质，为什么需要人工参与？</h2>
+      <p class="qen" lang="en">What kinds of properties are interactive theorem provers (e.g. Coq, Isabelle) suited for, and why is human involvement needed?</p>
+      <div class="azh" lang="zh">它们用类型论或高阶逻辑表达证明，由用户一步步构造并交由机器检查，适合无法自动判定的深层数学与算法性质。人工参与在于提供证明策略与中间引理，机器只负责严格验证每步。</div>
+      <div class="aen" lang="en">They express proofs in type theory or higher-order logic, with the user constructing steps that the machine checks, suited to deep mathematical or algorithmic properties that are not automatically decidable. Human input supplies proof strategies and intermediate lemmas; the machine only rigorously verifies each step.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">The Coq Proof Assistant Reference Manual, INRIA</p>
+        <p lang="en">The Coq Proof Assistant Reference Manual, INRIA</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#定理证明</a> <a class="tag" href="#">#Coq</a> <a class="tag" href="#">#高阶逻辑</a>
+    </article>
+
+
+    <article class="qitem" id="5bfab422228b">
+      <h2 class="qz" lang="zh">形式化验证与传统的软件测试有何本质区别？</h2>
+      <p class="qen" lang="en">What is the essential difference between formal verification and traditional software testing?</p>
+      <div class="azh" lang="zh">测试通过抽样执行检查特定输入是否出错，无法穷尽所有情况；形式化验证用严格的数学逻辑证明程序满足规约，从而覆盖全部可能行为。代价是建模成本高，通常只对关键模块使用。</div>
+      <div class="aen" lang="en">Testing samples specific inputs and cannot exhaust all cases, while formal verification uses rigorous mathematical logic to prove a program satisfies its specification, covering all possible behaviors. The cost is high modeling effort, so it is usually applied only to critical modules.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Clarke, Grumberg, Peled, Model Checking, MIT Press 1999</p>
+        <p lang="en">Clarke, Grumberg, Peled, Model Checking, MIT Press 1999</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19888559W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19888559W：Model checking（首版 1999</a></p>
+        
+      </details>
+      <a class="tag" href="#">#形式化验证</a> <a class="tag" href="#">#模型检测</a> <a class="tag" href="#">#规约</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_008">
+      <h2 class="qz" lang="zh">LTL 与 CTL 的表达能力为何互不包含?各举一个只能被其中一方表达的性质。</h2>
+      <p class="qen" lang="en">Why are LTL and CTL expressively incomparable? Give one property expressible only in each.</p>
+      <div class="azh" lang="zh">LTL 在单条执行路径上隐式量化,CTL 沿计算树的分支量化,公式结构不同导致二者互不包含。AFG(所有路径上最终恒成立)只能用 CTL 表达,FG(最终永远成立)只能用 LTL 表达;需要混合两种量词风格时必须诉诸 CTL*。</div>
+      <div class="aen" lang="en">LTL quantifies implicitly over a single execution path while CTL quantifies over branches of the computation tree; their formula shapes differ, so neither subsumes the other. AFG — on every path, eventually always — is expressible only in CTL, whereas FG — eventually forever — only in LTL, and mixing both quantifier styles requires CTL*.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">E. A. Emerson 与 J. Y. Halperin,《有时与永不重访:分支时间与线性时间》,Journal of the ACM 33(1), 1986</p>
+        <p lang="en">E. A. Emerson and J. Y. Halperin, Sometimes and Not Never Revisited: On Branching versus Linear Time, Journal of the ACM 33(1), 1986</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#形式化方法</a> <a class="tag" href="#">#模型检测</a>
+    </article>
+
+
+    <article class="qitem" id="d97fb4f9a70e">
+      <h2 class="qz" lang="zh">模型检测（model checking）是怎样自动判断有限状态系统是否满足时序性质的？</h2>
+      <p class="qen" lang="en">How does model checking automatically decide whether a finite-state system satisfies a temporal property?</p>
+      <div class="azh" lang="zh">模型检测把系统建模为状态迁移系统、把性质写成时态逻辑公式，再用穷举或符号搜索自动判定公式是否成立。它能在不满足时给出反例路径，但受状态空间大小限制。</div>
+      <div class="aen" lang="en">Model checking models the system as a state-transition system and the property as a temporal logic formula, then uses exhaustive or symbolic search to decide satisfaction automatically. It can produce a counterexample path when the property fails, but is limited by state-space size.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Baier &amp; Katoen, Principles of Model Checking, MIT Press 2008</p>
+        <p lang="en">Baier &amp; Katoen, Principles of Model Checking, MIT Press 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17832746W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17832746W：Principles of model ch</a></p>
+        
+      </details>
+      <a class="tag" href="#">#模型检测</a> <a class="tag" href="#">#时态逻辑</a> <a class="tag" href="#">#反例</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

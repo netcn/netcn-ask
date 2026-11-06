@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>modular-arithmetic · 数学 Mathematics | 问答</title>
+<meta name="description" content="modular-arithmetic（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="modular-arithmetic · 数学 Mathematics | 问答">
+<meta property="og:description" content="modular-arithmetic（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/modular-arithmetic/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/modular-arithmetic/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>modular-arithmetic</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>modular-arithmetic <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_26_010">《孙子算经》的「物不知数」题：某数除以3余2、除以5余3、除以7余2，求此数——</a></li><li><a href="#math_26_017">不分解大数也能初步筛掉许多合数，靠的是三百多年前的一条同余定理——费马小定理的内</a></li><li><a href="#math_26_009">判断一个很大的整数能否被9整除，为什么只要把各位数字加起来看就行了？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_26_010">
+      <h2 class="qz" lang="zh">《孙子算经》的「物不知数」题：某数除以3余2、除以5余3、除以7余2，求此数——古人的口诀解法暗含什么现代定理？</h2>
+      <p class="qen" lang="en">The Sunzi Suanjing poses this: a number leaves remainder 2 when divided by 3, remainder 3 by 5, and remainder 2 by 7 — find it, and what modern theorem hides inside the ancient verse solution?</p>
+      <div class="azh" lang="zh">最小答案是23。口诀「三人同行七十稀」给出系统解法：取70（除以3余1）、21（除以5余1）、15（除以7余1），分别乘以目标余数2、3、2，相加得233，再减去两个105即得23。原理是中国剩余定理：当各模数两两互质时，同余方程组在模105意义下恰有一个解。该定理今天被用来加速RSA解密、构造秘密分享方案，是连接古代算术与现代密码学的桥梁。</div>
+      <div class="aen" lang="en">The smallest answer is 23. The classical verse uses auxiliary numbers: take 70, which is 1 modulo 3; 21, which is 1 modulo 5; and 15, which is 1 modulo 7; multiply them by the target remainders 2, 3 and 2, sum to get 233, then subtract two copies of 105 to reach 23. The principle is the Chinese remainder theorem: when the moduli are pairwise coprime, a system of simultaneous congruences has exactly one solution modulo their product, here 105. Today the theorem accelerates RSA decryption and supports secret-sharing schemes, bridging ancient reckoning and modern cryptography.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">程大位,《算法统宗》,1592年刻本</p>
+        <p lang="en">Cheng Dawei, Suanfa Tongzong (Systematic Treatise on Arithmetic), 1592</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#中国剩余定理</a> <a class="tag" href="#">#同余方程组</a> <a class="tag" href="#">#孙子算经</a>
+    </article>
+
+
+    <article class="qitem" id="math_26_017">
+      <h2 class="qz" lang="zh">不分解大数也能初步筛掉许多合数，靠的是三百多年前的一条同余定理——费马小定理的内容是什么？为何通过了它的检验，这个数仍可能是合数？</h2>
+      <p class="qen" lang="en">Without factoring a large number you can still screen out many composites, thanks to a congruence theorem from over three centuries ago — what does Fermat&#x27;s little theorem state, and why can a number pass its test yet still be composite?</p>
+      <div class="azh" lang="zh">定理说：若p是素数且a不被p整除，则a^(p−1)≡1（mod p），等价于a^p≡a（mod p）。于是无需分解就能筛合数：任取底数a，用快速幂算a^(n−1)模n，余数不是1即可断定n为合数。但逆命题不成立，341=11×31这样的伪素数照样通过检验，卡迈克尔数561更是对一切互素底数集体放行，故它只能充当概率性初筛，实战还需Miller-Rabin之类的多轮强化。</div>
+      <div class="aen" lang="en">It states that if p is prime and a is not divisible by p, then a^(p−1) ≡ 1 (mod p), equivalently a^p ≡ a (mod p). This sieves composites without factoring: pick any base a, compute a^(n−1) modulo n by fast exponentiation, and any remainder other than 1 certifies n composite. The converse fails — pseudoprimes such as 341 = 11 × 31 sail through, and Carmichael numbers like 561 fool every coprime base at once — so the theorem serves only as a probabilistic first screen, hardened in practice by rounds of Miller-Rabin.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">费马,致弗雷尼克勒·德·贝西的信函,1640年10月18日</p>
+        <p lang="en">P. de Fermat, letter to Bernard Frenicle de Bessy, October 18, 1640</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#费马小定理</a> <a class="tag" href="#">#同余</a> <a class="tag" href="#">#伪素数</a>
+    </article>
+
+
+    <article class="qitem" id="math_26_009">
+      <h2 class="qz" lang="zh">判断一个很大的整数能否被9整除，为什么只要把各位数字加起来看就行了？</h2>
+      <p class="qen" lang="en">To tell whether a huge integer is divisible by nine, why is it enough to add up its digits?</p>
+      <div class="azh" lang="zh">因为10除以9余1，所以10的任何次幂除以9都余1。把整数写成各位数字乘10的幂之和，取模9时每个幂都退化为1，剩下的恰好是数字之和——例如347与3+4+7=14模9同余。由此得到古老的「弃九法」：若一次运算的两边模9结果不同，则计算必有错误。它是同余算术最经典的日常应用之一。</div>
+      <div class="aen" lang="en">Because ten leaves remainder one when divided by nine, and so does every power of ten. Write an integer as digits times powers of ten; modulo nine each power collapses to one, leaving exactly the digit sum — 347, for instance, agrees with 14, the total of its digits. Hence the old check called casting out nines: if the two sides of a computation disagree modulo nine, an error certainly occurred. It remains a most classic everyday application of modular arithmetic.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hardy与Wright,《An Introduction to the Theory of Numbers》,Oxford University Press,1938</p>
+        <p lang="en">G. H. Hardy, E. M. Wright, An Introduction to the Theory of Numbers, Oxford University Press, 1938</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=An+Introduction+to+the+Theory+of+Numbers" target="_blank" rel="noopener">核验依据 1 ISBN 9783540643326 (1938)</a> · <a class="evlink" href="https://openlibrary.org/search?q=An+Introduction+to+the+Theory+of+Numbers" target="_blank" rel="noopener">核验依据 2 ISBN 9783540643326 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#弃九法</a> <a class="tag" href="#">#整除判别</a> <a class="tag" href="#">#模9同余</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

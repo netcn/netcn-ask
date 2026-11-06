@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>multimodal · 计算机 Computer Science | 问答</title>
+<meta name="description" content="multimodal（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="multimodal · 计算机 Computer Science | 问答">
+<meta property="og:description" content="multimodal（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/multimodal/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/multimodal/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>multimodal</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>multimodal <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#4b18f9d2dbfc">多模态模型如何把文本和图像“对齐”到同一套表示里？</a></li><li><a href="#5af175c9f734">什么是视觉语言模型（VLM），它和普通大模型有何不同？</a></li><li><a href="#d856ca31842c">CLIP 的训练目标是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="4b18f9d2dbfc">
+      <h2 class="qz" lang="zh">多模态模型如何把文本和图像“对齐”到同一套表示里？</h2>
+      <p class="qen" lang="en">How do multimodal models align text and images into one representation space?</p>
+      <div class="azh" lang="zh">通常分别用文本编码器和图像编码器把两者变成向量，再通过对比学习让“相配”的图片-文字向量靠近、不配的远离，于是同一语义在两种模态下落到相近的位置。</div>
+      <div class="aen" lang="en">A text encoder and an image encoder turn each modality into vectors; contrastive learning pulls matching image-text pairs closer and pushes mismatches apart, so the same meaning lands near the same spot across modalities.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#多模态</a> <a class="tag" href="#">#对齐</a>
+    </article>
+
+
+    <article class="qitem" id="5af175c9f734">
+      <h2 class="qz" lang="zh">什么是视觉语言模型（VLM），它和普通大模型有何不同？</h2>
+      <p class="qen" lang="en">What is a vision-language model (VLM) and how does it differ from a plain LLM?</p>
+      <div class="azh" lang="zh">VLM 在语言模型之外接入了图像编码器，能把图片转成模型能读的“视觉词元”，于是你可以拿着一张图问它问题、让它描述或推理，而不只是处理纯文字。</div>
+      <div class="aen" lang="en">A VLM adds an image encoder to a language model, turning a picture into &#x27;visual tokens&#x27; the model can read, so you can ask about, describe, or reason over an image—not just plain text.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Liu、Li、Wu 与 Lee,《Visual Instruction Tuning》,Advances in Neural Information Processing Systems 36,2023 (DOI: 10.52202/075280-1516)</p>
+        <p lang="en">Liu, Li, Wu &amp; Lee, &#x27;Visual Instruction Tuning&#x27;, Advances in Neural Information Processing Systems 36, 2023, DOI: 10.52202/075280-1516</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/075280-1516" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.52202/075280-1516</a></p>
+        
+      </details>
+      <a class="tag" href="#">#VLM</a> <a class="tag" href="#">#多模态</a>
+    </article>
+
+
+    <article class="qitem" id="d856ca31842c">
+      <h2 class="qz" lang="zh">CLIP 的训练目标是什么？</h2>
+      <p class="qen" lang="en">What is the training objective of CLIP?</p>
+      <div class="azh" lang="zh">CLIP 用海量“图片-文字”对做对比学习：同一对的图文向量被拉到一起，不同对的被打散。训练后只需用文字向量就能去检索或分类图像，无需额外标注。</div>
+      <div class="aen" lang="en">CLIP is trained contrastively on massive image-text pairs: matching pairs are pulled together, non-matching pairs pushed apart. After training, a text vector alone can retrieve or classify images without extra labels.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wen, Zhao, Chen, Pang, Qi,《What Makes CLIP More Robust to Long-Tailed Pre-Training Data? A Controlled Study for Transferable Insights》,Advances in Neural Information Processing Systems 37,2024 (DOI: 10.52202/079017-1153)</p>
+        <p lang="en">Wen, Zhao, Chen, Pang, Qi, &#x27;What Makes CLIP More Robust to Long-Tailed Pre-Training Data? A Controlled Study for Transferable Insights&#x27;, Advances in Neural Information Processing Systems 37, 2024, DOI: 10.52202/079017-1153</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/079017-1153" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.52202/079017-1153</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CLIP</a> <a class="tag" href="#">#对比学习</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

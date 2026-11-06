@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ml-math · 数学 Mathematics | 问答</title>
+<meta name="description" content="ml-math（数学）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ml-math · 数学 Mathematics | 问答">
+<meta property="og:description" content="ml-math（数学）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/ml-math/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/ml-math/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>ml-math</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>ml-math <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>5</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#127c4d1e0a5e">Transformer 的注意力机制本质上是矩阵运算吗？</a></li><li><a href="#3a31de4b482b">海森矩阵在机器学习中有什么用？</a></li><li><a href="#8078b51bd025">反向传播的数学本质是什么？</a></li><li><a href="#8ea75ae6d048">核技巧是什么？</a></li><li><a href="#b4908ce6634f">VC 维是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="127c4d1e0a5e">
+      <h2 class="qz" lang="zh">Transformer 的注意力机制本质上是矩阵运算吗？</h2>
+      <p class="qen" lang="en">Is the Transformer attention mechanism essentially matrix algebra?</p>
+      <div class="azh" lang="zh">是的。自注意力把输入做成查询 Q、键 K、值 V 三个矩阵，计算 softmax(QKᵀ/√d)V，即“按相关性加权求和”。它让模型并行捕捉长程依赖。</div>
+      <div class="aen" lang="en">Yes—self-attention forms Q, K, V matrices and computes softmax(QKᵀ/√d)V, a relevance-weighted sum enabling parallel long-range modeling.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#机器学习数学</a> <a class="tag" href="#">#注意力</a>
+    </article>
+
+
+    <article class="qitem" id="3a31de4b482b">
+      <h2 class="qz" lang="zh">海森矩阵在机器学习中有什么用？</h2>
+      <p class="qen" lang="en">What is the Hessian used for in machine learning?</p>
+      <div class="azh" lang="zh">海森矩阵是损失函数对所有参数的二阶偏导数矩阵，描述“曲率”。牛顿法用它加速收敛，其正定性能判断极小值；但高维下计算昂贵，故常用近似。</div>
+      <div class="aen" lang="en">The Hessian is the matrix of second derivatives of the loss; Newton&#x27;s method uses it for faster convergence, and its definiteness reveals minima—but it&#x27;s costly in high dimensions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">同济大学数学系 编,《高等数学》第7版,高等教育出版社,2014</p>
+        <p lang="en">Tongji University Dept. of Math, Advanced Mathematics, 7th ed., Higher Education Press, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26311133/" target="_blank" rel="noopener">核验依据 2 ISBN 9787040396638（豆瓣书目条目: 高等数学·上册）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习数学</a> <a class="tag" href="#">#海森矩阵</a>
+    </article>
+
+
+    <article class="qitem" id="8078b51bd025">
+      <h2 class="qz" lang="zh">反向传播的数学本质是什么？</h2>
+      <p class="qen" lang="en">What is the mathematical essence of backpropagation?</p>
+      <div class="azh" lang="zh">反向传播就是多元链式法则的工程化：从输出层往回逐层计算损失对各参数的梯度。它让深层网络能用梯度下降高效训练。</div>
+      <div class="aen" lang="en">Backpropagation is the multivariate chain rule in engineering form, propagating gradients of the loss backward so deep nets train via gradient descent.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习数学</a> <a class="tag" href="#">#反向传播</a>
+    </article>
+
+
+    <article class="qitem" id="8ea75ae6d048">
+      <h2 class="qz" lang="zh">核技巧是什么？</h2>
+      <p class="qen" lang="en">What is the kernel trick?</p>
+      <div class="azh" lang="zh">核技巧不显式地把数据映射到高维，而是用核函数 K(x,y)=⟨φ(x),φ(y)⟩ 直接算高维内积，从而在高维空间做线性分类（SVM）而无需承受维度灾难。</div>
+      <div class="aen" lang="en">The kernel trick uses K(x,y)=⟨φ(x),φ(y)⟩ to compute high-dimensional inner products implicitly, enabling linear separation in high dimensions without the cost.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习数学</a> <a class="tag" href="#">#核技巧</a>
+    </article>
+
+
+    <article class="qitem" id="b4908ce6634f">
+      <h2 class="qz" lang="zh">VC 维是什么？</h2>
+      <p class="qen" lang="en">What is the VC dimension?</p>
+      <div class="azh" lang="zh">VC 维衡量一个分类模型家族的“表达能力”：能打散的最大样本点数。它给出泛化误差的理论上界，解释为什么模型太复杂会过拟合。</div>
+      <div class="aen" lang="en">VC dimension measures a hypothesis class&#x27;s capacity—the largest set it can shatter; it bounds generalization error and explains overfitting.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习数学</a> <a class="tag" href="#">#VC维</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

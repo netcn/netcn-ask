@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>numerical-analysis · 数学 Mathematics | 问答</title>
+<meta name="description" content="numerical-analysis（数学）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="numerical-analysis · 数学 Mathematics | 问答">
+<meta property="og:description" content="numerical-analysis（数学）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/numerical-analysis/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/numerical-analysis/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>numerical-analysis</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>numerical-analysis <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>11</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#470a1f01960c">高斯求积相比梯形、辛普森等 Newton-Cotes 公式有何代数精度优势？</a></li><li><a href="#71bf80e679ee">线性方程组求解中的条件数如何衡量问题的数值敏感性？</a></li><li><a href="#d24fbbb168fe">在等距节点上做高次多项式插值为何会出现剧烈振荡？</a></li><li><a href="#7072cfbf29ae">梯形法则如何近似计算定积分？</a></li><li><a href="#a30cd28299e3">浮点运算中的舍入误差主要来自哪里？</a></li><li><a href="#b8d7b76b2e3e">牛顿迭代法如何逼近方程的根？</a></li><li><a href="#bf9694f01bba">拉格朗日插值如何由给定的数据点构造多项式？</a></li><li><a href="#math_19_004">用牛顿法求 √2,即解 f(x)=x²−2。从初值 x₀=1 出发,写出前两次迭</a></li><li><a href="#math_19_012">用欧拉法数值求解常微分方程时，步长减半误差大约如何变化？为什么收敛阶不能完全反映</a></li><li><a href="#math_19_020">为什么用浮点数直接计算两个相近数之差会导致精度灾难？补偿求和（Kahan 求和）</a></li><li><a href="#math_24_005">计算机里 0.1 加 0.2 为什么偏偏不等于 0.3?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="470a1f01960c">
+      <h2 class="qz" lang="zh">高斯求积相比梯形、辛普森等 Newton-Cotes 公式有何代数精度优势？</h2>
+      <p class="qen" lang="en">What algebraic-degree advantage does Gaussian quadrature have over Newton-Cotes formulas like trapezoid or Simpson?</p>
+      <div class="azh" lang="zh">Newton-Cotes 用固定等距节点，$n$ 个点公式最高代数精度为 $n$（或 $n+1$ 当 $n$ 偶）。高斯求积自由选择 $n$ 个节点与权重，使 $2n-1$ 次多项式都能精确积分，代数精度几乎翻倍，尤其适合光滑函数的快速高精度积分。</div>
+      <div class="aen" lang="en">Newton-Cotes fixes equally spaced nodes, giving degree $n$ (or $n+1$ if $n$ even) with $n$ points. Gaussian quadrature chooses both nodes and weights freely, integrating polynomials up to degree $2n-1$ exactly—nearly doubling accuracy, ideal for smooth integrands.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#高斯求积</a> <a class="tag" href="#">#代数精度</a> <a class="tag" href="#">#Newton-Cotes</a>
+    </article>
+
+
+    <article class="qitem" id="71bf80e679ee">
+      <h2 class="qz" lang="zh">线性方程组求解中的条件数如何衡量问题的数值敏感性？</h2>
+      <p class="qen" lang="en">How does the condition number of a linear system measure its numerical sensitivity?</p>
+      <div class="azh" lang="zh">对方程组 $Ax=b$，矩阵的条件数 $\kappa(A)=\|A\|\,\|A^{-1}\|$ 刻画解对输入扰动的放大倍数：相对误差上界约为 $\kappa(A)$ 乘以数据相对误差。$\kappa$ 很大（接近奇异）时称为病态，即使算法精确，结果也可能严重失真。</div>
+      <div class="aen" lang="en">For $Ax=b$, the condition number $\kappa(A)=\|A\|\,\|A^{-1}\|$ bounds how much input perturbation amplifies in the solution; the relative error is at most about $\kappa(A)$ times the data&#x27;s relative error. A large $\kappa$ (near-singular) is ill-conditioned and can yield severely distorted results even with exact algorithms.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Trefethen, L. N. &amp; Bau, D.，《Numerical Linear Algebra》，SIAM，1997</p>
+        <p lang="en">Trefethen, L. N. &amp; Bau, D., Numerical Linear Algebra, SIAM, 1997</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Linear+Algebra" target="_blank" rel="noopener">核验依据 1 ISBN 9780898713619 (1997)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#条件数</a> <a class="tag" href="#">#病态</a> <a class="tag" href="#">#数值稳定性</a>
+    </article>
+
+
+    <article class="qitem" id="d24fbbb168fe">
+      <h2 class="qz" lang="zh">在等距节点上做高次多项式插值为何会出现剧烈振荡？</h2>
+      <p class="qen" lang="en">Why does high-degree polynomial interpolation on equally spaced nodes produce severe oscillations?</p>
+      <div class="azh" lang="zh">这是龙格现象：对如 $f(x)=1/(1+25x^2)$ 这类函数，在等距节点上提高插值次数反而使端点附近误差急剧增大。根源在于高次多项式在等距节点上 Lebesgue 常数随次数指数增长，故实际中常用分段低次（样条）插值避免。</div>
+      <div class="aen" lang="en">This is Runge&#x27;s phenomenon: for functions like $f(x)=1/(1+25x^2)$, increasing the degree on equally spaced nodes worsens error near the ends. The Lebesgue constant grows exponentially with degree on such nodes, so piecewise low-degree (spline) interpolation is preferred in practice.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#龙格现象</a> <a class="tag" href="#">#等距节点</a> <a class="tag" href="#">#Lebesgue常数</a>
+    </article>
+
+
+    <article class="qitem" id="7072cfbf29ae">
+      <h2 class="qz" lang="zh">梯形法则如何近似计算定积分？</h2>
+      <p class="qen" lang="en">How does the trapezoidal rule approximate a definite integral?</p>
+      <div class="azh" lang="zh">把积分区间 $[a,b]$ 分成 $n$ 等份，用梯形面积近似每个小区间的曲边，得到 $\int_a^b f(x)\,dx\approx\frac{h}{2}[f(x_0)+2\sum_{i=1}^{n-1}f(x_i)+f(x_n)]$，其中 $h=(b-a)/n$。对充分光滑函数误差约为 $O(h^2)$。</div>
+      <div class="aen" lang="en">Divide $[a,b]$ into $n$ equal parts and approximate each strip by a trapezoid: $\int_a^b f(x)\,dx\approx\frac{h}{2}[f(x_0)+2\sum_{i=1}^{n-1}f(x_i)+f(x_n)]$ with $h=(b-a)/n$. For smooth functions the error is about $O(h^2)$.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梯形法则</a> <a class="tag" href="#">#数值积分</a> <a class="tag" href="#">#误差阶</a>
+    </article>
+
+
+    <article class="qitem" id="a30cd28299e3">
+      <h2 class="qz" lang="zh">浮点运算中的舍入误差主要来自哪里？</h2>
+      <p class="qen" lang="en">Where do rounding errors in floating-point arithmetic mainly come from?</p>
+      <div class="azh" lang="zh">计算机用有限位二进制浮点数（如 IEEE 754 双精度约 16 位十进制）近似实数，每次加减乘除都可能产生含入误差，并随运算次数累积。条件数大的问题会把微小误差放大，导致结果显著失真。</div>
+      <div class="aen" lang="en">Computers approximate reals with finite-bit binary floats (e.g. IEEE 754 double precision, about 16 decimal digits); each operation can introduce rounding error that accumulates over many steps. Ill-conditioned problems amplify tiny errors into significant distortion.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#舍入误差</a> <a class="tag" href="#">#浮点</a> <a class="tag" href="#">#条件数</a>
+    </article>
+
+
+    <article class="qitem" id="b8d7b76b2e3e">
+      <h2 class="qz" lang="zh">牛顿迭代法如何逼近方程的根？</h2>
+      <p class="qen" lang="en">How does Newton&#x27;s method approximate a root of an equation?</p>
+      <div class="azh" lang="zh">从初值 $x_0$ 出发，按迭代 $x_{n+1}=x_n-\frac{f(x_n)}{f&#x27;(x_n)}$ 逐步逼近 $f(x)=0$ 的根。在根附近且导数不为零时，它具有二次收敛速度，但初值离根太远或导数接近零时可能发散。</div>
+      <div class="aen" lang="en">Starting from $x_0$, iterate $x_{n+1}=x_n-\frac{f(x_n)}{f&#x27;(x_n)}$ to approach a root of $f(x)=0$. Near a simple root it converges quadratically, but it may diverge if the start is far or the derivative near zero.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#牛顿法</a> <a class="tag" href="#">#迭代</a> <a class="tag" href="#">#二次收敛</a>
+    </article>
+
+
+    <article class="qitem" id="bf9694f01bba">
+      <h2 class="qz" lang="zh">拉格朗日插值如何由给定的数据点构造多项式？</h2>
+      <p class="qen" lang="en">How does Lagrange interpolation construct a polynomial from given data points?</p>
+      <div class="azh" lang="zh">给定 $n+1$ 个互异节点 $(x_i,y_i)$，拉格朗日插值多项式为 $P(x)=\sum_{i=0}^n y_i\ell_i(x)$，其中基函数 $\ell_i(x)=\prod_{j\neq i}\frac{x-x_j}{x_i-x_j}$。它在每个节点上满足 $P(x_i)=y_i$，且是次数不超过 $n$ 的唯一插值多项式。</div>
+      <div class="aen" lang="en">Given $n+1$ distinct nodes $(x_i,y_i)$, the Lagrange interpolant is $P(x)=\sum_{i=0}^n y_i\ell_i(x)$ with basis $\ell_i(x)=\prod_{j\neq i}\frac{x-x_j}{x_i-x_j}$. It satisfies $P(x_i)=y_i$ and is the unique polynomial of degree at most $n$ doing so.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#拉格朗日插值</a> <a class="tag" href="#">#插值多项式</a> <a class="tag" href="#">#基函数</a>
+    </article>
+
+
+    <article class="qitem" id="math_19_004">
+      <h2 class="qz" lang="zh">用牛顿法求 √2,即解 f(x)=x²−2。从初值 x₀=1 出发,写出前两次迭代并说明其收敛速度为何远快于二分法。</h2>
+      <p class="qen" lang="en">Apply Newton&#x27;s method to f(x)=x²−2 starting from x₀=1: give the first two iterates and explain why its convergence rate far exceeds bisection.</p>
+      <div class="azh" lang="zh">迭代式为 x_{n+1}=(x_n+2/x_n)/2:x₁=1.5,x₂≈1.41667,x₃≈1.41422,已准确到约六位有效数字,再迭代一次即可逼近双精度极限。牛顿法在单根附近误差平方级收缩(二阶收敛),每次迭代有效数字约翻倍,而二分法每步只把区间减半、线性收敛。</div>
+      <div class="aen" lang="en">The iteration is x_{n+1}=(x_n+2/x_n)/2: x₁=1.5, x₂≈1.41667, and x₃≈1.41422, already accurate to about six significant digits; one further iteration approaches the double-precision limit. Newton&#x27;s method converges quadratically near a simple root — the error squares each step, roughly doubling correct digits — whereas bisection merely halves the interval per step with linear convergence.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nocedal 与 Wright《Numerical Optimization》第 11 章,或 Burden 与 Faires《Numerical Analysis》根求解章节的误差分析</p>
+        <p lang="en">J. Nocedal and S. Wright, Numerical Optimization, Chapter 11, or Burden &amp; Faires, Numerical Analysis, error analysis in the root-finding chapter</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#牛顿迭代</a> <a class="tag" href="#">#收敛阶</a>
+    </article>
+
+
+    <article class="qitem" id="math_19_012">
+      <h2 class="qz" lang="zh">用欧拉法数值求解常微分方程时，步长减半误差大约如何变化？为什么收敛阶不能完全反映计算代价？</h2>
+      <p class="qen" lang="en">When solving an ODE with the explicit Euler method, how does the error change when the step size is halved, and why doesn&#x27;t the order of convergence tell the whole cost story?</p>
+      <div class="azh" lang="zh">显式欧拉法是一阶方法，整体截断误差大致与步长成正比，步长减半误差约减半，但所需的函数求值次数随之翻倍。收敛阶只刻画误差随步长的渐近速率，实际代价还取决于每步开销、稳定性约束和问题的刚性程度。</div>
+      <div class="aen" lang="en">Explicit Euler is first-order: its global truncation error is roughly proportional to the step size, so halving h halves the error but doubles the number of function evaluations. Convergence order only describes asymptotic accuracy versus step size; real cost also depends on per-step work, stability restrictions, and stiffness.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Hairer, E., Nørsett, S. P., &amp; Wanner, G. (2005). Solving Ordinary Differential Equations I: Nonstiff Problems (2nd ed.). Springer</p>
+        <p lang="en">Hairer, E., Nørsett, S. P., &amp; Wanner, G. (2005). Solving Ordinary Differential Equations I: Nonstiff Problems (2nd ed.). Springer</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#欧拉法</a> <a class="tag" href="#">#收敛阶</a>
+    </article>
+
+
+    <article class="qitem" id="math_19_020">
+      <h2 class="qz" lang="zh">为什么用浮点数直接计算两个相近数之差会导致精度灾难？补偿求和（Kahan 求和）如何缓解这一问题？</h2>
+      <p class="qen" lang="en">Why does computing the difference of two nearly equal numbers in floating point cause catastrophic cancellation, and how does Kahan compensated summation mitigate such errors?</p>
+      <div class="azh" lang="zh">机器浮点数的有效位数固定，两个相近数相减后高位信息互相抵消，结果中相对误差被急剧放大，这称为灾难性抵消。Kahan 补偿求和用一个额外的变量记录每步被舍入丢掉的低位残差并在下一步加回，使 n 个数求和的误差从 O(n·u) 降到与 n 无关的 O(u)，显著改善长序列累加的精度。</div>
+      <div class="aen" lang="en">Floating-point numbers have fixed precision, so subtracting nearly equal quantities cancels leading digits and amplifies relative error dramatically—catastrophic cancellation. Kahan&#x27;s compensated summation keeps an extra variable holding the low-order bits lost to rounding each step and adds them back next round, reducing the error of summing n numbers from O(n·u) to a constant O(u), greatly improving long accumulations.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Burden 与 Faires,《Numerical Analysis》第9版,Brooks/Cole,2011</p>
+        <p lang="en">R. L. Burden &amp; J. D. Faires, Numerical Analysis, 9th ed., Brooks/Cole, 2011</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#浮点误差</a> <a class="tag" href="#">#补偿求和</a>
+    </article>
+
+
+    <article class="qitem" id="math_24_005">
+      <h2 class="qz" lang="zh">计算机里 0.1 加 0.2 为什么偏偏不等于 0.3?</h2>
+      <p class="qen" lang="en">Why does 0.1 plus 0.2 refuse to equal exactly 0.3 in computers?</p>
+      <div class="azh" lang="zh">计算机用二进制存小数,而十进制的 0.1 是 1/10,化成二进制是无限循环小数 0.000110011…,存储时必须在有限位处截断,产生微小误差;0.2 同理。两者相加得到一个略偏离 0.3 二进制表示的数,显示出来便是 0.30000000000000004。这不是 bug,而是 IEEE 754 浮点标准用有限二进制位逼近实数的固有代价;工程上的对策是比较时允许误差范围、金额计算改用整数分单位或十进制库。</div>
+      <div class="aen" lang="en">Computers store fractions in binary, but decimal 0.1 equals binary 0.000110011..., repeating forever, so storage must truncate somewhere, introducing a tiny error; likewise 0.2. Their sum lands next to, not exactly on, the binary representation of 0.3 — printed as 0.30000000000000004. This is not a bug but the intrinsic cost of approximating real numbers with finite binary digits under the IEEE 754 standard; engineers compare within tolerance and compute money in integer cents or decimal libraries.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goldberg,《What Every Computer Scientist Should Know About Floating-Point Arithmetic》,ACM Computing Surveys 第23卷,1991</p>
+        <p lang="en">D. Goldberg, What Every Computer Scientist Should Know About Floating-Point Arithmetic, ACM Computing Surveys 23, 1991</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/103162.103163" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/103162.103163：What every computer sc</a></p>
+        
+      </details>
+      <a class="tag" href="#">#浮点数</a> <a class="tag" href="#">#IEEE 754</a> <a class="tag" href="#">#舍入误差</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

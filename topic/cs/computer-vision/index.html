@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>computer-vision · 计算机 Computer Science | 问答</title>
+<meta name="description" content="computer-vision（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="computer-vision · 计算机 Computer Science | 问答">
+<meta property="og:description" content="computer-vision（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/computer-vision/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/computer-vision/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>computer-vision</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>computer-vision <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>14</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#72f3a4c13b17">残差连接(ResNet)为何能训练极深的网络而不出现退化?</a></li><li><a href="#8adfd2442237">卷积层如何通过权值共享获得平移不变性，感受野又意味着什么?</a></li><li><a href="#cs_19_013">RoI Pooling 的两次坐标取整如何损害像素级预测,Mask R-CNN </a></li><li><a href="#cs_26_008">Vision Transformer 把图像切块当作序列来处理,为什么在中小规模</a></li><li><a href="#cs_26_017">扩散模型训练时教网络把加了噪声的图片一步步还原，生成时却从一团纯噪声起步，这种先</a></li><li><a href="#59c1f411b214">不同的卷积核在图像处理中通常能提取哪些特征?</a></li><li><a href="#a92c6533f709">池化层在卷积网络里主要起到什么作用?</a></li><li><a href="#c4141a278807">卷积神经网络中的卷积运算本质上在做什么?</a></li><li><a href="#cs_19_005">卷积网络为何对平移表现出等变性,却对旋转和尺度变化天然脆弱?研究者用什么思路弥补</a></li><li><a href="#cs_26_005">YOLO 把目标检测变成单次前向传播完成的回归问题,相比 Faster R-CN</a></li><li><a href="#cs_26_007">目标检测器的后处理为什么要做非极大值抑制?它按什么步骤工作,又在哪种场景下容易失</a></li><li><a href="#eab4f6e88ee3">目标检测与图像分类任务的主要差别是什么?</a></li><li><a href="#ee3f58813779">语义分割与普通的物体检测在输出上有何不同?</a></li><li><a href="#cs_26_006">处理图像时,卷积神经网络为什么偏爱用卷积层而不是全连接层?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="72f3a4c13b17">
+      <h2 class="qz" lang="zh">残差连接(ResNet)为何能训练极深的网络而不出现退化?</h2>
+      <p class="qen" lang="en">Why do residual connections (ResNet) enable training very deep networks without degradation?</p>
+      <div class="azh" lang="zh">深层网络若简单堆叠会出现退化：层数增加后训练误差反而上升，因为梯度在反向传播中更易消失或弥散。残差连接让每一块学习输入与输出的残差，并提供了跨层直连通路，使梯度能更直接地回传，从而稳定地训练上百层的网络。</div>
+      <div class="aen" lang="en">Simply stacking layers causes degradation where training error rises with depth because gradients more easily vanish or diffuse during backpropagation. A residual connection lets each block learn the residual between input and output and provides a direct skip path, so gradients flow back more directly, enabling stable training of networks over a hundred layers deep.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">He, Zhang, Ren &amp; Sun,《Deep Residual Learning for Image Recognition》,CVPR 2016,2016 (DOI: 10.1109/cvpr.2016.90)</p>
+        <p lang="en">He, Zhang, Ren &amp; Sun, &#x27;Deep Residual Learning for Image Recognition&#x27;, CVPR 2016, 2016, DOI: 10.1109/cvpr.2016.90</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/cvpr.2016.90" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/cvpr.2016.90</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ResNet</a> <a class="tag" href="#">#残差连接</a> <a class="tag" href="#">#梯度消失</a>
+    </article>
+
+
+    <article class="qitem" id="8adfd2442237">
+      <h2 class="qz" lang="zh">卷积层如何通过权值共享获得平移不变性，感受野又意味着什么?</h2>
+      <p class="qen" lang="en">How does a convolution layer gain translation invariance through weight sharing, and what does the receptive field mean?</p>
+      <div class="azh" lang="zh">同一卷积核在整张图上使用同一组权重滑动，因此无论目标出现在哪个位置，都能被相同的模式检测器识别，这赋予网络一定的平移不变性。感受野指输出图中某个单元所对应输入图上的区域大小，深层单元感受野更大、能看到更广阔上下文。</div>
+      <div class="aen" lang="en">The same kernel applies one set of weights across the whole image, so a target is detected by the same pattern regardless of position, giving the network a degree of translation invariance. The receptive field is the input-region size a given output unit responds to; deeper units have larger receptive fields and see broader context.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第9章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 9 (Convolutional Networks)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#权值共享</a> <a class="tag" href="#">#平移不变性</a> <a class="tag" href="#">#感受野</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_013">
+      <h2 class="qz" lang="zh">RoI Pooling 的两次坐标取整如何损害像素级预测,Mask R-CNN 的 RoIAlign 凭什么修复它?</h2>
+      <p class="qen" lang="en">Where exactly does RoI Pooling coordinate quantization hurt dense predictions, and how does RoIAlign fix it?</p>
+      <div class="azh" lang="zh">Faster R-CNN 的 RoI Pooling 先把候选框坐标除以特征步长取整到特征网格,再把每个 bin 的边界二次取整,两次舍入使池化窗口与真实特征位置最多偏差一个网格单元。对分类任务这几乎无感,但逐像素的掩码头会继承系统性错位,物体边缘处的误差被进一步放大。Mask R-CNN 改为在连续坐标上按固定偏移做双线性插值采样再池化,消除量化误差,论文报告在 COCO 上掩码 AP 取得约 10% 的相对提升,后续检测框架普遍沿用该设计。</div>
+      <div class="aen" lang="en">In Faster R-CNN, RoI Pooling first snaps proposal corners onto the feature grid by integer division, then rounds each bin edge again, so the pooled window can drift up to one feature cell away from where the box actually lies. Classification barely notices, but pixelwise mask heads inherit that systematic misalignment, with errors amplified near object boundaries. Mask R-CNN replaces rounding with bilinear sampling at fixed offsets in continuous coordinates; the paper reports roughly a 10% relative gain in mask AP on COCO, and nearly all later detectors adopted the same design.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">He, Gkioxari, Dollar &amp; Girshick,《Mask R-CNN》,2017 IEEE International Conference on Computer Vision (ICCV),2017 (DOI: 10.1109/iccv.2017.322)</p>
+        <p lang="en">He, Gkioxari, Dollar &amp; Girshick, &#x27;Mask R-CNN&#x27;, 2017 IEEE International Conference on Computer Vision (ICCV), 2017, DOI: 10.1109/iccv.2017.322</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/iccv.2017.322" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/iccv.2017.322</a></p>
+        
+      </details>
+      <a class="tag" href="#">#目标检测</a> <a class="tag" href="#">#实例分割</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_008">
+      <h2 class="qz" lang="zh">Vision Transformer 把图像切块当作序列来处理,为什么在中小规模数据上常常敌不过 CNN,而在超大规模数据上又能反超?</h2>
+      <p class="qen" lang="en">Vision Transformers chop an image into patches and treat it as a sequence. Why do they often lose to CNNs on small-to-mid-scale data yet pull ahead once data becomes huge?</p>
+      <div class="azh" lang="zh">差别源自两者内置的归纳偏置。卷积层自带两条硬约束:局部性——每个输出只看邻近像素;平移等变——核滑到哪里规则都不变,这等于把视觉世界的结构知识直接写进架构,样本稀缺时先验替模型省下大量学习成本。ViT 的自注意力几乎不做位置假设,块间全局自由交互,局部性和平移规律都得从数据里重新学出,数据不够便学不动;数据充足时,不受先验束缚的全局注意力反而能捕捉比手工设计更贴合任务的统计规律。</div>
+      <div class="aen" lang="en">The difference lies in built-in inductive biases. Convolutions carry two hard constraints: locality, each output seeing only neighboring pixels, and translation equivariance, the same rule applying wherever the kernel lands — visual structure effectively hard-wired into the architecture, saving the model enormous learning cost when samples are scarce. Self-attention in a ViT assumes little about position and lets patches interact globally, so locality and translation regularity must be relearned purely from data, which stalls when data runs short; with abundant data, global attention free of hand-set priors can capture patterns better suited to the task than any manual design.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">A. Dosovitskiy 等,An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale,ICLR 2021年</p>
+        <p lang="en">A. Dosovitskiy et al., An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, ICLR 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#归纳偏置</a> <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#视觉Transformer</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_017">
+      <h2 class="qz" lang="zh">扩散模型训练时教网络把加了噪声的图片一步步还原，生成时却从一团纯噪声起步，这种先破坏再重建的思路凭什么能画出逼真图像？</h2>
+      <p class="qen" lang="en">Diffusion models are trained to restore noise-corrupted images step by step, yet generation starts from pure noise — how does this break-first, rebuild-later scheme manage to synthesize realistic pictures?</p>
+      <div class="azh" lang="zh">它把一步画出逼真图像的难题，拆成上千次每次只去掉一点噪声的小步，每一步都简单到网络学得会。训练时向真实图像加入强度随机的高斯噪声，让U形网络预测混入的噪声成分，以预测与真值之差为损失；生成时从纯噪声出发反复预测并扣除噪声，图像分布便沿着学到的得分函数一步步逼近自然图像所在的流形。单步修正量小、误差不易累积，再借助引导项控制生成方向，结果既多样又逼真。</div>
+      <div class="aen" lang="en">It dissolves the impossible task of rendering a realistic image in one shot into thousands of tiny steps of shaving off a little noise, each simple enough for a network to learn. Training adds Gaussian noise of random strength to real photos and a U-Net predicts exactly which noise got mixed in, optimizing against the ground truth; sampling then starts from pure noise and repeatedly predicts and subtracts noise, walking the distribution along the learned score function toward the manifold of natural images. Per-step corrections stay small so errors hardly accumulate, and guidance terms steer the outcome — diverse yet believable.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">J. Ho、A. Jain 与 P. Abbeel，Denoising Diffusion Probabilistic Models，NeurIPS 2020；J. Song、C. Meng 与 S. Ermon，Denoising Diffusion Implicit Models，ICLR 2021</p>
+        <p lang="en">J. Ho, A. Jain and P. Abbeel, Denoising Diffusion Probabilistic Models, NeurIPS 2020; J. Song, C. Meng and S. Ermon, Denoising Diffusion Implicit Models, ICLR 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#扩散模型</a> <a class="tag" href="#">#去噪</a> <a class="tag" href="#">#得分函数</a>
+    </article>
+
+
+    <article class="qitem" id="59c1f411b214">
+      <h2 class="qz" lang="zh">不同的卷积核在图像处理中通常能提取哪些特征?</h2>
+      <p class="qen" lang="en">What kinds of features can different convolution kernels typically extract in image processing?</p>
+      <div class="azh" lang="zh">通过设计不同的权重，卷积核可以充当边缘检测器（如 Sobel）、模糊核或锐化核等。在深度网络中，浅层核常学到边缘与颜色，深层核逐步组合出纹理、部件乃至整体物体结构。</div>
+      <div class="aen" lang="en">By designing different weights, kernels can act as edge detectors such as Sobel, blurring kernels, or sharpening kernels. In deep networks, shallow kernels often learn edges and colors while deeper ones progressively compose textures, parts, and whole object structures.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第9章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 9 (Convolutional Networks)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#卷积核</a> <a class="tag" href="#">#边缘检测</a> <a class="tag" href="#">#特征提取</a>
+    </article>
+
+
+    <article class="qitem" id="a92c6533f709">
+      <h2 class="qz" lang="zh">池化层在卷积网络里主要起到什么作用?</h2>
+      <p class="qen" lang="en">What is the main role of a pooling layer in a convolutional network?</p>
+      <div class="azh" lang="zh">池化（如最大池化）对局部邻域取最大值或平均值，降低特征图分辨率并减少参数量。它带来一定的平移鲁棒性，使后续层更关注「是否存在某特征」而非其精确位置。</div>
+      <div class="aen" lang="en">Pooling such as max pooling takes the maximum or average over a local neighborhood, reducing feature-map resolution and the number of parameters. It adds some translation robustness so later layers care more about whether a feature exists than its exact position.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第9章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 9 (Convolutional Networks)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#池化</a> <a class="tag" href="#">#最大池化</a> <a class="tag" href="#">#降维</a>
+    </article>
+
+
+    <article class="qitem" id="c4141a278807">
+      <h2 class="qz" lang="zh">卷积神经网络中的卷积运算本质上在做什么?</h2>
+      <p class="qen" lang="en">What does the convolution operation essentially do in a convolutional neural network?</p>
+      <div class="azh" lang="zh">卷积用一个小的滤波器（卷积核）在输入特征图上滑动，对每个局部区域做加权求和得到输出特征图。这样网络能以远少于全连接层的参数提取图像的局部空间模式，如边缘和纹理。</div>
+      <div class="aen" lang="en">Convolution slides a small filter (kernel) across the input feature map, computing a weighted sum over each local region to produce an output feature map. This lets the network extract local spatial patterns such as edges and textures with far fewer parameters than a fully connected layer.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第9章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 9 (Convolutional Networks)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#卷积</a> <a class="tag" href="#">#特征图</a> <a class="tag" href="#">#滤波器</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_005">
+      <h2 class="qz" lang="zh">卷积网络为何对平移表现出等变性,却对旋转和尺度变化天然脆弱?研究者用什么思路弥补后一缺陷?</h2>
+      <p class="qen" lang="en">Why are convolutional networks equivariant to translation yet inherently fragile to rotation and scale, and what ideas have been proposed to close that gap?</p>
+      <div class="azh" lang="zh">局部感受野叠加权值共享,使输入平移时特征图整体平移,这是等变性的来源;但卷积核的方向与尺度固定,旋转或缩放后的输入落在训练分布之外。数据增强与多尺度金字塔是工程上的常规缓解手段,群等变卷积与空间变换网络则从结构层面把旋转、尺度纳入对称群建模。</div>
+      <div class="aen" lang="en">Local receptive fields combined with weight sharing shift the entire feature map when the input shifts, which is exactly translation equivariance; kernels, however, have fixed orientation and scale, so rotated or rescaled inputs fall outside the training distribution. Augmentation and multi-scale pyramids are the pragmatic fixes, while group-equivariant convolutions and spatial transformer networks build rotation and scale into the architecture itself.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">T. Cohen 与 M. Welling,《群等变卷积网络》,ICML 2016</p>
+        <p lang="en">T. Cohen and M. Welling, Group Equivariant Convolutional Networks, ICML 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1602.07576" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1602.07576：Group Equivariant Convolutio</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机视觉</a> <a class="tag" href="#">#卷积网络</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_005">
+      <h2 class="qz" lang="zh">YOLO 把目标检测变成单次前向传播完成的回归问题,相比 Faster R-CNN 这类两阶段方法快在哪里？付出的代价是什么？</h2>
+      <p class="qen" lang="en">YOLO turns object detection into a regression done in a single forward pass. Where does its speed advantage over two-stage methods like Faster R-CNN come from, and what is the price?</p>
+      <div class="azh" lang="zh">两阶段方法要先在整图上搜出可能含物体的候选区域,再对每个候选分别分类并微调边框,候选越多计算越重;YOLO 把图像划分成网格,一次前向同时输出所有格子的边框坐标与类别概率,整幅图只推理一遍,天然适合实时视频分析。代价是每个格子只能负责少量目标,拥挤的小目标容易漏检,早期版本在定位精度与召回率上也落后于精修候选区域的两阶段方案。</div>
+      <div class="aen" lang="en">Two-stage pipelines first search the whole image for region proposals that may contain objects, then classify and refine each proposal separately, so the cost grows with the number of proposals. YOLO instead divides the image into a grid and outputs every cell&#x27;s box coordinates and class probabilities in one forward pass, reasoning over the full frame once, which suits real-time video analysis naturally. The price is that each grid cell handles only a few objects, crowded small objects get missed easily, and early versions lagged behind proposal-refining two-stage systems in localization accuracy and recall.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. Redmon 等,You Only Look Once: Unified, Real-Time Object Detection,CVPR 2016;S. Ren 等,Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks,NeurIPS 2015</p>
+        <p lang="en">J. Redmon et al., You Only Look Once: Unified, Real-Time Object Detection, CVPR 2016; S. Ren et al., Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, NeurIPS 2015</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1506.01497" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1506.01497：Faster R-CNN: Towards Real-T</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单阶段检测</a> <a class="tag" href="#">#候选区域</a> <a class="tag" href="#">#实时检测</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_007">
+      <h2 class="qz" lang="zh">目标检测器的后处理为什么要做非极大值抑制?它按什么步骤工作,又在哪种场景下容易失手?</h2>
+      <p class="qen" lang="en">Why does object detection post-processing rely on non-maximum suppression? What steps does it follow, and in what kind of scenes does it stumble?</p>
+      <div class="azh" lang="zh">NMS 负责把重叠检出同一物体的冗余框裁剪到只剩最可信的一个。步骤是先把候选框按置信度排序,取出最高者放进保留集合,算它与剩余每个框的交并比,超过阈值的视为重复框删除,然后在剩下的框里重复取最大、删重叠,直到处理完毕。它失手的根源在于只度量几何重叠、不理解内容:人群或车流里目标彼此紧贴,框重叠天然很高,阈值放宽松就残留重复框,收紧又会把真实的邻近目标当成重复误删。</div>
+      <div class="aen" lang="en">NMS prunes redundant boxes that detect the same object down to the single most credible one. Candidates are sorted by confidence, the top box enters the kept set, its intersection-over-union against every remaining box is computed, and anything above the threshold is deleted as a duplicate; taking the maximum and removing overlaps then repeats on the survivors. It stumbles because it measures only geometric overlap and understands no content: in crowds or dense traffic objects touch each other and box overlap runs naturally high, so a loose threshold leaves duplicates behind while a strict one deletes real neighbors as repeats.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">A. Neubeck 与 L. Van Gool,Efficient Non-Maximum Suppression,ICPR 2006年;R. Girshick,Fast R-CNN,ICCV 2015年</p>
+        <p lang="en">A. Neubeck and L. Van Gool, Efficient Non-Maximum Suppression, ICPR 2006; R. Girshick, Fast R-CNN, ICCV 2015</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/icpr.2006.479" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/icpr.2006.479（复合著录按段核验：本标识只担保第一段 A.</a> · <a class="evlink" href="https://doi.org/10.1109/iccv.2015.169" target="_blank" rel="noopener">核验依据 2 Crossref DOI 10.1109/iccv.2015.169（复合著录按段核验：本标识只担保第二段 R.</a></p>
+        
+      </details>
+      <a class="tag" href="#">#非极大值抑制</a> <a class="tag" href="#">#交并比</a> <a class="tag" href="#">#检测后处理</a>
+    </article>
+
+
+    <article class="qitem" id="eab4f6e88ee3">
+      <h2 class="qz" lang="zh">目标检测与图像分类任务的主要差别是什么?</h2>
+      <p class="qen" lang="en">What is the main difference between object detection and image classification?</p>
+      <div class="azh" lang="zh">图像分类只判断整张图属于哪一类，而目标检测还要在图中定位每个目标并标出边界框，属于「分类加定位」的复合任务。检测需要同时输出类别与位置坐标，难度和输出维度都更高。</div>
+      <div class="aen" lang="en">Image classification only decides which class an entire image belongs to, whereas object detection also locates each object with a bounding box, making it a combined classification-and-localization task. Detection must output both class and position, raising both difficulty and output dimensionality.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Redmon et al.《You Only Look Once》(CVPR 2016)</p>
+        <p lang="en">J. Redmon et al., You Only Look Once: Unified, Real-Time Object Detection, CVPR 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/cvpr.2016.91" target="_blank" rel="noopener">核验依据 1 DOI 10.1109/cvpr.2016.91</a></p>
+        
+      </details>
+      <a class="tag" href="#">#目标检测</a> <a class="tag" href="#">#图像分类</a> <a class="tag" href="#">#边界框</a>
+    </article>
+
+
+    <article class="qitem" id="ee3f58813779">
+      <h2 class="qz" lang="zh">语义分割与普通的物体检测在输出上有何不同?</h2>
+      <p class="qen" lang="en">How does semantic segmentation differ from ordinary object detection in its output?</p>
+      <div class="azh" lang="zh">物体检测输出若干边界框加类别，而语义分割为图像中每一个像素分配一个类别标签，得到与输入同尺寸的掩膜。它回答的是「每个像素属于什么」而不是「图中哪里有什么物体」。</div>
+      <div class="aen" lang="en">Object detection outputs bounding boxes with classes, whereas semantic segmentation assigns every pixel a class label, producing a mask the same size as the input. It answers what class each pixel belongs to rather than where objects are in the image.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ronneberger et al.《U-Net》(MICCAI 2015)</p>
+        <p lang="en">O. Ronneberger et al., U-Net: Convolutional Networks for Biomedical Image Segmentation, MICCAI 2015</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1505.04597" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1505.04597：U-Net: Convolutional Network</a></p>
+        
+      </details>
+      <a class="tag" href="#">#语义分割</a> <a class="tag" href="#">#像素</a> <a class="tag" href="#">#掩膜</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_006">
+      <h2 class="qz" lang="zh">处理图像时,卷积神经网络为什么偏爱用卷积层而不是全连接层?</h2>
+      <p class="qen" lang="en">When processing images, why do convolutional neural networks prefer convolutional layers over fully connected layers?</p>
+      <div class="azh" lang="zh">核心原因是局部连接加参数共享恰好契合图像的统计规律。相邻像素相关性强、远距离像素相关性弱,小卷积核只看一个局部窗口就能提出边缘、纹理这类基元;同一组核在整个图上滑动复用,参数量从与像素数成正比降到与核大小成正比,还附带平移等变性——目标挪个位置,特征响应也跟着挪。全连接层给每个像素配独立权重,不仅参数爆炸,还把这些宝贵先验全部丢弃。</div>
+      <div class="aen" lang="en">Local connectivity plus weight sharing happens to match how images behave statistically. Nearby pixels correlate strongly while distant ones hardly at all, so a small kernel inspecting a local window already extracts primitives like edges and textures; one set of kernels slides and reuses itself across the whole picture, dropping parameters from scaling with pixel count to scaling with kernel size, and bringing translation equivariance — shift the target and the feature responses shift too. Fully connected layers assign an independent weight to every pixel, exploding parameters and throwing away these valuable priors.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Y. LeCun 等,Gradient-Based Learning Applied to Document Recognition,Proceedings of the IEEE 1998年;I. Goodfellow、Y. Bengio 与 A. Courville,《Deep Learning》,MIT Press,2016年</p>
+        <p lang="en">Y. LeCun et al., Gradient-Based Learning Applied to Document Recognition, Proceedings of the IEEE, 1998; I. Goodfellow, Y. Bengio and A. Courville, Deep Learning, MIT Press, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#局部连接</a> <a class="tag" href="#">#参数共享</a> <a class="tag" href="#">#平移等变性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电子技术 electronics · 工程技术 Engineering | 问答</title>
+<meta name="description" content="电子技术（工程技术）分类下的 17 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 17 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="电子技术 electronics · 工程技术 Engineering | 问答">
+<meta property="og:description" content="电子技术（工程技术）分类下的 17 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 17 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/electronics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/electronics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>电子技术</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>电子技术 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>17</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#dcc9bd7cc62c">驱动MOSFET和驱动三极管为什么方法完全不同？</a></li><li><a href="#0e6891ca23eb">LED为什么要用恒流驱动而不是恒压驱动？</a></li><li><a href="#44818fa0be9b">三极管既能放大又能当开关，两种用法有什么不同？</a></li><li><a href="#4a3a5ece8009">为什么继电器或电机线圈两端要反接一个二极管？</a></li><li><a href="#a51b616b801b">为什么电路板上的高速信号线要走成等长的差分对？</a></li><li><a href="#b0e5b27265d3">模数转换器的位数和量化误差是什么关系？</a></li><li><a href="#e21f01340c16">为什么每个芯片电源脚旁边都要放一个小电容？</a></li><li><a href="#eng_23_007">同样瓦数下，为什么LED灯发出的可见光远多于白炽灯？</a></li><li><a href="#eng_23_015">常见白光LED为什么必须用蓝光芯片去激发一层黄色荧光粉，而不能直接发出白光？</a></li><li><a href="#185ebc30b3a2">电路里的上拉电阻和下拉电阻起什么作用？</a></li><li><a href="#300af2c44b13">霍尔传感器是怎么不接触就测出磁场和转速的？</a></li><li><a href="#49d55a2e0a64">光耦为什么能在两个电路之间隔离信号？</a></li><li><a href="#676a7c38a5bd">数据线上套的那个黑色磁环有什么用？</a></li><li><a href="#949bc058f963">什么是PWM，为什么它能调灯的亮度和电机转速？</a></li><li><a href="#bf736849c7e7">电子产品为什么要做电磁兼容测试？</a></li><li><a href="#cf10cdf52169">电解电容为什么分正负极，还会鼓包？</a></li><li><a href="#cfbcaea58db5">电阻上的彩色圆环是怎么读出阻值的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="dcc9bd7cc62c">
+      <h2 class="qz" lang="zh">驱动MOSFET和驱动三极管为什么方法完全不同？</h2>
+      <p class="qen" lang="en">Why is driving a MOSFET completely different from driving a bipolar transistor?</p>
+      <div class="azh" lang="zh">三极管是电流控制器件，基极必须持续注入电流才能维持导通。MOSFET是电压控制器件，栅极靠电场控制沟道，静态几乎不耗电流，但栅极存在几纳法的电容。因此高速开关时驱动电路必须能在很短时间内灌入和抽出大电流给栅电容充放电，否则开关变慢、损耗剧增，这就是要用专门栅极驱动芯片的原因。</div>
+      <div class="aen" lang="en">A bipolar transistor is current controlled, so base current must flow continuously to keep it on. A MOSFET is voltage controlled, its channel governed by the gate field, drawing almost no steady current but presenting a gate capacitance of several nanofarads. For fast switching the driver must therefore source and sink large currents briefly to charge and discharge that capacitance, otherwise switching slows and losses soar, which is why dedicated gate-driver chips exist.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">M. Rashid《电力电子：电路、器件与应用》第4版,Prentice Hall,2004</p>
+        <p lang="en">M. Rashid, Power Electronics: Circuits, Devices, and Applications, 4th ed., Prentice Hall, 2004</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/powerelectronics0000rash" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 powerelectronics0000rash：Power electronics : </a></p>
+        
+      </details>
+      <a class="tag" href="#">#MOSFET</a> <a class="tag" href="#">#栅极驱动</a> <a class="tag" href="#">#开关损耗</a>
+    </article>
+
+
+    <article class="qitem" id="0e6891ca23eb">
+      <h2 class="qz" lang="zh">LED为什么要用恒流驱动而不是恒压驱动？</h2>
+      <p class="qen" lang="en">Why are LEDs driven with constant current rather than constant voltage?</p>
+      <div class="azh" lang="zh">LED的电流随正向电压呈指数增长，正向压降还会随温度升高而下降。用恒压源供电时，温度稍升就会导致电流增大、发热更多，形成热失控，亮度和寿命都受影响。恒流驱动直接把电流锁定在设计值，电压自动适配，因此亮度稳定、色温一致、器件更耐久。</div>
+      <div class="aen" lang="en">LED current rises exponentially with forward voltage, and the forward drop itself falls as temperature rises. Fed from a constant-voltage source, a small temperature rise increases current and heating further, leading to thermal runaway that harms brightness and lifetime. A constant-current driver fixes the current at the design value and lets the voltage settle wherever it needs to, giving stable brightness, consistent colour temperature and longer life.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#LED</a> <a class="tag" href="#">#恒流驱动</a> <a class="tag" href="#">#热失控</a>
+    </article>
+
+
+    <article class="qitem" id="44818fa0be9b">
+      <h2 class="qz" lang="zh">三极管既能放大又能当开关，两种用法有什么不同？</h2>
+      <p class="qen" lang="en">A transistor can amplify or switch; how do the two uses differ?</p>
+      <div class="azh" lang="zh">放大时三极管工作在放大区，集电极电流约等于基极电流乘放大倍数，管子上有较大电压和电流同时存在，因此发热明显，输出与输入成比例。开关时它在截止区和饱和区之间跳变，要么几乎不导通，要么两端压降很小，功耗低。数字电路和电机驱动追求开关状态，音频与传感器前端才用放大区。</div>
+      <div class="aen" lang="en">For amplification the transistor works in the active region, where collector current is roughly base current times gain and appreciable voltage and current coexist, so it dissipates noticeable heat while the output tracks the input proportionally. As a switch it jumps between cut-off and saturation, either barely conducting or dropping very little voltage, so losses are low. Digital circuits and motor drives want switching operation, while audio and sensor front ends use the active region.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Streetman &amp; Banerjee，《固态电子器件》（第7版）</p>
+        <p lang="en">Streetman &amp; Banerjee, &#x27;Solid State Electronic Devices&#x27; (7th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/30326140/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121315657（豆瓣书目条目: 固态电子器件）</a> · <a class="evlink" href="https://openlibrary.org/works/OL34943756W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL34943756W：Solid State Electronic</a></p>
+        
+      </details>
+      <a class="tag" href="#">#三极管</a> <a class="tag" href="#">#放大区</a> <a class="tag" href="#">#开关</a>
+    </article>
+
+
+    <article class="qitem" id="4a3a5ece8009">
+      <h2 class="qz" lang="zh">为什么继电器或电机线圈两端要反接一个二极管？</h2>
+      <p class="qen" lang="en">Why is a diode connected in reverse across a relay or motor coil?</p>
+      <div class="azh" lang="zh">线圈是电感，电流不能突变。开关断开瞬间电感试图维持电流，会在两端产生很高的反向电压尖峰，足以击穿驱动管或干扰电路。反并联的续流二极管为这股电流提供回路，让它在线圈和二极管中缓慢衰减，把电压钳位在一个二极管压降左右。</div>
+      <div class="aen" lang="en">A coil is an inductor, and its current cannot change instantly. When the switch opens, the inductance tries to maintain current and generates a large reverse voltage spike that can destroy the driving transistor or upset nearby circuits. A reverse-connected freewheeling diode gives that current a path to circulate and decay slowly through the coil, clamping the voltage to about one diode drop.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#续流二极管</a> <a class="tag" href="#">#电感</a> <a class="tag" href="#">#感性负载</a>
+    </article>
+
+
+    <article class="qitem" id="a51b616b801b">
+      <h2 class="qz" lang="zh">为什么电路板上的高速信号线要走成等长的差分对？</h2>
+      <p class="qen" lang="en">Why are high-speed signals on a circuit board routed as length-matched differential pairs?</p>
+      <div class="azh" lang="zh">差分传输用两根线传送极性相反的信号，接收端只看两者之差，因此外界耦合进来的共模噪声被相减抵消，抗干扰能力强，向外辐射也小。两根线必须等长，否则信号到达时间不同会产生相位偏移，破坏差分对称并引入共模成分。同时要控制线间距以保持恒定的差分阻抗，避免反射。</div>
+      <div class="aen" lang="en">Differential transmission sends opposite-polarity signals on two traces and the receiver looks only at their difference, so common-mode noise coupled from outside subtracts away, giving strong immunity and low emission. The two traces must be equal in length, otherwise the signals arrive at different times, creating skew that breaks the differential symmetry and introduces a common-mode component. Spacing must also be controlled to keep the differential impedance constant and avoid reflections.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#差分信号</a> <a class="tag" href="#">#等长布线</a> <a class="tag" href="#">#信号完整性</a>
+    </article>
+
+
+    <article class="qitem" id="b0e5b27265d3">
+      <h2 class="qz" lang="zh">模数转换器的位数和量化误差是什么关系？</h2>
+      <p class="qen" lang="en">How are an analogue-to-digital converter&#x27;s bit count and quantisation error related?</p>
+      <div class="azh" lang="zh">模数转换把连续电压映射到有限个整数台阶，位数决定台阶总数，十二位就有四千零九十六级。每级对应的电压是量程除以级数，量化误差最大为半级，位数每增加一位误差减半。但实际有效位数还受噪声、参考电压稳定性和线性度限制，标称位数高并不等于测得更准。</div>
+      <div class="aen" lang="en">An ADC maps continuous voltage onto a finite number of integer steps, and the bit count sets how many steps there are, so twelve bits gives four thousand and ninety-six levels. Each step corresponds to the full range divided by the number of levels, the worst-case quantisation error is half a step, and every extra bit halves it. In practice the effective number of bits is limited by noise, reference stability and linearity, so a high nominal bit count does not by itself mean more accurate measurement.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《通信原理》（樊昌信，国防工业出版社）</p>
+        <p lang="en">A Mathematical Theory of Communication, Shannon (Bell System Technical Journal)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1446684/" target="_blank" rel="noopener">核验依据 1 ISBN 9787563511747（豆瓣书目条目: 通信原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ADC</a> <a class="tag" href="#">#量化误差</a> <a class="tag" href="#">#分辨率</a>
+    </article>
+
+
+    <article class="qitem" id="e21f01340c16">
+      <h2 class="qz" lang="zh">为什么每个芯片电源脚旁边都要放一个小电容？</h2>
+      <p class="qen" lang="en">Why is a small capacitor placed next to every chip&#x27;s power pin?</p>
+      <div class="azh" lang="zh">数字芯片在时钟跳变瞬间会突然抽取大电流，而电源走线存在电感，电流突变会造成电压跌落和振铃。紧贴电源脚的去耦电容像一个小水库，就近提供瞬态电流，把电源噪声限制在很小的回路里。因此它必须离引脚尽可能近，回路面积越小效果越好。</div>
+      <div class="aen" lang="en">A digital chip suddenly draws a burst of current when its clock switches, and because the supply trace has inductance, that step causes voltage droop and ringing. A decoupling capacitor right at the power pin acts as a small reservoir, supplying the transient current locally and confining supply noise to a tiny loop. That is why it must sit as close to the pin as possible, with the smallest possible loop area.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#去耦电容</a> <a class="tag" href="#">#电源完整性</a> <a class="tag" href="#">#PCB设计</a>
+    </article>
+
+
+    <article class="qitem" id="eng_23_007">
+      <h2 class="qz" lang="zh">同样瓦数下，为什么LED灯发出的可见光远多于白炽灯？</h2>
+      <p class="qen" lang="en">At the same wattage, why does an LED lamp emit far more visible light than an incandescent lamp?</p>
+      <div class="azh" lang="zh">白炽灯靠钨丝热辐射发光，约2700 K下光谱大头落在红外区，可见光能量不足一成，光效仅约10～17流明每瓦。LED走电致发光路线：电子与空穴在氮化镓量子阱中复合直接放出光子，再由荧光粉转成白光，绕开了“先发热再辐射”的路径，商用器件光效已达100～150流明每瓦以上，故同功率亮度高出近一个数量级。</div>
+      <div class="aen" lang="en">An incandescent filament emits by thermal radiation: near 2700 K most of the spectrum sits in the infrared and under a tenth of the input energy becomes visible light, roughly 10-17 lumens per watt. An LED works by electroluminescence-electron-hole recombination in GaN quantum wells creates photons directly, then phosphors convert them to white-bypassing the heat-first route, so commercial devices deliver 100-150 lm/W or more, nearly an order of magnitude more light per watt.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">美国能源部《固态照明研发机遇》技术报告，2019年版</p>
+        <p lang="en">U.S. Department of Energy, Solid-State Lighting R&amp;D Opportunities, 2019</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#照明</a> <a class="tag" href="#">#发光效率</a> <a class="tag" href="#">#LED</a>
+    </article>
+
+
+    <article class="qitem" id="eng_23_015">
+      <h2 class="qz" lang="zh">常见白光LED为什么必须用蓝光芯片去激发一层黄色荧光粉，而不能直接发出白光？</h2>
+      <p class="qen" lang="en">Why must ordinary white LEDs excite a layer of yellow phosphor with a blue chip instead of emitting white light directly?</p>
+      <div class="azh" lang="zh">发光芯片只能发出由材料带隙决定的窄波段光，尚无高效芯片能直接输出全可见光谱的白光。主流方案用约450nm的氮化镓蓝光芯片激发铈掺杂钇铝石榴石（YAG:Ce）荧光粉：粉体吸收部分蓝光后发射黄光，残余蓝光与黄光混成白光。该“下转换”经斯托克斯位移损失少量热，却换来结构简单、成本低廉的白光源，色温与显色性可用荧光粉配方调节。</div>
+      <div class="aen" lang="en">An LED die emits only the narrow band fixed by its material bandgap, and no efficient chip today radiates white light spanning the whole visible spectrum. The mainstream solution runs a gallium nitride blue chip near 450 nm against a cerium-doped yttrium aluminium garnet (YAG:Ce) phosphor: the powder absorbs part of the blue photons and re-emits yellow, and the leftover blue mixed with that yellow appears white. This down-conversion loses a little energy as heat through the Stokes shift, yet it delivers a simple, low-cost white source whose colour temperature and rendering are tuned by adjusting the phosphor recipe.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Schubert, E. F.《Light-Emitting Diodes》第2版，Cambridge University Press，2006</p>
+        <p lang="en">Schubert, E. F., Light-Emitting Diodes, 2nd edition, Cambridge University Press, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4307988W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4307988W：Light-Emitting Diodes（首</a></p>
+        
+      </details>
+      <a class="tag" href="#">#白光LED</a> <a class="tag" href="#">#荧光粉</a> <a class="tag" href="#">#下转换</a> <a class="tag" href="#">#斯托克斯位移</a>
+    </article>
+
+
+    <article class="qitem" id="185ebc30b3a2">
+      <h2 class="qz" lang="zh">电路里的上拉电阻和下拉电阻起什么作用？</h2>
+      <p class="qen" lang="en">What do pull-up and pull-down resistors do in a circuit?</p>
+      <div class="azh" lang="zh">数字输入引脚如果什么都不接，电位是不确定的，容易被干扰而随机翻转。上拉电阻把引脚经过一个较大阻值连到电源，默认为高电平；下拉电阻连到地，默认为低电平。按键按下时把引脚拉到另一端，就能得到确定的高低变化，同时电阻限制了电流。</div>
+      <div class="aen" lang="en">A digital input pin left unconnected sits at an undefined potential and can flip randomly from noise. A pull-up resistor ties the pin to the supply through a fairly large resistance so it defaults high, while a pull-down ties it to ground so it defaults low. Pressing a button pulls the pin to the other rail, giving a definite transition, and the resistor limits the current.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#上拉电阻</a> <a class="tag" href="#">#数字输入</a> <a class="tag" href="#">#按键</a>
+    </article>
+
+
+    <article class="qitem" id="300af2c44b13">
+      <h2 class="qz" lang="zh">霍尔传感器是怎么不接触就测出磁场和转速的？</h2>
+      <p class="qen" lang="en">How does a Hall sensor measure magnetic field and speed without contact?</p>
+      <div class="azh" lang="zh">让电流通过一片半导体薄片，若有垂直的磁场穿过，运动电荷受洛伦兹力偏转，会在薄片侧面积累电荷形成横向电压，这就是霍尔电压，其大小与磁场强度成正比。在转轴上装磁钢，传感器每转过一次就输出一个脉冲，数脉冲即得转速。它无接触、无磨损，广泛用于无刷电机换相、车速检测和电流钳。</div>
+      <div class="aen" lang="en">When current flows through a thin semiconductor plate and a magnetic field passes through it perpendicularly, the Lorentz force deflects the moving charges so charge piles up on the sides, creating a transverse Hall voltage proportional to field strength. Fitting a magnet to a shaft makes the sensor emit one pulse per revolution, and counting pulses gives speed. Being contactless and wear-free, it is widely used for brushless motor commutation, vehicle speed sensing and clamp current meters.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Streetman &amp; Banerjee，《固态电子器件》（第7版）</p>
+        <p lang="en">Streetman &amp; Banerjee, &#x27;Solid State Electronic Devices&#x27; (7th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/30326140/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121315657（豆瓣书目条目: 固态电子器件）</a> · <a class="evlink" href="https://openlibrary.org/works/OL34943756W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL34943756W：Solid State Electronic</a></p>
+        
+      </details>
+      <a class="tag" href="#">#霍尔效应</a> <a class="tag" href="#">#非接触测量</a> <a class="tag" href="#">#转速</a>
+    </article>
+
+
+    <article class="qitem" id="49d55a2e0a64">
+      <h2 class="qz" lang="zh">光耦为什么能在两个电路之间隔离信号？</h2>
+      <p class="qen" lang="en">How does an optocoupler isolate signals between two circuits?</p>
+      <div class="azh" lang="zh">光耦内部一侧是发光二极管，另一侧是光敏三极管或光敏管，两者之间只有透明绝缘材料，没有电气连接。输入电流点亮LED，光穿过绝缘层被接收管转换成电流，信号就传过去了，而两侧的地可以完全独立。这样能承受数千伏的隔离电压，常用于工业输入输出、开关电源反馈和高压侧驱动。</div>
+      <div class="aen" lang="en">Inside an optocoupler an LED faces a phototransistor or photodiode across nothing but transparent insulating material, with no electrical connection between them. Input current lights the LED, the light crosses the insulator and the receiver turns it back into current, so the signal passes while the two grounds stay completely separate. Such devices withstand thousands of volts of isolation and are common in industrial I/O, switching-supply feedback and high-side gate drive.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">王兆安 刘进军 主编,《电力电子技术》第5版,机械工业出版社,2009</p>
+        <p lang="en">Wang Zhaoan and Liu Jinjun eds., Power Electronics, 5th ed., China Machine Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3880301/" target="_blank" rel="noopener">核验依据 2 ISBN 9787111268062（豆瓣书目条目: 电力电子技术）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光耦</a> <a class="tag" href="#">#电气隔离</a> <a class="tag" href="#">#工业接口</a>
+    </article>
+
+
+    <article class="qitem" id="676a7c38a5bd">
+      <h2 class="qz" lang="zh">数据线上套的那个黑色磁环有什么用？</h2>
+      <p class="qen" lang="en">What is the black ferrite ring clipped onto a data cable for?</p>
+      <div class="azh" lang="zh">那是铁氧体磁环，套住电缆后对线束里同向流动的共模高频电流呈现较大阻抗，而对一去一回的差模信号影响很小。它相当于给共模噪声串了个高频电阻，抑制电缆当天线向外辐射，也阻挡外界噪声灌入。因为只在高频起作用，它不会影响正常的数据或电源传输。</div>
+      <div class="aen" lang="en">It is a ferrite core, and clamping it around a cable presents high impedance to common-mode high-frequency current flowing the same way in all conductors while barely affecting the differential signal that goes out and back. In effect it adds a high-frequency resistance to common-mode noise, stopping the cable from radiating like an antenna and blocking external noise from entering. Because it only acts at high frequency it does not disturb normal data or power transmission.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#铁氧体磁环</a> <a class="tag" href="#">#共模噪声</a> <a class="tag" href="#">#抗干扰</a>
+    </article>
+
+
+    <article class="qitem" id="949bc058f963">
+      <h2 class="qz" lang="zh">什么是PWM，为什么它能调灯的亮度和电机转速？</h2>
+      <p class="qen" lang="en">What is PWM and why can it dim a lamp and set motor speed?</p>
+      <div class="azh" lang="zh">PWM是脉宽调制，用固定频率的方波，通过改变高电平占整个周期的比例来控制平均输出功率。灯和电机的响应比开关速度慢得多，看到的是平均效果，所以亮度和转速随占空比连续变化。开关管只在通和断两种低损耗状态之间切换，效率远高于用电阻降压。</div>
+      <div class="aen" lang="en">PWM stands for pulse width modulation: a square wave of fixed frequency whose high-level fraction of each period, the duty cycle, sets the average delivered power. Lamps and motors respond much more slowly than the switching rate, so they see the average, and brightness or speed varies smoothly with duty cycle. The switch only sits in the low-loss on or off states, making it far more efficient than dropping voltage across a resistor.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#PWM</a> <a class="tag" href="#">#占空比</a> <a class="tag" href="#">#调速</a>
+    </article>
+
+
+    <article class="qitem" id="bf736849c7e7">
+      <h2 class="qz" lang="zh">电子产品为什么要做电磁兼容测试？</h2>
+      <p class="qen" lang="en">Why must electronic products pass electromagnetic compatibility testing?</p>
+      <div class="azh" lang="zh">任何高速开关电路都会向外辐射和沿电源线传导电磁噪声，可能干扰收音机、医疗设备甚至航空通信。电磁兼容测试一方面限制产品自身的骚扰发射，另一方面考核它在外界干扰、静电放电和浪涌下能否正常工作。工程手段包括金属屏蔽、滤波器、良好接地和缩小高频电流回路面积。</div>
+      <div class="aen" lang="en">Any fast-switching circuit radiates electromagnetic noise and conducts it along power lines, potentially disturbing radios, medical equipment or even aviation communication. EMC testing limits the emissions a product makes and also checks that it keeps working under external interference, electrostatic discharge and surges. Engineering fixes include metal shielding, filters, solid grounding and minimising the loop area of high-frequency currents.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#电磁兼容</a> <a class="tag" href="#">#屏蔽</a> <a class="tag" href="#">#滤波</a>
+    </article>
+
+
+    <article class="qitem" id="cf10cdf52169">
+      <h2 class="qz" lang="zh">电解电容为什么分正负极，还会鼓包？</h2>
+      <p class="qen" lang="en">Why do electrolytic capacitors have polarity, and why do they bulge?</p>
+      <div class="azh" lang="zh">电解电容依靠电解液在铝箔表面形成的极薄氧化膜作介质，这层膜只有在正确极性电压下才能维持。反接或过压会破坏氧化膜，漏电流骤增、电解液气化，内压升高就把顶部的防爆槽顶起，形成鼓包甚至喷液。高温会加速电解液挥发，因此它的寿命对温度极其敏感，也常成为电子设备的故障源。</div>
+      <div class="aen" lang="en">An electrolytic capacitor relies on an extremely thin oxide film formed on the aluminium foil by the electrolyte as its dielectric, and that film is only maintained under voltage of the correct polarity. Reverse or excessive voltage breaks the film, leakage current soars and the electrolyte vaporises, raising internal pressure until the scored vent on the top bulges or bursts. High temperature accelerates electrolyte loss, so its life is very sensitive to heat and it is a frequent cause of equipment failure.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#电解电容</a> <a class="tag" href="#">#极性</a> <a class="tag" href="#">#失效</a>
+    </article>
+
+
+    <article class="qitem" id="cfbcaea58db5">
+      <h2 class="qz" lang="zh">电阻上的彩色圆环是怎么读出阻值的？</h2>
+      <p class="qen" lang="en">How do you read a resistor&#x27;s value from its coloured bands?</p>
+      <div class="azh" lang="zh">常见的四环电阻前两环是有效数字，第三环是乘数即在后面添多少个零，第四环表示允许误差。颜色按黑零、棕一、红二、橙三、黄四、绿五、蓝六、紫七、灰八、白九的顺序对应数字。例如棕黑红金就是一零乘一百，即一千欧，误差百分之五。五环电阻多一位有效数字，精度更高。</div>
+      <div class="aen" lang="en">On a common four-band resistor the first two bands are significant digits, the third is a multiplier telling how many zeros to add, and the fourth gives the tolerance. Colours map to digits in the order black zero, brown one, red two, orange three, yellow four, green five, blue six, violet seven, grey eight, white nine. So brown-black-red-gold means ten times one hundred, that is one thousand ohms, with five percent tolerance. Five-band resistors add one more significant digit for higher precision.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">邱关源 主编 罗先觉 修订,《电路》第5版,高等教育出版社,2006</p>
+        <p lang="en">Qiu Guanyuan ed., Circuit, 5th ed., Higher Education Press, 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#电阻</a> <a class="tag" href="#">#色环</a> <a class="tag" href="#">#元件识别</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

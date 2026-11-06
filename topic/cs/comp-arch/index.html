@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>comp-arch · 计算机 Computer Science | 问答</title>
+<meta name="description" content="comp-arch（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="comp-arch · 计算机 Computer Science | 问答">
+<meta property="og:description" content="comp-arch（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/comp-arch/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/comp-arch/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>comp-arch</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>comp-arch <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_20_009">在 MESI 缓存一致性协议中,核心 A 以独占(E)态持有某缓存行并执行写操作</a></li><li><a href="#cs_20_016">在 CUDA 编程中，warp 内线程走不同分支造成的 branch diver</a></li><li><a href="#133ffefa9d67">为什么计算机用二进制？</a></li><li><a href="#cs_20_001">为什么现代 CPU 要采用 L1/L2/L3 多级缓存,而不是直接做一块大容量的</a></li><li><a href="#cs_20_008">CUDA 里什么叫合并访存(coalesced access)?为什么让同一个 </a></li><li><a href="#cs_20_017">为什么现代 CPU 的缓存普遍采用组相联映射，而不是直接映射或全相联？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_20_009">
+      <h2 class="qz" lang="zh">在 MESI 缓存一致性协议中,核心 A 以独占(E)态持有某缓存行并执行写操作,随后核心 B 读取同一行,两个缓存的该行分别处于什么状态?E 态的设计动机是什么?</h2>
+      <p class="qen" lang="en">Under the MESI cache-coherence protocol, core A holds a cache line in Exclusive state and writes to it, after which core B reads the same line: what states do the line end up in within each cache, and why was the Exclusive state designed into the protocol?</p>
+      <div class="azh" lang="zh">核心 A 在 E 态下写入不需要任何总线动作——它本就是唯一持有者,只须把该行本地升级为 M(Modified)。核心 B 随后读取时,A 必须经总线提供最新内容(必要时先写回内存),两份副本一同降级为 S(Shared)。设置 E 态的动机是:私有且干净的缓存行可以被静默修改,避免每次写入都广播无效化消息,直到第二个读者真正出现才付出一致性开销。</div>
+      <div class="aen" lang="en">Writing a line held exclusively requires no bus action at all — core A is already the sole owner and simply promotes the line locally to Modified. When core B later reads it, A must supply the up-to-date contents across the bus (flushing to memory first if needed), and both copies settle in Shared. Exclusive exists so privately owned clean lines can be modified silently, sparing every store an invalidation broadcast until a second reader genuinely appears.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">MESI 原始论文:Papamarcos 与 Patel《A Low-Overhead Coherence Solution for Multiprocessors with Private Cache Memories》,ISCA 1984;另见 Intel 64 与 IA-32 体系结构软件开发者手册第 3 卷 A 第 11 章 Memory Cache Control</p>
+        <p lang="en">Papamarcos and Patel, A Low-Overhead Coherence Solution for Multiprocessors with Private Cache Memories, ISCA 1984 (original MESI paper); see also Intel 64 and IA-32 Architectures Software Developer&#x27;s Manual Vol. 3A, Chapter 11 Memory Cache Control</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/800015.808204" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/800015.808204（本条出处含多部著作，按段登记，核到的是这一</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存一致性</a> <a class="tag" href="#">#MESI协议</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_016">
+      <h2 class="qz" lang="zh">在 CUDA 编程中，warp 内线程走不同分支造成的 branch divergence 会带来什么性能损失？有哪些借助 warp 级原语缓解分化的做法？</h2>
+      <p class="qen" lang="en">In CUDA programming, what performance penalty does branch divergence among threads in a warp cause, and how can warp-level primitives be used to mitigate it?</p>
+      <div class="azh" lang="zh">当同一 warp 内的线程走向不同分支时，SIMT 执行单元必须逐条串行执行各条路径，指令吞吐随之成倍下降。缓解思路是让同 warp 内的线程尽量走一致路径：按访问模式重排数据、把条件判断上提到 block 层面。此外可用 __ballot_sync、__shfl_sync 等 warp 原语在寄存器层完成跨线程通信与谓词合并，省去经共享内存协调的额外往返。</div>
+      <div class="aen" lang="en">When threads in the same warp take different branches, the SIMT units must execute each path serially, cutting instruction throughput proportionally. The mitigation is to keep intra-warp control flow uniform: reorder data by access pattern and hoist conditionals up to block granularity. Warp intrinsics such as __ballot_sync and __shfl_sync also let threads exchange values and merge predicates at register level, avoiding extra shared-memory round trips.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">NVIDIA《CUDA C++ Programming Guide》关于 SIMT 执行与 Warp Vote Functions（__ballot_sync、__shfl_sync）章节的官方说明</p>
+        <p lang="en">NVIDIA, CUDA C++ Programming Guide, sections on SIMT execution and Warp Vote Functions (docs.nvidia.com/cuda/cuda-c-programming-guide)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#GPU编程</a> <a class="tag" href="#">#分支分化</a>
+    </article>
+
+
+    <article class="qitem" id="133ffefa9d67">
+      <h2 class="qz" lang="zh">为什么计算机用二进制？</h2>
+      <p class="qen" lang="en">Why do computers use binary?</p>
+      <div class="azh" lang="zh">电路只用高/低电平两种状态，最稳定可靠。</div>
+      <div class="aen" lang="en">Circuits use just high/low voltage—two stable states.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二进制</a> <a class="tag" href="#">#电路</a> <a class="tag" href="#">#电平</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_001">
+      <h2 class="qz" lang="zh">为什么现代 CPU 要采用 L1/L2/L3 多级缓存,而不是直接做一块大容量的单级缓存?</h2>
+      <p class="qen" lang="en">Why do modern CPUs rely on multi-level L1/L2/L3 caches instead of building one large single-level cache?</p>
+      <div class="azh" lang="zh">单一缓存在速度与容量上不可兼得:L1 是小型 SRAM 阵列,延迟仅约 4 个时钟周期,而容量大数十倍的 L3 访问要花几十个周期。多级结构利用程序的时间与空间局部性,让绝大多数访存命中在快速的小缓存中,同时以可控成本获得接近大缓存的有效容量。</div>
+      <div class="aen" lang="en">A single cache cannot be both fast and large: L1 is a small SRAM array with roughly 4-cycle latency, while an L3 tens of times larger costs dozens of cycles to reach. The hierarchy exploits temporal and spatial locality so most accesses hit in the small fast levels, yielding near-large-cache effective capacity at controllable cost.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Intel《64 and IA-32 Architectures Optimization Reference Manual》,文档编号 248966,第 2 章 Cache Hierarchy</p>
+        <p lang="en">Intel 64 and IA-32 Architectures Optimization Reference Manual, Order No. 248966, Section 2 &#x27;Cache Hierarchy&#x27;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#计算机体系结构</a> <a class="tag" href="#">#存储层次</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_008">
+      <h2 class="qz" lang="zh">CUDA 里什么叫合并访存(coalesced access)?为什么让同一个 warp 内 32 个线程读取相邻地址能大幅提升显存带宽利用率?</h2>
+      <p class="qen" lang="en">What is coalesced memory access in CUDA, and why does having all 32 threads of a warp read neighboring addresses dramatically raise effective memory bandwidth?</p>
+      <div class="azh" lang="zh">GPU 全局显存按固定大小的内存事务搬运数据,warp 内各线程的请求会被硬件合并成尽可能少的事务。当地址集中在一段连续范围内,少数几个 128 字节事务就能覆盖全部访问;地址一旦分散,每个线程都可能触发独立事务,大量被搬运的字节被白白浪费。因此按行优先顺序遍历数组、避免长步长跨行访问,是 CUDA 性能优化的第一条法则。</div>
+      <div class="aen" lang="en">Global GPU memory moves data in fixed-size transactions, and hardware merges the requests issued by threads within a warp into as few transactions as possible. When addresses fall inside contiguous ranges, a few 128-byte transactions cover every load; scattered addresses instead trigger separate transactions where most transported bytes go unused. Iterating arrays row-major and avoiding long strides is therefore the first performance rule of CUDA.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">NVIDIA 官方文档《CUDA C++ Programming Guide》Performance Guidelines 一章中 Device Memory Accesses 与 coalescing 相关小节</p>
+        <p lang="en">NVIDIA CUDA C++ Programming Guide, Performance Guidelines chapter, Device Memory Accesses / coalescing subsection</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#CUDA编程</a> <a class="tag" href="#">#显存访问优化</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_017">
+      <h2 class="qz" lang="zh">为什么现代 CPU 的缓存普遍采用组相联映射，而不是直接映射或全相联？</h2>
+      <p class="qen" lang="en">Why do modern CPU caches generally use set-associative mapping instead of direct mapping or full associativity?</p>
+      <div class="azh" lang="zh">直接映射结构最简单、命中判定最快，但多个热点地址会争抢同一行，冲突缺失很严重；全相联命中率最高，却要把地址与全部缓存行并行比较，硬件开销和功耗都无法接受。组相联先由索引定位到一个小集合，再只在集合内做少量比较，把冲突缺失压低的同时保住了延迟与面积。这是命中率、延迟和成本之间的工程折中，因而成为主流设计。</div>
+      <div class="aen" lang="en">Direct-mapped caches are simplest and fastest to resolve, but hot addresses contending for the same line produce heavy conflict misses, while fully associative lookup needs parallel comparison against every line and is prohibitive in area and power. Set associativity indexes into a small set and compares only within it, suppressing conflict misses while keeping latency bounded. It is the engineering compromise between hit rate, latency, and cost that mainstream designs settle on.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. L. Hennessy &amp; D. A. Patterson,《Computer Organization and Design》第5版,Morgan Kaufmann,2012</p>
+        <p lang="en">J. L. Hennessy &amp; D. A. Patterson, Computer Organization and Design, 5th ed., Morgan Kaufmann, 2012</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Organization+and+Design" target="_blank" rel="noopener">核验依据 1 ISBN 9781558604285 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存设计</a> <a class="tag" href="#">#组相联</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

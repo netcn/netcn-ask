@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>software-eng · 计算机 Computer Science | 问答</title>
+<meta name="description" content="software-eng（计算机）分类下的 2 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 2 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="software-eng · 计算机 Computer Science | 问答">
+<meta property="og:description" content="software-eng（计算机）分类下的 2 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 2 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/software-eng/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/software-eng/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>software-eng</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>software-eng <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>2</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_20_003">测试驱动开发(TDD)宣称能提高软件质量,实证研究是否支持该说法?其证据边界在哪</a></li><li><a href="#cs_20_011">在持续集成流水线中,为什么强制要求每次提交都保持主分支可构建、可通过自动化测试?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_20_003">
+      <h2 class="qz" lang="zh">测试驱动开发(TDD)宣称能提高软件质量,实证研究是否支持该说法?其证据边界在哪里?</h2>
+      <p class="qen" lang="en">Test-driven development claims to improve software quality — does empirical research support this, and where are the limits of the evidence?</p>
+      <div class="azh" lang="zh">微软与 IBM 的两组工业案例对照研究显示,TDD 团队缺陷密度下降约 40%–90%,代价是开发初期迭代速度降低 15%–35%。但证据有明显边界:收益依赖可测试的设计与严格的红绿重构纪律,在遗留代码或探索性原型场景中效果往往不显著甚至为负,不能把 TDD 视作无条件的质量保证。</div>
+      <div class="aen" lang="en">Paired case studies at Microsoft and IBM found defect densities dropping by roughly 40%-90% under TDD, at the cost of a 15%-35% slowdown in initial iteration speed. The evidence has clear boundaries: gains depend on testable design and strict red-green-refactor discipline, while legacy codebases and exploratory prototypes often show negligible or even negative effects — TDD is not an unconditional quality guarantee.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nagappan 等《Realizing quality improvement through test driven development》,《Empirical Software Engineering》期刊(Springer),2008 年第 13 卷</p>
+        <p lang="en">Nagappan, Maximilien, Bhat &amp; Williams, &#x27;Realizing quality improvement through test driven development&#x27;, Empirical Software Engineering (Springer), vol. 13, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1007/s10664-008-9062-z" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1007/s10664-008-9062-z：Realizing quality </a></p>
+        
+      </details>
+      <a class="tag" href="#">#软件工程</a> <a class="tag" href="#">#测试驱动开发</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_011">
+      <h2 class="qz" lang="zh">在持续集成流水线中,为什么强制要求每次提交都保持主分支可构建、可通过自动化测试?与特性分支长期开发后再统一合并的做法相比,这样做的核心优势是什么?</h2>
+      <p class="qen" lang="en">In a continuous integration pipeline, why must every commit keep the main branch buildable and passing automated tests? Compared with developing features on long-lived branches and merging late, what is the core advantage?</p>
+      <div class="azh" lang="zh">持续集成在每次提交后立即构建并运行自动化测试,使集成问题在引入后几分钟内暴露,而不是在数周后的合并阶段集中爆发。小步频繁合并把一次巨大的冲突解决拆解为大量微小修正,缺陷定位范围也随之压缩到单次提交。长期分支偏离主干越远,合并成本与回归风险就越呈超线性增长,这正是经典的集成地狱问题。</div>
+      <div class="aen" lang="en">Continuous integration builds and runs automated tests right after every commit, so integration problems surface within minutes instead of exploding at a late merge stage. Small frequent merges break one huge conflict resolution into many tiny corrections and shrink defect localization down to a single commit. The longer a branch diverges from main, the more merge cost and regression risk grow superlinearly — the classic integration-hell problem.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Fowler M., Continuous Integration, martinfowler.com, 2006;Humble J. 与 Farley D., Continuous Delivery, Addison-Wesley, 2010</p>
+        <p lang="en">Fowler M., Continuous Integration, martinfowler.com, 2006; Humble J. &amp; Farley D., Continuous Delivery, Addison-Wesley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#持续集成</a> <a class="tag" href="#">#特性分支</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

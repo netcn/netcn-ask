@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>机器学习基础 machine-learning-fundamentals · 计算机 Computer Science | 问答</title>
+<meta name="description" content="机器学习基础（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="机器学习基础 machine-learning-fundamentals · 计算机 Computer Science | 问答">
+<meta property="og:description" content="机器学习基础（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/machine-learning-fundamentals/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/machine-learning-fundamentals/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>机器学习基础</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>机器学习基础 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#48977ce729a0">机器学习中的偏差-方差分解把泛化误差分解为哪些成分?</a></li><li><a href="#59e22d6f89d4">梯度下降中学习率过大或过小分别会带来什么问题?</a></li><li><a href="#aa49804891a4">L1 与 L2 正则化在约束模型参数上有何本质区别?</a></li><li><a href="#1ffefb27c33d">什么是模型的过拟合，有哪些直观表现?</a></li><li><a href="#28d0e9085188">训练集、验证集和测试集分别承担什么作用?</a></li><li><a href="#b7b66e055f76">监督学习与无监督学习的核心区别是什么?</a></li><li><a href="#bb68bd8b1ea8">决策树在节点划分时，信息增益起到什么作用?</a></li><li><a href="#fed15a7bdde2">k 折交叉验证是如何评估模型泛化能力的?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="48977ce729a0">
+      <h2 class="qz" lang="zh">机器学习中的偏差-方差分解把泛化误差分解为哪些成分?</h2>
+      <p class="qen" lang="en">Into what components does the bias-variance decomposition in machine learning split the generalization error?</p>
+      <div class="azh" lang="zh">对回归问题，期望误差可分解为偏差的平方、方差与不可约噪声三项，其中偏差来自模型假设过强导致的系统性偏差，方差来自模型对训练样本扰动的敏感程度。降低偏差常需更复杂模型，降低方差常需更多数据或正则化，二者往往存在权衡。</div>
+      <div class="aen" lang="en">For regression the expected error decomposes into the squared bias, the variance, and irreducible noise, where bias reflects a systematic error from an overly strong model assumption and variance reflects sensitivity to perturbations in the training set. Reducing bias usually needs a more complex model, while reducing variance needs more data or regularization, and the two often trade off.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie《统计学习基础》第7章 (Springer)</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Chapter 7 (Model Assessment and Selection)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#偏差</a> <a class="tag" href="#">#方差</a> <a class="tag" href="#">#泛化</a>
+    </article>
+
+
+    <article class="qitem" id="59e22d6f89d4">
+      <h2 class="qz" lang="zh">梯度下降中学习率过大或过小分别会带来什么问题?</h2>
+      <p class="qen" lang="en">What problems arise in gradient descent when the learning rate is too large or too small?</p>
+      <div class="azh" lang="zh">学习率过大会使参数更新步长越过最优点，损失可能在最小值附近震荡甚至发散；学习率过小则每次更新幅度极小，收敛极其缓慢且容易陷在局部平坦区。实践中常借助学习率衰减或自适应优化器（如 Adam）来平衡二者。</div>
+      <div class="aen" lang="en">A too-large learning rate makes parameter steps overshoot the optimum so the loss oscillates or even diverges near the minimum, while a too-small rate yields tiny updates that converge extremely slowly and can stall in flat regions. In practice learning-rate decay or adaptive optimizers such as Adam help balance the two.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow《深度学习》第8章 (MIT Press)</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, Chapter 8 (Optimization for Training Deep Models)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#学习率</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="aa49804891a4">
+      <h2 class="qz" lang="zh">L1 与 L2 正则化在约束模型参数上有何本质区别?</h2>
+      <p class="qen" lang="en">What is the essential difference between L1 and L2 regularization in constraining model parameters?</p>
+      <div class="azh" lang="zh">L2 正则化（岭回归）对参数的平方和施加惩罚，倾向于让所有参数都变小但不为零，从而平滑模型；L1 正则化（套索）对参数绝对值求和，会稀疏化参数，把不重要的特征权重直接压到零以实现特征选择。几何上 L1 的约束区域有尖角，更容易让解落在坐标轴上。</div>
+      <div class="aen" lang="en">L2 regularization (ridge) penalizes the squared sum of parameters, shrinking them toward but not exactly to zero for a smoother model, while L1 (lasso) penalizes their absolute sum and sparsifies the solution, driving unimportant feature weights exactly to zero for feature selection. Geometrically the L1 constraint region has corners, so the optimum more often lands on an axis.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie《统计学习基础》第3章 (Springer)</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Chapter 3 (Linear Methods for Regression)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#正则化</a> <a class="tag" href="#">#L1</a> <a class="tag" href="#">#L2</a> <a class="tag" href="#">#过拟合</a>
+    </article>
+
+
+    <article class="qitem" id="1ffefb27c33d">
+      <h2 class="qz" lang="zh">什么是模型的过拟合，有哪些直观表现?</h2>
+      <p class="qen" lang="en">What is overfitting of a model, and what are its intuitive signs?</p>
+      <div class="azh" lang="zh">过拟合指模型在训练数据上表现极好、却在未见过的测试数据上表现明显变差，相当于把训练样本中的噪声也当成了规律。直观表现是训练误差很低而验证误差很高，二者差距很大。</div>
+      <div class="aen" lang="en">Overfitting happens when a model performs extremely well on training data but much worse on unseen test data, having memorized noise as if it were a real pattern. The intuitive sign is a very low training error paired with a much higher validation error, a large gap between the two.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bishop《模式识别与机器学习》第1章 (Springer)</p>
+        <p lang="en">C. Bishop, Pattern Recognition and Machine Learning, Chapter 1 (Introduction)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/37868649/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115681409（豆瓣书目条目: 模式识别与机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#过拟合</a> <a class="tag" href="#">#泛化</a> <a class="tag" href="#">#训练误差</a>
+    </article>
+
+
+    <article class="qitem" id="28d0e9085188">
+      <h2 class="qz" lang="zh">训练集、验证集和测试集分别承担什么作用?</h2>
+      <p class="qen" lang="en">What roles do the training, validation, and test sets each play?</p>
+      <div class="azh" lang="zh">训练集用于拟合模型参数，验证集用于在训练过程中选择超参数并监控是否过拟合，测试集则只在最后评估模型的真实泛化能力。测试集应始终不参与任何训练或调参，以免乐观估计性能。</div>
+      <div class="aen" lang="en">The training set fits the model parameters, the validation set selects hyperparameters and monitors overfitting during training, and the test set is used only at the end to estimate true generalization. The test set must never take part in training or tuning, or the performance estimate becomes optimistic.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie《统计学习基础》第7章 (Springer)</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Chapter 7 (Model Assessment and Selection)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#训练集</a> <a class="tag" href="#">#验证集</a> <a class="tag" href="#">#测试集</a>
+    </article>
+
+
+    <article class="qitem" id="b7b66e055f76">
+      <h2 class="qz" lang="zh">监督学习与无监督学习的核心区别是什么?</h2>
+      <p class="qen" lang="en">What is the core difference between supervised and unsupervised learning?</p>
+      <div class="azh" lang="zh">监督学习使用带标签的训练样本，目标是学习输入到输出的映射（如分类或回归）；无监督学习面对的是无标签数据，目标是发现数据内部的分布或结构（如聚类、降维）。二者的根本差异在于训练数据是否提供了期望的输出。</div>
+      <div class="aen" lang="en">Supervised learning trains on labeled examples to learn a mapping from inputs to outputs such as classification or regression, while unsupervised learning works on unlabeled data to discover its underlying distribution or structure like clustering or dimensionality reduction. The essential difference is whether the training data provide the desired outputs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bishop《模式识别与机器学习》第1章 (Springer)</p>
+        <p lang="en">C. Bishop, Pattern Recognition and Machine Learning, Chapter 1 (Introduction)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/37868649/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115681409（豆瓣书目条目: 模式识别与机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#监督学习</a> <a class="tag" href="#">#无监督学习</a> <a class="tag" href="#">#机器学习</a>
+    </article>
+
+
+    <article class="qitem" id="bb68bd8b1ea8">
+      <h2 class="qz" lang="zh">决策树在节点划分时，信息增益起到什么作用?</h2>
+      <p class="qen" lang="en">What role does information gain play when a decision tree splits a node?</p>
+      <div class="azh" lang="zh">信息增益等于划分前后数据集熵的减少量，衡量某个特征能带来多少不确定性下降。ID3 等算法在每个节点选择信息增益最大的特征进行划分，从而让子树尽可能纯净。</div>
+      <div class="aen" lang="en">Information gain equals the reduction in entropy before and after a split, measuring how much a feature lowers uncertainty. Algorithms such as ID3 pick at each node the feature with the largest gain, making the resulting subsets as pure as possible.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie《统计学习基础》第9章 (Springer)</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Chapter 9 (Additive Models, Trees, and Related Methods)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#决策树</a> <a class="tag" href="#">#信息增益</a> <a class="tag" href="#">#熵</a>
+    </article>
+
+
+    <article class="qitem" id="fed15a7bdde2">
+      <h2 class="qz" lang="zh">k 折交叉验证是如何评估模型泛化能力的?</h2>
+      <p class="qen" lang="en">How does k-fold cross-validation assess a model&#x27;s generalization ability?</p>
+      <div class="azh" lang="zh">把数据集分成 k 个大小相近的折，轮流用其中 k-1 折训练、剩余 1 折验证，重复 k 次后取验证指标的平均值。这样每个样本都既参与过训练也当过验证，能在数据有限时更稳健地估计泛化性能。</div>
+      <div class="aen" lang="en">The data is split into k similarly sized folds; each time k-1 folds train the model and the remaining fold validates it, repeated k times, and the validation scores are averaged. Every sample thus serves in both training and validation, giving a more robust estimate of generalization when data is limited.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie《统计学习基础》第7章 (Springer)</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, Chapter 7 (Model Assessment and Selection)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#交叉验证</a> <a class="tag" href="#">#泛化</a> <a class="tag" href="#">#评估</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

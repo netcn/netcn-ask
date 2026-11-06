@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>algorithms · 计算机 Computer Science | 问答</title>
+<meta name="description" content="algorithms（计算机）分类下的 37 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 37 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="algorithms · 计算机 Computer Science | 问答">
+<meta property="og:description" content="algorithms（计算机）分类下的 37 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 37 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/algorithms/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/algorithms/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>algorithms</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>algorithms <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>37</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1a5fbdf8bb7a">快速傅里叶变换（FFT）为什么重要？它把什么运算从平方级降到对数级？</a></li><li><a href="#4fbb757cc2fc">P=NP 这个问题到底在问什么，为什么这么重要？</a></li><li><a href="#5f3ebf002fb4">A* 算法比 Dijkstra 快在哪里，启发函数要满足什么条件才不会算错？</a></li><li><a href="#94b7286cde1f">Dijkstra 最短路径算法是什么？</a></li><li><a href="#bd1632ca9fbc">动态规划与分治法的本质区别在哪里？</a></li><li><a href="#c67b8ba59623">P 与 NP 问题说的是什么？什么是 NP 完全（NP-complete）？</a></li><li><a href="#d7428130ead2">KMP 算法凭什么把字符串匹配做到线性时间，它省掉的到底是什么工作？</a></li><li><a href="#df291d6f3e6c">红黑树是怎么保持“平衡”的？</a></li><li><a href="#df3222ea48b7">A* 搜索相比 Dijkstra 多了什么使其更聪明？</a></li><li><a href="#ec25cbc4d62c">什么是旅行商问题？</a></li><li><a href="#0183bcbca48c">什么是分治法？</a></li><li><a href="#1509d9a2339a">并查集（union-find）的“按秩合并”和“路径压缩”有什么用？</a></li><li><a href="#2df8f427b765">什么是二分查找？它为什么比逐个查找快？</a></li><li><a href="#3ebcc6932446">Dijkstra 最短路径算法是如何保证找到最短距离的？</a></li><li><a href="#4a797ed2f6ee">快速排序(Quicksort)为什么平均比很多排序算法快？</a></li><li><a href="#5dca12c4299e">迪杰斯特拉算法用来做什么？</a></li><li><a href="#604f0c2a0cd6">动态规划与单纯的递归相比，关键差别在哪里？</a></li><li><a href="#831fdd0af69c">什么是贪心算法？</a></li><li><a href="#87824f5456d5">为什么说哈希表的查找“平均”是常数时间？</a></li><li><a href="#97f6e86d61e4">大 O 记号描述的是算法的什么，而不是什么？</a></li><li><a href="#9c41667eb9af">快速排序是如何工作的？</a></li><li><a href="#b3827e2c4b2c">什么是递归？</a></li><li><a href="#be86df2439c3">快速排序（QuickSort）的平均和最坏时间复杂度分别是多少？</a></li><li><a href="#c4a609b12d02">迪杰斯特拉（Dijkstra）算法解决什么问题？它有什么限制？</a></li><li><a href="#cdeb69946e74">什么是二分查找？</a></li><li><a href="#cs_24_016">基于比较的排序算法为什么注定快不过 O(n log n)?</a></li><li><a href="#d7ff732aa7ba">哈希表是怎么做到近乎常数时间查找的，碰撞又怎么处理？</a></li><li><a href="#e362670fc3cc">什么是指数级时间复杂度，为什么它很吓人？</a></li><li><a href="#f484e22a9625">哈希函数在算法中起什么作用？</a></li><li><a href="#12ae0d69dc2a">为什么电脑算得比人快那么多？</a></li><li><a href="#36b5a8332df6">什么是算法？</a></li><li><a href="#77a527661723">什么是大 O 记号（Big-O）？它用来描述算法的什么？</a></li><li><a href="#99e603003f71">什么是排序？</a></li><li><a href="#b366ab4ceb8d">为什么电脑做事要一步步来？</a></li><li><a href="#cs_24_017">动态规划凭什么能把指数爆炸的递归压缩成多项式时间?</a></li><li><a href="#cs_25_006">电脑怎么在一堆数字里找出最大的那个?它比人找得快吗?</a></li><li><a href="#f7e7fcf2d96b">二分查找为什么要求数据必须已经排好序？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1a5fbdf8bb7a">
+      <h2 class="qz" lang="zh">快速傅里叶变换（FFT）为什么重要？它把什么运算从平方级降到对数级？</h2>
+      <p class="qen" lang="en">Why is the Fast Fourier Transform important, and what does it speed up?</p>
+      <div class="azh" lang="zh">快速傅里叶变换将离散傅里叶变换（DFT）的复杂度从朴素的 O(n²) 降到 O(n log n)，使大规模信号与多项式运算变得可行。库利与图基在 1965 年提出这一算法，其思想早由高斯萌芽。它广泛用于数字信号处理、音频图像压缩、大整数乘法和科学计算。</div>
+      <div class="aen" lang="en">The Fast Fourier Transform reduces the discrete Fourier transform from a naive O(n²) to O(n log n), making large-scale signal and polynomial operations practical. Cooley and Tukey published the algorithm in 1965, though its idea traces back to Gauss. It is widely used in digital signal processing, audio/image compression, large-integer multiplication, and scientific computing.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cooley &amp; Tukey 1965；Cormen 等《算法导论》（CLRS）</p>
+        <p lang="en">Cooley &amp; Tukey (1965); Cormen et al., Introduction to Algorithms (CLRS)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#FFT</a> <a class="tag" href="#">#傅里叶变换</a> <a class="tag" href="#">#信号处理</a> <a class="tag" href="#">#库利图基</a>
+    </article>
+
+
+    <article class="qitem" id="4fbb757cc2fc">
+      <h2 class="qz" lang="zh">P=NP 这个问题到底在问什么，为什么这么重要？</h2>
+      <p class="qen" lang="en">What exactly does P = NP ask, and why is it so important?</p>
+      <div class="azh" lang="zh">P 是能在多项式时间内求解的问题类，NP 是能在多项式时间内验证解的问题类；P=NP 问的是『易验证是否就等于易求解』。Cook 在 1971 年提出 NP 完全概念，若 P=NP 成立，大量密码学、优化与搜索难题将被轻易破解。</div>
+      <div class="aen" lang="en">P is the class solvable in polynomial time, NP the class whose solutions are verifiable in polynomial time; P=NP asks whether easy-to-verify equals easy-to-solve. Cook introduced NP-completeness in 1971; if P=NP held, many cryptographic, optimization, and search problems would become trivial.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cook《定理证明的复杂性》(STOC, 1971)；Karp《21 个 NP 完全问题》(1972)；Sipser《计算理论导论》</p>
+        <p lang="en">Cook, &#x27;The complexity of theorem proving&#x27; (STOC, 1971); Karp, &#x27;Reducibility among combinatorial problems&#x27; (1972); Sipser, &#x27;Introduction to the Theory of Computation&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#P=NP</a> <a class="tag" href="#">#NP完全</a> <a class="tag" href="#">#Cook</a> <a class="tag" href="#">#多项式</a>
+    </article>
+
+
+    <article class="qitem" id="5f3ebf002fb4">
+      <h2 class="qz" lang="zh">A* 算法比 Dijkstra 快在哪里，启发函数要满足什么条件才不会算错？</h2>
+      <p class="qen" lang="en">Where does A* beat Dijkstra, and what must its heuristic satisfy to keep results correct?</p>
+      <div class="azh" lang="zh">Dijkstra 按已付出代价 g(n) 由小到大均匀向四周扩展，完全不知道终点在哪；A* 改用 f(n)=g(n)+h(n) 排序，h 估计剩余距离，于是搜索前沿被拉向目标，在大地图上展开的节点数可以少一到两个数量级。正确性条件是 h 可采纳，即对任意节点都不高估真实剩余最短代价，此时 A* 保证给出最优解；若进一步满足一致性 h(n) ≤ c(n,n&#x27;) + h(n&#x27;)，每个节点只需展开一次，已关闭的节点不会被重开。h 恒为 0 时 A* 退化成 Dijkstra，h 高估则搜得更快但可能返回次优路径，这正是游戏寻路里加权 A* 的取舍。</div>
+      <div class="aen" lang="en">Dijkstra expands nodes in increasing order of the cost already paid, g(n), spreading uniformly in every direction with no notion of where the goal lies; A* orders by f(n) = g(n) + h(n), where h estimates the remaining distance, which pulls the frontier toward the target and can cut expanded nodes by one or two orders of magnitude on large maps. Correctness requires h to be admissible, never overestimating the true remaining cost, which guarantees an optimal solution; if h is additionally consistent, satisfying h(n) ≤ c(n, n&#x27;) + h(n&#x27;), each node needs expanding only once and closed nodes never reopen. With h identically zero A* degenerates into Dijkstra, while an overestimating h searches faster but may return a suboptimal path, precisely the trade-off weighted A* makes in game pathfinding.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hart、Nilsson 与 Raphael《A Formal Basis for the Heuristic Determination of Minimum Cost Paths》(IEEE Transactions on Systems Science and Cybernetics, 1968)</p>
+        <p lang="en">Hart, Nilsson &amp; Raphael, &quot;A Formal Basis for the Heuristic Determination of Minimum Cost Paths,&quot; IEEE Transactions on Systems Science and Cybernetics (1968)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/tssc.1968.300136" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1109/tssc.1968.300136：A Formal Basis for </a></p>
+        
+      </details>
+      <a class="tag" href="#">#A*算法</a> <a class="tag" href="#">#启发式搜索</a> <a class="tag" href="#">#可采纳性</a> <a class="tag" href="#">#最短路径</a>
+    </article>
+
+
+    <article class="qitem" id="94b7286cde1f">
+      <h2 class="qz" lang="zh">Dijkstra 最短路径算法是什么？</h2>
+      <p class="qen" lang="en">What is Dijkstra&#x27;s shortest path algorithm?</p>
+      <div class="azh" lang="zh">Dijkstra 算法用于求图中从单一起点到所有其他点的最短路径，要求边权非负。它不断选取当前距离最小的未访问节点，松弛其邻居的距离。时间复杂度依赖实现，使用优先队列时为 O((V+E) log V)。</div>
+      <div class="aen" lang="en">Dijkstra&#x27;s algorithm finds the shortest paths from a single source to all other vertices in a graph with non-negative edge weights. It repeatedly selects the unvisited node with the smallest current distance and relaxes the distances of its neighbors. Its complexity depends on the implementation; with a priority queue it is O((V+E) log V).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">图论经典算法（Dijkstra 1959）</p>
+        <p lang="en">Classic graph algorithm (Dijkstra, 1959)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Dijkstra</a> <a class="tag" href="#">#最短路径</a> <a class="tag" href="#">#图算法</a>
+    </article>
+
+
+    <article class="qitem" id="bd1632ca9fbc">
+      <h2 class="qz" lang="zh">动态规划与分治法的本质区别在哪里？</h2>
+      <p class="qen" lang="en">What is the essential difference between dynamic programming and divide-and-conquer?</p>
+      <div class="azh" lang="zh">分治把问题拆成互不重叠的子问题分别求解；动态规划面对的是子问题大量重叠的情形，于是把算过的子问题结果存起来复用，用“以空间换时间”避免指数级重复计算。最优子结构加重叠子问题是它生效的前提。</div>
+      <div class="aen" lang="en">Divide-and-conquer splits into non-overlapping subproblems solved separately; dynamic programming faces heavily overlapping subproblems, so it stores and reuses results—trading space for time to avoid exponential recomputation. Optimal substructure plus overlapping subproblems are its prerequisites.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#动态规划</a> <a class="tag" href="#">#分治</a>
+    </article>
+
+
+    <article class="qitem" id="c67b8ba59623">
+      <h2 class="qz" lang="zh">P 与 NP 问题说的是什么？什么是 NP 完全（NP-complete）？</h2>
+      <p class="qen" lang="en">What does the P vs NP question ask, and what does NP-complete mean?</p>
+      <div class="azh" lang="zh">P 是能在多项式时间内求解的判定问题集合，NP 是能在多项式时间内被验证解的问题集合；P 是否等于 NP 是计算机科学最著名的未解难题之一，位列克莱数学研究所千禧年难题。NP 完全问题是一类最坏情况下最难、但解可快速验证的问题（如旅行商判定、布尔可满足性），由库克于 1971 年正式定义，卡普在 1972 年给出 21 个经典归约实例。</div>
+      <div class="aen" lang="en">P is the set of decision problems solvable in polynomial time, while NP is the set whose solutions can be verified in polynomial time; whether P equals NP is among the most famous open problems in computer science and a Clay Millennium Prize Problem. NP-complete problems are the hardest in NP and have quickly verifiable solutions (e.g., SAT, the traveling-salesman decision problem), formally defined by Cook in 1971 and expanded by Karp&#x27;s 1972 list of 21 reductions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cook 1971（STOC）；Karp 1972；Sipser《计算理论导引》；克莱数学研究所</p>
+        <p lang="en">Cook (1971), STOC; Karp (1972); Sipser, Introduction to the Theory of Computation; Clay Mathematics Institute</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#P对NP</a> <a class="tag" href="#">#NP完全</a> <a class="tag" href="#">#计算复杂性</a> <a class="tag" href="#">#库克</a>
+    </article>
+
+
+    <article class="qitem" id="d7428130ead2">
+      <h2 class="qz" lang="zh">KMP 算法凭什么把字符串匹配做到线性时间，它省掉的到底是什么工作？</h2>
+      <p class="qen" lang="en">How does the KMP algorithm reach linear-time string matching, and what work does it eliminate?</p>
+      <div class="azh" lang="zh">朴素匹配在某一位失配后把主串指针整体回退一格重新比对，最坏情况（例如在一长串 a 里找 aaab）要做 O(nm) 次字符比较，大量比较是在重复已知的信息。KMP 先对模式串预处理出失配函数，记录每个前缀的最长真后缀同时也是前缀的长度；在模式第 j 位失配时，它据此知道已匹配部分有多少可以直接复用，于是把模式向右滑到那个偏移，主串指针永不后退。因为主串指针单调前进最多 n 步，模式指针的总回退量又被同一张表摊还限制在 O(m)，整体时间是 O(n+m)，额外空间 O(m)。</div>
+      <div class="aen" lang="en">Naive matching backs the text pointer up by one position after every mismatch and recompares, costing O(nm) character comparisons in the worst case — searching for aaab inside a long run of a&#x27;s, for instance — and most of those comparisons merely rediscover what was already known. KMP preprocesses the pattern into a failure function recording, for each prefix, the length of its longest proper suffix that is also a prefix; on a mismatch at pattern position j it therefore knows how much of the matched prefix can be reused and slides the pattern to exactly that offset, so the text pointer never moves backwards. Since the text pointer advances monotonically at most n times and the pattern pointer&#x27;s total retreat is amortized to O(m) by that same table, the search runs in O(n + m) time with O(m) extra space.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Knuth, Morris, Pratt,《Fast Pattern Matching in Strings》,SIAM Journal on Computing,1977 (DOI: 10.1137/0206024)</p>
+        <p lang="en">Knuth, Morris, Pratt, &#x27;Fast Pattern Matching in Strings&#x27;, SIAM Journal on Computing, 1977, DOI: 10.1137/0206024</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1137/0206024" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1137/0206024</a></p>
+        
+      </details>
+      <a class="tag" href="#">#KMP算法</a> <a class="tag" href="#">#字符串匹配</a> <a class="tag" href="#">#失配函数</a> <a class="tag" href="#">#前缀表</a>
+    </article>
+
+
+    <article class="qitem" id="df291d6f3e6c">
+      <h2 class="qz" lang="zh">红黑树是怎么保持“平衡”的？</h2>
+      <p class="qen" lang="en">How does a red-black tree stay &#x27;balanced&#x27;?</p>
+      <div class="azh" lang="zh">红黑树给每个节点染红或黑，并强制几条规则：根黑、红节点不相邻、从任一节点到叶子的黑节点数相同。这些约束保证最长路径不超过最短的两倍，从而插入删除后只需少量旋转与变色就能维持近似平衡，保证操作 O(log n)。</div>
+      <div class="aen" lang="en">A red-black tree colors nodes red or black under rules: root black, no adjacent reds, equal black-count on every path. This keeps the longest path at most twice the shortest, so insert/delete need only a few rotations and recoloring to stay balanced at O(log n).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#红黑树</a> <a class="tag" href="#">#平衡</a>
+    </article>
+
+
+    <article class="qitem" id="df3222ea48b7">
+      <h2 class="qz" lang="zh">A* 搜索相比 Dijkstra 多了什么使其更聪明？</h2>
+      <p class="qen" lang="en">What does A* add over Dijkstra to make it smarter?</p>
+      <div class="azh" lang="zh">A* 在 Dijkstra 的『已花代价』之外引入一个启发式函数，估计从当前节点到目标的剩余代价，优先扩展『已花+预计』最小者，从而少走弯路。只要启发式不高估真实代价（可采纳），它就能保证找到最优路径且更快。</div>
+      <div class="aen" lang="en">A* augments Dijkstra&#x27;s cost-so-far with a heuristic estimating remaining cost to the goal, expanding the node with the smallest (spent + estimated) total. As long as the heuristic never overestimates (admissible), it still finds the optimal path but explores far less.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hart、Nilsson 与 Raphael《A* 启发式搜索》(IEEE Trans, 1968)；Russell 与 Norvig《人工智能：现代方法》</p>
+        <p lang="en">Hart, Nilsson &amp; Raphael, &#x27;A formal basis for heuristic search&#x27; (IEEE Trans, 1968); Russell &amp; Norvig, &#x27;Artificial Intelligence: A Modern Approach&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/36152133/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115598103（豆瓣书目条目: 人工智能现代方法）；本条出处含多部著作，此标识只担保上面点</a> · <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#A*</a> <a class="tag" href="#">#启发式</a> <a class="tag" href="#">#可采纳</a> <a class="tag" href="#">#最优路径</a>
+    </article>
+
+
+    <article class="qitem" id="ec25cbc4d62c">
+      <h2 class="qz" lang="zh">什么是旅行商问题？</h2>
+      <p class="qen" lang="en">What is the traveling salesman problem?</p>
+      <div class="azh" lang="zh">旅行商问题要求在访问一系列城市各一次后回到起点，使总路程最短。它是经典的组合优化难题，属于 NP-hard，随着城市增多可行解数量呈阶乘级爆炸，常用近似算法、分支定界或启发式方法求解。</div>
+      <div class="aen" lang="en">The traveling salesman problem asks for the shortest route that visits each of a set of cities exactly once and returns to the start. A classic combinatorial optimization problem, it is NP-hard, and the number of feasible tours grows factorially with the number of cities, so approximation, branch-and-bound, or heuristics are typically used.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">计算复杂性理论；《算法导论》</p>
+        <p lang="en">Computational complexity theory; Introduction to Algorithms</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/20432061/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111407010（豆瓣书目条目: 算法导论）；本条出处含多部著作，此标识只担保上面点名的这部</a></p>
+        
+      </details>
+      <a class="tag" href="#">#旅行商问题</a> <a class="tag" href="#">#NP-hard</a> <a class="tag" href="#">#组合优化</a>
+    </article>
+
+
+    <article class="qitem" id="0183bcbca48c">
+      <h2 class="qz" lang="zh">什么是分治法？</h2>
+      <p class="qen" lang="en">What is divide and conquer?</p>
+      <div class="azh" lang="zh">分治法将大问题拆成若干规模更小、性质相同的子问题，递归求解后再合并结果。归并排序、快速排序和最近点对都采用这一策略，通常能把朴素 O(n²) 的问题降到 O(n log n)。</div>
+      <div class="aen" lang="en">Divide and conquer breaks a problem into smaller subproblems of the same kind, solves them recursively, then combines the results. Merge sort, quicksort, and closest-pair all use this strategy, often reducing a naive O(n²) problem to O(n log n).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》（Thomas H. Cormen 等）</p>
+        <p lang="en">Introduction to Algorithms (Cormen et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分治法</a> <a class="tag" href="#">#递归</a> <a class="tag" href="#">#归并排序</a>
+    </article>
+
+
+    <article class="qitem" id="1509d9a2339a">
+      <h2 class="qz" lang="zh">并查集（union-find）的“按秩合并”和“路径压缩”有什么用？</h2>
+      <p class="qen" lang="en">What do &#x27;union by rank&#x27; and &#x27;path compression&#x27; do for union-find?</p>
+      <div class="azh" lang="zh">并查集用来管理“哪些元素属于同一组”。按秩合并把矮树挂到高树下，避免树退化成链；路径压缩在查找时把节点直接连到根，压平树高。两者合用使每次操作近乎常数时间。</div>
+      <div class="aen" lang="en">Union-find tracks which elements share a group. Union by rank attaches the shorter tree under the taller to avoid chains; path compression links nodes straight to the root during find, flattening the tree. Together they make each operation nearly constant.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#并查集</a> <a class="tag" href="#">#数据结构</a>
+    </article>
+
+
+    <article class="qitem" id="2df8f427b765">
+      <h2 class="qz" lang="zh">什么是二分查找？它为什么比逐个查找快？</h2>
+      <p class="qen" lang="en">What is binary search and why is it faster than checking one by one?</p>
+      <div class="azh" lang="zh">二分查找在已排序的列表中每次都取中间项比较，丢掉一半不可能的范围，所以查找次数随数量对数增长，远少于逐个查找。</div>
+      <div class="aen" lang="en">Binary search picks the middle item of a sorted list each time and discards half the candidates, so the number of steps grows logarithmically rather than linearly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#查找</a> <a class="tag" href="#">#二分</a> <a class="tag" href="#">#效率</a>
+    </article>
+
+
+    <article class="qitem" id="3ebcc6932446">
+      <h2 class="qz" lang="zh">Dijkstra 最短路径算法是如何保证找到最短距离的？</h2>
+      <p class="qen" lang="en">How does Dijkstra&#x27;s shortest-path algorithm guarantee the shortest distance?</p>
+      <div class="azh" lang="zh">在边权非负的图上，它每次从尚未确定的节点中挑选当前距离最小的，将其『锁定』为最终值，再松弛其邻居。这样每锁定一个节点，其距离已是全局最优。Dijkstra 在 1959 年发表该法。</div>
+      <div class="aen" lang="en">On a graph with non-negative edge weights, it repeatedly picks the unconfirmed node with the smallest tentative distance, fixes it as final, and relaxes its neighbors; once fixed, that distance is globally optimal. Dijkstra published it in 1959.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span><span class="badge contested">结论有争议 · Contested</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Dijkstra《两点间最短路径的注解》(Numerische Mathematik, 1959)；Cormen 等《算法导论》</p>
+        <p lang="en">Dijkstra, &#x27;A note on two problems&#x27; (Numerische Mathematik, 1959); Cormen et al., &#x27;Introduction to Algorithms&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Dijkstra</a> <a class="tag" href="#">#最短路径</a> <a class="tag" href="#">#松弛</a> <a class="tag" href="#">#贪心</a>
+    </article>
+
+
+    <article class="qitem" id="4a797ed2f6ee">
+      <h2 class="qz" lang="zh">快速排序(Quicksort)为什么平均比很多排序算法快？</h2>
+      <p class="qen" lang="en">Why is quicksort on average faster than many other sorting algorithms?</p>
+      <div class="azh" lang="zh">快速排序用分治法：选一个基准把数组分成比它小和比它大的两部分，再递归处理，平均时间复杂度仅 O(n log n) 且常数因子很小、缓存友好。Hoare 在 1961 年提出这一算法，它也是许多语言标准库默认的内省排序基础。</div>
+      <div class="aen" lang="en">Quicksort uses divide-and-conquer: pick a pivot, partition into smaller and larger parts, then recurse; its average time is O(n log n) with a small constant and good cache behavior. Hoare introduced it in 1961 and it underlies many standard-library introsort implementations.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hoare《快速排序算法》(Computer Journal, 1961)；Cormen 等《算法导论》(Introduction to Algorithms, CLRS)</p>
+        <p lang="en">Hoare, &#x27;Quicksort&#x27; (Computer Journal, 1961); Cormen, Leiserson, Rivest &amp; Stein, &#x27;Introduction to Algorithms&#x27; (CLRS)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#快速排序</a> <a class="tag" href="#">#分治法</a> <a class="tag" href="#">#基准</a> <a class="tag" href="#">#平均复杂度</a>
+    </article>
+
+
+    <article class="qitem" id="5dca12c4299e">
+      <h2 class="qz" lang="zh">迪杰斯特拉算法用来做什么？</h2>
+      <p class="qen" lang="en">What is Dijkstra&#x27;s algorithm used for?</p>
+      <div class="azh" lang="zh">迪杰斯特拉算法用于在带非负权重的图中求单源最短路径：从起点开始，反复选取距离最小的未访问节点并松弛其邻居。简单实现的时间复杂度为 O(V²)，使用优先队列可优化到 O((V+E)log V)。</div>
+      <div class="aen" lang="en">Dijkstra&#x27;s algorithm finds the shortest paths from a single source in a graph with non-negative edge weights: it repeatedly selects the unvisited node with the smallest distance and relaxes its neighbors. Its time complexity is O(V²) naively and O((V+E) log V) with a priority queue.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》（Thomas H. Cormen 等）</p>
+        <p lang="en">Introduction to Algorithms (Cormen et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#迪杰斯特拉</a> <a class="tag" href="#">#最短路径</a> <a class="tag" href="#">#图算法</a>
+    </article>
+
+
+    <article class="qitem" id="604f0c2a0cd6">
+      <h2 class="qz" lang="zh">动态规划与单纯的递归相比，关键差别在哪里？</h2>
+      <p class="qen" lang="en">What is the key difference between dynamic programming and plain recursion?</p>
+      <div class="azh" lang="zh">动态规划用于有重叠子问题与最优子结构的问题，它把算过的子问题结果存起来（记忆化）或自底向上填表，避免指数级重复计算。Bellman 在 1950 年代奠定了这一最优化方法。</div>
+      <div class="aen" lang="en">Dynamic programming applies to problems with overlapping subproblems and optimal substructure; it stores computed subresults (memoization) or fills a table bottom-up to avoid exponential recomputation. Bellman founded the method in the 1950s.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bellman《动态规划》(1957)；Cormen 等《算法导论》</p>
+        <p lang="en">Bellman, &#x27;Dynamic Programming&#x27; (1957); Cormen et al., &#x27;Introduction to Algorithms&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#动态规划</a> <a class="tag" href="#">#重叠子问题</a> <a class="tag" href="#">#最优子结构</a> <a class="tag" href="#">#记忆化</a>
+    </article>
+
+
+    <article class="qitem" id="831fdd0af69c">
+      <h2 class="qz" lang="zh">什么是贪心算法？</h2>
+      <p class="qen" lang="en">What is a greedy algorithm?</p>
+      <div class="azh" lang="zh">贪心算法每一步都选当前看起来最优的选择，希望最终得到整体最优；它简单高效，但不总能得到真正最优解。</div>
+      <div class="aen" lang="en">A greedy algorithm picks the locally best choice at each step hoping for a global optimum; it is simple and fast but not always optimal.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#贪心</a> <a class="tag" href="#">#算法</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="87824f5456d5">
+      <h2 class="qz" lang="zh">为什么说哈希表的查找“平均”是常数时间？</h2>
+      <p class="qen" lang="en">Why is hash-table lookup &#x27;on average&#x27; constant time?</p>
+      <div class="azh" lang="zh">理想哈希函数把键均匀散布到桶里，冲突很少，定位只需一次计算加一次访问。只有大量冲突（如所有键落到一个桶）才会退化成线性；在负载因子受控、哈希良好的情况下，平均每个操作约 O(1)。</div>
+      <div class="aen" lang="en">A good hash spreads keys evenly so collisions are rare; locating takes one computation plus one access. Only heavy collisions (everything in one bucket) degrade to linear; with controlled load factor and good hashing, average work is about O(1).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#平均复杂度</a>
+    </article>
+
+
+    <article class="qitem" id="97f6e86d61e4">
+      <h2 class="qz" lang="zh">大 O 记号描述的是算法的什么，而不是什么？</h2>
+      <p class="qen" lang="en">What does Big-O notation describe—and what does it not describe?</p>
+      <div class="azh" lang="zh">大 O 刻画当输入规模趋向无穷时运行时间或空间增长的『上界趋势』，忽略常数和低阶项，用来比较不同算法在大数据量下的可扩展性。它不反映具体机器上的真实耗时，也不比较常数因子。</div>
+      <div class="aen" lang="en">Big-O captures the asymptotic upper-bound growth of time or space as input size goes to infinity, ignoring constants and lower-order terms, so it compares scalability at scale. It does not predict real wall-clock time on a given machine nor compare constant factors.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen 等《算法导论》；Knuth《计算机程序设计艺术 第1卷》</p>
+        <p lang="en">Cormen et al., &#x27;Introduction to Algorithms&#x27;; Knuth, &#x27;The Art of Computer Programming, Vol 1&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大O</a> <a class="tag" href="#">#渐近</a> <a class="tag" href="#">#时间复杂度</a> <a class="tag" href="#">#上界</a>
+    </article>
+
+
+    <article class="qitem" id="9c41667eb9af">
+      <h2 class="qz" lang="zh">快速排序是如何工作的？</h2>
+      <p class="qen" lang="en">How does quicksort work?</p>
+      <div class="azh" lang="zh">快速排序是一种高效的分治排序算法，它选取一个「基准」元素，把比基准小的放左边、大的放右边，再对左右两部分递归排序。平均时间复杂度为 O(n log n)，是最常用的排序算法之一。</div>
+      <div class="aen" lang="en">Quicksort is an efficient divide-and-conquer sorting algorithm that picks a pivot element, partitions the data so smaller items go left and larger ones go right, then recursively sorts the two parts. Its average time complexity is O(n log n), making it one of the most widely used sorting algorithms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hoare,《Quicksort》,The Computer Journal,1962 (DOI: 10.1093/comjnl/5.1.10)</p>
+        <p lang="en">Hoare, &#x27;Quicksort&#x27;, The Computer Journal, 1962, DOI: 10.1093/comjnl/5.1.10</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1093/comjnl/5.1.10" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1093/comjnl/5.1.10</a></p>
+        
+      </details>
+      <a class="tag" href="#">#快速排序</a> <a class="tag" href="#">#分治</a> <a class="tag" href="#">#排序</a>
+    </article>
+
+
+    <article class="qitem" id="b3827e2c4b2c">
+      <h2 class="qz" lang="zh">什么是递归？</h2>
+      <p class="qen" lang="en">What is recursion?</p>
+      <div class="azh" lang="zh">递归是指一个函数在解决问题时调用它自己来解决更小的同类子问题，直到到达最简单的情形。</div>
+      <div class="aen" lang="en">Recursion is when a function solves a problem by calling itself on smaller subproblems until it reaches a simple base case.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#递归</a> <a class="tag" href="#">#函数</a>
+    </article>
+
+
+    <article class="qitem" id="be86df2439c3">
+      <h2 class="qz" lang="zh">快速排序（QuickSort）的平均和最坏时间复杂度分别是多少？</h2>
+      <p class="qen" lang="en">What are the average-case and worst-case time complexities of QuickSort?</p>
+      <div class="azh" lang="zh">快速排序在平均情况下时间复杂度为 O(n log n)，通过选取基准并将数组划分为两部分递归排序。最坏情况（如输入已有序且总取首元素或末元素为基准）会退化为 O(n²)，可用随机化选基准或三数取中避免。它由托尼·霍尔于 1959–1960 年设计，1961 年以「Algorithm 64: Quicksort」发表于 CACM，至今仍是实践中最常用的排序算法之一。</div>
+      <div class="aen" lang="en">QuickSort runs in O(n log n) on average by choosing a pivot and recursively partitioning the array around it. Its worst case—e.g., already-sorted input with the first or last element always chosen as pivot—degrades to O(n²), which is avoided by randomized pivot selection or median-of-three. Designed by Tony Hoare in 1959–1960 and published as &#x27;Algorithm 64: Quicksort&#x27; in CACM (1961), it remains one of the most used sorting algorithms in practice.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hoare《Algorithm 64: Quicksort》Communications of the ACM 4(7), 1961；Hoare《Quicksort》The Computer Journal 5(1), 1962；Cormen 等《算法导论》第 7 章</p>
+        <p lang="en">Hoare, &#x27;Algorithm 64: Quicksort&#x27;, CACM 4(7), 1961; Hoare, &#x27;Quicksort&#x27;, The Computer Journal 5(1), 1962; Cormen et al., Introduction to Algorithms, ch. 7</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#快速排序</a> <a class="tag" href="#">#分治</a> <a class="tag" href="#">#时间复杂度</a> <a class="tag" href="#">#霍尔</a>
+    </article>
+
+
+    <article class="qitem" id="c4a609b12d02">
+      <h2 class="qz" lang="zh">迪杰斯特拉（Dijkstra）算法解决什么问题？它有什么限制？</h2>
+      <p class="qen" lang="en">What problem does Dijkstra&#x27;s algorithm solve, and what is its key limitation?</p>
+      <div class="azh" lang="zh">迪杰斯特拉算法在带权图中求从单一源点到所有其他顶点的最短路径，每步选出当前距离最小的未访问顶点并松弛其邻边。它要求图中所有边权非负，否则贪心选择会失效。该算法由迪杰斯特拉于 1959 年提出，是单源最短路问题的经典解法。</div>
+      <div class="aen" lang="en">Dijkstra&#x27;s algorithm finds the shortest paths from a single source to all other vertices in a weighted graph by repeatedly selecting the unvisited vertex with the smallest tentative distance and relaxing its edges. It requires all edge weights to be non-negative, since negative weights break the greedy selection. Proposed by Dijkstra in 1959, it is the classic solution to single-source shortest paths.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Dijkstra 1959 年论文（Numerische Mathematik）；Cormen 等《算法导论》（CLRS）</p>
+        <p lang="en">Dijkstra (1959), Numerische Mathematik; Cormen et al., Introduction to Algorithms (CLRS)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#迪杰斯特拉</a> <a class="tag" href="#">#最短路径</a> <a class="tag" href="#">#贪心</a> <a class="tag" href="#">#图算法</a>
+    </article>
+
+
+    <article class="qitem" id="cdeb69946e74">
+      <h2 class="qz" lang="zh">什么是二分查找？</h2>
+      <p class="qen" lang="en">What is binary search?</p>
+      <div class="azh" lang="zh">二分查找是在已排序的列表中查找目标值的方法：每次取中间元素比较，根据大小丢弃一半数据，直到找到或区间为空。它的时间复杂度是 O(log n)，比逐个查找快得多。它要求数据必须是有序的。</div>
+      <div class="aen" lang="en">Binary search finds a target value in a sorted list by repeatedly taking the middle element, comparing it, and discarding half the data based on the result, until the value is found or the range is empty. Its time complexity is O(log n), far faster than checking items one by one. It requires the data to be sorted.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二分查找</a> <a class="tag" href="#">#查找</a> <a class="tag" href="#">#有序</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_016">
+      <h2 class="qz" lang="zh">基于比较的排序算法为什么注定快不过 O(n log n)?</h2>
+      <p class="qen" lang="en">Why are comparison-based sorting algorithms doomed never to beat O(n log n)?</p>
+      <div class="azh" lang="zh">因为n个元素共有n!种可能排列,比较排序必须逐一区分它们,而每次比较只产生两种分支。把执行画成二叉决策树:内部节点是一次比较,叶子是判定结果,n!种输入要求至少n!片叶子;高度为h的二叉树至多2^h片叶子,故最坏比较次数不低于log₂(n!),按斯特林公式约为n·log₂n减线性项。归并排序与堆排序恰落在这一下界上,已属渐近最优;想更快只能绕开比较模型,比如计数排序利用键的取值范围。</div>
+      <div class="aen" lang="en">Sorting n elements means telling apart n-factorial possible orderings, and each comparison yields only a two-way branch. Picture the algorithm as a binary decision tree: internal nodes are comparisons, leaves are verdicts, and covering all n! inputs demands at least n! leaves. A binary tree of height h has at most 2^h leaves, so worst-case comparisons sit at or above log2(n!) — roughly n log n minus a linear term by Stirling&#x27;s formula. Merge sort and heapsort land exactly on this bound and are asymptotically optimal; going faster means abandoning the comparison model altogether, as counting sort does by exploiting key ranges.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen、Leiserson、Rivest 与 Stein,《Introduction to Algorithms》第3版第8章,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., Chapter 8, MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#决策树下界</a> <a class="tag" href="#">#比较排序</a> <a class="tag" href="#">#算法复杂度</a>
+    </article>
+
+
+    <article class="qitem" id="d7ff732aa7ba">
+      <h2 class="qz" lang="zh">哈希表是怎么做到近乎常数时间查找的，碰撞又怎么处理？</h2>
+      <p class="qen" lang="en">How does a hash table achieve near-constant-time lookup, and how are collisions handled?</p>
+      <div class="azh" lang="zh">哈希函数把键映射到数组下标，理想情况下每次直接定位，平均 O(1)。不同键落到同一位置即发生碰撞，常用链地址法或开放寻址法解决，负载因子越高冲突越频繁。</div>
+      <div class="aen" lang="en">A hash function maps keys to array indices so a lookup usually lands directly, averaging O(1). When two keys hit the same slot—a collision—we resolve it by chaining or open addressing; higher load factors mean more clashes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen 等《算法导论》；Knuth《计算机程序设计艺术 第3卷》</p>
+        <p lang="en">Cormen et al., &#x27;Introduction to Algorithms&#x27;; Knuth, &#x27;The Art of Computer Programming, Vol 3&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#哈希函数</a> <a class="tag" href="#">#碰撞</a> <a class="tag" href="#">#链地址</a>
+    </article>
+
+
+    <article class="qitem" id="e362670fc3cc">
+      <h2 class="qz" lang="zh">什么是指数级时间复杂度，为什么它很吓人？</h2>
+      <p class="qen" lang="en">What is exponential time complexity and why is it scary?</p>
+      <div class="azh" lang="zh">指数级复杂度（如 O(2ⁿ)）表示运行时间随输入规模 n 成指数增长，即使 n 只增加一点点，耗时也会爆炸式上升。许多组合优化问题属于这一类，因此在实践中往往需要近似算法或剪枝。这就是为什么 n=60 可能就难以在合理时间内算完。</div>
+      <div class="aen" lang="en">Exponential complexity such as O(2ⁿ) means running time grows exponentially with the input size n, so even a tiny increase in n causes a dramatic rise in cost. Many combinatorial optimization problems fall into this class, so in practice we often need approximation algorithms or pruning. This is why n=60 can already be infeasible in reasonable time.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#指数复杂度</a> <a class="tag" href="#">#NP</a> <a class="tag" href="#">#难解问题</a>
+    </article>
+
+
+    <article class="qitem" id="f484e22a9625">
+      <h2 class="qz" lang="zh">哈希函数在算法中起什么作用？</h2>
+      <p class="qen" lang="en">What role does a hash function play in algorithms?</p>
+      <div class="azh" lang="zh">哈希函数把任意大小的输入映射到固定大小的值，使得相同输入总得到相同输出、不同输入尽量分散。借助哈希表，平均情况下插入、删除、查找都只需 O(1) 时间，被广泛应用于字典、缓存和集合。</div>
+      <div class="aen" lang="en">A hash function maps input of arbitrary size to a fixed-size value such that equal inputs always produce equal outputs and distinct inputs spread out. With hash tables, insertion, deletion, and lookup average O(1) time, making hashing widely used in dictionaries, caches, and sets.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》（Thomas H. Cormen 等）</p>
+        <p lang="en">Introduction to Algorithms (Cormen et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希函数</a> <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#常数时间</a>
+    </article>
+
+
+    <article class="qitem" id="12ae0d69dc2a">
+      <h2 class="qz" lang="zh">为什么电脑算得比人快那么多？</h2>
+      <p class="qen" lang="en">Why can computers calculate so much faster than humans?</p>
+      <div class="azh" lang="zh">电脑的运算由电子线路以接近光速的速度完成，每秒可执行数十亿次操作。它不知疲倦、不犯错（在给定指令下），而且能并行处理很多任务。所以像大数乘法这样的重复计算，电脑远胜过人脑。</div>
+      <div class="aen" lang="en">A computer&#x27;s operations are done by electronic circuits at near-light speed, performing billions of actions per second. It never tires, makes no mistakes under given instructions, and can process many tasks in parallel. So for repetitive calculations like large multiplications, computers far surpass humans.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机</a> <a class="tag" href="#">#速度</a> <a class="tag" href="#">#运算</a>
+    </article>
+
+
+    <article class="qitem" id="36b5a8332df6">
+      <h2 class="qz" lang="zh">什么是算法？</h2>
+      <p class="qen" lang="en">What is an algorithm?</p>
+      <div class="azh" lang="zh">算法是解决某类问题的明确步骤集合，像一份配方。计算机按算法一步步执行就能完成任务。</div>
+      <div class="aen" lang="en">An algorithm is a clear set of steps for solving a problem, like a recipe. A computer follows the steps to finish a task.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#算法</a> <a class="tag" href="#">#基础概念</a>
+    </article>
+
+
+    <article class="qitem" id="77a527661723">
+      <h2 class="qz" lang="zh">什么是大 O 记号（Big-O）？它用来描述算法的什么？</h2>
+      <p class="qen" lang="en">What is Big-O notation and what does it describe about an algorithm?</p>
+      <div class="azh" lang="zh">大 O 记号用来刻画算法运行时间或空间随输入规模增长的渐近上界，常用于表述最坏情况代价，例如 O(n) 表示与输入长度成线性增长。它由巴赫曼在 1894 年引入数学界，后经高德纳在《计算机程序设计艺术》中用于算法分析并系统化。它只关注规模变大时的主导增长趋势，忽略常数因子与低阶项。</div>
+      <div class="aen" lang="en">Big-O notation characterizes the asymptotic upper bound on an algorithm&#x27;s running time or space as the input size grows, and is commonly used to state worst-case cost, e.g., O(n) means linear growth with input length. Introduced by Bachmann in 1894 and adopted for algorithm analysis by Knuth in The Art of Computer Programming, it is the standard tool of the field. It captures only the dominant growth trend at scale, ignoring constant factors and lower-order terms.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">高德纳《计算机程序设计艺术》卷1（The Art of Computer Programming）；Bachmann 1894</p>
+        <p lang="en">Knuth, The Art of Computer Programming, Vol. 1; Bachmann (1894)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL257263W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL257263W：The art of computer prog</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大O记号</a> <a class="tag" href="#">#算法复杂度</a> <a class="tag" href="#">#渐近分析</a> <a class="tag" href="#">#高德纳</a>
+    </article>
+
+
+    <article class="qitem" id="99e603003f71">
+      <h2 class="qz" lang="zh">什么是排序？</h2>
+      <p class="qen" lang="en">What is sorting?</p>
+      <div class="azh" lang="zh">排序是把一组杂乱的数据按从小到大（或从大到小）的顺序重新排列。比如把全班同学的身高从矮到高排好，方便之后快速查找和比较。计算机里排序是很多程序的基础步骤。</div>
+      <div class="aen" lang="en">Sorting means rearranging a messy collection of data into order, from smallest to largest (or the reverse). For example, lining up students by height makes later searching and comparing easier. In computing, sorting is a fundamental step in many programs.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》（Thomas H. Cormen 等）</p>
+        <p lang="en">Introduction to Algorithms (Cormen et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#排序</a> <a class="tag" href="#">#顺序</a> <a class="tag" href="#">#整理</a>
+    </article>
+
+
+    <article class="qitem" id="b366ab4ceb8d">
+      <h2 class="qz" lang="zh">为什么电脑做事要一步步来？</h2>
+      <p class="qen" lang="en">Why does a computer do things step by step?</p>
+      <div class="azh" lang="zh">电脑很乖，只会照着写好的步骤一条一条做，先这样再那样，才能得出正确结果。</div>
+      <div class="aen" lang="en">A computer is obedient and only follows written steps one by one, doing this then that, to get the right result.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#步骤</a> <a class="tag" href="#">#算法</a> <a class="tag" href="#">#启蒙</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_017">
+      <h2 class="qz" lang="zh">动态规划凭什么能把指数爆炸的递归压缩成多项式时间?</h2>
+      <p class="qen" lang="en">What lets dynamic programming collapse exponentially exploding recursion into polynomial time?</p>
+      <div class="azh" lang="zh">关键在一个词:复用。朴素递归会反复求解同一个子问题,调用量随规模指数膨胀——直接按定义求斐波那契第n项约需1.618^n次调用;动态规划察觉这些子问题高度重叠、且最优解可由子问题的最优解组合而成,于是用一张表缓存答案,自顶向下记忆化或自底向上按依赖顺序填表,保证每个子问题只算一次。总复杂度变为子问题总数乘以单个子问题的开销,斐波那契就此降到O(n)。动规是否适用,正看重叠子问题与最优子结构这两张门票。</div>
+      <div class="aen" lang="en">One word: reuse. Naive recursion solves identical subproblems over and over, so calls explode exponentially — deriving the nth Fibonacci number straight from the definition takes about 1.618^n function calls. Dynamic programming notices that these subproblems overlap heavily and that optimal solutions assemble from optimal subsolutions, so it caches every answer in a table, memoized top-down or filled bottom-up in dependency order, ensuring each subproblem is computed once. Total cost becomes the number of subproblems times the cost of solving one, dropping Fibonacci from exponential to linear time. Overlap plus optimal substructure is precisely the two-ticket test for whether dynamic programming applies.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bellman,《Dynamic Programming》,Princeton University Press,1957</p>
+        <p lang="en">R. Bellman, Dynamic Programming, Princeton University Press, 1957</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 1 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#记忆化</a> <a class="tag" href="#">#重叠子问题</a> <a class="tag" href="#">#最优子结构</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_006">
+      <h2 class="qz" lang="zh">电脑怎么在一堆数字里找出最大的那个?它比人找得快吗?</h2>
+      <p class="qen" lang="en">How does a computer find the biggest number in a pile — faster than people?</p>
+      <div class="azh" lang="zh">它用最朴素的办法:把数字排成一排,从第一个开始记住目前最大,逐个往后比较,遇到更大的就换记忆。一百个数字只要比九十九次,一眨眼完成。人一次能看一排,电脑一次只看一个,但每秒能做几十亿次,快就快在这里。</div>
+      <div class="aen" lang="en">It uses the simplest plan: line numbers up, remember current champion, compare one by one, swap when a bigger appears. A hundred numbers need ninety-nine comparisons — done in a blink. People see rows at once while computers see one number at a time but compare billions per second.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">韩启德总主编《十万个为什么》(第六版),少年儿童出版社,2013</p>
+        <p lang="en">Han Qide chief ed., Ten Thousand Whys, 6th edition, Juvenile and Children Publishing House, 2013, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#算法</a> <a class="tag" href="#">#比较</a> <a class="tag" href="#">#速度</a>
+    </article>
+
+
+    <article class="qitem" id="f7e7fcf2d96b">
+      <h2 class="qz" lang="zh">二分查找为什么要求数据必须已经排好序？</h2>
+      <p class="qen" lang="en">Why does binary search require the data to be already sorted?</p>
+      <div class="azh" lang="zh">二分查找每一步都取中间元素与目标比较，据此砍掉一半区间；这个『砍半』的推理前提是剩下的区间里目标要么在左要么在右，只有有序才能保证。若无序，丢掉的那一半里可能正藏着答案。</div>
+      <div class="aen" lang="en">Each step of binary search compares the middle element and discards half the range; that halving only works if the discarded half provably cannot contain the target, which requires order. On unsorted data the discarded half might hold the answer.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Knuth《计算机程序设计艺术 第3卷：排序与查找》(The Art of Computer Programming, Vol 3)；Cormen 等《算法导论》</p>
+        <p lang="en">Knuth, &#x27;The Art of Computer Programming, Vol 3&#x27; (Sorting and Searching); Cormen et al., &#x27;Introduction to Algorithms&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二分查找</a> <a class="tag" href="#">#有序</a> <a class="tag" href="#">#对数时间</a> <a class="tag" href="#">#前提</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

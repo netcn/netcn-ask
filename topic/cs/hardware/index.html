@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hardware · 计算机 Computer Science | 问答</title>
+<meta name="description" content="hardware（计算机）分类下的 21 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 21 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hardware · 计算机 Computer Science | 问答">
+<meta property="og:description" content="hardware（计算机）分类下的 21 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 21 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/hardware/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/hardware/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>hardware</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>hardware <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>21</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#00fe2f589f82">什么是指令集架构（如 x86、ARM）？</a></li><li><a href="#1fed0aac0972">什么是寄存器，为什么它比内存快？</a></li><li><a href="#2fd076500f9f">什么是摩尔定律？</a></li><li><a href="#6b2dd71630a7">为什么显卡的显存带宽常常比显存容量更能决定实际性能？</a></li><li><a href="#cae9b57ce829">CPU 的流水线（pipeline）为什么会“停顿”（stall）？</a></li><li><a href="#cs_22_006">在 FPGA 设计中，为什么跨时钟域直接传输单比特信号可能出错？两级触发器同步器</a></li><li><a href="#09c3fc9be97c">为什么计算机需要内存层次结构？</a></li><li><a href="#49059d13c2d3">什么是GPU，它和CPU有什么不同？</a></li><li><a href="#752afd968a2c">什么是固态硬盘（SSD），它比机械硬盘快在哪？</a></li><li><a href="#80caa22f6f85">GPU 的 SIMT 执行模型是什么？</a></li><li><a href="#cs_20_002">嵌入式系统的看门狗定时器如何防止程序跑飞?实际使用中有哪些常见误区?</a></li><li><a href="#cs_20_018">嵌入式实时系统做可调度性分析时，为什么依据最坏情况执行时间（WCET）而不是平均</a></li><li><a href="#cs_22_014">FPGA 是如何用查找表（LUT）实现任意布尔组合逻辑的？为什么说一个 6 输入</a></li><li><a href="#df5a438fc646">什么是主板，它连接了什么？</a></li><li><a href="#ee03af8f0904">内存（RAM）和硬盘有什么区别？</a></li><li><a href="#080f7aee2814">RISC 和 CISC 指令集有何不同？</a></li><li><a href="#9f4bff76e1a3">电脑的&quot;记忆&quot;存在哪里？</a></li><li><a href="#a970fffbf064">什么是CPU？</a></li><li><a href="#d5e0abe58f53">分支预测是什么，猜错了会怎样？</a></li><li><a href="#e27a06e4632d">同样是 USB-C 接口的线，为什么有的能外接 4K 显示器，有的只能充电？</a></li><li><a href="#ed031fd9a890">缓存（cache）是什么，为什么它又快又小？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="00fe2f589f82">
+      <h2 class="qz" lang="zh">什么是指令集架构（如 x86、ARM）？</h2>
+      <p class="qen" lang="en">What is an instruction set architecture (like x86, ARM)?</p>
+      <div class="azh" lang="zh">指令集架构定义了 CPU 能直接执行的指令种类和格式；x86 多用于电脑、ARM 以低功耗见长，广泛用于手机和移动设备。</div>
+      <div class="aen" lang="en">An instruction set architecture defines the instructions a CPU can execute directly; x86 is common in PCs while ARM, power-efficient, dominates phones and mobile devices.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#指令集</a> <a class="tag" href="#">#x86</a> <a class="tag" href="#">#ARM</a>
+    </article>
+
+
+    <article class="qitem" id="1fed0aac0972">
+      <h2 class="qz" lang="zh">什么是寄存器，为什么它比内存快？</h2>
+      <p class="qen" lang="en">What is a register and why is it faster than memory?</p>
+      <div class="azh" lang="zh">寄存器是 CPU 内部极小的存储单元，离运算核心最近、直接被指令访问，因此比需要多层访问的主存快得多。</div>
+      <div class="aen" lang="en">A register is a tiny storage unit inside the CPU, closest to the arithmetic core and directly accessed by instructions, so it is far faster than main memory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#寄存器</a> <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#速度</a>
+    </article>
+
+
+    <article class="qitem" id="2fd076500f9f">
+      <h2 class="qz" lang="zh">什么是摩尔定律？</h2>
+      <p class="qen" lang="en">What is Moore&#x27;s Law?</p>
+      <div class="azh" lang="zh">摩尔定律观察到集成电路上的晶体管数量约每两年翻一倍，使芯片性能持续提升、成本下降，但近年已逐渐放缓。</div>
+      <div class="aen" lang="en">Moore&#x27;s Law observed that transistor counts on chips roughly double every two years, driving performance up and cost down, though the trend has slowed recently.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#摩尔定律</a> <a class="tag" href="#">#芯片</a> <a class="tag" href="#">#趋势</a>
+    </article>
+
+
+    <article class="qitem" id="6b2dd71630a7">
+      <h2 class="qz" lang="zh">为什么显卡的显存带宽常常比显存容量更能决定实际性能？</h2>
+      <p class="qen" lang="en">Why does a GPU&#x27;s memory bandwidth often decide real performance more than its memory capacity?</p>
+      <div class="azh" lang="zh">GPU 有成千上万个并行线程，其算力（每秒浮点运算次数）增长远快于显存带宽（每秒字节数），因此大量真实内核落在带宽受限区间：判据是算术强度，即每搬运一个字节做多少次浮点运算，当它低于芯片的浮点每字节比值时，速度由带宽而非算力决定。屋顶线模型把这两条限制画成一条折线，一眼就能看出内核处在带宽斜坡还是算力平台上。容量只决定模型或数据集能不能装下，装下之后再多也不会更快，这也是大模型推理格外看重 HBM 带宽、而优化手段集中在算子融合、分块与提高数据复用的原因。</div>
+      <div class="aen" lang="en">A GPU runs thousands of parallel threads and its arithmetic throughput in floating-point operations per second has grown far faster than its memory bandwidth in bytes per second, so many real kernels sit in the bandwidth-bound regime: whenever arithmetic intensity — operations performed per byte moved — falls below the chip&#x27;s flops-per-byte ratio, bandwidth rather than compute sets the speed. The roofline model plots both limits as one curve, making it immediately visible whether a kernel lies on the bandwidth slope or the compute ceiling. Capacity only determines whether a model or dataset fits at all, and beyond that extra gigabytes add no speed, which is why LLM inference is judged on HBM bandwidth and optimization focuses on operator fusion, tiling and data reuse.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Williams、Waterman 与 Patterson《Roofline: An Insightful Visual Performance Model for Multicore Architectures》(Communications of the ACM, 2009)；NVIDIA《CUDA C++ Programming Guide》</p>
+        <p lang="en">Williams, Waterman &amp; Patterson, &quot;Roofline: An Insightful Visual Performance Model for Multicore Architectures,&quot; Communications of the ACM (2009); NVIDIA, &quot;CUDA C++ Programming Guide&quot;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1498765.1498785" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/1498765.1498785</a></p>
+        
+      </details>
+      <a class="tag" href="#">#显存带宽</a> <a class="tag" href="#">#算术强度</a> <a class="tag" href="#">#屋顶线模型</a> <a class="tag" href="#">#GPU性能</a>
+    </article>
+
+
+    <article class="qitem" id="cae9b57ce829">
+      <h2 class="qz" lang="zh">CPU 的流水线（pipeline）为什么会“停顿”（stall）？</h2>
+      <p class="qen" lang="en">Why does a CPU pipeline &#x27;stall&#x27;?</p>
+      <div class="azh" lang="zh">流水线把一条指令拆成取指、译码、执行等多级并行推进；当后一级需要前一级还没算出的结果（数据相关）、或遇到分支误判、或硬件资源冲突时，就必须插入空泡等待，这就是停顿，会降低指令吞吐。</div>
+      <div class="aen" lang="en">A pipeline splits an instruction into fetch/decode/execute stages running in parallel; when a later stage needs a result not yet ready (data hazard), a mispredicted branch occurs, or resources clash, bubbles are inserted to wait—that&#x27;s a stall, lowering throughput.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#流水线</a> <a class="tag" href="#">#停顿</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_006">
+      <h2 class="qz" lang="zh">在 FPGA 设计中，为什么跨时钟域直接传输单比特信号可能出错？两级触发器同步器如何降低亚稳态风险？</h2>
+      <p class="qen" lang="en">In FPGA design, why can transferring a single-bit signal directly across clock domains go wrong, and how does a two-flip-flop synchronizer reduce the metastability risk?</p>
+      <div class="azh" lang="zh">当输入信号在触发器的建立—保持窗口内变化时，输出可能进入既非0也非1的亚稳态，并经过不确定时间后才稳定。异步时钟之间无法保证不违反该窗口。两级同步器让第一级的亚稳态有整整一个时钟周期衰减，第二级再采样时几乎必然已恢复为确定的0或1；失效率随时间指数下降，工程师据此计算同步器的平均无故障时间来评估可靠性。</div>
+      <div class="aen" lang="en">If a signal changes inside a flip-flop&#x27;s setup-hold window, its output may enter metastability: an invalid voltage halfway between levels that persists for an unpredictable time before settling. Unrelated clock domains guarantee nothing about avoiding that window. A two-flip-flop synchronizer gives the first stage nearly one full clock period to decay before the second stage samples it, so recovery is overwhelmingly likely; residual failure probability decays exponentially, and engineers derive a synchronizer MTBF from this decay to quantify reliability.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ginosar,《Fourteen ways to fool your synchronizer》,第9届异步电路与系统国际研讨会论文集（ASYNC 2003） (DOI: 10.1109/async.2003.1199169)</p>
+        <p lang="en">Ginosar, &#x27;Fourteen ways to fool your synchronizer&#x27;, Proc. 9th International Symposium on Asynchronous Circuits and Systems (ASYNC 2003), DOI: 10.1109/async.2003.1199169</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/async.2003.1199169" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/async.2003.1199169</a></p>
+        
+      </details>
+      <a class="tag" href="#">#亚稳态</a> <a class="tag" href="#">#跨时钟域</a> <a class="tag" href="#">#同步器</a>
+    </article>
+
+
+    <article class="qitem" id="09c3fc9be97c">
+      <h2 class="qz" lang="zh">为什么计算机需要内存层次结构？</h2>
+      <p class="qen" lang="en">Why do computers need a memory hierarchy?</p>
+      <div class="azh" lang="zh">寄存器、缓存、内存、磁盘在速度与容量上呈反比，层次结构用局部性原理把常用数据放在更快但更小的存储层，兼顾性能与成本。</div>
+      <div class="aen" lang="en">Registers, caches, RAM and disk trade speed for capacity; the hierarchy exploits locality to keep hot data in faster, smaller tiers, balancing performance and cost.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Patterson &amp; Hennessy</p>
+        <p lang="en">Patterson &amp; Hennessy</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#硬件</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="49059d13c2d3">
+      <h2 class="qz" lang="zh">什么是GPU，它和CPU有什么不同？</h2>
+      <p class="qen" lang="en">What is a GPU and how is it different from a CPU?</p>
+      <div class="azh" lang="zh">GPU（图形处理器）擅长同时并行处理大量简单计算，专为图像和AI训练设计；CPU 更擅长少而复杂的任务。</div>
+      <div class="aen" lang="en">A GPU (graphics processing unit) excels at many simple calculations in parallel, built for graphics and AI; a CPU handles fewer, more complex tasks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#并行</a> <a class="tag" href="#">#硬件</a>
+    </article>
+
+
+    <article class="qitem" id="752afd968a2c">
+      <h2 class="qz" lang="zh">什么是固态硬盘（SSD），它比机械硬盘快在哪？</h2>
+      <p class="qen" lang="en">What is an SSD and why is it faster than a mechanical hard drive?</p>
+      <div class="azh" lang="zh">SSD 用闪存芯片存储、没有移动部件，靠电子读写，因此比靠磁头转动找数据的机械硬盘更快也更耐震。</div>
+      <div class="aen" lang="en">An SSD stores data on flash chips with no moving parts and reads electronically, so it is faster and more shock-resistant than a mechanical drive with spinning disks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SSD</a> <a class="tag" href="#">#闪存</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="80caa22f6f85">
+      <h2 class="qz" lang="zh">GPU 的 SIMT 执行模型是什么？</h2>
+      <p class="qen" lang="en">What is the SIMT execution model of a GPU?</p>
+      <div class="azh" lang="zh">SIMT（单指令多线程）让成百上千个轻量线程以“线程束（warp）”为单位，同一时刻执行同一条指令但操作不同数据，非常适合矩阵乘法等高度并行的任务；但当线程走不同分支时会串行执行，拖慢整体。</div>
+      <div class="aen" lang="en">SIMT (single-instruction multiple-thread) runs thousands of light threads in warps, all executing the same instruction on different data—ideal for massively parallel work like matrix multiply. Divergent branches run serially, slowing things.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#SIMT</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_002">
+      <h2 class="qz" lang="zh">嵌入式系统的看门狗定时器如何防止程序跑飞?实际使用中有哪些常见误区?</h2>
+      <p class="qen" lang="en">How does a watchdog timer keep an embedded system from running wild, and what are common mistakes when using one?</p>
+      <div class="azh" lang="zh">看门狗是硬件递减计数器,主流程必须周期性喂狗(重载计数值);一旦程序死锁或跑飞导致无法按时喂狗,计数器归零便触发芯片复位,让系统回到已知初始态。典型误区是把喂狗分散到多个任务或中断里——某个任务卡死后其余代码仍在喂狗,故障被掩盖;正确做法是由统一监控逻辑确认各关键任务心跳后再集中喂狗。</div>
+      <div class="aen" lang="en">A watchdog is a hardware down-counter the main flow must reload periodically (&#x27;kicking&#x27;); if the program deadlocks or runs away and misses the deadline, the counter hits zero and resets the chip into a known state. A typical mistake is kicking from several tasks or interrupts: one task hangs while the rest keep feeding the timer, masking the fault — the sound pattern is a single supervisor that verifies heartbeats of all critical tasks before kicking once.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">意法半导体 RM0090《STM32F4 参考手册》,第 18 章 独立看门狗(IWDG)</p>
+        <p lang="en">STMicroelectronics RM0090, STM32F4 Reference Manual, Chapter 18 &#x27;Independent watchdog (IWDG)&#x27;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#嵌入式系统</a> <a class="tag" href="#">#看门狗定时器</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_018">
+      <h2 class="qz" lang="zh">嵌入式实时系统做可调度性分析时，为什么依据最坏情况执行时间（WCET）而不是平均执行时间？</h2>
+      <p class="qen" lang="en">In embedded real-time systems, why does schedulability analysis rely on worst-case execution time (WCET) rather than average execution time?</p>
+      <div class="azh" lang="zh">实时系统的正确性以是否满足截止期来定义，只要有一次运行超时就可能造成失效，因此分析必须覆盖所有执行路径而非典型路径。WCET 通过结合静态分析与测量上界给出可论证的时间保证；平均值会把中断、缓存扰动等长尾因素隐藏掉，用它排布调度会导致偶发超时。工程实践中通常拿 WCET 配合利用率界或响应时间分析来验证任务集可行。</div>
+      <div class="aen" lang="en">Correctness in a real-time system means meeting every deadline, so analysis must bound all execution paths rather than the typical one; a single overrun can already count as failure. WCET combines static analysis with measured upper bounds to yield demonstrable timing guarantees, whereas averages hide long-tail effects like interrupts and cache perturbations that surface as sporadic misses. In practice engineers pair WCET with utilization bounds or response-time analysis to prove a task set feasible.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Glenn Reeves（JPL）《What Really Happened on Mars Rover Pathfinder》(1997)；Sha、Rajkumar 与 Lehoczky《Priority Inheritance Protocols》(IEEE Transactions on Computers, 1990)</p>
+        <p lang="en">Glenn Reeves (JPL), &quot;What Really Happened on Mars Rover Pathfinder&quot; (1997); Sha, Rajkumar &amp; Lehoczky, &quot;Priority Inheritance Protocols,&quot; IEEE Transactions on Computers (1990)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/12.57058" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1109/12.57058：Priority inheritance protoc</a></p>
+        
+      </details>
+      <a class="tag" href="#">#嵌入式系统</a> <a class="tag" href="#">#WCET</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_014">
+      <h2 class="qz" lang="zh">FPGA 是如何用查找表（LUT）实现任意布尔组合逻辑的？为什么说一个 6 输入 LUT 能表达任何最多含六个变量的布尔函数？</h2>
+      <p class="qen" lang="en">How does an FPGA implement arbitrary combinational Boolean logic with lookup tables (LUTs)? Why can a single 6-input LUT represent any Boolean function of up to six variables?</p>
+      <div class="azh" lang="zh">LUT 本质是一小块可写存储：函数的真值表被完整装入 64（即 2 的 6 次方）个存储单元，六个输入充当地址，读出的单元内容就是该输入组合下的函数值。由于真值表穷举了任何六变量函数的全部取值，单个 LUT 必然足以覆盖；更大规模的电路由成千上万个 LUT 经可编程互连组装。与 ASIC 把门电路固化在硅片中不同，这一结构依赖配置文件加载，灵活但面积与功耗开销更高。</div>
+      <div class="aen" lang="en">A LUT is essentially a small writable memory: the function&#x27;s complete truth table is loaded into 64 storage cells (2 to the power of 6), the six inputs serve as the address, and the cell read at that address is the function value. Since a truth table enumerates every output of any six-variable function, one LUT always suffices; larger circuits assemble thousands of LUTs through programmable interconnect. Unlike ASICs, where gates are hard-wired in silicon, this structure exists only once configuration is loaded - flexible but costlier in area and power.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">S. Brown、R. Francis、J. Rose 与 Z. Vranesic 合著《现场可编程门阵列》（Field-Programmable Gate Arrays），Kluwer Academic Publishers，1992 年</p>
+        <p lang="en">S. Brown, R. Francis, J. Rose, Z. Vranesic, Field-Programmable Gate Arrays, Kluwer Academic Publishers, 1992</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#FPGA</a> <a class="tag" href="#">#查找表</a> <a class="tag" href="#">#数字设计</a>
+    </article>
+
+
+    <article class="qitem" id="df5a438fc646">
+      <h2 class="qz" lang="zh">什么是主板，它连接了什么？</h2>
+      <p class="qen" lang="en">What is a motherboard and what does it connect?</p>
+      <div class="azh" lang="zh">主板是一块大电路板，把 CPU、内存、硬盘、显卡等部件连在一起并让它们互相通信。</div>
+      <div class="aen" lang="en">A motherboard is a large circuit board that links the CPU, memory, disk, graphics card, and more, letting them communicate.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主板</a> <a class="tag" href="#">#电路</a> <a class="tag" href="#">#连接</a>
+    </article>
+
+
+    <article class="qitem" id="ee03af8f0904">
+      <h2 class="qz" lang="zh">内存（RAM）和硬盘有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between RAM and a hard drive?</p>
+      <div class="azh" lang="zh">RAM 是高速但断电即失的临时工作区，硬盘是慢一些但能长期保存的存储；程序运行时数据放在 RAM 里。</div>
+      <div class="aen" lang="en">RAM is fast, temporary working space that is lost without power; a hard drive is slower but keeps data long-term. Running programs use RAM.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RAM</a> <a class="tag" href="#">#硬盘</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="080f7aee2814">
+      <h2 class="qz" lang="zh">RISC 和 CISC 指令集有何不同？</h2>
+      <p class="qen" lang="en">How do RISC and CISC instruction sets differ?</p>
+      <div class="azh" lang="zh">CISC 指令丰富、单条可完成复杂操作但译码复杂；RISC 指令少而规整、单周期执行、靠编译器调度，现代 x86 与 ARM 在内部都已相互借鉴对方思想。</div>
+      <div class="aen" lang="en">CISC has rich complex instructions but hard decoding; RISC uses few regular single-cycle instructions scheduled by the compiler; modern x86 and ARM both borrow from each other internally.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Patterson &amp; Hennessy</p>
+        <p lang="en">Patterson &amp; Hennessy</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#硬件</a> <a class="tag" href="#">#指令集</a>
+    </article>
+
+
+    <article class="qitem" id="9f4bff76e1a3">
+      <h2 class="qz" lang="zh">电脑的&quot;记忆&quot;存在哪里？</h2>
+      <p class="qen" lang="en">Where does a computer keep its &#x27;memory&#x27;?</p>
+      <div class="azh" lang="zh">电脑用内存临时记住正在做的事，用硬盘像抽屉一样长期保存文件，断电后内存会忘，硬盘不会。</div>
+      <div class="aen" lang="en">A computer uses memory to remember what it is doing right now and a hard drive like a drawer to keep files long-term; memory forgets when power is off, the drive does not.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#内存</a> <a class="tag" href="#">#硬盘</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="a970fffbf064">
+      <h2 class="qz" lang="zh">什么是CPU？</h2>
+      <p class="qen" lang="en">What is a CPU?</p>
+      <div class="azh" lang="zh">CPU（中央处理器）是电脑的&quot;大脑&quot;，负责执行程序里的各种计算和指令。</div>
+      <div class="aen" lang="en">The CPU (central processing unit) is the computer&#x27;s &#x27;brain&#x27; that carries out the calculations and instructions in programs.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#处理器</a> <a class="tag" href="#">#硬件</a>
+    </article>
+
+
+    <article class="qitem" id="d5e0abe58f53">
+      <h2 class="qz" lang="zh">分支预测是什么，猜错了会怎样？</h2>
+      <p class="qen" lang="en">What is branch prediction, and what happens when it&#x27;s wrong?</p>
+      <div class="azh" lang="zh">CPU 遇到“如果……就……”这种判断时，会提前猜走哪条路并先算起来。猜对就省时间；猜错就得把已算的部分丢掉重来，这种“清空流水线”会让程序短暂变慢。</div>
+      <div class="aen" lang="en">When hitting an &#x27;if…then…&#x27; choice, the CPU guesses the path and computes ahead. A correct guess saves time; a wrong one discards the work and restarts, briefly slowing things down—a &#x27;pipeline flush&#x27;.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分支预测</a> <a class="tag" href="#">#CPU</a>
+    </article>
+
+
+    <article class="qitem" id="e27a06e4632d">
+      <h2 class="qz" lang="zh">同样是 USB-C 接口的线，为什么有的能外接 4K 显示器，有的只能充电？</h2>
+      <p class="qen" lang="en">Why can some USB-C cables drive a 4K monitor while others only charge?</p>
+      <div class="azh" lang="zh">USB-C 只规定了插头的机械形状，能力取决于线里实际接了哪些导线以及有没有内置电子标记芯片。仅充电线可能只接了电源和两根低速数据线，缺少高速差分对，因此无法承载 DisplayPort 替代模式的视频或 USB 3.2/4 的信号，而视频与高速传输需要四对高速通道齐全。功率同理：超过 3 安或 20 伏的供电必须靠电子标记向两端声明线材额定值，没有它就只能协商到低档功率。所以选购要看线上标注的具体协议与瓦数，而不是只看接口形状。</div>
+      <div class="aen" lang="en">USB-C specifies only the connector&#x27;s mechanical shape; what a cable can do depends on which wires are physically present and whether it carries an e-marker chip. A charge-only cable may include just power plus two low-speed data lines and omit the high-speed differential pairs, so it cannot carry DisplayPort Alt Mode video or USB 3.2/4 signalling, both of which need all four high-speed lanes. Power works the same way: anything above 3 A or 20 V requires the e-marker to declare the cable&#x27;s rating to both ends, and without it the pair negotiates down to a lower tier. Buy by the printed protocol and wattage rating rather than by the plug shape.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">USB Implementers Forum《USB Type-C Cable and Connector Specification, Revision 2.3》与《USB Power Delivery Specification, Revision 3.1》</p>
+        <p lang="en">USB Implementers Forum, &quot;USB Type-C Cable and Connector Specification, Revision 2.3&quot; and &quot;USB Power Delivery Specification, Revision 3.1&quot;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#USB-C</a> <a class="tag" href="#">#电子标记</a> <a class="tag" href="#">#替代模式</a> <a class="tag" href="#">#供电协商</a>
+    </article>
+
+
+    <article class="qitem" id="ed031fd9a890">
+      <h2 class="qz" lang="zh">缓存（cache）是什么，为什么它又快又小？</h2>
+      <p class="qen" lang="en">What is a cache, and why is it fast but small?</p>
+      <div class="azh" lang="zh">缓存是 CPU 旁边极近、极快但很贵的小存储器，用来放最近用过的数据，下次直接取就不用去慢吞吞的内存。因为它用昂贵的 SRAM 制造，所以容量做不大，只能在“快”和“大”之间取舍。</div>
+      <div class="aen" lang="en">A cache is a tiny, super-fast, expensive memory next to the CPU holding recently used data, so the next fetch skips slow RAM. Built from pricey SRAM, it stays small—a trade-off between speed and size.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#内存</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

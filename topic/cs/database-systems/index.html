@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据库系统 database-systems · 计算机 Computer Science | 问答</title>
+<meta name="description" content="数据库系统（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="数据库系统 database-systems · 计算机 Computer Science | 问答">
+<meta property="og:description" content="数据库系统（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/database-systems/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/database-systems/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>数据库系统</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>数据库系统 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#130b067ec1e5">数据库的四个隔离级别如何权衡一致性与并发性能?</a></li><li><a href="#37f7ba0aee5d">关系数据库的第三范式(3NF)通过什么方式减少数据冗余?</a></li><li><a href="#d341ba1736dc">分布式数据库如何用两阶段提交保证跨节点事务的原子性?</a></li><li><a href="#2e2a2937072f">数据库视图(View)的主要用途是什么?</a></li><li><a href="#7a7db18fe965">SQL 中的 JOIN 操作用于解决什么需求?</a></li><li><a href="#a43a53bd27a7">数据库索引（如 B+ 树）为何能显著加快查询?</a></li><li><a href="#b89a4dfd1764">关系数据库中的主键和外键分别承担什么职责?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="130b067ec1e5">
+      <h2 class="qz" lang="zh">数据库的四个隔离级别如何权衡一致性与并发性能?</h2>
+      <p class="qen" lang="en">How do the four isolation levels of a database trade off consistency against concurrency?</p>
+      <div class="azh" lang="zh">隔离级别从低到高依次为读未提交、读已提交、可重复读、串行化；级别越低并发越好但越容易出现脏读、不可重复读或幻读等问题。串行化通过加锁或串行执行消除所有异常，但吞吐量最低，系统常默认选择可重复读或读已提交以平衡二者。</div>
+      <div class="aen" lang="en">From weakest to strongest the levels are read uncommitted, read committed, repeatable read, and serializable; weaker levels allow higher concurrency but admit anomalies like dirty reads, non-repeatable reads, or phantom reads. Serializable eliminates all anomalies via locking or serial execution but has the lowest throughput, so systems often default to repeatable read or read committed to balance the two.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz《数据库系统概念》第14章 (机械工业出版社)</p>
+        <p lang="en">A. Silberschatz, H. Korth, S. Sudarshan, Database System Concepts, 7th ed., Chapter 14 (Transaction)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#事务</a> <a class="tag" href="#">#隔离级别</a> <a class="tag" href="#">#ACID</a>
+    </article>
+
+
+    <article class="qitem" id="37f7ba0aee5d">
+      <h2 class="qz" lang="zh">关系数据库的第三范式(3NF)通过什么方式减少数据冗余?</h2>
+      <p class="qen" lang="en">How does the third normal form (3NF) in relational databases reduce data redundancy?</p>
+      <div class="azh" lang="zh">3NF 要求每个非主属性既不部分依赖也不传递依赖于候选键，即非主属性必须直接由键决定。把传递依赖拆到独立的表中，就避免了同一事实在多处重复存储，从而减少更新异常和冗余。</div>
+      <div class="aen" lang="en">3NF requires that every non-key attribute depends neither partially nor transitively on a candidate key, meaning it is determined directly by the key. By moving transitive dependencies into separate tables, the same fact is no longer stored in multiple places, reducing redundancy and update anomalies.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Codd 关系数据库理论原始论文与 Silberschatz《数据库系统概念》第8章 ; 另见: E. F. Codd, Further Normalization of the Data Base Relational Model (1971) and A. Silberschatz et al., Database System Concepts, 7th ed., Chapter 8 (Relational Database Design)</p>
+        <p lang="en">E. F. Codd, Further Normalization of the Data Base Relational Model (1971) and A. Silberschatz et al., Database System Concepts, 7th ed., Chapter 8 (Relational Database Design) ; see also: Codd 关系数据库理论原始论文与 Silberschatz《数据库系统概念》第8章</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#第三范式</a> <a class="tag" href="#">#规范化</a> <a class="tag" href="#">#冗余</a>
+    </article>
+
+
+    <article class="qitem" id="d341ba1736dc">
+      <h2 class="qz" lang="zh">分布式数据库如何用两阶段提交保证跨节点事务的原子性?</h2>
+      <p class="qen" lang="en">How does a distributed database use two-phase commit to guarantee atomicity of cross-node transactions?</p>
+      <div class="azh" lang="zh">协调者先发起准备阶段，要求所有参与者预写日志并答复能否提交；收到全体赞成后才进入提交阶段正式提交，否则统一中止。若某参与者在准备后崩溃，协议依靠日志在恢复后继续完成或回滚，从而避免部分节点提交、部分回滚的不一致。</div>
+      <div class="aen" lang="en">The coordinator first runs a prepare phase asking every participant to write its log and reply whether it can commit; only if all vote yes does it enter the commit phase to commit, otherwise it aborts uniformly. If a participant crashes after preparing, the protocol uses its log to finish or roll back on recovery, preventing the inconsistency of some nodes committing while others abort.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz《数据库系统概念》第20章 (机械工业出版社)</p>
+        <p lang="en">A. Silberschatz, H. Korth, S. Sudarshan, Database System Concepts, 7th ed., Chapter 20 (Distributed Databases)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#两阶段提交</a> <a class="tag" href="#">#分布式事务</a> <a class="tag" href="#">#原子性</a>
+    </article>
+
+
+    <article class="qitem" id="2e2a2937072f">
+      <h2 class="qz" lang="zh">数据库视图(View)的主要用途是什么?</h2>
+      <p class="qen" lang="en">What is the main purpose of a database view?</p>
+      <div class="azh" lang="zh">视图是基于一条查询定义的虚拟表，本身不存储数据而只在被访问时动态计算结果。它可以隐藏底层表结构复杂度、限制用户可见列以加强安全，并简化常用查询的复用。</div>
+      <div class="aen" lang="en">A view is a virtual table defined by a query; it stores no data but computes the result dynamically when accessed. It can hide the complexity of underlying tables, restrict the columns a user sees for security, and simplify reuse of common queries.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz《数据库系统概念》第4章 (机械工业出版社)</p>
+        <p lang="en">A. Silberschatz, H. Korth, S. Sudarshan, Database System Concepts, 7th ed., Chapter 4 (SQL)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#视图</a> <a class="tag" href="#">#虚拟表</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="7a7db18fe965">
+      <h2 class="qz" lang="zh">SQL 中的 JOIN 操作用于解决什么需求?</h2>
+      <p class="qen" lang="en">What need does the JOIN operation in SQL serve?</p>
+      <div class="azh" lang="zh">JOIN 把两个或多个表中满足关联条件的行组合起来，使一次查询就能跨表获取分散在不同表中的相关数据。常见的内连接只保留匹配行，外连接还会保留一侧未匹配的行并补空值。</div>
+      <div class="aen" lang="en">JOIN combines rows from two or more tables that satisfy a related condition, letting one query pull related data spread across tables. An inner join keeps only matched rows, while an outer join also retains unmatched rows from one side, filling them with nulls.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz《数据库系统概念》第4章 (机械工业出版社)</p>
+        <p lang="en">A. Silberschatz, H. Korth, S. Sudarshan, Database System Concepts, 7th ed., Chapter 4 (SQL)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SQL</a> <a class="tag" href="#">#JOIN</a> <a class="tag" href="#">#关系代数</a>
+    </article>
+
+
+    <article class="qitem" id="a43a53bd27a7">
+      <h2 class="qz" lang="zh">数据库索引（如 B+ 树）为何能显著加快查询?</h2>
+      <p class="qen" lang="en">Why can a database index such as a B+ tree significantly speed up queries?</p>
+      <div class="azh" lang="zh">索引把列值组织成多层级的有序结构，查询时无需全表扫描，而是在树中沿路径以对数时间定位目标行。B+ 树的叶子节点以链表相连，还特别适合范围查询，但索引本身会占用空间并在写入时带来维护开销。</div>
+      <div class="aen" lang="en">An index organizes column values into a multi-level ordered structure so a query need not scan the whole table but can reach the target row in logarithmic time by walking the tree. Because B+ tree leaf nodes are linked, it also suits range queries well, though the index consumes space and adds maintenance cost on writes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ramakrishnan《数据库管理系统》第10章 (McGraw-Hill)</p>
+        <p lang="en">R. Ramakrishnan, J. Gehrke, Database Management Systems, 3rd ed., Chapter 10 (Tree-Structured Indexing)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16961668W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL16961668W：Database management sy</a></p>
+        
+      </details>
+      <a class="tag" href="#">#索引</a> <a class="tag" href="#">#B+树</a> <a class="tag" href="#">#查询优化</a>
+    </article>
+
+
+    <article class="qitem" id="b89a4dfd1764">
+      <h2 class="qz" lang="zh">关系数据库中的主键和外键分别承担什么职责?</h2>
+      <p class="qen" lang="en">What roles do primary keys and foreign keys play in a relational database?</p>
+      <div class="azh" lang="zh">主键唯一标识表中的每一行，保证行可被无歧义地定位；外键引用另一表的主键，从而在两个表之间建立关联并维持引用完整性。借助外键，数据库能阻止指向不存在记录的无效关联。</div>
+      <div class="aen" lang="en">A primary key uniquely identifies each row in a table so it can be located unambiguously, while a foreign key references the primary key of another table, linking the two and enforcing referential integrity. Through the foreign key the database can reject invalid links to non-existent records.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz《数据库系统概念》第2章 (机械工业出版社)</p>
+        <p lang="en">A. Silberschatz, H. Korth, S. Sudarshan, Database System Concepts, 7th ed., Chapter 2 (Relational Model)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#主键</a> <a class="tag" href="#">#外键</a> <a class="tag" href="#">#参照完整性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

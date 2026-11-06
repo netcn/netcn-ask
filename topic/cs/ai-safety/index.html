@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ai_safety ai-safety · 计算机 Computer Science | 问答</title>
+<meta name="description" content="ai_safety（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ai_safety ai-safety · 计算机 Computer Science | 问答">
+<meta property="og:description" content="ai_safety（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/ai-safety/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/ai-safety/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>ai_safety</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>ai_safety <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#e8dbe98e9317">模型窃取攻击（model extraction）是什么？</a></li><li><a href="#5fb67a8c42c0">什么是“数据偏见”，AI 为什么会带有偏见？</a></li><li><a href="#65ed699b07d3">对抗样本（adversarial example）是怎么“骗”过模型的？</a></li><li><a href="#3eff8c0a9e99">AI 会不会偷偷“学坏”？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="e8dbe98e9317">
+      <h2 class="qz" lang="zh">模型窃取攻击（model extraction）是什么？</h2>
+      <p class="qen" lang="en">What is a model extraction attack?</p>
+      <div class="azh" lang="zh">攻击者不断向一个只暴露预测接口的模型提问，根据返回的结果（如概率或标签）反推出模型的参数、结构或功能等价副本。它不需要接触训练数据，却可能侵犯知识产权并助长后续攻击。</div>
+      <div class="aen" lang="en">An attacker queries a model that only exposes predictions and, from the returned labels or probabilities, reconstructs its parameters, architecture or a functionally equivalent copy—without touching training data, yet risking IP theft and further attacks.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#模型窃取</a> <a class="tag" href="#">#攻击</a>
+    </article>
+
+
+    <article class="qitem" id="5fb67a8c42c0">
+      <h2 class="qz" lang="zh">什么是“数据偏见”，AI 为什么会带有偏见？</h2>
+      <p class="qen" lang="en">What is &#x27;data bias&#x27; and why do AIs become biased?</p>
+      <div class="azh" lang="zh">如果训练数据本身就不均衡或有刻板倾向（例如某类人脸样本偏少），模型就会把这种偏差学进去并在预测中放大。所以 AI 的偏见往往反映的是训练数据与人类社会的既有偏见，而非凭空产生。</div>
+      <div class="aen" lang="en">If training data is unbalanced or skewed (e.g. too few faces of some group), the model learns and amplifies that bias in its predictions. AI bias usually mirrors the bias already present in data and society, not something invented from nothing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#偏见</a> <a class="tag" href="#">#公平</a>
+    </article>
+
+
+    <article class="qitem" id="65ed699b07d3">
+      <h2 class="qz" lang="zh">对抗样本（adversarial example）是怎么“骗”过模型的？</h2>
+      <p class="qen" lang="en">How do adversarial examples fool a model?</p>
+      <div class="azh" lang="zh">攻击者在图片上叠加人眼几乎看不出的微小扰动，却让模型的内部激活大幅偏移，从而把熊猫认成吉他。这暴露了模型依赖的是人类不直观的脆弱特征，也提示自动驾驶等系统需要防备。</div>
+      <div class="aen" lang="en">An attacker adds tiny, barely visible perturbations that shift the model&#x27;s internals enough to label a panda as a guitar. It shows models rely on fragile, non-human features—a real concern for self-driving systems.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#对抗样本</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="3eff8c0a9e99">
+      <h2 class="qz" lang="zh">AI 会不会偷偷“学坏”？</h2>
+      <p class="qen" lang="en">Can an AI secretly &#x27;learn bad things&#x27;?</p>
+      <div class="azh" lang="zh">AI 本身没有想法，它只是从你给的数据里学规律。如果数据里混进了错误、偏见或不良内容，它就会原样学进去并表现出来，所以“学坏”的根源通常在训练数据，而非它自己使坏。</div>
+      <div class="aen" lang="en">AI has no intentions; it just learns patterns from the data you give. If that data contains errors, bias or harmful content, the AI learns and repeats them—so the root of &#x27;bad learning&#x27; is usually the data, not the AI misbehaving on its own.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#AI</a> <a class="tag" href="#">#数据</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

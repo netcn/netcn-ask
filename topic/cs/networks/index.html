@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Networks networks · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Networks（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Networks networks · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Networks（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/networks/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/networks/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Networks</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Networks <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1165a2657a64">HTTP/3 为什么基于 QUIC 而非 TCP？它解决了什么问题？</a></li><li><a href="#5d5c937970f4">DNS（域名系统）的作用是什么？它通常使用什么传输协议和端口？</a></li><li><a href="#621d520210e0">TCP 和 UDP 协议的核心区别是什么？</a></li><li><a href="#656516ebdfbd">IPv4 和 IPv6 地址有什么主要区别？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1165a2657a64">
+      <h2 class="qz" lang="zh">HTTP/3 为什么基于 QUIC 而非 TCP？它解决了什么问题？</h2>
+      <p class="qen" lang="en">Why is HTTP/3 built on QUIC rather than TCP, and what problem does it solve?</p>
+      <div class="azh" lang="zh">HTTP/3 把传输层从 TCP 换成基于 UDP 的 QUIC，核心动机是消除 TCP 的队头阻塞：在 TCP 中一个丢包会阻塞同一连接上的所有流，而 QUIC 在 UDP 之上实现多路复用，单流丢包不影响其他流。QUIC 还内置加密与 0-RTT 建连，降低延迟。相关标准由 IETF 通过 RFC 9000（QUIC）与 RFC 9114（HTTP/3）发布。</div>
+      <div class="aen" lang="en">HTTP/3 moves the transport from TCP to the UDP-based QUIC mainly to eliminate TCP head-of-line blocking: in TCP a single lost packet stalls every stream on the connection, whereas QUIC multiplexes streams over UDP so one stream&#x27;s loss does not block others. QUIC also integrates encryption and 0-RTT connection setup to cut latency. The standards are published by the IETF as RFC 9000 (QUIC) and RFC 9114 (HTTP/3).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">互联网工程任务组（IETF）,《QUIC: A UDP-Based Multiplexed and Secure Transport》,RFC 9000,2021 (DOI: 10.17487/rfc9000)</p>
+        <p lang="en">IETF, &#x27;QUIC: A UDP-Based Multiplexed and Secure Transport&#x27;, RFC 9000, 2021, DOI: 10.17487/rfc9000</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc9000" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc9000; RFC 9000</a></p>
+        
+      </details>
+      <a class="tag" href="#">#HTTP/3</a> <a class="tag" href="#">#QUIC</a> <a class="tag" href="#">#队头阻塞</a> <a class="tag" href="#">#IETF</a>
+    </article>
+
+
+    <article class="qitem" id="5d5c937970f4">
+      <h2 class="qz" lang="zh">DNS（域名系统）的作用是什么？它通常使用什么传输协议和端口？</h2>
+      <p class="qen" lang="en">What is the role of DNS, and what transport protocol and port does it usually use?</p>
+      <div class="azh" lang="zh">DNS 把人类易记的域名（如 example.com）解析为机器使用的 IP 地址，是互联网的电话簿。普通查询通常使用 UDP 的 53 端口以获得低延迟，而区域传送或响应过大时改用 TCP。DNS 的层次结构由根、顶级域、权威服务器和递归解析器协作完成。其规范由 IETF 的 RFC 1034 与 RFC 1035 定义。</div>
+      <div class="aen" lang="en">DNS resolves human-friendly domain names (e.g., example.com) into the IP addresses machines use, acting as the Internet&#x27;s phone book. Ordinary queries usually run over UDP port 53 for low latency, while zone transfers or oversized responses fall back to TCP. Its hierarchical design involves root, top-level, authoritative servers and recursive resolvers working together, and is specified by IETF RFC 1034 and RFC 1035.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IETF RFC 1034 / RFC 1035；Kurose &amp; Ross《计算机网络》</p>
+        <p lang="en">IETF RFC 1034 / RFC 1035; Kurose &amp; Ross, Computer Networking</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL56272W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL56272W：Computer networking（首版 19</a></p>
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#域名解析</a> <a class="tag" href="#">#UDP</a> <a class="tag" href="#">#IETF</a>
+    </article>
+
+
+    <article class="qitem" id="621d520210e0">
+      <h2 class="qz" lang="zh">TCP 和 UDP 协议的核心区别是什么？</h2>
+      <p class="qen" lang="en">What is the core difference between the TCP and UDP protocols?</p>
+      <div class="azh" lang="zh">TCP 是面向连接、可靠传输的协议，通过三次握手建立连接，并用序号、确认与重传保证数据不丢不乱；UDP 是无连接、不可靠的协议，直接发送数据报、不保证到达或顺序。TCP 适合网页、邮件等要求准确的场景，UDP 适合视频通话、游戏等容忍丢包但追求低延迟的场景。TCP 最初由 RFC 793（1981）定义、现已被 RFC 9293（2022）取代，UDP 由 RFC 768（1980）定义。</div>
+      <div class="aen" lang="en">TCP is a connection-oriented, reliable protocol that sets up a connection via a three-way handshake and uses sequence numbers, acknowledgments, and retransmission to prevent loss and reordering. UDP is connectionless and unreliable, sending datagrams without guaranteeing arrival or order. TCP suits accuracy-critical uses like web and email, while UDP fits latency-sensitive, loss-tolerant uses like voice/video and games. TCP was originally specified in RFC 793 (1981) and is now superseded by RFC 9293 (2022); UDP is specified in RFC 768 (1980).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IETF RFC 9293（2022，取代 RFC 793）；IETF RFC 768；Kurose &amp; Ross《计算机网络：自顶向下方法》第 3 章</p>
+        <p lang="en">IETF RFC 9293 (2022, obsoletes RFC 793); IETF RFC 768; Kurose &amp; Ross, Computer Networking: A Top-Down Approach, ch. 3</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL45032796W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL45032796W：Computer Networking a </a></p>
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#UDP</a> <a class="tag" href="#">#可靠传输</a> <a class="tag" href="#">#IETF</a>
+    </article>
+
+
+    <article class="qitem" id="656516ebdfbd">
+      <h2 class="qz" lang="zh">IPv4 和 IPv6 地址有什么主要区别？</h2>
+      <p class="qen" lang="en">What is the main difference between IPv4 and IPv6 addresses?</p>
+      <div class="azh" lang="zh">IPv4 地址为 32 位，理论上约 43 亿个，已在全球耗尽；IPv6 地址扩展到 128 位，空间大到足以给地球上每粒沙分配地址，用以解决枯竭并简化路由。IPv4 用点分十进制（如 192.168.1.1），IPv6 用冒号分隔的十六进制。二者由 IETF 分别通过 RFC 791 与 RFC 8200 标准化。</div>
+      <div class="aen" lang="en">An IPv4 address is 32 bits, allowing about 4.3 billion addresses that are now exhausted globally; IPv6 expands to 128 bits, a space large enough to address far more than every grain of sand, solving exhaustion and simplifying routing. IPv4 uses dotted decimal (e.g., 192.168.1.1) while IPv6 uses colon-separated hexadecimal. They are standardized by the IETF in RFC 791 and RFC 8200 respectively.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">IETF RFC 791；IETF RFC 8200</p>
+        <p lang="en">IETF RFC 791; IETF RFC 8200</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#IPv4</a> <a class="tag" href="#">#IPv6</a> <a class="tag" href="#">#地址空间</a> <a class="tag" href="#">#IETF</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cybersecurity-ops · 计算机 Computer Science | 问答</title>
+<meta name="description" content="cybersecurity-ops（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="cybersecurity-ops · 计算机 Computer Science | 问答">
+<meta property="og:description" content="cybersecurity-ops（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/cybersecurity-ops/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/cybersecurity-ops/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>cybersecurity-ops</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>cybersecurity-ops <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_26_009">无文件攻击不在磁盘上落地任何恶意文件,传统特征码杀毒为何对它近乎失效,终端检测与</a></li><li><a href="#cs_26_018">安全团队复盘入侵事件时常把攻击过程映射到 MITRE ATT&amp;CK 矩阵，按初始</a></li><li><a href="#cs_26_010">企业安全运营中心里的 SIEM 平台承担什么职责?各家设备的日志汇总到一处之后,</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_26_009">
+      <h2 class="qz" lang="zh">无文件攻击不在磁盘上落地任何恶意文件,传统特征码杀毒为何对它近乎失效,终端检测与响应平台又凭什么把它抓出来?</h2>
+      <p class="qen" lang="en">A fileless attack drops no malicious file onto disk. Why does classic signature-based antivirus nearly fail against it, and what lets an endpoint detection and response platform still catch it?</p>
+      <div class="azh" lang="zh">特征码引擎比对的是磁盘文件的字节序列,而无文件攻击把载荷直接注入内存,借助 PowerShell、WMI 这类系统自带工具执行,全程没有可供匹配的恶意文件,扫描自然扑空。EDR 换了一条路,盯住行为链而非文件本体:进程创建、脚本调用、内存注入、异常父子进程关系等遥测被持续采集,由规则或模型评估组合风险,办公文档拉起命令行解释器即属高危;就算单步动作看似无害,跨进程串成的攻击链也会被关联识破。</div>
+      <div class="aen" lang="en">Signature engines compare byte sequences of files on disk, whereas a fileless attack injects its payload straight into memory and runs it through built-in system tools such as PowerShell and WMI, leaving no malicious file to match at any point, so scanning comes up empty. EDR takes another road, watching behavior chains rather than files: telemetry like process creation, script interpreter launches, memory injection, registry changes and abnormal parent-child process relations is gathered continuously and scored by rules or models — an office document spinning up a command-line interpreter is itself a high-risk signal, and even when each step looks harmless, the cross-process chain gets correlated and exposed.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">The MITRE Corporation,MITRE ATT&amp;CK 知识库 Defense Evasion 战术;P. Mell、K. Kent 与 J. Nusbaum,Guide to Malware Incident Prevention and Handling for Desktops and Laptops,NIST SP 800-83,2011年</p>
+        <p lang="en">The MITRE Corporation, MITRE ATT&amp;CK knowledge base, Defense Evasion tactic; P. Mell, K. Kent and J. Nusbaum, Guide to Malware Incident Prevention and Handling for Desktops and Laptops, NIST SP 800-83, 2011</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#无文件攻击</a> <a class="tag" href="#">#终端检测响应</a> <a class="tag" href="#">#行为链分析</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_018">
+      <h2 class="qz" lang="zh">安全团队复盘入侵事件时常把攻击过程映射到 MITRE ATT&amp;CK 矩阵，按初始访问、横向移动等战术整理对手用过哪些技术，这比单纯记录恶意软件名称强在哪里？</h2>
+      <p class="qen" lang="en">When reviewing an intrusion, security teams often map the attack onto the MITRE ATT&amp;CK matrix, sorting the adversary&#x27;s techniques under tactics like initial access and lateral movement — what makes this stronger than merely logging malware names?</p>
+      <div class="azh" lang="zh">恶意软件换个变体就能绕开特征名单，而攻击者要实现的目标与惯用手法相当稳定，按行为建模才能跟上演化。ATT&amp;CK 从真实入侵中归纳出侦察、初始访问、横向移动等十余个战术，下辖数百项具体技术，每项配有检测思路与实战案例。防御方据此逐项核对自家遥测能否看见对应行为，补齐盲区；红队按同一张地图规划演练，攻防双方从此用同一种语言交流。对手即便更换工具，行为落进同一个技术格子，检测逻辑依然命中。</div>
+      <div class="aen" lang="en">Malware slips off a signature list with any variant swap, but adversary objectives and preferred methods are remarkably stable, so modeling behavior is what keeps pace with evolution. ATT&amp;CK distills real intrusions into a dozen-plus tactics such as reconnaissance, initial access and lateral movement, each holding hundreds of concrete techniques with detection advice and case notes. Defenders audit their telemetry technique by technique to expose blind spots, red teams rehearse against the same map, and both sides finally speak one language. Even when tools change, the behavior lands in the same technique cell and the detection logic still fires.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">B. E. Strom、A. Applebaum 等，MITRE ATT&amp;CK: Design and Philosophy，MITRE 公司技术报告，2020年；E. M. Hutchins、M. Cloppert 与 R. Amin，Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains，Lockheed Martin 公司报告，2011年</p>
+        <p lang="en">B. E. Strom, A. Applebaum et al., MITRE ATT&amp;CK: Design and Philosophy, MITRE Corporation technical report, 2020; E. M. Hutchins, M. Cloppert and R. Amin, Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains, Lockheed Martin corporation report, 2011</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ATT&amp;CK框架</a> <a class="tag" href="#">#战术与技术</a> <a class="tag" href="#">#威胁狩猎</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_010">
+      <h2 class="qz" lang="zh">企业安全运营中心里的 SIEM 平台承担什么职责?各家设备的日志汇总到一处之后,分析师排查攻击为什么会明显轻松起来?</h2>
+      <p class="qen" lang="en">What role does a SIEM platform play in a corporate security operations center, and once every device&#x27;s logs flow into one place, why does hunting attacks get noticeably easier for analysts?</p>
+      <div class="azh" lang="zh">SIEM 是安全事件的汇聚与分析枢纽。它持续采集防火墙、终端、身份认证系统等来源的日志,统一格式后归一存储,再沿时间、资产、账号三个维度做关联分析:某个账号深夜异地登录,随后提权、批量外发数据,单看每条都像例行操作,连成一条线就是典型的入侵路径。日志集中让分析师在一个界面看到全局,告警带上上下文,排查从挨个设备翻记录变成顺着关联链追击,漏报与响应迟滞都显著减少。</div>
+      <div class="aen" lang="en">A SIEM is the collection-and-analysis hub for security events. It keeps pulling in logs from firewalls, endpoints, identity systems and other sources, stores them in a unified normalized form, and correlates events along the dimensions of time, assets and accounts: an account logging in remotely late at night and then escalating privileges and shipping data out looks routine event by event, yet chained together it traces a textbook intrusion path. With logs centralized, analysts see the whole picture in one console, alerts carry context, and investigation turns from flipping through records device by device into following a correlation chain, cutting both misses and slow responses.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. Cichonski 等,Computer Security Incident Handling Guide,NIST SP 800-61 第2版,2012年;R. Bejtlich,The Practice of Network Security Monitoring,No Starch Press,2013年</p>
+        <p lang="en">B. Cichonski et al., Computer Security Incident Handling Guide, NIST SP 800-61 Revision 2, 2012; R. Bejtlich, The Practice of Network Security Monitoring, No Starch Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL41730185W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL41730185W：Computer Security Inci</a> · <a class="evlink" href="https://openlibrary.org/works/OL41909800W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL41909800W：The practice of networ</a></p>
+        
+      </details>
+      <a class="tag" href="#">#安全信息与事件管理</a> <a class="tag" href="#">#日志关联</a> <a class="tag" href="#">#告警上下文</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

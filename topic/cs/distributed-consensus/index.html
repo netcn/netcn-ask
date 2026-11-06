@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>分布式与共识 distributed-consensus · 计算机 Computer Science | 问答</title>
+<meta name="description" content="分布式与共识（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分布式与共识 distributed-consensus · 计算机 Computer Science | 问答">
+<meta property="og:description" content="分布式与共识（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/distributed-consensus/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/distributed-consensus/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>分布式与共识</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>分布式与共识 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>10</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#5db5b169dd3b">Lamport 逻辑时钟如何用「happened-before」关系给分布式事件</a></li><li><a href="#6159a33fb2af">实用拜占庭容错（PBFT）如何在存在 f 个恶意节点时仍达成共识，复杂度是多少？</a></li><li><a href="#ba602971d146">Paxos 算法如何保证即使部分节点失效或消息乱序，也只会选定唯一一个值（安全性</a></li><li><a href="#cs_24_008">两支军队约好一起进攻却永远无法确保协同,拜占庭将军凭什么能做到?</a></li><li><a href="#24b6e20929c2">Raft 如何选出集群领导人，任期（term）号起什么作用？</a></li><li><a href="#3b97366baccf">最终一致性是什么，它与强一致性的体验差异在哪里？</a></li><li><a href="#55dda15d7a94">两阶段提交（2PC）如何协调分布式事务的提交与回滚？</a></li><li><a href="#8a11fee08a25">一致性哈希如何减少节点增减时数据迁移的范围？</a></li><li><a href="#ce71868636e5">CAP 定理指出分布式系统在分区发生时必须在什么之间取舍？</a></li><li><a href="#cs_24_009">集群里一半机器断电了,数据为什么还能一字不差地活着?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="5db5b169dd3b">
+      <h2 class="qz" lang="zh">Lamport 逻辑时钟如何用「happened-before」关系给分布式事件排序，它能否反映真实物理时间？</h2>
+      <p class="qen" lang="en">How do Lamport logical clocks order distributed events using the happened-before relation, and do they reflect real physical time?</p>
+      <div class="azh" lang="zh">逻辑时钟在进程内递增、在消息发送接收时取最大值加一，使若事件 a 先于 b 则 C(a)&lt;C(b)。它只捕捉因果先后而不保证与物理时间一致，相同时间戳的事件可能并无因果关系，需向量时钟才能区分并发。</div>
+      <div class="aen" lang="en">A logical clock increments within a process and on message send/receive takes the maximum plus one, so if event a happened before b then C(a)&lt;C(b). It captures only causal order, not physical time; events with equal timestamps may be concurrent and require vector clocks to distinguish.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brewer 2000；Gilbert &amp; Lynch 2002；Coulouris《分布式系统》</p>
+        <p lang="en">Brewer (2000); Gilbert &amp; Lynch (2002); Coulouris, Distributed Systems</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3609847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3609847W：Distributed systems（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#逻辑时钟</a> <a class="tag" href="#">#happened-before</a> <a class="tag" href="#">#因果</a>
+    </article>
+
+
+    <article class="qitem" id="6159a33fb2af">
+      <h2 class="qz" lang="zh">实用拜占庭容错（PBFT）如何在存在 f 个恶意节点时仍达成共识，复杂度是多少？</h2>
+      <p class="qen" lang="en">How does practical Byzantine fault tolerance (PBFT) reach consensus despite f malicious nodes, and what is its complexity?</p>
+      <div class="azh" lang="zh">PBFT 要求节点总数 n≥3f+1，通过三阶段协议（pre-prepare、prepare、commit）使诚实节点就顺序达成一致。它容忍少于三分之一的拜占庭节点，每轮通信复杂度约为 O(n^2)。</div>
+      <div class="aen" lang="en">PBFT requires n≥3f+1 nodes and uses a three-phase protocol (pre-prepare, prepare, commit) so honest nodes agree on ordering. It tolerates fewer than one third Byzantine nodes, with per-round communication complexity about O(n^2).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Castro &amp; Liskov, Practical Byzantine Fault Tolerance, USENIX OSDI 1999</p>
+        <p lang="en">Castro &amp; Liskov, Practical Byzantine Fault Tolerance, USENIX OSDI 1999</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/dsn.2001.941437" target="_blank" rel="noopener">核验依据 1 DOI 10.1109/dsn.2001.941437</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PBFT</a> <a class="tag" href="#">#拜占庭容错</a> <a class="tag" href="#">#共识</a>
+    </article>
+
+
+    <article class="qitem" id="ba602971d146">
+      <h2 class="qz" lang="zh">Paxos 算法如何保证即使部分节点失效或消息乱序，也只会选定唯一一个值（安全性）？</h2>
+      <p class="qen" lang="en">How does Paxos guarantee safety, i.e. that only a single value is ever chosen even if nodes fail or messages arrive out of order?</p>
+      <div class="azh" lang="zh">Paxos 通过「提议编号全序」与「接受者只接受编号更大的提议、且必须承诺曾见过的最大编号值」来保证安全性。只要多数派（quorum）相交，新选定的值必与已选定的值一致，从而杜绝分裂选定。</div>
+      <div class="aen" lang="en">Paxos uses a total order on proposal numbers and the rule that acceptors only accept higher-numbered proposals while promising the highest-numbered value they have seen. Because any two quorums intersect, a newly chosen value must match an already chosen one, preventing split decisions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Paxos</a> <a class="tag" href="#">#共识</a> <a class="tag" href="#">#安全性</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_008">
+      <h2 class="qz" lang="zh">两支军队约好一起进攻却永远无法确保协同,拜占庭将军凭什么能做到?</h2>
+      <p class="qen" lang="en">Two armies can never coordinate an attack by messenger alone — why can Byzantine generals manage it?</p>
+      <div class="azh" lang="zh">两将军问题揭示不可靠信道的死结:「信使可能被杀」与「是否真已谈妥」互成循环怀疑,数学上无解。拜占庭将军更进一步——叛徒不仅丢消息还主动撒谎。冷峻结论:仅凭口头消息,容忍f个叛徒须N≥3f+1;有不可伪造签名则大幅放宽。Raft以多数派日志复制容忍宕机却不容忍作恶,比特币以算力成本模拟忠诚。容错的代价永远是冗余。</div>
+      <div class="aen" lang="en">The two-generals problem exposes a deadlock on unreliable channels: lost messengers and provable agreement breed circular doubt no protocol can break — mathematically unsolvable. Byzantine generals go further: traitors not only drop messages but lie. The verdict stays cold: with bare oral messages tolerating f traitors takes N at least 3f+1, sharply relaxed once unforgeable signatures exist. Raft tolerates crashes via majority log replication but never treachery; Bitcoin simulates loyalty with computation cost. Redundancy is the eternal price of fault tolerance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Lamport, Shostak, Pease,《The Byzantine Generals Problem》,ACM Transactions on Programming Languages and Systems,1982 (DOI: 10.1145/357172.357176)</p>
+        <p lang="en">Lamport, Shostak, Pease, &#x27;The Byzantine Generals Problem&#x27;, ACM Transactions on Programming Languages and Systems, 1982, DOI: 10.1145/357172.357176</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/357172.357176" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/357172.357176</a></p>
+        
+      </details>
+      <a class="tag" href="#">#拜占庭将军</a> <a class="tag" href="#">#共识协议</a> <a class="tag" href="#">#容错</a>
+    </article>
+
+
+    <article class="qitem" id="24b6e20929c2">
+      <h2 class="qz" lang="zh">Raft 如何选出集群领导人，任期（term）号起什么作用？</h2>
+      <p class="qen" lang="en">How does Raft elect a cluster leader, and what is the role of the term number?</p>
+      <div class="azh" lang="zh">Raft 中节点在超时未收到心跳时转为候选者并发起选举，获得多数票者成为领导人，任期号随之递增。任期号作为逻辑时钟标识领导代次，能快速检测并废弃过期领导人的决策。</div>
+      <div class="aen" lang="en">In Raft a node that times out without a heartbeat becomes a candidate and starts an election; the one receiving a majority of votes becomes leader and increments the term. The term acts as a logical clock marking leadership epochs, quickly detecting and invalidating stale leaders.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Ongaro &amp; Ousterhout, In Search of an Understandable Consensus Algorithm (Raft), USENIX ATC 2014</p>
+        <p lang="en">Ongaro &amp; Ousterhout, In Search of an Understandable Consensus Algorithm (Raft), USENIX ATC 2014</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Raft</a> <a class="tag" href="#">#领导人选举</a> <a class="tag" href="#">#任期</a>
+    </article>
+
+
+    <article class="qitem" id="3b97366baccf">
+      <h2 class="qz" lang="zh">最终一致性是什么，它与强一致性的体验差异在哪里？</h2>
+      <p class="qen" lang="en">What is eventual consistency, and how does its experience differ from strong consistency?</p>
+      <div class="azh" lang="zh">最终一致性保证若无新写入，副本经过一段时间后会收敛到相同值，但期间可能读到旧数据。它用暂时不一致换取高可用与低延迟，常见于 DNS 与大规模键值存储。</div>
+      <div class="aen" lang="en">Eventual consistency guarantees that replicas converge to the same value after some time without new writes, but reads in between may return stale data. It trades temporary inconsistency for high availability and low latency, common in DNS and large key-value stores.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">G. DeCandia 等人论文 Dynamo：亚马逊的高可用键值存储，发表于 SOSP 2007，DOI: 10.1145/1294261.1294281</p>
+        <p lang="en">G. DeCandia et al., Dynamo: Amazon&#x27;s Highly Available Key-value Store, Proc. SOSP 2007, DOI: 10.1145/1294261.1294281</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1294261.1294281" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/1294261.1294281：Dynamo（2007，按著录自报 DO</a></p>
+        
+      </details>
+      <a class="tag" href="#">#最终一致性</a> <a class="tag" href="#">#弱一致性</a> <a class="tag" href="#">#可用性</a>
+    </article>
+
+
+    <article class="qitem" id="55dda15d7a94">
+      <h2 class="qz" lang="zh">两阶段提交（2PC）如何协调分布式事务的提交与回滚？</h2>
+      <p class="qen" lang="en">How does two-phase commit (2PC) coordinate commit and rollback of a distributed transaction?</p>
+      <div class="azh" lang="zh">协调者先让所有参与者准备并就绪（阶段一），全部同意后发出提交指令，否则统一回滚（阶段二）。它保证原子性，但协调者阻塞是主要缺陷：若协调者在提交前崩溃，参与者将不确定而长时间持锁。</div>
+      <div class="aen" lang="en">The coordinator first asks all participants to prepare and vote (phase one); if all agree it issues a commit, otherwise it rolls back uniformly (phase two). It guarantees atomicity, but a key flaw is coordinator blocking: if the coordinator crashes before committing, participants stay uncertain and hold locks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bernstein, Hadzilacos, Goodman, Concurrency Control and Recovery in Database Systems, 1987</p>
+        <p lang="en">Bernstein, Hadzilacos, Goodman, Concurrency Control and Recovery in Database Systems, 1987</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3350481W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3350481W：Concurrency control and</a></p>
+        
+      </details>
+      <a class="tag" href="#">#两阶段提交</a> <a class="tag" href="#">#分布式事务</a> <a class="tag" href="#">#原子性</a>
+    </article>
+
+
+    <article class="qitem" id="8a11fee08a25">
+      <h2 class="qz" lang="zh">一致性哈希如何减少节点增减时数据迁移的范围？</h2>
+      <p class="qen" lang="en">How does consistent hashing reduce the amount of data that must move when nodes are added or removed?</p>
+      <div class="azh" lang="zh">一致性哈希把节点和数据键都映射到同一个环形空间，每个键由顺时针第一个节点负责。增加或移除节点只影响环上相邻区间的数据，因而把重新映射范围从全部数据降到局部。</div>
+      <div class="aen" lang="en">Consistent hashing maps both nodes and keys into the same ring, with each key owned by the first node clockwise. Adding or removing a node only affects the adjacent interval on the ring, so remapping touches local data instead of the whole dataset.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">G. DeCandia 等人论文 Dynamo：亚马逊的高可用键值存储，发表于 SOSP 2007，DOI: 10.1145/1294261.1294281</p>
+        <p lang="en">G. DeCandia et al., Dynamo: Amazon&#x27;s Highly Available Key-value Store, Proc. SOSP 2007, DOI: 10.1145/1294261.1294281</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1294261.1294281" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/1294261.1294281：Dynamo（2007，按著录自报 DO</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#分布式哈希</a> <a class="tag" href="#">#负载均衡</a>
+    </article>
+
+
+    <article class="qitem" id="ce71868636e5">
+      <h2 class="qz" lang="zh">CAP 定理指出分布式系统在分区发生时必须在什么之间取舍？</h2>
+      <p class="qen" lang="en">What trade-off does the CAP theorem say a distributed system must make when a partition occurs?</p>
+      <div class="azh" lang="zh">CAP 定理说明当网络分区发生时，系统无法同时保证一致性和可用性，只能二选一。在分区之外，系统仍可同时追求一致性与可用性，因此实践上多为分区时降级的选择题。</div>
+      <div class="aen" lang="en">The CAP theorem states that when a network partition occurs, a system cannot simultaneously guarantee consistency and availability, and must choose one. Outside partitions the system can still pursue both, so in practice it is a choice of which to sacrifice during partitions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brewer 2000；Gilbert &amp; Lynch 2002；Coulouris《分布式系统》</p>
+        <p lang="en">Brewer (2000); Gilbert &amp; Lynch (2002); Coulouris, Distributed Systems</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3609847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3609847W：Distributed systems（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#CAP定理</a> <a class="tag" href="#">#一致性</a> <a class="tag" href="#">#可用性</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_009">
+      <h2 class="qz" lang="zh">集群里一半机器断电了,数据为什么还能一字不差地活着?</h2>
+      <p class="qen" lang="en">Half the machines lose power — why does the data survive byte-for-byte intact?</p>
+      <div class="azh" lang="zh">因为写入从不只落在一台机器上。以Raft为代表的共识复制要求每次变更由领导者追加日志并并行发给跟随者,只有多数派(如5台中的3台)确认落盘才算提交、才对客户端可见。此后领导者猝死,幸存多数派中必有一台持有全部已提交日志,新领导者据此补齐其他节点。线性一致读也需多数派仲裁以防读到旧主的陈旧数据。跨机往返正是强一致存储延迟的下限来源。</div>
+      <div class="aen" lang="en">Because writes never live on one machine. Consensus replication like Raft appends each change to the leader&#x27;s log, fans it to followers, and commits only once a majority (say three of five) confirm persistence; only then is it applied and acknowledged. If the leader dies instantly, every surviving majority contains at least one node holding all committed entries, and the new leader reconciles everyone from that record. Linearizable reads also quorum-check to avoid stale answers from a partitioned ex-leader. The price: cross-machine round trips per write — precisely where strongly consistent storage latency floors come from.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ongaro 与 Ousterhout,《In Search of an Understandable Consensus Algorithm》,USENIX ATC,2014</p>
+        <p lang="en">D. Ongaro and J. Ousterhout, In Search of an Understandable Consensus Algorithm (Raft), USENIX ATC, 2014</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Raft</a> <a class="tag" href="#">#日志复制</a> <a class="tag" href="#">#多数派提交</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

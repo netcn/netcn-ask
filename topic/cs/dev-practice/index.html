@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dev_practice dev-practice · 计算机 Computer Science | 问答</title>
+<meta name="description" content="dev_practice（计算机）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="dev_practice dev-practice · 计算机 Computer Science | 问答">
+<meta property="og:description" content="dev_practice（计算机）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/dev-practice/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/dev-practice/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>dev_practice</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>dev_practice <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>12</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_23_006">在 Prometheus 中统计接口延迟的 P99 分位数时，为什么 Histo</a></li><li><a href="#e834f8544ef3">什么是 API 和契约测试（Contract Testing）？</a></li><li><a href="#0a81ec2978fa">什么是持续集成（CI）和持续部署（CD）？</a></li><li><a href="#3f9f31ffcde8">什么是技术债务（Technical Debt）？</a></li><li><a href="#50cf2ca7d908">什么是微服务架构？</a></li><li><a href="#6f83915f9a85">什么是容器（如 Docker）？它和虚拟机有什么不同？</a></li><li><a href="#712f9f6fed07">什么是单元测试和集成测试？</a></li><li><a href="#cs_21_004">蓝绿部署是如何降低新版本上线风险的?它与滚动更新在资源成本和回滚方式上有何不同?</a></li><li><a href="#cs_21_020">蓝绿发布、金丝雀发布与滚动发布各自的适用场景是什么?如何结合监控指标自动决定回滚</a></li><li><a href="#cs_23_014">SRE 中的错误预算如何定义？它怎样用来平衡发布速度与服务可靠性？</a></li><li><a href="#fc3f2257248c">代码评审（Code Review）有什么用？</a></li><li><a href="#8fc1c317f9e4">什么是版本控制（如 Git）？为什么需要它？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_23_006">
+      <h2 class="qz" lang="zh">在 Prometheus 中统计接口延迟的 P99 分位数时，为什么 Histogram 类型可以跨实例聚合成全局分位数，而 Summary 类型不行？</h2>
+      <p class="qen" lang="en">When measuring endpoint-latency P99 in Prometheus, why can Histogram metrics be aggregated across instances into a global quantile while Summary metrics cannot?</p>
+      <div class="azh" lang="zh">Summary 在应用进程内部就把分位数算好再暴露，多个实例各自的 P99 无法合并成真实的全局 P99；Histogram 只暴露各桶的累计计数，桶计数在不同实例间可以直接相加，服务端再用聚合后的分布沿桶边界插值估算全局分位数。代价是结果只是桶内插值的近似值，桶边界设计不当会引入明显误差。</div>
+      <div class="aen" lang="en">A Summary computes quantiles inside the client process, so per-instance P99 values cannot be merged into a true global P99. A Histogram exposes only cumulative bucket counts, which are additive across instances; the server sums the buckets and interpolates along bucket boundaries to estimate the global quantile. The tradeoff is approximation error from interpolation, so bucket boundaries must be designed with care.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Julien Pivotto &amp; Brian Brazil,《Prometheus: Up &amp; Running》第2版,O&#x27;Reilly Media,2020年</p>
+        <p lang="en">Julien Pivotto &amp; Brian Brazil, Prometheus: Up &amp; Running, 2nd ed., O&#x27;Reilly Media, 2020</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#监控指标</a> <a class="tag" href="#">#直方图</a> <a class="tag" href="#">#分位数</a>
+    </article>
+
+
+    <article class="qitem" id="e834f8544ef3">
+      <h2 class="qz" lang="zh">什么是 API 和契约测试（Contract Testing）？</h2>
+      <p class="qen" lang="en">What are APIs and contract testing?</p>
+      <div class="azh" lang="zh">API 是不同软件之间约定的调用接口；契约测试检查提供方和消费方是否都遵守同一份接口契约，避免一方改动悄悄弄坏另一方。</div>
+      <div class="aen" lang="en">An API is an agreed interface between software; contract testing checks that provider and consumer both honor the same interface contract, preventing silent breakage.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#API</a> <a class="tag" href="#">#测试</a>
+    </article>
+
+
+    <article class="qitem" id="0a81ec2978fa">
+      <h2 class="qz" lang="zh">什么是持续集成（CI）和持续部署（CD）？</h2>
+      <p class="qen" lang="en">What are continuous integration (CI) and continuous deployment (CD)?</p>
+      <div class="azh" lang="zh">CI 是开发者一提交代码就自动构建和测试，尽早发现问题；CD 则把通过测试的代码自动部署上线，缩短发布周期。</div>
+      <div class="aen" lang="en">CI automatically builds and tests on every commit to catch issues early; CD automatically deploys passing code, shortening release cycles.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Fowler《Continuous Integration》（martinfowler.com，2006 修订版）；Beck《解析极限编程》1999；Humble &amp; Farley《持续交付》2010</p>
+        <p lang="en">Fowler, &#x27;Continuous Integration&#x27; (martinfowler.com, 2006 revision); Beck, Extreme Programming Explained (1999); Humble &amp; Farley, Continuous Delivery (2010)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CI</a> <a class="tag" href="#">#CD</a>
+    </article>
+
+
+    <article class="qitem" id="3f9f31ffcde8">
+      <h2 class="qz" lang="zh">什么是技术债务（Technical Debt）？</h2>
+      <p class="qen" lang="en">What is technical debt?</p>
+      <div class="azh" lang="zh">为了赶进度而写的凑合代码，以后要花更多精力改，就像借债要还利息。适度可控可以，积累太多会拖慢开发。</div>
+      <div class="aen" lang="en">Rushed, good-enough code costs more to fix later, like debt with interest. Some is fine if managed, but too much slows development.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Robert C. Martin,《Clean Code》Prentice Hall,2008;中译《代码整洁之道》人民邮电出版社</p>
+        <p lang="en">R. C. Martin, Clean Code, Prentice Hall, 2008; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17618370W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL17618370W：Clean Code（按标题+作者/年份比对</a></p>
+        
+      </details>
+      <a class="tag" href="#">#技术债务</a> <a class="tag" href="#">#工程</a>
+    </article>
+
+
+    <article class="qitem" id="50cf2ca7d908">
+      <h2 class="qz" lang="zh">什么是微服务架构？</h2>
+      <p class="qen" lang="en">What is microservices architecture?</p>
+      <div class="azh" lang="zh">微服务把一个大系统拆成多个小服务，各自独立开发、部署和扩容，用接口互相调用，灵活但运维更复杂。</div>
+      <div class="aen" lang="en">Microservices split a system into small services that develop, deploy, and scale independently and talk via interfaces, flexible but more operational work.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#微服务</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="6f83915f9a85">
+      <h2 class="qz" lang="zh">什么是容器（如 Docker）？它和虚拟机有什么不同？</h2>
+      <p class="qen" lang="en">What is a container (like Docker), and how is it different from a VM?</p>
+      <div class="azh" lang="zh">容器把应用和依赖打包在一起，共享操作系统内核，启动快、更轻量；虚拟机则虚拟整套系统，隔离更强但更重。</div>
+      <div class="aen" lang="en">A container bundles an app with its dependencies and shares the OS kernel, fast and light; a VM virtualizes a whole OS, stronger isolation but heavier.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Sean Doyle &amp; Matt Hite,《Docker: Up &amp; Running》第2版,O&#x27;Reilly Media,2018</p>
+        <p lang="en">Sean Doyle &amp; Matt Hite, Docker: Up &amp; Running, 2nd ed., O&#x27;Reilly Media, 2018</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#容器</a> <a class="tag" href="#">#Docker</a>
+    </article>
+
+
+    <article class="qitem" id="712f9f6fed07">
+      <h2 class="qz" lang="zh">什么是单元测试和集成测试？</h2>
+      <p class="qen" lang="en">What are unit tests and integration tests?</p>
+      <div class="azh" lang="zh">单元测试只测一个最小函数是否正确；集成测试检查多个模块拼起来能否协同工作，二者互补保证质量。</div>
+      <div class="aen" lang="en">A unit test checks one small function; an integration test checks that combined modules work together. They complement each other for quality.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Robert C. Martin,《Clean Code》Prentice Hall,2008;中译《代码整洁之道》人民邮电出版社</p>
+        <p lang="en">R. C. Martin, Clean Code, Prentice Hall, 2008; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17618370W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL17618370W：Clean Code（按标题+作者/年份比对</a></p>
+        
+      </details>
+      <a class="tag" href="#">#测试</a> <a class="tag" href="#">#质量</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_004">
+      <h2 class="qz" lang="zh">蓝绿部署是如何降低新版本上线风险的?它与滚动更新在资源成本和回滚方式上有何不同?</h2>
+      <p class="qen" lang="en">How does blue-green deployment lower the risk of shipping a new version, and how does it differ from rolling updates in resource cost and rollback mechanics?</p>
+      <div class="azh" lang="zh">蓝绿部署同时维护两套等价环境:新版本先在空闲的绿色环境中完成验证,再由负载均衡把线上流量一次性切换过去,切换只是改路由规则,秒级生效且几乎没有停机窗口。滚动更新按批次逐台替换实例,资源占用只有一份,但新旧版本会共存较长时间,要求接口严格向后兼容。回滚时蓝绿只需把流量切回蓝色环境即可瞬间恢复,滚动更新的回滚却要反向再执行一整轮替换,耗时更久且二次出错的面更大。</div>
+      <div class="aen" lang="en">Blue-green deployment keeps two equivalent environments alive: the new version is verified in the idle green environment first, then a load balancer flips all production traffic over at once—a routing-rule change that takes effect in seconds with virtually no downtime window. Rolling updates replace instances batch by batch using only one copy of the resources, but old and new versions coexist for extended periods, forcing strict backward-compatible interfaces. On rollback, blue-green simply routes traffic back to the blue environment for instant recovery, while a rolling update&#x27;s rollback must run a whole replacement pass in reverse, taking longer and widening the surface for a second failure.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Forsgren, Humble &amp; Kim,Accelerate: The Science of Lean Software and DevOps,IT Revolution Press,2018</p>
+        <p lang="en">Forsgren, Humble &amp; Kim, Accelerate: The Science of Lean Software and DevOps, IT Revolution Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL27114211W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL27114211W：Accelerate : The Scien</a></p>
+        
+      </details>
+      <a class="tag" href="#">#DevOps</a> <a class="tag" href="#">#发布与回滚</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_020">
+      <h2 class="qz" lang="zh">蓝绿发布、金丝雀发布与滚动发布各自的适用场景是什么?如何结合监控指标自动决定回滚?</h2>
+      <p class="qen" lang="en">What are the appropriate scenarios for blue-green, canary, and rolling deployments, and how can metric monitoring drive automatic rollback decisions?</p>
+      <div class="azh" lang="zh">蓝绿适合需要瞬时切换和秒级回滚的核心服务,代价是双倍资源占用;金丝雀适合大流量在线服务,先放一小部分真实流量验证再逐步扩大;滚动发布资源效率高但版本共存时间长,依赖接口向后兼容。自动化决策通常把错误率、P99 延迟、饱和度三类指标接入 SLO 阈值判断,金丝雀组指标越界即触发流量切回旧版本,并结合部署标记定位引入回归的具体版本。</div>
+      <div class="aen" lang="en">Blue-green suits core services needing instant cutover and second-level rollback at the cost of doubled capacity; canary fits high-traffic online services where a small real-traffic slice validates the release before gradual expansion; rolling is resource-efficient but keeps versions coexisting longer and demands backward-compatible interfaces. Automated decisions typically feed error rate, P99 latency, and saturation metrics into SLO threshold checks — when the canary group breaches bounds, traffic flips back to the old version and deployment markers pinpoint which revision caused the regression.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Jez Humble &amp; David Farley,《Continuous Delivery》第8章,Addison-Wesley,2010</p>
+        <p lang="en">Jez Humble &amp; David Farley, &quot;Continuous Delivery&quot;, ch. 8, Addison-Wesley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#持续交付</a> <a class="tag" href="#">#发布策略</a>
+    </article>
+
+
+    <article class="qitem" id="cs_23_014">
+      <h2 class="qz" lang="zh">SRE 中的错误预算如何定义？它怎样用来平衡发布速度与服务可靠性？</h2>
+      <p class="qen" lang="en">How is an error budget defined in SRE, and how does it balance release velocity against service reliability?</p>
+      <div class="azh" lang="zh">错误预算由服务等级目标推导而来：若 SLO 规定 30 天窗口内请求成功率达 99.9%，预算就是剩余 0.1% 所允许的失败请求量。团队据此约定：预算充裕时正常甚至加快发布；一旦消耗过快触发燃烧率告警，就冻结非紧急变更并优先修复可靠性。可靠性与迭代速度由此变成一份可度量的共享资源，工程取舍有了客观依据。</div>
+      <div class="aen" lang="en">An error budget is derived from the service level objective: if the SLO requires 99.9% successful requests over a 30-day window, the budget is the remaining 0.1%, a finite allowance of failures. Teams agree in advance that a healthy budget permits normal or even faster releases, while rapid depletion firing burn-rate alerts freezes non-urgent changes in favor of reliability work. Reliability and velocity thus become one measurable shared resource, giving engineering trade-offs an objective basis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. Beyer 等（编），《SRE：Google 运维解密》，O&#x27;Reilly Media，2016</p>
+        <p lang="en">B. Beyer et al. (eds.), Site Reliability Engineering: How Google Runs Production Systems, O&#x27;Reilly Media, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sitereliabilitye0000unse" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sitereliabilitye0000unse：Site reliability eng</a></p>
+        
+      </details>
+      <a class="tag" href="#">#服务等级目标</a> <a class="tag" href="#">#错误预算</a> <a class="tag" href="#">#燃烧率告警</a>
+    </article>
+
+
+    <article class="qitem" id="fc3f2257248c">
+      <h2 class="qz" lang="zh">代码评审（Code Review）有什么用？</h2>
+      <p class="qen" lang="en">What is the use of code review?</p>
+      <div class="azh" lang="zh">评审让同事在合并前读你的代码，能发现 bug、统一风格、传播知识，也促使作者写得更认真，提升整体质量。</div>
+      <div class="aen" lang="en">Review has peers read your code before merge to catch bugs, unify style, and share knowledge, and it makes authors more careful, raising overall quality.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Robert C. Martin,《Clean Code》Prentice Hall,2008;中译《代码整洁之道》人民邮电出版社</p>
+        <p lang="en">R. C. Martin, Clean Code, Prentice Hall, 2008; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17618370W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL17618370W：Clean Code（按标题+作者/年份比对</a></p>
+        
+      </details>
+      <a class="tag" href="#">#代码评审</a> <a class="tag" href="#">#协作</a>
+    </article>
+
+
+    <article class="qitem" id="8fc1c317f9e4">
+      <h2 class="qz" lang="zh">什么是版本控制（如 Git）？为什么需要它？</h2>
+      <p class="qen" lang="en">What is version control (like Git), and why do we need it?</p>
+      <div class="azh" lang="zh">版本控制记录文件每次改动的历史，可随时回到旧版本、看清谁改了什么，多人还能并行修改同一项目而不乱。</div>
+      <div class="aen" lang="en">Version control records every change history, lets you revert, shows who changed what, and lets many people edit one project without chaos.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-06</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Scott Chacon &amp; Ben Straub,《Pro Git》,Apress,2014</p>
+        <p lang="en">Scott Chacon &amp; Ben Straub, Pro Git, Apress, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">核验依据 1 Pro Git 2nd ed. 官方全文（Apress / CC BY-NC-SA 3.0）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#版本控制</a> <a class="tag" href="#">#Git</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cloud · 计算机 Computer Science | 问答</title>
+<meta name="description" content="cloud（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="cloud · 计算机 Computer Science | 问答">
+<meta property="og:description" content="cloud（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/cloud/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/cloud/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>cloud</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>cloud <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>11</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1063bb7bead1">什么是蓝绿部署和金丝雀发布？</a></li><li><a href="#35626709388d">无服务器（Serverless）计算是什么？</a></li><li><a href="#b7b20cf04c0e">微服务架构想解决什么问题？</a></li><li><a href="#bcc9621218c7">容器（container）和虚拟机（VM）的隔离方式有什么不同？</a></li><li><a href="#cs_20_007">MQTT 定义了哪三种服务质量(QoS)等级?在弱网环境下以 QoS 1 投递消</a></li><li><a href="#cs_20_015">边缘计算为什么通常作为云计算的补充而非替代?以联网智能摄像头为例,说明视频数据应</a></li><li><a href="#cs_26_011">Kubernetes 为什么选择声明式API加控制循环，而不是提供一条条按序执行</a></li><li><a href="#2c7a99aec2e6">什么是“微服务”？</a></li><li><a href="#932fcf3a21dc">弹性伸缩（Auto Scaling）如何工作？</a></li><li><a href="#9a6cff3fcba4">云存储就是把文件存到很远处的电脑里吗？</a></li><li><a href="#cs_26_020">网站发布新版本时，为什么不把所有服务器一口气换成新版，而是先让一小部分用户试用金</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1063bb7bead1">
+      <h2 class="qz" lang="zh">什么是蓝绿部署和金丝雀发布？</h2>
+      <p class="qen" lang="en">What are blue-green deployment and canary release?</p>
+      <div class="azh" lang="zh">蓝绿部署同时维护两套环境，流量一键切到新版本以便快速回滚；金丝雀发布先把少量流量导向新版本验证无误，再逐步放量，降低出错影响面。</div>
+      <div class="aen" lang="en">Blue-green keeps two environments and switches traffic instantly for fast rollback; canary releases route a small slice to the new version first, then ramp up, limiting the blast radius of faults.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Martin Fowler</p>
+        <p lang="en">Martin Fowler</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#云</a> <a class="tag" href="#">#部署</a>
+    </article>
+
+
+    <article class="qitem" id="35626709388d">
+      <h2 class="qz" lang="zh">无服务器（Serverless）计算是什么？</h2>
+      <p class="qen" lang="en">What is serverless computing?</p>
+      <div class="azh" lang="zh">Serverless 让开发者只写函数，平台按请求自动分配资源、扩缩容并按用量计费，无需管理服务器；冷启动和厂商锁定是其常见顾虑。</div>
+      <div class="aen" lang="en">Serverless lets you write functions while the platform allocates, scales and bills by usage with no server management; cold starts and vendor lock-in are common concerns.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（Jonas 等, Cloud Programming Simplified: A Berkeley View on Serverless Computing, 2019）</p>
+        <p lang="en">arXiv (Jonas et al., Cloud Programming Simplified: A Berkeley View on Serverless Computing, 2019)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#云</a> <a class="tag" href="#">#计算</a>
+    </article>
+
+
+    <article class="qitem" id="b7b20cf04c0e">
+      <h2 class="qz" lang="zh">微服务架构想解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does microservices architecture solve?</p>
+      <div class="azh" lang="zh">微服务把单体应用拆成独立部署、围绕业务的小服务，通过 API 通信，提升团队自治、独立扩展与技术异构能力，代价是分布式复杂性增加。</div>
+      <div class="aen" lang="en">Microservices split a monolith into independently deployable business-aligned services communicating via APIs, improving team autonomy, scaling and tech choice, at the cost of distributed complexity.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Martin Fowler</p>
+        <p lang="en">Martin Fowler</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#云</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="bcc9621218c7">
+      <h2 class="qz" lang="zh">容器（container）和虚拟机（VM）的隔离方式有什么不同？</h2>
+      <p class="qen" lang="en">How do containers and virtual machines isolate differently?</p>
+      <div class="azh" lang="zh">虚拟机靠 hypervisor 虚拟出一整套硬件，每个 VM 跑独立操作系统，隔离强但笨重；容器共享宿主内核，只隔离进程与文件系统，因此启动快、占用小，更适合微服务式的弹性部署。</div>
+      <div class="aen" lang="en">A VM uses a hypervisor to virtualize full hardware with its own OS—strong isolation but heavy. Containers share the host kernel and isolate only processes and filesystems, so they start fast and stay light, suiting elastic microservices.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#容器</a> <a class="tag" href="#">#虚拟机</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_007">
+      <h2 class="qz" lang="zh">MQTT 定义了哪三种服务质量(QoS)等级?在弱网环境下以 QoS 1 投递消息时,为什么订阅端仍可能收到重复报文?</h2>
+      <p class="qen" lang="en">What three quality-of-service levels does MQTT define, and why can a subscriber still receive duplicated messages when publishing at QoS 1 over an unreliable network?</p>
+      <div class="azh" lang="zh">三个等级分别是至多一次(QoS 0)、至少一次(QoS 1)和恰好一次(QoS 2),保证越强所需的交互往返也越多。QoS 1 要求接收方回发 PUBACK;一旦确认包在网络中丢失,发送方会带 DUP 标志重传 PUBLISH,而首次报文其实已被处理,于是形成重复。业务侧通常需要配合消息 ID 去重或幂等写入来消除这种影响。</div>
+      <div class="aen" lang="en">They are at-most-once (QoS 0), at-least-once (QoS 1), and exactly-once (QoS 2), with stronger guarantees costing more round trips. At QoS 1 the receiver must return PUBACK; when that acknowledgement gets lost, the sender retransmits PUBLISH with the DUP flag even though the first copy was already handled, producing duplicates. Applications typically add message-ID deduplication or idempotent writes to absorb them.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">OASIS 标准《MQTT Version 3.1.1》第 4.3 节 Quality of Service levels 与第 4.4 节 Message delivery retry</p>
+        <p lang="en">OASIS MQTT Version 3.1.1 Standard, Section 4.3 Quality of Service levels and Section 4.4 Message delivery retry</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#物联网协议</a> <a class="tag" href="#">#消息可靠性</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_015">
+      <h2 class="qz" lang="zh">边缘计算为什么通常作为云计算的补充而非替代?以联网智能摄像头为例,说明视频数据应在哪几层被逐级过滤。</h2>
+      <p class="qen" lang="en">Why does edge computing usually complement rather than replace cloud computing? Using a networked smart camera as an example, explain at which tiers video data should be filtered step by step.</p>
+      <div class="azh" lang="zh">边缘计算把计算下沉到靠近数据源的网关或设备,主要服务于低时延、节省上行带宽与数据驻留合规三类需求,而云端仍保有全局模型训练、大规模存储与跨站点协调的优势,二者因此形成分工互补。以智能摄像头为例,帧级运动检测与人形识别通常在设备端完成,仅告警片段和低分辨率缩略图上传云端,原始视频流大多不出本地。这种分层过滤能把上行带宽需求降低几个数量级,并保证断网时本地功能仍然可用。</div>
+      <div class="aen" lang="en">Edge computing pushes computation onto gateways or devices close to data sources, chiefly serving low-latency response, uplink bandwidth savings, and data-residency compliance, while the cloud keeps the advantages of global model training, massive storage, and cross-site coordination — hence the two form a complementary division of labor. On a smart camera, frame-level motion detection and person recognition typically run on the device, and only alert clips plus low-resolution thumbnails go to the cloud, so raw video streams mostly never leave the premises. This tiered filtering cuts uplink bandwidth demand by orders of magnitude and keeps local functions usable during network outages.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#边缘计算</a> <a class="tag" href="#">#数据分级过滤</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_011">
+      <h2 class="qz" lang="zh">Kubernetes 为什么选择声明式API加控制循环，而不是提供一条条按序执行的部署命令？这种方式在大规模集群管理上优势何在？</h2>
+      <p class="qen" lang="en">Why does Kubernetes adopt declarative APIs with control loops instead of step-by-step imperative deployment commands, and what advantage does that bring to managing clusters at scale?</p>
+      <div class="azh" lang="zh">用户只提交期望状态，比如某个服务始终保持五个副本，控制器则负责让集群实际状态持续向期望值收敛，而不是逐条执行写死步骤的部署脚本。控制循环不停对比期望与实际，一旦出现偏差就执行一次幂等的调谐动作，进程崩溃或节点宕机后系统都会被自动拉回正轨，这正是自愈能力；期望状态集中存放并可纳入版本管理，变更可审计、可回滚，大规模集群的日常运维因此不必再靠人工记住操作顺序。</div>
+      <div class="aen" lang="en">You declare a target state, say five replicas of a service, and controllers continuously steer the actual cluster toward it instead of running a deployment script whose every step is hard-coded. Beneath sits the reconciliation loop: it keeps diffing desired against actual state and applies one idempotent corrective action whenever they drift apart, so crashed processes or dead nodes get pulled back automatically — that is self-healing. Desired state lives centrally and can be version-controlled, keeping changes auditable and revertible, which frees large-scale operations from memorizing sequences of manual steps.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">K. Hightower、B. Burns 与 J. Beda，《Kubernetes: Up and Running》，O&#x27;Reilly Media，2017年；B. Burns 等，Borg, Omega, and Kubernetes，Communications of the ACM 第59卷第5期，2016年</p>
+        <p lang="en">K. Hightower, B. Burns and J. Beda, Kubernetes: Up and Running, O&#x27;Reilly Media, 2017; B. Burns et al., Borg, Omega, and Kubernetes, Communications of the ACM 59(5), 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21364155W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL21364155W：Kubernetes - Up and Ru</a></p>
+        
+      </details>
+      <a class="tag" href="#">#声明式API</a> <a class="tag" href="#">#控制循环</a> <a class="tag" href="#">#自愈</a>
+    </article>
+
+
+    <article class="qitem" id="2c7a99aec2e6">
+      <h2 class="qz" lang="zh">什么是“微服务”？</h2>
+      <p class="qen" lang="en">What are &#x27;microservices&#x27;?</p>
+      <div class="azh" lang="zh">微服务把一个大软件拆成许多小而独立的小服务，各管一摊（如登录、支付、搜索），彼此用网络沟通。这样哪块要改或要扩容，只需动那一块，不像“巨无霸”程序那样牵一发动全身。</div>
+      <div class="aen" lang="en">Microservices split a big app into small independent services (login, payment, search…) that talk over the network. You can change or scale just one piece without disturbing the whole, unlike a monolithic program.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微服务</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="932fcf3a21dc">
+      <h2 class="qz" lang="zh">弹性伸缩（Auto Scaling）如何工作？</h2>
+      <p class="qen" lang="en">How does auto scaling work?</p>
+      <div class="azh" lang="zh">弹性伸缩按 CPU、请求量等指标自动增减实例数量：超过阈值扩容保性能，低于阈值缩容省成本，通常配合健康检查剔除故障节点。</div>
+      <div class="aen" lang="en">Auto scaling adds or removes instances based on metrics like CPU or request rate—scale out above threshold for performance, scale in below to save cost—often with health checks to drop bad nodes.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Amazon Web Services,《Amazon EC2 Auto Scaling User Guide》(AWS 官方文档)</p>
+        <p lang="en">Amazon Web Services, Amazon EC2 Auto Scaling User Guide (AWS documentation)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#云</a> <a class="tag" href="#">#扩展</a>
+    </article>
+
+
+    <article class="qitem" id="9a6cff3fcba4">
+      <h2 class="qz" lang="zh">云存储就是把文件存到很远处的电脑里吗？</h2>
+      <p class="qen" lang="en">Is cloud storage just keeping files on a far-away computer?</p>
+      <div class="azh" lang="zh">可以这么理解：你的照片和文件被保存到互联网另一端的数据中心，并通过账号随时取回，数据通常还会自动备份多份以防丢失。</div>
+      <div class="aen" lang="en">Roughly yes: your photos and files are saved in a data center far away and retrieved anytime via your account, usually with automatic backups so they don&#x27;t get lost.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Mell, Grance,《The NIST definition of cloud computing》,NIST 特别出版物 800-145, 美国商务部,2011 (DOI: 10.6028/nist.sp.800-145)</p>
+        <p lang="en">Mell, Grance, &#x27;The NIST definition of cloud computing&#x27;, NIST Special Publication 800-145, U.S. Department of Commerce, 2011, DOI: 10.6028/nist.sp.800-145</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.6028/nist.sp.800-145" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.6028/nist.sp.800-145</a></p>
+        
+      </details>
+      <a class="tag" href="#">#云</a> <a class="tag" href="#">#存储</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_020">
+      <h2 class="qz" lang="zh">网站发布新版本时，为什么不把所有服务器一口气换成新版，而是先让一小部分用户试用金丝雀实例，盯紧指标确认无误后再逐步放量？</h2>
+      <p class="qen" lang="en">When releasing a new version, why do websites avoid upgrading every server in one go and instead route a small share of users to canary instances, watching metrics carefully before gradually widening the rollout?</p>
+      <div class="azh" lang="zh">因为再充分的预发测试也覆盖不了真实生产环境的全部状况，小流量先行能把未知缺陷的影响面限制在一小批用户身上。新版上线先承接百分之几的请求，与旧版并行运行；平台持续对比错误率、延迟、转化率等关键指标，一旦偏离历史基线就自动切回旧版，绝大多数用户毫无察觉；指标平稳则逐级放大流量直至全量。发布由此从一锤子买卖变成可观测、可随时逆转的常规操作，配合灰度路由还能顺带完成A/B对照实验。</div>
+      <div class="aen" lang="en">However thorough pre-production testing is, it never covers everything a live environment will throw at the software; sending a trickle first confines any unknown defect to a handful of users. The new build starts by serving a few percent of requests alongside the old one; the platform keeps comparing error rates, latency and conversion against historical baselines, and rolls back automatically the moment numbers drift, leaving most users untouched. Steady metrics earn progressively larger traffic shares until full rollout. Releases stop being all-or-nothing gambles and become observable, reversible routines — and gray routing doubles as an A/B experiment for free.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. Humble 与 D. Farley，《Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation》，Addison-Wesley，2010年；B. Beyer 等，《Site Reliability Engineering: How Google Runs Production Systems》，O&#x27;Reilly Media，2016年</p>
+        <p lang="en">J. Humble and D. Farley, Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation, Addison-Wesley, 2010; B. Beyer et al., Site Reliability Engineering: How Google Runs Production Systems, O&#x27;Reilly Media, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#金丝雀发布</a> <a class="tag" href="#">#灰度放量</a> <a class="tag" href="#">#自动回滚</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Distributed Systems distributed-systems · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Distributed Systems（计算机）分类下的 17 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 17 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Distributed Systems distributed-systems · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Distributed Systems（计算机）分类下的 17 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 17 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/distributed-systems/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/distributed-systems/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Distributed Systems</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Distributed Systems <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>17</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#094568a86141">Raft 算法相比 Paxos 为什么更容易被人理解和实现？</a></li><li><a href="#17bcc78b04ae">CAP 定理说的是什么？为什么在分区时只能三选二？</a></li><li><a href="#3eb634bc6f50">Google 的 GFS 与 Bigtable 怎样支撑海量数据的存储与查询？</a></li><li><a href="#57466a846df7">什么是拜占庭故障？</a></li><li><a href="#583c967d5a1c">什么是共识算法（如 Paxos、Raft）？</a></li><li><a href="#b4f2f0dca70d">Lamport 逻辑时钟解决了分布式系统中『谁先发生』的什么难题？</a></li><li><a href="#c8070cf19407">最终一致性（eventual consistency）是什么？它与强一致性有何不</a></li><li><a href="#cs_21_016">设计一个支撑每秒数万笔交易的支付清结算系统时,如何保证分布式账本在多机房部署下的</a></li><li><a href="#d207bdd21273">什么是一致性哈希？</a></li><li><a href="#0e4862bfa9e5">什么是消息队列？</a></li><li><a href="#36ea12ce76fd">MapReduce 是怎样让普通工程师也能写大规模并行数据处理的？</a></li><li><a href="#4b4754aac8a8">一致性哈希（consistent hashing）和分布式哈希表（DHT）解决什</a></li><li><a href="#cs_21_008">支付系统为什么坚持复式记账而非直接维护一个余额字段?工程上如何保证一笔交易恰好入</a></li><li><a href="#cs_23_020">事件驱动架构中的最终一致性是什么含义？它为什么常与发布-订阅消息机制搭配使用，又</a></li><li><a href="#d8686d83de21">Paxos 共识算法解决什么问题？</a></li><li><a href="#ecb17fd2df2e">什么是容错？</a></li><li><a href="#c8b4cfb9012d">什么是分布式系统？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="094568a86141">
+      <h2 class="qz" lang="zh">Raft 算法相比 Paxos 为什么更容易被人理解和实现？</h2>
+      <p class="qen" lang="en">Why is the Raft algorithm easier to understand and implement than Paxos?</p>
+      <div class="azh" lang="zh">Raft 把共识拆成领导者选举、日志复制和安全性三个独立子问题，并用随机超时等直观机制保证强领导者模型。Ongaro 与 Ousterhout 在 2014 年明确提出『可理解性』为首要设计目标，被 etcd、Consul 等采用。</div>
+      <div class="aen" lang="en">Raft decomposes consensus into leader election, log replication, and safety, using an intuitive strong-leader model with randomized timeouts. Ongaro and Ousterhout made understandability the explicit top goal in 2014, and etcd and Consul adopted it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ongaro 与 Ousterhout《Raft 共识算法》(USENIX ATC, 2014)</p>
+        <p lang="en">Ongaro &amp; Ousterhout, &#x27;In Search of an Understandable Consensus Algorithm (Raft)&#x27; (USENIX ATC, 2014)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Raft</a> <a class="tag" href="#">#领导者选举</a> <a class="tag" href="#">#日志复制</a> <a class="tag" href="#">#可理解性</a>
+    </article>
+
+
+    <article class="qitem" id="17bcc78b04ae">
+      <h2 class="qz" lang="zh">CAP 定理说的是什么？为什么在分区时只能三选二？</h2>
+      <p class="qen" lang="en">What does the CAP theorem state, and why can only two of three be chosen under partition?</p>
+      <div class="azh" lang="zh">CAP 定理由布鲁尔在 2000 年提出、并由吉尔伯特与林奇在 2002 年严格证明：分布式系统在网络分区发生时，无法同时保证一致性（C）与可用性（A），只能在二者间权衡。由于分区在真实网络中不可避免，实际系统常选择 CP（保一致）或 AP（保可用）。它是理解分布式数据库取舍的基础框架。</div>
+      <div class="aen" lang="en">The CAP theorem, conjectured by Brewer in 2000 and proved by Gilbert and Lynch in 2002, states that when a network partition occurs, a distributed system cannot simultaneously guarantee Consistency (C) and Availability (A), forcing a trade-off. Since partitions are unavoidable in real networks, practical systems choose CP (consistency) or AP (availability). It is a foundational framework for understanding distributed database trade-offs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brewer 2000；Gilbert &amp; Lynch 2002；Coulouris《分布式系统》</p>
+        <p lang="en">Brewer (2000); Gilbert &amp; Lynch (2002); Coulouris, Distributed Systems</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3609847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3609847W：Distributed systems（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#CAP定理</a> <a class="tag" href="#">#一致性</a> <a class="tag" href="#">#可用性</a> <a class="tag" href="#">#分区容错</a>
+    </article>
+
+
+    <article class="qitem" id="3eb634bc6f50">
+      <h2 class="qz" lang="zh">Google 的 GFS 与 Bigtable 怎样支撑海量数据的存储与查询？</h2>
+      <p class="qen" lang="en">How do Google&#x27;s GFS and Bigtable underpin storage and querying of massive data?</p>
+      <div class="azh" lang="zh">GFS 用廉价的普通服务器组成集群，把大文件切块复制到多台机器，以高吞吐应对失败频发的大规模顺序读写。Bigtable 在其上构建分布式的稀疏多维有序映射，按行键分片、按列族存储，支撑了搜索索引等应用。</div>
+      <div class="aen" lang="en">GFS clusters cheap commodity servers, chunks files across machines with replication, trading latency for high throughput under frequent failures. Bigtable builds a distributed sparse, multidimensional sorted map on top, sharded by row key and stored by column family, powering search indexing and more.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ghemawat 等《Google 文件系统》(SOSP, 2003)；Chang 等《Bigtable》(OSDI, 2006)</p>
+        <p lang="en">Ghemawat et al., &#x27;The Google File System&#x27; (SOSP, 2003); Chang et al., &#x27;Bigtable&#x27; (OSDI, 2006)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/945445.945450" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/945445.945450（本条出处含多部著作，按段登记，核到的是这一</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GFS</a> <a class="tag" href="#">#Bigtable</a> <a class="tag" href="#">#分片</a> <a class="tag" href="#">#列式存储</a>
+    </article>
+
+
+    <article class="qitem" id="57466a846df7">
+      <h2 class="qz" lang="zh">什么是拜占庭故障？</h2>
+      <p class="qen" lang="en">What is a Byzantine fault?</p>
+      <div class="azh" lang="zh">拜占庭故障指系统中的节点可能任意出错甚至恶意谎报消息，就像将军们可能传递假情报。拜占庭容错（BFT）算法能在少数节点作恶时仍让诚实节点达成一致，是区块链共识的理论基础。</div>
+      <div class="aen" lang="en">A Byzantine fault means nodes may fail arbitrarily or even lie maliciously, like generals sending false intelligence. Byzantine fault-tolerant (BFT) algorithms let honest nodes reach agreement even with some malicious ones—the theoretical basis of blockchain consensus.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Lamport、Shostak、Pease 1982 年拜占庭将军问题论文</p>
+        <p lang="en">Lamport, Shostak &amp; Pease, The Byzantine Generals Problem (1982)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#拜占庭故障</a> <a class="tag" href="#">#容错</a> <a class="tag" href="#">#区块链</a>
+    </article>
+
+
+    <article class="qitem" id="583c967d5a1c">
+      <h2 class="qz" lang="zh">什么是共识算法（如 Paxos、Raft）？</h2>
+      <p class="qen" lang="en">What are consensus algorithms (e.g., Paxos, Raft)?</p>
+      <div class="azh" lang="zh">共识算法让分布式系统中的多个节点在部分节点可能故障的情况下，就某个值或操作顺序达成一致。Paxos 理论严谨但难懂，Raft 则以便理解和实现为目标。它们是构建高可靠分布式数据库和协调服务的基础。</div>
+      <div class="aen" lang="en">A consensus algorithm lets nodes in a distributed system agree on a value or order of operations even when some nodes may fail. Paxos is theoretically rigorous but hard to grasp; Raft aims to be understandable and implementable. They underlie highly reliable distributed databases and coordination services.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ongaro 与 Ousterhout《Raft 共识算法》(USENIX ATC, 2014)</p>
+        <p lang="en">Ongaro &amp; Ousterhout, &#x27;In Search of an Understandable Consensus Algorithm (Raft)&#x27; (USENIX ATC, 2014)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#共识</a> <a class="tag" href="#">#Paxos</a> <a class="tag" href="#">#Raft</a>
+    </article>
+
+
+    <article class="qitem" id="b4f2f0dca70d">
+      <h2 class="qz" lang="zh">Lamport 逻辑时钟解决了分布式系统中『谁先发生』的什么难题？</h2>
+      <p class="qen" lang="en">What problem of &#x27;what happened first&#x27; does Lamport&#x27;s logical clock solve in distributed systems?</p>
+      <div class="azh" lang="zh">物理时钟无法完美同步，因此 Lamport 在 1978 年用『发生在前』的偏序关系和逐消息递增的计数器，给事件标上全序标号。这使我们能判断事件的因果先后顺序，并辅助分布式排序与互斥等机制的实现。</div>
+      <div class="aen" lang="en">Physical clocks cannot be perfectly synchronized; Lamport used a &#x27;happened-before&#x27; partial order with counters that increment on each message, giving events a total order so causal precedence can be judged for distributed ordering and mutual exclusion. He introduced it in 1978.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Lamport《时间、时钟与事件排序》(CACM, 1978)</p>
+        <p lang="en">Lamport, &#x27;Time, Clocks, and the Ordering of Events&#x27; (CACM, 1978)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#逻辑时钟</a> <a class="tag" href="#">#发生在前</a> <a class="tag" href="#">#偏序</a> <a class="tag" href="#">#全序</a>
+    </article>
+
+
+    <article class="qitem" id="c8070cf19407">
+      <h2 class="qz" lang="zh">最终一致性（eventual consistency）是什么？它与强一致性有何不同？</h2>
+      <p class="qen" lang="en">What is eventual consistency, and how does it differ from strong consistency?</p>
+      <div class="azh" lang="zh">最终一致性是一种弱一致性模型：如果没有新的写入，经过一段时间后所有副本会自动收敛到相同状态，但期间可能读到旧值。它牺牲即时一致以换取高可用与低延迟，是 Amazon Dynamo 等大规模系统的设计选择，由沃赫尔斯在 2009 年系统阐述。强一致性则要求每次读都看到最新写入，代价是更高的协调开销。</div>
+      <div class="aen" lang="en">Eventual consistency is a weak consistency model in which, if no new writes occur, all replicas converge to the same state after some time, though stale reads are possible in between. It trades immediate consistency for high availability and low latency, a design choice of large-scale systems like Amazon Dynamo, and was systematized by Vogels in 2009. Strong consistency requires every read to see the latest write, at the cost of higher coordination overhead.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#最终一致性</a> <a class="tag" href="#">#强一致性</a> <a class="tag" href="#">#Dynamo</a> <a class="tag" href="#">#可用性与一致性</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_016">
+      <h2 class="qz" lang="zh">设计一个支撑每秒数万笔交易的支付清结算系统时,如何保证分布式账本在多机房部署下的强一致性与可用性?</h2>
+      <p class="qen" lang="en">When designing a payment clearing and settlement system that sustains tens of thousands of transactions per second, how do you preserve strong consistency and availability for a distributed ledger across multiple data centers?</p>
+      <div class="azh" lang="zh">通常以 Paxos 或 Raft 等多数派共识协议作为账本写入的核心,配合分片将不同商户或渠道的流量路由到独立共识组,避免单一组的带宽成为瓶颈。跨机房部署时按地域放置多数派副本,并用区域内的本地仲裁降低提交延迟,跨区仅同步日志流。对账与冲正走异步通道,日切批处理通过幂等流水号保证重复执行不产生二次记账。</div>
+      <div class="aen" lang="en">Most designs anchor ledger writes in a majority-quorum protocol such as Raft or Paxos and shard traffic by merchant or channel so each consensus group handles an independent slice of load. For multi-site deployment the majority replicas are placed across regions while local quorums absorb commits at low latency, with only the log stream replicated cross-region. Reconciliation and reversals run asynchronously over idempotent transaction IDs so replays never double-post.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Spanner：Google全球分布式数据库，OSDI 2012</p>
+        <p lang="en">Corbett et al., Spanner: Google&#x27;s Globally-Distributed Database, OSDI, 2012</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#支付系统</a> <a class="tag" href="#">#分布式共识</a>
+    </article>
+
+
+    <article class="qitem" id="d207bdd21273">
+      <h2 class="qz" lang="zh">什么是一致性哈希？</h2>
+      <p class="qen" lang="en">What is consistent hashing?</p>
+      <div class="azh" lang="zh">一致性哈希是一种把数据均匀分布到多台服务器的映射方法，把节点和数据都放在一个虚拟环上。当某台服务器加入或退出时，只需迁移少量相邻数据，而不是全部重新分配。它广泛用于缓存和分布式存储系统。</div>
+      <div class="aen" lang="en">Consistent hashing is a way to map data evenly across servers by placing both nodes and data on a virtual ring. When a server joins or leaves, only a small amount of neighboring data moves, not everything. It is widely used in caching and distributed storage.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="0e4862bfa9e5">
+      <h2 class="qz" lang="zh">什么是消息队列？</h2>
+      <p class="qen" lang="en">What is a message queue?</p>
+      <div class="azh" lang="zh">消息队列在多个程序之间传递消息，发送方把任务放入队列，接收方按自己的节奏取出处理，实现解耦和削峰。常见系统有 Kafka、RabbitMQ。它能提升系统的稳定性和可伸缩性。</div>
+      <div class="aen" lang="en">A message queue passes messages between programs: the sender puts tasks into the queue, and the receiver takes them at its own pace, enabling decoupling and load smoothing. Common systems include Kafka and RabbitMQ. It improves system stability and scalability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#消息队列</a> <a class="tag" href="#">#异步</a> <a class="tag" href="#">#解耦</a>
+    </article>
+
+
+    <article class="qitem" id="36ea12ce76fd">
+      <h2 class="qz" lang="zh">MapReduce 是怎样让普通工程师也能写大规模并行数据处理的？</h2>
+      <p class="qen" lang="en">How does MapReduce let ordinary engineers write large-scale parallel data processing?</p>
+      <div class="azh" lang="zh">用户只写 map（把输入映射成键值对）和 reduce（按键聚合）两个函数，框架负责把任务切分到成百上千台机器、处理失败重试与数据混洗。Dean 与 Ghemawat 在 2004 年提出，催生了 Hadoop 等生态。</div>
+      <div class="aen" lang="en">You write just a map function (emit key-value pairs) and a reduce function (aggregate by key); the framework shards work across thousands of machines and handles failures and shuffling. Dean and Ghemawat introduced it in 2004 and it spawned the Hadoop ecosystem.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Dean 与 Ghemawat《MapReduce: 大规模数据处理》(OSDI, 2004)；Google 内部实践</p>
+        <p lang="en">Dean &amp; Ghemawat, &#x27;MapReduce: Simplified Data Processing&#x27; (OSDI, 2004); Google engineering</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MapReduce</a> <a class="tag" href="#">#map</a> <a class="tag" href="#">#reduce</a> <a class="tag" href="#">#并行处理</a>
+    </article>
+
+
+    <article class="qitem" id="4b4754aac8a8">
+      <h2 class="qz" lang="zh">一致性哈希（consistent hashing）和分布式哈希表（DHT）解决什么问题？</h2>
+      <p class="qen" lang="en">What problems do consistent hashing and distributed hash tables solve?</p>
+      <div class="azh" lang="zh">一致性哈希把节点和键都映射到一个环形空间，使节点增减时只需重定位少量数据，避免传统哈希大规模重新分片，常用于缓存与负载均衡（卡格等 1997）。分布式哈希表（如 Chord，Stoica 等 2001）则用类似思想在大量机器上分散存储与查找键值，支撑去中心化系统。二者都让分布式存储能平滑扩缩容。</div>
+      <div class="aen" lang="en">Consistent hashing maps both nodes and keys onto a ring so that adding or removing a node only relocates a small fraction of data, avoiding massive re-sharding of traditional hashing; it is used in caching and load balancing (Karger et al. 1997). Distributed hash tables like Chord (Stoica et al. 2001) apply similar ideas to store and look up key-value pairs across many machines, supporting decentralized systems. Both let distributed storage scale smoothly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Karger 等 1997；Stoica 等 2001（Chord，SIGCOMM）</p>
+        <p lang="en">Karger et al. (1997); Stoica et al. (2001), Chord, SIGCOMM</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/964723.383071" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/964723.383071（复合著录按段核验：本标识只担保第二段 St</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一致性哈希</a> <a class="tag" href="#">#分布式哈希表</a> <a class="tag" href="#">#Chord</a> <a class="tag" href="#">#平滑扩缩容</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_008">
+      <h2 class="qz" lang="zh">支付系统为什么坚持复式记账而非直接维护一个余额字段?工程上如何保证一笔交易恰好入账一次?</h2>
+      <p class="qen" lang="en">Why do payment systems insist on double-entry bookkeeping instead of simply maintaining a balance field, and how do engineers guarantee a transaction is posted exactly once?</p>
+      <div class="azh" lang="zh">复式记账要求每笔交易的借贷两条分录金额恒等,任何单边错误都会打破守恒不变量,使审计和对账有据可依。幂等通常由客户端生成的请求 ID 配合数据库唯一索引实现,重试只会返回首次结果而不会重复入账。余额从不可变流水推导,或用快照加增量回放计算,避免并发写覆盖。</div>
+      <div class="aen" lang="en">Double-entry demands that every transaction post debit and credit legs of equal amount, so any single-sided error violates a conservation invariant and gives audits and reconciliation solid ground. Idempotency is enforced with a client-generated request ID backed by a unique index, so retries return the original result instead of posting twice. Balances derive from immutable entries, either computed directly or via snapshots replayed incrementally, avoiding concurrent write-overwrite bugs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Martin Kleppmann《Designing Data-Intensive Applications》第 7 章;Stripe API 文档 Idempotency Keys 章节</p>
+        <p lang="en">Martin Kleppmann, Designing Data-Intensive Applications, ch. 7; Stripe API documentation, Idempotency Keys section</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19293745W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19293745W：Designing Data-Intensi</a></p>
+        
+      </details>
+      <a class="tag" href="#">#金融科技</a> <a class="tag" href="#">#复式记账</a>
+    </article>
+
+
+    <article class="qitem" id="cs_23_020">
+      <h2 class="qz" lang="zh">事件驱动架构中的最终一致性是什么含义？它为什么常与发布-订阅消息机制搭配使用，又会带来哪些代价？</h2>
+      <p class="qen" lang="en">What does eventual consistency mean in event-driven architecture, and why is it often paired with publish-subscribe messaging, at what cost?</p>
+      <div class="azh" lang="zh">最终一致性指服务发出领域事件后不再同步等待所有下游更新，若无新事件产生，各副本状态终将收敛到一致。事件经发布-订阅代理（如 Kafka 主题）分发给多个订阅方，生产者与消费者解耦，可独立扩展和部署，天然契合该模型。代价是存在读到旧数据的时间窗、需处理消息重复与乱序，排障也更依赖事件溯源与关联追踪。</div>
+      <div class="aen" lang="en">Eventual consistency means a service publishes domain events without synchronously waiting for every downstream update; absent new events, all replicas converge to the same state. Events flow through a publish-subscribe broker such as a Kafka topic, decoupling producers from consumers so each scales and deploys independently—a natural fit. The price is a window of stale reads, plus the need to handle duplicate and out-of-order messages, with troubleshooting leaning on event sourcing and correlation tracing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">L. Bass、P. Clements、R. Kazman《软件构架实践》第3版质量属性与战术相关章节（Addison-Wesley, 2012）</p>
+        <p lang="en">L. Bass, P. Clements, R. Kazman, Software Architecture in Practice, 3rd ed., quality attributes and tactics chapters (Addison-Wesley, 2012)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2658332W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2658332W：Software architecture i</a></p>
+        
+      </details>
+      <a class="tag" href="#">#软件架构</a> <a class="tag" href="#">#事件驱动</a> <a class="tag" href="#">#最终一致性</a> <a class="tag" href="#">#发布订阅</a>
+    </article>
+
+
+    <article class="qitem" id="d8686d83de21">
+      <h2 class="qz" lang="zh">Paxos 共识算法解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does the Paxos consensus algorithm solve?</p>
+      <div class="azh" lang="zh">Paxos 是在可能发生节点崩溃或消息丢失的异步网络中，让一组节点就某个值达成一致（共识）的算法，即使少数节点失效也能保证安全。它由兰波特在 1998 年的《兼职议会》中形式化，是后续多数分布式协调系统（如 Google Chubby）的理论基础。其难点在于证明与实现都相当复杂。</div>
+      <div class="aen" lang="en">Paxos is an algorithm that lets a group of nodes agree on a single value (consensus) in an asynchronous network with possible crashes and lost messages, remaining safe even if a minority fails. Formalized by Lamport in his 1998 &#x27;The Part-Time Parliament&#x27;, it underpins many distributed coordination systems such as Google&#x27;s Chubby. Its difficulty lies in both proof and implementation being notoriously complex.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Lamport 1998；Google Chubby（Burrows 2006）</p>
+        <p lang="en">Lamport (1998); Google Chubby (Burrows 2006)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Paxos</a> <a class="tag" href="#">#共识算法</a> <a class="tag" href="#">#兰波特</a> <a class="tag" href="#">#分布式协调</a>
+    </article>
+
+
+    <article class="qitem" id="ecb17fd2df2e">
+      <h2 class="qz" lang="zh">什么是容错？</h2>
+      <p class="qen" lang="en">What is fault tolerance?</p>
+      <div class="azh" lang="zh">容错指系统在部分组件出错（如硬盘损坏、网络中断）时仍能继续正确运行的能力。常用手段包括冗余备份、副本和自动切换。它是分布式系统和关键基础设施的核心目标之一。</div>
+      <div class="aen" lang="en">Fault tolerance is a system&#x27;s ability to keep running correctly when some components fail, such as disk damage or network outage. Common means include redundancy, replicas, and automatic failover. It is a core goal of distributed systems and critical infrastructure.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#容错</a> <a class="tag" href="#">#冗余</a> <a class="tag" href="#">#可靠</a>
+    </article>
+
+
+    <article class="qitem" id="c8b4cfb9012d">
+      <h2 class="qz" lang="zh">什么是分布式系统？</h2>
+      <p class="qen" lang="en">What is a distributed system?</p>
+      <div class="azh" lang="zh">分布式系统由多台通过网络协作的计算机组成，对外看起来像一个整体，共同完成某项任务。它能通过增加机器来提升性能和可靠性，例如大型网站和云服务。难点在于处理机器故障和网络延迟。</div>
+      <div class="aen" lang="en">A distributed system consists of multiple computers collaborating over a network that appears as a single coherent system to users, jointly completing a task. It scales performance and reliability by adding machines, as in large websites and cloud services. The hard part is handling machine failures and network delays.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#网络</a> <a class="tag" href="#">#协作</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

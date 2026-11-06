@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>error-correcting · 数学 Mathematics | 问答</title>
+<meta name="description" content="error-correcting（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="error-correcting · 数学 Mathematics | 问答">
+<meta property="og:description" content="error-correcting（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/error-correcting/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/error-correcting/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>error-correcting</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>error-correcting <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#52108a389ae8">RSA 加密为什么依赖‘大数难分解’？</a></li><li><a href="#a7131d11f286">汉明码怎么在传输中自动纠错？</a></li><li><a href="#c19903e10b74">二维码为什么脏了一点还能扫出来？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="52108a389ae8">
+      <h2 class="qz" lang="zh">RSA 加密为什么依赖‘大数难分解’？</h2>
+      <p class="qen" lang="en">Why does RSA encryption rely on &#x27;large numbers are hard to factor&#x27;?</p>
+      <div class="azh" lang="zh">RSA 用两个大素数乘积作公钥，私钥相当于这两个因数。已知乘积却极难反推出因数（因数分解难），因此能公开加密、私密解密。</div>
+      <div class="aen" lang="en">RSA uses the product of two large primes as the public key; the private key is effectively those two factors. Given the product, recovering the factors is computationally hard, enabling public encryption with private decryption.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Courant &amp; Robbins,《What Is Mathematics?》Oxford University Press,1996 第二版;中译《什么是数学》</p>
+        <p lang="en">R. Courant and H. Robbins, What Is Mathematics?, Oxford University Press, 1996; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL811195W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL811195W：What is mathematics?（按标题</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码</a> <a class="tag" href="#">#数论</a>
+    </article>
+
+
+    <article class="qitem" id="a7131d11f286">
+      <h2 class="qz" lang="zh">汉明码怎么在传输中自动纠错？</h2>
+      <p class="qen" lang="en">How do Hamming codes auto-correct errors in transmission?</p>
+      <div class="azh" lang="zh">它用若干校验位标记数据位的位置奇偶性；接收端重新计算校验，得到一个‘综合征’直接指出哪一位出错并可翻转修复。典型能纠正单个比特错误。</div>
+      <div class="aen" lang="en">It uses parity check bits to mark positions; the receiver recomputes them to get a &#x27;syndrome&#x27; that points exactly to the flipped bit, which is then corrected. It typically fixes a single-bit error.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Courant &amp; Robbins,《What Is Mathematics?》Oxford University Press,1996 第二版;中译《什么是数学》</p>
+        <p lang="en">R. Courant and H. Robbins, What Is Mathematics?, Oxford University Press, 1996; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL811195W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL811195W：What is mathematics?（按标题</a></p>
+        
+      </details>
+      <a class="tag" href="#">#纠错码</a> <a class="tag" href="#">#可靠性</a>
+    </article>
+
+
+    <article class="qitem" id="c19903e10b74">
+      <h2 class="qz" lang="zh">二维码为什么脏了一点还能扫出来？</h2>
+      <p class="qen" lang="en">Why can a QR code still scan when partly dirty?</p>
+      <div class="azh" lang="zh">二维码用了里德–所罗门等纠错码，把数据编码得能容忍一定比例的污损或遮挡而不丢失信息。这也是光盘划痕仍能读出的原理。</div>
+      <div class="aen" lang="en">QR codes use Reed–Solomon error-correcting codes so data survives a certain fraction of dirt or occlusion without loss. The same idea lets scratched CDs still play.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Courant &amp; Robbins,《What Is Mathematics?》Oxford University Press,1996 第二版;中译《什么是数学》</p>
+        <p lang="en">R. Courant and H. Robbins, What Is Mathematics?, Oxford University Press, 1996; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL811195W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL811195W：What is mathematics?（按标题</a></p>
+        
+      </details>
+      <a class="tag" href="#">#纠错码</a> <a class="tag" href="#">#二维码</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

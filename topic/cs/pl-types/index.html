@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pl-types · 计算机 Computer Science | 问答</title>
+<meta name="description" content="pl-types（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pl-types · 计算机 Computer Science | 问答">
+<meta property="og:description" content="pl-types（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/pl-types/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/pl-types/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>pl-types</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>pl-types <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_19_002">两个在不同模块中独立声明、成员完全相同的类,在结构子类型与名义子类型体系下得到的</a></li><li><a href="#cs_19_010">类型擦除使 Java 的 List&lt;String&gt; 与 List&lt;Integer</a></li><li><a href="#cs_19_018">Option 类型加上穷尽模式匹配,如何从语言层面消灭空指针一类错误?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_19_002">
+      <h2 class="qz" lang="zh">两个在不同模块中独立声明、成员完全相同的类,在结构子类型与名义子类型体系下得到的兼容性结论为何不同?各自更适合什么场景?</h2>
+      <p class="qen" lang="en">Two classes declared independently in different modules yet with identical members: why do structural and nominal subtyping disagree on their compatibility, and which situations favor each discipline?</p>
+      <div class="azh" lang="zh">结构子类型只比较类型的形状,成员一致即视为可互换,这两个类因此互相兼容;名义子类型要求显式声明的继承关系,形状相同也不兼容,从而能拦截语义不同却碰巧同形的误配。前者利于跨模块的鸭子式互操作,后者让类型承载设计意图,使编译器在重构时能给出更严格的检查。</div>
+      <div class="aen" lang="en">Structural subtyping compares shapes, so identical members make the two classes interchangeable; nominal subtyping demands an explicitly declared hierarchy and rejects the match, blocking accidental pairing of types that merely look alike. The structural style eases duck-typed interop across module boundaries, while the nominal style lets types carry design intent and gives the compiler a stricter handle during refactoring.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#子类型</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_010">
+      <h2 class="qz" lang="zh">类型擦除使 Java 的 List&lt;String&gt; 与 List&lt;Integer&gt; 在运行时是同一个类,这一设计动机是什么?又带来了哪些语言层面的限制?</h2>
+      <p class="qen" lang="en">Type erasure makes Java&#x27;s List&lt;String&gt; and List&lt;Integer&gt; the same class at runtime — what motivated the design, and which language-level restrictions follow from it?</p>
+      <div class="azh" lang="zh">擦除是为了让泛型代码与既有 JVM 字节码及泛型出现之前的类库保持二进制兼容,GJ 编译器据此把泛型编译为插入了强制转换的原始类型。代价是运行时无法获知类型实参:不能按 List&lt;String&gt; 重载、不能创建 T 数组、裸类型与可变参数可能引发堆污染,只能靠传递 Class 对象或超类型令牌绕开。</div>
+      <div class="aen" lang="en">Erasure keeps generic code binary-compatible with existing JVM bytecode and pre-generics libraries; the GJ compiler compiles generics down to raw types with inserted casts. The price is that type arguments vanish at runtime: no overloading on List&lt;String&gt;, no creation of T arrays, heap pollution from raw types and varargs — all worked around by passing Class objects or super type tokens.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">G. Bracha、M. Odersky、D. Stoutamire 与 P. Wadler,《Making the future safe for the past》,ACM SIGPLAN Notices,1998 (DOI: 10.1145/286942.286957)</p>
+        <p lang="en">G. Bracha, M. Odersky, D. Stoutamire &amp; P. Wadler, &#x27;Making the future safe for the past&#x27;, ACM SIGPLAN Notices, 1998, DOI: 10.1145/286942.286957</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/286942.286957" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/286942.286957</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#泛型</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_018">
+      <h2 class="qz" lang="zh">Option 类型加上穷尽模式匹配,如何从语言层面消灭空指针一类错误?</h2>
+      <p class="qen" lang="en">How do option types plus exhaustive pattern matching eliminate null-pointer failures at the language level?</p>
+      <div class="azh" lang="zh">可空引用把可能有值这一事实悄悄混进每一个引用类型,编译器对此毫无约束,任何一次解引用都可能踩雷,Hoare 因此称其为十亿美元的错误。Option&lt;T&gt; 把缺席写进类型签名,函数被迫声明自己可能不返回 T,调用方拿到的只会是 Some 或 None 两种构造之一。编译器对 match 做完备性检查,漏掉 None 分支直接报错,整类忘记判空的缺陷从运行期事故变成编译期错误,Rust、Swift、OCaml 均采用此设计。</div>
+      <div class="aen" lang="en">Nullable references smuggle possible absence into every reference type invisibly, leaving compilers powerless over dereferences—which is precisely why Hoare called null his billion-dollar mistake. An Option&lt;T&gt; makes absence part of the signature: a function declares it may fail to return a T, and callers receive either Some or None, never a bare value. Because the compiler checks match expressions for exhaustiveness, forgetting the None arm becomes a compile-time error, turning an entire class of runtime crashes into rejected code—a design Rust, Swift, and OCaml all share.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">C. A. R. Hoare 2009 年 QCon 演讲《Null References: The Billion Dollar Mistake》;Pierce《Types and Programming Languages》</p>
+        <p lang="en">C. A. R. Hoare, QCon 2009 talk &quot;Null References: The Billion Dollar Mistake&quot;; B. Pierce, &quot;Types and Programming Languages&quot;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#空安全</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

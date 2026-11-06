@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graphics graphics · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Graphics（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Graphics graphics · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Graphics（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/graphics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/graphics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Graphics</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Graphics <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#09e9f80bf3b5">Z 缓冲区（Z-buffer）算法是如何解决隐藏面消除的？</a></li><li><a href="#2a6ecfe00775">栅格（位图）图形和矢量图形有什么区别？</a></li><li><a href="#48d8a38bdc53">光线追踪（ray tracing）是什么？它为什么能生成逼真的图像？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="09e9f80bf3b5">
+      <h2 class="qz" lang="zh">Z 缓冲区（Z-buffer）算法是如何解决隐藏面消除的？</h2>
+      <p class="qen" lang="en">How does the Z-buffer algorithm solve hidden-surface removal?</p>
+      <div class="azh" lang="zh">Z 缓冲区为每个像素保存当前已绘制物体的深度（Z 值），新片元只有在比已存深度更近时才覆盖该像素，从而高效决定哪些表面可见。它把复杂的几何排序转化为逐像素的深度比较，易于在硬件上实现，是现代 GPU 光栅化的基础之一。该思想由卡特莫尔在 1974 年提出。</div>
+      <div class="aen" lang="en">The Z-buffer keeps the depth (Z value) of the nearest drawn object per pixel; a new fragment overwrites that pixel only if it is closer, efficiently deciding which surfaces are visible. It turns tricky geometric sorting into per-pixel depth comparison and is easy to implement in hardware, forming a basis of modern GPU rasterization. The idea was introduced by Catmull in 1974.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Catmull 1974；Foley 等《计算机图形学：原理与实践》</p>
+        <p lang="en">Catmull (1974); Foley et al., Computer Graphics: Principles and Practice</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Z缓冲区</a> <a class="tag" href="#">#隐藏面消除</a> <a class="tag" href="#">#深度缓冲</a> <a class="tag" href="#">#光栅化</a>
+    </article>
+
+
+    <article class="qitem" id="2a6ecfe00775">
+      <h2 class="qz" lang="zh">栅格（位图）图形和矢量图形有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between raster (bitmap) and vector graphics?</p>
+      <div class="azh" lang="zh">栅格图形以像素网格存储图像（如 PNG、JPEG），放大后会失真或出现锯齿；矢量图形以数学路径（点、线、曲线）描述形状（如 SVG），可任意缩放而保持清晰。栅格适合照片等连续色调内容，矢量适合图标、字体和需无损放大的图形。二者取舍核心在于保真度与文件体积/可编辑性。</div>
+      <div class="aen" lang="en">Raster graphics store an image as a grid of pixels (e.g., PNG, JPEG) and lose quality or show jaggies when scaled up; vector graphics describe shapes with mathematical paths (points, lines, curves), such as SVG, and stay sharp at any zoom. Raster suits continuous-tone content like photos, while vector suits icons, fonts, and graphics needing lossless scaling. The trade-off centers on fidelity versus file size and editability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Foley 等《计算机图形学：原理与实践》；Hughes 等《计算机图形学》</p>
+        <p lang="en">Foley et al., Computer Graphics: Principles and Practice; Hughes et al., Computer Graphics</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#栅格图形</a> <a class="tag" href="#">#矢量图形</a> <a class="tag" href="#">#SVG</a> <a class="tag" href="#">#位图</a>
+    </article>
+
+
+    <article class="qitem" id="48d8a38bdc53">
+      <h2 class="qz" lang="zh">光线追踪（ray tracing）是什么？它为什么能生成逼真的图像？</h2>
+      <p class="qen" lang="en">What is ray tracing, and why does it produce realistic images?</p>
+      <div class="azh" lang="zh">光线追踪从相机向场景投射光线，模拟其与物体、光源的交互（反射、折射、遮挡）来合成图像；因为沿物理光路求解，镜面反射、折射与精确遮挡关系都能自然得到。惠特德在 1980 年提出带递归反射/折射的改进光照模型，奠定了现代离线渲染的基础。但基础光线追踪只产生硬阴影，软阴影、景深与全局光照需要分布式光线追踪（Cook 等 1984）或路径追踪（Kajiya 1986）等蒙特卡洛方法。</div>
+      <div class="aen" lang="en">Ray tracing synthesizes images by shooting rays from the camera into a scene and simulating their interaction with objects and lights (reflection, refraction, occlusion); because it follows physical light paths, specular reflection, refraction, and exact visibility come out naturally. Whitted&#x27;s 1980 improved illumination model with recursive reflection and refraction laid the foundation of modern offline rendering. Basic ray tracing, however, yields only hard shadows—soft shadows, depth of field, and global illumination require Monte Carlo methods such as distributed ray tracing (Cook et al. 1984) or path tracing (Kajiya 1986).</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Whitted 1980（Communications of the ACM 23(6)）；Cook, Porter &amp; Carpenter 1984（分布式光线追踪，SIGGRAPH）；Kajiya 1986《The Rendering Equation》（SIGGRAPH）</p>
+        <p lang="en">Whitted (1980), CACM 23(6); Cook, Porter &amp; Carpenter (1984), distributed ray tracing, SIGGRAPH; Kajiya (1986), &#x27;The Rendering Equation&#x27;, SIGGRAPH</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/964965.808590" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/964965.808590</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光线追踪</a> <a class="tag" href="#">#全局光照</a> <a class="tag" href="#">#反射折射</a> <a class="tag" href="#">#惠特德</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

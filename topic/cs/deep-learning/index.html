@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep Learning deep-learning · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Deep Learning（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deep Learning deep-learning · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Deep Learning（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/deep-learning/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/deep-learning/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Deep Learning</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Deep Learning <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#4065fa7968fe">生成对抗网络(GAN)是怎样让两个网络『互相对抗』来造假图的？</a></li><li><a href="#5dab2f8300f1">残差网络(ResNet)靠什么让网络可以堆到上百层而不退化？</a></li><li><a href="#670544589afb">Word2Vec 是怎么把词语变成可计算语义的向量的？</a></li><li><a href="#8f511bedd4c0">卷积神经网络(CNN)为什么特别适合处理图像？</a></li><li><a href="#fe158ef6dc24">Transformer 里的『自注意力机制』解决了循环网络哪些瓶颈？</a></li><li><a href="#a4e35a6ab80a">感知机作为最早的神经网络单元，为什么曾被说『连异或都学不会』？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="4065fa7968fe">
+      <h2 class="qz" lang="zh">生成对抗网络(GAN)是怎样让两个网络『互相对抗』来造假图的？</h2>
+      <p class="qen" lang="en">How do generative adversarial networks (GANs) pit two networks against each other to fake images?</p>
+      <div class="azh" lang="zh">GAN 包含一个生成器负责造样本、一个判别器负责分辨真假，二者在极小极大博弈中互相提升，最终生成器能产出以假乱真的图像。Goodfellow 等在 2014 年提出该框架。</div>
+      <div class="aen" lang="en">A GAN has a generator that fabricates samples and a discriminator that judges real from fake; the two improve against each other in a minimax game until the generator produces convincing fakes. Goodfellow et al. proposed the framework in 2014.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow 等《生成对抗网络》(NeurIPS, 2014)</p>
+        <p lang="en">Goodfellow et al., &#x27;Generative Adversarial Networks&#x27; (NeurIPS, 2014)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GAN</a> <a class="tag" href="#">#生成器</a> <a class="tag" href="#">#判别器</a> <a class="tag" href="#">#对抗训练</a>
+    </article>
+
+
+    <article class="qitem" id="5dab2f8300f1">
+      <h2 class="qz" lang="zh">残差网络(ResNet)靠什么让网络可以堆到上百层而不退化？</h2>
+      <p class="qen" lang="en">How do residual networks (ResNet) let models stack over a hundred layers without degrading?</p>
+      <div class="azh" lang="zh">深层网络训练时梯度易消失、误差反而上升；ResNet 引入『跳跃连接』，让每层只需学习输入到输出的残差，信息可直通，缓解退化与梯度问题。He 等在 2016 年提出，并在 ImageNet 上刷出极深网络的纪录。</div>
+      <div class="aen" lang="en">Very deep nets suffer vanishing gradients and rising error; ResNet adds skip connections so each layer learns only a residual from input to output, letting information pass through and easing training. He et al. introduced it in 2016 and set depth records on ImageNet.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">He 等《深度残差学习》(CVPR, 2016)</p>
+        <p lang="en">He et al., &#x27;Deep Residual Learning&#x27; (CVPR, 2016)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ResNet</a> <a class="tag" href="#">#跳跃连接</a> <a class="tag" href="#">#残差</a> <a class="tag" href="#">#梯度消失</a>
+    </article>
+
+
+    <article class="qitem" id="670544589afb">
+      <h2 class="qz" lang="zh">Word2Vec 是怎么把词语变成可计算语义的向量的？</h2>
+      <p class="qen" lang="en">How does Word2Vec turn words into vectors that capture computable semantics?</p>
+      <div class="azh" lang="zh">Word2Vec 用『上下文相近的词语义相近』的假设，通过 skip-gram 或 CBOW 训练模型预测邻近词，使词义相近的词在向量空间里距离也近，还能浮现『国王-男+女≈女王』这类关系。Mikolov 等在 2013 年提出。</div>
+      <div class="aen" lang="en">Word2Vec assumes nearby words share meaning and trains skip-gram or CBOW models to predict neighboring words, placing semantically similar words close in vector space and even capturing relations like king - man + woman ≈ queen. Mikolov et al. proposed it in 2013.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Mikolov 等《词的高效向量表示》(2013)；Mikolov 等《分布式短语与语法表示》(2013)</p>
+        <p lang="en">Mikolov et al., &#x27;Efficient Estimation of Word Representations&#x27; (2013); Mikolov et al., &#x27;Distributed Representations of Words&#x27; (2013)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Word2Vec</a> <a class="tag" href="#">#词向量</a> <a class="tag" href="#">#skip-gram</a> <a class="tag" href="#">#语义空间</a>
+    </article>
+
+
+    <article class="qitem" id="8f511bedd4c0">
+      <h2 class="qz" lang="zh">卷积神经网络(CNN)为什么特别适合处理图像？</h2>
+      <p class="qen" lang="en">Why are convolutional neural networks especially suited to images?</p>
+      <div class="azh" lang="zh">CNN 用局部卷积核在图像上滑动提取边缘、纹理等局部特征，并借权值共享和池化获得平移不变性与参数效率。LeCun 等 1998 年的 LeNet 用于手写数字识别，2012 年 AlexNet 在 ImageNet 上大放异彩。</div>
+      <div class="aen" lang="en">A CNN slides local kernels over an image to extract edges and textures, and via weight sharing and pooling gains translation invariance and parameter efficiency. LeCun&#x27;s LeNet (1998) recognized handwritten digits; AlexNet (2012) triumphed on ImageNet.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">LeCun 等《基于梯度的卷积网络》(1998)；Krizhevsky、Sutskever 与 Hinton《AlexNet》(NeurIPS, 2012)</p>
+        <p lang="en">LeCun et al., &#x27;Gradient-based learning for document recognition&#x27; (1998); Krizhevsky, Sutskever &amp; Hinton, &#x27;AlexNet&#x27; (NeurIPS, 2012)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/5.726791" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/5.726791</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CNN</a> <a class="tag" href="#">#卷积</a> <a class="tag" href="#">#权值共享</a> <a class="tag" href="#">#池化</a>
+    </article>
+
+
+    <article class="qitem" id="fe158ef6dc24">
+      <h2 class="qz" lang="zh">Transformer 里的『自注意力机制』解决了循环网络哪些瓶颈？</h2>
+      <p class="qen" lang="en">What bottlenecks of recurrent networks does the self-attention mechanism in Transformers solve?</p>
+      <div class="azh" lang="zh">循环网络要逐词顺序处理、难以并行且长程依赖会衰减；自注意力让序列中任意两个位置直接交互，一步算出全局关系并可在 GPU 上高度并行。Vaswani 等在 2017 年提出 Transformer，成为大语言模型的基础。</div>
+      <div class="aen" lang="en">Recurrent nets process tokens sequentially, hard to parallelize, with long-range dependencies fading; self-attention lets any two positions interact directly, computes global relations in one step, and parallelizes well on GPUs. Vaswani et al. introduced the Transformer in 2017, now the basis of large language models.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Vaswani 等《Attention Is All You Need》(NeurIPS, 2017)；Devlin 等《BERT》(NAACL, 2019)</p>
+        <p lang="en">Vaswani et al., &#x27;Attention Is All You Need&#x27; (NeurIPS, 2017); Devlin et al., &#x27;BERT&#x27; (NAACL, 2019)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#并行</a> <a class="tag" href="#">#长程依赖</a>
+    </article>
+
+
+    <article class="qitem" id="a4e35a6ab80a">
+      <h2 class="qz" lang="zh">感知机作为最早的神经网络单元，为什么曾被说『连异或都学不会』？</h2>
+      <p class="qen" lang="en">As the earliest neural unit, why was the perceptron once said to be unable to learn even XOR?</p>
+      <div class="azh" lang="zh">单层感知机只能拟合输入空间的线性边界，而 XOR 这类问题本质是线性不可分的，因此单靠它无解。Minsky 与 Papert 在 1969 年指出这一局限；直到引入多层网络与反向传播，才突破这道关卡。</div>
+      <div class="aen" lang="en">A single-layer perceptron can only fit a linear boundary, and problems like XOR are linearly inseparable, so it cannot solve them alone. Minsky and Papert highlighted this limit in 1969; only multi-layer networks with backpropagation broke through.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rosenblatt,《The perceptron: A probabilistic model for information storage and organization in the brain》,Psychological Review,1958 (DOI: 10.1037/h0042519)；Minsky 与 Papert《感知机》(1969)</p>
+        <p lang="en">Rosenblatt, &#x27;The perceptron: A probabilistic model for information storage and organization in the brain&#x27;, Psychological Review, 1958, DOI: 10.1037/h0042519; Minsky &amp; Papert, &#x27;Perceptrons&#x27; (1969)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1037/h0042519" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1037/h0042519</a></p>
+        
+      </details>
+      <a class="tag" href="#">#感知机</a> <a class="tag" href="#">#线性不可分</a> <a class="tag" href="#">#异或</a> <a class="tag" href="#">#多层网络</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

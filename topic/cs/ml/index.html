@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ml · 计算机 Computer Science | 问答</title>
+<meta name="description" content="ml（计算机）分类下的 15 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 15 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ml · 计算机 Computer Science | 问答">
+<meta property="og:description" content="ml（计算机）分类下的 15 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 15 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/ml/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/ml/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>ml</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>ml <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>15</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#080acf65d382">什么是模型量化（Quantization）？</a></li><li><a href="#32d4054067d7">模型蒸馏（Knowledge Distillation）是什么？</a></li><li><a href="#46dd85967e23">什么是神经网络，它为什么能学习？</a></li><li><a href="#cs_20_006">在端到端语音识别中,CTC 损失是如何解决输入帧序列与输出字符序列长度不一致问题</a></li><li><a href="#cs_21_009">工业推荐系统为何普遍采用召回+排序的两阶段流水线?双塔模型用于召回时的核心权衡是</a></li><li><a href="#cs_24_018">训练深层神经网络时梯度为什么会越传越小?权重初始化又能帮上什么忙?</a></li><li><a href="#48f7177ab264">卷积神经网络（CNN）为什么擅长处理图像？</a></li><li><a href="#4d962f374940">生成对抗网络（GAN）是如何工作的？</a></li><li><a href="#5a9fc47132f7">什么是 Embedding（嵌入）？</a></li><li><a href="#65b5050e595e">训练集、验证集和测试集分别有什么用？</a></li><li><a href="#6cb5a3f5fa35">强化学习的基本思路是什么？</a></li><li><a href="#cs_20_014">提取梅尔频率倒谱系数(MFCC)时,为什么要先用梅尔刻度的三角滤波器组对频谱加权</a></li><li><a href="#cs_21_001">推荐系统中的矩阵分解是如何把用户—物品评分矩阵转化为双方隐向量的?相比基于邻域的</a></li><li><a href="#2e14c630290b">迁移学习有什么价值？</a></li><li><a href="#a9cc73312d13">偏差-方差权衡是什么意思？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="080acf65d382">
+      <h2 class="qz" lang="zh">什么是模型量化（Quantization）？</h2>
+      <p class="qen" lang="en">What is model quantization?</p>
+      <div class="azh" lang="zh">量化把模型权重从 32 位浮点降到 8 位整数等低精度表示，以少量精度损失换取更小的体积与更快的推理，是端侧部署大模型的常用手段。</div>
+      <div class="aen" lang="en">Quantization lowers weights from 32-bit float to lower precision like 8-bit integer, trading minor accuracy for smaller size and faster inference—common for on-device LLMs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Jacob 等 2018</p>
+        <p lang="en">Jacob et al. 2018</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="32d4054067d7">
+      <h2 class="qz" lang="zh">模型蒸馏（Knowledge Distillation）是什么？</h2>
+      <p class="qen" lang="en">What is knowledge distillation?</p>
+      <div class="azh" lang="zh">蒸馏让小型学生模型模仿大型教师模型的输出（包括软标签概率分布），在保持大部分精度的同时大幅压缩模型体积，便于部署到手机等受限设备。</div>
+      <div class="aen" lang="en">Distillation trains a small student to mimic a large teacher&#x27;s outputs, including soft probability distributions, preserving most accuracy while shrinking the model for devices like phones.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Hinton 等 2015</p>
+        <p lang="en">Hinton et al. 2015</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="46dd85967e23">
+      <h2 class="qz" lang="zh">什么是神经网络，它为什么能学习？</h2>
+      <p class="qen" lang="en">What is a neural network and why can it learn?</p>
+      <div class="azh" lang="zh">神经网络由多层带权重的神经元组成，前向传播计算输出，反向传播用梯度下降调整权重以最小化损失，从而从数据中拟合复杂模式。</div>
+      <div class="aen" lang="en">A neural network stacks weighted neurons; forward passes compute outputs and backpropagation uses gradient descent to adjust weights, minimizing loss so it fits complex patterns from data.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow、Bengio 与 Courville,《Deep Learning》,MIT Press,2016</p>
+        <p lang="en">I. Goodfellow, Y. Bengio, A. Courville, Deep Learning, MIT Press, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#AI</a> <a class="tag" href="#">#神经网络</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_006">
+      <h2 class="qz" lang="zh">在端到端语音识别中,CTC 损失是如何解决输入帧序列与输出字符序列长度不一致问题的?引入空白符 blank 的作用是什么?</h2>
+      <p class="qen" lang="en">In end-to-end speech recognition, how does CTC loss resolve the length mismatch between input acoustic frames and output characters, and what role does the blank symbol play?</p>
+      <div class="azh" lang="zh">CTC 把输入帧到输出标签之间所有单调对齐路径的概率求和作为训练目标,从而免去逐帧的人工标注。空白符 blank 用于分隔相邻的重复字符并吸收不发声的帧,使 hello 这类双写字母能被正确展开。训练阶段借助前向-后向动态规划高效累加路径概率,解码阶段则用贪心或前缀束搜索还原最终文本。</div>
+      <div class="aen" lang="en">CTC sums the probabilities of every monotone alignment between input frames and output labels, removing the need for frame-level transcription targets. The blank symbol separates repeated adjacent characters and absorbs frames that should emit nothing, so doubled letters such as those in hello expand correctly. Training computes this sum efficiently with forward-backward dynamic programming, while decoding applies greedy or prefix beam search to recover the transcript.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Graves、Fernández、Gomez 与 Schmidhuber,《Connectionist temporal classification》,ICML,2006 (DOI: 10.1145/1143844.1143891)</p>
+        <p lang="en">Graves, Fernández, Gomez &amp; Schmidhuber, &#x27;Connectionist temporal classification&#x27;, ICML, 2006, DOI: 10.1145/1143844.1143891</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/1143844.1143891" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/1143844.1143891</a></p>
+        
+      </details>
+      <a class="tag" href="#">#语音识别</a> <a class="tag" href="#">#CTC损失</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_009">
+      <h2 class="qz" lang="zh">工业推荐系统为何普遍采用召回+排序的两阶段流水线?双塔模型用于召回时的核心权衡是什么?</h2>
+      <p class="qen" lang="en">Why do industrial recommenders standardize on a two-stage retrieve-then-rank pipeline, and what is the core trade-off when two-tower models are used for retrieval?</p>
+      <div class="azh" lang="zh">候选池常达亿级,先用轻量召回把候选裁剪到千级,再交给高容量排序模型打分,才能同时满足效果与毫秒级时延。双塔将用户与物品分别编码为向量,在线通过 HNSW 等近似最近邻检索匹配,但两侧特征不能交叉,表达力受限。实践中常引入难负例采样与多兴趣向量来对抗样本偏差和表征瓶颈。</div>
+      <div class="aen" lang="en">With candidate pools reaching hundreds of millions, a lightweight retriever first prunes them to the thousands before a high-capacity ranker scores the survivors, meeting both accuracy goals and millisecond latency budgets. Two-tower models encode users and items separately and match online through approximate nearest-neighbor search such as HNSW, but the two sides cannot cross features, limiting expressiveness. Teams commonly add hard-negative sampling and multi-interest vectors to fight sampling bias and the representation bottleneck.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Covington 等《Deep Neural Networks for YouTube Recommendations》(RecSys 2016);Yi 等《Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations》(RecSys 2019)</p>
+        <p lang="en">Covington et al., Deep Neural Networks for YouTube Recommendations, RecSys 2016; Yi et al., Sampling-Bias-Corrected Neural Modeling for Large Corpus Item Recommendations, RecSys 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/2959100.2959190" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/2959100.2959190（复合著录按段核验：本标识只担保第一段 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#推荐系统</a> <a class="tag" href="#">#双塔召回</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_018">
+      <h2 class="qz" lang="zh">训练深层神经网络时梯度为什么会越传越小?权重初始化又能帮上什么忙?</h2>
+      <p class="qen" lang="en">Why do gradients shrink as they flow back through deep networks, and how does weight initialization help?</p>
+      <div class="azh" lang="zh">反向传播把各层导数沿路径连乘:只要多数因子小于1,梯度传到靠近输入处便指数式衰减,浅层参数几乎不再更新。sigmoid是典型元凶——导数最大仅0.25,叠加十余层信号趋近于零。Glorot与Bengio指出,初始权重方差尺度不当也会让前向激活与反向梯度逐层放大或湮灭;Xavier初始化按扇入与扇出的均值定标权重方差,He初始化再针对ReLU修正,使各层信号方差大致稳定,深层网络才训练得动。</div>
+      <div class="aen" lang="en">Backpropagation multiplies layer-wise derivatives along the route from loss back to early layers; whenever most factors fall below one, gradients decay exponentially and input-side parameters receive almost no useful update. Sigmoid is the classic culprit — its derivative peaks at 0.25, so a dozen stacked layers snuff the signal. Glorot and Bengio sharpened the diagnosis: even with healthy derivatives, poorly scaled initial variances amplify or extinguish activations forward and gradients backward. Xavier initialization scales weight variance by the average of fan-in and fan-out, He initialization corrects further for ReLU asymmetry, and stable per-layer signal variance is what makes very deep networks trainable.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Glorot 与 Bengio,Understanding the difficulty of training deep feedforward neural networks,AISTATS,2010</p>
+        <p lang="en">X. Glorot and Y. Bengio, Understanding the difficulty of training deep feedforward neural networks, AISTATS, 2010</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#反向传播</a> <a class="tag" href="#">#梯度消失</a> <a class="tag" href="#">#Xavier初始化</a>
+    </article>
+
+
+    <article class="qitem" id="48f7177ab264">
+      <h2 class="qz" lang="zh">卷积神经网络（CNN）为什么擅长处理图像？</h2>
+      <p class="qen" lang="en">Why are CNNs good at image tasks?</p>
+      <div class="azh" lang="zh">CNN 用卷积核在局部窗口上共享权重提取边缘、纹理等空间特征，并通过池化降维，具有平移不变性与参数效率，适合二维图像结构。</div>
+      <div class="aen" lang="en">CNNs use shared-weight kernels over local windows to extract spatial features like edges and textures, with pooling for downsampling, giving translation invariance and parameter efficiency for images.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">LeCun 1998</p>
+        <p lang="en">LeCun 1998</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#视觉</a>
+    </article>
+
+
+    <article class="qitem" id="4d962f374940">
+      <h2 class="qz" lang="zh">生成对抗网络（GAN）是如何工作的？</h2>
+      <p class="qen" lang="en">How does a Generative Adversarial Network work?</p>
+      <div class="azh" lang="zh">GAN 由生成器和判别器对抗训练：生成器试图伪造逼真样本，判别器试图分辨真假，二者在极小极大博弈中相互提升，最终生成器能产出以假乱真的数据。</div>
+      <div class="aen" lang="en">A GAN trains a generator against a discriminator: the generator fakes samples, the discriminator detects fakes, and through a minimax game both improve until the generator produces realistic data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow 等 2014</p>
+        <p lang="en">Goodfellow et al. 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#生成</a>
+    </article>
+
+
+    <article class="qitem" id="5a9fc47132f7">
+      <h2 class="qz" lang="zh">什么是 Embedding（嵌入）？</h2>
+      <p class="qen" lang="en">What is an embedding?</p>
+      <div class="azh" lang="zh">Embedding 把离散对象（词、用户、商品）映射为低维稠密向量，使语义相近的对象在向量空间中距离更近，便于相似度计算与下游模型使用。</div>
+      <div class="aen" lang="en">An embedding maps discrete objects (words, users, items) to low-dimensional dense vectors so semantically similar ones are close in space, easing similarity and downstream models.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Mikolov 等 2013</p>
+        <p lang="en">Mikolov et al. 2013</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#向量</a>
+    </article>
+
+
+    <article class="qitem" id="65b5050e595e">
+      <h2 class="qz" lang="zh">训练集、验证集和测试集分别有什么用？</h2>
+      <p class="qen" lang="en">What are training, validation and test sets used for?</p>
+      <div class="azh" lang="zh">训练集用来拟合模型参数；验证集用来调超参数和早停，不参与训练；测试集只在最后评估模型真实泛化能力，避免数据泄露。</div>
+      <div class="aen" lang="en">The training set fits parameters; the validation set tunes hyperparameters and early stopping without training on it; the test set is used only at the end to measure true generalization and avoid leakage.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Deep Learning (Goodfellow)</p>
+        <p lang="en">Deep Learning (Goodfellow)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#评估</a>
+    </article>
+
+
+    <article class="qitem" id="6cb5a3f5fa35">
+      <h2 class="qz" lang="zh">强化学习的基本思路是什么？</h2>
+      <p class="qen" lang="en">What is the basic idea of reinforcement learning?</p>
+      <div class="azh" lang="zh">智能体在环境中通过试错采取动作，依据奖励信号调整策略以最大化长期回报，核心是权衡探索与利用，典型算法有 Q-learning 和策略梯度。</div>
+      <div class="aen" lang="en">An agent acts in an environment, adjusting its policy from reward signals to maximize long-term return, balancing exploration vs exploitation; key algorithms include Q-learning and policy gradients.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Sutton &amp; Barto</p>
+        <p lang="en">Sutton &amp; Barto</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#强化</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_014">
+      <h2 class="qz" lang="zh">提取梅尔频率倒谱系数(MFCC)时,为什么要先用梅尔刻度的三角滤波器组对频谱加权,而不是直接在线性频率轴上求倒谱?</h2>
+      <p class="qen" lang="en">When extracting mel-frequency cepstral coefficients (MFCC), why is the spectrum first weighted by a mel-scale triangular filter bank instead of computing cepstra directly on a linear frequency axis?</p>
+      <div class="azh" lang="zh">人耳对频率的分辨能力随频率升高而下降,近似呈对数关系,梅尔刻度正是对这一感知特性的经验映射。滤波器组在梅尔轴上均匀布置三角带通滤波器后再映射回线性频率,使特征能量集中于低频段等判别力强的区域,同时平滑谱包络并压缩相邻频带的冗余。取对数后做离散余弦变换得到倒谱系数,把声道包络与声门激励分离开来,前十余维即可较稳定地表征音素,这也是 MFCC 长期作为抗噪识别基线特征的原因。</div>
+      <div class="aen" lang="en">Human frequency resolution degrades roughly logarithmically as frequency rises, and the mel scale is the empirical mapping of that perceptual property. The filter bank places triangular bandpass filters uniformly on the mel axis and maps them back to linear frequency, concentrating feature energy in discriminative regions such as the low bands while smoothing the spectral envelope and compressing redundancy between neighboring bands. Log compression followed by a discrete cosine transform yields cepstral coefficients that separate the vocal-tract envelope from glottal excitation, letting the first ten-plus dimensions represent phonemes fairly robustly — the reason MFCCs long served as the baseline feature for noise-robust recognition.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">D. Jurafsky 与 J. H. Martin,《Speech and Language Processing》,第2版,Prentice Hall,2009年</p>
+        <p lang="en">D. Jurafsky and J. H. Martin, Speech and Language Processing, 2nd edition, Prentice Hall, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Speech+and+Language+Processing" target="_blank" rel="noopener">核验依据 1 ISBN 9780131873216 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梅尔倒谱系数</a> <a class="tag" href="#">#听觉感知刻度</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_001">
+      <h2 class="qz" lang="zh">推荐系统中的矩阵分解是如何把用户—物品评分矩阵转化为双方隐向量的?相比基于邻域的协同过滤,它在数据稀疏和规模扩展上有哪些优势?</h2>
+      <p class="qen" lang="en">In recommender systems, how does matrix factorization turn the user-item rating matrix into latent vectors for both sides, and what advantages does it hold over neighborhood-based collaborative filtering under sparse data and at scale?</p>
+      <div class="azh" lang="zh">矩阵分解假设每个用户和物品都能表示为同一低维隐因子空间中的向量,评分被近似为两个隐向量的内积,再用随机梯度下降最小化带正则的训练误差来学出这些向量。其参数量只随用户数与物品数线性增长,且能从极少量的评分中泛化出偏好结构,因此比邻域方法更耐稀疏、也更容易并行化。Koren 等人在 Netflix Prize 期间引入偏置项与隐式反馈信号后,预测精度得到显著提升。</div>
+      <div class="aen" lang="en">Matrix factorization assumes every user and item can be embedded as a vector in a shared low-dimensional latent space, approximates a rating as the inner product of the two vectors, and learns these vectors by minimizing regularized training error with stochastic gradient descent. Its parameter count grows only linearly with the number of users and items, and preference structure generalizes from very few ratings, so it tolerates sparsity far better than neighborhood methods and parallelizes easily. Koren et al. markedly improved accuracy during the Netflix Prize by adding bias terms and implicit-feedback signals.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#推荐系统</a> <a class="tag" href="#">#矩阵分解</a>
+    </article>
+
+
+    <article class="qitem" id="2e14c630290b">
+      <h2 class="qz" lang="zh">迁移学习有什么价值？</h2>
+      <p class="qen" lang="en">What is the value of transfer learning?</p>
+      <div class="azh" lang="zh">迁移学习把在大规模数据上预训练得到的特征或权重，复用到数据较少的目标任务上，大幅降低标注与算力需求，是视觉与 NLP 大模型的常见范式。</div>
+      <div class="aen" lang="en">Transfer learning reuses features or weights pretrained on large data for a smaller target task, sharply cutting labeling and compute needs—a standard paradigm in vision and NLP.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Pan &amp; Yang 2010</p>
+        <p lang="en">Pan &amp; Yang 2010</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#预训练</a>
+    </article>
+
+
+    <article class="qitem" id="a9cc73312d13">
+      <h2 class="qz" lang="zh">偏差-方差权衡是什么意思？</h2>
+      <p class="qen" lang="en">What does the bias-variance tradeoff mean?</p>
+      <div class="azh" lang="zh">模型偏差高表现为欠拟合（假设太简单），方差高表现为过拟合（对训练噪声敏感）；总误差是二者之和加噪声，好的模型要在复杂度上取得平衡。</div>
+      <div class="aen" lang="en">High bias means underfitting (too simple), high variance means overfitting (sensitive to noise); total error is their sum plus noise, so a good model balances complexity.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie、Tibshirani 与 Friedman,《The Elements of Statistical Learning》第2版, Springer, 2009</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, 2nd ed., Springer, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ML</a> <a class="tag" href="#">#理论</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

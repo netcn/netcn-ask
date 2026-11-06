@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Architecture computer-architecture · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Computer Architecture（计算机）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Computer Architecture computer-architecture · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Computer Architecture（计算机）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/computer-architecture/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/computer-architecture/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Computer Architecture</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Computer Architecture <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>5</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#3cabe0217836">『内存墙』指的是处理器与内存之间怎样的矛盾？</a></li><li><a href="#70b0c0ae8235">GPU 相比 CPU 为什么特别擅长并行运算？</a></li><li><a href="#ab3871b13312">指令流水线是怎样让 CPU 同时『处理多条指令』的？</a></li><li><a href="#c176cb492f02">RISC 与 CISC 两种指令集哲学的根本分歧是什么？</a></li><li><a href="#ef43e8ce876c">冯·诺依曼体系结构最核心的思想是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="3cabe0217836">
+      <h2 class="qz" lang="zh">『内存墙』指的是处理器与内存之间怎样的矛盾？</h2>
+      <p class="qen" lang="en">What contradiction between processor and memory does the &#x27;memory wall&#x27; describe?</p>
+      <div class="azh" lang="zh">几十年来 CPU 速度按摩尔定律飞涨，而内存访问延迟下降缓慢，处理器常因等数据而空转，性能被带宽和延迟卡住。Wulf 与 McKee 在 1995 年提出该术语，并推动多级缓存、预取等技术来缓解。</div>
+      <div class="aen" lang="en">CPU speed rose fast with Moore&#x27;s law while memory latency improved slowly, so processors often stalled waiting for data and hit a bandwidth/latency ceiling. Wulf and McKee coined the term in 1995 and spurred caches, prefetching, and other mitigations.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wulf 与 McKee《撞上内存墙》(ACM SIGARCH, 1995)；Hennessy 与 Patterson《计算机体系结构》</p>
+        <p lang="en">Wulf &amp; McKee, &#x27;Hitting the Memory Wall&#x27; (ACM SIGARCH, 1995); Hennessy &amp; Patterson, &#x27;Computer Architecture&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/7006537/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111364580（豆瓣书目条目: 计算机体系结构）；本条出处含多部著作，此标识只担保上面点名</a></p>
+        
+      </details>
+      <a class="tag" href="#">#内存墙</a> <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#访存延迟</a> <a class="tag" href="#">#带宽</a>
+    </article>
+
+
+    <article class="qitem" id="70b0c0ae8235">
+      <h2 class="qz" lang="zh">GPU 相比 CPU 为什么特别擅长并行运算？</h2>
+      <p class="qen" lang="en">Why are GPUs so much better than CPUs at parallel computation?</p>
+      <div class="azh" lang="zh">GPU 内部有成千上万个轻量核心，专为大量相同操作（如矩阵乘法）的『单指令多数据』并行而设计，适合图形渲染和深度学习。NVIDIA 的 CUDA 编程模型让程序员能把通用计算映射到这些核心。</div>
+      <div class="aen" lang="en">A GPU packs thousands of lightweight cores tuned for &#x27;single-instruction-multiple-data&#x27; parallelism on uniform operations like matrix multiply, ideal for graphics and deep learning. NVIDIA&#x27;s CUDA model lets programmers map general computing onto those cores.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nickolls 等《NVIDIA CUDA 编程模型》(IEEE Micro, 2008)；Owens 等,《GPU Computing》,Proceedings of the IEEE,2008 (DOI: 10.1109/jproc.2008.917757)</p>
+        <p lang="en">Nickolls et al., &#x27;NVIDIA CUDA programming model&#x27; (IEEE Micro, 2008); Owens et al., &#x27;GPU Computing&#x27;, Proceedings of the IEEE, 2008, DOI: 10.1109/jproc.2008.917757</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/jproc.2008.917757" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/jproc.2008.917757</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#并行</a> <a class="tag" href="#">#CUDA</a> <a class="tag" href="#">#SIMD</a>
+    </article>
+
+
+    <article class="qitem" id="ab3871b13312">
+      <h2 class="qz" lang="zh">指令流水线是怎样让 CPU 同时『处理多条指令』的？</h2>
+      <p class="qen" lang="en">How does instruction pipelining let a CPU work on several instructions at once?</p>
+      <div class="azh" lang="zh">流水线把一条指令的执行拆成取指、译码、执行、写回等阶段，不同指令的不同阶段在时间上重叠，像工厂装配线一样提升吞吐。代价是指令相关和分支会带来停顿或冲刷。</div>
+      <div class="aen" lang="en">Pipelining splits an instruction into stages—fetch, decode, execute, write-back—so different instructions occupy different stages at the same time, raising throughput like a factory line. The cost is stalls or flushes from dependencies and branches.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy 与 Patterson《计算机体系结构：量化研究方法》；Patterson 与 Hennessy《计算机组成与设计》</p>
+        <p lang="en">Hennessy &amp; Patterson, &#x27;Computer Architecture: A Quantitative Approach&#x27;; Patterson &amp; Hennessy, &#x27;Computer Organization and Design&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Organization+and+Design" target="_blank" rel="noopener">核验依据 1 ISBN 9781558604285 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#流水线</a> <a class="tag" href="#">#指令级并行</a> <a class="tag" href="#">#停顿</a> <a class="tag" href="#">#吞吐</a>
+    </article>
+
+
+    <article class="qitem" id="c176cb492f02">
+      <h2 class="qz" lang="zh">RISC 与 CISC 两种指令集哲学的根本分歧是什么？</h2>
+      <p class="qen" lang="en">What is the fundamental split between RISC and CISC instruction-set philosophies?</p>
+      <div class="azh" lang="zh">CISC 倾向用较少、较复杂、功能繁多的指令；RISC 则精简为少量简单、定长、单周期为主的指令，把复杂工作交给编译器与流水线。Patterson 等在 1980 年代的系统研究使 RISC 成为 ARM、RISC-V 等现代设计的主流。</div>
+      <div class="aen" lang="en">CISC favors fewer, more complex, feature-rich instructions; RISC pares down to a small set of simple, mostly fixed-length, fast instructions, leaving complexity to the compiler and pipeline. Patterson&#x27;s 1980s work made RISC dominant in ARM, RISC-V, and modern designs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Patterson《精简指令集计算机》(1981)；Hennessy 与 Patterson《计算机体系结构》</p>
+        <p lang="en">Patterson, &#x27;Reduced Instruction Set Computers&#x27; (1981); Hennessy &amp; Patterson, &#x27;Computer Architecture&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（首</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RISC</a> <a class="tag" href="#">#CISC</a> <a class="tag" href="#">#指令集</a> <a class="tag" href="#">#编译器</a>
+    </article>
+
+
+    <article class="qitem" id="ef43e8ce876c">
+      <h2 class="qz" lang="zh">冯·诺依曼体系结构最核心的思想是什么？</h2>
+      <p class="qen" lang="en">What is the central idea of the von Neumann architecture?</p>
+      <div class="azh" lang="zh">它把指令和数据存放在同一可读写的存储器中，由控制器逐条取指、译码、执行，形成『存储程序』范式。这一思想写入 1945 年的《第一份草案》，至今仍是绝大多数计算机的基础。</div>
+      <div class="aen" lang="en">It stores instructions and data in the same read-write memory and has a control unit fetch, decode, and execute them one by one—the &#x27;stored-program&#x27; paradigm. Laid out in the 1945 &#x27;First Draft&#x27;, it still underlies most computers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">von Neumann《关于 EDVAC 的报告草案》(1945)；Hennessy 与 Patterson《计算机体系结构：量化研究方法》</p>
+        <p lang="en">von Neumann, &#x27;First Draft of a Report on EDVAC&#x27; (1945); Hennessy &amp; Patterson, &#x27;Computer Architecture: A Quantitative Approach&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.5479/sil.538961.39088011475779" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.5479/sil.538961.39088011475779：First draf</a></p>
+        
+      </details>
+      <a class="tag" href="#">#冯诺依曼</a> <a class="tag" href="#">#存储程序</a> <a class="tag" href="#">#指令</a> <a class="tag" href="#">#存储器</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

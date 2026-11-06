@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cryptography cryptography · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Cryptography（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cryptography cryptography · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Cryptography（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/cryptography/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/cryptography/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Cryptography</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Cryptography <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1188f2652f1c">迪菲-赫尔曼（Diffie-Hellman）密钥交换解决了什么问题？</a></li><li><a href="#d7f0012d2643">什么是前向安全性？</a></li><li><a href="#f3491bfd58c8">密码学中的哈希函数有何特点？</a></li><li><a href="#02c523666f16">RSA 公钥密码体制的基本思想是什么？</a></li><li><a href="#4e92353f9508">AES（高级加密标准）是什么？它用什么方式工作？</a></li><li><a href="#51a71b0943ca">什么是公钥密码学？</a></li><li><a href="#6378a52f528a">什么是数字签名？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1188f2652f1c">
+      <h2 class="qz" lang="zh">迪菲-赫尔曼（Diffie-Hellman）密钥交换解决了什么问题？</h2>
+      <p class="qen" lang="en">What problem does Diffie-Hellman key exchange solve?</p>
+      <div class="azh" lang="zh">迪菲与赫尔曼在 1976 年提出一种方法，让双方在公开的、可能被窃听的信道上各自选取私有随机数，却仍能协商出同一个共享密钥，而窃听者无法算出它。它依赖离散对数问题的困难性，是现代密钥协商（如 TLS 中的 DHE/ECDHE）的鼻祖，NIST 在 SP 800-56A 中规范了其使用。它只负责协商密钥、本身不提供身份认证，须配合证书或签名机制以防中间人攻击。</div>
+      <div class="aen" lang="en">Diffie and Hellman (1976) proposed a method by which two parties, over a public and possibly eavesdropped channel, each choose a private random value yet agree on the same shared secret that an eavesdropper cannot compute. It rests on the hardness of the discrete logarithm problem and is the ancestor of modern key agreement such as DHE/ECDHE in TLS, with its use standardized in NIST SP 800-56A. It only establishes a key and provides no authentication by itself, so it must be paired with certificates or signatures to prevent man-in-the-middle attacks.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Diffie &amp; Hellman 1976《New Directions in Cryptography》（IEEE Transactions on Information Theory 22(6)）；NIST SP 800-56A Rev. 3</p>
+        <p lang="en">Diffie &amp; Hellman (1976), &#x27;New Directions in Cryptography&#x27;, IEEE Transactions on Information Theory 22(6); NIST SP 800-56A Rev. 3</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/tit.1976.1055638" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/tit.1976.1055638</a></p>
+        
+      </details>
+      <a class="tag" href="#">#迪菲赫尔曼</a> <a class="tag" href="#">#密钥交换</a> <a class="tag" href="#">#离散对数</a> <a class="tag" href="#">#NIST</a>
+    </article>
+
+
+    <article class="qitem" id="d7f0012d2643">
+      <h2 class="qz" lang="zh">什么是前向安全性？</h2>
+      <p class="qen" lang="en">What is forward secrecy?</p>
+      <div class="azh" lang="zh">前向安全性指即便长期私钥日后泄露，过去通信的会话密钥依然安全，因为每次会话都用临时密钥协商并随即丢弃。它依赖 Diffie-Hellman 类密钥交换，是现代 TLS 的推荐特性。</div>
+      <div class="aen" lang="en">Forward secrecy means that even if a long-term private key leaks later, past session keys stay safe, because each session negotiates ephemeral keys that are discarded. Relying on Diffie–Hellman key exchange, it is a recommended feature of modern TLS.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">互联网工程任务组（IETF）RFC 8446（TLS 1.3）</p>
+        <p lang="en">IETF RFC 8446 (TLS 1.3)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#前向安全</a> <a class="tag" href="#">#密钥协商</a> <a class="tag" href="#">#TLS</a>
+    </article>
+
+
+    <article class="qitem" id="f3491bfd58c8">
+      <h2 class="qz" lang="zh">密码学中的哈希函数有何特点？</h2>
+      <p class="qen" lang="en">What are the properties of a cryptographic hash function?</p>
+      <div class="azh" lang="zh">密码学哈希函数把任意消息压缩成定长摘要，要求单向（难以反推原文）、抗碰撞（难找两个不同输入同摘要）且微小改动必产生大变化。SHA-256 广泛用于数字签名与区块链。</div>
+      <div class="aen" lang="en">A cryptographic hash function compresses any message to a fixed-length digest, requiring one-wayness (hard to invert), collision resistance (hard to find two inputs with the same digest), and strong avalanche (tiny changes flip the output). SHA-256 is widely used in signatures and blockchains.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码学哈希</a> <a class="tag" href="#">#SHA-256</a> <a class="tag" href="#">#单向</a>
+    </article>
+
+
+    <article class="qitem" id="02c523666f16">
+      <h2 class="qz" lang="zh">RSA 公钥密码体制的基本思想是什么？</h2>
+      <p class="qen" lang="en">What is the basic idea behind the RSA public-key cryptosystem?</p>
+      <div class="azh" lang="zh">RSA 由里维斯特、沙米尔与阿德曼在 1978 年提出，使用一对密钥：公开的公钥用于加密、私有的私钥用于解密。其安全性建立在『大整数分解』的困难性上——两个大素数相乘容易，但反过来分解乘积极难。它同时支撑加密与数字签名，是 HTTPS 等现代安全通信的支柱之一，NIST 将其列为标准公钥算法。</div>
+      <div class="aen" lang="en">Proposed by Rivest, Shamir, and Adleman in 1978, RSA uses a key pair: a public key for encryption and a private key for decryption. Its security rests on the difficulty of factoring large integers—multiplying two large primes is easy, but factoring the product is extremely hard. It underpins both encryption and digital signatures and is a standard public-key algorithm recognized by NIST, supporting secure communication such as HTTPS.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Rivest, Shamir &amp; Adleman 1978（Communications of the ACM 21(2)）；NIST FIPS 186-5《数字签名标准》；NIST SP 800-56B Rev. 2</p>
+        <p lang="en">Rivest, Shamir &amp; Adleman (1978), CACM 21(2); NIST FIPS 186-5 (Digital Signature Standard); NIST SP 800-56B Rev. 2</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#RSA</a> <a class="tag" href="#">#公钥密码</a> <a class="tag" href="#">#大整数分解</a> <a class="tag" href="#">#数字签名</a>
+    </article>
+
+
+    <article class="qitem" id="4e92353f9508">
+      <h2 class="qz" lang="zh">AES（高级加密标准）是什么？它用什么方式工作？</h2>
+      <p class="qen" lang="en">What is AES (Advanced Encryption Standard), and how does it work at a high level?</p>
+      <div class="azh" lang="zh">AES 是美国国家标准与技术研究院（NIST）于 2001 年通过 FIPS 197 确立的对称分组加密标准，取代老旧的 DES。它把 128 位数据块按轮次进行字节替换、行移位、列混合和轮密钥加等可逆变换，密钥长度可为 128/192/256 位。由于其效率高且经严密审查，AES 被广泛用于磁盘加密、Wi-Fi（WPA2/3）和 VPN 等场景。</div>
+      <div class="aen" lang="en">AES is the symmetric block-cipher standard adopted by NIST in 2001 via FIPS 197, replacing the aging DES. It processes 128-bit blocks through repeated rounds of byte substitution, row shifting, column mixing, and round-key addition, with key sizes of 128, 192, or 256 bits. Efficient and heavily vetted, AES is widely used for disk encryption, Wi-Fi (WPA2/3), VPNs, and more.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#AES</a> <a class="tag" href="#">#对称加密</a> <a class="tag" href="#">#FIPS 197</a> <a class="tag" href="#">#NIST</a>
+    </article>
+
+
+    <article class="qitem" id="51a71b0943ca">
+      <h2 class="qz" lang="zh">什么是公钥密码学？</h2>
+      <p class="qen" lang="en">What is public-key cryptography?</p>
+      <div class="azh" lang="zh">公钥密码学使用一对密钥：公开的公钥用来加密或验证，保密的私钥用来解密或签名。它解决了在不安全信道上安全分发密钥的难题，RSA 与椭圆曲线是典型算法。</div>
+      <div class="aen" lang="en">Public-key cryptography uses a key pair: a public key for encryption or verification and a private key for decryption or signing. It solves secure key distribution over insecure channels; RSA and elliptic curves are typical algorithms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#公钥密码</a> <a class="tag" href="#">#RSA</a> <a class="tag" href="#">#密钥对</a>
+    </article>
+
+
+    <article class="qitem" id="6378a52f528a">
+      <h2 class="qz" lang="zh">什么是数字签名？</h2>
+      <p class="qen" lang="en">What is a digital signature?</p>
+      <div class="azh" lang="zh">数字签名用发送者的私钥对消息摘要加密，接收者用其公钥验证，既能确认来源真实、又证明内容未被篡改且不可抵赖。它是电子合同与软件分发信任的基础。</div>
+      <div class="aen" lang="en">A digital signature encrypts a message digest with the sender&#x27;s private key; the receiver verifies with the public key, confirming authenticity, integrity, and non-repudiation. It underpins trust in e-contracts and software distribution.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数字签名</a> <a class="tag" href="#">#私钥</a> <a class="tag" href="#">#认证</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

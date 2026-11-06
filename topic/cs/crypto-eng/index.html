@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>crypto_eng crypto-eng · 计算机 Computer Science | 问答</title>
+<meta name="description" content="crypto_eng（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="crypto_eng crypto-eng · 计算机 Computer Science | 问答">
+<meta property="og:description" content="crypto_eng（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/crypto-eng/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/crypto-eng/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>crypto_eng</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>crypto_eng <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>14</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#115ff984ddbc">什么是 HTTPS 中的公钥基础设施（PKI）？</a></li><li><a href="#2ef5a138968d">什么是同态加密（Homomorphic Encryption）？</a></li><li><a href="#424c83fc7dea">什么是 RSA？它基于什么数学难题？</a></li><li><a href="#ad89538c0915">区块链的工作量证明（PoW）和默克尔树（Merkle Tree）分别起什么作用？</a></li><li><a href="#f9a71c3b670a">量子计算对现有加密有什么威胁？什么是后量子密码？</a></li><li><a href="#24b5bc3e72a7">什么是零信任（Zero Trust）安全模型？</a></li><li><a href="#59ed465d7caf">什么是盐（Salt）和慢哈希（如 bcrypt）？</a></li><li><a href="#a039a1afb2cd">什么是数字证书和 CA（证书颁发机构）？</a></li><li><a href="#b059cd45ef05">什么是 AES？为什么它被认为很安全？</a></li><li><a href="#ebcf7163eadc">什么是密钥管理？为什么密钥要定期轮换？</a></li><li><a href="#fcc1b36787ea">什么是沙箱（Sandbox）？</a></li><li><a href="#26a67f27e729">什么是哈希函数？为什么密码不能明文存？</a></li><li><a href="#3fb4bfb403fc">什么是端到端加密（E2EE）？</a></li><li><a href="#7d0596c6ad85">对称加密和非对称加密有什么区别？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="115ff984ddbc">
+      <h2 class="qz" lang="zh">什么是 HTTPS 中的公钥基础设施（PKI）？</h2>
+      <p class="qen" lang="en">What is the public key infrastructure (PKI) behind HTTPS?</p>
+      <div class="azh" lang="zh">PKI 由证书颁发机构（CA）、证书和密钥组成。浏览器信任内置 CA，CA 给网站签发证书，从而让你能确认网站身份并安全交换密钥。</div>
+      <div class="aen" lang="en">PKI consists of certificate authorities (CAs), certificates, and keys. Browsers trust built-in CAs that vouch for sites, letting you verify identity and exchange keys safely.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PKI</a> <a class="tag" href="#">#证书</a> <a class="tag" href="#">#HTTPS</a>
+    </article>
+
+
+    <article class="qitem" id="2ef5a138968d">
+      <h2 class="qz" lang="zh">什么是同态加密（Homomorphic Encryption）？</h2>
+      <p class="qen" lang="en">What is homomorphic encryption?</p>
+      <div class="azh" lang="zh">它允许直接在密文上做计算，结果解密后等于在明文上计算的结果。这样云服务器能帮你算数据却看不到数据内容。</div>
+      <div class="aen" lang="en">It lets you compute on encrypted data; decrypting the result equals computing on the plaintext. A cloud can process your data without ever seeing it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#同态加密</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="424c83fc7dea">
+      <h2 class="qz" lang="zh">什么是 RSA？它基于什么数学难题？</h2>
+      <p class="qen" lang="en">What is RSA, and what math problem does it rely on?</p>
+      <div class="azh" lang="zh">RSA 是一种非对称算法，安全性建立在两个大质数相乘容易、反过来分解乘积极难这一数学难题上。</div>
+      <div class="aen" lang="en">RSA is an asymmetric algorithm whose security rests on the hardness of factoring large integers: multiplying two big primes is easy, factoring their product is extremely hard.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RSA</a> <a class="tag" href="#">#非对称加密</a>
+    </article>
+
+
+    <article class="qitem" id="ad89538c0915">
+      <h2 class="qz" lang="zh">区块链的工作量证明（PoW）和默克尔树（Merkle Tree）分别起什么作用？</h2>
+      <p class="qen" lang="en">What do proof-of-work (PoW) and Merkle trees do in a blockchain?</p>
+      <div class="azh" lang="zh">PoW 要求矿工做大量计算来争夺记账权，使篡改历史成本极高；默克尔树把大量交易压缩成一个根哈希，方便快速验证交易是否被包含。</div>
+      <div class="aen" lang="en">PoW makes miners spend heavy computation to append blocks, so rewriting history is prohibitively costly. A Merkle tree compresses many transactions into one root hash for fast inclusion proofs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#默克尔树</a>
+    </article>
+
+
+    <article class="qitem" id="f9a71c3b670a">
+      <h2 class="qz" lang="zh">量子计算对现有加密有什么威胁？什么是后量子密码？</h2>
+      <p class="qen" lang="en">What threat does quantum computing pose to current encryption, and what is post-quantum cryptography?</p>
+      <div class="azh" lang="zh">足够强的量子计算机能用 Shor 算法快速分解大数和求离散对数，威胁 RSA 与 ECC。后量子密码研究抗量子的新算法，如格密码。</div>
+      <div class="aen" lang="en">A strong quantum computer could use Shor&#x27;s algorithm to break RSA and ECC by factoring and discrete logs. Post-quantum cryptography builds quantum-resistant algorithms like lattice-based crypto.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#量子</a> <a class="tag" href="#">#加密</a>
+    </article>
+
+
+    <article class="qitem" id="24b5bc3e72a7">
+      <h2 class="qz" lang="zh">什么是零信任（Zero Trust）安全模型？</h2>
+      <p class="qen" lang="en">What is the Zero Trust security model?</p>
+      <div class="azh" lang="zh">零信任假定网络内外都不可信，每次访问都要验证身份、设备和权限，遵循最小权限原则，不再默认内网即安全。</div>
+      <div class="aen" lang="en">Zero Trust assumes no implicit trust inside or outside the network; every access is verified for identity, device, and permission, following least privilege.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#零信任</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="59ed465d7caf">
+      <h2 class="qz" lang="zh">什么是盐（Salt）和慢哈希（如 bcrypt）？</h2>
+      <p class="qen" lang="en">What are a salt and slow hashing (like bcrypt)?</p>
+      <div class="azh" lang="zh">盐是加在密码上的随机值，让相同密码也得到不同哈希，防止查表破解。bcrypt 等故意算得慢，增加暴力破解成本。</div>
+      <div class="aen" lang="en">A salt is random data added to a password so identical passwords yield different hashes, defeating lookup tables. Slow hashes like bcrypt raise the cost of brute force.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#盐</a>
+    </article>
+
+
+    <article class="qitem" id="a039a1afb2cd">
+      <h2 class="qz" lang="zh">什么是数字证书和 CA（证书颁发机构）？</h2>
+      <p class="qen" lang="en">What are digital certificates and a CA (certificate authority)?</p>
+      <div class="azh" lang="zh">CA 是受信任的第三方，用它的私钥给网站公钥签名生成证书。浏览器用内置的 CA 公钥验证证书，从而相信网站公钥是真的。</div>
+      <div class="aen" lang="en">A CA is a trusted third party that signs a site&#x27;s public key with its private key to make a certificate. Browsers use built-in CA public keys to verify it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#证书</a> <a class="tag" href="#">#CA</a>
+    </article>
+
+
+    <article class="qitem" id="b059cd45ef05">
+      <h2 class="qz" lang="zh">什么是 AES？为什么它被认为很安全？</h2>
+      <p class="qen" lang="en">What is AES, and why is it considered secure?</p>
+      <div class="azh" lang="zh">AES 是一种对称分组加密标准，用 128、192 或 256 位密钥对数据块多次混淆。它经过严格审查、无已知实用漏洞，且密钥空间巨大。</div>
+      <div class="aen" lang="en">AES is a symmetric block cipher that scrambles data blocks with 128, 192, or 256-bit keys through many rounds. It is heavily vetted, has no known practical break, and a huge key space.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#AES</a> <a class="tag" href="#">#对称加密</a>
+    </article>
+
+
+    <article class="qitem" id="ebcf7163eadc">
+      <h2 class="qz" lang="zh">什么是密钥管理？为什么密钥要定期轮换？</h2>
+      <p class="qen" lang="en">What is key management, and why rotate keys regularly?</p>
+      <div class="azh" lang="zh">密钥管理包括生成、存储、分发和销毁密钥。定期轮换能缩小泄露后的影响范围，即使旧密钥被盗，损失也有限。</div>
+      <div class="aen" lang="en">Key management covers generating, storing, distributing, and destroying keys. Regular rotation limits the blast radius of a leak, so a stolen old key does limited damage.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密钥管理</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="fcc1b36787ea">
+      <h2 class="qz" lang="zh">什么是沙箱（Sandbox）？</h2>
+      <p class="qen" lang="en">What is a sandbox?</p>
+      <div class="azh" lang="zh">沙箱是在隔离环境里运行不可信程序，限制它能访问的文件和网络，就像在玻璃箱里试危险品，坏了也不影响外面。</div>
+      <div class="aen" lang="en">A sandbox runs untrusted code in an isolated space with limited file and network access, like testing dangerous material inside a glass box so the outside stays safe.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#沙箱</a> <a class="tag" href="#">#隔离</a>
+    </article>
+
+
+    <article class="qitem" id="26a67f27e729">
+      <h2 class="qz" lang="zh">什么是哈希函数？为什么密码不能明文存？</h2>
+      <p class="qen" lang="en">What is a hashing function, and why shouldn&#x27;t passwords be stored in plain text?</p>
+      <div class="azh" lang="zh">哈希把任意长度输入变成固定长度的指纹，且难以反推原文。存哈希而非明文，即使数据库泄露，攻击者也拿不到真实密码。</div>
+      <div class="aen" lang="en">A hash turns input into a fixed-length fingerprint that is hard to reverse. Storing hashes, not plain text, means a leak won&#x27;t expose real passwords.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#密码</a>
+    </article>
+
+
+    <article class="qitem" id="3fb4bfb403fc">
+      <h2 class="qz" lang="zh">什么是端到端加密（E2EE）？</h2>
+      <p class="qen" lang="en">What is end-to-end encryption (E2EE)?</p>
+      <div class="azh" lang="zh">端到端加密中，消息只在你的设备和对方设备上加解密，连提供服务的中间服务器也看不到内容，所以服务商无法偷看。</div>
+      <div class="aen" lang="en">In E2EE, messages are encrypted only on your device and the recipient&#x27;s, so even the service&#x27;s servers can&#x27;t read them; the provider can&#x27;t peek.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#端到端加密</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="7d0596c6ad85">
+      <h2 class="qz" lang="zh">对称加密和非对称加密有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between symmetric and asymmetric encryption?</p>
+      <div class="azh" lang="zh">对称加密用同一把钥匙加解密，快但难安全传钥匙；非对称用公钥加密、私钥解密，解决了传钥匙问题但更慢。实际常用混合加密。</div>
+      <div class="aen" lang="en">Symmetric uses one key for both steps, fast but hard to share safely. Asymmetric uses a public key to encrypt and a private key to decrypt, solving sharing but slower. Real systems mix both.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#加密</a> <a class="tag" href="#">#对称</a> <a class="tag" href="#">#非对称</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

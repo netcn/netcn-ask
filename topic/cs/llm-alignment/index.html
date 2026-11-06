@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大语言模型与对齐 llm-alignment · 计算机 Computer Science | 问答</title>
+<meta name="description" content="大语言模型与对齐（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="大语言模型与对齐 llm-alignment · 计算机 Computer Science | 问答">
+<meta property="og:description" content="大语言模型与对齐（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/llm-alignment/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/llm-alignment/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>大语言模型与对齐</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>大语言模型与对齐 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#5216ef2539cf">混合专家模型（MoE）如何在几乎不增加推理计算量的情况下扩展参数规模？</a></li><li><a href="#735d80f55df6">什么是大语言模型的「叠加现象」（superposition），它给可解释性研究带</a></li><li><a href="#f5508f1c99e6">从概率建模和训练目标的角度，如何解释大语言模型产生「幻觉」（生成事实错误内容）的</a></li><li><a href="#0186d5910afb">什么是「上下文学习」（in-context learning），它为什么不需要更</a></li><li><a href="#0c3a56e1f15c">为什么 Transformer 需要位置编码，旋转位置编码（RoPE）相对原始正</a></li><li><a href="#863e172bfc6c">Transformer 中的自注意力机制是如何计算输入序列中词元之间的依赖关系的</a></li><li><a href="#ad683cdf7695">大语言模型训练中的 RLHF（基于人类反馈的强化学习）起什么作用？</a></li><li><a href="#b8f06cea2053">大语言模型的子词分词（如 BPE）解决了哪些问题？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="5216ef2539cf">
+      <h2 class="qz" lang="zh">混合专家模型（MoE）如何在几乎不增加推理计算量的情况下扩展参数规模？</h2>
+      <p class="qen" lang="en">How do mixture-of-experts (MoE) models scale parameter count while keeping per-token inference compute roughly constant?</p>
+      <div class="azh" lang="zh">MoE 在前馈层中放置多个专家子网络，并用一个门控网络为每个词元只激活少数专家，从而在总参数量很大的情况下保持每词元的实际计算量较小。这以通信与负载均衡为代价换取参数效率，是稀疏激活扩展的关键范式。</div>
+      <div class="aen" lang="en">MoE places multiple expert sub-networks in the feed-forward layer and uses a gating network to activate only a few experts per token, so total parameters can be huge while actual per-token compute stays small. It trades communication and load-balancing cost for parameter efficiency and is a key sparse-activation scaling paradigm.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Shazeer et al., Outrageously Large Neural Networks: The Sparsely-Gated MoE Layer, ICLR 2017</p>
+        <p lang="en">Shazeer et al., Outrageously Large Neural Networks: The Sparsely-Gated MoE Layer, ICLR 2017</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MoE</a> <a class="tag" href="#">#稀疏激活</a> <a class="tag" href="#">#专家模型</a>
+    </article>
+
+
+    <article class="qitem" id="735d80f55df6">
+      <h2 class="qz" lang="zh">什么是大语言模型的「叠加现象」（superposition），它给可解释性研究带来什么困难？</h2>
+      <p class="qen" lang="en">What is superposition in large language models, and what difficulty does it create for interpretability research?</p>
+      <div class="azh" lang="zh">叠加指模型用远少于特征数的神经维度以稀疏叠加方式表示大量特征，从而超越线性表示容量。它使单个神经元不再对应单一可解释概念，必须用稀疏自编码器等方法才能分离出单体特征，显著增加了机制可解释性的难度。</div>
+      <div class="aen" lang="en">Superposition means the model represents far more features than it has neurons by sparsely combining them, exceeding linear representational capacity. It breaks the one-neuron-one-concept assumption, so researchers must use sparse autoencoders to recover monosemantic features, greatly complicating mechanistic interpretability.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Elhage et al., Toy Models of Superposition, Transformer Circuits Thread, 2022 (Anthropic)</p>
+        <p lang="en">Elhage et al., Toy Models of Superposition, Transformer Circuits Thread, 2022 (Anthropic)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#可解释性</a> <a class="tag" href="#">#叠加</a> <a class="tag" href="#">#稀疏特征</a>
+    </article>
+
+
+    <article class="qitem" id="f5508f1c99e6">
+      <h2 class="qz" lang="zh">从概率建模和训练目标的角度，如何解释大语言模型产生「幻觉」（生成事实错误内容）的机理，有哪些主流缓解思路？</h2>
+      <p class="qen" lang="en">From the perspectives of probabilistic modeling and training objectives, how can we explain why large language models hallucinate (produce factually wrong content), and what are the main mitigations?</p>
+      <div class="azh" lang="zh">语言模型以自回归方式最大化下一个词的条件概率，目标是语言连贯而非事实真实，因此会生成似是而非但无事实支撑的内容。缓解方法包括检索增强生成（RAG）、在对齐时引入事实性奖励、以及推理时的自我一致性校验。这些方法各有取舍，目前仍无法彻底消除幻觉。</div>
+      <div class="aen" lang="en">Language models maximize the conditional probability of the next token autoregressively, optimizing for linguistic coherence rather than factual truth, so they can emit plausible but unsupported content. Mitigations include retrieval-augmented generation (RAG), adding factuality rewards during alignment, and self-consistency checks at inference. Each trades off something, and hallucination is not yet fully solved.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">arXiv（Huang 等, A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023）</p>
+        <p lang="en">arXiv (Huang et al., A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, 2023)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#幻觉</a> <a class="tag" href="#">#检索增强</a> <a class="tag" href="#">#事实性</a>
+    </article>
+
+
+    <article class="qitem" id="0186d5910afb">
+      <h2 class="qz" lang="zh">什么是「上下文学习」（in-context learning），它为什么不需要更新模型权重？</h2>
+      <p class="qen" lang="en">What is in-context learning, and why does it not require updating model weights?</p>
+      <div class="azh" lang="zh">上下文学习指大模型仅凭提示中给出的若干示例即可在新任务上表现，而不进行任何梯度更新。研究认为这是一种隐式的贝叶斯推断或算法模仿，模型在预训练阶段已习得在上下文中「遵循模式」的能力。</div>
+      <div class="aen" lang="en">In-context learning means a large model performs a new task from a few examples given in the prompt, without any gradient updates. It is viewed as implicit Bayesian inference or algorithm imitation, a capability the model already acquired during pre-training.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Brown et al., Language Models are Few-Shot Learners (GPT-3), NeurIPS 2020</p>
+        <p lang="en">Brown et al., Language Models are Few-Shot Learners (GPT-3), NeurIPS 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/language-models-are-few-shot-learners-gpt3" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 language-models-are-few-shot-learners-gpt3：La</a></p>
+        
+      </details>
+      <a class="tag" href="#">#上下文学习</a> <a class="tag" href="#">#少样本</a> <a class="tag" href="#">#提示</a>
+    </article>
+
+
+    <article class="qitem" id="0c3a56e1f15c">
+      <h2 class="qz" lang="zh">为什么 Transformer 需要位置编码，旋转位置编码（RoPE）相对原始正弦编码有何改进？</h2>
+      <p class="qen" lang="en">Why do Transformers need positional encoding, and how does Rotary Position Embedding (RoPE) improve over the original sinusoidal encoding?</p>
+      <div class="azh" lang="zh">自注意力本身对词序不敏感，位置编码用于注入序列顺序信息。RoPE 把位置信息以旋转矩阵形式融入查询和键，使相对位置可通过内积自然表达，在长上下文和长度外推上表现更优。</div>
+      <div class="aen" lang="en">Self-attention is order-agnostic, so positional encoding injects sequence order. RoPE encodes position as a rotation applied to queries and keys, so relative position is expressed naturally through the dot product, yielding better behavior on long contexts and length extrapolation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Su et al., RoFormer: Enhanced Transformer with Rotary Position Embedding, ACL 2021 (arXiv:2104.09864)</p>
+        <p lang="en">Su et al., RoFormer: Enhanced Transformer with Rotary Position Embedding, ACL 2021 (arXiv:2104.09864)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#位置编码</a> <a class="tag" href="#">#RoPE</a> <a class="tag" href="#">#Transformer</a>
+    </article>
+
+
+    <article class="qitem" id="863e172bfc6c">
+      <h2 class="qz" lang="zh">Transformer 中的自注意力机制是如何计算输入序列中词元之间的依赖关系的？</h2>
+      <p class="qen" lang="en">How does self-attention in a Transformer compute dependencies between tokens in the input sequence?</p>
+      <div class="azh" lang="zh">自注意力将每个词元映射为查询、键、值三个向量，通过计算查询与所有键的点积并归一化得到注意力权重，再用权重对值向量加权求和。它让每个位置都能直接聚合序列中任意位置的信息，克服了 RNN 难以并行和长程依赖衰减的问题。</div>
+      <div class="aen" lang="en">Self-attention maps each token to query, key, and value vectors, computes attention weights by normalizing the dot products of queries with all keys, then forms a weighted sum of the value vectors. This lets every position directly aggregate information from anywhere in the sequence, enabling parallelism and mitigating long-range dependency decay that RNNs suffer from.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Vaswani et al., Attention Is All You Need, NeurIPS 2017 (arXiv:1706.03762)</p>
+        <p lang="en">Vaswani et al., Attention Is All You Need, NeurIPS 2017 (arXiv:1706.03762)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#注意力机制</a>
+    </article>
+
+
+    <article class="qitem" id="ad683cdf7695">
+      <h2 class="qz" lang="zh">大语言模型训练中的 RLHF（基于人类反馈的强化学习）起什么作用？</h2>
+      <p class="qen" lang="en">What role does RLHF (reinforcement learning from human feedback) play in training large language models?</p>
+      <div class="azh" lang="zh">RLHF 先用人类偏好数据训练一个奖励模型，再用强化学习（如 PPO）优化语言模型使其输出更符合人类期望。它能显著提升模型的有用性、安全性和指令遵循能力，是 ChatGPT 等对话模型对齐的关键步骤。</div>
+      <div class="aen" lang="en">RLHF first trains a reward model on human preference data, then uses reinforcement learning such as PPO to optimize the language model toward outputs that better match human expectations. It markedly improves helpfulness, safety, and instruction following, and is a key step in aligning conversational models like ChatGPT.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ouyang et al., Training language models to follow instructions with human feedback, NeurIPS 2022</p>
+        <p lang="en">Ouyang et al., Training language models to follow instructions with human feedback, NeurIPS 2022</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.52202/068431-2011" target="_blank" rel="noopener">核验依据 1 DOI 10.52202/068431-2011</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RLHF</a> <a class="tag" href="#">#对齐</a> <a class="tag" href="#">#强化学习</a>
+    </article>
+
+
+    <article class="qitem" id="b8f06cea2053">
+      <h2 class="qz" lang="zh">大语言模型的子词分词（如 BPE）解决了哪些问题？</h2>
+      <p class="qen" lang="en">What problems does subword tokenization such as BPE solve for large language models?</p>
+      <div class="azh" lang="zh">子词分词把词拆分为高频整体与低频片段，既控制了词表规模，又让模型能处理未登录词与多语言文本。BPE 等算法通过合并高频字符对逐步构建词表，在覆盖率和计算效率之间取得平衡。</div>
+      <div class="aen" lang="en">Subword tokenization splits words into frequent wholes and rare fragments, keeping the vocabulary small while letting the model handle unseen words and multilingual text. Algorithms like BPE merge frequent character pairs to build the vocabulary, balancing coverage with computational efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Sennrich et al., Neural Machine Translation of Rare Words with Subword Units, ACL 2016</p>
+        <p lang="en">Sennrich et al., Neural Machine Translation of Rare Words with Subword Units, ACL 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.18653/v1/p16-1162" target="_blank" rel="noopener">核验依据 1 DOI 10.18653/v1/p16-1162</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分词</a> <a class="tag" href="#">#BPE</a> <a class="tag" href="#">#词表</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

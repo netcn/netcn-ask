@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>密码与编码 codes-encoding · 数学 Mathematics | 问答</title>
+<meta name="description" content="密码与编码（数学）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="密码与编码 codes-encoding · 数学 Mathematics | 问答">
+<meta property="og:description" content="密码与编码（数学）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/codes-encoding/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/codes-encoding/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>密码与编码</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>密码与编码 <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>14</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#0de9b04087ec">RSA公钥密码依赖什么数学困难性？</a></li><li><a href="#431c3dffdf80">Diffie-Hellman怎样让两人在公开信道上协商出共享秘密？</a></li><li><a href="#7539c4aa1f0d">汉明码怎样用少量冗余位发现并纠正一位错误？</a></li><li><a href="#7ce2c4a515f1">数字签名怎样证明消息确实来自某人且未被篡改？</a></li><li><a href="#9cbfc20d74ed">什么是完美保密，它有什么代价？</a></li><li><a href="#fc5d112844fc">什么是离散对数问题，它在密码中有什么用？</a></li><li><a href="#3b63c7898feb">二战中的恩尼格玛机是如何加密的，图灵等人怎样破解？</a></li><li><a href="#45ea7a75c44b">一次性密码本为什么理论上绝对安全？</a></li><li><a href="#7c1a91f8b1e8">为什么异或（XOR）在加密中如此常用？</a></li><li><a href="#b5bccb1bcd8d">密码学哈希函数有什么特性，为什么不可逆？</a></li><li><a href="#c25745f47a69">凯撒密码是怎么加密的，为什么很容易破解？</a></li><li><a href="#2b0eea912739">二维码为什么被遮挡一部分仍能扫出来？</a></li><li><a href="#4bc48de32de1">维吉尼亚密码相比凯撒密码强在哪里，又如何被攻破？</a></li><li><a href="#a10b8ebda2d9">字母频率分析为什么能破解古典替换密码？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="0de9b04087ec">
+      <h2 class="qz" lang="zh">RSA公钥密码依赖什么数学困难性？</h2>
+      <p class="qen" lang="en">What mathematical hardness does RSA public-key cryptography rely on?</p>
+      <div class="azh" lang="zh">RSA基于大整数分解困难：公开乘积n=pq，私钥依赖其素因子。已知没有高效算法对大n分解，因此可安全地用公钥加密、私钥解密。</div>
+      <div class="aen" lang="en">RSA relies on the hardness of factoring large integers: publish n=pq, keep its prime factors secret. No efficient factoring algorithm is known for large n, so public encryption and private decryption stay secure.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RSA</a> <a class="tag" href="#">#大数分解</a> <a class="tag" href="#">#公钥密码</a>
+    </article>
+
+
+    <article class="qitem" id="431c3dffdf80">
+      <h2 class="qz" lang="zh">Diffie-Hellman怎样让两人在公开信道上协商出共享秘密？</h2>
+      <p class="qen" lang="en">How does Diffie-Hellman let two parties agree on a secret over a public channel?</p>
+      <div class="azh" lang="zh">双方各自选私钥，公开交换g^a、g^b（模p），再各自用对方的公值算出g^(ab)，而窃听者只能看到g^a、g^b，想恢复g^(ab)需解离散对数。</div>
+      <div class="aen" lang="en">Each picks a private key and publicly exchanges g^a, g^b (mod p), then both compute g^(ab); an eavesdropper sees only g^a, g^b and would need to solve a discrete log to recover the shared secret.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#DiffieHellman</a> <a class="tag" href="#">#密钥交换</a> <a class="tag" href="#">#离散对数</a>
+    </article>
+
+
+    <article class="qitem" id="7539c4aa1f0d">
+      <h2 class="qz" lang="zh">汉明码怎样用少量冗余位发现并纠正一位错误？</h2>
+      <p class="qen" lang="en">How does a Hamming code use few parity bits to detect and correct a single error?</p>
+      <div class="azh" lang="zh">汉明码把校验位放在2的幂次位置，使每个数据位参与若干奇偶校验。出错时各校验方程的结果拼成出错位的位置编号，从而定位并翻转修正。</div>
+      <div class="aen" lang="en">Hamming codes place parity bits at powers of two so each data bit participates in several checks. The combined parity results form the position of the erroneous bit, locating and correcting it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#汉明码</a> <a class="tag" href="#">#纠错</a> <a class="tag" href="#">#奇偶校验</a>
+    </article>
+
+
+    <article class="qitem" id="7ce2c4a515f1">
+      <h2 class="qz" lang="zh">数字签名怎样证明消息确实来自某人且未被篡改？</h2>
+      <p class="qen" lang="en">How does a digital signature prove a message is from someone and unaltered?</p>
+      <div class="azh" lang="zh">发送者用私钥对消息哈希签名，任何人可用其公钥验证：能验证通过，说明签名者持有私钥且内容未变。它类似手写签名但可数学验证。</div>
+      <div class="aen" lang="en">The sender signs a hash of the message with a private key; anyone verifies with the public key. Successful verification proves the signer held the private key and the content is unchanged.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数字签名</a> <a class="tag" href="#">#公钥</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="9cbfc20d74ed">
+      <h2 class="qz" lang="zh">什么是完美保密，它有什么代价？</h2>
+      <p class="qen" lang="en">What is perfect secrecy, and what is its cost?</p>
+      <div class="azh" lang="zh">香农定义：密文不泄露任何明文信息（条件分布等于先验）。一次性密码本可达此标准，但代价是密钥必须与明文等长且仅用一次，难以分发。</div>
+      <div class="aen" lang="en">Shannon defined perfect secrecy as ciphertext revealing nothing about plaintext. The one-time pad achieves it, but at the cost of a key as long as the message, used once and hard to distribute.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#完美保密</a> <a class="tag" href="#">#香农</a> <a class="tag" href="#">#信息论</a>
+    </article>
+
+
+    <article class="qitem" id="fc5d112844fc">
+      <h2 class="qz" lang="zh">什么是离散对数问题，它在密码中有什么用？</h2>
+      <p class="qen" lang="en">What is the discrete logarithm problem, and what is it used for in cryptography?</p>
+      <div class="azh" lang="zh">给定g、模p和h=g^x mod p，求x就是离散对数问题，目前没有高效算法。它是Diffie-Hellman密钥交换和许多数字签名的数学基础。</div>
+      <div class="aen" lang="en">Given g, prime p, and h=g^x mod p, finding x is the discrete log problem, for which no efficient algorithm is known. It underlies Diffie-Hellman key exchange and many digital signatures.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#离散对数</a> <a class="tag" href="#">#模幂</a> <a class="tag" href="#">#密钥交换</a>
+    </article>
+
+
+    <article class="qitem" id="3b63c7898feb">
+      <h2 class="qz" lang="zh">二战中的恩尼格玛机是如何加密的，图灵等人怎样破解？</h2>
+      <p class="qen" lang="en">How did the WWII Enigma machine encrypt, and how did Turing and others break it?</p>
+      <div class="azh" lang="zh">恩尼格玛用可转动的转子对字母做复杂替换，每天更换接线设置。盟军利用已知明文片段（如天气报告）和机电炸弹机穷举转子位置而破译。</div>
+      <div class="aen" lang="en">Enigma used rotors for complex substitution with daily key settings. The Allies exploited known plaintext fragments (e.g., weather reports) and electromechanical bombes to brute-force rotor positions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#恩尼格玛</a> <a class="tag" href="#">#转子</a> <a class="tag" href="#">#二战密码</a>
+    </article>
+
+
+    <article class="qitem" id="45ea7a75c44b">
+      <h2 class="qz" lang="zh">一次性密码本为什么理论上绝对安全？</h2>
+      <p class="qen" lang="en">Why is the one-time pad provably unbreakable in theory?</p>
+      <div class="azh" lang="zh">若密钥和明文等长、真正随机且只用一次，密文与任意明文等长且统计无关，攻击者无法区分。它要求密钥绝对保密且绝不重用。</div>
+      <div class="aen" lang="en">With a key as long as the message, truly random and used only once, the ciphertext is statistically independent of any plaintext, so the attacker cannot tell them apart. The key must stay secret and never be reused.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#一次性密码本</a> <a class="tag" href="#">#完美保密</a> <a class="tag" href="#">#随机</a>
+    </article>
+
+
+    <article class="qitem" id="7c1a91f8b1e8">
+      <h2 class="qz" lang="zh">为什么异或（XOR）在加密中如此常用？</h2>
+      <p class="qen" lang="en">Why is XOR so common in cryptography?</p>
+      <div class="azh" lang="zh">异或的一个妙处是自身异或可逆：A⊕K再⊕K回到A。它与随机密钥异或可打乱比特，且计算极快、便于硬件实现。</div>
+      <div class="aen" lang="en">XOR is self-inverse: (A⊕K)⊕K=A. XORing with a random key scrambles bits, is extremely fast, and is easy to implement in hardware.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#异或</a> <a class="tag" href="#">#比特运算</a> <a class="tag" href="#">#对称加密</a>
+    </article>
+
+
+    <article class="qitem" id="b5bccb1bcd8d">
+      <h2 class="qz" lang="zh">密码学哈希函数有什么特性，为什么不可逆？</h2>
+      <p class="qen" lang="en">What properties make a cryptographic hash function, and why is it one-way?</p>
+      <div class="azh" lang="zh">好的哈希把任意输入映射成固定长度指纹，具备确定性、抗碰撞（难找两个同输出）和单向性（由输出难反推输入）。它广泛用于签名与校验。</div>
+      <div class="aen" lang="en">A good hash maps any input to a fixed-length fingerprint that is deterministic, collision-resistant, and one-way (hard to invert). It is widely used in signatures and integrity checks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#单向函数</a> <a class="tag" href="#">#数字指纹</a>
+    </article>
+
+
+    <article class="qitem" id="c25745f47a69">
+      <h2 class="qz" lang="zh">凯撒密码是怎么加密的，为什么很容易破解？</h2>
+      <p class="qen" lang="en">How does the Caesar cipher encrypt, and why is it easy to break?</p>
+      <div class="azh" lang="zh">它把字母表整体平移固定位数（如A→D）。因为只有25种可能的位移，穷举或按字母频率分析都能迅速还原明文。</div>
+      <div class="aen" lang="en">It shifts the alphabet by a fixed amount (e.g., A→D). With only 25 possible shifts, brute force or letter-frequency analysis recovers the plaintext quickly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#凯撒密码</a> <a class="tag" href="#">#替换密码</a> <a class="tag" href="#">#频率分析</a>
+    </article>
+
+
+    <article class="qitem" id="2b0eea912739">
+      <h2 class="qz" lang="zh">二维码为什么被遮挡一部分仍能扫出来？</h2>
+      <p class="qen" lang="en">Why can a QR code still scan when partly covered?</p>
+      <div class="azh" lang="zh">二维码内置里德-所罗门纠错码，把数据编码成可冗余恢复的形式。即使部分模块污损，解码器也能靠冗余信息还原原始数据。</div>
+      <div class="aen" lang="en">QR codes embed Reed-Solomon error correction, encoding data redundantly. Even if some modules are damaged, the decoder reconstructs the original from the redundant information.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二维码</a> <a class="tag" href="#">#纠错码</a> <a class="tag" href="#">#里德所罗门</a>
+    </article>
+
+
+    <article class="qitem" id="4bc48de32de1">
+      <h2 class="qz" lang="zh">维吉尼亚密码相比凯撒密码强在哪里，又如何被攻破？</h2>
+      <p class="qen" lang="en">How is the Vigenère cipher stronger than Caesar, and how is it broken?</p>
+      <div class="azh" lang="zh">它用一段重复的关键词逐位平移，打破了单字母频率。但可用卡西斯基测试或重合指数找出周期，再对各分组做频率分析破解。</div>
+      <div class="aen" lang="en">It shifts each letter by a repeating keyword, breaking simple letter frequencies. Yet Kasiski examination or index of coincidence reveals the period, after which each group is frequency-analyzed.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#维吉尼亚</a> <a class="tag" href="#">#多表替换</a> <a class="tag" href="#">#卡西斯基</a>
+    </article>
+
+
+    <article class="qitem" id="a10b8ebda2d9">
+      <h2 class="qz" lang="zh">字母频率分析为什么能破解古典替换密码？</h2>
+      <p class="qen" lang="en">Why does letter-frequency analysis break classical substitution ciphers?</p>
+      <div class="azh" lang="zh">自然语言字母出现频率稳定（英文e最常见），单表替换保留频率模式。统计密文字母频次并对照语言特征即可逐字还原。</div>
+      <div class="aen" lang="en">Natural languages have stable letter frequencies (e in English is most common), and simple substitution preserves that pattern. Counting ciphertext frequencies against language stats recovers letters.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#频率分析</a> <a class="tag" href="#">#替换密码</a> <a class="tag" href="#">#密码学</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

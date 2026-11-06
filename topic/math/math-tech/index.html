@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>math-tech · 数学 Mathematics | 问答</title>
+<meta name="description" content="math-tech（数学）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="math-tech · 数学 Mathematics | 问答">
+<meta property="og:description" content="math-tech（数学）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/math-tech/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/math-tech/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>math-tech</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>math-tech <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>20</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#117be5b5d3a0">为什么数字签名能证明消息没被篡改？</a></li><li><a href="#4485c7e86c5f">为什么推荐系统本质上是矩阵补全？</a></li><li><a href="#454e8c17744d">压缩感知（compressed sensing）为什么能用远少于“奈奎斯特”的采</a></li><li><a href="#46e86abe8736">为什么搜索引擎用PageRank排序网页？</a></li><li><a href="#99558f4317c1">为什么卷积能识别图像里的边缘？</a></li><li><a href="#b63def3fc28f">零知识证明（zero-knowledge proof）为什么能让你“证明自己知道</a></li><li><a href="#bed542861ce3">为什么量子计算威胁现有密码？</a></li><li><a href="#d5f0571ad386">为什么傅里叶变换能把声音拆成频率？</a></li><li><a href="#df140ea28553">为什么哈希能快速查重又不泄露内容？</a></li><li><a href="#49e675fcf91a">为什么纠错码能让划伤的光盘还能读？</a></li><li><a href="#50b34f2c9a2b">为什么压缩能变小又不丢信息（无损）？</a></li><li><a href="#61042f418634">里德-所罗门码是什么？</a></li><li><a href="#728a97a246f3">为什么GPS定位至少要3颗卫星，实际却用4颗？</a></li><li><a href="#7b002c651a06">为什么人工智能（神经网络）本质是数学？</a></li><li><a href="#85ee0a17351d">为什么 JPEG 图像压缩要用离散余弦变换（DCT）把图像块转成频率？</a></li><li><a href="#924a77736ba1">快速傅里叶变换（FFT）是什么？</a></li><li><a href="#9492ff4c61d6">为什么区块链用哈希链防篡改？</a></li><li><a href="#a2474e00d829">为什么密码学离不开质数？</a></li><li><a href="#b273b1d19546">为什么随机森林比单一模型更稳？</a></li><li><a href="#e40c9c63d062">为什么蒙特卡洛方法用随机就能算积分？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="117be5b5d3a0">
+      <h2 class="qz" lang="zh">为什么数字签名能证明消息没被篡改？</h2>
+      <p class="qen" lang="en">Why can a digital signature prove a message wasn&#x27;t altered?</p>
+      <div class="azh" lang="zh">发方用私钥对消息哈希签名，收方用公钥验证；任何篡改都会改变哈希使验证失败，结合单向哈希与公钥密码保证完整性。</div>
+      <div class="aen" lang="en">The sender signs a hash of the message with a private key; the receiver verifies with the public key. Any tampering changes the hash and fails verification, combining one-way hashing and public-key crypto for integrity.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数字签名</a> <a class="tag" href="#">#密码</a>
+    </article>
+
+
+    <article class="qitem" id="4485c7e86c5f">
+      <h2 class="qz" lang="zh">为什么推荐系统本质上是矩阵补全？</h2>
+      <p class="qen" lang="en">Why is a recommender system essentially matrix completion?</p>
+      <div class="azh" lang="zh">用户乘物品的评分表大多空缺，推荐即预测空白格，用低秩矩阵分解把大表拆成小因子，是最优化与线性代数的应用。</div>
+      <div class="aen" lang="en">A user-by-item rating table is mostly empty; recommending predicts the blanks by low-rank matrix factorization splitting the big table into small factors, an application of optimization and linear algebra.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Resnick, Iacovou, Suchak &amp; Bergstrom,《GroupLens》,Proceedings of the 1994 ACM conference on Computer supported,1994 (DOI: 10.1145/192844.192905)；Koren, Bell &amp; Volinsky,《Matrix Factorization Techniques for Recommender Systems》,Computer,2009 (DOI: 10.1109/mc.2009.263)</p>
+        <p lang="en">Resnick, Iacovou, Suchak &amp; Bergstrom, &#x27;GroupLens&#x27;, Proceedings of the 1994 ACM conference on Computer supported, 1994, DOI: 10.1145/192844.192905; Koren, Bell &amp; Volinsky, &#x27;Matrix Factorization Techniques for Recommender Systems&#x27;, Computer, 2009, DOI: 10.1109/mc.2009.263</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/mc.2009.263" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/mc.2009.263</a> · <a class="evlink" href="https://doi.org/10.1145/192844.192905" target="_blank" rel="noopener">核验依据 2 Crossref DOI 10.1145/192844.192905</a></p>
+        
+      </details>
+      <a class="tag" href="#">#推荐系统</a> <a class="tag" href="#">#矩阵</a>
+    </article>
+
+
+    <article class="qitem" id="454e8c17744d">
+      <h2 class="qz" lang="zh">压缩感知（compressed sensing）为什么能用远少于“奈奎斯特”的采样就重建信号？</h2>
+      <p class="qen" lang="en">Why can compressed sensing reconstruct a signal from far fewer samples than the Nyquist rate demands?</p>
+      <div class="azh" lang="zh">压缩感知利用信号在某一基（如小波）下“稀疏”的特性：只要测量矩阵满足受限等距性质（RIP），用少量随机线性测量加 ℓ₁ 最小化，就能高概率恢复原信号。它颠覆了“采样率须≥2 倍最高频率”的直觉，使 MRI 等能在更少采样下成像。</div>
+      <div class="aen" lang="en">Compressed sensing exploits a signal&#x27;s sparsity in some basis (e.g., wavelets): if the measurement matrix satisfies the restricted isometry property (RIP), a small set of random linear measurements plus ℓ₁ minimization recovers the signal with high probability. It overturned the &#x27;sample rate ≥ 2× bandwidth&#x27; intuition, enabling faster MRI and more.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Candès, E. J., 《压缩感知》, IEEE Transactions on Information Theory 52(2), 2006</p>
+        <p lang="en">Candès, E. J., &#x27;Compressive Sampling&#x27;, IEEE Trans. Inform. Theory 52(2), 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#压缩感知</a> <a class="tag" href="#">#稀疏</a> <a class="tag" href="#">#受限等距</a> <a class="tag" href="#">#ℓ1最小化</a>
+    </article>
+
+
+    <article class="qitem" id="46e86abe8736">
+      <h2 class="qz" lang="zh">为什么搜索引擎用PageRank排序网页？</h2>
+      <p class="qen" lang="en">Why do search engines rank pages with PageRank?</p>
+      <div class="azh" lang="zh">PageRank把网页当作图，用随机游走的概率分布衡量重要性：被重要页面链接多的页面更重要，本质是求解大规模矩阵的特征向量。</div>
+      <div class="aen" lang="en">PageRank treats web pages as a graph and measures importance by a random-walk probability distribution: pages linked by important pages are more important. It is essentially finding the eigenvector of a huge matrix.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PageRank</a> <a class="tag" href="#">#矩阵</a>
+    </article>
+
+
+    <article class="qitem" id="99558f4317c1">
+      <h2 class="qz" lang="zh">为什么卷积能识别图像里的边缘？</h2>
+      <p class="qen" lang="en">Why can convolution detect edges in images?</p>
+      <div class="azh" lang="zh">卷积用一个小滤波器（如差分核）扫过像素，突出相邻亮度的变化处即边缘；多层卷积堆叠学会从边缘到纹理再到物体，是CNN的核心运算。</div>
+      <div class="aen" lang="en">Convolution sweeps a small filter (e.g. a difference kernel) over pixels, highlighting where brightness changes, i.e. edges. Stacking many convolutional layers learns from edges to textures to objects, the core of CNNs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow, I., Bengio, Y. &amp; Courville, A.，《Deep Learning》，MIT Press，2016</p>
+        <p lang="en">Goodfellow, I., Bengio, Y. &amp; Courville, A., Deep Learning, MIT Press, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#卷积</a> <a class="tag" href="#">#图像</a>
+    </article>
+
+
+    <article class="qitem" id="b63def3fc28f">
+      <h2 class="qz" lang="zh">零知识证明（zero-knowledge proof）为什么能让你“证明自己知道某个秘密”却不泄露秘密本身？</h2>
+      <p class="qen" lang="en">Why can a zero-knowledge proof let you &#x27;prove you know a secret&#x27; without revealing anything about it?</p>
+      <div class="azh" lang="zh">零知识证明是一种交互协议：证明者通过多轮“挑战—应答”，让验证者确信某个命题为真（如“我知道某个离散对数”），却学不到秘密的任何信息（模拟器可造出同样分布的假记录）。它在区块链匿名认证与身份系统中至关重要，由戈德瓦塞尔、米卡利、拉克夫于 1985 年形式化。</div>
+      <div class="aen" lang="en">A zero-knowledge proof is an interactive protocol where, through rounds of challenge–response, the verifier becomes convinced a claim is true (e.g., &#x27;I know a discrete log&#x27;) yet learns nothing about the secret (a simulator can fake transcripts with the same distribution). Vital to blockchain anonymous authentication, it was formalized by Goldwasser, Micali, and Rackoff in 1985.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Goldwasser, S., Micali, S., Rackoff, C., 《知识复杂性的零知识证明》, SIAM Journal on Computing 18(1), 1989</p>
+        <p lang="en">Goldwasser, S., Micali, S., Rackoff, C., &#x27;The Knowledge Complexity of Interactive Proof Systems&#x27;, SIAM J. Comput. 18(1), 1989</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#零知识证明</a> <a class="tag" href="#">#交互协议</a> <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="bed542861ce3">
+      <h2 class="qz" lang="zh">为什么量子计算威胁现有密码？</h2>
+      <p class="qen" lang="en">Why does quantum computing threaten current cryptography?</p>
+      <div class="azh" lang="zh">秀尔算法能在多项式时间内分解大整数，使RSA失效；它利用量子叠加做并行计算。这推动了改用格等难解问题的后量子密码研究。</div>
+      <div class="aen" lang="en">Shor&#x27;s algorithm factors large integers in polynomial time, breaking RSA; it exploits quantum superposition for parallel computation. This drives post-quantum cryptography based on harder problems like lattices.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#量子计算</a> <a class="tag" href="#">#密码</a>
+    </article>
+
+
+    <article class="qitem" id="d5f0571ad386">
+      <h2 class="qz" lang="zh">为什么傅里叶变换能把声音拆成频率？</h2>
+      <p class="qen" lang="en">Why can the Fourier transform split sound into frequencies?</p>
+      <div class="azh" lang="zh">任何周期信号都能写成不同频率正弦波的叠加，傅里叶变换给出每个频率的强弱，是音频、图像、通信的数学基石。</div>
+      <div class="aen" lang="en">Any periodic signal is a sum of sine waves at different frequencies; the Fourier transform gives each frequency&#x27;s strength, the mathematical basis of audio, images and communications.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#傅里叶</a> <a class="tag" href="#">#信号</a>
+    </article>
+
+
+    <article class="qitem" id="df140ea28553">
+      <h2 class="qz" lang="zh">为什么哈希能快速查重又不泄露内容？</h2>
+      <p class="qen" lang="en">Why can a hash detect duplicates fast without revealing content?</p>
+      <div class="azh" lang="zh">哈希把任意数据映射成定长摘要，微小输入变化产生大不同输出（雪崩效应）。它单向、不可逆，用于校验与密码存储，是数论与位运算的应用。</div>
+      <div class="aen" lang="en">A hash maps any data to a fixed-length digest where tiny input changes cause big output changes (avalanche effect). It is one-way and irreversible, used for checksums and password storage via number theory and bit operations.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#密码</a>
+    </article>
+
+
+    <article class="qitem" id="49e675fcf91a">
+      <h2 class="qz" lang="zh">为什么纠错码能让划伤的光盘还能读？</h2>
+      <p class="qen" lang="en">Why can error-correcting codes read a scratched disc?</p>
+      <div class="azh" lang="zh">里德-所罗门等纠错码在编码时加入冗余，划伤丢失的部分可由剩余信息数学重建，是有限域与编码论的成果。</div>
+      <div class="aen" lang="en">Codes like Reed-Solomon add redundancy at encoding; scratched, missing parts are mathematically reconstructed from the rest, a result of finite fields and coding theory.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#纠错码</a> <a class="tag" href="#">#编码</a>
+    </article>
+
+
+    <article class="qitem" id="50b34f2c9a2b">
+      <h2 class="qz" lang="zh">为什么压缩能变小又不丢信息（无损）？</h2>
+      <p class="qen" lang="en">Why can compression shrink data without losing information?</p>
+      <div class="azh" lang="zh">无损压缩利用统计冗余，例如把哈哈哈记为哈乘3，用更短编码表示高频模式。信息论（香农熵）给出了压缩的极限。</div>
+      <div class="aen" lang="en">Lossless compression exploits statistical redundancy, e.g. writing hahaha as ha x3, using shorter codes for frequent patterns. Information theory (Shannon entropy) gives the compression limit.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《信息论基础》Cover 与 Thomas</p>
+        <p lang="en">Elements of Information Theory by Cover and Thomas</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#压缩</a> <a class="tag" href="#">#信息论</a>
+    </article>
+
+
+    <article class="qitem" id="61042f418634">
+      <h2 class="qz" lang="zh">里德-所罗门码是什么？</h2>
+      <p class="qen" lang="en">What are Reed–Solomon codes?</p>
+      <div class="azh" lang="zh">里德-所罗门码是一类纠错码，用多项式在多点取值来编码，能纠正一段连续错误。它用于光盘、二维码和深空通信，使受损数据仍可恢复。</div>
+      <div class="aen" lang="en">Reed–Solomon codes encode data as a polynomial sampled at points, correcting burst errors; used in CDs, QR codes and deep-space comms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机数学</a> <a class="tag" href="#">#纠错码</a>
+    </article>
+
+
+    <article class="qitem" id="728a97a246f3">
+      <h2 class="qz" lang="zh">为什么GPS定位至少要3颗卫星，实际却用4颗？</h2>
+      <p class="qen" lang="en">Why does GPS need at least 3 satellites, but actually uses 4?</p>
+      <div class="azh" lang="zh">每颗卫星给出到它的距离（一个球面），3个球面交于一点定位；但还需要第4颗来校正接收机时钟误差（时间乘光速），所以实际用4颗。</div>
+      <div class="aen" lang="en">Each satellite gives a distance (a sphere); three spheres intersect at a point. A fourth corrects the receiver&#x27;s clock error (time times light speed), so four are actually used.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#GPS</a> <a class="tag" href="#">#几何</a>
+    </article>
+
+
+    <article class="qitem" id="7b002c651a06">
+      <h2 class="qz" lang="zh">为什么人工智能（神经网络）本质是数学？</h2>
+      <p class="qen" lang="en">Why is AI (neural networks) essentially mathematics?</p>
+      <div class="azh" lang="zh">神经网络是层层矩阵乘法加非线性函数，训练即用梯度下降最小化损失函数。所谓学习，其实是求解高维优化问题。</div>
+      <div class="aen" lang="en">A neural network is layered matrix multiplication plus nonlinear functions; training minimizes a loss function by gradient descent. Learning is really solving a high-dimensional optimization problem.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#神经网络</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="85ee0a17351d">
+      <h2 class="qz" lang="zh">为什么 JPEG 图像压缩要用离散余弦变换（DCT）把图像块转成频率？</h2>
+      <p class="qen" lang="en">Why does JPEG image compression use the discrete cosine transform (DCT) to turn image blocks into frequencies?</p>
+      <div class="azh" lang="zh">JPEG 把图像切成 8×8 小块，对每块做 DCT，把像素值变成一组“频率系数”：低频系数承载整体明暗、高频系数承载细微边缘。人眼对高频不敏感，于是可大幅量化并丢弃高频系数，再用之字形扫描与熵编码压缩。DCT 能量集中、实数运算快，且边界不引入明显振铃，因而取代傅里叶成为图像标准。</div>
+      <div class="aen" lang="en">JPEG splits an image into 8×8 blocks and applies the DCT to each, converting pixels into frequency coefficients: low frequencies carry overall brightness, high frequencies carry fine edges. Since human eyes are insensitive to high frequencies, those coefficients are heavily quantized and dropped, then zig-zag scanned and entropy-coded. The DCT concentrates energy, uses fast real arithmetic, and avoids visible boundary ringing, so it became the image standard over the Fourier transform.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wallace, G. K.,《The JPEG still picture compression standard》,IEEE Transactions on Consumer Electronics,1992 (DOI: 10.1109/30.125072)</p>
+        <p lang="en">Wallace, G. K., &#x27;The JPEG still picture compression standard&#x27;, IEEE Transactions on Consumer Electronics, 1992, DOI: 10.1109/30.125072</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/30.125072" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/30.125072</a></p>
+        
+      </details>
+      <a class="tag" href="#">#离散余弦变换</a> <a class="tag" href="#">#JPEG</a> <a class="tag" href="#">#图像压缩</a> <a class="tag" href="#">#频率系数</a>
+    </article>
+
+
+    <article class="qitem" id="924a77736ba1">
+      <h2 class="qz" lang="zh">快速傅里叶变换（FFT）是什么？</h2>
+      <p class="qen" lang="en">What is the Fast Fourier Transform (FFT)?</p>
+      <div class="azh" lang="zh">FFT 把离散傅里叶变换的计算量从 O(n²) 降到 O(n log n)，通过分治把信号分解为奇偶半。它是数字信号、图像压缩与卷积神经网络加速的底层引擎。</div>
+      <div class="aen" lang="en">The FFT computes the discrete Fourier transform in O(n log n) via divide-and-conquer, powering digital signal processing, compression and CNNs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》Cormen 等</p>
+        <p lang="en">Introduction to Algorithms by Cormen Leiserson Rivest and Stein</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机数学</a> <a class="tag" href="#">#FFT</a>
+    </article>
+
+
+    <article class="qitem" id="9492ff4c61d6">
+      <h2 class="qz" lang="zh">为什么区块链用哈希链防篡改？</h2>
+      <p class="qen" lang="en">Why does a blockchain use a hash chain to prevent tampering?</p>
+      <div class="azh" lang="zh">每个区块含上一块的哈希，改动任一区块会使后续所有哈希失效，需要重算全网，成本极高，从而保证不可篡改，是密码学与分布式的结合。</div>
+      <div class="aen" lang="en">Each block contains the previous block&#x27;s hash; altering any block invalidates all subsequent hashes, forcing a costly full recompute, thus ensuring immutability, a blend of cryptography and distributed systems.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">中本聪《Bitcoin: A Peer-to-Peer Electronic Cash System》, 2008</p>
+        <p lang="en">S. Nakamoto, &#x27;Bitcoin: A Peer-to-Peer Electronic Cash System&#x27;, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="a2474e00d829">
+      <h2 class="qz" lang="zh">为什么密码学离不开质数？</h2>
+      <p class="qen" lang="en">Why does cryptography rely on prime numbers?</p>
+      <div class="azh" lang="zh">RSA等公钥加密基于大数易乘难分解：两个质数相乘很快，反过来分解极慢。质数的乘法单向性保证了通信安全。</div>
+      <div class="aen" lang="en">Public-key encryption like RSA rests on easy-to-multiply-hard-to-factor: multiplying two primes is fast, factoring back is extremely slow. The one-way nature of prime multiplication secures communication.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#质数</a> <a class="tag" href="#">#密码</a>
+    </article>
+
+
+    <article class="qitem" id="b273b1d19546">
+      <h2 class="qz" lang="zh">为什么随机森林比单一模型更稳？</h2>
+      <p class="qen" lang="en">Why is a random forest more stable than a single model?</p>
+      <div class="azh" lang="zh">多个弱模型在不同样本上训练，投票平均可抵消各自误差（降低方差），是统计集成与自助采样思想的体现。</div>
+      <div class="aen" lang="en">Many weak models trained on different samples vote or average, canceling individual errors (reducing variance). It reflects statistical ensemble and bootstrap ideas.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Efron, B. 与 Hastie, T., 《计算机时代的统计推断》, Cambridge University Press</p>
+        <p lang="en">Efron, B. &amp; Hastie, T., &#x27;Computer Age Statistical Inference&#x27;, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#集成学习</a> <a class="tag" href="#">#统计</a>
+    </article>
+
+
+    <article class="qitem" id="e40c9c63d062">
+      <h2 class="qz" lang="zh">为什么蒙特卡洛方法用随机就能算积分？</h2>
+      <p class="qen" lang="en">Why can Monte Carlo methods compute integrals using randomness?</p>
+      <div class="azh" lang="zh">用大量随机撒点，落在目标区域内的比例乘以总面积约等于积分值，样本越多越准。它把确定性问题转为概率估计，适合高维与复杂形状。</div>
+      <div class="aen" lang="en">By scattering many random points, the fraction landing inside a region times the total area approximates the integral, more accurate with more samples. It turns a deterministic problem into a probabilistic estimate, great for high dimensions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#蒙特卡洛</a> <a class="tag" href="#">#概率</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私计算与安全多方 privacy-computing-mpc · 计算机 Computer Science | 问答</title>
+<meta name="description" content="隐私计算与安全多方（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="隐私计算与安全多方 privacy-computing-mpc · 计算机 Computer Science | 问答">
+<meta property="og:description" content="隐私计算与安全多方（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/privacy-computing-mpc/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/privacy-computing-mpc/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>隐私计算与安全多方</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>隐私计算与安全多方 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#7cb805e21b41">全同态加密（FHE）如何通过「自举」（bootstrapping）把只能做有限次</a></li><li><a href="#cs_20_013">在 ε-差分隐私中,隐私预算 ε 如何刻画单条记录存在与否所引起的输出分布差异?</a></li><li><a href="#52e9b76dd542">零知识证明让证明者在不透露「知识」本身的情况下，如何让验证者信服某个陈述为真？</a></li><li><a href="#64a37d959ca6">同态加密允许在密文上做计算的意义是什么？</a></li><li><a href="#a83e44d2b34a">联邦学习如何在不上传原始数据的情况下联合多方训练模型？</a></li><li><a href="#cs_20_005">差分隐私中的 ε 参数究竟度量什么?把它从 1 调大到 10 意味着什么?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="7cb805e21b41">
+      <h2 class="qz" lang="zh">全同态加密（FHE）如何通过「自举」（bootstrapping）把只能做有限次运算的方案变成 unlimited？</h2>
+      <p class="qen" lang="en">How does fully homomorphic encryption (FHE) use bootstrapping to turn a scheme limited to a few operations into one with unlimited depth?</p>
+      <div class="azh" lang="zh">早期方案因噪声随运算累积而只能做有限次同态操作；自举把密文本身作为电路输入，对解密函数再加密并同态求值，从而刷新密文、降低噪声。Gentry 据此首次构造出可任意次计算的 FHE。</div>
+      <div class="aen" lang="en">Early schemes could only do a limited number of homomorphic operations because noise grows with computation; bootstrapping feeds the ciphertext itself as circuit input, re-encrypts the decryption function, and evaluates it homomorphically to refresh the ciphertext and reduce noise. Gentry used this to first construct an FHE allowing arbitrary-depth computation.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#全同态加密</a> <a class="tag" href="#">#自举</a> <a class="tag" href="#">#噪声</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_013">
+      <h2 class="qz" lang="zh">在 ε-差分隐私中,隐私预算 ε 如何刻画单条记录存在与否所引起的输出分布差异?拉普拉斯机制为什么能满足 ε-差分隐私,其噪声尺度由什么决定?</h2>
+      <p class="qen" lang="en">In ε-differential privacy, how does the privacy budget ε characterize the change in output distribution caused by one record&#x27;s presence or absence? Why does the Laplace mechanism satisfy ε-differential privacy, and what determines its noise scale?</p>
+      <div class="azh" lang="zh">ε-差分隐私要求:无论某条记录是否在数据集中,机制输出任意结果的概率之比都不超过 e^ε,因此 ε 直接给出关于单个个体的可推断信息上限,取值越小保护越强。拉普拉斯机制在数值查询结果上叠加尺度参数为 Δf/ε 的拉普拉斯噪声,其中 Δf 是查询在相邻数据集上的最大变化量即全局敏感度;由于拉普拉斯密度沿偏移量指数衰减,相邻数据集的输出密度比恰不超过 e^ε,隐私保证由此得证。同一数据的多次发布会累计消耗预算,总泄露需用串行组合定理加以控制。</div>
+      <div class="aen" lang="en">ε-differential privacy requires that, whether or not any single record is in the dataset, the ratio of probabilities of any given output stays within e^ε, so ε directly bounds what can be inferred about one individual, with smaller values meaning stronger protection. The Laplace mechanism adds noise from a Laplace distribution with scale Δf/ε to a numeric query result, where Δf is the global sensitivity — the query&#x27;s maximum change between adjacent datasets; because Laplace density decays exponentially with offset, adjacent datasets produce output densities whose ratio never exceeds e^ε, which proves the guarantee. Repeated releases on the same data consume budget cumulatively, so total leakage is controlled by sequential composition.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Dwork 与 Roth,《The Algorithmic Foundations of Differential Privacy》,Foundations and Trends® in Theoretical Computer Science,2014 (DOI: 10.1561/0400000042)</p>
+        <p lang="en">Dwork, C. &amp; Roth, A., &#x27;The Algorithmic Foundations of Differential Privacy&#x27;, Foundations and Trends® in Theoretical Computer Science, 2014, DOI: 10.1561/0400000042</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1561/0400000042" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1561/0400000042</a></p>
+        
+      </details>
+      <a class="tag" href="#">#差分隐私</a> <a class="tag" href="#">#拉普拉斯机制</a>
+    </article>
+
+
+    <article class="qitem" id="52e9b76dd542">
+      <h2 class="qz" lang="zh">零知识证明让证明者在不透露「知识」本身的情况下，如何让验证者信服某个陈述为真？</h2>
+      <p class="qen" lang="en">How does a zero-knowledge proof let a prover convince a verifier that a statement is true without revealing the knowledge itself?</p>
+      <div class="azh" lang="zh">零知识证明要求证明者通过交互或预处理，使验证者除了「陈述成立」外学不到任何额外信息（零知识）。zk-SNARK 等构造还能把证明压缩到很短并快速验证，被用于区块链隐私与可扩展性。</div>
+      <div class="aen" lang="en">A zero-knowledge proof requires the prover, through interaction or preprocessing, to leave the verifier learning nothing beyond the fact that the statement holds (zero knowledge). Constructions like zk-SNARKs also compress proofs to be short and fast to verify, used for blockchain privacy and scalability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#零知识证明</a> <a class="tag" href="#">#zk-SNARK</a> <a class="tag" href="#">#可验证</a>
+    </article>
+
+
+    <article class="qitem" id="64a37d959ca6">
+      <h2 class="qz" lang="zh">同态加密允许在密文上做计算的意义是什么？</h2>
+      <p class="qen" lang="en">What is the significance of being able to compute on ciphertext in homomorphic encryption?</p>
+      <div class="azh" lang="zh">同态加密使第三方可在不解密的前提下对加密数据做运算，结果解密后与在明文上运算一致。这能在把数据交给不可信云处理时仍保护内容，是隐私计算的核心原语。</div>
+      <div class="aen" lang="en">Homomorphic encryption lets a third party compute on encrypted data without decrypting it, and the decrypted result matches computing on the plaintext. This protects content even when data is processed by an untrusted cloud, a core primitive of privacy computing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Gentry, A Fully Homomorphic Encryption Scheme, PhD Thesis, Stanford 2009</p>
+        <p lang="en">Gentry, A Fully Homomorphic Encryption Scheme, PhD Thesis, Stanford 2009</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#同态加密</a> <a class="tag" href="#">#密文计算</a> <a class="tag" href="#">#隐私计算</a>
+    </article>
+
+
+    <article class="qitem" id="a83e44d2b34a">
+      <h2 class="qz" lang="zh">联邦学习如何在不上传原始数据的情况下联合多方训练模型？</h2>
+      <p class="qen" lang="en">How does federated learning train a model jointly across parties without uploading raw data?</p>
+      <div class="azh" lang="zh">各方在本地用自有数据训练，只把模型更新（梯度或参数）上传到服务器聚合，原始数据始终留在本地。它通过加噪或加密聚合保护参与方隐私，但面临通信开销与投毒攻击等挑战。</div>
+      <div class="aen" lang="en">Each party trains locally on its own data and uploads only model updates (gradients or parameters) for the server to aggregate, keeping raw data on device. Noise or encrypted aggregation protects participant privacy, though it faces challenges like communication overhead and poisoning attacks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">McMahan et al., Communication-Efficient Learning of Deep Networks from Decentralized Data, AISTATS 2017</p>
+        <p lang="en">McMahan et al., Communication-Efficient Learning from Decentralized Data, AISTATS 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.70675/bf617b44z43eaz4310zb1bdz5f5779d80456" target="_blank" rel="noopener">核验依据 1 DOI 10.70675/bf617b44z43eaz4310zb1bdz5f5779d80456</a></p>
+        
+      </details>
+      <a class="tag" href="#">#联邦学习</a> <a class="tag" href="#">#本地训练</a> <a class="tag" href="#">#隐私保护</a>
+    </article>
+
+
+    <article class="qitem" id="cs_20_005">
+      <h2 class="qz" lang="zh">差分隐私中的 ε 参数究竟度量什么?把它从 1 调大到 10 意味着什么?</h2>
+      <p class="qen" lang="en">What does the epsilon parameter actually measure in differential privacy, and what does raising it from 1 to 10 mean?</p>
+      <div class="azh" lang="zh">ε 是量化的隐私损失预算:它将任一个体的加入或移除所引起的输出分布变化倍率上限约束在 e^ε,ε 越小,输出越不依赖于任何个人的数据。ε 从 1 升至 10 时,允许的分布偏移由约 2.7 倍放宽到约两万两千倍,统计精度显著改善,但单条记录的影响几乎失去约束,因此真实系统通常按查询敏感度拆分并限额分配预算。</div>
+      <div class="aen" lang="en">Epsilon is a quantified privacy-loss budget: it caps the multiplicative change in the output distribution caused by adding or removing any one individual at e^ε — the smaller ε is, the less outputs depend on any person&#x27;s data. Moving from 1 to 10 relaxes that factor from about 2.7 to roughly 22,000: statistical accuracy improves markedly while a single record&#x27;s influence becomes nearly unconstrained, so real systems split and cap the budget according to query sensitivity.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Dwork、McSherry、Nissim 与 Smith《Calibrating Noise to Sensitivity in Private Data Analysis》,TCC 2006 会议论文</p>
+        <p lang="en">Dwork, McSherry, Nissim &amp; Smith, &#x27;Calibrating Noise to Sensitivity in Private Data Analysis&#x27;, Proceedings of TCC 2006</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#隐私增强技术</a> <a class="tag" href="#">#差分隐私</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

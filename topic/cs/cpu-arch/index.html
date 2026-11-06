@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cpu_arch cpu-arch · 计算机 Computer Science | 问答</title>
+<meta name="description" content="cpu_arch（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="cpu_arch cpu-arch · 计算机 Computer Science | 问答">
+<meta property="og:description" content="cpu_arch（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/cpu-arch/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/cpu-arch/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>cpu_arch</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>cpu_arch <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>14</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1e4941059d85">什么是投机执行（Speculative Execution）？它和幽灵漏洞有什么</a></li><li><a href="#42f540c18a94">什么是分支预测？预测错了为什么会变慢？</a></li><li><a href="#53ac56266698">什么是乱序执行（Out-of-Order Execution）？</a></li><li><a href="#5ac131477907">什么是硬件预取（Prefetch）？</a></li><li><a href="#8391567b8f8a">什么是缓存一致性（Cache Coherence）？</a></li><li><a href="#91af76d48199">指令缓存和数据缓存（I-Cache / D-Cache）有什么区别？</a></li><li><a href="#eb511a6a80c6">什么是超标量（Superscalar）和 SIMD？</a></li><li><a href="#27f3cfa9e621">什么是 CPU 的 IPC（每周期指令数）？</a></li><li><a href="#38e6f25cad3e">汇编语言是什么？今天为什么还有人学它？</a></li><li><a href="#7ad2810d551f">什么是指令集架构（ISA）？x86 和 ARM 主要区别是什么？</a></li><li><a href="#551d6eb3bfa6">什么是 CPU 流水线？为什么它能让处理器更快？</a></li><li><a href="#7bd6b5b14adc">时钟频率（GHz）是什么？频率越高电脑一定越快吗？</a></li><li><a href="#c33222d0790a">为什么 CPU 需要缓存（Cache）？L1、L2、L3 有什么区别？</a></li><li><a href="#cbc4de06af27">什么是寄存器？它和内存有什么不同？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1e4941059d85">
+      <h2 class="qz" lang="zh">什么是投机执行（Speculative Execution）？它和幽灵漏洞有什么关系？</h2>
+      <p class="qen" lang="en">What is speculative execution, and how is it linked to the Spectre vulnerability?</p>
+      <div class="azh" lang="zh">投机执行会提前猜着跑可能用不到的指令以提速，出错再回滚。幽灵利用这一点，让被丢弃的推测在缓存留下痕迹，从而偷到数据。</div>
+      <div class="aen" lang="en">Speculative execution runs possibly unneeded instructions ahead for speed, rolling back on error. Spectre exploits it: discarded speculation leaves cache traces that leak data.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#幽灵</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="42f540c18a94">
+      <h2 class="qz" lang="zh">什么是分支预测？预测错了为什么会变慢？</h2>
+      <p class="qen" lang="en">What is branch prediction, and why does a wrong prediction slow things down?</p>
+      <div class="azh" lang="zh">分支（如 if）让 CPU 不知下一步走哪边，预测器猜测方向并提前执行。猜错就要丢弃已做的工作并重来，造成停顿。</div>
+      <div class="aen" lang="en">A branch such as if makes the next path uncertain; the predictor guesses and executes ahead. A wrong guess discards that work and restarts, causing a stall.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#分支预测</a>
+    </article>
+
+
+    <article class="qitem" id="53ac56266698">
+      <h2 class="qz" lang="zh">什么是乱序执行（Out-of-Order Execution）？</h2>
+      <p class="qen" lang="en">What is out-of-order execution?</p>
+      <div class="azh" lang="zh">CPU 不严格按程序顺序执行指令，而是看哪些数据已就绪就先算哪些，最后再按原顺序提交结果，以隐藏等待、提升效率。</div>
+      <div class="aen" lang="en">The CPU executes instructions as their data becomes ready rather than strictly in program order, then retires results in order, hiding stalls and boosting efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#乱序执行</a>
+    </article>
+
+
+    <article class="qitem" id="5ac131477907">
+      <h2 class="qz" lang="zh">什么是硬件预取（Prefetch）？</h2>
+      <p class="qen" lang="en">What is hardware prefetching?</p>
+      <div class="azh" lang="zh">预取器会猜测接下来要用的数据，提前从内存搬进缓存，等真正用到时已就位，减少等待。猜错则会浪费带宽。</div>
+      <div class="aen" lang="en">A prefetcher predicts upcoming data and loads it into cache early, so it is ready when needed and stalls shrink. Wrong guesses waste bandwidth.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#预取</a>
+    </article>
+
+
+    <article class="qitem" id="8391567b8f8a">
+      <h2 class="qz" lang="zh">什么是缓存一致性（Cache Coherence）？</h2>
+      <p class="qen" lang="en">What is cache coherence?</p>
+      <div class="azh" lang="zh">多核各自有缓存，若同一数据被改，其他核可能看到旧值。缓存一致性协议（如 MESI）保证多核看到的数据最终一致。</div>
+      <div class="aen" lang="en">With per-core caches, one core&#x27;s change could leave others seeing stale data. Coherence protocols like MESI ensure multicore views stay consistent.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#多核</a>
+    </article>
+
+
+    <article class="qitem" id="91af76d48199">
+      <h2 class="qz" lang="zh">指令缓存和数据缓存（I-Cache / D-Cache）有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between instruction cache (I-Cache) and data cache (D-Cache)?</p>
+      <div class="azh" lang="zh">I-Cache 存即将执行的指令，D-Cache 存运算用的数据。分开设计可让取指令和取数据同时进行，提升并行度。</div>
+      <div class="aen" lang="en">I-Cache holds instructions to execute; D-Cache holds data being computed. Splitting them lets fetching instructions and data happen in parallel.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#指令</a>
+    </article>
+
+
+    <article class="qitem" id="eb511a6a80c6">
+      <h2 class="qz" lang="zh">什么是超标量（Superscalar）和 SIMD？</h2>
+      <p class="qen" lang="en">What are superscalar execution and SIMD?</p>
+      <div class="azh" lang="zh">超标量指 CPU 一个周期能发射多条指令并行。SIMD 是一条指令同时对多个数据做同样运算（如一次加 8 个数），适合图像和音视频。</div>
+      <div class="aen" lang="en">Superscalar means issuing multiple instructions per cycle. SIMD runs one instruction on many data items at once, such as adding 8 numbers together, great for media.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#SIMD</a> <a class="tag" href="#">#并行</a>
+    </article>
+
+
+    <article class="qitem" id="27f3cfa9e621">
+      <h2 class="qz" lang="zh">什么是 CPU 的 IPC（每周期指令数）？</h2>
+      <p class="qen" lang="en">What is IPC (instructions per cycle) for a CPU?</p>
+      <div class="azh" lang="zh">IPC 表示每个时钟周期平均完成的指令数。同频率下 IPC 越高性能越强，是衡量架构效率的重要指标。</div>
+      <div class="aen" lang="en">IPC is the average number of instructions completed per clock cycle. At the same frequency, higher IPC means better performance and reflects architectural efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#IPC</a>
+    </article>
+
+
+    <article class="qitem" id="38e6f25cad3e">
+      <h2 class="qz" lang="zh">汇编语言是什么？今天为什么还有人学它？</h2>
+      <p class="qen" lang="en">What is assembly language, and why do people still learn it?</p>
+      <div class="azh" lang="zh">汇编是离机器码最近的人读语言，每条通常对应一条 CPU 指令。它用于嵌入式、驱动、性能极限优化和安全逆向分析。</div>
+      <div class="aen" lang="en">Assembly is the human-readable form closest to machine code, roughly one line per CPU instruction. It is used in embedded systems, drivers, extreme optimization, and security analysis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#汇编</a> <a class="tag" href="#">#底层</a>
+    </article>
+
+
+    <article class="qitem" id="7ad2810d551f">
+      <h2 class="qz" lang="zh">什么是指令集架构（ISA）？x86 和 ARM 主要区别是什么？</h2>
+      <p class="qen" lang="en">What is an instruction set architecture (ISA), and how do x86 and ARM differ?</p>
+      <div class="azh" lang="zh">ISA 是 CPU 能理解的指令规范。x86 是复杂指令集（CISC），单条指令能做复杂事；ARM 是精简指令集（RISC），指令简单、功耗低，常见于手机。</div>
+      <div class="aen" lang="en">An ISA is the specification of instructions a CPU understands. x86 is CISC with complex instructions, while ARM is RISC with simple, low-power instructions common in phones.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#指令集</a> <a class="tag" href="#">#x86</a> <a class="tag" href="#">#ARM</a>
+    </article>
+
+
+    <article class="qitem" id="551d6eb3bfa6">
+      <h2 class="qz" lang="zh">什么是 CPU 流水线？为什么它能让处理器更快？</h2>
+      <p class="qen" lang="en">What is CPU pipelining, and why does it make processors faster?</p>
+      <div class="azh" lang="zh">流水线把一条指令拆成取指、译码、执行等多个阶段，像工厂流水线一样让不同指令的不同阶段同时跑，提高单位时间完成的指令数。</div>
+      <div class="aen" lang="en">Pipelining splits an instruction into stages such as fetch, decode, and execute, so different stages of different instructions run at once like a factory line, raising throughput.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#流水线</a>
+    </article>
+
+
+    <article class="qitem" id="7bd6b5b14adc">
+      <h2 class="qz" lang="zh">时钟频率（GHz）是什么？频率越高电脑一定越快吗？</h2>
+      <p class="qen" lang="en">What is clock frequency (GHz)? Does higher frequency always mean a faster computer?</p>
+      <div class="azh" lang="zh">频率表示每秒时钟脉冲次数，类似节拍。频率高通常更快，但还要看每周期能做多少事（IPC）和散热，所以不能只看 GHz。</div>
+      <div class="aen" lang="en">Frequency is clock pulses per second, like a metronome. Higher is usually faster, but it also depends on work per cycle (IPC) and cooling, so GHz alone isn&#x27;t everything.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#时钟频率</a>
+    </article>
+
+
+    <article class="qitem" id="c33222d0790a">
+      <h2 class="qz" lang="zh">为什么 CPU 需要缓存（Cache）？L1、L2、L3 有什么区别？</h2>
+      <p class="qen" lang="en">Why does a CPU need caches, and what are L1, L2, and L3?</p>
+      <div class="azh" lang="zh">内存比 CPU 慢很多，缓存用更快但更小的 SRAM 暂存常用数据。L1 最快最小、常在每个核心内；L2 次之；L3 更大、常由多核共享。</div>
+      <div class="aen" lang="en">Memory is much slower than the CPU, so caches use faster but smaller SRAM to hold frequently used data. L1 is fastest and smallest per core, L2 is next, and L3 is larger and often shared across cores.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#缓存</a>
+    </article>
+
+
+    <article class="qitem" id="cbc4de06af27">
+      <h2 class="qz" lang="zh">什么是寄存器？它和内存有什么不同？</h2>
+      <p class="qen" lang="en">What are registers, and how do they differ from memory?</p>
+      <div class="azh" lang="zh">寄存器是 CPU 内部极少、极快、临时存放正在运算数据的小格子。内存大但慢，数据要先搬进寄存器才能被计算。</div>
+      <div class="aen" lang="en">Registers are a tiny, ultra-fast on-CPU storage for data being computed. Memory is large but slow, so data must be loaded into registers first.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#寄存器</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

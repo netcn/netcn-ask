@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mobile-comms · 工程技术 Engineering | 问答</title>
+<meta name="description" content="mobile-comms（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mobile-comms · 工程技术 Engineering | 问答">
+<meta property="og:description" content="mobile-comms（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/mobile-comms/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/mobile-comms/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>mobile-comms</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>mobile-comms <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#eng_23_003">大规模MIMO基站部署几十上百根天线，究竟换来什么好处？</a></li><li><a href="#eng_23_019">5G大规模MIMO基站不转动任何天线，靠什么原理把无线波束对准用户？</a></li><li><a href="#eng_23_011">用户开车经过小区边界时，蜂窝网络靠什么机制保证通话和数据业务不中断？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="eng_23_003">
+      <h2 class="qz" lang="zh">大规模MIMO基站部署几十上百根天线，究竟换来什么好处？</h2>
+      <p class="qen" lang="en">What benefit do massive-MIMO base stations gain from deploying dozens or even hundreds of antennas?</p>
+      <div class="azh" lang="zh">当天线数远大于同时服务的用户数时，各用户的信道向量趋于相互正交并出现“信道硬化”，简单的线性预编码就能把每路信号在空间上对准各自用户、彼此几乎不干扰，多个用户因而可以共用同一时频资源，频谱效率成倍提升；全部天线的相干叠加还带来阵列增益，用更低的发射功率即可维持原速率。Marzetta的论文最早给出了这一极限性能分析。</div>
+      <div class="aen" lang="en">When antenna count greatly exceeds the number of simultaneously served users, user channel vectors become nearly mutually orthogonal and exhibit “channel hardening”: simple linear precoding can focus each signal spatially onto its intended user with little mutual interference, so many users share the same time-frequency resource and spectral efficiency multiplies. Coherent combining across all antennas additionally provides array gain, maintaining throughput at lower transmit power. Marzetta&#x27;s seminal paper first quantified these asymptotic gains.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rappaport《无线通信》；3GPP 5G 标准；Proakis《数字通信》</p>
+        <p lang="en">Rappaport, Wireless Communications; 3GPP 5G standards; Proakis, Digital Communications</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2462469W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2462469W：Wireless communications</a></p>
+        
+      </details>
+      <a class="tag" href="#">#蜂窝网络</a> <a class="tag" href="#">#大规模MIMO</a> <a class="tag" href="#">#频谱效率</a>
+    </article>
+
+
+    <article class="qitem" id="eng_23_019">
+      <h2 class="qz" lang="zh">5G大规模MIMO基站不转动任何天线，靠什么原理把无线波束对准用户？</h2>
+      <p class="qen" lang="en">By what principle does a 5G massive-MIMO base station point its radio beams at users without moving any antenna?</p>
+      <div class="azh" lang="zh">这是相控阵原理：基站给阵列中每副天线馈入带独立相位与幅度权值的同一信号，各单元波前仅在目标方向同相叠加、其他方向相消，等效波束即被“电扫”向该用户。权值来自信道估计：TDD制式上下行共用同一频带、信道互易，基站测得上行导频的信道响应即可直接算出下行权值，无需反馈开销，也无需任何机械转动。</div>
+      <div class="aen" lang="en">This is the phased-array principle: the station feeds every antenna element the same signal with its own phase and amplitude weights, so the elementary wavefronts add coherently only toward the target user and cancel elsewhere, steering the synthesized beam electronically. The weights come from channel estimation: in TDD the uplink and downlink share one band, the channel is reciprocal, and uplink pilots directly yield the downlink weights—no feedback overhead and no moving parts.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">T.L. Marzetta《Noncooperative Cellular Wireless with Unlimited Numbers of Base Station Antennas》，IEEE Transactions on Wireless Communications，2010年，DOI: 10.1109/TWC.2010.092810.091092</p>
+        <p lang="en">T.L. Marzetta, Noncooperative Cellular Wireless with Unlimited Numbers of Base Station Antennas, IEEE Transactions on Wireless Communications, 2010, DOI: 10.1109/TWC.2010.092810.091092</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/twc.2010.092810.091092" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1109/twc.2010.092810.091092：Noncooperativ</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大规模MIMO</a> <a class="tag" href="#">#波束赋形</a> <a class="tag" href="#">#相控阵</a> <a class="tag" href="#">#TDD互易性</a>
+    </article>
+
+
+    <article class="qitem" id="eng_23_011">
+      <h2 class="qz" lang="zh">用户开车经过小区边界时，蜂窝网络靠什么机制保证通话和数据业务不中断？</h2>
+      <p class="qen" lang="en">What mechanism lets a cellular network keep calls and data sessions running while a user crosses a cell boundary in a moving vehicle?</p>
+      <div class="azh" lang="zh">核心是切换：终端持续对服务小区和邻区进行信号强度与质量测量并上报。当满足触发条件（如3GPP定义的A3事件——邻区信号优于服务小区一个偏置量并持续一段时间），网络便命令终端改挂到新小区的无线资源上继续通信。协议还配置滞后偏置与触发时延，防止终端在边界处来回“乒乓”切换，以此在移动中维持会话连续。</div>
+      <div class="aen" lang="en">The key process is handover. The handset continuously measures signal strength and quality from its serving cell and neighbours and reports the results; when a trigger such as 3GPP Event A3 fires — a neighbour staying better than the serving cell by an offset for a set time — the network moves the phone onto the new cell&#x27;s radio resources. Hysteresis margins and time-to-trigger delays stop ping-ponging at the boundary, preserving session continuity.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">3GPP TS 38.331《NR无线资源控制(RRC)协议规范》（规定Event A3等测量报告触发条件）</p>
+        <p lang="en">3GPP TS 38.331, NR Radio Resource Control (RRC) protocol specification (defines Event A3 and related measurement reporting triggers)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#切换</a> <a class="tag" href="#">#A3事件</a> <a class="tag" href="#">#乒乓效应</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

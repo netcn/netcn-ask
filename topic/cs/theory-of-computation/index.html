@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theory of Computation theory-of-computation · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Theory of Computation（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Theory of Computation theory-of-computation · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Theory of Computation（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/theory-of-computation/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/theory-of-computation/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Theory of Computation</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Theory of Computation <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#0cc0a198a8c1">什么是停机问题？</a></li><li><a href="#26c66190077f">图灵机和丘奇-图灵论题是怎么定义『可计算』的？</a></li><li><a href="#5cf4ede1ac2a">图灵机（Turing machine）是什么？它为什么是计算理论的基石？</a></li><li><a href="#9c91856ae11d">为什么存在计算机『原则上也无法解决』的问题？</a></li><li><a href="#a7601b775c0b">什么是丘奇-图灵论题？</a></li><li><a href="#055bb6805142">有限自动机（finite automaton）和正则语言是什么关系？</a></li><li><a href="#3a4f18aa0ef7">什么是有限自动机？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="0cc0a198a8c1">
+      <h2 class="qz" lang="zh">什么是停机问题？</h2>
+      <p class="qen" lang="en">What is the halting problem?</p>
+      <div class="azh" lang="zh">停机问题问：能否写一个程序，判断任意给定程序在任意输入下是否会永远运行下去。图灵证明这是不可能的——不存在通用的停机判定器，说明有些问题计算机永远解不了。</div>
+      <div class="aen" lang="en">The halting problem asks whether a program can decide, for any given program and input, whether it will run forever. Turing proved this impossible—no universal halting decider exists—showing some problems are forever beyond computation.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">阿兰·图灵 1936 年论文《论可计算数》</p>
+        <p lang="en">Alan Turing, On Computable Numbers (1936)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#停机问题</a> <a class="tag" href="#">#不可判定</a> <a class="tag" href="#">#图灵</a>
+    </article>
+
+
+    <article class="qitem" id="26c66190077f">
+      <h2 class="qz" lang="zh">图灵机和丘奇-图灵论题是怎么定义『可计算』的？</h2>
+      <p class="qen" lang="en">How do the Turing machine and Church-Turing thesis define &#x27;computable&#x27;?</p>
+      <div class="azh" lang="zh">图灵在 1936 年提出一种带读写头、在无限纸带上运作的抽象机器，能用精确规则模拟任何按部就班的算法；丘奇-图灵论题断言所有『直观可计算』的函数都能被图灵机计算。这成为现代计算理论的基石。</div>
+      <div class="aen" lang="en">Turing proposed in 1936 an abstract machine with a read/write head on an infinite tape that can simulate any step-by-step algorithm by precise rules; the Church-Turing thesis asserts that every &#x27;intuitively computable&#x27; function is computable by a Turing machine. It became the foundation of computation theory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05 · 4 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Turing《论可计算数》(1936)；Church《lambda 演算》(1936)；Sipser《计算理论导论》</p>
+        <p lang="en">Turing, &#x27;On Computable Numbers&#x27; (1936); Church, &#x27;An unsolvable problem&#x27; (1936); Sipser, &#x27;Introduction to the Theory of Computation&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a> · <a class="evlink" href="https://doi.org/10.2307/2371045" target="_blank" rel="noopener">核验依据 3 Crossref DOI 10.2307/2371045</a></p>
+        
+      </details>
+      <a class="tag" href="#">#图灵机</a> <a class="tag" href="#">#丘奇-图灵</a> <a class="tag" href="#">#可计算</a> <a class="tag" href="#">#纸带</a>
+    </article>
+
+
+    <article class="qitem" id="5cf4ede1ac2a">
+      <h2 class="qz" lang="zh">图灵机（Turing machine）是什么？它为什么是计算理论的基石？</h2>
+      <p class="qen" lang="en">What is a Turing machine, and why is it foundational to computation theory?</p>
+      <div class="azh" lang="zh">图灵机是图灵在 1936 年提出的抽象计算模型：一条无限长纸带加上一个按规则读写并移动的读写头，足以形式化『可计算』的概念。它定义了算法可解问题的边界，并引出了停机问题等不可判定性结论。几乎所有现代计算机的能力都不超出图灵机可模拟的范围。</div>
+      <div class="aen" lang="en">A Turing machine, proposed by Turing in 1936, is an abstract model: an infinite tape plus a head that reads, writes, and moves according to rules, sufficient to formalize the notion of &#x27;computable&#x27;. It defines the boundary of algorithmically solvable problems and yields undecidability results such as the halting problem. Essentially no modern computer exceeds what a Turing machine can simulate.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Turing 1936；Sipser《计算理论导引》</p>
+        <p lang="en">Turing (1936); Sipser, Introduction to the Theory of Computation</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#图灵机</a> <a class="tag" href="#">#可计算性</a> <a class="tag" href="#">#停机问题</a> <a class="tag" href="#">#图灵</a>
+    </article>
+
+
+    <article class="qitem" id="9c91856ae11d">
+      <h2 class="qz" lang="zh">为什么存在计算机『原则上也无法解决』的问题？</h2>
+      <p class="qen" lang="en">Why are there problems that are in principle unsolvable by computers?</p>
+      <div class="azh" lang="zh">图灵用对角线法证明『停机问题』不可判定：不存在一个通用程序能判断任意程序对任意输入是否会停机。还有忙碌海狸、希尔伯特第十问题等许多不可判定问题，说明算力再强也跨越不了某些边界。</div>
+      <div class="aen" lang="en">Turing used a diagonal argument to prove the halting problem undecidable: no universal program can decide whether an arbitrary program halts on an arbitrary input. Many other problems—busy beaver, Hilbert&#x27;s tenth—are likewise undecidable, showing even unlimited power has limits.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Turing《论可计算数》(1936)；Sipser《计算理论导论》</p>
+        <p lang="en">Turing, &#x27;On Computable Numbers&#x27; (1936); Sipser, &#x27;Introduction to the Theory of Computation&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a> · <a class="evlink" href="https://book.douban.com/subject/1231894/" target="_blank" rel="noopener">核验依据 2 ISBN 9787111108405（豆瓣书目条目: 计算理论导论）；本条出处含多部著作，此标识只担保上面点名的</a></p>
+        
+      </details>
+      <a class="tag" href="#">#停机问题</a> <a class="tag" href="#">#不可判定</a> <a class="tag" href="#">#图灵</a> <a class="tag" href="#">#对角线</a>
+    </article>
+
+
+    <article class="qitem" id="a7601b775c0b">
+      <h2 class="qz" lang="zh">什么是丘奇-图灵论题？</h2>
+      <p class="qen" lang="en">What is the Church-Turing thesis?</p>
+      <div class="azh" lang="zh">丘奇-图灵论题猜想：凡是可有效计算的函数，都能被图灵机（或等价模型）计算。它不是可证明的定理，而是对计算本质的广泛共识，奠定了计算理论的根基。</div>
+      <div class="aen" lang="en">The Church–Turing thesis conjectures that any function effectively computable can be computed by a Turing machine (or equivalent model). Not a provable theorem, it is a broad consensus on the nature of computation and underpins the theory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算理论导论》（Sipser）</p>
+        <p lang="en">Introduction to the Theory of Computation (Sipser)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1231894/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111108405（豆瓣书目条目: 计算理论导论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#丘奇-图灵论题</a> <a class="tag" href="#">#可计算性</a> <a class="tag" href="#">#计算理论</a>
+    </article>
+
+
+    <article class="qitem" id="055bb6805142">
+      <h2 class="qz" lang="zh">有限自动机（finite automaton）和正则语言是什么关系？</h2>
+      <p class="qen" lang="en">What is the relationship between finite automata and regular languages?</p>
+      <div class="azh" lang="zh">正则语言是能用正则表达式描述的语言类，而有限自动机（确定型 DFA 或非确定型 NFA）正是识别这类语言的数学模型，二者在能力上完全等价。克林在 1956 年建立了正则表达式与有限自动机的对应关系，构成编译词法分析与文本匹配的理论基础。它处在乔姆斯基语言层级的最底层。</div>
+      <div class="aen" lang="en">Regular languages are the class describable by regular expressions, and finite automata (deterministic DFA or nondeterministic NFA) are exactly the mathematical models that recognize them, with equivalent power. Kleene established the correspondence between regular expressions and finite automata in 1956, underpinning compiler lexical analysis and text matching. They sit at the base of the Chomsky hierarchy.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kleene 1956；Sipser《计算理论导引》</p>
+        <p lang="en">Kleene (1956); Sipser, Introduction to the Theory of Computation</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#有限自动机</a> <a class="tag" href="#">#正则语言</a> <a class="tag" href="#">#克林</a> <a class="tag" href="#">#乔姆斯基层级</a>
+    </article>
+
+
+    <article class="qitem" id="3a4f18aa0ef7">
+      <h2 class="qz" lang="zh">什么是有限自动机？</h2>
+      <p class="qen" lang="en">What is a finite automaton?</p>
+      <div class="azh" lang="zh">有限自动机是一种只有有限个状态、按输入逐字符转移的计算模型，分为确定型（DFA）和非确定型（NFA）。它常用于词法分析和正则表达式的匹配。</div>
+      <div class="aen" lang="en">A finite automaton is a model with finitely many states that transition on each input character, in deterministic (DFA) or nondeterministic (NFA) forms. It is widely used in lexical analysis and regular-expression matching.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算理论导论》（Sipser）</p>
+        <p lang="en">Introduction to the Theory of Computation (Sipser)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1231894/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111108405（豆瓣书目条目: 计算理论导论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#有限自动机</a> <a class="tag" href="#">#状态</a> <a class="tag" href="#">#正则表达式</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Structures data-structures · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Data Structures（计算机）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Structures data-structures · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Data Structures（计算机）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/data-structures/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/data-structures/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css">
+<script src="/shell/shell.js"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../"><span class="nc-mk">问</span>问答<span class="nc-brand-en">Ask</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><form class="nc-search" action="../../../index.html" method="get"><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Data Structures</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Data Structures <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>20</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#4bde57d28556">什么是 B 树，为什么数据库用它？</a></li><li><a href="#822fdc4be7b1">红黑树和 AVL 树都是自平衡二叉搜索树，它们的主要区别是什么？</a></li><li><a href="#adb7fb7f46e4">B 树和 B+ 树常用于什么场景？</a></li><li><a href="#f56ba8334c52">什么是红黑树？</a></li><li><a href="#4cbbec5b506f">什么是堆和优先队列？</a></li><li><a href="#7b70e6b0fd29">什么是链表？</a></li><li><a href="#a2fa634e140a">哈希表如何处理冲突？常见的两种策略是什么？</a></li><li><a href="#a80fc3d5e2ea">什么是堆？</a></li><li><a href="#a825f24dfc5d">什么是二叉树？</a></li><li><a href="#aac687b18e68">什么是缓存（cache）和局部性原理？</a></li><li><a href="#1341d74805e1">什么是栈和队列？</a></li><li><a href="#327896eb5acf">计算机用什么「数」来数东西？</a></li><li><a href="#3c9b48781ffe">为什么需要数据结构？</a></li><li><a href="#47cbb87721c3">哈希表是怎么工作的？</a></li><li><a href="#8de399e0c821">什么是栈？</a></li><li><a href="#94625d74920a">栈（stack）和队列（queue）有什么区别？</a></li><li><a href="#9ca2f36b9b64">数组和链表有什么不同？</a></li><li><a href="#a1231fd731be">什么是队列？</a></li><li><a href="#c8fa5a8ad213">什么是字符串，计算机怎样存储文字？</a></li><li><a href="#ddb452ea69f6">什么是图这种数据结构？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="4bde57d28556">
+      <h2 class="qz" lang="zh">什么是 B 树，为什么数据库用它？</h2>
+      <p class="qen" lang="en">What is a B-tree and why do databases use it?</p>
+      <div class="azh" lang="zh">B 树是一种平衡的多路搜索树，每个节点可含多个键和子节点，从而让树保持矮胖。它把多个键放在一个磁盘页里，大幅减少访问磁盘的次数，因此被关系型数据库的索引广泛采用（如 B+ 树）。</div>
+      <div class="aen" lang="en">A B-tree is a balanced multi-way search tree where each node holds many keys and children, keeping the tree short and wide. Packing several keys per disk page greatly reduces disk accesses, so B-trees (especially B+ trees) are widely used for indexes in relational databases.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据库系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Database System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35501216/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111681816（豆瓣书目条目: 数据库系统概念）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#B树</a> <a class="tag" href="#">#数据库索引</a> <a class="tag" href="#">#多路搜索树</a>
+    </article>
+
+
+    <article class="qitem" id="822fdc4be7b1">
+      <h2 class="qz" lang="zh">红黑树和 AVL 树都是自平衡二叉搜索树，它们的主要区别是什么？</h2>
+      <p class="qen" lang="en">Both red-black trees and AVL trees are self-balancing binary search trees; what is their main difference?</p>
+      <div class="azh" lang="zh">AVL 树要求任意节点左右子树高度差不超过 1，平衡更严格，查找更快但插入删除时旋转开销更大；红黑树只保证从根到叶子的每条路径黑色节点数相同（近似平衡），旋转次数更少，写入更轻量。因此红黑树常用于需要频繁修改的场景（如 C++ std::map、Java TreeMap），AVL 树更适合查找密集的场景。二者都保证操作在 O(log n) 时间内完成。</div>
+      <div class="aen" lang="en">An AVL tree requires the height difference of any node&#x27;s subtrees to be at most 1, giving stricter balance and faster lookups but more rotations on insert/delete; a red-black tree only guarantees equal numbers of black nodes on every root-to-leaf path (approximate balance), so it performs fewer rotations and lighter writes. Red-black trees suit frequent modifications (e.g., C++ std::map, Java TreeMap), while AVL trees fit lookup-heavy use. Both guarantee O(log n) operations.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen 等《算法导论》（CLRS）；Guibas &amp; Sedgewick 1978</p>
+        <p lang="en">Cormen et al., Introduction to Algorithms (CLRS); Guibas &amp; Sedgewick (1978)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#红黑树</a> <a class="tag" href="#">#AVL树</a> <a class="tag" href="#">#自平衡</a> <a class="tag" href="#">#二叉搜索树</a>
+    </article>
+
+
+    <article class="qitem" id="adb7fb7f46e4">
+      <h2 class="qz" lang="zh">B 树和 B+ 树常用于什么场景？</h2>
+      <p class="qen" lang="en">What are B-trees and B+ trees commonly used for?</p>
+      <div class="azh" lang="zh">B 树和 B+ 树是面向磁盘等外部存储的多路平衡搜索树，一个节点可容纳多个键，从而降低树的高度、减少磁盘访问次数。B+ 树把所有真实数据放在叶子节点并用链表串起来，非常适合范围查询。它们是关系型数据库索引的核心结构。</div>
+      <div class="aen" lang="en">B-trees and B+ trees are multi-way balanced search trees designed for external storage like disks, with each node holding many keys to reduce tree height and disk accesses. A B+ tree keeps all actual data in leaf nodes linked in a list, which is ideal for range queries. They are the core structures of relational database indexes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">数据库与文件系统索引结构</p>
+        <p lang="en">Index structures for databases and file systems</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#B树</a> <a class="tag" href="#">#B+树</a> <a class="tag" href="#">#数据库索引</a>
+    </article>
+
+
+    <article class="qitem" id="f56ba8334c52">
+      <h2 class="qz" lang="zh">什么是红黑树？</h2>
+      <p class="qen" lang="en">What is a red-black tree?</p>
+      <div class="azh" lang="zh">红黑树是一种自平衡的二叉搜索树，每个节点带颜色（红或黑）并满足一组平衡规则，确保最长路径不超过最短路径的两倍。插入和删除在最坏情况下也能保持 O(log n) 的时间复杂度。它是许多语言标准库（如 C++ map、Java TreeMap）的底层结构。</div>
+      <div class="aen" lang="en">A red-black tree is a self-balancing binary search tree in which each node is colored red or black and follows a set of balance rules, guaranteeing the longest path is at most twice the shortest. Insertion and deletion remain O(log n) in the worst case. It underlies many standard libraries such as C++ map and Java TreeMap.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">高级数据结构（Guibas &amp; Sedgewick 1978）</p>
+        <p lang="en">Advanced data structure (Guibas &amp; Sedgewick, 1978)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#红黑树</a> <a class="tag" href="#">#自平衡</a> <a class="tag" href="#">#二叉搜索树</a>
+    </article>
+
+
+    <article class="qitem" id="4cbbec5b506f">
+      <h2 class="qz" lang="zh">什么是堆和优先队列？</h2>
+      <p class="qen" lang="en">What are heaps and priority queues?</p>
+      <div class="azh" lang="zh">堆是一种特殊的完全二叉树，能保证根节点始终是最大（大顶堆）或最小（小顶堆）元素。优先队列是抽象概念，常用堆实现，使得每次取出的都是优先级最高/最低的元素。它广泛用于任务调度和图算法中的最短路径。</div>
+      <div class="aen" lang="en">A heap is a special complete binary tree that guarantees the root is always the maximum (max-heap) or minimum (min-heap) element. A priority queue is an abstraction usually implemented with a heap, so the highest- or lowest-priority element is retrieved each time. It is widely used in task scheduling and shortest-path graph algorithms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#堆</a> <a class="tag" href="#">#优先队列</a> <a class="tag" href="#">#完全二叉树</a>
+    </article>
+
+
+    <article class="qitem" id="7b70e6b0fd29">
+      <h2 class="qz" lang="zh">什么是链表？</h2>
+      <p class="qen" lang="en">What is a linked list?</p>
+      <div class="azh" lang="zh">链表由一系列节点组成，每个节点保存数据和指向下一个节点的指针，因此元素在内存中不必连续存放。插入和删除只需改动指针、效率很高，但随机访问需要从头遍历，速度较慢。</div>
+      <div class="aen" lang="en">A linked list consists of nodes, each holding data and a pointer to the next node, so elements need not be stored contiguously in memory. Insertion and deletion are efficient—just rewire pointers—but random access requires traversal from the head, which is slow.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据结构与算法分析》</p>
+        <p lang="en">Data Structures and Algorithm Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1139426/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111127482（豆瓣书目条目: 数据结构与算法分析）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#链表</a> <a class="tag" href="#">#指针</a> <a class="tag" href="#">#节点</a>
+    </article>
+
+
+    <article class="qitem" id="a2fa634e140a">
+      <h2 class="qz" lang="zh">哈希表如何处理冲突？常见的两种策略是什么？</h2>
+      <p class="qen" lang="en">How do hash tables handle collisions, and what are two common strategies?</p>
+      <div class="azh" lang="zh">哈希冲突指不同键被映射到同一槽位，常用两种策略解决：链地址法把同一槽位的元素用链表串起来；开放寻址法在冲突时按探测序列在表内寻找下一个空槽。链地址法实现简单且对负载因子更宽容，开放寻址法缓存局部性更好。负载因子过高时二者性能都会下降，通常需要扩容再哈希。</div>
+      <div class="aen" lang="en">A hash collision occurs when distinct keys map to the same slot, and two common strategies resolve it: separate chaining stores collided elements in a linked list per slot, while open addressing probes for the next empty slot within the table. Chaining is simple and tolerates higher load factors, whereas open addressing has better cache locality. Both degrade as the load factor rises and usually require resizing and rehashing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Knuth《计算机程序设计艺术》卷3；Cormen 等《算法导论》（CLRS）</p>
+        <p lang="en">Knuth, The Art of Computer Programming, Vol. 3; Cormen et al., Introduction to Algorithms (CLRS)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#冲突</a> <a class="tag" href="#">#链地址法</a> <a class="tag" href="#">#开放寻址</a>
+    </article>
+
+
+    <article class="qitem" id="a80fc3d5e2ea">
+      <h2 class="qz" lang="zh">什么是堆？</h2>
+      <p class="qen" lang="en">What is a heap?</p>
+      <div class="azh" lang="zh">堆是一种特殊的完全二叉树，最大堆中每个父节点都不小于其子节点，最小堆则相反。借助堆可以在 O(log n) 内插入或删除最值，并能在 O(n) 内建堆，是堆排序和优先队列的基础。</div>
+      <div class="aen" lang="en">A heap is a special complete binary tree where in a max-heap every parent is at least as large as its children (the reverse for a min-heap). It supports inserting or removing the extreme value in O(log n) and can be built in O(n), underpinning heapsort and priority queues.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》（Thomas H. Cormen 等）</p>
+        <p lang="en">Introduction to Algorithms (Cormen et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#堆</a> <a class="tag" href="#">#优先队列</a> <a class="tag" href="#">#完全二叉树</a>
+    </article>
+
+
+    <article class="qitem" id="a825f24dfc5d">
+      <h2 class="qz" lang="zh">什么是二叉树？</h2>
+      <p class="qen" lang="en">What is a binary tree?</p>
+      <div class="azh" lang="zh">二叉树是一种每个节点最多有两个子节点（通常称为左子节点和右子节点）的树形结构。它是表达层次关系、实现高效查找（如二叉搜索树）的基础。许多高级结构，如堆和红黑树，都是二叉树的变体。</div>
+      <div class="aen" lang="en">A binary tree is a tree structure in which each node has at most two children, usually called the left and right child. It is the basis for expressing hierarchies and enabling efficient search, such as in binary search trees. Many advanced structures like heaps and red-black trees are variants of binary trees.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二叉树</a> <a class="tag" href="#">#树</a> <a class="tag" href="#">#层次结构</a>
+    </article>
+
+
+    <article class="qitem" id="aac687b18e68">
+      <h2 class="qz" lang="zh">什么是缓存（cache）和局部性原理？</h2>
+      <p class="qen" lang="en">What is a cache and the principle of locality?</p>
+      <div class="azh" lang="zh">缓存是介于高速 CPU 和慢速主存之间的小容量高速存储器，用来存放近期可能被再次使用的数据。局部性原理指程序倾向于重复访问附近或最近的数据，因此缓存能大幅提升性能。缓存命中时速度快，未命中则需从更慢的存储取数据。</div>
+      <div class="aen" lang="en">A cache is a small, fast memory placed between the fast CPU and slow main memory to hold data likely to be reused soon. The principle of locality observes that programs tend to access nearby or recently used data, so caches greatly improve performance. A cache hit is fast; a miss requires fetching from slower storage.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#局部性</a> <a class="tag" href="#">#存储器层次</a>
+    </article>
+
+
+    <article class="qitem" id="1341d74805e1">
+      <h2 class="qz" lang="zh">什么是栈和队列？</h2>
+      <p class="qen" lang="en">What are stacks and queues?</p>
+      <div class="azh" lang="zh">栈是一种「后进先出」（LIFO）的结构，最后放进去的元素最先取出，像一摞盘子。队列是「先进先出」（FIFO）的结构，最先进入的元素最先离开，像排队买票。它们是计算机中最基础的线性数据结构。</div>
+      <div class="aen" lang="en">A stack is a last-in-first-out (LIFO) structure where the most recently added element is removed first, like a pile of plates. A queue is first-in-first-out (FIFO) where the earliest element leaves first, like a ticket line. They are among the most fundamental linear data structures.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#栈</a> <a class="tag" href="#">#队列</a> <a class="tag" href="#">#线性结构</a>
+    </article>
+
+
+    <article class="qitem" id="327896eb5acf">
+      <h2 class="qz" lang="zh">计算机用什么「数」来数东西？</h2>
+      <p class="qen" lang="en">How do computers count things?</p>
+      <div class="azh" lang="zh">我们平时用 0 到 9 十个数字，叫十进制；计算机只用 0 和 1 两个数字，叫二进制。开关的「开」表示 1、「关」表示 0，所有信息都由无数个 0 和 1 组合而成。这就是计算机能处理一切的基础。</div>
+      <div class="aen" lang="en">We normally use ten digits from 0 to 9, called decimal; computers use only two digits, 0 and 1, called binary. A switch on means 1 and off means 0, and all information is made of countless 0s and 1s. This is the foundation that lets computers process everything.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#二进制</a> <a class="tag" href="#">#数字</a> <a class="tag" href="#">#计算机</a>
+    </article>
+
+
+    <article class="qitem" id="3c9b48781ffe">
+      <h2 class="qz" lang="zh">为什么需要数据结构？</h2>
+      <p class="qen" lang="en">Why do we need data structures?</p>
+      <div class="azh" lang="zh">数据结构是用来组织、存放数据的方式，比如用盒子装东西、用书架放书。选对结构能让程序存得省、找得快，就像分类整理好的衣柜比乱堆更容易找到衣服。</div>
+      <div class="aen" lang="en">A data structure is a way of organizing and storing data, like boxes for things or shelves for books. Choosing the right one lets a program store economically and retrieve quickly—much like a tidy, sorted wardrobe beats a messy pile.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据结构与算法分析》</p>
+        <p lang="en">Data Structures and Algorithm Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1139426/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111127482（豆瓣书目条目: 数据结构与算法分析）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据结构</a> <a class="tag" href="#">#组织</a> <a class="tag" href="#">#效率</a>
+    </article>
+
+
+    <article class="qitem" id="47cbb87721c3">
+      <h2 class="qz" lang="zh">哈希表是怎么工作的？</h2>
+      <p class="qen" lang="en">How does a hash table work?</p>
+      <div class="azh" lang="zh">哈希表通过哈希函数把键映射成一个数组下标，从而能在平均 O(1) 时间内完成查找、插入和删除。当两个不同的键被映射到同一个位置时，就会发生「哈希冲突」，常用链地址法或开放寻址法解决。它是字典和集合等类型的底层实现。</div>
+      <div class="aen" lang="en">A hash table uses a hash function to map a key to an array index, enabling average O(1) lookup, insertion, and deletion. When two different keys map to the same location, a hash collision occurs, commonly resolved by chaining or open addressing. It underlies dictionary and set types.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">数据结构与算法标准内容</p>
+        <p lang="en">Standard topic in data structures and algorithms</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#散列</a> <a class="tag" href="#">#键值</a>
+    </article>
+
+
+    <article class="qitem" id="8de399e0c821">
+      <h2 class="qz" lang="zh">什么是栈？</h2>
+      <p class="qen" lang="en">What is a stack?</p>
+      <div class="azh" lang="zh">栈是一种后进先出（LIFO）的线性数据结构：最后压入的元素最先弹出，就像一摞盘子只能从顶端取放。栈常用于函数调用、撤销操作和表达式求值。</div>
+      <div class="aen" lang="en">A stack is a linear data structure that follows last-in, first-out (LIFO): the most recently pushed item is the first to be popped, like a pile of plates you can only take from the top. Stacks are used for function calls, undo operations, and expression evaluation.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据结构与算法分析》</p>
+        <p lang="en">Data Structures and Algorithm Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1139426/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111127482（豆瓣书目条目: 数据结构与算法分析）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#栈</a> <a class="tag" href="#">#后进先出</a> <a class="tag" href="#">#线性结构</a>
+    </article>
+
+
+    <article class="qitem" id="94625d74920a">
+      <h2 class="qz" lang="zh">栈（stack）和队列（queue）有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a stack and a queue?</p>
+      <div class="azh" lang="zh">栈是后进先出（LIFO）结构，只能在一端压入和弹出，像一摞盘子；队列是先进先出（FIFO）结构，从一端入队、另一端出队，像排队买票。两者的插入删除顺序截然相反，分别对应函数调用回溯和任务缓冲等典型场景。它们是几乎所有程序都依赖的基础线性结构。</div>
+      <div class="aen" lang="en">A stack is last-in-first-out (LIFO): you push and pop only from one end, like a pile of plates. A queue is first-in-first-out (FIFO): items enter at one end and leave at the other, like a ticket line. Their insertion and removal orders are opposite, serving function-call unwinding and task buffering respectively, and both are fundamental linear structures used by nearly every program.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen 等《算法导论》（CLRS）；Knuth《计算机程序设计艺术》</p>
+        <p lang="en">Cormen et al., Introduction to Algorithms (CLRS); Knuth, The Art of Computer Programming</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#栈</a> <a class="tag" href="#">#队列</a> <a class="tag" href="#">#LIFO</a> <a class="tag" href="#">#FIFO</a>
+    </article>
+
+
+    <article class="qitem" id="9ca2f36b9b64">
+      <h2 class="qz" lang="zh">数组和链表有什么不同？</h2>
+      <p class="qen" lang="en">What is the difference between an array and a linked list?</p>
+      <div class="azh" lang="zh">数组在内存中是连续存放的，可以通过下标在 O(1) 时间随机访问任意元素，但插入删除可能需要移动大量数据。链表由一个个节点通过指针连接，插入删除方便，但只能顺序遍历访问。两者各有适用场景。</div>
+      <div class="aen" lang="en">An array stores elements contiguously in memory, allowing O(1) random access by index but possibly requiring large data moves for insertion or deletion. A linked list connects nodes via pointers, making insertion and deletion easy but access only sequential. Each has its own suitable use cases.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数组</a> <a class="tag" href="#">#链表</a> <a class="tag" href="#">#数据结构</a>
+    </article>
+
+
+    <article class="qitem" id="a1231fd731be">
+      <h2 class="qz" lang="zh">什么是队列？</h2>
+      <p class="qen" lang="en">What is a queue?</p>
+      <div class="azh" lang="zh">队列是一种先进先出（FIFO）的线性结构：元素从一端入队、从另一端出队，如同排队买票先来先服务。它被广泛用于任务调度、打印缓冲和广度优先搜索。</div>
+      <div class="aen" lang="en">A queue is a linear structure that follows first-in, first-out (FIFO): elements enter at one end and leave at the other, like a ticket line where the earliest arrival is served first. It is widely used in task scheduling, print buffering, and breadth-first search.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《数据结构与算法分析》</p>
+        <p lang="en">Data Structures and Algorithm Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1139426/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111127482（豆瓣书目条目: 数据结构与算法分析）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#队列</a> <a class="tag" href="#">#先进先出</a> <a class="tag" href="#">#调度</a>
+    </article>
+
+
+    <article class="qitem" id="c8fa5a8ad213">
+      <h2 class="qz" lang="zh">什么是字符串，计算机怎样存储文字？</h2>
+      <p class="qen" lang="en">What is a string and how do computers store text?</p>
+      <div class="azh" lang="zh">字符串是由字符组成的序列，用来表示文字。计算机内部用数字编码（如 UTF-8）把每个字符变成字节来保存。不同的编码决定了同一个字符占用多少字节。</div>
+      <div class="aen" lang="en">A string is a sequence of characters used to represent text. Internally, computers use numeric encodings such as UTF-8 to turn each character into bytes for storage. The encoding determines how many bytes a character occupies.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#字符串</a> <a class="tag" href="#">#编码</a> <a class="tag" href="#">#文本</a>
+    </article>
+
+
+    <article class="qitem" id="ddb452ea69f6">
+      <h2 class="qz" lang="zh">什么是图这种数据结构？</h2>
+      <p class="qen" lang="en">What is a graph data structure?</p>
+      <div class="azh" lang="zh">图由一组顶点（节点）和连接它们的边组成，用来表示对象之间的任意关系。社交网络中的好友关系、地图上的道路都是图的例子。根据边是否有方向，图可分为有向图和无向图。</div>
+      <div class="aen" lang="en">A graph consists of a set of vertices (nodes) and edges connecting them, used to represent arbitrary relationships between objects. Examples include friendships in a social network and roads on a map. Depending on whether edges have direction, graphs are divided into directed and undirected.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#图</a> <a class="tag" href="#">#顶点</a> <a class="tag" href="#">#边</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>
