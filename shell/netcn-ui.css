@@ -41,6 +41,8 @@
 }
 
 html{font-family:var(--ui-font);-webkit-font-smoothing:antialiased}
+/* 四站统一预留滚动条槽：页面长短不同、切站时都不左右跳动 */
+html{scrollbar-gutter:stable!important}
 body{
   font-family:var(--ui-font)!important;
   background:var(--ui-bg)!important;
@@ -58,8 +60,14 @@ button,input,select,textarea{font-family:inherit}
    --ui-w 是内容区最大宽度；顶栏用 padding 居中、主体用 max-width+padding
    居中，两者内容区恒等于 min(100% - 2*gutter, --ui-w)，窄屏自适应。 */
 .nc-shell{padding-left:var(--ui-pad)!important;padding-right:var(--ui-pad)!important}
-/* 页脚位于统一容器内，容器已给 gutter，页脚自身不再加水平内边距 */
-.nc-foot{padding-left:0!important;padding-right:0!important}
+/* 四站页脚统一为 body 直接子级：全宽细线 + 内容对齐顶栏品牌 */
+body > .nc-foot{
+  padding-left:var(--ui-pad)!important;padding-right:var(--ui-pad)!important;
+  align-items:center;box-sizing:border-box!important;
+  height:53px;overflow:hidden;
+}
+/* 版权/说明文字不换行，避免因各站文案长短造成页脚高度差 */
+.nc-foot-note,.nc-foot-site{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .container,main,.wrap{
   width:auto!important;box-sizing:border-box!important;
   max-width:calc(var(--ui-w) + var(--ui-gutter) + var(--ui-gutter))!important;
@@ -275,6 +283,9 @@ button.btn-answer.hide-answer,.btn.btn-answer.hide-answer{background:#dc2626!imp
 .empty,.nc-foot{color:var(--ui-ink3)!important}
 .nc-shell .search-icon{color:var(--ui-ink3)!important}
 
+/* 四站胶囊固定宽度（站名固定中文，不随语言切换），顶栏其余槽位不位移 */
+.nc-sw{flex:0 0 auto}
+
 /* ---------- 统一的分区标题节奏 ---------- */
 .explore h2,.grp h2,.cats-title,.explore-sec h2{
   font-size:14px;font-weight:700;letter-spacing:.01em;
@@ -282,6 +293,7 @@ button.btn-answer.hide-answer,.btn.btn-answer.hide-answer{background:#dc2626!imp
 
 /* ---------- 窄屏 ---------- */
 @media(max-width:640px){
+  body > .nc-foot{height:107px}
   .quiz-card{padding:32px 18px}
   .hero{border-radius:var(--ui-r)!important}
 }
