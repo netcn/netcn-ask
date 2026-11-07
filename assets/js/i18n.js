@@ -26,7 +26,10 @@ const dict = {
     filtered: "条（已筛选）",
     found: "为你找到",
     emptyEmoji: "🔭",
-    emptyTip: "换个关键词，或点上方学科卡片随便逛逛。"
+    emptyTip: "换个关键词，或点上方学科卡片随便逛逛。",
+    heroTitle: '开始你的<span class="grad">科学冒险</span>',
+    heroDesc: "问答是一座全学科、全难度的中英双语科学问答总库。用游戏的方式去提问、去解答、去探索。",
+    ctaBlind: "🎲 抽一题盲盒", ctaDaily: "📅 今日挑战", ctaResume: "🪐 继续你的星系"
   },
   en: {
     search: "Search science questions, or just wander…",
@@ -54,7 +57,10 @@ const dict = {
     filtered: "items (filtered)",
     found: "Found",
     emptyEmoji: "🔭",
-    emptyTip: "Try another keyword, or tap a subject card above."
+    emptyTip: "Try another keyword, or tap a subject card above.",
+    heroTitle: 'Start Your <span class="grad">Science Adventure</span>',
+    heroDesc: "A bilingual science Q&A library across every subject and level. Ask, answer and explore through play.",
+    ctaBlind: "🎲 Random question", ctaDaily: "📅 Daily challenge", ctaResume: "🪐 Continue your galaxy"
   }
 };
 
@@ -78,7 +84,7 @@ export function setLang(l) {
   lang = l;
   try { localStorage.setItem("lang", l); } catch (e) {}
   document.documentElement.lang = l;
-  const lb = document.getElementById("lang");
+  const lb = document.getElementById("ncLang");
   if (lb) lb.textContent = dict[l].langBtn;
 }
 export function t(k) { return (dict[lang] && dict[lang][k]) || dict.zh[k] || k; }

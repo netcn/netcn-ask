@@ -85,32 +85,24 @@ function fillHero() {
   tick();
 }
 
-// ---------- 儿童模式 UI 切换 ----------
+// ---------- 首页 hero 文案（随中英切换；儿童模式入口已移除） ----------
 function applyKidsUI() {
   const h1 = document.querySelector(".hero h1");
   const p = document.querySelector(".hero p");
   const ctaBlind = document.getElementById("cta-blind");
   const ctaDaily = document.getElementById("cta-daily");
   const ctaResume = document.getElementById("cta-resume");
-  if (Game.isKids()) {
-    if (h1) h1.innerHTML = '小朋友的<span class="grad">科学乐园</span>';
-    if (p) p.textContent = "和问答一起，用游戏发现世界的「为什么」！点一点、听一听、玩一玩。";
-    if (ctaBlind) ctaBlind.textContent = "🎲 抽一题";
-    if (ctaDaily) ctaDaily.textContent = "📅 今日三题";
-    if (ctaResume) ctaResume.textContent = "🪐 继续探险";
-  } else {
-    if (h1) h1.innerHTML = '开始你的<span class="grad">科学冒险</span>';
-    if (p) p.textContent = "问答是一座全学科、全难度的中英双语科学问答总库。用游戏的方式去提问、去解答、去探索。";
-    if (ctaBlind) ctaBlind.textContent = "🎲 抽一题盲盒";
-    if (ctaDaily) ctaDaily.textContent = "📅 今日挑战";
-    if (ctaResume) ctaResume.textContent = "🪐 继续你的星系";
-  }
+  if (h1) h1.innerHTML = t("heroTitle");
+  if (p) p.textContent = t("heroDesc");
+  if (ctaBlind) ctaBlind.textContent = t("ctaBlind");
+  if (ctaDaily) ctaDaily.textContent = t("ctaDaily");
+  if (ctaResume) ctaResume.textContent = t("ctaResume");
 }
 
 export function paint() {
   const lang = getLang();
   document.documentElement.lang = lang;
-  $("#lang").textContent = t("langBtn");
+  $("#ncLang").textContent = t("langBtn");
   applyTheme(savedTheme());
   $("#q").setAttribute("placeholder", t("search"));
   // 注：启动台(含折叠筛选 #filters)由 game.js 在 initGame() 中渲染，这里不重建分类网格
@@ -184,26 +176,15 @@ export function bind() {
   const ctaDaily = $("#cta-daily");
   if (ctaDaily) ctaDaily.onclick = () => Game.startMode("daily");
 
-  $("#lang").addEventListener("click", () => {
-    setLang(getLang() === "zh" ? "en" : "zh");
+  /* 顶栏统一驱动：shell/shell.js 派发事件，这里只重渲染（不刷新、不改按钮） */
+  document.addEventListener("ncn:lang", (e) => {
+    setLang(e.detail.lang);
     Game.markLangToggled();
+    applyKidsUI();
     paint();
     if (currentQ || hasFacet()) runSearch(); else showHome();
   });
-  $("#theme").addEventListener("click", () => {
-    const cur = document.documentElement.classList.contains("dark") ? "dark" : "light";
-    const next = cur === "dark" ? "light" : "dark";
-    applyTheme(next); localStorage.setItem("theme", next);
-    celebrate(next);
-  });
-  const kidsBtn = document.getElementById("kids");
-  if (kidsBtn) kidsBtn.onclick = () => {
-    Game.setKids(!Game.isKids());
-    kidsBtn.classList.toggle("on", Game.isKids());
-    kidsBtn.textContent = Game.isKids() ? "🧒 儿童 ✓" : "🧒 儿童";
-    applyKidsUI();
-    if (currentQ || hasFacet()) runSearch(); else showHome();
-  };
+  document.addEventListener("ncn:theme", (e) => { applyTheme(e.detail.theme); });
   setupKonami();
   window.addEventListener("ask:show", (e) => showDetail(e.detail.id));
   window.addEventListener("ask:renderlaunch", () => buildFilters());
@@ -419,8 +400,6 @@ function writeUrl(push) {
 export function ready() {
   Game.initGame();              // 加载进度 + 渲染细 HUD + 启动台（含折叠筛选容器）
   initTTS();
-  const kb = document.getElementById("kids");
-  if (kb) { kb.classList.toggle("on", Game.isKids()); kb.textContent = Game.isKids() ? "🧒 儿童 ✓" : "🧒 儿童"; }
   applyKidsUI();
   const p = new URLSearchParams(location.search);
   facet = { cat: p.get("cat") || "", diff: p.get("diff") || "", aud: p.get("aud") || "" };

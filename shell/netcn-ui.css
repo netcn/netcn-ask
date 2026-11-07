@@ -69,6 +69,27 @@ html.dark .nc-shell,html.dark .nc-foot{background:var(--ui-card)!important}
   border:1px solid var(--ui-line)!important;border-radius:var(--ui-r-pill)!important;
   background:var(--ui-card)!important;color:var(--ui-ink2)!important;
 }
+/* 当前站胶囊：浅底 + 主色文字（压过上面 .nc-sw a 的 !important） */
+.nc-sw a[aria-current="page"]{
+  color:var(--ui-ac)!important;background:var(--ui-ac-soft)!important;
+  border:1px solid var(--ui-ac)!important;box-shadow:none!important;font-weight:800!important;
+}
+/* 四站统一的工具按钮：同尺寸、同圆角、同 hover、同一切换方式 */
+.nc-tools{gap:6px}
+.nc-tools .nc-tool{
+  display:inline-flex;align-items:center;justify-content:center;
+  height:32px;min-width:32px;padding:0 11px;
+  border:1px solid var(--ui-line)!important;border-radius:var(--ui-r-pill)!important;
+  background:var(--ui-card)!important;color:var(--ui-ink2)!important;
+  font-family:inherit;font-size:12px;font-weight:700;line-height:1;cursor:pointer;
+  text-decoration:none;transition:color .16s,border-color .16s,background .16s;
+}
+.nc-tools .nc-tool:hover{
+  color:var(--ui-ac)!important;border-color:var(--ui-ac)!important;background:var(--ui-ac-soft)!important;
+}
+.nc-tools .nc-tool:focus-visible{outline:2px solid var(--ui-ac);outline-offset:2px}
+.nc-tools .nc-tool#ncTheme{width:32px;padding:0;font-size:15px}
+.nc-tools .nc-tool#ncLang{min-width:42px}
 
 /* ---------- 通用卡片 / 按钮 / 输入 / 胶囊 ---------- */
 .btn,button.btn,.nc-btn{

@@ -35,15 +35,15 @@
     <a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a>
     <a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a>
   </nav>
-  <div class="nc-search">
+  <div class="nc-search has-icon">
+    <span class="search-icon" aria-hidden="true">⌕</span>
     <input id="q" type="search" placeholder="搜你想问的…（也可直接开始冒险）/ search…" autocomplete="off" aria-label="search">
     <div id="suggest" class="suggest" hidden></div>
   </div>
   <div id="gameHud" class="hud" hidden></div>
   <div class="nc-tools">
-    <button id="kids" class="btn" type="button">🧒 儿童</button>
-    <button id="lang" class="btn" type="button">EN</button>
-    <button id="theme" class="btn" type="button">主题</button>
+    <button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button>
+    <button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button>
   </div>
 </nav>
 <main>

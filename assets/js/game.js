@@ -760,7 +760,8 @@ function startScratchMode(det, r) {
 // ---------------- 对外接口 ----------------
 export function initGame() {
   P = load();
-  try { migrateKey("ask_kids"); KIDS = localStorage.getItem("ask_kids") === "1"; } catch (e) {}
+  try { migrateKey("ask_kids"); localStorage.setItem("ask_kids", "0"); } catch (e) {}
+  KIDS = false; /* 儿童按钮已移除 */
   document.body.classList.toggle("kids", KIDS);
   bumpStreakOnVisit();
   renderHUD();

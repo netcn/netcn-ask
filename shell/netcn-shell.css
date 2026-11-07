@@ -53,8 +53,9 @@
   color:var(--nc-ink2);border:1px solid var(--nc-line);background:transparent;
   transition:color .16s,border-color .16s,background .16s}
 .nc-sw a:hover{color:var(--nc-ac);border-color:var(--nc-ac);background:var(--nc-soft)}
-.nc-sw a[aria-current="page"]{color:#fff;background:var(--nc-ac);border-color:var(--nc-ac);
-  box-shadow:0 1px 8px var(--nc-glow)}
+/* 当前站：与页脚一致用「浅底 + 主色文字」，不再用实心重色块 */
+.nc-sw a[aria-current="page"]{color:var(--nc-ac);border-color:var(--nc-ac);
+  background:var(--nc-soft);font-weight:800}
 
 /* 搜索槽：各站的输入框放进这里，外观由壳层统一 */
 .nc-search{flex:1 1 150px;min-width:110px;position:relative;display:flex;align-items:center}
