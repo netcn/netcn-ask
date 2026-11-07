@@ -28,7 +28,7 @@
 
 /* ---------- 顶栏 ---------- */
 .nc-shell{display:flex;align-items:center;flex-wrap:wrap;gap:var(--nc-gap);
-  position:sticky;top:0;z-index:100;padding:5px 0;
+  position:sticky;top:0;z-index:100;padding:5px var(--ui-pad,0);
   background:var(--nc-card);border-bottom:1px solid var(--nc-line)}
 .nc-inner{display:flex;align-items:center;flex-wrap:wrap;gap:var(--nc-gap)}
 
@@ -53,9 +53,11 @@
   color:var(--nc-ink2);border:1px solid var(--nc-line);background:transparent;
   transition:color .16s,border-color .16s,background .16s}
 .nc-sw a:hover{color:var(--nc-ac);border-color:var(--nc-ac);background:var(--nc-soft)}
-/* 当前站：与页脚一致用「浅底 + 主色文字」，不再用实心重色块 */
-.nc-sw a[aria-current="page"]{color:var(--nc-ac);border-color:var(--nc-ac);
-  background:var(--nc-soft);font-weight:800}
+/* 当前站：无底色，仅主色文字 + 细下划线，视觉重量与普通胶囊一致 */
+.nc-sw a[aria-current="page"]{color:var(--nc-ac);background:transparent;
+  border-color:var(--nc-line);font-weight:800;
+  text-decoration:underline;text-decoration-color:var(--nc-ac);
+  text-decoration-thickness:2px;text-underline-offset:4px}
 
 /* 搜索槽：各站的输入框放进这里，外观由壳层统一 */
 .nc-search{flex:1 1 150px;min-width:110px;position:relative;display:flex;align-items:center}
@@ -80,13 +82,14 @@
 
 /* ---------- 页脚 ---------- */
 .nc-foot{display:flex;align-items:center;flex-wrap:wrap;gap:7px 12px;
-  margin-top:18px;padding:12px 2px;border-top:1px solid var(--nc-line);
+  margin-top:18px;padding:12px 0;border-top:1px solid var(--nc-line);
   font-size:12px;color:var(--nc-ink3)}
 .nc-foot-nav{display:flex;gap:4px;flex-wrap:wrap}
 .nc-foot-nav a{display:inline-flex;align-items:center;min-height:28px;padding:0 9px;border-radius:7px;
   color:var(--nc-ink2);border:1px solid transparent;text-decoration:none;transition:.16s}
 .nc-foot-nav a:hover{color:var(--nc-ac);border-color:var(--nc-ac);background:var(--nc-soft)}
-.nc-foot-nav a[aria-current="page"]{color:var(--nc-ac);border-color:var(--nc-ac);background:var(--nc-soft);font-weight:700}
+.nc-foot-nav a[aria-current="page"]{color:var(--nc-ac);border-color:transparent;background:transparent;font-weight:700;
+  text-decoration:underline;text-decoration-color:var(--nc-ac);text-underline-offset:3px}
 .nc-foot-note{white-space:nowrap}
 .nc-foot-site{margin-left:auto;text-align:right}
 .nc-foot-site a{color:var(--nc-ink2);text-decoration:underline;text-underline-offset:2px}
