@@ -20,13 +20,13 @@
 <link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c5">
 <link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c5">
 <script src="/shell/shell.js?v=20261107c5"></script>
-<link rel="modulepreload" href="assets/js/app.js">
+<link rel="modulepreload" href="assets/js/app.js?v=2">
 <link rel="modulepreload" href="assets/js/store.js">
 <link rel="modulepreload" href="assets/js/game.js">
 <link rel="modulepreload" href="assets/js/tts.js">
-<link rel="stylesheet" href="assets/css/kids-home.css?v=1">
-<script src="assets/js/kids-pick.js?v=1" defer></script>
-<script src="assets/js/kids-home.js?v=1" defer></script>
+<link rel="stylesheet" href="assets/css/kids-home.css?v=2">
+<script src="assets/js/kids-pick.js?v=2" defer></script>
+<script src="assets/js/kids-home.js?v=2" defer></script>
 </head>
 <body>
 <div id="progress" class="progressbar" hidden></div>
@@ -52,7 +52,7 @@
   <div id="gameHud" class="hud" hidden></div>
 <section class="kids-home" id="kidsHome" aria-label="小朋友提问区">
   <div class="kids-hello">
-    <span class="kids-badge">🔬 <span data-kt="badgeA">有</span> <b id="stat-total">—</b> <span data-kt="badgeB">个真实科学问答</span></span>
+    <span class="kids-badge">🔬 <span data-kt="badgeA">有</span> <b id="kidsTotal">17,305</b> <span data-kt="badgeB">个真实科学问答</span></span>
     <h2 id="kidsTitle">你想知道什么？</h2>
     <p id="kidsDesc">把心里的小问题写下来，或者点一个好玩的问题，马上就能看到答案。</p>
   </div>
@@ -93,6 +93,7 @@
     <span id="kidsH2">② 或点一个好奇的问题</span>
     <span id="kidsH3">③ 看答案，再换一题</span>
   </div>
+  <p class="kids-loading" id="kidsLoading">🔄 还有更多题目正在准备，上面的问题现在就能玩～</p>
 
   <h3 class="kids-sec" id="kidsSec">挑一个你感兴趣的话题</h3>
   <div class="kids-topics" id="kidsTopics"></div>
@@ -251,6 +252,6 @@
   <span class="nc-foot-note">© 2011–2026 netcn.org</span>
   <span class="nc-foot-site">17,305 题 · <a href="/trust/">来源可信度报告</a> · CC BY 4.0 署名 问答 ask.netcn.org</span>
 </footer>
-<script type="module" src="assets/js/app.js"></script>
+<script type="module" src="assets/js/app.js?v=2"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ import * as UI from "./ui.js";
 function boot() {
   UI.startProgress();
   init((p) => UI.setProgress(p))
-    .then(() => UI.ready())
+    .then(() => { UI.ready(); window.__askAllReady = true; document.dispatchEvent(new CustomEvent("ask:ready")); })
     .catch(() => UI.errLoad());
 }
 

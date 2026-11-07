@@ -19,7 +19,9 @@
       label: '大家最爱问：', random: '🎲 随便来一题', daily: '📅 今日一题',
       reveal: '👀 看答案', hide: '🙈 收起答案', next: '🔄 换一题', more: '📖 看更多这类问题',
       how: '怎么用？', h1: '① 写下你想问的', h2: '② 或点一个好奇的问题', h3: '③ 看答案，再换一题',
-      sec: '挑一个你感兴趣的话题', num: '第 ', unit: ' 题', waiting: '正在准备题目，稍等一下再试～'
+      sec: '挑一个你感兴趣的话题', num: '第 ', unit: ' 题',
+      loading: '🔄 还有更多题目正在准备，上面的问题现在就能玩～',
+      searching: '🔄 更多题目还在准备中，搜索结果可能不全；上面的问题现在就能玩～'
     },
     en: {
       title: 'What do you want to know?', desc: 'Type a question, or tap a fun one — the answer shows up right here.',
@@ -27,11 +29,15 @@
       label: 'Kids often ask:', random: '🎲 Surprise me', daily: '📅 Question of the day',
       reveal: '👀 Show the answer', hide: '🙈 Hide the answer', next: '🔄 Another one', more: '📖 More like this',
       how: 'How to use', h1: '① Type your question', h2: '② Or tap one you like', h3: '③ Read, then try another',
-      sec: 'Pick a topic you like', num: 'No. ', unit: '', waiting: 'Still loading questions, try again in a moment.'
+      sec: 'Pick a topic you like', num: 'No. ', unit: '',
+      loading: '🔄 Loading more questions — the ones above are ready to play right now.',
+      searching: '🔄 More questions are still loading, so results may be incomplete. Try one above!'
     }
   };
   var lang = (localStorage.getItem('lang') === 'en') ? 'en' : 'zh';
   var cur = null, count = 0;
+  // 全量题库（18 个分片，线上可能要几十秒）与首屏解耦
+  var allReady = !!window.__askAllReady;
 
   function groupOf(topic) {
     for (var i = 0; i < GROUPS.length; i++) if (GROUPS[i].key === topic) return GROUPS[i];
@@ -121,6 +127,10 @@
       if (q.indexOf(v) >= 0 || (v.length >= 4 && q.indexOf(v.slice(0, 6)) >= 0)) { hit = PICKS[i]; break; }
     }
     if (hit) { show(hit, T[lang].num + count + T[lang].unit); return; }
+    if (!allReady) {
+      var tip = $('kidsLoading');
+      if (tip) { tip.textContent = T[lang].searching; tip.hidden = false; }
+    }
     var top = $('q');
     if (top) {
       top.value = v;
@@ -146,6 +156,10 @@
       var el = $(map[k]); if (el) el.textContent = t[k];
     });
     var q = $('kidsQ'); if (q) q.placeholder = t.ph;
+    var tot = $('kidsTotal');
+    if (tot) tot.textContent = (window.KIDS_TOTAL || 17305).toLocaleString();
+    var tip = $('kidsLoading');
+    if (tip && !allReady) tip.textContent = t.loading;
     var bA = document.querySelector('[data-kt="badgeA"]');
     var bB = document.querySelector('[data-kt="badgeB"]');
     if (bA) bA.textContent = t.badgeA;
@@ -182,6 +196,11 @@
     var rev = $('kidsReveal'); if (rev) rev.addEventListener('click', toggleAnswer);
     var nx = $('kidsNext'); if (nx) nx.addEventListener('click', function () { show(randomPick()); });
     document.addEventListener('ncn:lang', function (e) { applyLang(e.detail && e.detail.lang); });
+    document.addEventListener('ask:ready', function () {
+      allReady = true;
+      var tip = $('kidsLoading'); if (tip) tip.hidden = true;
+    });
+    if (allReady) { var done = $('kidsLoading'); if (done) done.hidden = true; }
   }
 
   renderSamples();

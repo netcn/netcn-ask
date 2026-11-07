@@ -1,6 +1,7 @@
 /* 儿童友好精选问答：从 ask/data/questions/base.jsonl 真实题目自动挑选，
    生成脚本 logo/build_kids_picks.py，可重复执行。按孩子熟悉的话题分组，
    首页就地交互专用，不依赖 11MB 的 index.mpack，点开立刻有内容。 */
+window.KIDS_TOTAL = 17305;
 window.KIDS_GROUPS = [{"key": "sky", "icon": "🌌", "name": "天空和宇宙", "en": "Sky & Space"}, {"key": "weather", "icon": "🌍", "name": "地球和天气", "en": "Earth & Weather"}, {"key": "animals", "icon": "🐾", "name": "动物和植物", "en": "Animals & Plants"}, {"key": "body", "icon": "🫀", "name": "我的身体", "en": "My Body"}, {"key": "life", "icon": "⚡", "name": "生活里的为什么", "en": "Everyday Why"}, {"key": "change", "icon": "🧪", "name": "奇妙的变化", "en": "Amazing Changes"}, {"key": "number", "icon": "🔢", "name": "数字和形状", "en": "Numbers & Shapes"}, {"key": "machine", "icon": "🤖", "name": "电脑和机器", "en": "Computers & Machines"}];
 window.KIDS_PICKS = [
  {
