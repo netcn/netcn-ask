@@ -20,8 +20,8 @@
       reveal: '👀 看答案', hide: '🙈 收起答案', next: '🔄 换一题', more: '📖 看更多这类问题',
       how: '怎么用？', h1: '① 写下你想问的', h2: '② 或点一个好奇的问题', h3: '③ 看答案，再换一题',
       sec: '挑一个你感兴趣的话题', num: '第 ', unit: ' 题',
-      loading: '🔄 还有更多题目正在准备，上面的问题现在就能玩～',
-      searching: '🔄 更多题目还在准备中，搜索结果可能不全；上面的问题现在就能玩～'
+      loading: '🔄 全站题库正在后台装填，上面的问题和好玩的东西现在就能玩～',
+      searching: '🔄 全站搜索正在准备中，请稍等一下；上面的问题和好玩的东西现在就能玩～'
     },
     en: {
       title: 'What do you want to know?', desc: 'Type a question, or tap a fun one — the answer shows up right here.',
@@ -30,8 +30,8 @@
       reveal: '👀 Show the answer', hide: '🙈 Hide the answer', next: '🔄 Another one', more: '📖 More like this',
       how: 'How to use', h1: '① Type your question', h2: '② Or tap one you like', h3: '③ Read, then try another',
       sec: 'Pick a topic you like', num: 'No. ', unit: '',
-      loading: '🔄 Loading more questions — the ones above are ready to play right now.',
-      searching: '🔄 More questions are still loading, so results may be incomplete. Try one above!'
+      loading: '🔄 The full library is loading in the background — everything above is ready to play.',
+      searching: '🔄 Full-site search is getting ready, one moment — the questions and games above are ready to play.'
     }
   };
   var lang = (localStorage.getItem('lang') === 'en') ? 'en' : 'zh';
@@ -183,8 +183,9 @@
       // 顶栏的 "/" 聚焦快捷键不要抢走小朋友正在输入的问题
       if (e.key === '/') e.stopPropagation();
     });
-    var box = $('kidsHome');
-    if (box) box.addEventListener('click', function (e) {
+    // 主题卡已移到 #browse（页面底部），事件代理改挂 document，
+    // 保证「挑一个你感兴趣的话题」里的问题仍可就地展开答案。
+    document.addEventListener('click', function (e) {
       var el = e.target.closest ? e.target.closest('[data-pick]') : null;
       if (!el) return;
       e.preventDefault();

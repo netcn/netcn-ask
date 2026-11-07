@@ -1,13 +1,14 @@
 // UI: 启动台 + 搜索/筛选(折叠兜底) + 详情(内联游戏模式) + 主题/语言 + URL 状态
-import { CONFIG } from "./config.js";
-import { state, getDetail, searchQ, ensureSuggest } from "./store.js";
-import * as Game from "./game.js";
-import { tokenize } from "./search.js";
-import { getLang, setLang, t, L } from "./i18n.js";
-import { speak, stopSpeak, initTTS, isSpeaking } from "./tts.js";
+import { CONFIG } from "./config.js?v=3";
+import { state, getDetail, searchQ, ensureSuggest } from "./store.js?v=3";
+import { FUN_BY_ID } from "./fun-pack.js?v=3";
+import * as Game from "./game.js?v=3";
+import { tokenize } from "./search.js?v=3";
+import { getLang, setLang, t, L } from "./i18n.js?v=3";
+import { speak, stopSpeak, initTTS, isSpeaking } from "./tts.js?v=3";
 
 const $ = (s) => document.querySelector(s);
-import { esc, escRe, migrateKey } from "./util.js";
+import { esc, escRe, migrateKey } from "./util.js?v=3";
 
 function label(map, key) { return (map[key] && L([map[key].z, map[key].e])) || key; }
 
@@ -25,6 +26,7 @@ let rendered = 0;
 const BATCH = 60;
 let io = null, sentinel = null;
 let curSug = [], activeSug = -1, histTimer = null;
+let searchToken = 0;
 const HIST_KEY = "ask_history";
 
 function getHistory() { migrateKey(HIST_KEY); try { return JSON.parse(localStorage.getItem(HIST_KEY) || "[]"); } catch { return []; } }
@@ -233,6 +235,7 @@ function hideSuggest() { const box = $("#suggest"); box.hidden = true; box.inner
 
 // ---------- 首页 / 搜索 切换 ----------
 function showHome() {
+  searchToken++;                 // 取消仍在等待索引的旧搜索
   $("#detail").hidden = true;
   $("#results").hidden = true; $("#results").innerHTML = "";
   const l = $("#launch");
@@ -260,18 +263,18 @@ async function searchWithFacet() {
 export async function runSearch() {
   // 无查询且无筛选 → 回到启动台（不要列出全部题目）
   if (!currentQ && !hasFacet()) { showHome(); return; }
-  if (!state.searchReady) {
-    hideHome();
-    const box = $("#results");
-    $("#detail").hidden = true;
-    box.hidden = false;
-    box.innerHTML = `<div class="empty"><span class="emoji">⏳</span>${t("loadingData")}</div>`;
-    return;
-  }
   hideHome();
   const box = $("#results");
   $("#detail").hidden = true;
+  // 全文索引(11MB)已改为首次关键词搜索才懒加载：等待期间给占位，
+  // searchQ() 内部会 await 索引就绪后继续，不再直接 return 让用户以为坏了。
+  if (currentQ && !state.searchReady) {
+    box.hidden = false;
+    box.innerHTML = `<div class="empty"><span class="emoji">⏳</span>${t("loadingData")}</div>`;
+  }
+  const my = ++searchToken;
   const list = await searchWithFacet();
+  if (my !== searchToken) return;   // 丢弃过期请求，避免快速输入时结果乱序覆盖
   curList = list; rendered = 0;
   if (!list.length) { box.hidden = false; box.innerHTML = `<div class="empty"><span class="emoji">${t("emptyEmoji")}</span>${t("noResult")}<div class="tip">${t("emptyTip")}</div></div>`; removeSentinel(); return; }
   box.hidden = false;
@@ -330,8 +333,10 @@ export function showList() {
 
 // ---------- detail（含内联游戏模式） ----------
 export async function showDetail(id) {
+  searchToken++;
   const lang = getLang();
-  const r = state.records[state.idIndex[id]];
+  // 首屏精选包里的题目在全量清单建好之前也能直接打开详情
+  const r = (state.records.length ? state.records[state.idIndex[id]] : null) || FUN_BY_ID[id];
   const box = $("#results");
   const det = $("#detail");
   if (!r) { hideHome(); det.hidden = false; det.innerHTML = `<div class="empty">${t("noResult")}</div>`; return; }

@@ -1,13 +1,14 @@
 // game.js — 进度引擎 + 游戏化玩法（无游戏中心，玩法嵌进首页启动台与详情页内联）
 // 同一批科学题既是答案库也是游戏素材；阅读即 +XP，游戏即问答。
-import { state, getDetail } from "./store.js";
-import { CONFIG } from "./config.js";
-import { getLang, L } from "./i18n.js";
-import { speak } from "./tts.js";
+import { state, getDetail } from "./store.js?v=3";
+import { FUN_RECORDS, FUN_BY_ID, FUN_COUNT } from "./fun-pack.js?v=3";
+import { CONFIG } from "./config.js?v=3";
+import { getLang, L } from "./i18n.js?v=3";
+import { speak } from "./tts.js?v=3";
 
 const KEY = "ask_progress";
 const $ = (s, r = document) => r.querySelector(s);
-import { esc, migrateKey } from "./util.js";
+import { esc, migrateKey } from "./util.js?v=3";
 const lang = () => getLang();
 const ZH = (r) => r.q[0];
 const EN = (r) => r.q[1] || "";
@@ -28,8 +29,13 @@ export function setKids(on) {
   document.body.classList.toggle("kids", KIDS);
   if (typeof window !== "undefined") window.dispatchEvent(new CustomEvent("ask:kids", { detail: { on: KIDS } }));
 }
-// 内容池：儿童模式只取 toddler/p_low/p_high 受众且难度=入门，避免成人内容被错标进来
-function recPool() { return KIDS ? state.records.filter((r) => KID_AUDS.has(r.aud) && r.diff === 1) : state.records; }
+// 内容池：全量记录到位前，先用首屏静态精选包（零网络依赖），到位后自动升级为 17,305 题。
+// 儿童模式只取 toddler/p_low/p_high 受众且难度=入门，避免成人内容被错标进来。
+const allRecs = () => (state.records && state.records.length) ? state.records : FUN_RECORDS;
+function recPool() {
+  const base = allRecs();
+  return KIDS ? base.filter((r) => KID_AUDS.has(r.aud) && r.diff === 1) : base;
+}
 // 学科吉祥物（大 emoji 主图 / 详情页头部）
 export const CAT_EMOJI = { phy: "⚛️", chem: "⚗️", bio: "🧬", astro: "🪐", earth: "🌍", math: "🔢", med: "🩺", eng: "🛠️", cs: "💻", env: "🌿", psy: "🧠", soc: "🌐" };
 const KEYWORD_EMOJI = { "动物": "🐾", "太空": "🚀", "星星": "⭐", "太阳": "☀️", "月亮": "🌙", "地球": "🌍", "水": "💧", "身体": "🫀", "植物": "🌱", "颜色": "🎨", "数字": "🔢", "恐龙": "🦖", "海洋": "🌊", "天气": "🌈", "光": "💡", "电": "⚡", "鸟": "🐦", "昆虫": "🐛", "食物": "🍎", "梦": "😴", "音乐": "🎵", "机器人": "🤖" };
@@ -151,7 +157,7 @@ function toggleMaster(r) { if (P.mastered[r.id]) delete P.mastered[r.id]; else P
 
 // ---------------- 取数工具 ----------------
 const randRec = () => { const a = recPool(); return a[Math.floor(Math.random() * a.length)]; };
-const recById = (id) => state.records[state.idIndex[id]];
+const recById = (id) => (state.records.length ? state.records[state.idIndex[id]] : null) || FUN_BY_ID[id] || null;
 function sample(arr, n) { const a = arr.slice(), out = []; while (out.length < n && a.length) out.push(a.splice(Math.floor(Math.random() * a.length), 1)[0]); return out; }
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function dailyRecs() {
@@ -184,12 +190,21 @@ export function renderLaunch() {
   if (isKids()) { renderKidsLaunch(root); return; }
   const cats = Object.entries(CONFIG.CATS);
   const lit = cats.filter(([c]) => (P.stats.byCat[c] || 0) >= PLANET_TH).length;
-  const lead = lit >= 12 ? "🌌 银河已集齐！你就是银河旅人" : "🌈 一座长满游戏的问答百科 · 换批新鲜事，探索不停";
-  root.innerHTML = `
+  const en = lang() === "en";
+  const lead = lit >= 12
+    ? (en ? "🌌 Galaxy complete! You are the Galactic Traveller" : "🌌 银河已集齐！你就是银河旅人")
+    : (state.records.length
+      ? (en ? "🌈 Full library ready — shuffle for more" : "🌈 全库已就绪 · 换批新鲜事，探索不停")
+      : (en ? `🌈 ${FUN_COUNT} hand-picked questions ready right now`
+            : `🌈 ${FUN_COUNT} 道精选题立刻能玩 · 全站题库在后台装填`));
+  // 标题放在 #launch 内部：进入搜索/玩法时整块一起隐藏，不会留下孤立标题。
+  const heading = `<h3 class="kids-sec fun-title"><span id="funTitleMain">${en ? "🎠 Fun stuff" : "🎠 好玩的东西"}</span>` +
+    `<span class="fun-note" id="funNote">${en ? "No waiting — tap and play" : "不用等，点一下就能玩"}</span></h3>`;
+  root.innerHTML = heading + `
     <div class="carnival">
       <div class="cw-top">
         <span class="lead">${lead}</span>
-        <button class="cw-shuffle" id="cwShuffle" type="button">🔄 来点新鲜的</button>
+        <button class="cw-shuffle" id="cwShuffle" type="button">${en ? "🔄 Shuffle" : "🔄 来点新鲜的"}</button>
       </div>
       <div class="cw cw-gacha" style="--i:0"><div class="cw-card" data-w="gacha"></div></div>
       <div class="cw cw-wheel" style="--i:1"><div class="cw-card" data-w="wheel"></div></div>
@@ -258,8 +273,9 @@ function buildWheel(card) {
     wheel.style.transition = "transform 3s cubic-bezier(.17,.67,.3,1)";
     wheel.style.transform = `rotate(${deg}deg)`;
     setTimeout(() => {
-      const [c] = cats[idx]; const pool = state.records.filter((r) => r.cat === c);
-      const r = pool[Math.floor(Math.random() * pool.length)];
+      const [c] = cats[idx]; const pool = allRecs().filter((r) => r.cat === c);
+      const usable = pool.length ? pool : allRecs(); // 精选包未覆盖到的学科退回全池
+      const r = usable[Math.floor(Math.random() * usable.length)];
       wheel.classList.add("win");
       if (r) { out.innerHTML = `<button class="wheel-q" data-id="${r.id}">${esc(Q(r))}</button>`; out.querySelector("button").onclick = () => gotoDetail(r.id); }
     }, 3100);
@@ -339,13 +355,13 @@ function buildModes(card) {
   card.querySelectorAll(".mode-chip").forEach((b) => b.onclick = () => startMode(b.dataset.g));
 }
 function buildTicker(card) {
-  const items = sample(state.records, 14);
+  const items = sample(allRecs(), 14);
   const one = items.map((r) => `<span class="tk-item" data-id="${r.id}">${esc(Q(r))}</span>`).join('<span class="tk-sep">·</span>');
   card.innerHTML = `<h3 class="cw-h">📜 冷知识跑马灯</h3><div class="ticker"><div class="ticker-track">${one}${one}</div></div>`;
   card.querySelectorAll(".tk-item").forEach((b) => b.onclick = () => gotoDetail(b.dataset.id));
 }
 function buildBubbles(card) {
-  const items = sample(state.records, 11);
+  const items = sample(allRecs(), 11);
   const icons = ["💡", "🔭", "🧪", "🌟", "❓", "🔬", "🌈", "⚡", "🪐", "💫", "🔥"];
   card.innerHTML = `<h3 class="cw-h">🫧 漂浮题泡泡</h3><p class="cw-sub">点破任意泡泡，读一题</p><div class="bubble-pool"></div>`;
   const pool = card.querySelector(".bubble-pool");
@@ -367,7 +383,7 @@ function renderTrail() {
   let h = [];
   migrateKey("ask_history");
   try { h = JSON.parse(localStorage.getItem("ask_history") || "[]"); } catch (e) {}
-  h = h.slice(0, 6).map((q) => state.records.find((r) => Q(r) === q || r.q[0] === q)).filter(Boolean);
+  h = h.slice(0, 6).map((q) => allRecs().find((r) => Q(r) === q || r.q[0] === q)).filter(Boolean);
   if (!h.length) return "";
   return `<h3 class="cw-h">✨ 探索足迹</h3><div class="trail">${h.map((r) => `<button class="trail-dot" data-id="${r.id}"><span class="td-q">${esc(Q(r))}</span><span class="td-c" style="color:${CATCOLOR[r.cat] || "#888"}">${esc(labelCat(r.cat))}</span></button>`).join("")}</div>`;
 }
@@ -706,7 +722,7 @@ function startGuessMode(det, r) {
   const body = det.querySelector("#detail-body"); if (!body) return;
   const saved = body.innerHTML;
   function round() {
-    const pool = sample(state.records, 4); if (!pool.find((x) => x.id === r.id)) pool[0] = r;
+    const pool = sample(allRecs(), 4); if (!pool.find((x) => x.id === r.id)) pool[0] = r;
     const target = r;
     body.innerHTML = `<div class="flip">
       <div class="g-tag">猜猜看 · 看答案，猜这是哪道题</div>
@@ -758,13 +774,24 @@ function startScratchMode(det, r) {
 }
 
 // ---------------- 对外接口 ----------------
+let launchPainted = false;
+// 全量题库就绪后只更新一行状态文案，不重建卡片，避免打断正在玩的小游戏。
+document.addEventListener("ask:ready", () => {
+  const el = document.querySelector("#launch .lead");
+  if (!el || !state.records.length) return;
+  el.textContent = lang() === "en" ? "🌈 Full library ready — shuffle for more" : "🌈 全库已就绪 · 换批新鲜事，探索不停";
+});
 export function initGame() {
-  P = load();
-  try { migrateKey("ask_kids"); localStorage.setItem("ask_kids", "0"); } catch (e) {}
-  KIDS = false; /* 儿童按钮已移除 */
-  document.body.classList.toggle("kids", KIDS);
-  bumpStreakOnVisit();
-  renderHUD();
-  renderLaunch();
+  // 首次调用发生在 app.js 模块求值时（早于 25MB 题库），此时立刻画「好玩的东西」；
+  // 全量数据就绪后 UI.ready() 会再次调用，这里必须幂等，避免把正在玩的小游戏冲掉。
+  if (!P) {
+    P = load();
+    try { migrateKey("ask_kids"); localStorage.setItem("ask_kids", "0"); } catch (e) {}
+    KIDS = false; /* 儿童按钮已移除 */
+    document.body.classList.toggle("kids", KIDS);
+    bumpStreakOnVisit();
+    renderHUD();
+  }
+  if (!launchPainted) { renderLaunch(); launchPainted = true; }
 }
 export function markLangToggled() { if (!P) P = load(); P.stats.langToggled = true; save(); checkBadges(); }

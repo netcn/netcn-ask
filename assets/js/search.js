@@ -1,6 +1,6 @@
 // Search: tokenize query (zh chars + pinyin/latin words) -> score against inverted index
 // Worker owns the heavy scan; this module provides tokenize + a synchronous fallback.
-import { state } from "./store.js";
+import { state } from "./store.js?v=3";
 
 export function tokenize(q) {
   const toks = new Set();

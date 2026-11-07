@@ -122,6 +122,14 @@
 }
 .kids-loading[hidden] { display: none; }
 
+/* ---------- 「好玩的东西」：紧跟今日一题，标题随 #launch 一起隐藏 ---------- */
+#launch { margin-top: 2px; }
+.fun-title {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px;
+  margin: 26px 0 2px; font-size: 19px; font-weight: 900; color: var(--ui-ink);
+}
+.fun-note { font-size: 12.5px; font-weight: 600; color: var(--ui-ink3); }
+
 /* ---------- 主题卡 ---------- */
 .kids-sec { margin: 30px 0 12px; font-size: 17px; font-weight: 800; color: var(--ui-ink); }
 .kids-topics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
@@ -140,7 +148,9 @@
 }
 .kids-topic a:hover { color: var(--ui-ac); }
 
-/* 原有的 38 个分类入口退到下方作为「慢慢逛」 */
+/* 话题 / 学科分类统一退到页面最下方作为「慢慢逛」 */
+#browse { margin-top: 30px; padding-top: 4px; }
+#browse .kids-sec { margin-top: 0; }
 #explore { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--ui-line); }
 
 /* ---------- 窄屏 ---------- */
