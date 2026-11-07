@@ -1,0 +1,156 @@
+/* ============================================================
+   ask 首页 · 小朋友提问区
+   沿用 netcn-ui.css 的纸感 tokens，只把首屏做得更好用：
+   大提问框 / 示例问题 / 就地答案卡 / 儿童主题卡。
+   顶栏与页脚完全不动，四站 chrome 保持一致。
+   ============================================================ */
+
+/* 游戏化等级条对小朋友没有引导意义，首屏隐藏（DOM 仍在，游戏逻辑不受影响） */
+#gameHud { display: none !important; }
+
+#kidsHome { width: 100%; padding: 10px 0 4px; }
+
+/* ---------- 开场 ---------- */
+.kids-hello { text-align: center; padding: 10px 0 16px; }
+.kids-badge {
+  display: inline-block; padding: 5px 13px; border-radius: 999px;
+  background: var(--ui-ac-soft); color: var(--ui-ac);
+  border: 1px solid var(--ui-line); font-size: 12px; font-weight: 800;
+}
+.kids-badge b { font-size: 13px; }
+.kids-hello h2 {
+  margin: 12px 0 6px; font-size: clamp(24px, 3.4vw, 34px); font-weight: 900;
+  letter-spacing: -.02em; color: var(--ui-ink);
+}
+.kids-hello p { margin: 0; color: var(--ui-ink2); font-size: 15px; line-height: 1.7; }
+
+/* ---------- 大提问框 ---------- */
+.kids-ask {
+  display: flex; align-items: center; gap: 10px;
+  max-width: 820px; margin: 0 auto; padding: 10px 10px 10px 16px;
+  background: var(--ui-card); border: 2px solid var(--ui-ac);
+  border-radius: 18px; box-shadow: var(--ui-shadow-up);
+}
+.kids-ask:focus-within { box-shadow: 0 0 0 4px var(--ui-ac-soft), var(--ui-shadow-up); }
+.kids-ask-ic { font-size: 22px; line-height: 1; flex: 0 0 auto; }
+.kids-ask input {
+  flex: 1 1 auto; min-width: 0; border: 0; outline: 0; background: transparent;
+  color: var(--ui-ink); font-family: inherit; font-size: 17px; padding: 8px 0;
+}
+.kids-ask input::placeholder { color: var(--ui-ink3); }
+.kids-go {
+  flex: 0 0 auto; border: 0; border-radius: 12px; cursor: pointer;
+  background: var(--ui-ac); color: #fff; font-family: inherit;
+  font-size: 15px; font-weight: 800; padding: 12px 20px;
+}
+.kids-go:hover { filter: brightness(1.08); }
+
+/* ---------- 示例问题 ---------- */
+.kids-samples {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  max-width: 820px; margin: 14px auto 0; justify-content: center;
+}
+.kids-label { color: var(--ui-ink3); font-size: 13px; font-weight: 700; }
+.kids-chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.kids-chip {
+  border: 1px solid var(--ui-line); border-radius: 999px; cursor: pointer;
+  background: var(--ui-card); color: var(--ui-ink2); font-family: inherit;
+  font-size: 13px; padding: 7px 14px; transition: .16s;
+}
+.kids-chip:hover { color: var(--ui-ac); border-color: var(--ui-ac); background: var(--ui-ac-soft); }
+
+/* ---------- 两个大按钮 ---------- */
+.kids-actions { display: flex; gap: 12px; justify-content: center; margin: 20px 0 6px; flex-wrap: wrap; }
+.kids-big {
+  border: 1px solid var(--ui-ac); border-radius: 14px; cursor: pointer;
+  background: var(--ui-ac); color: #fff; font-family: inherit;
+  font-size: 16px; font-weight: 800; padding: 13px 26px; transition: .16s;
+}
+.kids-big:hover { transform: translateY(-2px); box-shadow: var(--ui-shadow-up); }
+.kids-big-soft { background: var(--ui-ac-soft); color: var(--ui-ac); }
+
+/* ---------- 就地答案卡 ---------- */
+.kids-card {
+  max-width: 820px; margin: 18px auto 0; padding: 22px 24px;
+  background: var(--ui-card); border: 1px solid var(--ui-line);
+  border-left: 5px solid var(--ui-ac); border-radius: var(--ui-r-card);
+  box-shadow: var(--ui-shadow-up);
+}
+.kids-card[hidden] { display: none; }
+.kids-card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.kids-tag {
+  display: inline-block; padding: 4px 11px; border-radius: 999px;
+  background: var(--ui-ac-soft); color: var(--ui-ac); font-size: 12px; font-weight: 800;
+}
+.kids-num { color: var(--ui-ink3); font-size: 12px; }
+.kids-q { margin: 14px 0 18px; font-size: clamp(19px, 2.3vw, 24px); line-height: 1.5; color: var(--ui-ink); font-weight: 800; }
+.kids-reveal {
+  border: 1px solid var(--ui-ac); border-radius: 12px; cursor: pointer;
+  background: var(--ui-ac); color: #fff; font-family: inherit;
+  font-size: 15px; font-weight: 800; padding: 11px 22px;
+}
+.kids-reveal:hover { filter: brightness(1.08); }
+.kids-answer {
+  margin-top: 14px; padding: 16px 18px; border-radius: 12px;
+  background: var(--ui-surface); color: var(--ui-ink);
+  font-size: 15px; line-height: 1.9; white-space: pre-wrap;
+}
+.kids-answer[hidden] { display: none; }
+.kids-card-foot { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.kids-mini {
+  display: inline-flex; align-items: center; gap: 4px; cursor: pointer;
+  border: 1px solid var(--ui-line); border-radius: 999px;
+  background: var(--ui-card); color: var(--ui-ink2);
+  font-family: inherit; font-size: 13px; font-weight: 700;
+  padding: 8px 15px; text-decoration: none; transition: .16s;
+}
+.kids-mini:hover { color: var(--ui-ac); border-color: var(--ui-ac); background: var(--ui-ac-soft); }
+
+/* ---------- 三步引导 ---------- */
+.kids-how {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap: 8px 16px; max-width: 820px; margin: 16px auto 0;
+  color: var(--ui-ink2); font-size: 13px;
+}
+.kids-how b { color: var(--ui-ink); }
+.kids-how span { white-space: nowrap; }
+
+/* ---------- 主题卡 ---------- */
+.kids-sec { margin: 30px 0 12px; font-size: 17px; font-weight: 800; color: var(--ui-ink); }
+.kids-topics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.kids-topic {
+  background: var(--ui-card); border: 1px solid var(--ui-line);
+  border-radius: var(--ui-r-card); padding: 14px; box-shadow: var(--ui-shadow);
+  transition: .16s;
+}
+.kids-topic:hover { border-color: var(--ui-ac); box-shadow: var(--ui-shadow-up); transform: translateY(-2px); }
+.kids-topic h4 { margin: 0 0 10px; font-size: 15px; color: var(--ui-ink); font-weight: 800; }
+.kids-topic h4 span { margin-right: 5px; }
+.kids-topic a {
+  display: block; color: var(--ui-ink2); font-size: 12.5px; line-height: 1.55;
+  padding: 5px 0; border-top: 1px dashed var(--ui-line-soft);
+  text-decoration: none; cursor: pointer;
+}
+.kids-topic a:hover { color: var(--ui-ac); }
+
+/* 原有的 38 个分类入口退到下方作为「慢慢逛」 */
+#explore { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--ui-line); }
+
+/* ---------- 窄屏 ---------- */
+@media (max-width: 900px) {
+  .kids-topics { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .kids-hello h2 { font-size: 25px; }
+  .kids-ask { flex-wrap: wrap; padding: 10px 12px; border-radius: 14px; }
+  .kids-ask input { font-size: 16px; width: calc(100% - 40px); }
+  .kids-go { width: 100%; }
+  .kids-big { flex: 1 1 100%; }
+  .kids-card { padding: 18px 16px; }
+  .kids-topics { grid-template-columns: 1fr; }
+  .kids-how { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kids-big, .kids-topic { transition: none; }
+  .kids-big:hover, .kids-topic:hover { transform: none; }
+}

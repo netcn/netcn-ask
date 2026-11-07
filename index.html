@@ -24,6 +24,9 @@
 <link rel="modulepreload" href="assets/js/store.js">
 <link rel="modulepreload" href="assets/js/game.js">
 <link rel="modulepreload" href="assets/js/tts.js">
+<link rel="stylesheet" href="assets/css/kids-home.css?v=1">
+<script src="assets/js/kids-pick.js?v=1" defer></script>
+<script src="assets/js/kids-home.js?v=1" defer></script>
 </head>
 <body>
 <div id="progress" class="progressbar" hidden></div>
@@ -47,22 +50,53 @@
 </nav>
 <main>
   <div id="gameHud" class="hud" hidden></div>
-  <section class="hero" aria-label="intro">
-    <span class="hero-fx hfx1">🔭</span><span class="hero-fx hfx2">🪐</span><span class="hero-fx hfx3">💡</span><span class="hero-fx hfx4">⚗️</span>
-    <div class="mascot" id="mascot" aria-hidden="true">🤖</div>
-    <h1>开始你的<span class="grad">科学冒险</span></h1>
-    <div class="cta-row">
-      <button id="cta-resume" class="cta cta-primary" type="button">🪐 继续你的星系</button>
-      <button id="cta-blind" class="cta" type="button">🎲 抽一题盲盒</button>
-      <button id="cta-daily" class="cta" type="button">📅 今日挑战</button>
+<section class="kids-home" id="kidsHome" aria-label="小朋友提问区">
+  <div class="kids-hello">
+    <span class="kids-badge">🔬 <span data-kt="badgeA">有</span> <b id="stat-total">—</b> <span data-kt="badgeB">个真实科学问答</span></span>
+    <h2 id="kidsTitle">你想知道什么？</h2>
+    <p id="kidsDesc">把心里的小问题写下来，或者点一个好玩的问题，马上就能看到答案。</p>
+  </div>
+
+  <form class="kids-ask" id="kidsAsk" autocomplete="off">
+    <span class="kids-ask-ic" aria-hidden="true">🔎</span>
+    <input id="kidsQ" type="search" placeholder="例如：天空为什么是蓝色的？" aria-label="写下你的问题">
+    <button type="submit" class="kids-go" id="kidsGo">找答案 →</button>
+  </form>
+
+  <div class="kids-samples">
+    <span class="kids-label" id="kidsLabel">大家最爱问：</span>
+    <div class="kids-chips" id="kidsSamples"></div>
+  </div>
+
+  <div class="kids-actions">
+    <button class="kids-big" id="kidsRandom" type="button">🎲 随便来一题</button>
+    <button class="kids-big kids-big-soft" id="kidsDaily" type="button">📅 今日一题</button>
+  </div>
+
+  <div class="kids-card" id="kidsCard" hidden>
+    <div class="kids-card-top">
+      <span class="kids-tag" id="kidsTag"></span>
+      <span class="kids-num" id="kidsNum"></span>
     </div>
-    <div class="stats">
-      <div class="stat"><b id="stat-total">—</b><span>道科学问答</span></div>
-      <div class="stat"><b>12</b><span>个学科</span></div>
-      <div class="stat"><b>2</b><span>种语言</span></div>
-      <div class="stat"><b>3</b><span>档难度</span></div>
+    <h3 class="kids-q" id="kidsQText"></h3>
+    <button class="kids-reveal" id="kidsReveal" type="button">👀 看答案</button>
+    <div class="kids-answer" id="kidsAnswer" hidden></div>
+    <div class="kids-card-foot">
+      <button class="kids-mini" id="kidsNext" type="button">🔄 换一题</button>
+      <a class="kids-mini" id="kidsMore" href="#">📖 看更多这类问题</a>
     </div>
-  </section>
+  </div>
+
+  <div class="kids-how">
+    <b id="kidsHowB">怎么用？</b>
+    <span id="kidsH1">① 写下你想问的</span>
+    <span id="kidsH2">② 或点一个好奇的问题</span>
+    <span id="kidsH3">③ 看答案，再换一题</span>
+  </div>
+
+  <h3 class="kids-sec" id="kidsSec">挑一个你感兴趣的话题</h3>
+  <div class="kids-topics" id="kidsTopics"></div>
+</section>
 <!--EXPLORE:START-->
 <section id="explore" class="explore" aria-label="explore">
 <h2>换个方式逛 · Explore</h2>
