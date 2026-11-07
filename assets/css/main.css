@@ -905,3 +905,21 @@ body.kids .play-area .g-card{font-size:17px}
 .evlinks{margin:.5em 0 0;padding:.5em .7em;border-left:3px solid #0f9c86;background:rgba(31,214,182,.06);border-radius:4px;font-size:.9em}
 .evlink{color:#0f9c86;text-decoration:none;border-bottom:1px dotted currentColor;margin-right:.4em}
 .evlink:hover{color:#0b7a68;border-bottom-style:solid}
+
+/* ---- 全站共用视觉语言映射（2026-11-07） ---- */
+:root{--ui-ac-site:#0f9d8c;
+  --bg:var(--ui-bg);--bg2:var(--ui-surface);--panel:var(--ui-card);
+  --border:var(--ui-line);--border-strong:var(--ui-line);
+  --fg:var(--ui-ink);--fg2:var(--ui-ink2);--fg3:var(--ui-ink3);
+  --accent:var(--ui-ac);--accent2:var(--ui-ac);--mark:var(--ui-ac-soft);
+  --shadow:var(--ui-shadow);--shadow-lg:var(--ui-shadow-up);
+  --radius:var(--ui-r-lg);--radius-sm:var(--ui-r);--glass-blur:0px;
+}
+html.dark{--ui-ac-site:#1fd6b6;
+  --bg:var(--ui-bg);--bg2:var(--ui-surface);--panel:var(--ui-card);
+  --border:var(--ui-line);--border-strong:var(--ui-line);
+  --fg:var(--ui-ink);--fg2:var(--ui-ink2);--fg3:var(--ui-ink3);
+  --accent:var(--ui-ac);--accent2:var(--ui-ac);--mark:var(--ui-ac-soft);
+  --shadow:var(--ui-shadow);--shadow-lg:var(--ui-shadow-up);
+  --glass-blur:0px;
+}
