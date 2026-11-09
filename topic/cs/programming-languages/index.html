@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>编程语言 programming-languages · 计算机 Computer Science | 问答</title>
+<meta name="description" content="编程语言（计算机）分类下的 42 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 42 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="编程语言 programming-languages · 计算机 Computer Science | 问答">
+<meta property="og:description" content="编程语言（计算机）分类下的 42 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 42 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/programming-languages/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/programming-languages/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>编程语言</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>编程语言 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>42</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#209dbe88a4b7">C/C++ 里的「未定义行为」为什么比普通 bug 更危险？</a></li><li><a href="#221bb1f5cfec">什么是停机问题？为什么它不可解？</a></li><li><a href="#2cccb70a7141">协程（coroutine）和普通线程有何不同？</a></li><li><a href="#4cd358f60e7e">垃圾回收是怎么工作的？为什么程序不需要手动释放内存？</a></li><li><a href="#7183f21dce15">什么是类型系统？静态/动态、强/弱类型各指什么？</a></li><li><a href="#8cadc04e0c7f">编译器为什么要专门优化循环？循环不变量外提是怎么做的？</a></li><li><a href="#9946dabfc256">什么是元编程，它常用于哪些场景？</a></li><li><a href="#9a891c88051f">什么是尾递归，它为什么重要？</a></li><li><a href="#cc54358b22ef">λ 演算和现代编程语言有什么关系？</a></li><li><a href="#cee01f47b1f3">引用计数有什么局限，为什么会产生循环引用？</a></li><li><a href="#cs_24_001">现代编译器在优化代码之前,为什么通常要先把程序改写成 SSA(静态单赋值)形式?</a></li><li><a href="#e02cf027fe13">Hindley-Milner 类型推导是怎么&quot;算出&quot;类型的？let 多态为什么是</a></li><li><a href="#0476420aa8d1">什么是类型推导？为什么在 Haskell、Rust 里可以省略大部分类型声明？</a></li><li><a href="#0857de2055b9">CPython 的全局解释器锁为什么让多线程算不快？</a></li><li><a href="#0bd4503000ad">函数式编程和面向对象编程有什么不同？</a></li><li><a href="#23ed902da90e">什么是闭包？</a></li><li><a href="#2b7bd195bd1a">递归和迭代各有什么特点？</a></li><li><a href="#2dd193608ae2">泛型编程解决什么问题？</a></li><li><a href="#3c332c9269b6">编译器做&quot;内联&quot;（inlining）优化是什么意思？它有什么好处和代价？</a></li><li><a href="#414ed89f18ad">什么是纯函数，为什么要追求它？</a></li><li><a href="#481ad87fce89">解释器、JIT 编译器与静态编译在运行方式上有什么不同？</a></li><li><a href="#4bff9d5b8003">不可变数据有什么好处？</a></li><li><a href="#56b8dccd7c5d">什么是类型推断，它带来什么好处？</a></li><li><a href="#6b90feba381c">什么是鸭子类型？</a></li><li><a href="#7114c12e26c9">垃圾回收（GC）是怎么自动管理内存的？</a></li><li><a href="#78ce07bdd9dc">什么是类型系统，它有什么用？</a></li><li><a href="#7c433e0d9c7f">并发和并行是一回事吗？</a></li><li><a href="#885b627c11a1">Unicode 和 UTF-8 是什么关系，网页上的「锟斤拷」这类乱码是怎么来的</a></li><li><a href="#8b0a2c157a60">什么是虚拟机（如 JVM），它有什么价值？</a></li><li><a href="#97986965c0e6">异步编程解决了什么痛点？</a></li><li><a href="#b042e9ced55e">为什么说函数是“一等公民”？</a></li><li><a href="#cedab2d60769">强类型与弱类型指的是什么？</a></li><li><a href="#cs_24_002">编译器如何决定哪些变量放进寄存器?为什么说寄存器分配本质上是图着色问题?</a></li><li><a href="#d3eb61c22cab">编译器的词法分析阶段做什么？它和语法分析有什么分工？</a></li><li><a href="#dc2d114e70c2">什么是抽象语法树（AST）？编译器为什么基于它工作而不是直接处理源代码文本？</a></li><li><a href="#f7f314e66a5e">宏（macro）与普通函数调用有什么本质区别？</a></li><li><a href="#feb754776904">静态类型语言和动态类型语言有何不同？</a></li><li><a href="#03eb183d611d">封装、继承、多态分别指什么？</a></li><li><a href="#110d9fe7426b">编译型语言和解释型语言有什么区别？</a></li><li><a href="#65b29839923e">什么是源代码？</a></li><li><a href="#ed09502075bd">什么是面向对象编程（OOP）？</a></li><li><a href="#f8c32601d70a">函数式编程的核心思想是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="209dbe88a4b7">
+      <h2 class="qz" lang="zh">C/C++ 里的「未定义行为」为什么比普通 bug 更危险？</h2>
+      <p class="qen" lang="en">Why is undefined behaviour in C/C++ more dangerous than an ordinary bug?</p>
+      <div class="azh" lang="zh">标准规定，一旦程序出现未定义行为（有符号整数溢出、数组越界、解引用空指针等），对整个程序的行为不作任何要求，编译器因此可以假定它绝不发生。优化器会据此删除看似多余的判断，例如把跟在一次解引用之后的 if (p == NULL) 检查整段消掉，使症状远离真正的出错点，甚至只在换编译器或提高优化等级后才显形。可靠做法是用 UBSan、ASan 等运行时检查，用 -fwrapv 这类选项钉住语义，并从源头拒绝依赖「看起来能跑」的写法。</div>
+      <div class="aen" lang="en">The standard says that once a program exhibits undefined behaviour — signed overflow, an out-of-bounds access, dereferencing null — no requirement whatsoever is placed on the program&#x27;s behaviour, so the compiler may assume it never happens. Optimizers exploit that assumption and delete tests that look redundant, for instance dropping an if (p == NULL) check that follows a dereference of p, which makes symptoms surface far from the real fault or only after switching compilers or raising the optimization level. The practical defences are sanitizers such as UBSan and ASan, flags that pin down semantics like -fwrapv, and never relying on code that merely seems to work.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">ISO/IEC 9899:2018 (C17) 第 3.4.3 条；LLVM 项目博客《What Every C Programmer Should Know About Undefined Behavior》</p>
+        <p lang="en">ISO/IEC 9899:2018 (C17) §3.4.3; LLVM Project blog, &quot;What Every C Programmer Should Know About Undefined Behavior&quot;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#未定义行为</a> <a class="tag" href="#">#编译器优化</a> <a class="tag" href="#">#C标准</a> <a class="tag" href="#">#Sanitizer</a>
+    </article>
+
+
+    <article class="qitem" id="221bb1f5cfec">
+      <h2 class="qz" lang="zh">什么是停机问题？为什么它不可解？</h2>
+      <p class="qen" lang="en">What is the halting problem, and why is it undecidable?</p>
+      <div class="azh" lang="zh">停机问题问：能否写一个程序，判断任意程序加输入会不会终止。图灵用对角线法证明不可能：假设存在这样的判定程序 H，构造程序 D 对自身调用 H 并故意取反行为，无论 H 判 D 停还是不停，D 都自相矛盾。因此没有任何算法能解决它。它是可计算性理论的基石，说明“可计算”不等于“可判定”。</div>
+      <div class="aen" lang="en">The halting problem asks whether a program can decide if any given program plus input will halt. Turing proved it impossible via diagonalization: assume a decider H exists, build a program D that calls H on itself and deliberately inverts the answer—whether H says D halts or not, D contradicts itself. So no algorithm can solve it. It is a cornerstone of computability, showing “computable” is not the same as “decidable”.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Michael Sipser,《Introduction to the Theory of Computation》第3版,Cengage Learning,2012</p>
+        <p lang="en">M. Sipser, Introduction to the Theory of Computation, 3rd ed., Cengage Learning, 2012</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#停机问题</a> <a class="tag" href="#">#不可判定</a> <a class="tag" href="#">#图灵机</a>
+    </article>
+
+
+    <article class="qitem" id="2cccb70a7141">
+      <h2 class="qz" lang="zh">协程（coroutine）和普通线程有何不同？</h2>
+      <p class="qen" lang="en">How do coroutines differ from ordinary threads?</p>
+      <div class="azh" lang="zh">协程是用户态的轻量“可暂停/恢复”的执行单元，切换由程序自己控制而非操作系统抢占，开销远小于线程。多个协程常跑在少量线程上，通过显式让出来协作，而非靠时间片。它非常适合高并发 I/O，如海量网络请求。</div>
+      <div class="aen" lang="en">A coroutine is a lightweight, user-mode execution unit that can suspend and resume, with switching controlled by the program rather than preempted by the OS, so its overhead is far smaller than a thread&#x27;s. Many coroutines often run on a few threads and cooperate by explicitly yielding rather than by time slices. It suits high-concurrency I/O such as huge numbers of network requests.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《操作系统概念》（Abraham Silberschatz 等）</p>
+        <p lang="en">Operating System Concepts (Silberschatz et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Operating+System+Concepts" target="_blank" rel="noopener">核验依据 1 ISBN 9780470577233 (2019)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#协程</a> <a class="tag" href="#">#并发</a> <a class="tag" href="#">#异步</a>
+    </article>
+
+
+    <article class="qitem" id="4cd358f60e7e">
+      <h2 class="qz" lang="zh">垃圾回收是怎么工作的？为什么程序不需要手动释放内存？</h2>
+      <p class="qen" lang="en">How does garbage collection work, and why don&#x27;t programs need to free memory manually?</p>
+      <div class="azh" lang="zh">垃圾回收器自动找出不再被引用的对象并回收其内存。常见做法：引用计数（Python 为主）统计被引用次数，归零即回收；可达性分析（Java、Go 的标记-清除）从根集合出发遍历，未被到达的对象都是垃圾。为减少停顿，现代 GC 还有分代回收、并发标记等优化。手动管理（C/C++）更高效但容易泄漏或悬垂。</div>
+      <div class="aen" lang="en">The garbage collector finds objects no longer referenced and reclaims their memory. Common strategies: reference counting (mainly Python) frees objects when their count hits zero; reachability analysis (mark-and-sweep, used by Java and Go) traverses from root references and collects everything unreachable. To reduce pauses, modern GCs add generational collection and concurrent marking. Manual management (C/C++) is efficient but prone to leaks and dangling pointers.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#垃圾回收</a> <a class="tag" href="#">#标记清除</a> <a class="tag" href="#">#可达性</a>
+    </article>
+
+
+    <article class="qitem" id="7183f21dce15">
+      <h2 class="qz" lang="zh">什么是类型系统？静态/动态、强/弱类型各指什么？</h2>
+      <p class="qen" lang="en">What is a type system? What do static/dynamic and strong/weak typing mean?</p>
+      <div class="azh" lang="zh">类型系统给变量和表达式规定数据种类（整数、字符串等），编译期检查的叫静态类型，运行时检查的叫动态类型。强类型禁止类型被随意混用（整数加字符串会报错），弱类型允许隐式转换（如“5”+3 得到“53”）。Rust、Java 是静态强类型；Python、JavaScript 是动态类型，其中 JS 常被视为弱类型。</div>
+      <div class="aen" lang="en">A type system assigns kinds (integer, string, ...) to variables and expressions. Static typing checks at compile time; dynamic typing at runtime. Strong typing forbids mixing types freely (adding an integer and a string errors), while weak typing allows implicit conversions (so “5”+3 gives “53”). Rust and Java are statically strongly typed; Python and JavaScript are dynamically typed, with JS usually seen as weakly typed.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#静态类型</a> <a class="tag" href="#">#动态类型</a>
+    </article>
+
+
+    <article class="qitem" id="8cadc04e0c7f">
+      <h2 class="qz" lang="zh">编译器为什么要专门优化循环？循环不变量外提是怎么做的？</h2>
+      <p class="qen" lang="en">Why do compilers target loops specifically, and how does loop-invariant code motion work?</p>
+      <div class="azh" lang="zh">程序绝大部分运行时间花在循环里，所以编译器用数据流分析识别循环结构并做变换。循环不变量外提把&quot;每次迭代结果都不变&quot;的计算移到循环外只算一次；此外还有归纳变量消除、循环展开、强度削减等优化。这些变换依赖数据流分析证明安全性（不改变可观察行为）与收益性（确实节省时间）。</div>
+      <div class="aen" lang="en">Loops consume most of a program&#x27;s runtime, so compilers use data-flow analysis to identify loop structure and apply transformations. Loop-invariant code motion hoists computations whose result is unchanged across iterations out of the loop to run once; other transforms include induction-variable elimination, loop unrolling and strength reduction. These rely on data-flow analysis to prove both safety (observable behavior unchanged) and profitability.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#循环优化</a> <a class="tag" href="#">#数据流分析</a> <a class="tag" href="#">#编译器</a>
+    </article>
+
+
+    <article class="qitem" id="9946dabfc256">
+      <h2 class="qz" lang="zh">什么是元编程，它常用于哪些场景？</h2>
+      <p class="qen" lang="en">What is metaprogramming and where is it commonly used?</p>
+      <div class="azh" lang="zh">元编程指编写能“生成或操纵其他程序（或自身）”的代码，即在程序层面处理代码。例如用宏在编译期展开重复逻辑，或用反射在运行期动态查看和调用对象成员。它可减少样板代码、增强表达力，但过度使用会降低可读性和可调试性。</div>
+      <div class="aen" lang="en">Metaprogramming means writing code that generates or manipulates other code, or itself, operating on programs at the code level. Examples include macros that expand repetitive logic at compile time and reflection that inspects or invokes object members at runtime. It cuts boilerplate and boosts expressiveness but, overused, hurts readability and debuggability.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#元编程</a> <a class="tag" href="#">#宏</a> <a class="tag" href="#">#反射</a>
+    </article>
+
+
+    <article class="qitem" id="9a891c88051f">
+      <h2 class="qz" lang="zh">什么是尾递归，它为什么重要？</h2>
+      <p class="qen" lang="en">What is tail recursion and why does it matter?</p>
+      <div class="azh" lang="zh">尾递归指递归调用出现在函数的最后一步，且返回值直接就是该调用的结果。支持尾调用优化的编译器可把它改写成循环，避免不断压栈，从而像迭代一样省内存。否则深度递归仍可能栈溢出，所以尾递归是把递归写法变得安全的技巧。</div>
+      <div class="aen" lang="en">Tail recursion means the recursive call is the last step and its result is returned directly. Compilers with tail-call optimization can rewrite it as a loop, avoiding growing the stack and saving memory like iteration. Without it, deep recursion can still overflow, so tail recursion is a technique to make recursive code safe.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#尾递归</a> <a class="tag" href="#">#优化</a> <a class="tag" href="#">#递归</a>
+    </article>
+
+
+    <article class="qitem" id="cc54358b22ef">
+      <h2 class="qz" lang="zh">λ 演算和现代编程语言有什么关系？</h2>
+      <p class="qen" lang="en">What is the connection between lambda calculus and modern programming languages?</p>
+      <div class="azh" lang="zh">λ 演算是 20 世纪 30 年代提出的一种极简形式系统，只用“函数定义”和“函数应用”表达一切计算。它奠定了函数式编程的理论基础，匿名函数、闭包、高阶函数等概念都能在其中找到根源。许多语言把 λ 表达式作为一等公民特性直接吸收。</div>
+      <div class="aen" lang="en">Lambda calculus is a minimal formal system from the 1930s that expresses all computation using only function definition and application. It founded the theory of functional programming, and concepts like anonymous functions, closures, and higher-order functions trace back to it. Many languages adopt lambda expressions directly as first-class features.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#lambda演算</a> <a class="tag" href="#">#函数式</a> <a class="tag" href="#">#理论基础</a>
+    </article>
+
+
+    <article class="qitem" id="cee01f47b1f3">
+      <h2 class="qz" lang="zh">引用计数有什么局限，为什么会产生循环引用？</h2>
+      <p class="qen" lang="en">What are the limits of reference counting and why do circular references arise?</p>
+      <div class="azh" lang="zh">引用计数给每个对象记录有多少地方引用它，计数为零即回收，简单且回收及时。但它难以处理循环引用：A 引用 B、B 又引用 A，二者计数都降不到零，内存便泄漏。因此很多系统把引用计数与可达性分析（如追踪式 GC）结合使用。</div>
+      <div class="aen" lang="en">Reference counting records how many places refer to each object and reclaims it when the count hits zero, which is simple and prompt. But it struggles with circular references: if A refers to B and B to A, neither count reaches zero and memory leaks. Many systems therefore combine reference counting with reachability analysis such as tracing GC.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#引用计数</a> <a class="tag" href="#">#循环引用</a> <a class="tag" href="#">#垃圾回收</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_001">
+      <h2 class="qz" lang="zh">现代编译器在优化代码之前,为什么通常要先把程序改写成 SSA(静态单赋值)形式?</h2>
+      <p class="qen" lang="en">Why do modern compilers usually rewrite programs into SSA (Static Single Assignment) form before optimizing?</p>
+      <div class="azh" lang="zh">因为单赋值让数据流显式化:每个变量只被赋值一次,控制流汇合处用 φ 函数合并取值,于是常量传播、死代码消除、公共子表达式删除等优化都可化为简单的稀疏规则,速度更快且更容易验证正确性。GCC(GIMPLE)、LLVM、V8 等主流实现都以 SSA 作为核心中间表示。</div>
+      <div class="aen" lang="en">Single assignment makes data flow explicit: each variable is written exactly once and values are merged by phi functions at control-flow joins, so optimizations like constant propagation, dead-code elimination and common-subexpression elimination reduce to simple sparse rules that run fast and are easy to verify. GCC GIMPLE, LLVM and V8 all build their middle ends on SSA.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cytron 等,Efficiently Computing Static Single Assignment Form and the Control Dependence Graph,ACM TOPLAS,1991;Appel《Modern Compiler Implementation》,Cambridge University Press</p>
+        <p lang="en">Cytron et al., Efficiently Computing Static Single Assignment Form and the Control Dependence Graph, ACM TOPLAS, 1991; Appel, Modern Compiler Implementation, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2704215W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2704215W：Modern compiler impleme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SSA 形式</a> <a class="tag" href="#">#编译器中间表示</a> <a class="tag" href="#">#数据流分析</a>
+    </article>
+
+
+    <article class="qitem" id="e02cf027fe13">
+      <h2 class="qz" lang="zh">Hindley-Milner 类型推导是怎么&quot;算出&quot;类型的？let 多态为什么是关键？</h2>
+      <p class="qen" lang="en">How does Hindley-Milner type inference &quot;compute&quot; types, and why is let-polymorphism key?</p>
+      <div class="azh" lang="zh">推导本质是约束求解：给每个表达式设一个含类型变量的方程，用合一（unification）算法逐步实例化变量，无法合一就报类型错误。let 多态允许同一个定义在不同使用点被实例化为不同类型（例如空表 [] 可同时作为 [Int] 与 [Bool]），而 lambda 参数在推导中必须保持单一类型。这种&quot;泛化只在 let 处发生&quot;的规则，正是 HM 兼顾表达力与可判定推导的关键。</div>
+      <div class="aen" lang="en">Inference is constraint solving: each expression yields equations over type variables, a unification algorithm instantiates them step by step, and a failure to unify is a type error. let-polymorphism lets one definition instantiate to different types at different uses (e.g. [] can be both [Int] and [Bool]), while lambda parameters must keep a single type during inference. This &quot;generalize only at let&quot; rule is why HM balances expressiveness with decidable inference.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pierce《类型与编程语言》；Aho 等《编译器：原理、技术与工具》</p>
+        <p lang="en">Pierce, Types and Programming Languages; Aho et al., Compilers: Principles, Techniques, and Tools</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型推导</a> <a class="tag" href="#">#Hindley-Milner</a> <a class="tag" href="#">#多态</a>
+    </article>
+
+
+    <article class="qitem" id="0476420aa8d1">
+      <h2 class="qz" lang="zh">什么是类型推导？为什么在 Haskell、Rust 里可以省略大部分类型声明？</h2>
+      <p class="qen" lang="en">What is type inference? Why can most type annotations be omitted in Haskell or Rust?</p>
+      <div class="azh" lang="zh">类型推导是编译器根据表达式如何使用来自动确定其类型，用户无需写出全部类型注解。Hindley-Milner 风格的类型系统能保证推导出的类型是最一般的类型，并且推导效率高。推导的本质是收集类型约束并做合一（unification）求解，遇到矛盾时报类型错误。</div>
+      <div class="aen" lang="en">Type inference lets the compiler determine types from how expressions are used, so programmers can omit most annotations. Hindley-Milner-style type systems guarantee the inferred type is the most general one, and inference is efficient. Inference essentially collects type constraints and solves them by unification, reporting a type error when a contradiction arises.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型推导</a> <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#编译</a>
+    </article>
+
+
+    <article class="qitem" id="0857de2055b9">
+      <h2 class="qz" lang="zh">CPython 的全局解释器锁为什么让多线程算不快？</h2>
+      <p class="qen" lang="en">Why does CPython&#x27;s global interpreter lock prevent threads from speeding up computation?</p>
+      <div class="azh" lang="zh">GIL 是一把保护解释器内部状态（尤其是对象引用计数）的全局互斥锁，任何时刻只有一个线程能执行 Python 字节码，所以纯 Python 的 CPU 密集任务无法靠多线程利用多核。但线程在阻塞式 I/O、time.sleep 或调用主动释放 GIL 的 C 扩展（多数 NumPy 数值核、zlib 压缩）时会交出锁，因此 I/O 密集程序依然受益。绕开办法是改用 multiprocessing 进程池，或使用 Python 3.13 起按 PEP 703 提供的自由线程实验构建。</div>
+      <div class="aen" lang="en">The GIL is a single mutex protecting interpreter internals — above all object reference counts — so only one thread executes Python bytecode at a time and CPU-bound pure-Python work cannot scale across cores with threads. Threads do release the GIL during blocking I/O, time.sleep, and inside C extensions that drop it such as most NumPy kernels and zlib, which is why I/O-bound programs still benefit from threading. The workarounds are multiprocessing or process pools, or the experimental free-threaded build shipped from Python 3.13 under PEP 703.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Python 官方文档术语表 global interpreter lock 条目；PEP 703《Making the Global Interpreter Lock Optional in CPython》</p>
+        <p lang="en">Python documentation glossary, &quot;global interpreter lock&quot;; PEP 703, &quot;Making the Global Interpreter Lock Optional in CPython&quot;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#GIL</a> <a class="tag" href="#">#CPython</a> <a class="tag" href="#">#多线程</a> <a class="tag" href="#">#PEP 703</a>
+    </article>
+
+
+    <article class="qitem" id="0bd4503000ad">
+      <h2 class="qz" lang="zh">函数式编程和面向对象编程有什么不同？</h2>
+      <p class="qen" lang="en">How do functional programming and object-oriented programming differ?</p>
+      <div class="azh" lang="zh">面向对象把数据和操作数据的方法封装成“对象”，靠状态变化和对象间消息协作，代表有 Java、C++；函数式把计算看成函数对数据的变换，强调不可变数据和纯函数（同样输入必有同样输出），代表有 Haskell、Elixir，JavaScript 也支持。函数式在并发和测试上更省心，OOP 在建模现实实体上更直观。</div>
+      <div class="aen" lang="en">Object-oriented programming bundles data with the methods that operate on it into objects, collaborating through state changes and messages—Java and C++ are examples. Functional programming treats computation as functions transforming data, stressing immutability and pure functions (same input, same output)—Haskell and Elixir, with JavaScript also supporting it. Functional code eases concurrency and testing; OOP models real-world entities intuitively.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#函数式</a> <a class="tag" href="#">#面向对象</a> <a class="tag" href="#">#纯函数</a>
+    </article>
+
+
+    <article class="qitem" id="23ed902da90e">
+      <h2 class="qz" lang="zh">什么是闭包？</h2>
+      <p class="qen" lang="en">What is a closure?</p>
+      <div class="azh" lang="zh">闭包是一个函数加上它捕获的外层变量环境，即使外层已执行完毕，函数仍记得并使用那些变量。它常用于回调、事件处理和实现私有状态。闭包让函数携带“记忆”，是函数式与很多现代语言的重要特性。</div>
+      <div class="aen" lang="en">A closure is a function together with the environment of outer variables it captures, so even after the outer scope finishes, the function still remembers and uses those variables. It is common in callbacks, event handling, and implementing private state. By giving a function memory, closures are key in functional and many modern languages.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#闭包</a> <a class="tag" href="#">#函数式</a> <a class="tag" href="#">#作用域</a>
+    </article>
+
+
+    <article class="qitem" id="2b7bd195bd1a">
+      <h2 class="qz" lang="zh">递归和迭代各有什么特点？</h2>
+      <p class="qen" lang="en">What are the characteristics of recursion versus iteration?</p>
+      <div class="azh" lang="zh">递归用函数自己调用自己来表达重复，代码往往更贴近问题的数学定义，如树遍历。迭代用循环变量反复推进，通常更省内存、速度更可控。递归若过深可能栈溢出，但很多结构天然适合递归表达。</div>
+      <div class="aen" lang="en">Recursion expresses repetition by a function calling itself, often matching a problem&#x27;s mathematical definition such as tree traversal. Iteration uses loops to advance step by step, usually saving memory and giving more control over speed. Deep recursion can overflow the stack, yet many structures are naturally recursive.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#递归</a> <a class="tag" href="#">#迭代</a> <a class="tag" href="#">#控制流</a>
+    </article>
+
+
+    <article class="qitem" id="2dd193608ae2">
+      <h2 class="qz" lang="zh">泛型编程解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does generic programming solve?</p>
+      <div class="azh" lang="zh">泛型让你写出与具体数据类型无关的代码，比如一个能装任意类型的列表，而不必为每种类型重写。它在保持类型安全的同时减少重复代码。C++ 的模板、Java 的泛型、Rust 的泛型都是典型实现。</div>
+      <div class="aen" lang="en">Generics let you write code independent of concrete data types, such as a list that can hold any type without rewriting it for each one. They reduce duplication while preserving type safety. C++ templates, Java generics, and Rust generics are typical implementations.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#泛型</a> <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#复用</a>
+    </article>
+
+
+    <article class="qitem" id="3c332c9269b6">
+      <h2 class="qz" lang="zh">编译器做&quot;内联&quot;（inlining）优化是什么意思？它有什么好处和代价？</h2>
+      <p class="qen" lang="en">What does inlining mean in compilers, and what are its benefits and costs?</p>
+      <div class="azh" lang="zh">内联是把被调用函数的函数体复制到调用点，从而消除函数调用开销（压栈、跳转、传参），并为后续优化（如常量传播、死代码消除）创造机会。代价是代码体积膨胀、编译时间增加，因此编译器通常只对&quot;小而热&quot;的函数自动内联，并用启发式策略和优化等级控制。</div>
+      <div class="aen" lang="en">Inlining copies the callee&#x27;s function body into the call site, eliminating call overhead such as stack frames, jumps and argument passing, while enabling later optimizations like constant propagation and dead-code elimination. The cost is larger code and longer compile times, so compilers usually inline only small, hot functions, controlled by heuristics and optimization levels.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#内联</a> <a class="tag" href="#">#编译器优化</a> <a class="tag" href="#">#性能</a>
+    </article>
+
+
+    <article class="qitem" id="414ed89f18ad">
+      <h2 class="qz" lang="zh">什么是纯函数，为什么要追求它？</h2>
+      <p class="qen" lang="en">What is a pure function and why pursue it?</p>
+      <div class="azh" lang="zh">纯函数对相同输入永远返回相同输出，且不产生可观察的副作用（如修改全局变量、写文件）。它易于测试、缓存结果（记忆化），也更利于并行。很多 bug 来自隐藏的副作用，纯函数能让代码行为更可预测。</div>
+      <div class="aen" lang="en">A pure function always returns the same output for the same input and has no observable side effects such as mutating globals or writing files. It is easy to test, can be memoized, and suits parallel execution. Many bugs come from hidden side effects, so purity makes behavior more predictable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#纯函数</a> <a class="tag" href="#">#副作用</a> <a class="tag" href="#">#函数式</a>
+    </article>
+
+
+    <article class="qitem" id="481ad87fce89">
+      <h2 class="qz" lang="zh">解释器、JIT 编译器与静态编译在运行方式上有什么不同？</h2>
+      <p class="qen" lang="en">How do interpreters, JIT compilers and ahead-of-time compilers differ in how they run code?</p>
+      <div class="azh" lang="zh">解释器逐条读取并执行源代码或字节码，启动快但运行慢；AOT 静态编译先把整个程序翻译成机器码再运行，执行快但构建和部署较慢；JIT 编译器在运行时把热点代码动态编译成机器码，兼顾启动速度与运行性能。Java 虚拟机、V8 等主流运行时都采用解释器加 JIT 的分层策略。</div>
+      <div class="aen" lang="en">Interpreters read and execute source code or bytecode statement by statement — fast to start, slow to run. Ahead-of-time compilers translate the whole program to machine code first — fast at runtime but slower to build and deploy. JIT compilers dynamically compile hot code at runtime, balancing startup speed and runtime performance. Major runtimes like the JVM and V8 use a tiered interpreter-plus-JIT strategy.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《编程语言实现原理》（Sebesta）</p>
+        <p lang="en">Concepts of Programming Languages (Sebesta)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#解释器</a> <a class="tag" href="#">#JIT</a> <a class="tag" href="#">#编译器</a>
+    </article>
+
+
+    <article class="qitem" id="4bff9d5b8003">
+      <h2 class="qz" lang="zh">不可变数据有什么好处？</h2>
+      <p class="qen" lang="en">What are the benefits of immutable data?</p>
+      <div class="azh" lang="zh">不可变数据一旦创建就不能被修改，任何“改动”都产生新副本。这让程序更容易推理，因为值不会在别处被悄悄改变；在并发场景下也不必加锁就能安全共享。代价是需要更多内存或复制开销，现代实现常用结构共享来降低代价。</div>
+      <div class="aen" lang="en">Immutable data cannot be changed after creation; any modification produces a new copy. This makes programs easier to reason about because a value will not be silently altered elsewhere, and in concurrent settings it can be shared safely without locks. The cost is more memory or copying, which modern implementations reduce through structural sharing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#不可变数据</a> <a class="tag" href="#">#函数式</a> <a class="tag" href="#">#并发</a>
+    </article>
+
+
+    <article class="qitem" id="56b8dccd7c5d">
+      <h2 class="qz" lang="zh">什么是类型推断，它带来什么好处？</h2>
+      <p class="qen" lang="en">What is type inference and what benefits does it bring?</p>
+      <div class="azh" lang="zh">类型推断让编译器根据上下文自动判断变量或表达式的类型，程序员不必处处手写类型标注。这既保留了静态类型的安全，又让代码更简洁，如用 var 或 let 声明。典型代表有 Haskell、ML 家族和现代 C++ 的 auto。</div>
+      <div class="aen" lang="en">Type inference lets the compiler determine a variable or expression&#x27;s type from context, so programmers need not annotate types everywhere. It keeps the safety of static typing while making code terser, as with var or let declarations. Haskell, the ML family, and modern C++ auto are typical examples.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型推断</a> <a class="tag" href="#">#静态类型</a> <a class="tag" href="#">#编译器</a>
+    </article>
+
+
+    <article class="qitem" id="6b90feba381c">
+      <h2 class="qz" lang="zh">什么是鸭子类型？</h2>
+      <p class="qen" lang="en">What is duck typing?</p>
+      <div class="azh" lang="zh">鸭子类型是一种动态类型风格：不关心对象属于哪个类，只在意它“能不能做这件事”，比如有 quack 方法就当鸭子用。这让代码更灵活、耦合更低，同一函数可处理多种不同类型的对象。代价是类型错误可能推迟到运行时才暴露。</div>
+      <div class="aen" lang="en">Duck typing is a dynamic style: rather than caring what class an object belongs to, it cares whether the object can do the job, such as having a quack method. This makes code flexible and loosely coupled, letting one function handle many different types. The cost is that type errors may surface only at runtime.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Milojkovic, Ghafari, Nierstrasz,《It&#x27;s Duck (Typing) Season!》,2017 IEEE/ACM 25th International Conference on Program Compr,2017 (DOI: 10.1109/icpc.2017.10)</p>
+        <p lang="en">Milojkovic, Ghafari, Nierstrasz, &#x27;It&#x27;s Duck (Typing) Season!&#x27;, 2017 IEEE/ACM 25th International Conference on Program Compr, 2017, DOI: 10.1109/icpc.2017.10</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/icpc.2017.10" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/icpc.2017.10</a></p>
+        
+      </details>
+      <a class="tag" href="#">#鸭子类型</a> <a class="tag" href="#">#动态类型</a> <a class="tag" href="#">#多态</a>
+    </article>
+
+
+    <article class="qitem" id="7114c12e26c9">
+      <h2 class="qz" lang="zh">垃圾回收（GC）是怎么自动管理内存的？</h2>
+      <p class="qen" lang="en">How does garbage collection (GC) manage memory automatically?</p>
+      <div class="azh" lang="zh">垃圾回收器自动找出程序不再使用的对象并回收其内存，免得程序员手动释放而遗漏或重复释放。常见策略有标记-清除、分代回收等，依据对象存活时间分区处理。它降低了内存错误，但会在回收时产生停顿。</div>
+      <div class="aen" lang="en">A garbage collector automatically finds objects the program no longer uses and reclaims their memory, sparing programmers from manual freeing that can be forgotten or duplicated. Common strategies include mark-sweep and generational collection, partitioning by object lifetime. It reduces memory bugs but can cause pauses during collection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#垃圾回收</a> <a class="tag" href="#">#内存管理</a> <a class="tag" href="#">#GC</a>
+    </article>
+
+
+    <article class="qitem" id="78ce07bdd9dc">
+      <h2 class="qz" lang="zh">什么是类型系统，它有什么用？</h2>
+      <p class="qen" lang="en">What is a type system and what is it for?</p>
+      <div class="azh" lang="zh">类型系统是一套给程序中的值分类并规定它们如何组合使用的规则。它能在编译或运行期捕获许多错误，比如把字符串当数字相加。好的类型系统还能充当文档，帮助IDE自动补全并支持更安全的重构。</div>
+      <div class="aen" lang="en">A type system is a set of rules that classify values in a program and govern how they may be combined. It can catch many errors at compile or run time, such as adding a string where a number is expected. A good type system also serves as documentation, powers IDE autocomplete, and enables safer refactoring.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#类型系统</a> <a class="tag" href="#">#静态检查</a> <a class="tag" href="#">#编程语言</a>
+    </article>
+
+
+    <article class="qitem" id="7c433e0d9c7f">
+      <h2 class="qz" lang="zh">并发和并行是一回事吗？</h2>
+      <p class="qen" lang="en">Are concurrency and parallelism the same thing?</p>
+      <div class="azh" lang="zh">不是。并发是“处理多个任务”，可以交替推进、宏观上同时；并行是“同时执行多个任务”，需要多核或多处理器。单核上只能并发，不能并行。与之相伴的问题是竞态：多线程同时读写共享变量，结果依赖执行顺序，需要用锁或原子操作保护。</div>
+      <div class="aen" lang="en">No. Concurrency is dealing with many tasks, interleaved so they appear simultaneous; parallelism is executing many tasks at once, requiring multiple cores or processors. A single core can be concurrent but never parallel. A related hazard is the race condition: threads reading and writing shared variables produce order-dependent results, so locks or atomic operations are needed.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">A. Tanenbaum《现代操作系统》第2章 (机械工业出版社)</p>
+        <p lang="en">R. Love, Linux Kernel Development, 3rd ed., Chapter 3 (Process Management)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/27096665/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111573692（豆瓣书目条目: 现代操作系统）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#并发</a> <a class="tag" href="#">#并行</a> <a class="tag" href="#">#竞态条件</a>
+    </article>
+
+
+    <article class="qitem" id="885b627c11a1">
+      <h2 class="qz" lang="zh">Unicode 和 UTF-8 是什么关系，网页上的「锟斤拷」这类乱码是怎么来的？</h2>
+      <p class="qen" lang="en">How do Unicode and UTF-8 relate, and where does garbled text like mojibake come from?</p>
+      <div class="azh" lang="zh">Unicode 是字符集，为每个字符分配一个码位，例如「中」是 U+4E2D；UTF-8 是把码位转成字节的编码方式，ASCII 占 1 字节、常用汉字占 3 字节。乱码出现在写入与读取所用编码不一致时：GBK 编码的字节被当成 UTF-8 解码会产生非法序列，被替换成 U+FFFD 替换字符；当这些 U+FFFD 以 UTF-8 存回（每个是字节 EF BF BD），再被按 GBK 解读时，EF BF / BD EF / BF BD 三段恰好对应「锟」「斤」「拷」，于是出现著名的「锟斤拷」。而显示成空心方框通常不是编码错误，而是字体缺少该字符的字形。在两端统一声明 UTF-8，如 HTTP 的 Content-Type 头与 HTML 的 meta charset，即可避免。</div>
+      <div class="aen" lang="en">Unicode is a character set that assigns every character a code point, so 中 is U+4E2D, while UTF-8 is one way of turning code points into bytes: ASCII takes one byte and common Chinese characters take three. Mojibake appears when the encoding used to write differs from the one used to read — GBK bytes decoded as UTF-8 yield invalid sequences that become U+FFFD replacement characters, and when those replacement characters are stored back as UTF-8 (each U+FFFD is the bytes EF BF BD) and then re-read as GBK, the sequences EF BF, BD EF and BF BD map to the characters 锟, 斤 and 拷, producing the notorious garbage string. Hollow boxes usually mean something different: the decoding was fine but the font has no glyph for that character. Declaring UTF-8 consistently at both ends, in the HTTP Content-Type header and the HTML meta charset tag, prevents it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">The Unicode Consortium《The Unicode Standard, Version 15.1》第 2–3 章；RFC 3629《UTF-8, a transformation format of ISO 10646》</p>
+        <p lang="en">The Unicode Consortium, &quot;The Unicode Standard, Version 15.1,&quot; ch. 2–3; RFC 3629, &quot;UTF-8, a transformation format of ISO 10646&quot;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19265201W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL19265201W：The Unicode standard, </a></p>
+        
+      </details>
+      <a class="tag" href="#">#Unicode</a> <a class="tag" href="#">#UTF-8</a> <a class="tag" href="#">#乱码</a> <a class="tag" href="#">#字符编码</a>
+    </article>
+
+
+    <article class="qitem" id="8b0a2c157a60">
+      <h2 class="qz" lang="zh">什么是虚拟机（如 JVM），它有什么价值？</h2>
+      <p class="qen" lang="en">What is a virtual machine such as the JVM and what is its value?</p>
+      <div class="azh" lang="zh">虚拟机在真实硬件之上用软件模拟一套运行环境，程序跑在它定义的字节码上。以 JVM 为例，一次编译出的字节码可在任何装有 JVM 的平台运行，实现“一次编写，到处运行”。它还统一管理内存、垃圾回收和安全检查。</div>
+      <div class="aen" lang="en">A virtual machine uses software to simulate a runtime environment atop real hardware, and programs run on the bytecode it defines. With the JVM, for example, compiled bytecode runs on any platform that has a JVM, realizing write once, run anywhere. It also centrally manages memory, garbage collection, and security checks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#虚拟机</a> <a class="tag" href="#">#JVM</a> <a class="tag" href="#">#字节码</a>
+    </article>
+
+
+    <article class="qitem" id="97986965c0e6">
+      <h2 class="qz" lang="zh">异步编程解决了什么痛点？</h2>
+      <p class="qen" lang="en">What pain point does asynchronous programming solve?</p>
+      <div class="azh" lang="zh">当程序需要等待网络、磁盘等慢速 I/O 时，同步写法会让整个线程空等、浪费资源。异步编程用回调、Promise 或 async/await 在等待时让出执行权去处理别的事，I/O 完成后再回来继续。它能在少量线程上支撑大量并发任务。</div>
+      <div class="aen" lang="en">When a program must wait for slow I/O like network or disk, a synchronous style blocks the whole thread and wastes resources. Asynchronous programming uses callbacks, promises, or async/await to yield control while waiting and resume when I/O finishes. It lets a few threads support many concurrent tasks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#异步</a> <a class="tag" href="#">#并发</a> <a class="tag" href="#">#I/O</a>
+    </article>
+
+
+    <article class="qitem" id="b042e9ced55e">
+      <h2 class="qz" lang="zh">为什么说函数是“一等公民”？</h2>
+      <p class="qen" lang="en">What does it mean for functions to be first-class citizens?</p>
+      <div class="azh" lang="zh">若一种语言把函数视为一等公民，函数就能像数字、字符串一样被赋值给变量、作为参数传递、作为返回值、存进数据结构。这让高阶函数（接收或返回函数的函数）成为可能，是函数式风格和很多回调机制的基础。</div>
+      <div class="aen" lang="en">When a language treats functions as first-class citizens, they can be assigned to variables, passed as arguments, returned from other functions, and stored in data structures just like numbers or strings. This enables higher-order functions and underpins functional style as well as many callback mechanisms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#一等公民</a> <a class="tag" href="#">#高阶函数</a> <a class="tag" href="#">#函数式</a>
+    </article>
+
+
+    <article class="qitem" id="cedab2d60769">
+      <h2 class="qz" lang="zh">强类型与弱类型指的是什么？</h2>
+      <p class="qen" lang="en">What do strong typing and weak typing refer to?</p>
+      <div class="azh" lang="zh">这对概念衡量的是语言在类型转换上的严格程度，而非编译期还是运行期检查。强类型语言（如 Python、Haskell）会阻止或显式要求隐式的不安全转换；弱类型语言（如 C、JavaScript）常在背后悄悄做类型转换，容易出人意料。注意它和静态/动态类型是正交的两个维度。</div>
+      <div class="aen" lang="en">This pair measures how strictly a language handles type conversions, not whether checks happen at compile or run time. Strongly typed languages such as Python and Haskell forbid or require explicit unsafe conversions, while weakly typed ones such as C and JavaScript quietly convert behind the scenes, sometimes surprisingly. Note this is orthogonal to static versus dynamic typing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pierce《类型与编程语言》；Aho 等《编译器：原理、技术与工具》</p>
+        <p lang="en">Pierce, Types and Programming Languages; Aho et al., Compilers: Principles, Techniques, and Tools</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#强类型</a> <a class="tag" href="#">#弱类型</a> <a class="tag" href="#">#类型系统</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_002">
+      <h2 class="qz" lang="zh">编译器如何决定哪些变量放进寄存器?为什么说寄存器分配本质上是图着色问题?</h2>
+      <p class="qen" lang="en">How does a compiler decide which variables live in registers, and why is register allocation essentially a graph coloring problem?</p>
+      <div class="azh" lang="zh">编译器先做活跃变量分析:若两个变量在某点同时存活,就在干扰图中连一条边;给结点分配颜色即分配寄存器,k 种颜色对应 k 个通用寄存器,相邻结点异色意味着两者绝不冲突。一般的图 k 着色是 NP 完全问题,无法精确高效求解,故实际采用简化—溢出等启发式,放不下的变量溢出到栈槽并插入加载存储指令。</div>
+      <div class="aen" lang="en">The compiler runs liveness analysis: whenever two values are live at the same program point they get an edge in the interference graph, and coloring nodes with k colors corresponds to assigning k machine registers, adjacent nodes always differing so values never collide. General k-coloring is NP-complete, so real compilers rely on simplify-and-spill heuristics, pushing leftover values into stack slots together with inserted loads and stores.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chaitin,Register Allocation &amp; Spilling via Graph Coloring,SIGPLAN Symposium on Compiler Construction,1982;Muchnick《Advanced Compiler Design and Implementation》,Morgan Kaufmann,1997</p>
+        <p lang="en">Chaitin, Register Allocation &amp; Spilling via Graph Coloring, SIGPLAN Symposium on Compiler Construction, 1982; Muchnick, Advanced Compiler Design and Implementation, Morgan Kaufmann, 1997</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2655436W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2655436W：Advanced compiler desig</a></p>
+        
+      </details>
+      <a class="tag" href="#">#寄存器分配</a> <a class="tag" href="#">#图着色</a> <a class="tag" href="#">#活跃变量分析</a>
+    </article>
+
+
+    <article class="qitem" id="d3eb61c22cab">
+      <h2 class="qz" lang="zh">编译器的词法分析阶段做什么？它和语法分析有什么分工？</h2>
+      <p class="qen" lang="en">What does the lexing phase of a compiler do? How is it divided from parsing?</p>
+      <div class="azh" lang="zh">词法分析把源代码的字符流切分成一个个词法单元（token），如关键字、标识符、数字和运算符，同时过滤空白与注释。语法分析则在 token 流之上按文法规则识别语句结构、生成语法树。词法分析用正则表达式和有穷自动机实现，速度快、规则局部化。</div>
+      <div class="aen" lang="en">Lexing splits the raw character stream of the source into tokens — keywords, identifiers, numbers, operators — while discarding whitespace and comments. Parsing then recognizes statement structure from the token stream and builds a syntax tree. Lexers are implemented with regular expressions and finite automata, making them fast and localized.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#词法分析</a> <a class="tag" href="#">#编译器</a> <a class="tag" href="#">#token</a>
+    </article>
+
+
+    <article class="qitem" id="dc2d114e70c2">
+      <h2 class="qz" lang="zh">什么是抽象语法树（AST）？编译器为什么基于它工作而不是直接处理源代码文本？</h2>
+      <p class="qen" lang="en">What is an abstract syntax tree (AST)? Why do compilers work on it instead of raw source text?</p>
+      <div class="azh" lang="zh">AST 是源代码的树状表示，只保留程序的结构化语义，去掉括号、分号等语法噪音。它让语义分析、类型检查和代码生成等后续阶段在统一的树结构上工作，同时也是代码格式化、静态检查和 IDE 重构等工具的基础。</div>
+      <div class="aen" lang="en">An AST is a tree representation of the source that keeps only the structural meaning, dropping syntactic noise such as parentheses and semicolons. It lets later phases like semantic analysis, type checking and code generation all operate on one uniform tree, and it also underpins formatters, static checkers and IDE refactoring tools.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#抽象语法树</a> <a class="tag" href="#">#编译器</a> <a class="tag" href="#">#前端</a>
+    </article>
+
+
+    <article class="qitem" id="f7f314e66a5e">
+      <h2 class="qz" lang="zh">宏（macro）与普通函数调用有什么本质区别？</h2>
+      <p class="qen" lang="en">What is the fundamental difference between a macro and an ordinary function call?</p>
+      <div class="azh" lang="zh">普通函数在运行时被调用，参数先求值再传入；宏在编译期展开，可以直接操纵和生成源代码，从而实现延迟求值、代码生成等能力，是元编程的核心形式。C 预处理器的宏做文本替换，而 Rust、Lisp 的宏工作在语法层面、更安全可控。</div>
+      <div class="aen" lang="en">Functions are invoked at runtime with already-evaluated arguments; macros expand at compile time, directly manipulating and generating source code, enabling lazy evaluation and code generation — the heart of metaprogramming. C preprocessor macros perform textual substitution, while Rust and Lisp macros operate at the syntax level and are safer and more controllable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《编程语言实现原理》（Sebesta）</p>
+        <p lang="en">Concepts of Programming Languages (Sebesta)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#宏</a> <a class="tag" href="#">#元编程</a> <a class="tag" href="#">#代码生成</a>
+    </article>
+
+
+    <article class="qitem" id="feb754776904">
+      <h2 class="qz" lang="zh">静态类型语言和动态类型语言有何不同？</h2>
+      <p class="qen" lang="en">What is the difference between statically and dynamically typed languages?</p>
+      <div class="azh" lang="zh">静态类型语言在编译期就确定并检查变量类型，如 Java、C++、Rust，能在运行前发现类型错误。动态类型语言在运行时才确定类型，如 Python、JavaScript，写起来更灵活但某些错误要等到运行才暴露。二者各有取舍：前者更稳，后者更灵活。</div>
+      <div class="aen" lang="en">Statically typed languages fix and check types at compile time, such as Java, C++, and Rust, catching type errors before running. Dynamically typed languages determine types at runtime, such as Python and JavaScript, offering flexibility but letting some errors surface only when executed. Each trades off safety against flexibility.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">B. C. Pierce,《类型与程序设计语言》,MIT 出版社,2002,第 15 章</p>
+        <p lang="en">Benjamin C. Pierce, Types and Programming Languages, MIT Press, 2002, Chapter 15</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#静态类型</a> <a class="tag" href="#">#动态类型</a> <a class="tag" href="#">#类型系统</a>
+    </article>
+
+
+    <article class="qitem" id="03eb183d611d">
+      <h2 class="qz" lang="zh">封装、继承、多态分别指什么？</h2>
+      <p class="qen" lang="en">What do encapsulation, inheritance, and polymorphism mean?</p>
+      <div class="azh" lang="zh">封装是把内部实现隐藏起来，只暴露必要接口，降低耦合。继承允许一个类基于另一个类扩展，复用已有行为。多态让同一接口在不同对象上有不同实现，调用者无需关心具体类型。三者是面向对象最常提及的三大特性。</div>
+      <div class="aen" lang="en">Encapsulation hides internal implementation and exposes only needed interfaces, reducing coupling. Inheritance lets one class extend another and reuse its behavior. Polymorphism lets one interface have different implementations across objects, so callers need not know the concrete type. These three are the oft-cited pillars of OOP.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《编程语言实现原理》（Sebesta）</p>
+        <p lang="en">Concepts of Programming Languages (Sebesta)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#封装</a> <a class="tag" href="#">#继承</a> <a class="tag" href="#">#多态</a>
+    </article>
+
+
+    <article class="qitem" id="110d9fe7426b">
+      <h2 class="qz" lang="zh">编译型语言和解释型语言有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between compiled and interpreted languages?</p>
+      <div class="azh" lang="zh">编译型语言先把整个源代码翻译成机器码再运行，如 C、Rust，启动快、运行效率高。解释型语言由解释器逐行边读边执行，如早期 Python、JavaScript，跨平台方便、开发灵活但运行稍慢。现代很多语言采用折中方案，先编译成中间字节码再在虚拟机中执行。</div>
+      <div class="aen" lang="en">Compiled languages translate the whole source into machine code before running, such as C and Rust, giving fast startup and high efficiency. Interpreted languages are executed line by line by an interpreter, such as early Python and JavaScript, offering portability and flexibility at some runtime cost. Many modern languages compromise by compiling to intermediate bytecode run on a virtual machine.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编译</a> <a class="tag" href="#">#解释</a> <a class="tag" href="#">#执行</a>
+    </article>
+
+
+    <article class="qitem" id="65b29839923e">
+      <h2 class="qz" lang="zh">什么是源代码？</h2>
+      <p class="qen" lang="en">What is source code?</p>
+      <div class="azh" lang="zh">源代码是程序员用人能读懂的编程语言写出的指令文本，如 Python 或 C 写成的文件。它经由编译器或解释器转换成机器能执行的指令。</div>
+      <div class="aen" lang="en">Source code is the human-readable text of instructions written in a programming language, such as files in Python or C. It is converted by a compiler or interpreter into instructions a machine can execute.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《编程语言实现原理》（Sebesta）</p>
+        <p lang="en">Concepts of Programming Languages (Sebesta)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#源代码</a> <a class="tag" href="#">#编程语言</a> <a class="tag" href="#">#程序</a>
+    </article>
+
+
+    <article class="qitem" id="ed09502075bd">
+      <h2 class="qz" lang="zh">什么是面向对象编程（OOP）？</h2>
+      <p class="qen" lang="en">What is object-oriented programming (OOP)?</p>
+      <div class="azh" lang="zh">面向对象编程把数据和操作数据的方法打包成“对象”，以对象为单元来组织程序。它强调用类来描述一类事物的结构与行为，让代码更贴近现实模型。常见好处是易于复用、扩展和维护。</div>
+      <div class="aen" lang="en">Object-oriented programming bundles data and the methods that operate on it into objects and organizes programs around them. It uses classes to describe the structure and behavior of a kind of thing, making code closer to real-world models. Common benefits are easier reuse, extension, and maintenance.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《面向对象软件构造》Bertrand Meyer，Prentice Hall，1997</p>
+        <p lang="en">Object-Oriented Software Construction, Bertrand Meyer, Prentice Hall, 1997</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1128292/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302031888（豆瓣书目条目: 面向对象软件构造）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#面向对象</a> <a class="tag" href="#">#OOP</a> <a class="tag" href="#">#编程范式</a>
+    </article>
+
+
+    <article class="qitem" id="f8c32601d70a">
+      <h2 class="qz" lang="zh">函数式编程的核心思想是什么？</h2>
+      <p class="qen" lang="en">What is the core idea of functional programming?</p>
+      <div class="azh" lang="zh">函数式编程把计算看作数学函数的求值，强调用纯函数描述“做什么”而非“怎么改状态”。它倾向于不可变数据和避免共享可变状态，从而减少并发中的意外。典型语言有 Haskell、OCaml，以及多语言中的函数式特性。</div>
+      <div class="aen" lang="en">Functional programming treats computation as the evaluation of mathematical functions and emphasizes describing what to do with pure functions rather than how to mutate state. It favors immutable data and avoids shared mutable state, reducing surprises in concurrency. Representative languages include Haskell and OCaml, and many languages offer functional features.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#函数式编程</a> <a class="tag" href="#">#纯函数</a> <a class="tag" href="#">#范式</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

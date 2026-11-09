@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>机器人与执行器 robotics-actuators · 工程技术 Engineering | 问答</title>
+<meta name="description" content="机器人与执行器（工程技术）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="机器人与执行器 robotics-actuators · 工程技术 Engineering | 问答">
+<meta property="og:description" content="机器人与执行器（工程技术）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/robotics-actuators/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/robotics-actuators/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>机器人与执行器</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>机器人与执行器 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#34bf25fbb395">伺服系统的三环控制（位置、速度、电流）各自作用是什么？</a></li><li><a href="#d409360b98b0">在移动机器人路径规划中，A* 算法相比 Dijkstra 的优势来自哪里？</a></li><li><a href="#02b96672e915">什么是执行器的死区，它对控制系统有什么影响？</a></li><li><a href="#10db6113dbbc">编码器在机器人中用来测量什么，增量式与绝对式有何不同？</a></li><li><a href="#4a57218b0cf9">直流有刷电机和无刷电机的主要区别是什么？</a></li><li><a href="#6c4badf4ac27">谐波减速器凭什么实现高减速比与高精度，其柔轮为何易疲劳？</a></li><li><a href="#6d9dd96f5a72">并联机器人（如 Stewart 平台）相比串联机械臂在刚度上有何优势？</a></li><li><a href="#b0fd63f43ec1">六轴工业机器人常用的运动学问题有哪两类？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="34bf25fbb395">
+      <h2 class="qz" lang="zh">伺服系统的三环控制（位置、速度、电流）各自作用是什么？</h2>
+      <p class="qen" lang="en">What are the respective roles of the three control loops (position, speed, current) in a servo system?</p>
+      <div class="azh" lang="zh">电流环最内，快速调节转矩、抑制电流波动；速度环居中，跟踪指令速度并改善动态；位置环最外，保证末端按指令定位。由内到外带宽递减，形成级联以保证精度与刚度。</div>
+      <div class="aen" lang="en">The innermost current loop quickly regulates torque and suppresses current ripple; the middle speed loop tracks commanded velocity and improves dynamics; the outer position loop ensures the end effector follows position commands. Bandwidth decreases outward, forming a cascade for precision and stiffness.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机电传动控制》（邓星钟，华中科技大学出版社）</p>
+        <p lang="en">Bose, Modern Power Electronics and AC Drives, Prentice Hall</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6774095/" target="_blank" rel="noopener">核验依据 1 ISBN 9787560968186（豆瓣书目条目: 机电传动控制）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#伺服系统</a> <a class="tag" href="#">#三环控制</a> <a class="tag" href="#">#级联</a>
+    </article>
+
+
+    <article class="qitem" id="d409360b98b0">
+      <h2 class="qz" lang="zh">在移动机器人路径规划中，A* 算法相比 Dijkstra 的优势来自哪里？</h2>
+      <p class="qen" lang="en">In mobile robot path planning, where does A* gain its advantage over Dijkstra?</p>
+      <div class="azh" lang="zh">Dijkstra 对所有节点盲目扩展，A* 引入启发函数估计到目标的代价，仅优先扩展有希望的方向，显著减少搜索节点数。在可采纳启发下 A* 仍能保证最优，效率远高于 Dijkstra。</div>
+      <div class="aen" lang="en">Dijkstra expands nodes blindly, while A* adds a heuristic estimating cost to the goal and prioritizes promising directions, greatly reducing explored nodes. With an admissible heuristic A* still guarantees optimality but is far more efficient.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#路径规划</a> <a class="tag" href="#">#A*算法</a> <a class="tag" href="#">#启发式</a>
+    </article>
+
+
+    <article class="qitem" id="02b96672e915">
+      <h2 class="qz" lang="zh">什么是执行器的死区，它对控制系统有什么影响？</h2>
+      <p class="qen" lang="en">What is actuator dead zone, and how does it affect a control system?</p>
+      <div class="azh" lang="zh">死区指输入控制信号小于某阈值时执行器无输出或不动的区域，源于摩擦、间隙或阀口开启压力。它会造成小信号下稳态误差、极限环振荡，需在控制律中补偿。</div>
+      <div class="aen" lang="en">Dead zone is the input range below a threshold where an actuator produces no motion, due to friction, backlash, or valve cracking pressure. It causes steady-state error and limit-cycle oscillations under small signals, requiring compensation in the controller.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《现代控制工程》（绪方胜彦，电子工业出版社）</p>
+        <p lang="en">Ogata, Modern Control Engineering, Prentice Hall</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#死区</a> <a class="tag" href="#">#执行器</a> <a class="tag" href="#">#非线性</a>
+    </article>
+
+
+    <article class="qitem" id="10db6113dbbc">
+      <h2 class="qz" lang="zh">编码器在机器人中用来测量什么，增量式与绝对式有何不同？</h2>
+      <p class="qen" lang="en">What does an encoder measure in a robot, and how do incremental and absolute encoders differ?</p>
+      <div class="azh" lang="zh">编码器把转轴角位移转为电信号，用于位置与速度反馈。增量式输出相对脉冲、断电后需回零；绝对式直接给出唯一绝对角度编码，上电即知位置，抗掉电但成本较高。</div>
+      <div class="aen" lang="en">An encoder converts shaft angular displacement to electrical signals for position and speed feedback. Incremental encoders output relative pulses and need homing after power loss; absolute encoders give a unique absolute angle, known at power-up, but cost more.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《传感器技术》（机械工业出版社）</p>
+        <p lang="en">Fraden, Handbook of Modern Sensors, Springer</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3009080W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3009080W：Handbook of modern sens</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编码器</a> <a class="tag" href="#">#位置反馈</a> <a class="tag" href="#">#增量式</a>
+    </article>
+
+
+    <article class="qitem" id="4a57218b0cf9">
+      <h2 class="qz" lang="zh">直流有刷电机和无刷电机的主要区别是什么？</h2>
+      <p class="qen" lang="en">What is the main difference between brushed and brushless DC motors?</p>
+      <div class="azh" lang="zh">有刷电机靠机械电刷与换向器切换电流，结构简单但电刷磨损需维护；无刷电机用电子换向驱动永磁转子，效率高、寿命长、噪声低，但需配套控制器。</div>
+      <div class="aen" lang="en">Brushed motors switch current mechanically via brushes and a commutator, simple but wearing and maintenance-prone. Brushless motors use electronic commutation driving a permanent-magnet rotor, giving higher efficiency, longer life, and lower noise but needing a controller.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《电机学》（机械工业出版社）</p>
+        <p lang="en">Electric Machinery, Fitzgerald</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Electric+Machinery" target="_blank" rel="noopener">核验依据 1 ISBN 9780070211407 (1992)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#直流电机</a> <a class="tag" href="#">#无刷电机</a> <a class="tag" href="#">#电子换向</a>
+    </article>
+
+
+    <article class="qitem" id="6c4badf4ac27">
+      <h2 class="qz" lang="zh">谐波减速器凭什么实现高减速比与高精度，其柔轮为何易疲劳？</h2>
+      <p class="qen" lang="en">How does a harmonic drive achieve high reduction and precision, and why is its flexspline prone to fatigue?</p>
+      <div class="azh" lang="zh">谐波减速器利用柔轮（薄壁弹性齿轮）在波发生器作用下的可控弹性变形与刚轮啮合，单级即可达到数十到数百减速比、几乎零背隙。柔轮每转承受交变弯曲应变，长期在应力集中处萌生疲劳裂纹。</div>
+      <div class="aen" lang="en">A harmonic drive uses a thin-wall flexible spline whose controlled elastic deformation under the wave generator meshes with a rigid spline, giving single-stage ratios of tens to hundreds with near-zero backlash. The flexspline endures cyclic bending strain each turn, so fatigue cracks initiate at stress concentrations.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Harmonic Drive（哈默纳科）谐波减速器官方技术手册</p>
+        <p lang="en">Harmonic Drive LLC, Technical Documentation</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#谐波减速器</a> <a class="tag" href="#">#柔轮</a> <a class="tag" href="#">#弹性变形</a>
+    </article>
+
+
+    <article class="qitem" id="6d9dd96f5a72">
+      <h2 class="qz" lang="zh">并联机器人（如 Stewart 平台）相比串联机械臂在刚度上有何优势？</h2>
+      <p class="qen" lang="en">What stiffness advantage do parallel robots like the Stewart platform have over serial manipulators?</p>
+      <div class="azh" lang="zh">并联机构由多条独立支链共同约束动平台，负载被分配到多个闭环，误差不逐级累积。因此刚度高、末端精度好、动态响应快，适合精密定位与运动模拟，但工作空间受限。</div>
+      <div class="aen" lang="en">A parallel mechanism constrains the platform through several independent limbs, distributing load across closed loops so errors do not accumulate link by link. This yields high stiffness, good end accuracy, and fast dynamics, suiting precision positioning and motion simulation, though workspace is limited.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器人学》（清华大学出版社）</p>
+        <p lang="en">Parallel Robots, Springer</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Parallel+Robots" target="_blank" rel="noopener">核验依据 1 ISBN 9781402041327 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#并联机器人</a> <a class="tag" href="#">#Stewart平台</a> <a class="tag" href="#">#闭环刚度</a>
+    </article>
+
+
+    <article class="qitem" id="b0fd63f43ec1">
+      <h2 class="qz" lang="zh">六轴工业机器人常用的运动学问题有哪两类？</h2>
+      <p class="qen" lang="en">What two classes of kinematic problems are common for six-axis industrial robots?</p>
+      <div class="azh" lang="zh">正向运动学由关节角求末端位姿，通过关节变换链直接计算；逆运动学由期望末端位姿反求各关节角，通常多解或无解，是轨迹规划的核心难点。</div>
+      <div class="aen" lang="en">Forward kinematics computes end-effector pose from joint angles via the link transformation chain; inverse kinematics finds joint angles for a desired pose, often with multiple or no solutions, and is the core difficulty in trajectory planning.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器人学》（清华大学出版社）</p>
+        <p lang="en">Introduction to Robotics, Craig</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Parallel+Robots" target="_blank" rel="noopener">核验依据 1 ISBN 9781402041327 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#运动学</a> <a class="tag" href="#">#正逆解</a> <a class="tag" href="#">#轨迹规划</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

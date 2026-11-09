@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hci_a11y hci-a11y · 计算机 Computer Science | 问答</title>
+<meta name="description" content="hci_a11y（计算机）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hci_a11y hci-a11y · 计算机 Computer Science | 问答">
+<meta property="og:description" content="hci_a11y（计算机）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/hci-a11y/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/hci-a11y/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>hci_a11y</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>hci_a11y <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>12</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_23_013">无障碍开发为何强调优先使用原生 HTML 元素而非 ARIA？请结合浏览器的无障</a></li><li><a href="#12cc7837d66c">什么是眼动追踪（Eye Tracking）？它能做什么？</a></li><li><a href="#27dc251273f2">什么是语音合成（TTS）？它和无障碍有什么关系？</a></li><li><a href="#3c4b08d9938e">什么是 WCAG 无障碍标准？</a></li><li><a href="#6655ba97adc0">触摸手势设计要注意什么？</a></li><li><a href="#cfc1aef2a4fd">什么是认知负荷（Cognitive Load）？界面怎么帮用户减负？</a></li><li><a href="#254452e06712">什么是高对比度模式和深色模式？它们为何重要？</a></li><li><a href="#a24c2dd288ec">语音交互有什么优点和局限？</a></li><li><a href="#a641696a3cc6">什么是 AR（增强现实）？它和 VR 有什么区别？</a></li><li><a href="#c8239a97e391">字幕和实时字幕为什么重要？</a></li><li><a href="#e1f3397c6849">什么是适老化（无障碍）设计？</a></li><li><a href="#eedd4f62d656">什么是屏幕阅读器？盲人怎么用电脑？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_23_013">
+      <h2 class="qz" lang="zh">无障碍开发为何强调优先使用原生 HTML 元素而非 ARIA？请结合浏览器的无障碍树说明其机制。</h2>
+      <p class="qen" lang="en">Why does accessibility practice favor native HTML elements over ARIA? Explain the mechanism via the browser&#x27;s accessibility tree.</p>
+      <div class="azh" lang="zh">浏览器由 DOM 构建无障碍树，节点带角色、名称、状态；原生元素自带正确语义与键盘行为，ARIA 只改写属性、不附带行为。用 div 加 role=&quot;button&quot; 冒充按钮须手动补齐 tabindex 与按键响应，疏漏即违反 WCAG 4.1.2“名称、角色、值”，故有“ARIA 第一规则”：优先原生元素。</div>
+      <div class="aen" lang="en">Browsers build an accessibility tree from the DOM for assistive technologies such as screen readers; each node carries a role, name, and state. Native elements come with correct semantics and keyboard behavior automatically, whereas ARIA only rewrites roles and attributes and contributes no behavior. Emulating a button with a div and role=“button” forces you to maintain tabindex, focus handling, and key responses by hand, and any slip violates WCAG 4.1.2 Name, Role, Value. This is the first rule of ARIA: prefer native elements whenever possible.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">W3C，《可访问富互联网应用（WAI-ARIA）1.2》与《Web 内容无障碍指南（WCAG）2.2》，W3C 建议标准，2023</p>
+        <p lang="en">W3C, Accessible Rich Internet Applications (WAI-ARIA) 1.2 and Web Content Accessibility Guidelines (WCAG) 2.2, W3C Recommendations, 2023</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#无障碍树</a> <a class="tag" href="#">#ARIA</a> <a class="tag" href="#">#语义化HTML</a> <a class="tag" href="#">#WCAG</a>
+    </article>
+
+
+    <article class="qitem" id="12cc7837d66c">
+      <h2 class="qz" lang="zh">什么是眼动追踪（Eye Tracking）？它能做什么？</h2>
+      <p class="qen" lang="en">What is eye tracking, and what can it do?</p>
+      <div class="azh" lang="zh">眼动追踪用摄像头或红外感知你看哪里，可用于无障碍（用眼神控制光标）、界面热度图研究和 VR 注视点渲染省算力。</div>
+      <div class="aen" lang="en">Eye tracking senses where you look via camera or infrared; it enables accessibility, eye-controlled cursor, UI heatmaps, and gaze-based rendering in VR.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#眼动</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+
+
+    <article class="qitem" id="27dc251273f2">
+      <h2 class="qz" lang="zh">什么是语音合成（TTS）？它和无障碍有什么关系？</h2>
+      <p class="qen" lang="en">What is text-to-speech (TTS), and how is it related to accessibility?</p>
+      <div class="azh" lang="zh">TTS 把文字转成自然语音，让视障者听文章、帮助阅读困难者，也为导航和智能音箱提供发声能力。</div>
+      <div class="aen" lang="en">TTS turns text into natural speech, letting the blind hear articles and helping poor readers, and powers navigation and smart speakers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">D. Jurafsky 与 J. H. Martin,《Speech and Language Processing》,第2版,Prentice Hall,2009年</p>
+        <p lang="en">D. Jurafsky and J. H. Martin, Speech and Language Processing, 2nd edition, Prentice Hall, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Speech+and+Language+Processing" target="_blank" rel="noopener">核验依据 1 ISBN 9780131873216 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#语音合成</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+
+
+    <article class="qitem" id="3c4b08d9938e">
+      <h2 class="qz" lang="zh">什么是 WCAG 无障碍标准？</h2>
+      <p class="qen" lang="en">What is the WCAG accessibility standard?</p>
+      <div class="azh" lang="zh">WCAG 是 Web 无障碍指南，提出可感知、可操作、可理解、健壮四大原则，并分 A、AA、AAA 等级，许多法规据此要求网站可达。</div>
+      <div class="aen" lang="en">WCAG is the Web Content Accessibility Guidelines built on four principles, perceivable, operable, understandable, robust, with A, AA, AAA levels cited by many laws.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">W3C WCAG 2.1 无障碍指南</p>
+        <p lang="en">W3C WCAG 2.1 Guidelines</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#WCAG</a> <a class="tag" href="#">#标准</a>
+    </article>
+
+
+    <article class="qitem" id="6655ba97adc0">
+      <h2 class="qz" lang="zh">触摸手势设计要注意什么？</h2>
+      <p class="qen" lang="en">What should touch gesture design consider?</p>
+      <div class="azh" lang="zh">要符合直觉（如滑动返回）、给操作反馈、避免误触、兼顾不同手型与单手操作，并别把重要按钮放在太易被拇指误碰的位置。</div>
+      <div class="aen" lang="en">Make gestures intuitive, give feedback, prevent mis-taps, support one-handed use, and keep key buttons away from easy thumb accidents.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#触摸</a> <a class="tag" href="#">#手势</a>
+    </article>
+
+
+    <article class="qitem" id="cfc1aef2a4fd">
+      <h2 class="qz" lang="zh">什么是认知负荷（Cognitive Load）？界面怎么帮用户减负？</h2>
+      <p class="qen" lang="en">What is cognitive load, and how can interfaces reduce it?</p>
+      <div class="azh" lang="zh">认知负荷是用户动脑处理的负担。界面应精简信息、分步引导、用熟悉图标、减少选择项，避免让用户一下子记太多东西。</div>
+      <div class="aen" lang="en">Cognitive load is the mental effort users bear. Interfaces should simplify info, guide step by step, use familiar icons, and limit choices to avoid overload.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Sweller（1988）《Cognitive Science》认知负荷理论；Sweller、Ayres 与 Kalyuga《Cognitive Load Theory》（2011）</p>
+        <p lang="en">Sweller (1988), Cognitive Science; Sweller, Ayres and Kalyuga, Cognitive Load Theory (2011)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21308956W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL21308956W：Cognitive Load Theory（</a></p>
+        
+      </details>
+      <a class="tag" href="#">#认知负荷</a> <a class="tag" href="#">#体验</a>
+    </article>
+
+
+    <article class="qitem" id="254452e06712">
+      <h2 class="qz" lang="zh">什么是高对比度模式和深色模式？它们为何重要？</h2>
+      <p class="qen" lang="en">What are high-contrast and dark modes, and why do they matter?</p>
+      <div class="azh" lang="zh">高对比度让文字与背景更分明，帮助弱视用户；深色模式在暗光下更省眼、更省电（尤其 OLED 屏），是普遍受欢迎的无障碍特性。</div>
+      <div class="aen" lang="en">High contrast sharpens text from background for low-vision users; dark mode is easier on the eyes in dim light and saves power on OLED screens, a popular accessibility feature.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#深色模式</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+
+
+    <article class="qitem" id="a24c2dd288ec">
+      <h2 class="qz" lang="zh">语音交互有什么优点和局限？</h2>
+      <p class="qen" lang="en">What are the pros and cons of voice interaction?</p>
+      <div class="azh" lang="zh">优点是解放双手、对不识字或视障友好；局限是嘈杂环境识别差、有隐私顾虑、公开场合不便说话，且复杂操作不如点按精确。</div>
+      <div class="aen" lang="en">Pros: hands-free and friendly to non-readers or the blind. Limits: poor in noise, privacy worries, awkward in public, and imprecise for complex tasks versus tapping.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">D. Jurafsky 与 J. H. Martin,《Speech and Language Processing》,第2版,Prentice Hall,2009年</p>
+        <p lang="en">D. Jurafsky and J. H. Martin, Speech and Language Processing, 2nd edition, Prentice Hall, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Speech+and+Language+Processing" target="_blank" rel="noopener">核验依据 1 ISBN 9780131873216 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#语音</a> <a class="tag" href="#">#交互</a>
+    </article>
+
+
+    <article class="qitem" id="a641696a3cc6">
+      <h2 class="qz" lang="zh">什么是 AR（增强现实）？它和 VR 有什么区别？</h2>
+      <p class="qen" lang="en">What is AR, and how is it different from VR?</p>
+      <div class="azh" lang="zh">AR 像给真实世界贴会动的小贴纸，比如手机相机里出现一只跳舞的小恐龙；VR 像戴上一副魔法眼镜，把你送到另一个世界里。</div>
+      <div class="aen" lang="en">AR is like putting moving stickers on the real world, a dancing dinosaur in your phone camera. VR is magic glasses that send you into another world.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#AR</a> <a class="tag" href="#">#VR</a>
+    </article>
+
+
+    <article class="qitem" id="c8239a97e391">
+      <h2 class="qz" lang="zh">字幕和实时字幕为什么重要？</h2>
+      <p class="qen" lang="en">Why do captions and live captions matter?</p>
+      <div class="azh" lang="zh">字幕帮助听障人士理解视频，也方便在嘈杂或静音环境观看。实时字幕还能辅助语言学习和会议纪要。</div>
+      <div class="aen" lang="en">Captions help deaf and hard-of-hearing viewers and anyone in noisy or muted settings; live captions also aid language learning and meeting notes.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kushalnagar, Behm, Stanislow, Gupta，《Enhancing caption accessibility through simultaneous multimodal information》,Proceedings of the 16th international ACM SIGACCESS conferen,2014 (DOI: 10.1145/2661334.2661381)</p>
+        <p lang="en">Kushalnagar, Behm, Stanislow, Gupta, &#x27;Enhancing caption accessibility through simultaneous multimodal information&#x27;, Proceedings of the 16th international ACM SIGACCESS conferen, 2014, DOI: 10.1145/2661334.2661381</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/2661334.2661381" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/2661334.2661381：Enhancing caption ac</a></p>
+        
+      </details>
+      <a class="tag" href="#">#字幕</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+
+
+    <article class="qitem" id="e1f3397c6849">
+      <h2 class="qz" lang="zh">什么是适老化（无障碍）设计？</h2>
+      <p class="qen" lang="en">What is age-friendly (accessibility) design?</p>
+      <div class="azh" lang="zh">适老化设计考虑老年人视力下降、手抖、不熟悉科技等特点，用大字号、大按钮、清晰语音和简单流程，降低使用门槛。</div>
+      <div class="aen" lang="en">Age-friendly design accounts for weaker vision, shaky hands, and tech unfamiliarity, large text, big buttons, clear speech, and simple flows lower the barrier.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#适老化</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+
+
+    <article class="qitem" id="eedd4f62d656">
+      <h2 class="qz" lang="zh">什么是屏幕阅读器？盲人怎么用电脑？</h2>
+      <p class="qen" lang="en">What is a screen reader, and how do blind users operate a computer?</p>
+      <div class="azh" lang="zh">屏幕阅读器把屏幕上的文字、按钮念出来或用盲文显示，盲人靠键盘和听读来浏览网页、写文档，因此网页结构要清晰语义化。</div>
+      <div class="aen" lang="en">A screen reader speaks or brailles the text and buttons on screen; blind users navigate by keyboard and audio, so pages need clear, semantic structure.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">W3C，《可访问富互联网应用（WAI-ARIA）1.2》与《Web 内容无障碍指南（WCAG）2.2》，W3C 建议标准，2023</p>
+        <p lang="en">W3C, Accessible Rich Internet Applications (WAI-ARIA) 1.2 and Web Content Accessibility Guidelines (WCAG) 2.2, W3C Recommendations, 2023</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#屏幕阅读器</a> <a class="tag" href="#">#无障碍</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

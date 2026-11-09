@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据库与查询优化 query-optimization · 计算机 Computer Science | 问答</title>
+<meta name="description" content="数据库与查询优化（计算机）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="数据库与查询优化 query-optimization · 计算机 Computer Science | 问答">
+<meta property="og:description" content="数据库与查询优化（计算机）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/query-optimization/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/query-optimization/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>数据库与查询优化</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>数据库与查询优化 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>5</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#3e111e829f13">基于代价的查询优化器如何估计不同执行计划的代价并选择最优者？</a></li><li><a href="#b8e3c585b938">向量数据库的 HNSW 索引如何在亿级向量上实现亚线性近似最近邻搜索？</a></li><li><a href="#425e9dff114e">聚簇索引与非聚簇索引在数据物理排列上有什么不同？</a></li><li><a href="#d1c255154220">B+树索引为什么比二叉搜索树更适合磁盘上的数据库索引？</a></li><li><a href="#fa5bef6be065">哈希连接（hash join）在什么条件下比嵌套循环连接更高效？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="3e111e829f13">
+      <h2 class="qz" lang="zh">基于代价的查询优化器如何估计不同执行计划的代价并选择最优者？</h2>
+      <p class="qen" lang="en">How does a cost-based query optimizer estimate and choose the best execution plan?</p>
+      <div class="azh" lang="zh">优化器利用统计信息（直方图、基数、选择率）估算每个算子处理的行数与 I/O、CPU 成本，枚举候选计划后选估计总代价最低者。基数估计误差会被连接层层放大，是优化器最常见也最难的误差来源。</div>
+      <div class="aen" lang="en">The optimizer uses statistics (histograms, cardinality, selectivity) to estimate rows processed and I/O/CPU cost per operator, enumerates candidate plans, and picks the one with the lowest estimated total cost. Cardinality estimation errors are amplified across joins and are the most common, hardest source of optimizer mistakes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Selinger et al., Access Path Selection in a Relational Database Management System, IBM CACM 1979 (System R)</p>
+        <p lang="en">Selinger et al., Access Path Selection in a Relational Database Management System, IBM CACM 1979 (System R)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/582095.582099" target="_blank" rel="noopener">核验依据 1 DOI 10.1145/582095.582099</a></p>
+        
+      </details>
+      <a class="tag" href="#">#查询优化</a> <a class="tag" href="#">#代价模型</a> <a class="tag" href="#">#基数估计</a>
+    </article>
+
+
+    <article class="qitem" id="b8e3c585b938">
+      <h2 class="qz" lang="zh">向量数据库的 HNSW 索引如何在亿级向量上实现亚线性近似最近邻搜索？</h2>
+      <p class="qen" lang="en">How does an HNSW index in vector databases achieve sublinear approximate nearest-neighbor search over hundreds of millions of vectors?</p>
+      <div class="azh" lang="zh">HNSW 把向量组织成多层可导航小世界图，顶层稀疏用于快速远距离跳转、底层稠密保证召回。查询从顶层贪心下行，仅需访问少量节点即可逼近最近邻，其复杂度约为对数级，但需权衡内存占用与召回率。</div>
+      <div class="aen" lang="en">HNSW organizes vectors into a multi-layer navigable small-world graph: sparse upper layers enable fast long jumps and dense lower layers ensure recall. A query greedily descends from the top, visiting only a few nodes to approximate the nearest neighbor at roughly logarithmic cost, trading memory for recall.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#向量数据库</a> <a class="tag" href="#">#近似最近邻</a> <a class="tag" href="#">#HNSW</a>
+    </article>
+
+
+    <article class="qitem" id="425e9dff114e">
+      <h2 class="qz" lang="zh">聚簇索引与非聚簇索引在数据物理排列上有什么不同？</h2>
+      <p class="qen" lang="en">How do clustered and non-clustered indexes differ in physical data arrangement?</p>
+      <div class="azh" lang="zh">聚簇索引的叶子节点直接存放整行数据，表中数据按索引键物理排序，因此一个表只能有一个。非聚簇索引的叶子指向数据行位置，查找需一次额外的书签定位（回表）。</div>
+      <div class="aen" lang="en">A clustered index&#x27;s leaf nodes store the whole row and the table is physically sorted by the key, so a table can have only one. A non-clustered index&#x27;s leaf points to the row location, requiring an extra bookmark lookup (back to table) to fetch data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Garcia-Molina, Ullman, Widom, Database Systems: The Complete Book, 2nd ed.</p>
+        <p lang="en">Garcia-Molina, Ullman, Widom, Database Systems: The Complete Book, 2nd ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL32684512W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL32684512W：Database Systems The C</a></p>
+        
+      </details>
+      <a class="tag" href="#">#聚簇索引</a> <a class="tag" href="#">#非聚簇索引</a> <a class="tag" href="#">#回表</a>
+    </article>
+
+
+    <article class="qitem" id="d1c255154220">
+      <h2 class="qz" lang="zh">B+树索引为什么比二叉搜索树更适合磁盘上的数据库索引？</h2>
+      <p class="qen" lang="en">Why is a B+ tree index better suited than a binary search tree for on-disk database indexes?</p>
+      <div class="azh" lang="zh">B+树节点宽、出度大，树高通常只有两三层，一次查找只需很少次磁盘 I/O。所有数据集中在叶子层并以链表相连，范围扫描高效，是关系型数据库最常用的索引结构。</div>
+      <div class="aen" lang="en">B+ trees have wide nodes and high fan-out, so the tree is only two or three levels tall and a lookup needs very few disk I/Os. All data sits in the leaf level linked as a list, enabling efficient range scans, which is why it is the most common relational index.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ramakrishnan &amp; Gehrke, Database Management Systems, 3rd ed., McGraw-Hill</p>
+        <p lang="en">Ramakrishnan &amp; Gehrke, Database Management Systems, 3rd ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16961668W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL16961668W：Database management sy</a></p>
+        
+      </details>
+      <a class="tag" href="#">#B+树</a> <a class="tag" href="#">#索引</a> <a class="tag" href="#">#磁盘I/O</a>
+    </article>
+
+
+    <article class="qitem" id="fa5bef6be065">
+      <h2 class="qz" lang="zh">哈希连接（hash join）在什么条件下比嵌套循环连接更高效？</h2>
+      <p class="qen" lang="en">When is a hash join more efficient than a nested-loop join?</p>
+      <div class="azh" lang="zh">当两表都较大且连接键无现成索引时，哈希连接先对小表建哈希表再以大表探测，复杂度约 O(M+N)。它避免了对大表的逐行嵌套扫描，是分析型查询的常用策略。</div>
+      <div class="aen" lang="en">When both tables are large and there is no suitable index on the join key, hash join builds a hash table on the smaller table and probes it with the larger one, at about O(M+N) complexity. It avoids row-by-row nested scans of the big table and is common in analytical queries.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希连接</a> <a class="tag" href="#">#查询执行</a> <a class="tag" href="#">#连接算法</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

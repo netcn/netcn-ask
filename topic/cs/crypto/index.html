@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>crypto · 计算机 Computer Science | 问答</title>
+<meta name="description" content="crypto（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="crypto · 计算机 Computer Science | 问答">
+<meta property="og:description" content="crypto（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/crypto/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/crypto/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>crypto</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>crypto <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>13</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#0159dbaf726d">什么是盐值（salt），为什么密码存储要用它？</a></li><li><a href="#28f7f1f09717">哈希函数的碰撞是什么，为什么有害？</a></li><li><a href="#819dded9531e">为什么要“提前”部署后量子密码（PQC）？</a></li><li><a href="#bda13c9fa3d9">椭圆曲线密码（ECC）为什么密钥比 RSA 短却能同样安全？</a></li><li><a href="#cs_19_003">对消息哈希直接做模幂运算的教科书式 RSA 签名,为何经不起选择消息攻击?PSS</a></li><li><a href="#cs_19_019">AES-GCM 在同一密钥下重用一次随机数,后果为什么远不止泄露两条明文的异或?</a></li><li><a href="#291d9175b44a">数字签名如何证明消息来源与完整性？</a></li><li><a href="#4eb57ead9758">HTTPS 是如何对通信加密的？</a></li><li><a href="#58b0fef1282e">什么是后量子密码学？</a></li><li><a href="#9cb7998cdc85">哈希函数的“抗碰撞性”是什么意思？</a></li><li><a href="#cs_19_011">RSA 直接对明文做 m^e mod n 为什么不安全,OAEP 填充补上了哪些</a></li><li><a href="#f361894a2181">Diffie-Hellman 密钥交换如何在不安全信道上共享密钥？</a></li><li><a href="#fe35b9ddc6b5">什么是公钥基础设施（PKI）？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="0159dbaf726d">
+      <h2 class="qz" lang="zh">什么是盐值（salt），为什么密码存储要用它？</h2>
+      <p class="qen" lang="en">What is a salt and why use it for password storage?</p>
+      <div class="azh" lang="zh">盐值是拼接在密码前的随机值，使相同密码也得到不同哈希，抵御彩虹表与批量破解，并防止从哈希反查常用口令；应每个用户独立随机生成。</div>
+      <div class="aen" lang="en">A salt is random data prepended to a password so identical passwords hash differently, defeating rainbow tables and bulk cracking and preventing reverse lookup of common passwords; it should be unique per user.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="28f7f1f09717">
+      <h2 class="qz" lang="zh">哈希函数的碰撞是什么，为什么有害？</h2>
+      <p class="qen" lang="en">What is a hash collision and why is it harmful?</p>
+      <div class="azh" lang="zh">碰撞指两个不同的输入得到相同的哈希值；对数字签名和证书而言，能构造碰撞就意味着可伪造合法哈希的对象，因此安全哈希（如 SHA-256）需让碰撞在计算上不可行。</div>
+      <div class="aen" lang="en">A collision is two distinct inputs with the same hash; for signatures and certificates, forging a collision lets an attacker fake a valid-hash object, so secure hashes (e.g. SHA-256) must make collisions infeasible.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="819dded9531e">
+      <h2 class="qz" lang="zh">为什么要“提前”部署后量子密码（PQC）？</h2>
+      <p class="qen" lang="en">Why deploy post-quantum cryptography (PQC) ahead of time?</p>
+      <div class="azh" lang="zh">即使现在还没有能破解 RSA 的量子计算机，攻击者也可以先把截获的加密数据囤起来，等将来量子机成熟再解密（所谓“现在收割、日后解密”）。因此需要在威胁到来前就把算法换成对量子攻击安全的格密码等方案。</div>
+      <div class="aen" lang="en">Even without a cryptographically relevant quantum computer now, attackers can harvest encrypted data today and decrypt it later (&#x27;harvest now, decrypt later&#x27;). So we must switch to lattice-based schemes secure against quantum attacks before the threat arrives.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#后量子</a> <a class="tag" href="#">#迁移</a>
+    </article>
+
+
+    <article class="qitem" id="bda13c9fa3d9">
+      <h2 class="qz" lang="zh">椭圆曲线密码（ECC）为什么密钥比 RSA 短却能同样安全？</h2>
+      <p class="qen" lang="en">Why are ECC keys shorter than RSA&#x27;s yet equally secure?</p>
+      <div class="azh" lang="zh">RSA 的安全靠大整数分解，密钥需几千位才够难；ECC 的安全靠椭圆曲线离散对数问题，目前没有亚指数算法，所以 256 位的 ECC 就能达到 RSA 2048 位的强度，更省存储与算力。</div>
+      <div class="aen" lang="en">RSA relies on integer factoring and needs thousands of bits; ECC relies on the elliptic-curve discrete log problem, for which no sub-exponential attack is known, so a 256-bit ECC key matches RSA-2048 strength—saving size and compute.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ECC</a> <a class="tag" href="#">#椭圆曲线</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_003">
+      <h2 class="qz" lang="zh">对消息哈希直接做模幂运算的教科书式 RSA 签名,为何经不起选择消息攻击?PSS 这类填充方案补上了什么?</h2>
+      <p class="qen" lang="en">Why does textbook RSA signing — a bare modular exponentiation over the message hash — collapse under chosen-message attacks, and what does a padding scheme like PSS restore?</p>
+      <div class="azh" lang="zh">模乘的同态性让攻击者可以把若干已知签名相乘,得到乘积消息的有效签名,从而伪造从未请签的新消息。PSS 在签名前把消息编码进带随机盐、与 RSA 群域分离的填充结构,消除了这种代数可组合性,使安全性能在随机预言模型下归约到 RSA 困难假设。</div>
+      <div class="aen" lang="en">The multiplicativity of modular exponentiation lets an attacker multiply known signatures to obtain a valid signature on the product message, forging signatures that were never requested. PSS encodes the message into a salted, domain-separated padded structure before exponentiation, eliminating that algebraic composability so security reduces to the RSA assumption in the random oracle model.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">D. Boneh,《RSA 密码系统二十年攻击》,Notices of the AMS 46(2), 1999;Bellare 与 Rogaway 的 PSS 方案,EUROCRYPT 1996</p>
+        <p lang="en">D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999; Bellare and Rogaway, PSS, EUROCRYPT 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#数字签名</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_019">
+      <h2 class="qz" lang="zh">AES-GCM 在同一密钥下重用一次随机数,后果为什么远不止泄露两条明文的异或?</h2>
+      <p class="qen" lang="en">Why does reusing a GCM nonce once under the same key cause far more than a plaintext-XOR leak?</p>
+      <div class="azh" lang="zh">GCM 以 CTR 模式生成密钥流并附带认证标签,随机数重复首先让两条密文异或得到明文异或,这只是流密码的老问题。真正的灾难在于认证哈希子密钥 H=E_K(0^128) 仅随密钥变化,重复随机数使攻击者能解出关于 H 的低次多项式方程(Joux 所称 forbidden attack),进而伪造带合法标签的任意密文。NIST SP 800-38D 因此禁止同一密钥下任何随机数重复,TLS 1.3 也改为逐记录显式构造 nonce 以杜绝此类事故。</div>
+      <div class="aen" lang="en">GCM derives a CTR keystream plus an authentication tag; repeating a nonce first yields the XOR of two plaintexts, the ordinary stream-cipher worry. The real damage comes from the hash subkey H = E_K(0^128), which depends only on the key: a nonce collision lets an attacker solve low-degree equations in H—Joux forbidden attack—and then forge arbitrary ciphertexts carrying valid tags. NIST SP 800-38D consequently forbids any repetition per key, and TLS 1.3 constructs per-record nonces explicitly to rule such accidents out.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Joux《Authentication Failures in NIST version of GCM》(2006 公开评论);NIST SP 800-38D</p>
+        <p lang="en">A. Joux, &quot;Authentication Failures in NIST version of GCM&quot;, public comment, 2006; NIST SP 800-38D</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#认证加密</a> <a class="tag" href="#">#随机数重用</a>
+    </article>
+
+
+    <article class="qitem" id="291d9175b44a">
+      <h2 class="qz" lang="zh">数字签名如何证明消息来源与完整性？</h2>
+      <p class="qen" lang="en">How does a digital signature prove origin and integrity?</p>
+      <div class="azh" lang="zh">发送方用私钥对消息哈希签名，接收方用其公钥验证：只有对应私钥能生成该签名，且任何篡改都会改变哈希导致验证失败，从而同时保证来源可信与内容未被改动。</div>
+      <div class="aen" lang="en">The sender signs a hash of the message with their private key; the receiver verifies with the public key—only the matching private key could produce it, and any tampering changes the hash and fails verification, proving origin and integrity.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#签名</a>
+    </article>
+
+
+    <article class="qitem" id="4eb57ead9758">
+      <h2 class="qz" lang="zh">HTTPS 是如何对通信加密的？</h2>
+      <p class="qen" lang="en">How does HTTPS encrypt communication?</p>
+      <div class="azh" lang="zh">HTTPS 在 TCP 之上使用 TLS：先用非对称加密（如 RSA/ECDHE）协商出对称会话密钥，之后海量数据用对称加密（如 AES）传输，并用 MAC 保证完整性。</div>
+      <div class="aen" lang="en">HTTPS runs TLS over TCP: an asymmetric exchange (RSA or ECDHE) negotiates a symmetric session key, then bulk data is encrypted with a symmetric cipher (e.g. AES) and protected by a MAC for integrity.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#加密</a> <a class="tag" href="#">#TLS</a>
+    </article>
+
+
+    <article class="qitem" id="58b0fef1282e">
+      <h2 class="qz" lang="zh">什么是后量子密码学？</h2>
+      <p class="qen" lang="en">What is post-quantum cryptography?</p>
+      <div class="azh" lang="zh">后量子密码学研究能抵抗量子计算机（尤其是 Shor 算法）攻击的算法，多基于格、哈希或编码等难题，NIST 已标准化如 Kyber、Dilithium 等方案以应对未来威胁。</div>
+      <div class="aen" lang="en">Post-quantum cryptography develops algorithms resistant to quantum attacks (notably Shor&#x27;s), often based on lattices, hashes or codes; NIST has standardized schemes like Kyber and Dilithium for future-proofing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#量子</a>
+    </article>
+
+
+    <article class="qitem" id="9cb7998cdc85">
+      <h2 class="qz" lang="zh">哈希函数的“抗碰撞性”是什么意思？</h2>
+      <p class="qen" lang="en">What does &#x27;collision resistance&#x27; of a hash function mean?</p>
+      <div class="azh" lang="zh">抗碰撞性指：很难找到两个不同的输入，使它们算出完全相同的哈希值。如果碰撞容易被找到，攻击者就能用假文件冒充真文件，因此这是数字签名与完整性校验的安全基石。</div>
+      <div class="aen" lang="en">Collision resistance means it&#x27;s hard to find two different inputs with the same hash. If collisions were easy, an attacker could swap a fake file for a real one, so it underpins signatures and integrity checks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#抗碰撞</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_011">
+      <h2 class="qz" lang="zh">RSA 直接对明文做 m^e mod n 为什么不安全,OAEP 填充补上了哪些缺口?</h2>
+      <p class="qen" lang="en">Why is applying RSA directly as c = m^e mod n insecure, and which gaps does OAEP padding close?</p>
+      <div class="azh" lang="zh">裸 RSA 是确定性运算,相同明文永远映射到相同密文,乘法同态还允许攻击者由已知密文构造出 E(m1·m2)。1998 年 Bleichenbacher 把 PKCS#1 v1.5 填充检查的差异变成选择密文预言机,仅凭服务器的报错响应就恢复了 TLS 会话密钥。OAEP 注入随机种子使加密成为概率过程,并在随机预言机模型下具备抗选择密文攻击的归约证明,RFC 8017 已将其定为 RSAES-OAEP 标准。</div>
+      <div class="aen" lang="en">Raw RSA is deterministic—identical plaintexts map to identical ciphertexts—and its multiplicative homomorphism lets anyone derive E(m1·m2) from observed ciphertexts. In 1998 Bleichenbacher turned PKCS#1 v1.5 padding checks into a chosen-ciphertext oracle, recovering TLS session keys purely from server error responses. OAEP injects randomness to make encryption probabilistic and carries a reduction proof of CCA security in the random-oracle model; RFC 8017 standardizes it as RSAES-OAEP.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">互联网工程任务组（IETF）,《PKCS #1: RSA Cryptography Specifications Version 2.2》,RFC 8017,2016 (DOI: 10.17487/rfc8017)</p>
+        <p lang="en">IETF, &#x27;PKCS #1: RSA Cryptography Specifications Version 2.2&#x27;, RFC 8017, 2016, DOI: 10.17487/rfc8017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc8017" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc8017; RFC 8017</a></p>
+        
+      </details>
+      <a class="tag" href="#">#公钥加密</a> <a class="tag" href="#">#填充方案</a>
+    </article>
+
+
+    <article class="qitem" id="f361894a2181">
+      <h2 class="qz" lang="zh">Diffie-Hellman 密钥交换如何在不安全信道上共享密钥？</h2>
+      <p class="qen" lang="en">How does Diffie-Hellman share a key over an insecure channel?</p>
+      <div class="azh" lang="zh">双方各自生成私钥并公开由离散对数难题保护的公钥，交换后各自用自己的私钥与对方公钥算出一个相同的共享密钥，窃听者仅知公钥无法在经典算力下算出该密钥。</div>
+      <div class="aen" lang="en">Each side keeps a private key and publishes a public key protected by the discrete-log problem; after exchange both compute the same shared secret from their private and the other&#x27;s public key, which an eavesdropper cannot derive classically.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Diffie &amp; Hellman 1976</p>
+        <p lang="en">Diffie &amp; Hellman 1976</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#密码学</a> <a class="tag" href="#">#密钥</a>
+    </article>
+
+
+    <article class="qitem" id="fe35b9ddc6b5">
+      <h2 class="qz" lang="zh">什么是公钥基础设施（PKI）？</h2>
+      <p class="qen" lang="en">What is a public key infrastructure (PKI)?</p>
+      <div class="azh" lang="zh">PKI 是一套由证书颁发机构（CA）、证书和吊销机制组成的体系，用来把“公钥”和“真实身份”可靠地绑定起来。浏览器正是靠它验证网站证书，才敢和你建立加密连接。</div>
+      <div class="aen" lang="en">PKI is a system of certificate authorities (CAs), certificates and revocation that reliably binds a public key to a real identity. Browsers use it to verify a site&#x27;s certificate before opening an encrypted connection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PKI</a> <a class="tag" href="#">#证书</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

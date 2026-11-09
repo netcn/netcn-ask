@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Machine Learning machine-learning · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Machine Learning（计算机）分类下的 23 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 23 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Machine Learning machine-learning · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Machine Learning（计算机）分类下的 23 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 23 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/machine-learning/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/machine-learning/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Machine Learning</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Machine Learning <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>23</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#14d4c97c3f84">随机森林和梯度提升树为什么在表格数据上特别好用？</a></li><li><a href="#349bf21cd2f6">偏差-方差权衡（bias-variance tradeoff）描述了什么现象？</a></li><li><a href="#4f149922dd18">反向传播（backpropagation）在神经网络训练中起什么作用？</a></li><li><a href="#6f743e3f51d4">Transformer 模型与自注意力（self-attention）机制是什么</a></li><li><a href="#7256df272705">什么是迁移学习？</a></li><li><a href="#9e54fa52f4df">什么是支持向量机（SVM）？</a></li><li><a href="#cs_23_009">关联规则挖掘中，FP-Growth 相比 Apriori 是如何做到不生成候选频</a></li><li><a href="#cs_26_002">批归一化为什么能显著加速深度网络的训练？它最初基于内部分布偏移的解释后来为何被修</a></li><li><a href="#e50102a05ff5">反向传播算法是怎样让多层神经网络学会调整权重的？</a></li><li><a href="#eb75d11a72e3">什么是 Transformer 模型？</a></li><li><a href="#fb51a30c1f53">支持向量机(SVM)是怎样找到那道『最宽间隔』的分界线的？</a></li><li><a href="#02e068331b87">k-means 聚类是怎么自动把数据点分成几堆的？</a></li><li><a href="#6fa8b4a99a8a">什么是决策树？</a></li><li><a href="#80a489de0467">什么是监督学习？</a></li><li><a href="#829e0e8bd007">什么是聚类？</a></li><li><a href="#8f89c1170e32">什么是过拟合（overfitting）？常用哪些方法防止它？</a></li><li><a href="#a4f41f43b944">什么是过拟合？</a></li><li><a href="#cs_26_001">训练神经网络时,随机梯度下降加上动量项为什么能收敛更快、还不容易来回震荡？</a></li><li><a href="#e1e781fa2405">监督学习与无监督学习有什么不同？</a></li><li><a href="#f61c0222cf2f">什么是无监督学习？</a></li><li><a href="#37fad30c793f">什么是深度学习？</a></li><li><a href="#7b3565ab4a63">什么是「训练」一个模型？</a></li><li><a href="#bf3e7cdb65b3">机器是怎么学习的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="14d4c97c3f84">
+      <h2 class="qz" lang="zh">随机森林和梯度提升树为什么在表格数据上特别好用？</h2>
+      <p class="qen" lang="en">Why are random forests and gradient boosting especially effective on tabular data?</p>
+      <div class="azh" lang="zh">随机森林由大量决策树组成，训练时随机选特征和样本以减少过拟合、用投票集成；梯度提升则串行地让新树专门纠正前一轮的残差，往往精度更高。Breiman 在 2001 年提出随机森林，Friedman 在 2001 年提出梯度提升。</div>
+      <div class="aen" lang="en">A random forest combines many decision trees trained on random feature and sample subsets, voting to reduce overfitting; gradient boosting serially adds trees that correct the previous round&#x27;s residuals, often achieving higher accuracy. Breiman proposed random forests in 2001 and Friedman gradient boosting in 2001.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Breiman《随机森林》(Machine Learning, 2001)；Friedman《梯度提升机》(2001)；Chen《XGBoost》(2016)</p>
+        <p lang="en">Breiman, &#x27;Random Forests&#x27; (Machine Learning, 2001); Friedman, &#x27;Greedy Function Approximation&#x27; (2001); Chen, &#x27;XGBoost&#x27; (2016)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1023/a:1010933404324" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1023/a:1010933404324</a> · <a class="evlink" href="https://doi.org/10.1214/aos/1013203451" target="_blank" rel="noopener">核验依据 2 Crossref DOI 10.1214/aos/1013203451</a></p>
+        
+      </details>
+      <a class="tag" href="#">#随机森林</a> <a class="tag" href="#">#梯度提升</a> <a class="tag" href="#">#决策树</a> <a class="tag" href="#">#集成</a>
+    </article>
+
+
+    <article class="qitem" id="349bf21cd2f6">
+      <h2 class="qz" lang="zh">偏差-方差权衡（bias-variance tradeoff）描述了什么现象？</h2>
+      <p class="qen" lang="en">What phenomenon does the bias-variance tradeoff describe?</p>
+      <div class="azh" lang="zh">偏差-方差权衡指出模型总误差可分解为偏差（欠拟合、假设过简）与方差（过拟合、对训练数据敏感）之和，并常加上不可约噪声。一味降低偏差往往抬高方差，反之亦然，因此需要在二者间取得平衡。该框架由杰曼等人在 1992 年系统阐述，是理解模型泛化的重要视角。</div>
+      <div class="aen" lang="en">The bias-variance tradeoff decomposes a model&#x27;s total error into bias (underfitting from an overly simple hypothesis) and variance (overfitting from sensitivity to training data), plus irreducible noise. Reducing bias often raises variance and vice versa, so a balance must be struck. Systematized by Geman et al. in 1992, it is a key lens for understanding generalization.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Geman 等 1992；Hastie 等《统计学习基础》（ESL）</p>
+        <p lang="en">Geman et al. (1992); Hastie et al., The Elements of Statistical Learning (ESL)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#偏差方差权衡</a> <a class="tag" href="#">#泛化</a> <a class="tag" href="#">#欠拟合</a> <a class="tag" href="#">#过拟合</a>
+    </article>
+
+
+    <article class="qitem" id="4f149922dd18">
+      <h2 class="qz" lang="zh">反向传播（backpropagation）在神经网络训练中起什么作用？</h2>
+      <p class="qen" lang="en">What role does backpropagation play in training neural networks?</p>
+      <div class="azh" lang="zh">反向传播是一种利用链式法则高效计算损失函数对各参数梯度的算法，使多层网络得以用梯度下降更新权重。它由鲁梅尔哈特、辛顿与威廉姆斯在 1986 年系统阐明，是深度网络训练得以可行的关键。没有它，深层网络参数众多时无法有效学习。</div>
+      <div class="aen" lang="en">Backpropagation efficiently computes the gradient of the loss with respect to every parameter via the chain rule, enabling gradient descent to update weights in multi-layer networks. Systematized by Rumelhart, Hinton, and Williams in 1986, it is the key that makes training deep networks feasible. Without it, the vast parameter count of deep networks could not be learned effectively.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rumelhart, Hinton &amp; Williams 1986；Goodfellow 等《深度学习》</p>
+        <p lang="en">Rumelhart, Hinton &amp; Williams (1986); Goodfellow et al., Deep Learning</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反向传播</a> <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#链式法则</a> <a class="tag" href="#">#神经网络</a>
+    </article>
+
+
+    <article class="qitem" id="6f743e3f51d4">
+      <h2 class="qz" lang="zh">Transformer 模型与自注意力（self-attention）机制是什么？</h2>
+      <p class="qen" lang="en">What are Transformer models and the self-attention mechanism?</p>
+      <div class="azh" lang="zh">Transformer 是 2017 年由瓦斯瓦尼等人在《Attention Is All You Need》中提出的网络架构，完全基于自注意力机制而摒弃了循环与卷积。自注意力让序列中每个位置直接关注所有其他位置并加权聚合，从而高效捕捉长距离依赖且易于并行训练。它成为 GPT、BERT 等现代大语言模型的基石。</div>
+      <div class="aen" lang="en">The Transformer is an architecture proposed by Vaswani et al. in 2017 in &#x27;Attention Is All You Need&#x27;, built entirely on self-attention and discarding recurrence and convolution. Self-attention lets every position in a sequence directly attend to all others and aggregate them with weights, capturing long-range dependencies efficiently and training in parallel. It underpins modern large language models such as GPT and BERT.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Vaswani 等 2017（NeurIPS）；Google Research</p>
+        <p lang="en">Vaswani et al. (2017), NeurIPS; Google Research</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#大语言模型</a> <a class="tag" href="#">#瓦斯瓦尼</a>
+    </article>
+
+
+    <article class="qitem" id="7256df272705">
+      <h2 class="qz" lang="zh">什么是迁移学习？</h2>
+      <p class="qen" lang="en">What is transfer learning?</p>
+      <div class="azh" lang="zh">迁移学习是把在一个任务（通常是大数据集）上训练好的模型知识，迁移到数据较少的相关任务上。例如用大规模图像模型做起点，再微调以识别特定类型的图片。它能显著减少所需标注数据和训练时间。</div>
+      <div class="aen" lang="en">Transfer learning takes knowledge from a model trained on one task, usually a large dataset, and applies it to a related task with less data. For example, start from a large-scale image model and fine-tune it to recognize a specific type of image. It can greatly reduce required labeled data and training time.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#迁移学习</a> <a class="tag" href="#">#微调</a> <a class="tag" href="#">#预训练</a>
+    </article>
+
+
+    <article class="qitem" id="9e54fa52f4df">
+      <h2 class="qz" lang="zh">什么是支持向量机（SVM）？</h2>
+      <p class="qen" lang="en">What is a support vector machine (SVM)?</p>
+      <div class="azh" lang="zh">支持向量机是一种经典的监督学习模型，目标是找到一条能最大化类间间隔的分割边界（最大间隔超平面）。它通过核技巧把数据映射到高维空间以处理非线性问题。在小样本高维分类任务中曾有很强表现。</div>
+      <div class="aen" lang="en">A support vector machine is a classic supervised model that finds a decision boundary maximizing the margin between classes, the maximum-margin hyperplane. With kernel tricks it maps data to higher dimensions to handle non-linear problems. It performed strongly on small-sample, high-dimensional classification before deep learning.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">统计学习经典模型（Vapnik）</p>
+        <p lang="en">Classic statistical learning model (Vapnik)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#支持向量机</a> <a class="tag" href="#">#分类</a> <a class="tag" href="#">#核技巧</a>
+    </article>
+
+
+    <article class="qitem" id="cs_23_009">
+      <h2 class="qz" lang="zh">关联规则挖掘中，FP-Growth 相比 Apriori 是如何做到不生成候选频繁项集的？为什么支持度阈值越低它的优势越大？</h2>
+      <p class="qen" lang="en">In association rule mining, how does FP-Growth manage to mine frequent itemsets without generating candidates the way Apriori does, and why does its edge widen as the support threshold drops?</p>
+      <div class="azh" lang="zh">Apriori 逐层迭代：由 k-频繁集拼出海量候选 (k+1)-项集并逐一扫描数据库验证，支持度一低候选数就组合爆炸。FP-Growth 只扫两遍数据，把各事务的频繁项按支持度降序压入共享前缀的前缀树，再对每个频繁项提取条件模式基，递归构建更小的条件树直接产出频繁模式，全程无需验证候选集，故低阈值下明显更快。</div>
+      <div class="aen" lang="en">Apriori iterates level by level: it joins k-frequent itemsets into enormous numbers of candidate (k+1)-itemsets and rescans the database to verify each one; lowering the support threshold makes candidates explode combinatorially. FP-Growth scans the data twice, compresses transactions into a prefix tree whose frequent-item paths are shared and support-sorted, then extracts a conditional pattern base per frequent item and recursively builds smaller conditional trees that grow frequent patterns directly—no candidate set is ever generated or verified—so its edge keeps widening as the support threshold drops.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Jiawei Han、Jian Pei、Yiwen Yin，《Mining Frequent Patterns without Candidate Generation》，ACM SIGMOD 国际会议论文集，2000年，第1–12页，DOI: 10.1145/335191.335372</p>
+        <p lang="en">J. Han, J. Pei, Y. Yin, Mining Frequent Patterns without Candidate Generation, Proc. ACM SIGMOD Int&#x27;l Conference on Management of Data, 2000, pp. 1-12, DOI: 10.1145/335191.335372.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/335191.335372" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/335191.335372：Mining frequent patter</a></p>
+        
+      </details>
+      <a class="tag" href="#">#关联规则</a> <a class="tag" href="#">#频繁模式</a> <a class="tag" href="#">#FP-Growth</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_002">
+      <h2 class="qz" lang="zh">批归一化为什么能显著加速深度网络的训练？它最初基于内部分布偏移的解释后来为何被修正？</h2>
+      <p class="qen" lang="en">Why does batch normalization markedly accelerate deep-network training, and why was its original internal-covariate-shift explanation later revised?</p>
+      <div class="azh" lang="zh">它在每个小批次内把各层输入按特征重新拉回零均值、单位方差,再用可学习的缩放与平移恢复表达能力,使训练对初始化和学习率不敏感、可用更大步长。机理上真正的收益来自优化曲面的平滑:BN 让损失对参数的梯度变化更平缓,改善了梯度的利普希茨性质。原论文将提速归因于抑制内部协变量偏移,但后续实验表明同等偏移而无 BN 并不会拖慢训练,这一解释已被修正。</div>
+      <div class="aen" lang="en">Within each mini-batch it re-centers layer inputs to zero mean and unit variance per feature, then restores expressive power through learnable scale and shift, making training less sensitive to initialization and learning rate so larger steps become safe. The genuine benefit comes from smoothing the optimization landscape: BN makes gradients vary more gently with the parameters, improving their Lipschitzness. The original paper credited the speedup to suppressing internal covariate shift, yet later experiments showed the same shift without BN does not slow training, so that account has been revised.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Ioffe 与 C. Szegedy,Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,ICML 2015;S. Santurkar 等,NeurIPS 2018</p>
+        <p lang="en">S. Ioffe and C. Szegedy, Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift, ICML 2015; S. Santurkar et al., How Does Batch Normalization Help Optimization?, NeurIPS 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.wiley.com/en-us/shop/general-introductory-electrical-electronics-engineering/physics-of-semiconductor-devices-3rd-edition-p-9780470068328" target="_blank" rel="noopener">核验依据 1 ISBN 9780470068328</a></p>
+        
+      </details>
+      <a class="tag" href="#">#批归一化</a> <a class="tag" href="#">#内部协变量偏移</a> <a class="tag" href="#">#优化曲面平滑</a>
+    </article>
+
+
+    <article class="qitem" id="e50102a05ff5">
+      <h2 class="qz" lang="zh">反向传播算法是怎样让多层神经网络学会调整权重的？</h2>
+      <p class="qen" lang="en">How does backpropagation let a multi-layer neural network learn its weights?</p>
+      <div class="azh" lang="zh">反向传播用链式法则把输出误差从最后一层逐层向前算出每个权重的梯度，再沿梯度下降方向微调权重以减小误差。Rumelhart、Hinton 与 Williams 在 1986 年系统阐述，Werbos 早在 1974 年已提出其数学基础。</div>
+      <div class="aen" lang="en">Backpropagation uses the chain rule to propagate output error backward layer by layer, computing each weight&#x27;s gradient, then nudges weights downhill by gradient descent to shrink error. Rumelhart, Hinton, and Williams formalized it in 1986; Werbos laid the math in 1974.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Rumelhart、Hinton 与 Williams《反向传播学习》(Nature, 1986)；Werbos《反向传播博士论文》(1974)</p>
+        <p lang="en">Rumelhart, Hinton &amp; Williams, &#x27;Learning representations by back-propagating errors&#x27; (Nature, 1986); Werbos, &#x27;Backpropagation&#x27; (PhD thesis, 1974)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1038/323533a0" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1038/323533a0：Learning representations by</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反向传播</a> <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#链式法则</a> <a class="tag" href="#">#神经网络</a>
+    </article>
+
+
+    <article class="qitem" id="eb75d11a72e3">
+      <h2 class="qz" lang="zh">什么是 Transformer 模型？</h2>
+      <p class="qen" lang="en">What is the Transformer model?</p>
+      <div class="azh" lang="zh">Transformer 是 2017 年提出的一种神经网络结构，完全基于自注意力机制来捕捉序列中任意位置的长程依赖，抛弃了循环结构。它奠定了 GPT、BERT 等大模型的基础。</div>
+      <div class="aen" lang="en">The Transformer, proposed in 2017, is a neural architecture built entirely on self-attention to capture long-range dependencies anywhere in a sequence, discarding recurrence. It underpins large models such as GPT and BERT.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Vaswani 等 2017 年论文《Attention Is All You Need》</p>
+        <p lang="en">Vaswani et al., Attention Is All You Need (2017)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#大模型</a>
+    </article>
+
+
+    <article class="qitem" id="fb51a30c1f53">
+      <h2 class="qz" lang="zh">支持向量机(SVM)是怎样找到那道『最宽间隔』的分界线的？</h2>
+      <p class="qen" lang="en">How does a support vector machine find the widest-margin separating boundary?</p>
+      <div class="azh" lang="zh">SVM 在两类样本间寻找使间隔最大化的超平面，只有少数最靠近边界的『支持向量』决定最终位置；通过核技巧还能把非线性问题映射到高维空间再线性可分。Cortes 与 Vapnik 在 1995 年提出这一方法。</div>
+      <div class="aen" lang="en">An SVM seeks the hyperplane that maximizes the margin between classes; only the few nearest &#x27;support vectors&#x27; determine its position. A kernel trick maps non-linear problems into a higher dimension where they become linearly separable. Cortes and Vapnik introduced it in 1995.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cortes 与 Vapnik《支持向量网络》(Machine Learning, 1995)；Vapnik《统计学习理论》</p>
+        <p lang="en">Cortes &amp; Vapnik, &#x27;Support-Vector Networks&#x27; (Machine Learning, 1995); Vapnik, &#x27;Statistical Learning Theory&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26392541/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121258756（豆瓣书目条目: 统计学习理论）；本条出处含多部著作，此标识只担保上面点名的</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SVM</a> <a class="tag" href="#">#最大间隔</a> <a class="tag" href="#">#支持向量</a> <a class="tag" href="#">#核技巧</a>
+    </article>
+
+
+    <article class="qitem" id="02e068331b87">
+      <h2 class="qz" lang="zh">k-means 聚类是怎么自动把数据点分成几堆的？</h2>
+      <p class="qen" lang="en">How does k-means clustering automatically group data points into clusters?</p>
+      <div class="azh" lang="zh">k-means 先随机选 k 个中心点，反复执行『把点分到最近的中心』和『用各簇均值更新中心』两步直到稳定，使簇内平方误差最小。Lloyd 在 1982 年给出算法描述，MacQueen 在 1967 年提出雏形。</div>
+      <div class="aen" lang="en">k-means starts with k random centers and iteratively assigns each point to the nearest center then recomputes centers as cluster means, until stable, minimizing within-cluster squared error. Lloyd described the algorithm in 1982; MacQueen proposed the early form in 1967.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Lloyd,《Least squares quantization in PCM》,IEEE Transactions on Information Theory,1982 (DOI: 10.1109/tit.1982.1056489)；MacQueen《基于质心分类》(1967)</p>
+        <p lang="en">Lloyd, &#x27;Least squares quantization in PCM&#x27;, IEEE Transactions on Information Theory, 1982, DOI: 10.1109/tit.1982.1056489; MacQueen, &#x27;Some methods for classification&#x27; (1967)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/tit.1982.1056489" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/tit.1982.1056489</a></p>
+        
+      </details>
+      <a class="tag" href="#">#k-means</a> <a class="tag" href="#">#聚类</a> <a class="tag" href="#">#质心</a> <a class="tag" href="#">#迭代</a>
+    </article>
+
+
+    <article class="qitem" id="6fa8b4a99a8a">
+      <h2 class="qz" lang="zh">什么是决策树？</h2>
+      <p class="qen" lang="en">What is a decision tree?</p>
+      <div class="azh" lang="zh">决策树通过一系列「是/否」问题把数据不断分割，最终落到某个叶节点给出预测，形似一棵倒长的树。它直观易解释，常用于分类和回归。随机森林则是把众多决策树组合以提升效果。</div>
+      <div class="aen" lang="en">A decision tree splits data repeatedly through a series of yes/no questions until a leaf node gives a prediction, resembling an upside-down tree. It is intuitive and interpretable, used for both classification and regression. A random forest combines many decision trees to improve performance.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#决策树</a> <a class="tag" href="#">#分类</a> <a class="tag" href="#">#随机森林</a>
+    </article>
+
+
+    <article class="qitem" id="80a489de0467">
+      <h2 class="qz" lang="zh">什么是监督学习？</h2>
+      <p class="qen" lang="en">What is supervised learning?</p>
+      <div class="azh" lang="zh">监督学习用带标注的样本（输入配上正确答案）训练模型，使模型学会从输入预测输出，如用大量带标签的猫狗照片学会分类。常见任务有分类与回归。</div>
+      <div class="aen" lang="en">Supervised learning trains a model on labeled examples (inputs paired with correct answers) so it learns to predict outputs from inputs, like classifying cats versus dogs from many labeled photos. Typical tasks are classification and regression.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#监督学习</a> <a class="tag" href="#">#标注数据</a> <a class="tag" href="#">#分类</a>
+    </article>
+
+
+    <article class="qitem" id="829e0e8bd007">
+      <h2 class="qz" lang="zh">什么是聚类？</h2>
+      <p class="qen" lang="en">What is clustering?</p>
+      <div class="azh" lang="zh">聚类是无监督学习的一种，把相似的数据点自动归为同一组，而不需要预先标注类别。K-means 是最常见的方法，它把数据划分成 K 个簇。聚类广泛用于市场分群、异常检测和图像分割。</div>
+      <div class="aen" lang="en">Clustering is a form of unsupervised learning that automatically groups similar data points together without pre-labeled categories. K-means is the most common method, partitioning data into K clusters. It is widely used for market segmentation, anomaly detection, and image segmentation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#聚类</a> <a class="tag" href="#">#K-means</a> <a class="tag" href="#">#无监督</a>
+    </article>
+
+
+    <article class="qitem" id="8f89c1170e32">
+      <h2 class="qz" lang="zh">什么是过拟合（overfitting）？常用哪些方法防止它？</h2>
+      <p class="qen" lang="en">What is overfitting, and what common methods prevent it?</p>
+      <div class="azh" lang="zh">过拟合指模型在训练数据上表现极好、却在新数据上很差，因为它记住了噪声而非规律。常用对策包括交叉验证来估计真实泛化能力、用正则化惩罚模型复杂度、以及增加训练数据或提前停止训练。本质上是在拟合能力与泛化能力之间做权衡。</div>
+      <div class="aen" lang="en">Overfitting occurs when a model performs extremely well on training data but poorly on new data because it memorized noise rather than the underlying pattern. Common remedies include cross-validation to estimate true generalization, regularization to penalize complexity, and adding training data or early stopping. The essence is trading fitting power for generalization.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hastie、Tibshirani 与 Friedman,《The Elements of Statistical Learning》第2版, Springer, 2009; C. M. Bishop,《Pattern Recognition and Machine Learning》, Springer, 2006</p>
+        <p lang="en">T. Hastie, R. Tibshirani, J. Friedman, The Elements of Statistical Learning, 2nd ed., Springer, 2009; C. M. Bishop, Pattern Recognition and Machine Learning, Springer, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#过拟合</a> <a class="tag" href="#">#交叉验证</a> <a class="tag" href="#">#正则化</a> <a class="tag" href="#">#泛化</a>
+    </article>
+
+
+    <article class="qitem" id="a4f41f43b944">
+      <h2 class="qz" lang="zh">什么是过拟合？</h2>
+      <p class="qen" lang="en">What is overfitting?</p>
+      <div class="azh" lang="zh">过拟合指模型在训练数据上表现极好，却无法泛化到新数据，相当于「死记硬背」了训练样本。常见原因包括模型太复杂或训练数据太少。常用正则化、早停和增加数据等方法缓解。</div>
+      <div class="aen" lang="en">Overfitting occurs when a model performs extremely well on training data but fails to generalize to new data, as if it memorized the samples. Common causes are an overly complex model or too little training data. It is mitigated by regularization, early stopping, and adding more data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#过拟合</a> <a class="tag" href="#">#泛化</a> <a class="tag" href="#">#正则化</a>
+    </article>
+
+
+    <article class="qitem" id="cs_26_001">
+      <h2 class="qz" lang="zh">训练神经网络时,随机梯度下降加上动量项为什么能收敛更快、还不容易来回震荡？</h2>
+      <p class="qen" lang="en">When training neural networks, why does adding a momentum term to stochastic gradient descent converge faster and resist oscillation?</p>
+      <div class="azh" lang="zh">动量把过去多步的更新方向按衰减系数累积起来,再叠加到当前步长上。梯度方向持续一致时速度越滚越大,等效放大了有效步长;而在高曲率峡谷两侧来回变号的梯度分量则相互抵消,震荡被平均掉。它相当于对梯度序列做指数加权平均的低通滤波,让优化轨迹既快又稳。</div>
+      <div class="aen" lang="en">Momentum accumulates past update directions into a velocity with a decay factor and adds it to the current step. Where gradients keep pointing the same way the velocity grows, enlarging the effective step size; where gradients flip sign across the walls of a high-curvature ravine those components cancel out and the zigzag is averaged away. It acts as a low-pass filter over the gradient sequence, making the trajectory both fast and stable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">B. T. Polyak,USSR Computational Mathematics and Mathematical Physics 第4卷第5期,1964年;I. Sutskever 等,On the Importance of Initialization and Momentum in Deep Learning,ICML 2013</p>
+        <p lang="en">B. T. Polyak, USSR Computational Mathematics and Mathematical Physics 4(5), 1-17 (1964); I. Sutskever et al., On the Importance of Initialization and Momentum in Deep Learning, ICML 2013</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#动量优化</a> <a class="tag" href="#">#随机梯度下降</a> <a class="tag" href="#">#指数加权平均</a>
+    </article>
+
+
+    <article class="qitem" id="e1e781fa2405">
+      <h2 class="qz" lang="zh">监督学习与无监督学习有什么不同？</h2>
+      <p class="qen" lang="en">What is the difference between supervised and unsupervised learning?</p>
+      <div class="azh" lang="zh">监督学习使用带标签的数据训练模型去预测或分类（如用带『猫/狗』标签的图片学分类）；无监督学习面对的是无标签数据，目标是发现内在结构，如聚类或降维。二者区别核心在于训练时是否提供『标准答案』。半监督和强化学习则介于或超出这两类范式。</div>
+      <div class="aen" lang="en">Supervised learning trains on labeled data to predict or classify (e.g., learning from images tagged &#x27;cat&#x27; or &#x27;dog&#x27;), while unsupervised learning works on unlabeled data to discover intrinsic structure such as clusters or reduced dimensions. The core difference is whether training provides a ground-truth answer. Semi-supervised and reinforcement learning lie between or beyond these two paradigms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bishop《模式识别与机器学习》；Hastie 等《统计学习基础》（ESL）</p>
+        <p lang="en">Bishop, Pattern Recognition and Machine Learning; Hastie et al., The Elements of Statistical Learning (ESL)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#监督学习</a> <a class="tag" href="#">#无监督学习</a> <a class="tag" href="#">#聚类</a> <a class="tag" href="#">#标签</a>
+    </article>
+
+
+    <article class="qitem" id="f61c0222cf2f">
+      <h2 class="qz" lang="zh">什么是无监督学习？</h2>
+      <p class="qen" lang="en">What is unsupervised learning?</p>
+      <div class="azh" lang="zh">无监督学习面对没有标注的数据，目标是发现其中隐藏的结构，如把相似样本聚成簇（聚类）或把高维数据压缩到低维（降维）。常见算法有 K-means 和主成分分析。</div>
+      <div class="aen" lang="en">Unsupervised learning works on unlabeled data to uncover hidden structure, such as grouping similar samples into clusters or compressing high-dimensional data to lower dimensions. Common algorithms include K-means and principal component analysis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#无监督学习</a> <a class="tag" href="#">#聚类</a> <a class="tag" href="#">#降维</a>
+    </article>
+
+
+    <article class="qitem" id="37fad30c793f">
+      <h2 class="qz" lang="zh">什么是深度学习？</h2>
+      <p class="qen" lang="en">What is deep learning?</p>
+      <div class="azh" lang="zh">深度学习是机器学习的一个分支，使用多层（很深）的神经网络从数据中提取由浅入深的特征。它在图像、语音、语言等任务上取得了突破性成果。其发展得益于大数据和 GPU 算力的提升。</div>
+      <div class="aen" lang="en">Deep learning is a branch of machine learning that uses multi-layer (very deep) neural networks to extract features from shallow to deep. It has achieved breakthrough results in image, speech, and language tasks. Its progress is thanks to big data and GPU computing power.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#深度学习</a> <a class="tag" href="#">#神经网络</a> <a class="tag" href="#">#特征</a>
+    </article>
+
+
+    <article class="qitem" id="7b3565ab4a63">
+      <h2 class="qz" lang="zh">什么是「训练」一个模型？</h2>
+      <p class="qen" lang="en">What does it mean to train a model?</p>
+      <div class="azh" lang="zh">训练就是让模型从大量例子中不断调整内部参数，使它对类似新问题也能给出正确答案的过程。好比学生通过大量练习掌握规律。训练得越多、数据越好，模型通常越准确，但也可能学过头。</div>
+      <div class="aen" lang="en">Training is the process of letting a model repeatedly adjust its internal parameters from many examples so it can answer similar new questions correctly, like a student mastering patterns through practice. More and better training data usually means higher accuracy, though it can also overlearn.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow, I., Bengio, Y. 与 Courville, A. (2016). 《深度学习》. MIT Press.</p>
+        <p lang="en">Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). Deep Learning. MIT Press.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#训练</a> <a class="tag" href="#">#模型</a> <a class="tag" href="#">#学习</a>
+    </article>
+
+
+    <article class="qitem" id="bf3e7cdb65b3">
+      <h2 class="qz" lang="zh">机器是怎么学习的？</h2>
+      <p class="qen" lang="en">How do machines learn?</p>
+      <div class="azh" lang="zh">机器学习就像小朋友看很多例子来认字：给它看成千上万张苹果的照片，并告诉它这是苹果，它就慢慢学会认苹果。看得越多、答对越多，它就学得越好。</div>
+      <div class="aen" lang="en">Machine learning is like a child learning to read from examples: show it thousands of apple photos labeled this is an apple, and it gradually learns to recognize apples. The more it sees and the more it gets right, the better it learns.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《机器学习》（周志华）</p>
+        <p lang="en">Machine Learning (Zhou Zhihua)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26708119/" target="_blank" rel="noopener">核验依据 1 ISBN 9787302423287（豆瓣书目条目: 机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习</a> <a class="tag" href="#">#例子</a> <a class="tag" href="#">#训练</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

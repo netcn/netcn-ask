@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mechatronics · 工程技术 Engineering | 问答</title>
+<meta name="description" content="mechatronics（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="mechatronics · 工程技术 Engineering | 问答">
+<meta property="og:description" content="mechatronics（工程技术）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/mechatronics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/mechatronics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>mechatronics</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>mechatronics <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#eng_21_009">直线电机驱动的精密运动平台中，为何普遍要加装光栅尺构成全闭环，而不是依赖编码器半</a></li><li><a href="#eng_21_001">在机电一体化系统中,为什么传感器、控制器与执行器之间普遍采用4–20 mA电流环</a></li><li><a href="#eng_21_017">数控机床进给系统的滚珠丝杠副为什么要施加预紧?预紧力偏大或偏小各自带来哪些后果?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="eng_21_009">
+      <h2 class="qz" lang="zh">直线电机驱动的精密运动平台中，为何普遍要加装光栅尺构成全闭环，而不是依赖编码器半闭环？全闭环引入的机械谐振问题应如何抑制？</h2>
+      <p class="qen" lang="en">Why do precision motion stages driven by linear motors almost always add linear encoders for full closed-loop control instead of relying on rotary-encoder semi-closed loops, and how should the mechanical resonance introduced by full closure be suppressed?</p>
+      <div class="azh" lang="zh">半闭环只反馈电机转子位置，滚珠丝杠或联轴器的反向间隙、弹性变形和热伸长都不在环内，定位精度通常只能到几十微米；直线电机直接驱动配合光栅尺全闭环可消除这些中间环节，达到亚微米级。但全闭环把柔性机械环节纳入控制回路，位置环带宽受限，过高增益会激发传动系统固有模态，表现为高频振荡。工程上通过陷波滤波器（Notch）压制主导谐振峰、双反馈（电机+光栅）融合控制、以及加速度前馈提高响应而不抬升环路增益来兼顾速度与稳定裕度。</div>
+      <div class="aen" lang="en">Semi-closed loops sense only rotor position; backlash, elasticity, and thermal drift of ball screws or couplings stay outside the loop, limiting accuracy to tens of micrometers. Direct-drive linear motors with linear encoders remove these intermediate elements, reaching sub-micrometer positioning. Yet full closure brings flexible mechanics inside the control loop, constraining position-loop bandwidth — excessive gain excites structural modes as high-frequency oscillation. Practitioners suppress the dominant resonance with notch filters, blend motor and stage feedback (dual-feedback control), and add acceleration feedforward to raise responsiveness without inflating loop gain.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">ISO 230-2 机床定位精度评定标准；K. K. Tan、S. Huang、T. H. Lee 等,《Precision Motion Control: Design and Implementation》第2版(Springer) 双反馈章节；西门子 SINAMICS V90 应用文档</p>
+        <p lang="en">ISO 230-2 positioning accuracy evaluation standard; K.K. Tan, S. Huang, T.H. Lee et al., Precision Motion Control: Design and Implementation, 2nd ed. (Springer), dual-feedback chapter; Siemens SINAMICS V90 application documentation</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17384900W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17384900W：Precision Motion Contr</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机电一体化</a> <a class="tag" href="#">#全闭环伺服与谐振抑制</a>
+    </article>
+
+
+    <article class="qitem" id="eng_21_001">
+      <h2 class="qz" lang="zh">在机电一体化系统中,为什么传感器、控制器与执行器之间普遍采用4–20 mA电流环或现场总线等标准接口?这对整机联调和故障定位有何实际价值?</h2>
+      <p class="qen" lang="en">In mechatronic systems, why are standardized interfaces such as 4–20 mA current loops or fieldbuses the norm between sensors, controllers and actuators? What practical value do they bring to system integration and fault isolation?</p>
+      <div class="azh" lang="zh">统一接口让不同厂商的模块可以直接互连,联调时还能分段注入已知信号逐级验证信号链。例如在4–20 mA回路中断开执行器、用恒流源强制注入12 mA,即可判断故障出在变送器侧还是执行器侧。许多现场总线设备还自带诊断状态字,能把断线、超量程等异常直接上报控制器。</div>
+      <div class="aen" lang="en">A common interface lets modules from different vendors plug together directly, and during integration known signals can be injected section by section to verify the whole chain. On a 4–20 mA loop, disconnecting the actuator and forcing 12 mA from a constant-current source immediately reveals whether the fault sits on the transmitter or the actuator side. Many fieldbus devices also carry self-diagnostic status words that report broken wires, overrange and similar anomalies straight to the controller.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">W. Bolton,《Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering》第7版,Pearson</p>
+        <p lang="en">W. Bolton, Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering, 7th ed., Pearson</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Mechatronics:+Electronic+Control+Systems+in+Mechanical+and+Electrical+Engineering" target="_blank" rel="noopener">核验依据 1 ISBN 9780582256347 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信号接口</a> <a class="tag" href="#">#故障定位</a>
+    </article>
+
+
+    <article class="qitem" id="eng_21_017">
+      <h2 class="qz" lang="zh">数控机床进给系统的滚珠丝杠副为什么要施加预紧?预紧力偏大或偏小各自带来哪些后果?</h2>
+      <p class="qen" lang="en">Why must the ball screw nut pair in a CNC feed drive be preloaded, and what consequences follow when the preload runs too high or too low?</p>
+      <div class="azh" lang="zh">预紧用于消除丝杠与螺母之间的轴向间隙,避免工作台换向时出现反向空程,直接决定定位精度与轮廓跟随质量。预紧偏小则反向死区大、跟随误差明显;预紧偏大则摩擦转矩与温升迅速上升,滚道疲劳点蚀提前发生,使用寿命缩短,工程上常从额定动载荷的百分之五到十起步再通过试验标定。</div>
+      <div class="aen" lang="en">Preloading removes the axial clearance between screw and nut so the table shows no lost motion on direction reversal, which directly governs positioning accuracy and contour-following quality. Too little preload leaves a large reversal dead zone and visible tracking error, while too much inflates friction torque and temperature rise, brings forward raceway fatigue pitting, and shortens service life; engineering practice starts near five to ten percent of the rated dynamic load and calibrates by test.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Yusuf Altintas著《Manufacturing Automation: Metal Cutting Mechanics, Machine Tool Vibrations, and CNC Design》(Cambridge University Press,2012年第2版)进给驱动设计章节</p>
+        <p lang="en">Yusuf Altintas, Manufacturing Automation: Metal Cutting Mechanics, Machine Tool Vibrations, and CNC Design, 2nd ed., Cambridge University Press, 2012, feed drive chapters.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Manufacturing+Automation:+Metal+Cutting+Mechanics,+Machine+Tool+Vibrations,+and+CNC+Design" target="_blank" rel="noopener">核验依据 1 ISBN 9780521659734 (2012)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机电一体化</a> <a class="tag" href="#">#滚珠丝杠预紧</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

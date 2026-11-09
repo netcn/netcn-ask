@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>os_kernel os-kernel · 计算机 Computer Science | 问答</title>
+<meta name="description" content="os_kernel（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="os_kernel os-kernel · 计算机 Computer Science | 问答">
+<meta property="og:description" content="os_kernel（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/os-kernel/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/os-kernel/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>os_kernel</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>os_kernel <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>9</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#b45c7108d502">什么是操作系统中的信号（Signal）？</a></li><li><a href="#2f634d4d3e5a">什么是优先级调度和轮转（Round Robin）？</a></li><li><a href="#770f7b5d8df3">什么是死锁？怎么避免？</a></li><li><a href="#8af029d2c337">什么是实时操作系统（RTOS）？</a></li><li><a href="#8b23d23a08f3">什么是文件系统？FAT、NTFS、ext4 是什么？</a></li><li><a href="#be14bab5c84f">什么是中断（Interrupt）？</a></li><li><a href="#ebc61ee004ca">什么是上下文切换（Context Switch）？</a></li><li><a href="#0bcd0bd35c92">什么是进程和线程？它们有什么区别？</a></li><li><a href="#fa9af53e50ea">什么是内存泄漏？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="b45c7108d502">
+      <h2 class="qz" lang="zh">什么是操作系统中的信号（Signal）？</h2>
+      <p class="qen" lang="en">What are signals in an operating system?</p>
+      <div class="azh" lang="zh">信号是进程间的一种异步通知，比如按 Ctrl+C 会发送 SIGINT 让程序终止。程序可捕获或忽略某些信号。</div>
+      <div class="aen" lang="en">A signal is an asynchronous notification between processes; pressing Ctrl+C sends SIGINT to terminate a program. Programs can catch or ignore some signals.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#信号</a>
+    </article>
+
+
+    <article class="qitem" id="2f634d4d3e5a">
+      <h2 class="qz" lang="zh">什么是优先级调度和轮转（Round Robin）？</h2>
+      <p class="qen" lang="en">What are priority scheduling and round-robin?</p>
+      <div class="azh" lang="zh">优先级调度让重要任务先跑；轮转则给每个任务固定时间片轮流执行，保证公平。两者常结合使用。</div>
+      <div class="aen" lang="en">Priority scheduling runs important tasks first; round-robin gives each task a fixed time slice in turn for fairness. They are often combined.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#调度</a>
+    </article>
+
+
+    <article class="qitem" id="770f7b5d8df3">
+      <h2 class="qz" lang="zh">什么是死锁？怎么避免？</h2>
+      <p class="qen" lang="en">What is a deadlock, and how can it be avoided?</p>
+      <div class="azh" lang="zh">死锁是多个进程互相等待对方持有的资源，谁都无法前进。常见避免方法：按固定顺序加锁、设置超时、一次性申请全部资源。</div>
+      <div class="aen" lang="en">A deadlock is when processes each wait for a resource the other holds, so none proceeds. Avoid it by locking in a fixed order, using timeouts, or requesting all resources at once.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#死锁</a>
+    </article>
+
+
+    <article class="qitem" id="8af029d2c337">
+      <h2 class="qz" lang="zh">什么是实时操作系统（RTOS）？</h2>
+      <p class="qen" lang="en">What is a real-time operating system (RTOS)?</p>
+      <div class="azh" lang="zh">RTOS 保证任务在确定的时间内完成，常用于汽车刹车、医疗设备等对延迟有严格要求的场景，而非追求平均最快。</div>
+      <div class="aen" lang="en">An RTOS guarantees tasks finish within bounded time, used in cars&#x27; brakes or medical devices where latency is critical, not just average speed.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#实时</a>
+    </article>
+
+
+    <article class="qitem" id="8b23d23a08f3">
+      <h2 class="qz" lang="zh">什么是文件系统？FAT、NTFS、ext4 是什么？</h2>
+      <p class="qen" lang="en">What is a file system, and what are FAT, NTFS, and ext4?</p>
+      <div class="azh" lang="zh">文件系统是硬盘上组织文件的规则。FAT 简单老旧，NTFS 是 Windows 常用，ext4 常见于 Linux，它们管文件名、权限和存放位置。</div>
+      <div class="aen" lang="en">A file system is the rules for organizing files on disk. FAT is old and simple, NTFS is common on Windows, and ext4 is typical on Linux; they manage names, permissions, and locations.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#文件系统</a>
+    </article>
+
+
+    <article class="qitem" id="be14bab5c84f">
+      <h2 class="qz" lang="zh">什么是中断（Interrupt）？</h2>
+      <p class="qen" lang="en">What is an interrupt?</p>
+      <div class="azh" lang="zh">中断是硬件或软件发出的有急事信号，CPU 暂停当前工作去处理（如键盘按键、网卡来数据），处理完再回来。</div>
+      <div class="aen" lang="en">An interrupt is an urgent signal from hardware or software; the CPU pauses current work to handle it, such as a key press or network packet, then resumes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#中断</a>
+    </article>
+
+
+    <article class="qitem" id="ebc61ee004ca">
+      <h2 class="qz" lang="zh">什么是上下文切换（Context Switch）？</h2>
+      <p class="qen" lang="en">What is a context switch?</p>
+      <div class="azh" lang="zh">当 CPU 从一个任务换到另一个，需要保存当前寄存器、内存映射等状态再恢复下一个，这过程叫上下文切换，频繁切换会有开销。</div>
+      <div class="aen" lang="en">To switch tasks, the CPU saves the current registers and memory map, then restores the next task&#x27;s; that overhead is a context switch, and frequent switches cost time.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#调度</a>
+    </article>
+
+
+    <article class="qitem" id="0bcd0bd35c92">
+      <h2 class="qz" lang="zh">什么是进程和线程？它们有什么区别？</h2>
+      <p class="qen" lang="en">What are processes and threads, and how do they differ?</p>
+      <div class="azh" lang="zh">进程是运行中的程序，拥有独立内存空间；线程是进程里的执行流，同一进程内的线程共享内存，切换更轻量。</div>
+      <div class="aen" lang="en">A process is a running program with its own memory; a thread is an execution flow inside a process. Threads in one process share memory and switch more cheaply.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#操作系统</a> <a class="tag" href="#">#进程</a> <a class="tag" href="#">#线程</a>
+    </article>
+
+
+    <article class="qitem" id="fa9af53e50ea">
+      <h2 class="qz" lang="zh">什么是内存泄漏？</h2>
+      <p class="qen" lang="en">What is a memory leak?</p>
+      <div class="azh" lang="zh">程序借了内存却忘了还，就像借了小朋友的玩具一直不还，时间久了玩具越来越少，电脑也会变慢甚至卡住。</div>
+      <div class="aen" lang="en">A program borrows memory but forgets to give it back, like borrowing a friend&#x27;s toy and never returning it; soon there are fewer toys and the computer slows down or freezes.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum &amp; Bos,《Modern Operating Systems》第4版,Pearson,2014</p>
+        <p lang="en">A. S. Tanenbaum and H. Bos, Modern Operating Systems, 4th ed., Pearson, 2014</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1970688W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL1970688W：Modern Operating System</a></p>
+        
+      </details>
+      <a class="tag" href="#">#内存</a> <a class="tag" href="#">#电脑</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

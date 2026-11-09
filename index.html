@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>问答 · 科学冒险百科 · Ask · Science Q&A Encyclopedia</title>
+<meta name="description" content="17,305 道真实科学问答，写下你的问题就能找到答案，也可以按学科、学习路径和生活场景慢慢逛。中英双语，内容采用 CC BY 4.0。 A bilingual science Q&A library with 17,305 verified questions — ask, read, or browse by subject.">
+<meta property="og:title" content="问答 · 科学冒险百科">
+<meta property="og:description" content="17,305 道真实科学问答，写下问题就能找到答案，也可以按学科慢慢逛。中英双语。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://ask.netcn.org/">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="stylesheet" href="assets/css/main.css?v=5">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+<link rel="modulepreload" href="assets/js/app.js?v=4">
+<link rel="modulepreload" href="assets/js/ui.js?v=4">
+<link rel="modulepreload" href="assets/js/store.js?v=4">
+<link rel="modulepreload" href="assets/js/fun-pack.js?v=4">
+<link rel="modulepreload" href="assets/js/search.js?v=4">
+<link rel="modulepreload" href="assets/js/tts.js?v=4">
+<link rel="modulepreload" href="assets/js/config.js?v=4">
+<link rel="modulepreload" href="assets/js/i18n.js?v=4">
+<link rel="modulepreload" href="assets/js/util.js?v=4">
+<link rel="modulepreload" href="assets/js/mpack.js?v=4">
+<link rel="stylesheet" href="assets/css/kids-home.css?v=4">
+<script src="assets/js/kids-pick.js?v=4" defer></script>
+<script src="assets/js/kids-home.js?v=4" defer></script>
+</head>
+<body>
+<div id="progress" class="progressbar" hidden></div>
+<nav class="nc-shell" aria-label="netcn 站点导航">
+  <a class="nc-brand" href="./" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a>
+  <nav class="nc-sw" aria-label="netcn 站点">
+    <a href="https://netcn.org/" data-nc-to="nav">导航</a>
+    <a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a>
+    <a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a>
+    <a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a>
+  </nav>
+  <div class="nc-search has-icon">
+    <span class="search-icon" aria-hidden="true">⌕</span>
+    <input id="q" type="search" placeholder="搜你想问的…（也可直接开始冒险）/ search…" autocomplete="off" aria-label="search">
+    <div id="suggest" class="suggest" hidden></div>
+  </div>
+  <div class="nc-tools">
+    <button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button>
+    <button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button>
+  </div>
+</nav>
+<main>
+<section class="kids-home" id="kidsHome" aria-label="小朋友提问区">
+  <div class="kids-hello">
+    <span class="kids-badge">🔬 <span data-kt="badgeA">有</span> <b id="kidsTotal">17,305</b> <span data-kt="badgeB">个真实科学问答</span></span>
+    <h2 id="kidsTitle">你想知道什么？</h2>
+    <p id="kidsDesc">把心里的小问题写下来，或者点一个好玩的问题，马上就能看到答案。</p>
+  </div>
+
+  <form class="kids-ask" id="kidsAsk" autocomplete="off">
+    <span class="kids-ask-ic" aria-hidden="true">🔎</span>
+    <input id="kidsQ" type="search" placeholder="例如：天空为什么是蓝色的？" aria-label="写下你的问题">
+    <button type="submit" class="kids-go" id="kidsGo">找答案 →</button>
+  </form>
+
+  <div class="kids-samples">
+    <span class="kids-label" id="kidsLabel">大家最爱问：</span>
+    <div class="kids-chips" id="kidsSamples"></div>
+  </div>
+
+  <div class="kids-actions">
+    <button class="kids-big" id="kidsRandom" type="button">🎲 随便来一题</button>
+    <button class="kids-big kids-big-soft" id="kidsDaily" type="button">📅 今日一题</button>
+  </div>
+
+  <div class="kids-card" id="kidsCard" hidden>
+    <div class="kids-card-top">
+      <span class="kids-tag" id="kidsTag"></span>
+      <span class="kids-num" id="kidsNum"></span>
+    </div>
+    <h3 class="kids-q" id="kidsQText"></h3>
+    <button class="kids-reveal" id="kidsReveal" type="button">👀 看答案</button>
+    <div class="kids-answer" id="kidsAnswer" hidden></div>
+    <div class="kids-card-foot">
+      <button class="kids-mini" id="kidsNext" type="button">🔄 换一题</button>
+      <a class="kids-mini" id="kidsMore" href="#">📖 看更多这类问题</a>
+    </div>
+  </div>
+
+  <div class="kids-how">
+    <b id="kidsHowB">怎么用？</b>
+    <span id="kidsH1">① 写下你想问的</span>
+    <span id="kidsH2">② 或点一个好奇的问题</span>
+    <span id="kidsH3">③ 看答案，再换一题</span>
+  </div>
+  <p class="kids-loading" id="kidsLoading">🔄 全站题库正在后台装填，上面的问题现在就能看～</p>
+</section>
+<section id="results" class="results" aria-live="polite" hidden></section>
+<section id="detail" class="detail" hidden></section>
+<button id="retry" class="retry" type="button" hidden>重试</button>
+<!-- 慢慢逛：话题与学科分类 -->
+<section class="browse" id="browse" aria-label="慢慢逛">
+  <h3 class="kids-sec" id="kidsSec">挑一个你感兴趣的话题</h3>
+  <div class="kids-topics" id="kidsTopics"></div>
+</section>
+<!--EXPLORE:START-->
+<section id="explore" class="explore" aria-label="explore">
+<div class="explore-head">
+  <h2>换个方式逛 <span class="en">Explore</span></h2>
+  <p>不想搜题？按学科、学习路径、生活场景或题型，挑一条顺眼的路走。</p>
+</div>
+<div class="explore-cards">
+<section class="explore-card" style="--ex-hue:190">
+  <div class="explore-card-hd">
+    <span class="ex-ic" aria-hidden="true">⚛️</span>
+    <h3>按学科<span class="en">By subject</span></h3>
+    <span class="ex-count">12</span>
+  </div>
+  <ul class="explore-grid">
+    <li><a href="/cat/phy.html" title="Physics"><span class="t">物理</span>
+<span class="e">Physics</span>
+    </a></li>
+    <li><a href="/cat/chem.html" title="Chemistry"><span class="t">化学</span>
+<span class="e">Chemistry</span>
+    </a></li>
+    <li><a href="/cat/bio.html" title="Biology"><span class="t">生物</span>
+<span class="e">Biology</span>
+    </a></li>
+    <li><a href="/cat/astro.html" title="Astronomy"><span class="t">天文</span>
+<span class="e">Astronomy</span>
+    </a></li>
+    <li><a href="/cat/earth.html" title="Earth Science"><span class="t">地球科学</span>
+<span class="e">Earth Science</span>
+    </a></li>
+    <li><a href="/cat/math.html" title="Mathematics"><span class="t">数学</span>
+<span class="e">Mathematics</span>
+    </a></li>
+    <li><a href="/cat/med.html" title="Medicine &amp; Health"><span class="t">医学健康</span>
+<span class="e">Medicine &amp; Health</span>
+    </a></li>
+    <li><a href="/cat/eng.html" title="Engineering"><span class="t">工程技术</span>
+<span class="e">Engineering</span>
+    </a></li>
+    <li><a href="/cat/cs.html" title="Computer Science"><span class="t">计算机</span>
+<span class="e">Computer Science</span>
+    </a></li>
+    <li><a href="/cat/env.html" title="Environment"><span class="t">环境生态</span>
+<span class="e">Environment</span>
+    </a></li>
+    <li><a href="/cat/psy.html" title="Psychology"><span class="t">心理认知</span>
+<span class="e">Psychology</span>
+    </a></li>
+    <li><a href="/cat/soc.html" title="Social Science"><span class="t">社会科学</span>
+<span class="e">Social Science</span>
+    </a></li>
+  </ul>
+</section>
+<section class="explore-card" style="--ex-hue:265">
+  <div class="explore-card-hd">
+    <span class="ex-ic" aria-hidden="true">🧭</span>
+    <h3>按学习路径<span class="en">Learning paths</span></h3>
+    <span class="ex-count">14</span>
+  </div>
+  <ul class="explore-grid">
+    <li><a href="/path/junior-physics/" title="Junior Physics in 12 Stations"><span class="t">初中物理十二站</span>
+<span class="e">Junior Physics in 12 Stations</span>
+    </a></li>
+    <li><a href="/path/living-systems/" title="Living Systems: Cell to Biosphere"><span class="t">生命系统：从细胞到生态</span>
+<span class="e">Living Systems: Cell to Biosphere</span>
+    </a></li>
+    <li><a href="/path/earth-system/" title="The Earth System: Rock, Air, Ocean, Climate"><span class="t">地球系统：岩石、大气、海洋与气候</span>
+<span class="e">The Earth System: Rock, Air, Ocean, Climate</span>
+    </a></li>
+    <li><a href="/path/energy-thread/" title="Seven Faces of Energy"><span class="t">能量的七种面貌</span>
+<span class="e">Seven Faces of Energy</span>
+    </a></li>
+    <li><a href="/path/math-thinking/" title="Mathematical Thinking: From Computing to Proving"><span class="t">数学思维：从会算到会证</span>
+<span class="e">Mathematical Thinking: From Computing to Proving</span>
+    </a></li>
+    <li><a href="/path/universe/" title="Exploring the Universe: From Eyes to Multi-Messenger Astronomy"><span class="t">宇宙探索：从一双眼睛到多信使</span>
+<span class="e">Exploring the Universe: From Eyes to Multi-Messenger Astronomy</span>
+    </a></li>
+    <li><a href="/path/how-machines-work/" title="How Machines Work: From Bits to Intelligence"><span class="t">机器如何思考：从比特到智能</span>
+<span class="e">How Machines Work: From Bits to Intelligence</span>
+    </a></li>
+    <li><a href="/path/body-decoded/" title="Decoding the Human Body: From Heartbeats to Emotions"><span class="t">人体解码：从心跳到情绪</span>
+<span class="e">Decoding the Human Body: From Heartbeats to Emotions</span>
+    </a></li>
+    <li><a href="/path/climate-action/" title="Climate and Action: From Science to Policy"><span class="t">气候与行动：从科学到政策</span>
+<span class="e">Climate and Action: From Science to Policy</span>
+    </a></li>
+    <li><a href="/path/everyday-physics/" title="Physics Around You"><span class="t">身边的物理学</span>
+<span class="e">Physics Around You</span>
+    </a></li>
+    <li><a href="/path/mind-and-behavior/" title="Mind and Behaviour"><span class="t">心与行为</span>
+<span class="e">Mind and Behaviour</span>
+    </a></li>
+    <li><a href="/path/biotech-frontier/" title="The Biotechnology Frontier"><span class="t">生物技术前沿</span>
+<span class="e">The Biotechnology Frontier</span>
+    </a></li>
+    <li><a href="/path/energy-transition/" title="The Energy Transition"><span class="t">能源转型</span>
+<span class="e">The Energy Transition</span>
+    </a></li>
+    <li><a href="/path/robot-and-machine/" title="Robots and Automation"><span class="t">机器与自动化</span>
+<span class="e">Robots and Automation</span>
+    </a></li>
+  </ul>
+</section>
+<section class="explore-card" style="--ex-hue:28">
+  <div class="explore-card-hd">
+    <span class="ex-ic" aria-hidden="true">🏙️</span>
+    <h3>按生活场景<span class="en">By scene</span></h3>
+    <span class="ex-count">7</span>
+  </div>
+  <ul class="explore-grid">
+    <li><a href="/scene/abstract/" title="Abstract &amp; Theory"><span class="t">抽象与理论</span>
+<span class="e">Abstract &amp; Theory</span>
+    </a></li>
+    <li><a href="/scene/body/" title="Human Body"><span class="t">人与身体</span>
+<span class="e">Human Body</span>
+    </a></li>
+    <li><a href="/scene/daily/" title="Daily Life"><span class="t">日常生活</span>
+<span class="e">Daily Life</span>
+    </a></li>
+    <li><a href="/scene/history/" title="History &amp; Culture"><span class="t">历史与人文</span>
+<span class="e">History &amp; Culture</span>
+    </a></li>
+    <li><a href="/scene/nature/" title="Nature &amp; Universe"><span class="t">自然与宇宙</span>
+<span class="e">Nature &amp; Universe</span>
+    </a></li>
+    <li><a href="/scene/society/" title="Society &amp; Institutions"><span class="t">社会与制度</span>
+<span class="e">Society &amp; Institutions</span>
+    </a></li>
+    <li><a href="/scene/tech/" title="Tech &amp; Engineering"><span class="t">科技与工程</span>
+<span class="e">Tech &amp; Engineering</span>
+    </a></li>
+  </ul>
+</section>
+<section class="explore-card" style="--ex-hue:340">
+  <div class="explore-card-hd">
+    <span class="ex-ic" aria-hidden="true">🎲</span>
+    <h3>按题型<span class="en">By question type</span></h3>
+    <span class="ex-count">5</span>
+  </div>
+  <ul class="explore-grid">
+    <li><a href="/genre/counterintuitive/" title="Counterintuitive"><span class="t">反直觉</span>
+<span class="e">Counterintuitive</span>
+    </a></li>
+    <li><a href="/genre/myth/" title="Myth Busting"><span class="t">辟谣</span>
+<span class="e">Myth Busting</span>
+    </a></li>
+    <li><a href="/genre/origin/" title="Origins"><span class="t">历史由来</span>
+<span class="e">Origins</span>
+    </a></li>
+    <li><a href="/genre/trivia/" title="Fun Facts"><span class="t">冷知识</span>
+<span class="e">Fun Facts</span>
+    </a></li>
+    <li><a href="/genre/why/" title="How It Works"><span class="t">原理探究</span>
+<span class="e">How It Works</span>
+    </a></li>
+  </ul>
+</section>
+</div>
+</section>
+<!--EXPLORE:END-->
+</main>
+<footer class="nc-foot">
+  <nav class="nc-foot-nav" aria-label="netcn 站点">
+    <a href="https://netcn.org/" data-nc-to="nav">导航</a>
+    <a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a>
+    <a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a>
+    <a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a>
+  </nav>
+  <span class="nc-foot-note">© 2011–2026 netcn.org</span>
+  <span class="nc-foot-site">17,305 题 · <a href="/trust/">来源可信度报告</a> · CC BY 4.0 署名 问答 ask.netcn.org</span>
+</footer>
+<script type="module" src="assets/js/app.js?v=4"></script>
+</body>
+</html>

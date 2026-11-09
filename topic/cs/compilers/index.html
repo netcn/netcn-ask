@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compilers compilers · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Compilers（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Compilers compilers · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Compilers（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/compilers/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/compilers/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Compilers</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Compilers <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>11</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#089f6a6e9786">什么是上下文无关文法？</a></li><li><a href="#1af3277d9506">SSA 形式（静态单赋值）在编译优化中起什么作用？</a></li><li><a href="#22777852bb25">一个典型的编译器包含哪些主要阶段？</a></li><li><a href="#cs_22_009">图着色寄存器分配把变量分配建模为图着色，其核心机制是什么？当可用颜色不足时会发生</a></li><li><a href="#e0056b6f14b3">静态类型检查与动态类型检查有什么区别？各有什么优劣？</a></li><li><a href="#03490765c935">编译器的主要阶段有哪些？</a></li><li><a href="#a448f24af1ca">寄存器分配是什么，图着色怎么用来做它？</a></li><li><a href="#c5e69dcbb24e">循环不变量外提（loop-invariant code motion）是什么？</a></li><li><a href="#ddb266cab5da">什么是词法分析？</a></li><li><a href="#effa9f3d1cb0">正则表达式在编译器词法分析中起什么作用？</a></li><li><a href="#4ebb96d04e83">编译器到底把我们写的代码变成了什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="089f6a6e9786">
+      <h2 class="qz" lang="zh">什么是上下文无关文法？</h2>
+      <p class="qen" lang="en">What is a context-free grammar?</p>
+      <div class="azh" lang="zh">上下文无关文法用一组产生式规则描述程序设计语言的语法结构，每条规则把非终结符替换为符号串。它是语法分析器（如 LL、LR）的理论基础，能刻画嵌套、配对等层次结构。</div>
+      <div class="aen" lang="en">A context-free grammar uses production rules to describe a programming language&#x27;s syntax, each rule replacing a nonterminal with a string of symbols. It underlies parsers such as LL and LR and can express nested, paired hierarchical structures.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#上下文无关文法</a> <a class="tag" href="#">#产生式</a> <a class="tag" href="#">#语法</a>
+    </article>
+
+
+    <article class="qitem" id="1af3277d9506">
+      <h2 class="qz" lang="zh">SSA 形式（静态单赋值）在编译优化中起什么作用？</h2>
+      <p class="qen" lang="en">What role does SSA (static single assignment) form play in compiler optimization?</p>
+      <div class="azh" lang="zh">SSA 要求每个变量只被赋值一次，并用 φ 函数在分支汇合处选择来源。这让“某个值从哪来、被谁用”一目了然，极大简化了常量传播、死代码删除等优化，是现代编译器的核心中间表示。</div>
+      <div class="aen" lang="en">SSA makes every variable assigned exactly once, with φ functions at merges to pick the source. It makes &#x27;where a value comes from and who uses it&#x27; explicit, simplifying constant propagation and dead-code elimination—core to modern compilers.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cytron 等,Efficiently Computing Static Single Assignment Form and the Control Dependence Graph,ACM TOPLAS,1991;Appel《Modern Compiler Implementation》,Cambridge University Press</p>
+        <p lang="en">Cytron et al., Efficiently Computing Static Single Assignment Form and the Control Dependence Graph, ACM TOPLAS, 1991; Appel, Modern Compiler Implementation, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2704215W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2704215W：Modern compiler impleme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SSA</a> <a class="tag" href="#">#编译</a>
+    </article>
+
+
+    <article class="qitem" id="22777852bb25">
+      <h2 class="qz" lang="zh">一个典型的编译器包含哪些主要阶段？</h2>
+      <p class="qen" lang="en">What are the main phases of a typical compiler?</p>
+      <div class="azh" lang="zh">典型编译器依次经历词法分析（切分为单词/记号）、语法分析（按文法构造成语法树）、语义分析（类型与合法性检查）、中间表示生成、优化、以及目标代码生成。各阶段把源代码逐步翻译成可由机器执行的形式，前端与后端通过中间表示解耦。这一结构是《龙书》（Aho 等）等经典教材的核心内容。</div>
+      <div class="aen" lang="en">A typical compiler proceeds through lexical analysis (splitting into tokens), syntax analysis (building a parse tree per grammar), semantic analysis (type and legality checks), intermediate representation generation, optimization, and target code generation. Each stage progressively translates source into machine-executable form, with the front end and back end decoupled by the intermediate representation. This structure is central to classics like the Dragon Book (Aho et al.).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Aho, Lam, Sethi &amp; Ullman《编译器：原理、技术与工具》（龙书）</p>
+        <p lang="en">Aho, Lam, Sethi &amp; Ullman, Compilers: Principles, Techniques, and Tools (Dragon Book)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编译器</a> <a class="tag" href="#">#词法分析</a> <a class="tag" href="#">#语法分析</a> <a class="tag" href="#">#龙书</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_009">
+      <h2 class="qz" lang="zh">图着色寄存器分配把变量分配建模为图着色，其核心机制是什么？当可用颜色不足时会发生什么？</h2>
+      <p class="qen" lang="en">Graph-coloring register allocation models variable assignment as graph coloring: what is the core mechanism, and what happens when there are not enough colors?</p>
+      <div class="azh" lang="zh">编译器先构建干扰图：节点是虚拟寄存器（变量），两个变量的活跃区间重叠就连一条边，表示不能共用同一物理寄存器；分配随即变成用 k 种颜色（k 为机器寄存器数）给图着色，使相邻节点异色。若某节点邻居数超过 k 而无法着色，就把对应变量溢出到栈内存，插入加载与存储指令、重写代码后再迭代分配，直到全部节点着色成功。</div>
+      <div class="aen" lang="en">The compiler builds an interference graph whose nodes are virtual registers (variables); an edge joins two variables whose live ranges overlap, meaning they cannot share one physical register. Allocation becomes coloring this graph with k colors—k being the machine&#x27;s register count—so adjacent nodes differ. When a node has more than k neighbors and cannot be colored, its variable is spilled to stack memory: load/store instructions are inserted, the code rewritten, and allocation iterates until coloring succeeds.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chaitin,《Register allocation &amp; spilling via graph coloring》,ACM SIGPLAN 编译器构造研讨会论文集,1982 (DOI: 10.1145/800230.806984)</p>
+        <p lang="en">G. J. Chaitin, &#x27;Register allocation &amp; spilling via graph coloring&#x27;, Proc. 1982 SIGPLAN Symposium on Compiler Construction, 1982, DOI: 10.1145/800230.806984</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/800230.806984" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/800230.806984</a></p>
+        
+      </details>
+      <a class="tag" href="#">#寄存器分配</a> <a class="tag" href="#">#图着色</a> <a class="tag" href="#">#溢出</a>
+    </article>
+
+
+    <article class="qitem" id="e0056b6f14b3">
+      <h2 class="qz" lang="zh">静态类型检查与动态类型检查有什么区别？各有什么优劣？</h2>
+      <p class="qen" lang="en">What is the difference between static and dynamic type checking, and what are their trade-offs?</p>
+      <div class="azh" lang="zh">静态类型在编译期检查类型错误（如 Java、C），能在运行前捕获大量 bug 并便于优化，但语法更繁琐、灵活性较低。动态类型在运行期检查（如 Python、Ruby），开发更灵活快速，却把更多错误推迟到运行时才发现。该分类在《Types and Programming Languages》（Pierce）中有系统论述。</div>
+      <div class="aen" lang="en">Static typing checks type errors at compile time (e.g., Java, C), catching many bugs before running and aiding optimization, but at the cost of more verbose syntax and less flexibility. Dynamic typing checks at runtime (e.g., Python, Ruby), enabling faster and more flexible development yet deferring more errors to execution. The distinction is treated systematically in Pierce&#x27;s Types and Programming Languages.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pierce《类型与编程语言》；Aho 等《编译器：原理、技术与工具》</p>
+        <p lang="en">Pierce, Types and Programming Languages; Aho et al., Compilers: Principles, Techniques, and Tools</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4078119W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4078119W：Types and Programming L</a></p>
+        
+      </details>
+      <a class="tag" href="#">#静态类型</a> <a class="tag" href="#">#动态类型</a> <a class="tag" href="#">#类型检查</a> <a class="tag" href="#">#Pierce</a>
+    </article>
+
+
+    <article class="qitem" id="03490765c935">
+      <h2 class="qz" lang="zh">编译器的主要阶段有哪些？</h2>
+      <p class="qen" lang="en">What are the main phases of a compiler?</p>
+      <div class="azh" lang="zh">编译器通常分前端与后端：前端做词法分析、语法分析、语义分析和中间代码生成；后端做优化与目标代码生成。这种分工让同一前端可对接不同硬件的后端。</div>
+      <div class="aen" lang="en">A compiler usually splits into front end and back end: the front end does lexical analysis, syntax analysis, semantic analysis, and intermediate code generation; the back end does optimization and target code generation. This split lets one front end serve back ends for different hardware.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编译器</a> <a class="tag" href="#">#词法分析</a> <a class="tag" href="#">#语法分析</a>
+    </article>
+
+
+    <article class="qitem" id="a448f24af1ca">
+      <h2 class="qz" lang="zh">寄存器分配是什么，图着色怎么用来做它？</h2>
+      <p class="qen" lang="en">What is register allocation and how is graph coloring used for it?</p>
+      <div class="azh" lang="zh">寄存器比内存快但数量极少，寄存器分配决定哪些变量能同时放进寄存器。编译器建一张“冲突图”：同时存活的变量连边，然后给图上色，使相邻节点不同色，每种颜色对应一个物理寄存器；染不下的就只能 spill 到内存。</div>
+      <div class="aen" lang="en">Registers are fast but scarce, so allocation decides which variables live there. The compiler builds an interference graph—edges between variables alive at once—then colors it so neighbors differ; each color is a register, and uncolorable ones get &#x27;spilled&#x27; to memory.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chaitin,Register Allocation &amp; Spilling via Graph Coloring,SIGPLAN Symposium on Compiler Construction,1982;Muchnick《Advanced Compiler Design and Implementation》,Morgan Kaufmann,1997</p>
+        <p lang="en">Chaitin, Register Allocation &amp; Spilling via Graph Coloring, SIGPLAN Symposium on Compiler Construction, 1982; Muchnick, Advanced Compiler Design and Implementation, Morgan Kaufmann, 1997</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2655436W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2655436W：Advanced compiler desig</a></p>
+        
+      </details>
+      <a class="tag" href="#">#寄存器</a> <a class="tag" href="#">#图着色</a>
+    </article>
+
+
+    <article class="qitem" id="c5e69dcbb24e">
+      <h2 class="qz" lang="zh">循环不变量外提（loop-invariant code motion）是什么？</h2>
+      <p class="qen" lang="en">What is loop-invariant code motion?</p>
+      <div class="azh" lang="zh">如果循环体里某段计算每次结果都一样（不随循环变量改变），编译器就把它搬到循环外面只算一次。这样减少了重复运算，是循环优化的基本手段之一。</div>
+      <div class="aen" lang="en">If some computation inside a loop yields the same result every iteration, the compiler hoists it outside the loop to run once. It removes redundant work and is a basic loop optimization.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#循环优化</a> <a class="tag" href="#">#编译</a>
+    </article>
+
+
+    <article class="qitem" id="ddb266cab5da">
+      <h2 class="qz" lang="zh">什么是词法分析？</h2>
+      <p class="qen" lang="en">What is lexical analysis?</p>
+      <div class="azh" lang="zh">词法分析是编译的第一步，把字符流切分成有意义的词素并标记成单词（token），如关键字、标识符、数字。它相当于先给句子断词，方便后续语法分析。</div>
+      <div class="aen" lang="en">Lexical analysis is the first compilation step: it splits a character stream into meaningful lexemes tagged as tokens such as keywords, identifiers, and numbers. It is like word segmentation, preparing input for later syntax analysis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《编译原理》（Aho 等，龙书）</p>
+        <p lang="en">Compilers: Principles, Techniques, and Tools (Aho et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/3296317/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111251217（豆瓣书目条目: 编译原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#词法分析</a> <a class="tag" href="#">#token</a> <a class="tag" href="#">#扫描器</a>
+    </article>
+
+
+    <article class="qitem" id="effa9f3d1cb0">
+      <h2 class="qz" lang="zh">正则表达式在编译器词法分析中起什么作用？</h2>
+      <p class="qen" lang="en">What role do regular expressions play in a compiler&#x27;s lexical analysis?</p>
+      <div class="azh" lang="zh">在词法分析阶段，程序员用正则表达式描述各类单词（标识符、数字、运算符等）的构成规则，词法分析器据此把字符流切分为记号。正则表达式可机械地转换为有限自动机（如 Thompson 在 1968 年给出的构造），从而被高效执行。它把繁琐的字符串匹配变成可自动生成的识别器。</div>
+      <div class="aen" lang="en">In lexical analysis, programmers use regular expressions to specify the formation rules of token classes (identifiers, numbers, operators), and the lexer uses them to split the character stream into tokens. Regular expressions can be mechanically converted into finite automata—as in Thompson&#x27;s 1968 construction—and executed efficiently. This turns tedious string matching into automatically generated recognizers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Aho 等《编译器：原理、技术与工具》（龙书）；Thompson 1968</p>
+        <p lang="en">Aho et al., Compilers: Principles, Techniques, and Tools; Thompson (1968)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3509433W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3509433W：Compilers, principles, </a></p>
+        
+      </details>
+      <a class="tag" href="#">#正则表达式</a> <a class="tag" href="#">#词法分析</a> <a class="tag" href="#">#有限自动机</a> <a class="tag" href="#">#Thompson</a>
+    </article>
+
+
+    <article class="qitem" id="4ebb96d04e83">
+      <h2 class="qz" lang="zh">编译器到底把我们写的代码变成了什么？</h2>
+      <p class="qen" lang="en">What does a compiler actually turn our code into?</p>
+      <div class="azh" lang="zh">编译器把你写的、人能读懂的高级语言，经过分析、优化，翻译成计算机 CPU 能直接执行的机器指令（或中间的字节码）。它就像一位把“中文菜谱”改写成“厨房操作清单”的翻译官。</div>
+      <div class="aen" lang="en">A compiler analyzes and optimizes your human-readable code and translates it into machine instructions (or intermediate bytecode) the CPU can run directly—like rewriting a recipe into kitchen steps.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编译器</a> <a class="tag" href="#">#翻译</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

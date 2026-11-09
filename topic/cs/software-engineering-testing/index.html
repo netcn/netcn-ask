@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>软件工程与测试 software-engineering-testing · 计算机 Computer Science | 问答</title>
+<meta name="description" content="软件工程与测试（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="软件工程与测试 software-engineering-testing · 计算机 Computer Science | 问答">
+<meta property="og:description" content="软件工程与测试（计算机）分类下的 9 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 9 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/software-engineering-testing/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/software-engineering-testing/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>软件工程与测试</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>软件工程与测试 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>9</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#97e5fe4a819b">依赖注入与 Mock 对象如何提升代码的可测试性?</a></li><li><a href="#d073e98e7914">测试金字塔为什么建议底层单元测试远多于高层端到端测试?</a></li><li><a href="#49a18b57a39b">敏捷开发中的「迭代」概念对交付有什么好处?</a></li><li><a href="#98b56f59e2db">版本控制系统（如 Git）对团队协作有什么核心价值?</a></li><li><a href="#a82fe2cfe277">单元测试在软件开发中主要解决什么问题?</a></li><li><a href="#cs_22_007">变异测试（mutation testing）的基本原理是什么？为什么它衡量的是测</a></li><li><a href="#cs_22_015">一个语句覆盖率达到 100% 的测试套件能否证明程序没有缺陷？为什么覆盖率高低不</a></li><li><a href="#ef574b387f09">回归测试是为了防范什么风险?</a></li><li><a href="#f77c74093787">代码评审(Code Review)在团队开发中主要带来哪些收益?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="97e5fe4a819b">
+      <h2 class="qz" lang="zh">依赖注入与 Mock 对象如何提升代码的可测试性?</h2>
+      <p class="qen" lang="en">How do dependency injection and mock objects improve code testability?</p>
+      <div class="azh" lang="zh">依赖注入把组件所依赖的外部服务通过参数传入，而不是在内部硬编码创建，从而使测试时能用轻量的 Mock 替身替换数据库或网络等重依赖。这样单元可以在隔离环境下被快速、确定性地验证，而不必启动整个系统。</div>
+      <div class="aen" lang="en">Dependency injection supplies a component&#x27;s external services through parameters rather than hardcoding their creation, so tests can swap in lightweight mock doubles for heavy dependencies like databases or networks. The unit can then be verified quickly and deterministically in isolation without booting the whole system.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Freeman, N. Pryce《测试驱动的面向对象软件开发》(GOOS) 第3章 (人民邮电出版社) ; 另见: S. Freeman, N. Pryce, Growing Object-Oriented Software, Guided by Tests, Addison-Wesley, 2009</p>
+        <p lang="en">S. Freeman, N. Pryce, Growing Object-Oriented Software, Guided by Tests, Addison-Wesley, 2009 ; see also: S. Freeman, N. Pryce《测试驱动的面向对象软件开发》(GOOS) 第3章 (人民邮电出版社)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL33322675W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL33322675W：Growing object-oriente</a></p>
+        
+      </details>
+      <a class="tag" href="#">#依赖注入</a> <a class="tag" href="#">#Mock</a> <a class="tag" href="#">#可测试性</a>
+    </article>
+
+
+    <article class="qitem" id="d073e98e7914">
+      <h2 class="qz" lang="zh">测试金字塔为什么建议底层单元测试远多于高层端到端测试?</h2>
+      <p class="qen" lang="en">Why does the test pyramid recommend far more low-level unit tests than high-level end-to-end tests?</p>
+      <div class="azh" lang="zh">单元测试运行快、隔离性强、定位问题直接，因此数量可以很大且成本很低；端到端测试涉及多组件与真实环境，运行慢、易碎且调试困难。把多数投入放在底层单元、少量放在高层端到端，能在保证覆盖的同时控制维护成本。</div>
+      <div class="aen" lang="en">Unit tests run fast, are well isolated, and pinpoint failures directly, so they can be numerous and cheap, whereas end-to-end tests span many components and real environments, making them slow, brittle, and hard to debug. Investing mostly in low-level units and few high-level tests keeps coverage high while controlling maintenance cost.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cohn《Succeeding with Agile》第13章 (Prentice Hall), 2009</p>
+        <p lang="en">M. Cohn, Succeeding with Agile: Software Development Using Scrum, Chapter 13, Prentice Hall, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Succeeding+with+Agile" target="_blank" rel="noopener">核验依据 1 ISBN 9780321579362 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#测试金字塔</a> <a class="tag" href="#">#单元测试</a> <a class="tag" href="#">#端到端</a>
+    </article>
+
+
+    <article class="qitem" id="49a18b57a39b">
+      <h2 class="qz" lang="zh">敏捷开发中的「迭代」概念对交付有什么好处?</h2>
+      <p class="qen" lang="en">What benefit does the iteration concept in agile development bring to delivery?</p>
+      <div class="azh" lang="zh">敏捷把开发切分为固定长度（如两周）的迭代，每个迭代都交付可运行的增量并获取反馈。这样能尽早暴露需求偏差，逐步逼近用户真正需要的功能，而不是等到末期才一次性交付。</div>
+      <div class="aen" lang="en">Agile breaks development into fixed-length iterations, such as two weeks, each delivering a working increment and gathering feedback. This surfaces requirement mismatches early and gradually converges on what users truly need, rather than delivering everything only at the end.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Beck《解析极限编程》(Addison-Wesley)</p>
+        <p lang="en">K. Beck, Extreme Programming Explained: Embrace Change, Addison-Wesley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1099376/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115103789（豆瓣书目条目: 解析极限编程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#敏捷</a> <a class="tag" href="#">#迭代</a> <a class="tag" href="#">#交付</a>
+    </article>
+
+
+    <article class="qitem" id="98b56f59e2db">
+      <h2 class="qz" lang="zh">版本控制系统（如 Git）对团队协作有什么核心价值?</h2>
+      <p class="qen" lang="en">What core value does a version control system such as Git bring to team collaboration?</p>
+      <div class="azh" lang="zh">Git 记录每一次代码变更的完整历史，让多人可以并行开发并通过分支与合并协调修改。它还能在出错时回溯到任意历史版本，避免改动丢失，是协作与可维护性的基础。</div>
+      <div class="aen" lang="en">Git records the full history of every code change, letting many people develop in parallel and coordinate edits through branches and merges. It also lets you revert to any past version when something goes wrong, preventing lost work and underpinning collaboration and maintainability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-06</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chacon《Pro Git》第1章 (Apress)</p>
+        <p lang="en">S. Chacon, B. Straub, Pro Git, 2nd ed., Chapter 1, Apress</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">核验依据 1 Pro Git 2nd ed. 官方全文（Apress / CC BY-NC-SA 3.0）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Git</a> <a class="tag" href="#">#版本控制</a> <a class="tag" href="#">#分支</a>
+    </article>
+
+
+    <article class="qitem" id="a82fe2cfe277">
+      <h2 class="qz" lang="zh">单元测试在软件开发中主要解决什么问题?</h2>
+      <p class="qen" lang="en">What problem does unit testing mainly solve in software development?</p>
+      <div class="azh" lang="zh">单元测试针对最小可测试单元（如单个函数或类）编写自动化用例，验证其在各种输入下的行为是否符合预期。它能在开发早期快速捕获逻辑错误，并为后续重构提供安全网。</div>
+      <div class="aen" lang="en">Unit testing writes automated cases for the smallest testable unit, such as a single function or class, verifying its behavior under various inputs. It catches logic errors early in development and provides a safety net for later refactoring.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Beck《测试驱动开发》(Addison-Wesley)</p>
+        <p lang="en">K. Beck, Test-Driven Development: By Example, Addison-Wesley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/1230036/" target="_blank" rel="noopener">核验依据 1 ISBN 9787508321738（豆瓣书目条目: 测试驱动开发）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单元测试</a> <a class="tag" href="#">#测试</a> <a class="tag" href="#">#重构</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_007">
+      <h2 class="qz" lang="zh">变异测试（mutation testing）的基本原理是什么？为什么它衡量的是测试套件的质量而非被测程序本身的质量？</h2>
+      <p class="qen" lang="en">What is the basic idea of mutation testing, and why does it measure the quality of the test suite rather than the quality of the program itself?</p>
+      <div class="azh" lang="zh">变异测试向代码注入微小缺陷——如把 &gt; 改成 &gt;=、加号改成减号——生成“变异体”。若测试套件对某变异体仍全部通过，说明它未被“杀死”，暴露出断言或输入覆盖不足。变异得分即被杀死变异体的比例，得分越高说明测试越能区分正确与错误的实现。因每个变异体都要重跑测试，工具常靠增量分析和抽样控制开销。</div>
+      <div class="aen" lang="en">Mutation testing injects many small deliberate defects into the code—changing &gt; to &gt;=, swapping + for -, flipping boolean conditions—to create mutants. If the suite still passes against a mutant, that mutant survives, revealing missing assertions or weak inputs. The mutation score is the fraction of mutants killed; a higher score means the tests can tell correct implementations apart from subtly broken ones. Because every mutant reruns the suite, tools limit cost with incremental analysis and mutant sampling.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">R. A. DeMillo、R. J. Lipton、F. G. Sayward，《Hints on Test Data Selection: Help for the Practicing Programmer》，IEEE Computer，1978年第11卷第4期。</p>
+        <p lang="en">R. A. DeMillo, R. J. Lipton, F. G. Sayward, &quot;Hints on Test Data Selection: Help for the Practicing Programmer,&quot; IEEE Computer, vol. 11, no. 4, 1978.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/c-m.1978.218136" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1109/c-m.1978.218136：Hints on Test Data S</a></p>
+        
+      </details>
+      <a class="tag" href="#">#变异测试</a> <a class="tag" href="#">#测试充分性</a> <a class="tag" href="#">#变异得分</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_015">
+      <h2 class="qz" lang="zh">一个语句覆盖率达到 100% 的测试套件能否证明程序没有缺陷？为什么覆盖率高低不能直接等同于测试质量的好坏？</h2>
+      <p class="qen" lang="en">Can a test suite with 100% statement coverage prove that a program is defect-free? Why cannot the coverage percentage be equated directly with test quality?</p>
+      <div class="azh" lang="zh">不能。覆盖率只回答哪些代码被执行过，并不关心断言是否严格核对了结果——恒真断言同样能把指标刷满。缺失的功能根本不会生成对应代码，自然无从覆盖；错误的输入组合即便经过某一行也可能放过缺陷。变异测试向程序注入微小缺陷并检验用例能否将其杀死，以此衡量断言的真实甄别力，可作为覆盖率的补充。覆盖率适合用来发现盲区，而不是当成考核目标。</div>
+      <div class="aen" lang="en">No. Coverage only records which code has been executed and says nothing about whether assertions rigorously checked the results - assertions that always pass inflate the metric just as easily. Missing features generate no code to cover at all, and a wrong input combination can run through a line yet still let a bug escape. Mutation testing injects small defects and checks whether the suite kills them, measuring genuine assertion strength as a complement to coverage. Treat coverage as a tool for finding blind spots, not a target number.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Al Blwi, Ayad, Khaireddine, Marsit, Mili,《Semantic Coverage: Measuring Test Suite Effectiveness》,Proceedings of the 18th International Conference on Software Technologies,2023 (DOI: 10.5220/0012063900003538)</p>
+        <p lang="en">Al Blwi, Ayad, Khaireddine, Marsit, Mili, &#x27;Semantic Coverage: Measuring Test Suite Effectiveness&#x27;, Proceedings of the 18th International Conference on Software Technologies, 2023, DOI: 10.5220/0012063900003538</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.5220/0012063900003538" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.5220/0012063900003538</a></p>
+        
+      </details>
+      <a class="tag" href="#">#软件测试</a> <a class="tag" href="#">#代码覆盖率</a> <a class="tag" href="#">#变异测试</a>
+    </article>
+
+
+    <article class="qitem" id="ef574b387f09">
+      <h2 class="qz" lang="zh">回归测试是为了防范什么风险?</h2>
+      <p class="qen" lang="en">What risk is regression testing meant to guard against?</p>
+      <div class="azh" lang="zh">回归测试在修改或新增功能后重新运行已有测试用例，确认旧功能没有被新改动破坏。它能捕捉「改一处坏一片」的副作用，是持续维护质量的常用手段。</div>
+      <div class="aen" lang="en">Regression testing reruns existing test cases after a change or new feature to confirm that old functionality was not broken by the new code. It catches the fix-one-thing-break-another side effects and is a standard way to maintain quality continuously.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEEE,《IEEE Standard for Software and System Test Documentation》,IEEE Std 829-2008,2008 (DOI: 10.1109/ieeestd.2008.4578383)</p>
+        <p lang="en">IEEE, &#x27;IEEE Standard for Software and System Test Documentation&#x27;, IEEE Std 829-2008, 2008, DOI: 10.1109/ieeestd.2008.4578383</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/ieeestd.2008.4578383" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/ieeestd.2008.4578383</a></p>
+        
+      </details>
+      <a class="tag" href="#">#回归测试</a> <a class="tag" href="#">#质量保证</a> <a class="tag" href="#">#测试</a>
+    </article>
+
+
+    <article class="qitem" id="f77c74093787">
+      <h2 class="qz" lang="zh">代码评审(Code Review)在团队开发中主要带来哪些收益?</h2>
+      <p class="qen" lang="en">What are the main benefits of code review in team development?</p>
+      <div class="azh" lang="zh">代码评审让其他成员在合并前检查改动，能发现单人所忽略的逻辑缺陷、安全漏洞和风格问题。它同时促进知识在团队内共享，使多人熟悉同一模块，降低人员单点依赖。</div>
+      <div class="aen" lang="en">Code review has other members inspect changes before merging, catching logic bugs, security holes, and style issues that the author missed. It also spreads knowledge across the team so several people understand each module, reducing single-person dependency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">McConnell《代码大全》第21章 (电子工业出版社)</p>
+        <p lang="en">S. McConnell, Code Complete, 2nd ed., Chapter 21 (Collaborative Construction), Microsoft Press</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#代码评审</a> <a class="tag" href="#">#质量</a> <a class="tag" href="#">#协作</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

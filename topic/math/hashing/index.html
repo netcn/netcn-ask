@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hashing · 数学 Mathematics | 问答</title>
+<meta name="description" content="hashing（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hashing · 数学 Mathematics | 问答">
+<meta property="og:description" content="hashing（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/hashing/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/hashing/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>hashing</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>hashing <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#c4ebc6dcf0fb">一致性哈希为什么能减少分布式系统的‘重新分配’？</a></li><li><a href="#b1afe89b4b0e">哈希函数和鸽巢原理有什么关系？</a></li><li><a href="#42b9bd76421b">为什么查字典（哈希表）比逐个翻找快？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="c4ebc6dcf0fb">
+      <h2 class="qz" lang="zh">一致性哈希为什么能减少分布式系统的‘重新分配’？</h2>
+      <p class="qen" lang="en">Why does consistent hashing reduce reallocation in distributed systems?</p>
+      <div class="azh" lang="zh">传统哈希在节点数变化时几乎全部 key 需重映射；一致性哈希把节点和 key 都排到同一个环上，只影响环上相邻的一段，使扩容时迁移量最小。</div>
+      <div class="aen" lang="en">Plain hashing remaps nearly all keys when node count changes; consistent hashing places nodes and keys on one ring, so only the adjacent arc is affected, minimizing migration during scaling.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Xie, Chen,《Elastic Consistent Hashing for Distributed Storage Systems》,2017 IEEE International Parallel and Distributed Processing,2017 (DOI: 10.1109/ipdps.2017.88)</p>
+        <p lang="en">Xie, Chen, &#x27;Elastic Consistent Hashing for Distributed Storage Systems&#x27;, 2017 IEEE International Parallel and Distributed Processing, 2017, DOI: 10.1109/ipdps.2017.88</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/ipdps.2017.88" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/ipdps.2017.88</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="b1afe89b4b0e">
+      <h2 class="qz" lang="zh">哈希函数和鸽巢原理有什么关系？</h2>
+      <p class="qen" lang="en">How is a hash function related to the pigeonhole principle?</p>
+      <div class="azh" lang="zh">哈希把任意长输入映射到固定长度的摘要。由于输入空间远大于输出空间，鸽巢原理保证必然有‘碰撞’（不同输入同摘要），只能尽量让其难以被找到。</div>
+      <div class="aen" lang="en">A hash maps arbitrary input to a fixed-length digest. Since inputs vastly outnumber outputs, the pigeonhole principle guarantees collisions exist; we only try to make them hard to find.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Graham, Knuth, Patashnik,《Concrete Mathematics》第2版,Addison-Wesley,1994</p>
+        <p lang="en">R. L. Graham et al., Concrete Mathematics, 2nd ed., Addison-Wesley, 1994</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3951639W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL3951639W：Concrete mathematics（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#碰撞</a>
+    </article>
+
+
+    <article class="qitem" id="42b9bd76421b">
+      <h2 class="qz" lang="zh">为什么查字典（哈希表）比逐个翻找快？</h2>
+      <p class="qen" lang="en">Why is looking up in a hash table faster than checking one by one?</p>
+      <div class="azh" lang="zh">哈希把‘键’直接变成存放位置，理想情况下一步到位，平均 O(1)；而逐个查找要 O(n)。代价是需要处理碰撞。</div>
+      <div class="aen" lang="en">A hash turns the key directly into a storage location, ideally in one step at average O(1), versus O(n) for linear search. The cost is handling collisions.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Graham, Knuth, Patashnik,《Concrete Mathematics》第2版,Addison-Wesley,1994</p>
+        <p lang="en">R. L. Graham et al., Concrete Mathematics, 2nd ed., Addison-Wesley, 1994</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3951639W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL3951639W：Concrete mathematics（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希</a> <a class="tag" href="#">#查找</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

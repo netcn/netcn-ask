@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人机交互与图形学 hci-graphics · 计算机 Computer Science | 问答</title>
+<meta name="description" content="人机交互与图形学（计算机）分类下的 26 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 26 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="人机交互与图形学 hci-graphics · 计算机 Computer Science | 问答">
+<meta property="og:description" content="人机交互与图形学（计算机）分类下的 26 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 26 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/hci-graphics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/hci-graphics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>人机交互与图形学</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>人机交互与图形学 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>26</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#397a3410355b">深度缓冲（Z-buffer）用来解决什么问题？</a></li><li><a href="#97121d97d557">模型、视图、投影矩阵分别做什么？</a></li><li><a href="#9934940e756c">什么是着色器（shader）？</a></li><li><a href="#a74f41d73ce5">图片缩放和半透明混合为什么必须先做伽马解码，否则会变暗或出现脏边？</a></li><li><a href="#bcbdec58f630">光线追踪（ray tracing）相比光栅化有什么优势？</a></li><li><a href="#cs_21_013">想在一张散点图里同时表达四五个数据维度,位置、颜色、大小这些视觉通道的判读精度差</a></li><li><a href="#fa54e384d8ec">抗锯齿（anti-aliasing）是怎么让斜线更平滑的？</a></li><li><a href="#04f72f54eff2">什么是 alpha 通道，它能做什么？</a></li><li><a href="#237661ff7b88">费茨定律说了什么，它为什么解释了手机把主要按钮放在屏幕下方？</a></li><li><a href="#536b4ecabf41">GPU 和 CPU 在设计目标上有什么不同？</a></li><li><a href="#83546bd71ebb">RGB 颜色模型是如何表示颜色的？</a></li><li><a href="#83bb336a6e26">尼尔森的十大可用性启发式（usability heuristics）是什么？</a></li><li><a href="#aa9b447368d4">图形渲染管线大致包含哪些阶段？</a></li><li><a href="#cs_21_005">数据可视化中什么时候应当改用对数刻度?使用对数刻度时需要防范哪些常见的读图误解?</a></li><li><a href="#e05aeccbe996">纹理映射（texture mapping）是什么？</a></li><li><a href="#0544f2d309cf">屏幕分辨率是什么意思？</a></li><li><a href="#09ba8303addf">位图（栅格）图像和矢量图像有何区别？</a></li><li><a href="#1f280f067dfc">界面响应慢到多少毫秒，人就开始觉得「卡」？</a></li><li><a href="#3a51158c238d">为什么动画常用“双缓冲”技术？</a></li><li><a href="#47aca0f1d863">帧率（FPS）代表什么？</a></li><li><a href="#62e5661b2f5f">什么是事件驱动编程（以 GUI 为例）？</a></li><li><a href="#6631bedab0d2">人机交互中的“可用性”指什么？</a></li><li><a href="#88249d52db9b">什么是响应式界面设计？</a></li><li><a href="#94369f830e70">什么是像素？</a></li><li><a href="#cs_25_003">游戏里的小人为什么会跟着我走?</a></li><li><a href="#eaef7f63ae4d">人机交互（HCI）研究的是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="397a3410355b">
+      <h2 class="qz" lang="zh">深度缓冲（Z-buffer）用来解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does the depth buffer (Z-buffer) solve?</p>
+      <div class="azh" lang="zh">在三维场景中，多个物体可能投影到同一像素，需要判断谁在前谁在后。深度缓冲为每像素记录当前最近物体的距离，新片元更近才覆盖、更远则丢弃，从而正确处理遮挡。它把复杂的可见性判断变成简单的逐像素比较。</div>
+      <div class="aen" lang="en">In a 3D scene, several objects may project onto the same pixel, so we must decide which is in front. The depth buffer records the nearest distance per pixel and overwrites only when a new fragment is closer, discarding farther ones, thus handling occlusion correctly. It turns tricky visibility into a simple per-pixel comparison.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#深度缓冲</a> <a class="tag" href="#">#Zbuffer</a> <a class="tag" href="#">#可见性</a>
+    </article>
+
+
+    <article class="qitem" id="97121d97d557">
+      <h2 class="qz" lang="zh">模型、视图、投影矩阵分别做什么？</h2>
+      <p class="qen" lang="en">What do the model, view, and projection matrices each do?</p>
+      <div class="azh" lang="zh">在实时渲染中，物体坐标要经过几次变换：模型矩阵把物体放到世界中的正确位置、旋转和缩放；视图矩阵相当于摆放“摄像机”的位置和朝向；投影矩阵把三维世界压成二维屏幕，并处理近大远小（透视）或平行（正交）。三者相乘得到最终的顶点变换。</div>
+      <div class="aen" lang="en">In real-time rendering, object coordinates pass through several transforms: the model matrix places, rotates, and scales the object in the world; the view matrix positions and orients the camera; the projection matrix collapses 3D into 2D and handles perspective (near big, far small) or orthographic (parallel) viewing. Multiplying them yields the final vertex transform.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#MVP矩阵</a> <a class="tag" href="#">#变换</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="9934940e756c">
+      <h2 class="qz" lang="zh">什么是着色器（shader）？</h2>
+      <p class="qen" lang="en">What is a shader?</p>
+      <div class="azh" lang="zh">着色器是在 GPU 上运行的小程序，决定每个顶点如何变换、每个像素最终是什么颜色。顶点着色器处理几何位置，片元（像素）着色器计算颜色与光照，材质和特效大多由此实现。通过编写着色器，开发者能精细控制画面的外观。</div>
+      <div class="aen" lang="en">A shader is a small program that runs on the GPU and decides how each vertex is transformed and what color each pixel ends up being. Vertex shaders handle geometry positions while fragment (pixel) shaders compute color and lighting, so materials and effects are mostly implemented there. By writing shaders, developers finely control a scene&#x27;s appearance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#着色器</a> <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="a74f41d73ce5">
+      <h2 class="qz" lang="zh">图片缩放和半透明混合为什么必须先做伽马解码，否则会变暗或出现脏边？</h2>
+      <p class="qen" lang="en">Why must image resizing and alpha blending decode gamma first, or the result darkens and shows dirty fringes?</p>
+      <div class="azh" lang="zh">sRGB 图片存的不是线性光强，而是经过约 1/2.2 次幂编码的感知量，这样 8 位就足以覆盖暗部细节。缩放、模糊、抗锯齿和 alpha 混合本质上都是对光强做加权平均，直接在编码值上平均等于对幂函数取平均，结果会低估亮度：黑白相间的细纹缩小后成为偏暗的灰而不是中灰，红绿交界处出现暗黑色脏边。正确流程是先解码到线性空间（或直接用 16 位浮点线性缓冲）做运算，再编码回 sRGB 输出，这也是图形 API 提供 sRGB 纹理采样和 sRGB 帧缓冲转换的原因。</div>
+      <div class="aen" lang="en">An sRGB image stores not linear light but a perceptually encoded value raised to roughly the 1/2.2 power, which lets 8 bits cover shadow detail adequately. Resizing, blurring, anti-aliasing and alpha blending are all weighted averages of light intensity, so averaging encoded values averages a power function instead and underestimates brightness: a fine black-and-white pattern shrinks to a dark grey rather than mid grey, and red-green boundaries acquire dark fringes. The correct pipeline decodes to linear space, or works directly in a 16-bit float linear buffer, does the arithmetic there and re-encodes to sRGB — exactly why graphics APIs expose sRGB texture sampling and sRGB framebuffer conversion.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEC 61966-2-1:1999（sRGB 色彩空间标准）；Charles Poynton《Digital Video and HD: Algorithms and Interfaces》(第 2 版)</p>
+        <p lang="en">IEC 61966-2-1:1999 (the sRGB colour space); Charles Poynton, &quot;Digital Video and HD: Algorithms and Interfaces&quot; (2nd ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/digital-video-and-hd-algorithms-and-interfaces-2nd-ed.-poynton-2012-02-07" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 digital-video-and-hd-algorithms-and-interface</a></p>
+        
+      </details>
+      <a class="tag" href="#">#伽马校正</a> <a class="tag" href="#">#线性色彩空间</a> <a class="tag" href="#">#sRGB</a> <a class="tag" href="#">#图像混合</a>
+    </article>
+
+
+    <article class="qitem" id="bcbdec58f630">
+      <h2 class="qz" lang="zh">光线追踪（ray tracing）相比光栅化有什么优势？</h2>
+      <p class="qen" lang="en">What advantage does ray tracing have over rasterization?</p>
+      <div class="azh" lang="zh">光栅化把几何快速投影成像素，速度快但难以真实表现反射、折射和阴影。光线追踪反向从相机发射光线、与场景求交并模拟光的弹射，能自然产生镜面反射、软阴影和全局光照等逼真效果。代价是计算量大，过去多用于离线渲染，如今靠 GPU 加速才逐步实时化。</div>
+      <div class="aen" lang="en">Rasterization quickly projects geometry into pixels and is fast but struggles to show realistic reflection, refraction, and shadows. Ray tracing shoots rays from the camera, intersects them with the scene, and simulates light bounces, naturally producing mirror reflections, soft shadows, and global illumination. The cost is heavy computation; it was long offline-only and is only becoming real-time with GPU acceleration.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光线追踪</a> <a class="tag" href="#">#光栅化</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_013">
+      <h2 class="qz" lang="zh">想在一张散点图里同时表达四五个数据维度,位置、颜色、大小这些视觉通道的判读精度差别有多大?变量应该怎么分配到通道上?</h2>
+      <p class="qen" lang="en">When one scatterplot must encode four or five dimensions, how much does judgment accuracy differ across visual channels like position, color, and size, and how should variables be assigned to channels?</p>
+      <div class="azh" lang="zh">Cleveland 与 McGill 的受控实验给出精度序:公共刻度上的位置判读最准,其后依次是长度、角度与斜率,面积和颜色饱和度最差。因此最重要的连续变量应映射到 x/y 位置,次要变量才用大小或明度;低基数的分类变量适合色调,类别一多可读性会急剧崩坏。这套通道优先级正是 Mackinlay 的自动图表设计系统 APT 的排序内核,也是 Tableau 等工具默认映射策略的出处。</div>
+      <div class="aen" lang="en">Cleveland and McGill’s controlled experiments yield an accuracy ordering: position along a common scale is judged best, followed by length, then angle and slope, with area and color saturation worst. So the most important continuous variable goes to x/y position, secondary ones to size or lightness; low-cardinality categories fit hue, but too many categories destroy readability. This channel hierarchy is the ranking core of Mackinlay’s automatic chart-design system APT and the origin of default mappings in tools like Tableau.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cleveland 与 McGill《Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods》,Journal of the American Statistical Association 1984;Mackinlay《Automating the Design of Graphical Presentations of Relational Information》,ACM TOG 1986</p>
+        <p lang="en">Cleveland &amp; McGill, ‘Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods’, JASA 1984; Mackinlay, ‘Automating the Design of Graphical Presentations of Relational Information’, ACM TOG 1986</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1080/01621459.1984.10478080" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1080/01621459.1984.10478080</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据可视化</a> <a class="tag" href="#">#视觉编码</a>
+    </article>
+
+
+    <article class="qitem" id="fa54e384d8ec">
+      <h2 class="qz" lang="zh">抗锯齿（anti-aliasing）是怎么让斜线更平滑的？</h2>
+      <p class="qen" lang="en">How does anti-aliasing make diagonal lines look smoother?</p>
+      <div class="azh" lang="zh">因为屏幕由离散像素组成，斜线或曲线边缘会出现锯齿状的台阶。抗锯齿通过把边缘像素与其背景按覆盖比例混合成中间色，让过渡更柔和、肉眼不再明显察觉台阶。超采样是常见做法：先以更高分辨率渲染再缩回，代价是计算量增大。</div>
+      <div class="aen" lang="en">Because screens are made of discrete pixels, diagonal or curved edges show stair-step jaggies. Anti-aliasing blends edge pixels with the background in proportion to coverage, softening the transition so the steps are less visible. Supersampling is a common approach: render at higher resolution then downscale, at the cost of more computation.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#抗锯齿</a> <a class="tag" href="#">#采样</a> <a class="tag" href="#">#图形学</a>
+    </article>
+
+
+    <article class="qitem" id="04f72f54eff2">
+      <h2 class="qz" lang="zh">什么是 alpha 通道，它能做什么？</h2>
+      <p class="qen" lang="en">What is an alpha channel and what does it do?</p>
+      <div class="azh" lang="zh">alpha 通道是颜色之外额外记录的一个数值，表示像素的“不透明度”，范围通常 0（全透明）到 1（不透明）。它让图像可以半透明叠加，实现淡入淡出、阴影和图层混合等效果。没有它，图像只能整体不透明地覆盖。</div>
+      <div class="aen" lang="en">The alpha channel is an extra value beyond color that records a pixel&#x27;s opacity, typically from 0 (fully transparent) to 1 (fully opaque). It lets images blend semi-transparently, enabling fades, shadows, and layer compositing. Without it, an image can only cover opaquely as a whole.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#alpha通道</a> <a class="tag" href="#">#透明度</a> <a class="tag" href="#">#混合</a>
+    </article>
+
+
+    <article class="qitem" id="237661ff7b88">
+      <h2 class="qz" lang="zh">费茨定律说了什么，它为什么解释了手机把主要按钮放在屏幕下方？</h2>
+      <p class="qen" lang="en">What does Fitts&#x27;s law state, and why does it justify placing primary buttons at the bottom of a phone screen?</p>
+      <div class="azh" lang="zh">费茨定律给出指向动作的时间模型 T = a + b·log₂(D/W + 1)：移动时间随目标距离 D 增大而增加，随目标宽度 W 增大而减少，二者以对数关系起作用。因此把常用控件放得更近、做得更大能显著提速；鼠标操作下屏幕边缘相当于无限宽的目标，因为光标撞到边就停，这也是 macOS 把菜单栏贴顶的依据。在手机上，单手握持时拇指的舒适可达区集中在屏幕下部，把主操作放在底部同时缩短了 D 并落在低误触区，屏幕越大这个差别越明显。</div>
+      <div class="aen" lang="en">Fitts&#x27;s law models pointing time as T = a + b·log₂(D/W + 1), so the time to acquire a target rises with distance D and falls with target width W, both logarithmically. Making frequent controls closer and larger therefore pays measurably, and for a mouse the screen edges act as infinitely wide targets because the cursor stops there — the reasoning behind pinning the macOS menu bar to the top. On a phone held in one hand the thumb&#x27;s comfortable arc covers the lower part of the display, so putting primary actions at the bottom both shortens D and lands them in a low-error zone, an effect that grows with screen size.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Paul Fitts《The information capacity of the human motor system in controlling the amplitude of movement》(Journal of Experimental Psychology, 1954)；MacKenzie《Fitts&#x27; Law as a Research and Design Tool in Human-Computer Interaction》(Human-Computer Interaction, 1992)</p>
+        <p lang="en">Paul Fitts, &quot;The information capacity of the human motor system in controlling the amplitude of movement,&quot; Journal of Experimental Psychology (1954); MacKenzie, &quot;Fitts&#x27; Law as a Research and Design Tool in Human-Computer Interaction,&quot; Human-Computer Interaction (1992)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1037/h0055392" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1037/h0055392：The information capacity of</a></p>
+        
+      </details>
+      <a class="tag" href="#">#费茨定律</a> <a class="tag" href="#">#指向时间</a> <a class="tag" href="#">#拇指可达区</a> <a class="tag" href="#">#界面布局</a>
+    </article>
+
+
+    <article class="qitem" id="536b4ecabf41">
+      <h2 class="qz" lang="zh">GPU 和 CPU 在设计目标上有什么不同？</h2>
+      <p class="qen" lang="en">How do GPUs and CPUs differ in design goals?</p>
+      <div class="azh" lang="zh">CPU 追求用少量强核心处理复杂、串行的多样化任务，强调低延迟。GPU 则堆大量简单核心，专为同时处理海量同质计算（如像素、顶点）而设计，强调吞吐。因此图形渲染、矩阵运算等高度并行的任务特别适合交给 GPU。</div>
+      <div class="aen" lang="en">A CPU uses few powerful cores to handle complex, serial, varied tasks, optimizing for low latency. A GPU packs many simple cores designed to process massive homogeneous work like pixels and vertices at once, optimizing for throughput. Thus highly parallel tasks such as rendering and matrix math suit the GPU.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#并行计算</a>
+    </article>
+
+
+    <article class="qitem" id="83546bd71ebb">
+      <h2 class="qz" lang="zh">RGB 颜色模型是如何表示颜色的？</h2>
+      <p class="qen" lang="en">How does the RGB color model represent colors?</p>
+      <div class="azh" lang="zh">RGB 用红（R）、绿（G）、蓝（B）三种光强按不同比例叠加来产生颜色，是屏幕等发光设备的基础。每个分量通常用 0 到 255 的数值表示强度，三者都为 0 是黑，都为 255 是白。它属于“加色模型”，混合越多光越亮。</div>
+      <div class="aen" lang="en">RGB represents colors by combining intensities of red, green, and blue light in varying proportions, forming the basis of self-lit devices like screens. Each component is usually a value from 0 to 255, with all zero black and all 255 white. It is an additive model where more light means brighter color.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#RGB</a> <a class="tag" href="#">#颜色模型</a> <a class="tag" href="#">#图形学</a>
+    </article>
+
+
+    <article class="qitem" id="83bb336a6e26">
+      <h2 class="qz" lang="zh">尼尔森的十大可用性启发式（usability heuristics）是什么？</h2>
+      <p class="qen" lang="en">What are Nielsen&#x27;s ten usability heuristics?</p>
+      <div class="azh" lang="zh">尼尔森在 1994 年总结了十条经验性的界面设计准则，如系统状态可见、与现实世界匹配、用户控制与自由、一致性与标准、防错、识别而非回忆等。它们不是硬性规则，而是评估与改进可用性的实用检查清单，被业界广泛用于启发式评估。其思想与诺曼关于可供性与心智模型的研究一脉相承。</div>
+      <div class="aen" lang="en">In 1994 Nielsen distilled ten empirical interface-design guidelines, such as visibility of system status, match with the real world, user control and freedom, consistency and standards, error prevention, and recognition rather than recall. They are not hard rules but a practical checklist for evaluating and improving usability, widely used in heuristic evaluations. The thinking aligns with Norman&#x27;s work on affordances and mental models.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nielsen &amp; Molich 1990《Heuristic Evaluation of User Interfaces》（ACM CHI&#x27;90）；Nielsen 1994《Enhancing the Explanatory Power of Usability Heuristics》（ACM CHI&#x27;94）；Nielsen Norman Group《10 Usability Heuristics for User Interface Design》</p>
+        <p lang="en">Nielsen &amp; Molich (1990), &#x27;Heuristic Evaluation of User Interfaces&#x27;, ACM CHI &#x27;90; Nielsen (1994), &#x27;Enhancing the Explanatory Power of Usability Heuristics&#x27;, ACM CHI &#x27;94; Nielsen Norman Group, &#x27;10 Usability Heuristics for User Interface Design&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/97243.97281" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/97243.97281</a></p>
+        
+      </details>
+      <a class="tag" href="#">#尼尔森</a> <a class="tag" href="#">#可用性启发式</a> <a class="tag" href="#">#界面设计</a> <a class="tag" href="#">#启发式评估</a>
+    </article>
+
+
+    <article class="qitem" id="aa9b447368d4">
+      <h2 class="qz" lang="zh">图形渲染管线大致包含哪些阶段？</h2>
+      <p class="qen" lang="en">What stages does the graphics rendering pipeline roughly include?</p>
+      <div class="azh" lang="zh">传统管线依次经过：顶点输入与变换、图元装配、光栅化把几何变成像素、片元着色计算颜色、最后是混合与输出到帧缓冲。现代可编程管线把其中多步交给着色器控制。理解它有助于解释为什么画面要分“几何”和“像素”两步处理。</div>
+      <div class="aen" lang="en">The traditional pipeline proceeds through vertex input and transform, primitive assembly, rasterization that turns geometry into pixels, fragment shading that computes color, and finally blending and output to the frame buffer. Modern programmable pipelines hand many of these steps to shaders. Understanding it explains why pictures are processed in geometry and pixel stages.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#渲染管线</a> <a class="tag" href="#">#光栅化</a> <a class="tag" href="#">#图形学</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_005">
+      <h2 class="qz" lang="zh">数据可视化中什么时候应当改用对数刻度?使用对数刻度时需要防范哪些常见的读图误解?</h2>
+      <p class="qen" lang="en">When should a chart switch to a logarithmic scale in data visualization, and which common misreadings must be guarded against once a log scale is used?</p>
+      <div class="azh" lang="zh">当数据跨越多个数量级——例如各国人口、流行病日增病例或股票的长期走势——线性刻度会把小数值压成看不清的一条贴地带,而对数刻度让相同的倍数差距占据相同的视觉距离,便于比较增长速度与相对变化。但要警惕:零和负值无法落在对数轴上,视觉上等距的两格所代表的绝对差可能相差巨大,读者很容易把相对变化误当成绝对变化。因此对数刻度图必须醒目标注刻度类型,必要时叠加原始数值参考线辅助解读。</div>
+      <div class="aen" lang="en">When data spans several orders of magnitude—national populations, daily epidemic case counts, or decades of stock prices—a linear axis squeezes small values into an unreadable strip along the baseline, while a logarithmic scale gives equal ratios equal visual distance, making growth rates and relative change directly comparable. Beware, though: zeros and negatives cannot sit on a log axis, and two visually equal grid steps may stand for wildly different absolute gaps, so viewers often mistake relative change for absolute change. A log-scale chart must therefore label its scale type prominently and, where helpful, overlay reference lines carrying the raw values.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tufte,The Visual Display of Quantitative Information,Graphics Press,1983</p>
+        <p lang="en">Tufte, The Visual Display of Quantitative Information, Graphics Press, 1983</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2824012W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2824012W：The Visual Display of Q</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据可视化</a> <a class="tag" href="#">#对数刻度</a>
+    </article>
+
+
+    <article class="qitem" id="e05aeccbe996">
+      <h2 class="qz" lang="zh">纹理映射（texture mapping）是什么？</h2>
+      <p class="qen" lang="en">What is texture mapping?</p>
+      <div class="azh" lang="zh">纹理映射把一张二维图片“贴”到三维模型的表面，让平面或立体物体显得有木纹、砖墙等细节，而不必增加几何复杂度。每个顶点记录对应的纹理坐标，GPU 据此取样并填到像素上。它用很少的几何代价大幅提升画面真实感。</div>
+      <div class="aen" lang="en">Texture mapping wraps a 2D image onto a 3D model&#x27;s surface so objects show details like wood grain or brick without adding geometric complexity. Each vertex records texture coordinates, and the GPU samples them to fill pixels. It greatly boosts realism at little geometric cost.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. D. Foley、A. van Dam、S. K. Feiner 与 J. F. Hughes,《Computer Graphics: Principles and Practice》第2版,Addison-Wesley,1990</p>
+        <p lang="en">J. D. Foley, A. van Dam, S. K. Feiner &amp; J. F. Hughes, Computer Graphics: Principles and Practice, 2nd ed., Addison-Wesley, 1990</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#纹理映射</a> <a class="tag" href="#">#渲染</a> <a class="tag" href="#">#GPU</a>
+    </article>
+
+
+    <article class="qitem" id="0544f2d309cf">
+      <h2 class="qz" lang="zh">屏幕分辨率是什么意思？</h2>
+      <p class="qen" lang="en">What does screen resolution mean?</p>
+      <div class="azh" lang="zh">分辨率指屏幕在横向和纵向各有多少个像素，常见写法如 1920×1080，表示宽 1920 像素、高 1080 像素。总像素越多，能显示的细节越丰富。注意它和“屏幕物理大小”不同，同样分辨率在小屏上更清晰。</div>
+      <div class="aen" lang="en">Resolution is how many pixels a screen has horizontally and vertically, commonly written like 1920×1080, meaning 1920 pixels wide and 1080 tall. More total pixels show richer detail. Note this differs from physical screen size; the same resolution looks sharper on a smaller screen.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#分辨率</a> <a class="tag" href="#">#像素</a> <a class="tag" href="#">#显示</a>
+    </article>
+
+
+    <article class="qitem" id="09ba8303addf">
+      <h2 class="qz" lang="zh">位图（栅格）图像和矢量图像有何区别？</h2>
+      <p class="qen" lang="en">What is the difference between bitmap (raster) and vector images?</p>
+      <div class="azh" lang="zh">位图由像素网格组成，放大到一定程度会出现马赛克，如照片。矢量图用点、线、曲线和公式描述形状，可无限放大而不失真，适合 logo、图标和字体。二者适用场景不同：照片用位图，图形标志用矢量。</div>
+      <div class="aen" lang="en">A bitmap is a grid of pixels and becomes blocky when enlarged past a point, as with photographs. A vector image describes shapes with points, lines, curves, and formulas, so it scales without loss of quality, suiting logos, icons, and fonts. They fit different uses: photos as bitmaps, graphic marks as vectors.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#位图</a> <a class="tag" href="#">#矢量图</a> <a class="tag" href="#">#图像</a>
+    </article>
+
+
+    <article class="qitem" id="1f280f067dfc">
+      <h2 class="qz" lang="zh">界面响应慢到多少毫秒，人就开始觉得「卡」？</h2>
+      <p class="qen" lang="en">How many milliseconds of delay make an interface start to feel laggy?</p>
+      <div class="azh" lang="zh">人机交互研究总结出三条经典阈值：约 0.1 秒内的响应会被感知为直接操作，界面像是被手直接推动；约 1 秒内用户的思路不中断，但已经察觉到系统在忙；超过约 10 秒注意力就会转移，必须用进度提示把用户留住。因此按钮按下要在 100 毫秒内给出可见反馈，哪怕只是变个颜色，耗时操作则应立即显示骨架屏或进度条，把等待变成可预期的等待。</div>
+      <div class="aen" lang="en">Usability research settled on three classic thresholds: a response within about 0.1 second is perceived as direct manipulation, as if the object moves with your finger; within about 1 second the user&#x27;s train of thought survives although the delay is noticed; beyond roughly 10 seconds attention wanders and a progress indicator is required to retain the user. So a button press should produce visible feedback inside 100 ms even if only a colour change, and slow operations should immediately show a skeleton screen or progress bar, turning waiting into predictable waiting.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Jakob Nielsen《Usability Engineering》(1993) 第 5 章 Response Times: The 3 Important Limits</p>
+        <p lang="en">Jakob Nielsen, &quot;Usability Engineering&quot; (1993), ch. 5, &quot;Response Times: The 3 Important Limits&quot;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Usability+Engineering" target="_blank" rel="noopener">核验依据 1 ISBN 9780125184069 (1993)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#响应时间</a> <a class="tag" href="#">#可用性</a> <a class="tag" href="#">#交互反馈</a> <a class="tag" href="#">#进度提示</a>
+    </article>
+
+
+    <article class="qitem" id="3a51158c238d">
+      <h2 class="qz" lang="zh">为什么动画常用“双缓冲”技术？</h2>
+      <p class="qen" lang="en">Why do animations commonly use double buffering?</p>
+      <div class="azh" lang="zh">如果在同一块屏幕上边画边显示，用户会看到半成品的闪烁。双缓冲准备两块内存：一块后台绘制完整画面，画好后一次性切换到前台显示。这样每次呈现的都是完整帧，避免了撕裂和闪烁。</div>
+      <div class="aen" lang="en">If you draw and display on the same surface at once, viewers see flickering half-finished frames. Double buffering uses two memory areas: one is drawn in the background, then the finished frame is swapped to the front in one step. This way only complete frames are shown, avoiding tearing and flicker.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#双缓冲</a> <a class="tag" href="#">#动画</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="47aca0f1d863">
+      <h2 class="qz" lang="zh">帧率（FPS）代表什么？</h2>
+      <p class="qen" lang="en">What does frame rate (FPS) represent?</p>
+      <div class="azh" lang="zh">帧率是每秒钟屏幕刷新的画面数量，单位是 FPS（frames per second）。帧率越高，动画和游戏越流畅；一般电影约 24 FPS，流畅游戏常在 60 FPS 以上。若帧率过低，人眼会感到卡顿。</div>
+      <div class="aen" lang="en">Frame rate is how many images the screen refreshes per second, measured in FPS (frames per second). Higher frame rates make animation and games smoother; film is about 24 FPS while smooth games often exceed 60 FPS. Too low a rate feels choppy to the eye.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#帧率</a> <a class="tag" href="#">#FPS</a> <a class="tag" href="#">#动画</a>
+    </article>
+
+
+    <article class="qitem" id="62e5661b2f5f">
+      <h2 class="qz" lang="zh">什么是事件驱动编程（以 GUI 为例）？</h2>
+      <p class="qen" lang="en">What is event-driven programming, using a GUI as an example?</p>
+      <div class="azh" lang="zh">事件驱动指程序不按顺序死等，而是注册好“点击按钮”“按下按键”等事件的响应函数，由用户操作或系统来触发。图形界面大量采用这种方式：你点哪、程序才做哪。它让交互程序能随时响应用户，而不是卡在某一步。</div>
+      <div class="aen" lang="en">Event-driven means a program does not plod sequentially but registers response functions for events like button clicks or key presses, triggered by user actions or the system. Graphical interfaces rely on this heavily: the program reacts to whatever you do. It lets interactive programs respond at any time instead of getting stuck at one step.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#事件驱动</a> <a class="tag" href="#">#GUI</a> <a class="tag" href="#">#交互</a>
+    </article>
+
+
+    <article class="qitem" id="6631bedab0d2">
+      <h2 class="qz" lang="zh">人机交互中的“可用性”指什么？</h2>
+      <p class="qen" lang="en">What does usability mean in human-computer interaction?</p>
+      <div class="azh" lang="zh">可用性衡量一个系统被特定用户在特定场景下有效、高效且满意地达成目标的程度。它关注易学性、效率、容错和主观满意度等方面。提升可用性常靠简洁的界面、清晰的反馈和符合直觉的操作。</div>
+      <div class="aen" lang="en">Usability measures how effectively, efficiently, and satisfactorily a system lets particular users achieve goals in a given context. It covers learnability, efficiency, error tolerance, and satisfaction. Improving it usually means simpler interfaces, clear feedback, and intuitive operations.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">ISO 9241-11 可用性标准</p>
+        <p lang="en">ISO 9241-11 Ergonomics of Usability</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#可用性</a> <a class="tag" href="#">#人机交互</a> <a class="tag" href="#">#设计</a>
+    </article>
+
+
+    <article class="qitem" id="88249d52db9b">
+      <h2 class="qz" lang="zh">什么是响应式界面设计？</h2>
+      <p class="qen" lang="en">What is responsive interface design?</p>
+      <div class="azh" lang="zh">响应式设计让同一界面能根据屏幕大小、方向自动调整布局，在手机、平板、桌面都好看且好用。常见手段是用弹性网格、相对单位和媒体查询重新排列元素。它的目标是“一套内容，多种设备”。</div>
+      <div class="aen" lang="en">Responsive design lets one interface automatically adapt its layout to screen size and orientation, looking and working well on phones, tablets, and desktops. Common techniques use flexible grids, relative units, and media queries to rearrange elements. The goal is one content source across many devices.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casalánguida, Eduardo Durán,《User Interface Design for Responsive Web Applications》, Proceedings of the 11th International Conference on Web Info, 2015 (DOI: 10.5220/0005454101040111)</p>
+        <p lang="en">Casalánguida, Eduardo Durán, &#x27;User Interface Design for Responsive Web Applications&#x27;, Proceedings of the 11th International Conference on Web Info, 2015, DOI: 10.5220/0005454101040111</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.5220/0005454101040111" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.5220/0005454101040111</a></p>
+        
+      </details>
+      <a class="tag" href="#">#响应式</a> <a class="tag" href="#">#界面设计</a> <a class="tag" href="#">#人机交互</a>
+    </article>
+
+
+    <article class="qitem" id="94369f830e70">
+      <h2 class="qz" lang="zh">什么是像素？</h2>
+      <p class="qen" lang="en">What is a pixel?</p>
+      <div class="azh" lang="zh">像素（picture element）是数字图像中最小的独立显示单元，屏幕上的一点就对应一个像素。每个像素用若干比特记录颜色，整幅图像就是像素的二维阵列。像素越密，画面看起来越细腻。</div>
+      <div class="aen" lang="en">A pixel (picture element) is the smallest independent unit of a digital image, with one point on screen corresponding to one pixel. Each pixel records its color in a few bits, and the whole image is a two-dimensional array of pixels. Denser pixels make the picture look finer.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#像素</a> <a class="tag" href="#">#图像</a> <a class="tag" href="#">#图形学</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_003">
+      <h2 class="qz" lang="zh">游戏里的小人为什么会跟着我走?</h2>
+      <p class="qen" lang="en">Why does the game character follow me?</p>
+      <div class="azh" lang="zh">你按方向键,就是在给小人下命令:向左!向右!电脑每秒检查你的按键几十次,小人就听话地一步步走。其实是你当司令,它当士兵呀。</div>
+      <div class="aen" lang="en">Every arrow key press is an order: left! right! The computer checks your buttons dozens of times each second and the character obeys step by step. You are the commander; it is the soldier.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Linda Liukas,《Hello Ruby: Adventures in Coding》,Feiwel &amp; Friends,2015</p>
+        <p lang="en">Linda Liukas, Hello Ruby: Adventures in Coding, Feiwel &amp; Friends, 2015</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Hello%20Ruby%3A%20Adventures%20in%20Coding" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-14-330898-0 (2015, No Starch Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#游戏</a> <a class="tag" href="#">#指令</a> <a class="tag" href="#">#程序</a>
+    </article>
+
+
+    <article class="qitem" id="eaef7f63ae4d">
+      <h2 class="qz" lang="zh">人机交互（HCI）研究的是什么？</h2>
+      <p class="qen" lang="en">What does human-computer interaction (HCI) study?</p>
+      <div class="azh" lang="zh">人机交互研究人与计算机之间如何设计与评估交互方式，目标是让系统易学、高效且令人满意。它融合心理学、设计与计算机科学，常由 ACM 的 SIGCHI 专业组推动。诺曼在《设计心理学》中强调以用户心智模型为中心的设计原则，是该领域的奠基性著作。</div>
+      <div class="aen" lang="en">Human-computer interaction studies how to design and evaluate the ways people interact with computers, aiming for systems that are learnable, efficient, and satisfying. It blends psychology, design, and computer science and is advanced by ACM&#x27;s SIGCHI. Norman&#x27;s &#x27;The Design of Everyday Things&#x27; emphasizes design centered on users&#x27; mental models and is a foundational work in the field.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Norman《设计心理学》（The Design of Everyday Things）；ACM SIGCHI</p>
+        <p lang="en">Norman, The Design of Everyday Things; ACM SIGCHI</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.15358/9783800648108" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.15358/9783800648108：The Design of Everyda</a></p>
+        
+      </details>
+      <a class="tag" href="#">#人机交互</a> <a class="tag" href="#">#可用性</a> <a class="tag" href="#">#诺曼</a> <a class="tag" href="#">#SIGCHI</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

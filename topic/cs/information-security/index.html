@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>信息安全 information-security · 计算机 Computer Science | 问答</title>
+<meta name="description" content="信息安全（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="信息安全 information-security · 计算机 Computer Science | 问答">
+<meta property="og:description" content="信息安全（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/information-security/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/information-security/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>信息安全</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>信息安全 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#88422d94ade9">密码学中的哈希函数有什么用？</a></li><li><a href="#05348a8f97df">什么是 SQL 注入攻击？</a></li><li><a href="#4b2972ad64d1">什么是社会工程学攻击？</a></li><li><a href="#3a94eda3b56f">为什么密码不能太简单？</a></li><li><a href="#3c6ece9083dd">什么是数据加密？</a></li><li><a href="#60a04f140a78">什么是计算机病毒？</a></li><li><a href="#8e2e4bad58c6">什么是公钥和私钥？</a></li><li><a href="#f65a321af3ab">什么是双因素认证（2FA）？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="88422d94ade9">
+      <h2 class="qz" lang="zh">密码学中的哈希函数有什么用？</h2>
+      <p class="qen" lang="en">What is the use of hash functions in cryptography?</p>
+      <div class="azh" lang="zh">密码学哈希函数能把任意长度输入变成固定长度的「摘要」，且难以反推原文、难以找到碰撞。它用于验证数据完整性、存储密码（加盐哈希）和构造数字签名。例如 SHA-256 是比特币等系统广泛使用的哈希算法。</div>
+      <div class="aen" lang="en">A cryptographic hash function turns input of any length into a fixed-length digest that is hard to invert and hard to collide. It verifies data integrity, stores passwords (with salting), and builds digital signatures. For example, SHA-256 is widely used in Bitcoin and other systems.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希函数</a> <a class="tag" href="#">#摘要</a> <a class="tag" href="#">#完整性</a>
+    </article>
+
+
+    <article class="qitem" id="05348a8f97df">
+      <h2 class="qz" lang="zh">什么是 SQL 注入攻击？</h2>
+      <p class="qen" lang="en">What is an SQL injection attack?</p>
+      <div class="azh" lang="zh">SQL 注入是攻击者把恶意 SQL 代码拼接到输入中，欺骗数据库执行非预期命令的攻击方式。它常因程序直接拼接用户输入而引起，可能泄露或破坏整个数据库。使用参数化查询（预编译）可有效防范。</div>
+      <div class="aen" lang="en">SQL injection is an attack where malicious SQL is concatenated into input to trick the database into executing unintended commands. It often arises when programs directly concatenate user input and can leak or destroy an entire database. Parameterized (prepared) queries effectively prevent it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Web 安全常见漏洞（OWASP）</p>
+        <p lang="en">Common web vulnerability (OWASP)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#SQL注入</a> <a class="tag" href="#">#Web安全</a> <a class="tag" href="#">#攻击</a>
+    </article>
+
+
+    <article class="qitem" id="4b2972ad64d1">
+      <h2 class="qz" lang="zh">什么是社会工程学攻击？</h2>
+      <p class="qen" lang="en">What is a social engineering attack?</p>
+      <div class="azh" lang="zh">社会工程学攻击不靠技术漏洞，而是利用人的信任或疏忽来骗取密码、验证码等敏感信息，例如伪装成客服的钓鱼电话。它是很多数据泄露的入口。提高安全意识和核实身份是主要防范手段。</div>
+      <div class="aen" lang="en">A social engineering attack exploits human trust or carelessness rather than technical flaws to obtain passwords, codes, and other sensitive information, such as a phishing call pretending to be support. It is the entry point of many breaches. Awareness and identity verification are the main defenses.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#社会工程学</a> <a class="tag" href="#">#钓鱼</a> <a class="tag" href="#">#人为因素</a>
+    </article>
+
+
+    <article class="qitem" id="3a94eda3b56f">
+      <h2 class="qz" lang="zh">为什么密码不能太简单？</h2>
+      <p class="qen" lang="en">Why shouldn&#x27;t passwords be too simple?</p>
+      <div class="azh" lang="zh">简单的密码（如 123456）很容易被自动程序试出来，就像用小钥匙开大门。使用长且包含字母、数字、符号的组合能大幅提高破解难度。再加上双因素认证就更安全了。</div>
+      <div class="aen" lang="en">Simple passwords like 123456 are easily guessed by automated programs, like using a tiny key on a big door. Long combinations of letters, digits, and symbols greatly raise the difficulty of cracking. Adding two-factor authentication makes it even safer.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#密码</a> <a class="tag" href="#">#安全</a> <a class="tag" href="#">#强度</a>
+    </article>
+
+
+    <article class="qitem" id="3c6ece9083dd">
+      <h2 class="qz" lang="zh">什么是数据加密？</h2>
+      <p class="qen" lang="en">What is data encryption?</p>
+      <div class="azh" lang="zh">加密是把可读的明文通过密钥转换成难以理解的密文，只有掌握正确密钥的人才能还原。它保护信息在传输和存储时不被窃听或篡改。现代加密是网络支付和隐私保护的基础。</div>
+      <div class="aen" lang="en">Encryption transforms readable plaintext into incomprehensible ciphertext using a key, and only someone with the correct key can reverse it. It protects information from eavesdropping or tampering during transmission and storage. Modern encryption underpins online payments and privacy protection.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#加密</a> <a class="tag" href="#">#密文</a> <a class="tag" href="#">#密钥</a>
+    </article>
+
+
+    <article class="qitem" id="60a04f140a78">
+      <h2 class="qz" lang="zh">什么是计算机病毒？</h2>
+      <p class="qen" lang="en">What is a computer virus?</p>
+      <div class="azh" lang="zh">计算机病毒是一种能自我复制并附着到其他程序上的恶意代码，会在用户不知情时传播和破坏。它可能删除文件、窃取信息或占用资源。安装杀毒软件和及时更新系统是有效的防护手段。</div>
+      <div class="aen" lang="en">A computer virus is malicious code that copies itself and attaches to other programs, spreading and causing harm without the user&#x27;s knowledge. It may delete files, steal information, or consume resources. Antivirus software and timely updates are effective defenses.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Schweitzer,《A Nontechnical Consideration of the Computer Virus: Why to Worry and What to Do》, EDPACS, 1988 (DOI: 10.1080/07366988809450525)</p>
+        <p lang="en">Schweitzer, &#x27;A Nontechnical Consideration of the Computer Virus: Why to Worry and What to Do&#x27;, EDPACS, 1988, DOI: 10.1080/07366988809450525</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1080/07366988809450525" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1080/07366988809450525</a></p>
+        
+      </details>
+      <a class="tag" href="#">#病毒</a> <a class="tag" href="#">#恶意软件</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="8e2e4bad58c6">
+      <h2 class="qz" lang="zh">什么是公钥和私钥？</h2>
+      <p class="qen" lang="en">What are public and private keys?</p>
+      <div class="azh" lang="zh">在非对称加密中，公钥可以公开给任何人用来加密或验证签名，私钥必须严格保密用来解密或生成签名。用公钥加密的内容只能用对应私钥解开。这种机制支撑了 HTTPS 和数字签名。</div>
+      <div class="aen" lang="en">In asymmetric encryption, the public key can be shared with anyone to encrypt or verify signatures, while the private key must be kept secret to decrypt or create signatures. Content encrypted with the public key can only be opened by the matching private key. This mechanism underpins HTTPS and digital signatures.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">公钥密码学（Diffie-Hellman/RSA）</p>
+        <p lang="en">Public-key cryptography (Diffie-Hellman/RSA)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#公钥</a> <a class="tag" href="#">#私钥</a> <a class="tag" href="#">#非对称</a>
+    </article>
+
+
+    <article class="qitem" id="f65a321af3ab">
+      <h2 class="qz" lang="zh">什么是双因素认证（2FA）？</h2>
+      <p class="qen" lang="en">What is two-factor authentication (2FA)?</p>
+      <div class="azh" lang="zh">双因素认证在密码之外增加第二重验证，例如手机验证码或指纹，证明登录者确实是你。即使密码泄露，攻击者也难以通过第二关。它显著提升了账户安全性。</div>
+      <div class="aen" lang="en">Two-factor authentication adds a second proof beyond the password, such as a phone code or fingerprint, confirming the login is really you. Even if the password leaks, an attacker still cannot pass the second step. It greatly improves account security.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ferguson、Schneier、Kohno,《Cryptography Engineering》Wiley,2010</p>
+        <p lang="en">N. Ferguson, B. Schneier and T. Kohno, Cryptography Engineering, Wiley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16596906W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL16596906W：Cryptography engineeri</a></p>
+        
+      </details>
+      <a class="tag" href="#">#双因素认证</a> <a class="tag" href="#">#2FA</a> <a class="tag" href="#">#账户安全</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

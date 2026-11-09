@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Engineering computer-engineering · 工程技术 Engineering | 问答</title>
+<meta name="description" content="Computer Engineering（工程技术）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Computer Engineering computer-engineering · 工程技术 Engineering | 问答">
+<meta property="og:description" content="Computer Engineering（工程技术）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/computer-engineering/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/computer-engineering/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>Computer Engineering</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Computer Engineering <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>13</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#984e2ed913db">什么是“RISC”与“CISC”？二者设计哲学有何不同？</a></li><li><a href="#fb79afc31efa">芯片制造中的『光刻』是怎样把电路『画』到硅片上的？</a></li><li><a href="#36c85bde9d0e">计算机里的『缓存』为什么能加快速度？</a></li><li><a href="#36f6628f1a65">什么是 CPU 流水线（pipelining）？它为何能提高吞吐率？</a></li><li><a href="#650e4b6fbcce">什么是缓存（cache）的“命中”与“未命中”？为何采用多级缓存？</a></li><li><a href="#85c2d5c79341">并行计算为什么能更快完成任务？</a></li><li><a href="#d6ab7d7d531e">什么是“冯·诺依曼架构”？其核心思想是什么？</a></li><li><a href="#da6154a6b5f8">什么是嵌入式系统，和我们日常电脑有何不同？</a></li><li><a href="#f9c60519773b">网络的『带宽』和『时延』有什么区别？</a></li><li><a href="#fab9186325a6">FPGA这类芯片有什么特别之处？</a></li><li><a href="#1be1c93eae7c">计算机为什么用0和1（二进制）来表示一切？</a></li><li><a href="#bdc076c16024">什么是“摩尔定律”？它描述了什么趋势？</a></li><li><a href="#f04b40d1e6e7">CPU和GPU在设计思路上有什么不同？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="984e2ed913db">
+      <h2 class="qz" lang="zh">什么是“RISC”与“CISC”？二者设计哲学有何不同？</h2>
+      <p class="qen" lang="en">What are RISC and CISC, and how do their design philosophies differ?</p>
+      <div class="azh" lang="zh">RISC（精简指令集）采用固定长度、少而规整的指令，靠load/store与大量寄存器并易于流水化，如 ARM、RISC-V。CISC（复杂指令集）指令功能强、长度可变、寄存器较少且多靠微程序，如 x86；现代 x86 内部仍解码为微操作，二者走向融合。</div>
+      <div class="aen" lang="en">RISC uses a small, regular, fixed-length instruction set with load/store and many registers that pipelines easily, e.g., ARM and RISC-V. CISC has powerful, variable-length instructions, fewer registers, and microcode, e.g., x86; modern x86 still decodes to micro-operations, so the two converge.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">ACM/IEEE；Hennessy &amp; Patterson《计算机体系结构：量化研究方法》</p>
+        <p lang="en">ACM/IEEE; Hennessy &amp; Patterson, &#x27;Computer Architecture: A Quantitative Approach&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17914655W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17914655W：Computer architecture </a></p>
+        
+      </details>
+      <a class="tag" href="#">#RISC</a> <a class="tag" href="#">#CISC</a> <a class="tag" href="#">#指令集</a> <a class="tag" href="#">#微操作</a>
+    </article>
+
+
+    <article class="qitem" id="fb79afc31efa">
+      <h2 class="qz" lang="zh">芯片制造中的『光刻』是怎样把电路『画』到硅片上的？</h2>
+      <p class="qen" lang="en">How does &#x27;photolithography&#x27; print circuits onto a silicon wafer?</p>
+      <div class="azh" lang="zh">光刻先在硅片涂光敏光刻胶，用掩模版遮挡后曝光，使受光区域化学性质改变，再经显影去掉相应部分，露出图案，随后刻蚀或掺杂把图形转移到下层。它是决定芯片集成度的关键工艺。</div>
+      <div class="aen" lang="en">Lithography coats the wafer with photosensitive resist, exposes it through a mask, develops away the changed parts to reveal a pattern, then etches or dopes to transfer it. It sets how densely chips can be integrated.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光刻</a> <a class="tag" href="#">#掩模</a> <a class="tag" href="#">#硅片</a>
+    </article>
+
+
+    <article class="qitem" id="36c85bde9d0e">
+      <h2 class="qz" lang="zh">计算机里的『缓存』为什么能加快速度？</h2>
+      <p class="qen" lang="en">Why does a computer&#x27;s &#x27;cache&#x27; speed things up?</p>
+      <div class="azh" lang="zh">缓存是靠近处理器的小容量高速存储器，存放近期或即将用到的数据，避免频繁访问慢速主存。处理器先查缓存，命中即可极快取得，从而整体提速。</div>
+      <div class="aen" lang="en">Cache is a small fast memory near the processor holding recently or soon-needed data, avoiding slow main-memory trips. The CPU checks cache first; a hit is extremely fast, speeding the whole system.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#存储器</a> <a class="tag" href="#">#速度</a>
+    </article>
+
+
+    <article class="qitem" id="36f6628f1a65">
+      <h2 class="qz" lang="zh">什么是 CPU 流水线（pipelining）？它为何能提高吞吐率？</h2>
+      <p class="qen" lang="en">What is CPU pipelining, and why does it raise throughput?</p>
+      <div class="azh" lang="zh">流水线把一条指令的执行拆成取指、译码、执行、访存、写回等多个阶段，使多条指令在不同阶段重叠执行。吞吐率因此提高，尽管单条指令的延迟不变；冒险（hazard）会造成停顿。</div>
+      <div class="aen" lang="en">Pipelining splits instruction execution into stages such as fetch, decode, execute, memory, and write-back so multiple instructions overlap in different stages. Throughput rises even though a single instruction&#x27;s latency is unchanged; hazards can cause stalls.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">ACM；Hennessy &amp; Patterson《计算机体系结构：量化研究方法》</p>
+        <p lang="en">ACM; Hennessy &amp; Patterson, &#x27;Computer Architecture: A Quantitative Approach&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17914655W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17914655W：Computer architecture </a></p>
+        
+      </details>
+      <a class="tag" href="#">#流水线</a> <a class="tag" href="#">#指令级并行</a> <a class="tag" href="#">#冒险</a> <a class="tag" href="#">#吞吐率</a>
+    </article>
+
+
+    <article class="qitem" id="650e4b6fbcce">
+      <h2 class="qz" lang="zh">什么是缓存（cache）的“命中”与“未命中”？为何采用多级缓存？</h2>
+      <p class="qen" lang="en">What are cache hit and miss, and why use multiple cache levels?</p>
+      <div class="azh" lang="zh">缓存存放 CPU 近期将用到的数据：命中时直接从缓存取数（很快），未命中时则需到更慢的存储器取数并填入缓存。多级缓存（L1/L2/L3）在速度、容量与成本之间折中，越靠近 CPU 的级别越小越快。</div>
+      <div class="aen" lang="en">A cache holds data the CPU will likely use soon: on a hit it is served fast, on a miss the data must be fetched from slower memory and loaded into cache. Multi-level caches (L1/L2/L3) trade off speed, size, and cost, with closer levels smaller and faster.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Patterson &amp; Hennessy《计算机组成与设计》</p>
+        <p lang="en">Patterson &amp; Hennessy, &#x27;Computer Organization and Design&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Organization+and+Design" target="_blank" rel="noopener">核验依据 1 ISBN 9781558604285 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#命中率</a> <a class="tag" href="#">#多级缓存</a> <a class="tag" href="#">#局部性</a>
+    </article>
+
+
+    <article class="qitem" id="85c2d5c79341">
+      <h2 class="qz" lang="zh">并行计算为什么能更快完成任务？</h2>
+      <p class="qen" lang="en">Why can parallel computing finish tasks faster?</p>
+      <div class="azh" lang="zh">并行计算把大问题拆成可同时处理的子任务，由多个处理器核心一起算，相当于多人协作。适合大规模仿真、渲染和机器学习，但受任务依赖和通信开销限制。</div>
+      <div class="aen" lang="en">Parallel computing splits a problem into subtasks run at once on many cores—like teamwork. It suits big simulations, rendering, and ML but is limited by dependencies and communication overhead.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#并行</a> <a class="tag" href="#">#多核</a> <a class="tag" href="#">#加速</a>
+    </article>
+
+
+    <article class="qitem" id="d6ab7d7d531e">
+      <h2 class="qz" lang="zh">什么是“冯·诺依曼架构”？其核心思想是什么？</h2>
+      <p class="qen" lang="en">What is the von Neumann architecture, and what is its central idea?</p>
+      <div class="azh" lang="zh">冯·诺依曼架构是一种存储程序计算机：指令与数据存放在同一存储器中，经同一总线由 CPU 取指、译码、执行。其核心是“程序即数据”，局限在于 CPU 与存储器速度差距造成的“冯·诺依曼瓶颈”。</div>
+      <div class="aen" lang="en">The von Neumann architecture is a stored-program computer where instructions and data share the same memory and bus, and the CPU fetches, decodes, and executes them sequentially. Its core is that programs are data, and its limitation is the von Neumann bottleneck from the CPU-memory speed gap.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">电气电子工程师协会计算机学会（IEEE Computer Society）；Patterson &amp; Hennessy《计算机组成与设计》</p>
+        <p lang="en">IEEE Computer Society; Patterson &amp; Hennessy, &#x27;Computer Organization and Design&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Organization+and+Design" target="_blank" rel="noopener">核验依据 1 ISBN 9781558604285 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#冯诺依曼架构</a> <a class="tag" href="#">#存储程序</a> <a class="tag" href="#">#总线</a> <a class="tag" href="#">#瓶颈</a>
+    </article>
+
+
+    <article class="qitem" id="da6154a6b5f8">
+      <h2 class="qz" lang="zh">什么是嵌入式系统，和我们日常电脑有何不同？</h2>
+      <p class="qen" lang="en">What is an embedded system, and how does it differ from a PC?</p>
+      <div class="azh" lang="zh">嵌入式系统是嵌入到设备内部、为特定功能服务的专用计算机，如微波炉、汽车ECU、智能手表。它资源有限、常实时运行、不追求通用，而电脑是通用平台。</div>
+      <div class="aen" lang="en">An embedded system is a dedicated computer inside a device for one task—microwaves, car ECUs, watches. It is resource-limited, often real-time, and not general-purpose like a PC.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#嵌入式</a> <a class="tag" href="#">#实时</a> <a class="tag" href="#">#专用</a>
+    </article>
+
+
+    <article class="qitem" id="f9c60519773b">
+      <h2 class="qz" lang="zh">网络的『带宽』和『时延』有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between network &#x27;bandwidth&#x27; and &#x27;latency&#x27;?</p>
+      <div class="azh" lang="zh">带宽是一段时间内能传输的数据量上限（如每秒多少兆），决定『多快能灌满』；时延是单个数据包从发到收的往返时间，决定『反应多灵敏』。两者共同影响体验。</div>
+      <div class="aen" lang="en">Bandwidth is the max data rate over time (e.g., Mbps), setting how fast you can fill the pipe; latency is the round-trip time of a packet, setting responsiveness. Both shape the experience.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#带宽</a> <a class="tag" href="#">#时延</a> <a class="tag" href="#">#网络</a>
+    </article>
+
+
+    <article class="qitem" id="fab9186325a6">
+      <h2 class="qz" lang="zh">FPGA这类芯片有什么特别之处？</h2>
+      <p class="qen" lang="en">What is special about an FPGA chip?</p>
+      <div class="azh" lang="zh">FPGA（现场可编程门阵列）的内部逻辑可在出厂后由用户重新配置，像用硬件搭积木实现并行电路。它开发灵活、上市快，常用于原型验证、通信和信号处理。</div>
+      <div class="aen" lang="en">An FPGA&#x27;s internal logic can be reprogrammed by the user after manufacture, wiring up parallel hardware like building blocks. It is flexible and fast to market, used in prototyping, comms, and signal processing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#FPGA</a> <a class="tag" href="#">#可编程</a> <a class="tag" href="#">#硬件</a>
+    </article>
+
+
+    <article class="qitem" id="1be1c93eae7c">
+      <h2 class="qz" lang="zh">计算机为什么用0和1（二进制）来表示一切？</h2>
+      <p class="qen" lang="en">Why do computers represent everything with 0s and 1s (binary)?</p>
+      <div class="azh" lang="zh">电子电路最容易稳定地区分两种状态（如高/低电平、通/断），用二进制只需处理『是/否』两种信号，抗干扰强、制造简单，所以所有数据最终都编码成0和1。</div>
+      <div class="aen" lang="en">Circuits most reliably tell two states apart (high/low, on/off); binary needs only yes/no signals—robust against noise and simple to build—so all data ends up as 0s and 1s.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二进制</a> <a class="tag" href="#">#逻辑</a> <a class="tag" href="#">#电平</a>
+    </article>
+
+
+    <article class="qitem" id="bdc076c16024">
+      <h2 class="qz" lang="zh">什么是“摩尔定律”？它描述了什么趋势？</h2>
+      <p class="qen" lang="en">What is Moore&#x27;s law, and what trend does it describe?</p>
+      <div class="azh" lang="zh">摩尔定律是戈登·摩尔1965年的观察：单块芯片上的晶体管数约每两年翻一番，推动计算能力指数增长。如今受物理与散热极限制约，这一增速已放缓。</div>
+      <div class="aen" lang="en">Moore&#x27;s law is Gordon Moore&#x27;s 1965 observation that the number of transistors on a chip doubles roughly every two years, driving exponential growth in computing power. It has now slowed due to physical and thermal limits.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">电气电子工程师协会（IEEE）；G. Moore《电子学》1965</p>
+        <p lang="en">IEEE; G. Moore, &#x27;Cramming more components onto integrated circuits,&#x27; Electronics, 1965</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL13379258W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL13379258W：Cramming more componen</a></p>
+        
+      </details>
+      <a class="tag" href="#">#摩尔定律</a> <a class="tag" href="#">#晶体管</a> <a class="tag" href="#">#集成电路</a> <a class="tag" href="#">#指数增长</a>
+    </article>
+
+
+    <article class="qitem" id="f04b40d1e6e7">
+      <h2 class="qz" lang="zh">CPU和GPU在设计思路上有什么不同？</h2>
+      <p class="qen" lang="en">How do CPUs and GPUs differ in design philosophy?</p>
+      <div class="azh" lang="zh">CPU核心少但每个很强，擅长串行、复杂的逻辑任务；GPU有成千上万个小核心，擅长把同一种计算并行铺开，因此特别适合图形渲染和人工智能训练。</div>
+      <div class="aen" lang="en">A CPU has few powerful cores for serial, complex logic; a GPU has thousands of small cores that parallelize the same task, suiting graphics and AI training.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CPU</a> <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#并行</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

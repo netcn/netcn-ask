@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robotics · 工程技术 Engineering | 问答</title>
+<meta name="description" content="robotics（工程技术）分类下的 74 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 74 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="robotics · 工程技术 Engineering | 问答">
+<meta property="og:description" content="robotics（工程技术）分类下的 74 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 74 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/robotics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/robotics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>robotics</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>robotics <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>74</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#120ed3ee6999">水下机器人为什么把推进器斜着装成矢量布局？</a></li><li><a href="#12b5ee4f1438">为什么PID控制能成为工业控制里最常用的算法？</a></li><li><a href="#135e553f01b7">逆运动学难在哪里？</a></li><li><a href="#1505fbef656a">SLAM 让移动机器人如何做到『边走边画地图』？</a></li><li><a href="#16bfeaa390a7">机械臂建模为什么普遍采用 Denavit–Hartenberg 参数，四个参数就</a></li><li><a href="#2d6148774b82">视觉伺服中基于图像的 IBVS 与基于位姿的 PBVS，在控制律上有何本质差别？</a></li><li><a href="#3b94deeb6fe6">为什么机械臂要把&quot;想去的目标位置&quot;换算成&quot;每个关节转多少度&quot;？</a></li><li><a href="#3bbc7f7f9d1b">助力外骨骼怎么知道穿戴者想抬腿还是想停下？</a></li><li><a href="#41dd1ddde715">力控和位置控制有什么本质区别？</a></li><li><a href="#4fd0f573caeb">惯性测量单元为什么会越用越偏，怎么办？</a></li><li><a href="#57b9b51cd666">为什么很多机器人手采用欠驱动手指？</a></li><li><a href="#5fc54dad1f9d">机器人路径规划中A星和RRT分别适合什么？</a></li><li><a href="#6140131d98f2">机器人的正运动学与逆运动学分别解决什么问题？</a></li><li><a href="#774fb7c1e5c7">四足机器人被推一把还能站住，靠的是什么机制？</a></li><li><a href="#93aec28e033e">在足式机器人中，零力矩点 ZMP 准则如何保证动态行走不摔倒？</a></li><li><a href="#9a4e69155b4b">无人机是怎样给地形画地图的？</a></li><li><a href="#acc10a8d08f4">阻抗控制和单纯的力控制有什么区别？</a></li><li><a href="#deacbda5ec2d">机器视觉是怎样让机器&#x27;读懂&#x27;图像的？</a></li><li><a href="#eff3ca0f1e26">机械臂为什么要避开奇异位形？</a></li><li><a href="#eng_24_002">双足机器人在不平地面上为什么不摔跤?它每秒在做多少次「单脚站平衡计算」?</a></li><li><a href="#ffc47138e315">什么是串联弹性驱动器，为什么腿式机器人喜欢用它？</a></li><li><a href="#00e645602d1b">机器人的执行器是什么？</a></li><li><a href="#03045a176f3b">分拣线上的 Delta 并联机器人，为什么能比同尺寸的串联机械臂快好几倍？</a></li><li><a href="#12101e308f92">机器人关节为什么倾向用绝对值编码器？</a></li><li><a href="#15af10be8a35">什么是 PID 控制，它如何让机器人手臂稳定到达目标位置？</a></li><li><a href="#21b71f136096">为什么很多机器人用直流无刷电机而不是普通直流电机？</a></li><li><a href="#306452bbc49b">机器人“力控”和“位置控”有什么不同，为什么装配插孔这类活必须有力反馈？</a></li><li><a href="#3b4b74aaecf0">在冗余机械臂中，为什么雅可比伪逆可以用来分配各关节的运动？</a></li><li><a href="#4d776bc16b98">工业机械臂的发展史上有哪几个里程碑？</a></li><li><a href="#4f3dcd244e10">机器人是靠什么来&#x27;看&#x27;世界的？</a></li><li><a href="#532fa730ad88">激光雷达是怎么测距的？</a></li><li><a href="#64cda967f528">为什么大多数工业机械臂刚好有6个关节（6自由度）？</a></li><li><a href="#67abf61f15b5">为什么训练机器人学新动作常用“强化学习”，它和给指令编程有什么不同？</a></li><li><a href="#6b0bc50446fa">为什么六轴机械臂通常刚好六个自由度？</a></li><li><a href="#6c7bdff33cce">自动驾驶汽车是怎样知道自己在哪里、该往哪走的？</a></li><li><a href="#70b8a9ede462">机器人的重复定位精度和绝对定位精度有什么区别？</a></li><li><a href="#7eb81ba0dd5a">机械臂高速运动停下时末端为什么会抖动？</a></li><li><a href="#917c76b99eb4">机器人末端夹爪是怎样适应不同形状和材质的物体的？</a></li><li><a href="#9e23c7c5bb2a">机器人关节里装力矩传感器有什么用？</a></li><li><a href="#a075e47488e2">工业机械臂关节里为什么常用谐波减速器？</a></li><li><a href="#b3b18c0c5fe4">为什么机械臂能精确控制抓取易碎物品的力度而不捏碎？</a></li><li><a href="#c3d5688cece5">PID控制器中的三个字母分别代表什么？</a></li><li><a href="#c5e59372d515">自主移动机器人通常由哪些模块组成？</a></li><li><a href="#c7ff7e16f5c6">机械臂换了新夹爪后为什么必须重新标定工具中心点？</a></li><li><a href="#c9e52b5b18fd">机械臂为什么能一遍又一遍地做得很精准？</a></li><li><a href="#ce6823ff2249">扫地机器人在陌生房间里怎么知道自己在哪、该往哪走？</a></li><li><a href="#d5b7bdebfb8d">深度相机常见的结构光、飞行时间和双目三种原理有何不同？</a></li><li><a href="#da6cf70da596">协作机器人和传统工业机器臂有何不同？</a></li><li><a href="#df60b989f356">机器人用蒙特卡洛（粒子滤波）定位时，成百上千个『粒子』到底代表什么？</a></li><li><a href="#e0580e95214c">什么是末端执行器，不同任务为什么要换不同的夹爪？</a></li><li><a href="#eng_24_001">工业机械臂为什么能把焊枪送到同一个点,误差不到0.05毫米?</a></li><li><a href="#eng_24_017">协作机器人凭什么敢和工人共用一张工位而不用围栏?安全标准怎么定义的?</a></li><li><a href="#f558ee381e8a">轮式机器人的里程计为什么走久了位置就不准？</a></li><li><a href="#f837ccc64b4d">机器视觉在质量检测中如何工作？</a></li><li><a href="#02d9aba12be6">ROS是什么？</a></li><li><a href="#071604e5b504">传感器融合有什么用？</a></li><li><a href="#0c0d4f85fd1d">为什么协作机器人要限制速度和接触力？</a></li><li><a href="#0ddf9d549ff5">工业机械臂突然断电时，为什么手臂不会直接砸下来？</a></li><li><a href="#44ac92613bdd">差速驱动和全向轮底盘有什么不同？</a></li><li><a href="#4621ca8d9e75">什么是电子皮肤，它能给机器人带来什么？</a></li><li><a href="#49a539a5592e">爬壁检测机器人怎么吸在大型钢罐外壁上？</a></li><li><a href="#5a102c69b3d6">舵机和步进电机有什么区别？</a></li><li><a href="#65f9ebaaac5f">末端执行器是什么？</a></li><li><a href="#69939185512c">为什么有的机器人用轮子、有的用腿？</a></li><li><a href="#7265f724bede">MEMS陀螺仪测量角速度的原理是什么？</a></li><li><a href="#96d03ef7ee32">机器人和普通的电脑有什么不一样？</a></li><li><a href="#a374829bfbca">工厂里的真空吸盘能吸起纸箱和玻璃板，为什么遇到多孔的泡沫件或凹凸不平的铸件就吸不</a></li><li><a href="#a637fe995621">触觉传感器对机器人抓取有什么帮助？</a></li><li><a href="#c716d66bbf56">工厂里的机械臂为什么能“看见”并抓起形状不一的零件，它靠什么判断位置？</a></li><li><a href="#c9e3d127a1e1">机器人的自由度是什么意思，六个自由度够用吗？</a></li><li><a href="#cb3507d6d5e9">手术机器人为什么能比医生的手更稳？</a></li><li><a href="#eng_25_014">扫地机器人画出的路线图为什么横平竖直像棋盘?它的导航原理是什么?</a></li><li><a href="#f7903cc604f0">编码器在机器人里起什么作用？</a></li><li><a href="#ff6bd29dd3d8">工厂里的机械臂为什么能一直重复做同样的动作？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="120ed3ee6999">
+      <h2 class="qz" lang="zh">水下机器人为什么把推进器斜着装成矢量布局？</h2>
+      <p class="qen" lang="en">Why are the thrusters of an underwater robot mounted at angles in a vectored layout?</p>
+      <div class="azh" lang="zh">水下机器人要在六个自由度上机动，而单个推进器只能沿自身轴线产生推力。把若干推进器按不同倾角布置，各自推力的矢量合成就能同时产生前进、侧移和转艏等运动。控制器通过求解推力分配矩阵，把期望的合力与合力矩分解到每台推进器。</div>
+      <div class="aen" lang="en">An underwater vehicle must manoeuvre in six degrees of freedom, yet a single thruster only pushes along its own axis. Mounting several thrusters at different angles lets the vector sum of their thrusts produce surge, sway and yaw at the same time. The controller solves a thrust-allocation matrix to split the desired net force and moment among the individual units.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Bhattacharya《海洋车辆动力学》；IMO 稳性规范</p>
+        <p lang="en">Bhattacharya, Dynamics of Marine Vehicles; IMO stability codes</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#水下机器人</a> <a class="tag" href="#">#推力分配</a> <a class="tag" href="#">#矢量推进</a>
+    </article>
+
+
+    <article class="qitem" id="12b5ee4f1438">
+      <h2 class="qz" lang="zh">为什么PID控制能成为工业控制里最常用的算法？</h2>
+      <p class="qen" lang="en">Why is PID the most widely used control algorithm in industry?</p>
+      <div class="azh" lang="zh">PID控制按偏差工作：比例项的输出与当前误差成正比，负责快速响应；积分项累积历史误差，用来消除稳态偏差，否则系统会始终存在静差；微分项预测误差的变化趋势，抑制超调。只要把三个参数按被控对象调好，温度、转速、位置就能快速稳定。它不需要知道系统的精确数学模型，用一个经验整定法则就能工作，所以电机调速、恒温器、自动驾驶仪都用它。它的局限在于高度非线性或大滞后的对象，这类场合需要模型预测控制等更高级的方法。</div>
+      <div class="aen" lang="en">PID acts on the error: the proportional term is proportional to the current error for fast response; the integral term accumulates past error to eliminate steady-state offset, without which a persistent static error remains; the derivative term anticipates the error&#x27;s slope to damp overshoot. With just three tuned gains it can settle temperature, speed, or position quickly. It needs no precise model of the plant — an empirical tuning rule suffices — which is why motor drives, thermostats, and autopilots all use it. Its limits appear in strongly nonlinear or long-delay plants, which call for advanced methods like model predictive control.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">K. Ogata,《现代控制工程》第5版,Pearson,2010,PID控制章节</p>
+        <p lang="en">K. Ogata, Modern Control Engineering, 5th ed., Pearson, 2010, PID control chapter</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PID控制</a> <a class="tag" href="#">#反馈</a> <a class="tag" href="#">#闭环</a>
+    </article>
+
+
+    <article class="qitem" id="135e553f01b7">
+      <h2 class="qz" lang="zh">逆运动学难在哪里？</h2>
+      <p class="qen" lang="en">What makes inverse kinematics hard?</p>
+      <div class="azh" lang="zh">它要由末端目标位姿反求各关节角度，往往存在多个解甚至无解，还要在解中选最优（离当前姿态近、避开奇异点）。</div>
+      <div class="aen" lang="en">It solves joint angles from a desired end pose; solutions may be multiple, none, or near singularities, and one must pick the best (closest, singularity-free).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#逆运动学</a>
+    </article>
+
+
+    <article class="qitem" id="1505fbef656a">
+      <h2 class="qz" lang="zh">SLAM 让移动机器人如何做到『边走边画地图』？</h2>
+      <p class="qen" lang="en">How does SLAM let a mobile robot map while it moves?</p>
+      <div class="azh" lang="zh">SLAM（同步定位与建图）利用传感器（激光、相机）观测路标，在估计自身位置的同时推断路标位置，两者互为前提、迭代收敛。Thrun 等的《概率机器人》把粒子滤波与扩展卡尔曼滤波等方法系统化，是无人车与扫地机的核心。</div>
+      <div class="aen" lang="en">SLAM (simultaneous localization and mapping) uses sensor observations of landmarks to estimate the robot&#x27;s pose while inferring landmark positions, the two problems bootstrapping each other iteratively. Thrun et al.&#x27;s &#x27;Probabilistic Robotics&#x27; systematized particle and extended-Kalman methods, central to self-driving cars and vacuums.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard 与 Fox《概率机器人》(Probabilistic Robotics, 2005)；Durrant-Whyte《SLAM 基础》(2006)</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005); Durrant-Whyte, &#x27;Simultaneous Localisation and Mapping&#x27; (2006)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SLAM</a> <a class="tag" href="#">#同步定位与建图</a> <a class="tag" href="#">#粒子滤波</a> <a class="tag" href="#">#路标</a>
+    </article>
+
+
+    <article class="qitem" id="16bfeaa390a7">
+      <h2 class="qz" lang="zh">机械臂建模为什么普遍采用 Denavit–Hartenberg 参数，四个参数就够描述一个连杆？</h2>
+      <p class="qen" lang="en">Why is Denavit–Hartenberg notation the standard way to model a robot arm, and why do four parameters suffice per link?</p>
+      <div class="azh" lang="zh">DH 约定规定每个连杆坐标系的 z 轴取在关节轴线上、x 轴取在相邻两轴线的公垂线方向，这样一般需要六个参数的刚体变换被约束到只剩连杆长度 a、连杆扭角 α、关节偏置 d 和关节角 θ 四个。相邻坐标系间的齐次变换于是写成两次旋转加两次平移的固定乘积，整条手臂的正运动学变成矩阵连乘，便于统一推导雅可比与动力学。代价是坐标系放置不自由，遇到平行或相交的轴线会出现参数不唯一与表示奇异，所以实际标定常改用带完整六参数的修正模型来吸收制造误差。</div>
+      <div class="aen" lang="en">The DH convention forces each link frame&#x27;s z axis onto the joint axis and its x axis along the common normal between consecutive axes, which reduces a general six-parameter rigid transform to four: link length a, twist α, offset d and joint angle θ. Consecutive frames are then related by a fixed product of two rotations and two translations, so forward kinematics becomes a chain of matrix multiplications from which Jacobians and dynamics follow systematically. The price is that frame placement is constrained and parallel or intersecting axes give non-unique parameterizations, so calibration often switches to a full six-parameter model to absorb manufacturing errors.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《Introduction to Robotics: Mechanics and Control》（第3版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (3rd ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 1 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#DH参数</a> <a class="tag" href="#">#正运动学</a> <a class="tag" href="#">#连杆坐标系</a>
+    </article>
+
+
+    <article class="qitem" id="2d6148774b82">
+      <h2 class="qz" lang="zh">视觉伺服中基于图像的 IBVS 与基于位姿的 PBVS，在控制律上有何本质差别？</h2>
+      <p class="qen" lang="en">What is the fundamental control-law difference between image-based and position-based visual servoing?</p>
+      <div class="azh" lang="zh">IBVS 直接在图像平面上定义误差（如特征点像素坐标之差），用交互矩阵（图像雅可比）把像素误差映射成相机速度，因此对相机标定和目标模型误差不敏感，但相机在三维空间的轨迹不可控，大角度旋转时可能退化甚至让特征跑出视野。PBVS 先从图像重建目标相对位姿，再在笛卡尔空间做位姿控制，轨迹平滑直观，但依赖精确的内参和目标三维模型，标定误差会直接变成定位误差。工程上常用混合（2.5D）视觉伺服，把平移误差留在图像域、旋转误差放到位姿域，兼顾鲁棒性与轨迹品质。</div>
+      <div class="aen" lang="en">IBVS defines the error directly in the image plane and maps pixel errors to camera velocity through the interaction matrix, so it tolerates calibration and model errors well but leaves the camera&#x27;s 3-D path uncontrolled and can degenerate or drive features out of the field of view during large rotations. PBVS first reconstructs the target pose from the image and regulates pose in Cartesian space, giving predictable motion but inheriting every error in intrinsic calibration and in the target&#x27;s 3-D model. Hybrid or 2.5-D visual servoing combines the two, controlling translation in the image and rotation in pose space to keep robustness while making the trajectory well behaved.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chaumette 与 Hutchinson，《Visual Servo Control, Part I: Basic Approaches》，IEEE Robotics &amp; Automation Magazine（2006）</p>
+        <p lang="en">Chaumette &amp; Hutchinson, &#x27;Visual Servo Control, Part I: Basic Approaches&#x27;, IEEE Robotics &amp; Automation Magazine (2006)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/pub_ieee-robotics-and-automation-magazine" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 pub_ieee-robotics-and-automation-magazine：IEE</a></p>
+        
+      </details>
+      <a class="tag" href="#">#视觉伺服</a> <a class="tag" href="#">#图像雅可比</a> <a class="tag" href="#">#交互矩阵</a>
+    </article>
+
+
+    <article class="qitem" id="3b94deeb6fe6">
+      <h2 class="qz" lang="zh">为什么机械臂要把&quot;想去的目标位置&quot;换算成&quot;每个关节转多少度&quot;？</h2>
+      <p class="qen" lang="en">Why must a robot arm convert a target position into joint angles?</p>
+      <div class="azh" lang="zh">机械臂的伺服电机只认关节角度，所以控制末端姿态必须解逆运动学：已知末端的位置和姿态，求各关节变量。正运动学是由关节角求末端位姿，相对简单；逆解则是非线性方程，可能有多解、无解或奇异位形——比如手臂完全伸直时就失去了某些方向的运动能力。6自由度机械臂利用腕部结构解耦可得到解析解，冗余机械臂则要用雅可比求逆等数值迭代方法，在无穷多个解里选出最优的一个。逆运动学是轨迹规划与操作控制的基础。</div>
+      <div class="aen" lang="en">A robot arm&#x27;s servo motors only understand joint angles, so commanding the end-effector requires solving inverse kinematics: given the desired position and orientation, find the joint variables. Forward kinematics — joint angles to pose — is straightforward; the inverse is a set of nonlinear equations with possible multiple solutions, no solutions, or singular configurations, such as a fully extended arm losing the ability to move in certain directions. Six-axis arms get closed-form solutions by decoupling at the wrist, while redundant arms iterate numerically (e.g., Jacobian inversion) to pick the best among infinitely many solutions. Inverse kinematics underpins trajectory planning and manipulation control.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《机器人学导论：力学与控制》（第4版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (4th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-gb/subject-catalog/p/introduction-to-robotics-global-edition/P200000003994/9781292498164" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-292-49816-4 (Global Edition, 4th ed., Pearson</a> · <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 2 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#逆运动学</a> <a class="tag" href="#">#奇异位形</a> <a class="tag" href="#">#轨迹规划</a>
+    </article>
+
+
+    <article class="qitem" id="3bbc7f7f9d1b">
+      <h2 class="qz" lang="zh">助力外骨骼怎么知道穿戴者想抬腿还是想停下？</h2>
+      <p class="qen" lang="en">How does a powered exoskeleton know whether the wearer wants to lift a leg or stop?</p>
+      <div class="azh" lang="zh">外骨骼通过多种信号推测意图：关节角与角速度反映当前步态相位，足底压力判断支撑腿与摆动腿切换，表面肌电或人机接触力可在动作发生前几十毫秒捕捉发力趋势。控制器把这些信号送入状态机或学习模型，判定意图后再输出助力力矩。误判会让人对抗设备，因此意图识别的可靠性比助力大小更关键。</div>
+      <div class="aen" lang="en">An exoskeleton infers intent from several signals: joint angles and rates indicate the current gait phase, insole pressure reveals the switch between stance and swing leg, and surface electromyography or human-machine interaction forces can catch muscle effort tens of milliseconds before motion. A state machine or learned model combines these signals to classify intent before commanding assistive torque. Misclassification makes the wearer fight the device, so reliable intent recognition matters more than raw assistance power.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wang, Zhang, Zhao, He,《Pattern recognition of electromyography applied to Exoskeleton Robot》,2010 3rd International Congress on Image and Signal Processi,2010 (DOI: 10.1109/cisp.2010.5646759)</p>
+        <p lang="en">Wang, Zhang, Zhao, He, &#x27;Pattern recognition of electromyography applied to Exoskeleton Robot&#x27;, 2010 3rd International Congress on Image and Signal Processi, 2010, DOI: 10.1109/cisp.2010.5646759</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/cisp.2010.5646759" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/cisp.2010.5646759</a></p>
+        
+      </details>
+      <a class="tag" href="#">#外骨骼</a> <a class="tag" href="#">#意图识别</a> <a class="tag" href="#">#肌电</a>
+    </article>
+
+
+    <article class="qitem" id="41dd1ddde715">
+      <h2 class="qz" lang="zh">力控和位置控制有什么本质区别？</h2>
+      <p class="qen" lang="en">What is the essential difference between force control and position control?</p>
+      <div class="azh" lang="zh">位置控制给定目标位置，力控则给定或限制接触力；装配、打磨、抓取易碎物等需要力控以避免损坏工件或环境。</div>
+      <div class="aen" lang="en">Position control commands a target location, while force control commands or limits contact force; needed for assembly, polishing and handling fragile objects.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#力控</a>
+    </article>
+
+
+    <article class="qitem" id="4fd0f573caeb">
+      <h2 class="qz" lang="zh">惯性测量单元为什么会越用越偏，怎么办？</h2>
+      <p class="qen" lang="en">Why does an inertial measurement unit drift over time, and what can be done?</p>
+      <div class="azh" lang="zh">惯导要把角速度和加速度积分成姿态和位置，传感器的零偏和噪声也一起被积分，误差随时间累积成漂移。工程上用温度补偿和标定压低零偏，再融合磁力计、GPS、轮式里程计或视觉进行修正。行人和机器人还常用静止时刻的零速修正来周期性归零。</div>
+      <div class="aen" lang="en">Inertial navigation integrates angular rate and acceleration into attitude and position, and the sensor&#x27;s bias and noise get integrated too, so error accumulates as drift. Engineers reduce bias by temperature compensation and calibration, then fuse magnetometer, GPS, wheel odometry or vision data to correct it. Pedestrian and robot systems also apply zero-velocity updates during stationary moments to reset the error periodically.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard &amp; Fox，《概率机器人学》（2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#惯导</a> <a class="tag" href="#">#漂移</a> <a class="tag" href="#">#多源融合</a>
+    </article>
+
+
+    <article class="qitem" id="57b9b51cd666">
+      <h2 class="qz" lang="zh">为什么很多机器人手采用欠驱动手指？</h2>
+      <p class="qen" lang="en">Why do many robot hands use underactuated fingers?</p>
+      <div class="azh" lang="zh">欠驱动手指的关节数多于电机数，各关节通过连杆或绳索与弹簧耦合。一根绳收紧时，手指会自动依次贴合物体轮廓，实现自适应包络抓取，无需知道物体精确形状。代价是每个关节的力和位置不能独立指定，做精细操作时不如全驱动手灵活。</div>
+      <div class="aen" lang="en">An underactuated finger has more joints than motors, with the joints coupled through linkages or tendons and springs. Pulling one tendon makes the finger close sequentially and conform to the object&#x27;s contour, giving adaptive enveloping grasps without knowing the exact shape. The price is that joint forces and positions cannot be commanded independently, so dexterous in-hand manipulation is harder than with a fully actuated hand.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Monkman 等《机器人夹爪》(Robot Grippers)（Wiley-VCH，2007）</p>
+        <p lang="en">Monkman et al., &#x27;Robot Grippers&#x27; (Wiley-VCH, 2007)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Robot+Grippers" target="_blank" rel="noopener">核验依据 1 ISBN 9783527609895 (2007)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#欠驱动</a> <a class="tag" href="#">#抓取</a> <a class="tag" href="#">#机器手</a>
+    </article>
+
+
+    <article class="qitem" id="5fc54dad1f9d">
+      <h2 class="qz" lang="zh">机器人路径规划中A星和RRT分别适合什么？</h2>
+      <p class="qen" lang="en">When are A* and RRT each used in path planning?</p>
+      <div class="azh" lang="zh">A星适合已知栅格地图的全局最优路径搜索；RRT等采样法适合高维、复杂约束下的快速可行路径，常用于机械臂与动态环境。</div>
+      <div class="aen" lang="en">A* finds optimal global paths on known grids, while sampling methods like RRT quickly find feasible paths in high-dimensional or constrained spaces, common for arms and dynamic scenes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">LaValle《规划算法》(2006, Cambridge)</p>
+        <p lang="en">LaValle, Planning Algorithms (2006, Cambridge)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL8332497W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL8332497W：Planning Algorithms（首版 </a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#路径规划</a>
+    </article>
+
+
+    <article class="qitem" id="6140131d98f2">
+      <h2 class="qz" lang="zh">机器人的正运动学与逆运动学分别解决什么问题？</h2>
+      <p class="qen" lang="en">What problems do forward and inverse kinematics each solve for a robot?</p>
+      <div class="azh" lang="zh">正运动学由已知的各关节角度算出末端执行器在空间中的位置与姿态；逆运动学则相反，由目标位姿反求所需关节角，通常存在多解、奇异位形甚至无解。Denavit 与 Hartenberg 在 1955 年提出用统一矩阵描述连杆坐标变换的方法，至今仍是建模基础。</div>
+      <div class="aen" lang="en">Forward kinematics takes given joint angles and computes the end-effector&#x27;s position and orientation; inverse kinematics does the reverse—finding joint angles for a desired pose, often with multiple or no solutions. Denavit and Hartenberg gave a unified matrix convention for link transforms in 1955.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》(Introduction to Robotics)；Denavit 与 Hartenberg《连杆变换》(1955)</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics&#x27;; Denavit &amp; Hartenberg, &#x27;A kinematic notation&#x27; (1955)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4648116W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4648116W：Introduction to robotic</a></p>
+        
+      </details>
+      <a class="tag" href="#">#正运动学</a> <a class="tag" href="#">#逆运动学</a> <a class="tag" href="#">#DH参数</a> <a class="tag" href="#">#末端执行器</a>
+    </article>
+
+
+    <article class="qitem" id="774fb7c1e5c7">
+      <h2 class="qz" lang="zh">四足机器人被推一把还能站住，靠的是什么机制？</h2>
+      <p class="qen" lang="en">What lets a quadruped robot stay upright after being shoved?</p>
+      <div class="azh" lang="zh">机身姿态传感器立刻检测到速度和倾角的突变，控制器据此重新规划落足点，把支撑多边形移到质心运动的前方。这一过程常用简化的质心动力学模型做模型预测控制，在几十毫秒内滚动优化未来几步。同时腿部采用力控实现柔顺着地，避免反弹再次失稳。</div>
+      <div class="aen" lang="en">Body-mounted sensors immediately detect the sudden change in velocity and tilt, and the controller replans footholds so the support polygon moves ahead of the centre of mass motion. This is usually done with model predictive control on a simplified centroidal dynamics model, re-optimising the next few steps within tens of milliseconds. At the same time the legs use force control for compliant touchdown so the robot does not bounce and destabilise again.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#四足机器人</a> <a class="tag" href="#">#落足点规划</a> <a class="tag" href="#">#模型预测控制</a>
+    </article>
+
+
+    <article class="qitem" id="93aec28e033e">
+      <h2 class="qz" lang="zh">在足式机器人中，零力矩点 ZMP 准则如何保证动态行走不摔倒？</h2>
+      <p class="qen" lang="en">In legged robots, how does the ZMP criterion keep dynamic walking from falling?</p>
+      <div class="azh" lang="zh">ZMP 是地面上合压力中心的等效点；只要它落在支撑脚的多边形内，地面就能提供不引起翻倒的力和力矩。控制器实时调整步态与躯干姿态，把 ZMP 保持在支撑域内以维持平衡。</div>
+      <div class="aen" lang="en">The ZMP is the point where the net ground reaction&#x27;s moment is zero; if it stays inside the support polygon, the ground can supply forces without tipping. The controller adjusts gait and torso posture to keep ZMP within the support region for balance.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Vukobratović &amp; Borovac，《零力矩点——三十五年的发展》（2004）</p>
+        <p lang="en">Vukobratović &amp; Borovac, &#x27;Zero-Moment Point — Thirty Five Years of Its Life&#x27; (2004)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#ZMP</a> <a class="tag" href="#">#平衡</a> <a class="tag" href="#">#足式机器人</a>
+    </article>
+
+
+    <article class="qitem" id="9a4e69155b4b">
+      <h2 class="qz" lang="zh">无人机是怎样给地形画地图的？</h2>
+      <p class="qen" lang="en">How do drones map terrain?</p>
+      <div class="azh" lang="zh">无人机边飞边用摄像头或激光测距拍下大量重叠照片，软件把照片拼合并用三角测量算出每个点的高度，生成三维地形模型。</div>
+      <div class="aen" lang="en">Flying overhead, a drone takes many overlapping photos or laser range scans; software stitches them and uses triangulation to compute each point&#x27;s height into a 3D terrain model.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard &amp; Fox，《概率机器人学》（2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#无人机</a> <a class="tag" href="#">#测绘</a>
+    </article>
+
+
+    <article class="qitem" id="acc10a8d08f4">
+      <h2 class="qz" lang="zh">阻抗控制和单纯的力控制有什么区别？</h2>
+      <p class="qen" lang="en">How does impedance control differ from plain force control?</p>
+      <div class="azh" lang="zh">纯力控制直接把接触力当作被控量，力指令给定后位置随环境变化。阻抗控制则规定机器人末端表现出的刚度、阻尼和惯量，像一个可调的弹簧阻尼器，位置偏差自然转换为力。这样在环境刚度未知或接触瞬间也能保持稳定，更适合打磨、装配等接触作业。</div>
+      <div class="aen" lang="en">Pure force control makes the contact force itself the controlled variable, letting position drift with the environment once a force command is given. Impedance control instead prescribes the stiffness, damping and inertia the end effector appears to have, behaving like an adjustable spring-damper in which position error naturally becomes force. This stays stable even when environment stiffness is unknown or at the instant of impact, which suits polishing and assembly tasks.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#阻抗控制</a> <a class="tag" href="#">#接触作业</a> <a class="tag" href="#">#柔顺</a>
+    </article>
+
+
+    <article class="qitem" id="deacbda5ec2d">
+      <h2 class="qz" lang="zh">机器视觉是怎样让机器&#x27;读懂&#x27;图像的？</h2>
+      <p class="qen" lang="en">How does machine vision let a machine &#x27;read&#x27; images?</p>
+      <div class="azh" lang="zh">摄像头把画面变成数字像素，算法做边缘、形状和颜色等特征提取，再用训练好的模型分类或定位目标，从而完成检测、识别和引导。</div>
+      <div class="aen" lang="en">A camera turns a scene into pixels; algorithms extract features like edges, shapes and color, and a trained model classifies or locates targets to inspect, recognize or guide.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#机器视觉</a> <a class="tag" href="#">#图像识别</a>
+    </article>
+
+
+    <article class="qitem" id="eff3ca0f1e26">
+      <h2 class="qz" lang="zh">机械臂为什么要避开奇异位形？</h2>
+      <p class="qen" lang="en">Why must a robot arm avoid singular configurations?</p>
+      <div class="azh" lang="zh">奇异位形是指雅可比矩阵降秩的姿态，例如手臂完全伸直或两个关节轴共线。此时机器人在某个方向上失去运动能力，而按逆运动学求解会要求关节以极大速度旋转，导致报警或剧烈抖动。规划时要留出裕度，或采用阻尼最小二乘等方法平滑通过。</div>
+      <div class="aen" lang="en">A singular configuration is a pose where the Jacobian loses rank, for example when the arm is fully stretched or two joint axes line up. In that pose the robot cannot move in some direction, yet inverse kinematics demands enormous joint velocities, causing faults or violent shaking. Planners therefore keep a margin away from singularities, or pass through them smoothly using methods such as damped least squares.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《Introduction to Robotics: Mechanics and Control》（第3版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (3rd ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 1 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#奇异位形</a> <a class="tag" href="#">#雅可比</a> <a class="tag" href="#">#逆运动学</a>
+    </article>
+
+
+    <article class="qitem" id="eng_24_002">
+      <h2 class="qz" lang="zh">双足机器人在不平地面上为什么不摔跤?它每秒在做多少次「单脚站平衡计算」?</h2>
+      <p class="qen" lang="en">Why dont bipedal robots topple on uneven ground — how often must they solve balance every second?</p>
+      <div class="azh" lang="zh">核心概念是零力矩点(ZMP):地面支持力与重力的合力作用点。只要把它始终控制在脚掌支撑多边形内,身体就不会倾覆。控制器以数百赫兹的频率读取IMU与关节编码器,用模型预测控制滚动求解未来半秒内每一步落脚点和髋部轨迹,使ZMP轨迹贴合规划曲线;踩到石头这类扰动时,通过踝策略、跨步或甩臂角动量快速把ZMP拉回安全区。波士顿动力式的后空翻与抗推搡,本质是把这一平衡问题解得又快又鲁棒。</div>
+      <div class="aen" lang="en">The core concept is the zero-moment point (ZMP): the point where ground reaction and gravity net out. Keep it inside the foot&#x27;s support polygon and the body cannot tip over. Running at hundreds of hertz, controllers read IMUs and joint encoders while model-predictive control solves for footholds and hip trajectories half a second ahead, steering the ZMP along its planned path; disturbances like stepping on a stone trigger ankle strategies, recovery steps or arm swings to yank the ZMP back. Backflips and shove-recovery are this balance problem solved fast and robustly.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kajita 等,《ZMP based walking control》引出体系,见 Springer Handbook of Robotics 第2版,Springer,2016</p>
+        <p lang="en">S. Kajita et al., ZMP-based walking control framework, in Springer Handbook of Robotics, 2nd ed., Springer, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Springer+Handbook+of+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9783319325507 (2016)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#双足行走</a> <a class="tag" href="#">#零力矩点</a> <a class="tag" href="#">#模型预测控制</a>
+    </article>
+
+
+    <article class="qitem" id="ffc47138e315">
+      <h2 class="qz" lang="zh">什么是串联弹性驱动器，为什么腿式机器人喜欢用它？</h2>
+      <p class="qen" lang="en">What is a series elastic actuator and why do legged robots favour it?</p>
+      <div class="azh" lang="zh">串联弹性驱动器在电机与负载之间刻意串入一个已知刚度的弹簧，通过测量弹簧变形就能换算出输出力矩。弹簧还能吸收落地冲击、保护减速器，并让力控带宽内的力跟踪更平顺。缺点是弹性降低了位置控制带宽，高频响应变差。</div>
+      <div class="aen" lang="en">A series elastic actuator deliberately places a spring of known stiffness between the motor and the load, so measuring the spring deflection gives an accurate estimate of output torque. The spring also absorbs landing impacts, protects the gearbox and makes force tracking smoother within the control bandwidth. The drawback is that the added compliance lowers position-control bandwidth and degrades high-frequency response.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Koda, Osawa, Nagatsuka, Kariya,《Development of Bidirectional Series Elastic Actuator with Torsion Coil Spring and Implementation to the Legged Robot》,2024 IEEE/RSJ International Conference on Intelligent Robots,2024 (DOI: 10.1109/iros58592.2024.10802064)</p>
+        <p lang="en">Koda, Osawa, Nagatsuka, Kariya, &#x27;Development of Bidirectional Series Elastic Actuator with Torsion Coil Spring and Implementation to the Legged Robot&#x27;, 2024 IEEE/RSJ International Conference on Intelligent Robots, 2024, DOI: 10.1109/iros58592.2024.10802064</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/iros58592.2024.10802064" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/iros58592.2024.10802064</a></p>
+        
+      </details>
+      <a class="tag" href="#">#弹性驱动</a> <a class="tag" href="#">#力控</a> <a class="tag" href="#">#腿式机器人</a>
+    </article>
+
+
+    <article class="qitem" id="00e645602d1b">
+      <h2 class="qz" lang="zh">机器人的执行器是什么？</h2>
+      <p class="qen" lang="en">What is an actuator in a robot?</p>
+      <div class="azh" lang="zh">执行器是把电信号变成实际动作的部件，如电机、气缸、液压缸，它让机器人的关节转动、手臂伸缩，相当于机器人的肌肉。</div>
+      <div class="aen" lang="en">An actuator converts an electrical signal into motion, such as a motor or cylinder, making joints turn and arms move; it is the robot&#x27;s muscle.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#执行器</a> <a class="tag" href="#">#电机</a>
+    </article>
+
+
+    <article class="qitem" id="03045a176f3b">
+      <h2 class="qz" lang="zh">分拣线上的 Delta 并联机器人，为什么能比同尺寸的串联机械臂快好几倍？</h2>
+      <p class="qen" lang="en">Why can a Delta parallel robot on a packaging line move several times faster than a serial arm of similar size?</p>
+      <div class="azh" lang="zh">Delta 机构把三台电机全部固定在上方静平台，三条轻质连杆只传递力，运动部件的质量和转动惯量极小，末端加速度可以做到 10g 量级。多条支链共同承担负载，刚度沿闭链分布，末端也不像串联臂那样把每个关节的误差逐级放大，重复定位精度更容易做高。代价是工作空间小且形状复杂、姿态自由度少（典型只有三平移加一转），逆解简单但正解与奇异性分析比串联臂麻烦得多。</div>
+      <div class="aen" lang="en">A Delta places all three motors on the fixed upper platform and lets slim links carry only forces, so moving mass and inertia are tiny and end-effector accelerations around 10g become practical. Load is shared by several closed kinematic chains, giving high stiffness and avoiding the link-by-link error accumulation of a serial arm, so repeatability is easier to keep tight. The trade-offs are a small, awkwardly shaped workspace, few orientation degrees of freedom (typically three translations plus one rotation), and forward kinematics and singularity analysis that are much harder than for serial arms.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Merlet，《Parallel Robots》（第2版，Springer，2006）</p>
+        <p lang="en">Merlet, &#x27;Parallel Robots&#x27; (2nd ed., Springer, 2006)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Parallel+Robots" target="_blank" rel="noopener">核验依据 1 ISBN 9781402041327 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#并联机构</a> <a class="tag" href="#">#Delta机器人</a> <a class="tag" href="#">#工作空间</a>
+    </article>
+
+
+    <article class="qitem" id="12101e308f92">
+      <h2 class="qz" lang="zh">机器人关节为什么倾向用绝对值编码器？</h2>
+      <p class="qen" lang="en">Why do robot joints tend to use absolute encoders?</p>
+      <div class="azh" lang="zh">增量编码器只输出变化的脉冲，断电后位置信息丢失，重新上电必须先找零点。绝对值编码器每个角度都有唯一编码，上电即知实际关节角，省去回零动作，也避免撞到工件。对多圈运动的关节则采用多圈绝对式或加电池记忆圈数。</div>
+      <div class="aen" lang="en">An incremental encoder only outputs pulses for change, so position is lost at power-down and the joint must be homed after every restart. An absolute encoder gives a unique code for each angle, so the true joint position is known the moment power is applied, removing the homing move and the risk of colliding with the workpiece. Joints that turn many revolutions use multi-turn absolute encoders or battery-backed turn counters.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《机器人学导论：力学与控制》（第4版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (4th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-gb/subject-catalog/p/introduction-to-robotics-global-edition/P200000003994/9781292498164" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-292-49816-4 (Global Edition, 4th ed., Pearson</a> · <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 2 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编码器</a> <a class="tag" href="#">#回零</a> <a class="tag" href="#">#位置反馈</a>
+    </article>
+
+
+    <article class="qitem" id="15af10be8a35">
+      <h2 class="qz" lang="zh">什么是 PID 控制，它如何让机器人手臂稳定到达目标位置？</h2>
+      <p class="qen" lang="en">What is PID control and how does it move a robot arm to a target steadily?</p>
+      <div class="azh" lang="zh">PID 根据当前位置与目标的位置误差，分别用比例、积分、微分三项计算控制量。比例快速响应，积分消除稳态偏差，微分抑制超调，三者配合让手臂平滑且准确地停在目标点。</div>
+      <div class="aen" lang="en">PID computes control from the position error using proportional, integral, and derivative terms. Proportion responds fast, integral removes steady error, derivative damps overshoot, together bringing the arm smoothly and accurately to the target.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Åström &amp; Hägglund，《PID控制器：理论、设计与整定》（第2版）</p>
+        <p lang="en">Åström &amp; Hägglund, &#x27;PID Controllers: Theory, Design and Tuning&#x27; (2nd ed.)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#PID</a> <a class="tag" href="#">#控制</a> <a class="tag" href="#">#机器人</a>
+    </article>
+
+
+    <article class="qitem" id="21b71f136096">
+      <h2 class="qz" lang="zh">为什么很多机器人用直流无刷电机而不是普通直流电机？</h2>
+      <p class="qen" lang="en">Why do many robots use brushless DC motors instead of brushed ones?</p>
+      <div class="azh" lang="zh">无刷电机用电子换向取代碳刷，没有机械磨损和火花，效率更高、寿命更长，而且转速范围和功率密度更好，适合需要精确调速的机器人关节。</div>
+      <div class="aen" lang="en">Brushless motors replace carbon brushes with electronic commutation—no mechanical wear or sparks, higher efficiency and longer life, plus better speed range and power density, ideal for precisely controlled robot joints.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#无刷电机</a> <a class="tag" href="#">#换向</a> <a class="tag" href="#">#机器人</a>
+    </article>
+
+
+    <article class="qitem" id="306452bbc49b">
+      <h2 class="qz" lang="zh">机器人“力控”和“位置控”有什么不同，为什么装配插孔这类活必须有力反馈？</h2>
+      <p class="qen" lang="en">How do force control and position control differ, and why must peg-in-hole assembly have force feedback?</p>
+      <div class="azh" lang="zh">位置控只管走到指定坐标，硬碰硬易卡死或撞坏；力控则把接触力作为目标，让末端柔顺地贴合并顺误差滑入。插孔时微妙的侧向力正是引导对正的信号。</div>
+      <div class="aen" lang="en">Position control only reaches set coordinates and can jam or crash; force control makes contact force the target so the end-effector compliantly mates and slides in. The subtle sideways force during insertion is exactly the signal that guides alignment.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《机器人学导论：力学与控制》（第4版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (4th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-gb/subject-catalog/p/introduction-to-robotics-global-edition/P200000003994/9781292498164" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-292-49816-4 (Global Edition, 4th ed., Pearson</a> · <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 2 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#力控</a> <a class="tag" href="#">#柔顺</a> <a class="tag" href="#">#装配</a>
+    </article>
+
+
+    <article class="qitem" id="3b4b74aaecf0">
+      <h2 class="qz" lang="zh">在冗余机械臂中，为什么雅可比伪逆可以用来分配各关节的运动？</h2>
+      <p class="qen" lang="en">In a redundant manipulator, why does the Jacobian pseudoinverse allocate joint motions?</p>
+      <div class="azh" lang="zh">冗余机械臂关节数多于任务自由度，雅可比矩阵不是方阵。用伪逆可求出让末端以最小关节速度实现期望运动的最小二乘解，还能在零空间里加入额外任务如避障。</div>
+      <div class="aen" lang="en">A redundant arm has more joints than task degrees of freedom, so its Jacobian isn&#x27;t square. The pseudoinverse gives the least-squares joint velocities for a desired end-effector motion with minimal joint speed, and the null space can host extra tasks like obstacle avoidance.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#雅可比</a> <a class="tag" href="#">#冗余</a> <a class="tag" href="#">#逆运动学</a>
+    </article>
+
+
+    <article class="qitem" id="4d776bc16b98">
+      <h2 class="qz" lang="zh">工业机械臂的发展史上有哪几个里程碑？</h2>
+      <p class="qen" lang="en">What were the key milestones in the history of industrial robot arms?</p>
+      <div class="azh" lang="zh">Devol 在 1954 年申请了可编程搬运装置专利，Engelberger 把它商业化推出 Unimate，1961 年进入通用汽车生产线；随后 PUMA 等标准化机型确立了六轴构型。这奠定了现代工业机器人产业。</div>
+      <div class="aen" lang="en">Devol filed a patent for a programmable transfer device in 1954; Engelberger commercialized it as Unimate, which entered a GM production line in 1961, and later standardized six-axis arms like PUMA. This founded the modern industrial robot industry.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Engelberger,《Robotics in Practice》,1983 (DOI: 10.1007/978-1-4684-7120-5)；IFR《工业机器人史》</p>
+        <p lang="en">Engelberger, &#x27;Robotics in Practice&#x27;, 1983, DOI: 10.1007/978-1-4684-7120-5; International Federation of Robotics (IFR), &#x27;History of Industrial Robots&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1007/978-1-4684-7120-5" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1007/978-1-4684-7120-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#工业机械臂</a> <a class="tag" href="#">#Unimate</a> <a class="tag" href="#">#Engelberger</a> <a class="tag" href="#">#六轴</a>
+    </article>
+
+
+    <article class="qitem" id="4f3dcd244e10">
+      <h2 class="qz" lang="zh">机器人是靠什么来&#x27;看&#x27;世界的？</h2>
+      <p class="qen" lang="en">How do robots &#x27;see&#x27; the world?</p>
+      <div class="azh" lang="zh">机器人用摄像头、激光雷达、超声波等传感器收集信息，再由电脑把数据变成距离、形状和位置，从而避开障碍、识别物体。</div>
+      <div class="aen" lang="en">Robots use cameras, lidar and ultrasonic sensors to gather data, and a computer turns it into distance, shape and position so they can avoid obstacles and recognize objects.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#传感器</a> <a class="tag" href="#">#感知</a>
+    </article>
+
+
+    <article class="qitem" id="532fa730ad88">
+      <h2 class="qz" lang="zh">激光雷达是怎么测距的？</h2>
+      <p class="qen" lang="en">How does lidar measure distance?</p>
+      <div class="azh" lang="zh">常见飞行时间法（ToF）向目标发射激光并测量反射光返回的时间，用光速乘以半程时间得到距离；也有三角测距法用于近距离。</div>
+      <div class="aen" lang="en">Time-of-flight lidar fires a laser and measures return time, computing distance from light speed and half the travel time; triangulation is used for short range.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Wehr, A., Lohr, U.,《Airborne laser scanning—an introduction and overview》, ISPRS Journal of Photogrammetry and Remote Sensing, 1999 (DOI: 10.1016/s0924-2716(99)00011-8)；激光雷达原理</p>
+        <p lang="en">Wehr, Lohr, &#x27;Airborne laser scanning—an introduction and overview&#x27;, ISPRS Journal of Photogrammetry and Remote Sensing, 1999, DOI: 10.1016/s0924-2716(99)00011-8; lidar principles</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1016/s0924-2716(99)00011-8" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1016/s0924-2716(99)00011-8</a></p>
+        
+      </details>
+      <a class="tag" href="#">#激光雷达</a> <a class="tag" href="#">#测距</a>
+    </article>
+
+
+    <article class="qitem" id="64cda967f528">
+      <h2 class="qz" lang="zh">为什么大多数工业机械臂刚好有6个关节（6自由度）？</h2>
+      <p class="qen" lang="en">Why do most industrial robot arms have exactly 6 joints (6 DOF)?</p>
+      <div class="azh" lang="zh">一个刚体在三维空间里有6种独立运动：沿x、y、z三个方向的移动和绕三个轴的转动。要让末端工具到达任意位置并朝向任意方向，就需要恰好6个自由度去匹配这6个参数。少于6个只能实现特定的姿态，多于6个虽然更灵活、能避障，但控制也复杂得多。6自由度机械臂的逆运动学有解析解，所以成了工业标准；每个关节由伺服电机配减速器驱动。</div>
+      <div class="aen" lang="en">A rigid body in 3-D space has 6 independent motions: translation along x, y, and z plus rotation about three axes. To place the end-effector at any position with any orientation, you need exactly 6 DOF to match those 6 parameters. With fewer than 6 you can only reach some orientations; with more you gain agility and obstacle avoidance but far more complex control. A 6-DOF arm&#x27;s inverse kinematics has closed-form solutions, which is why it became the industrial standard; each joint is driven by a servo motor plus gearbox.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">濮良贵 陈国定 吴立言 主编,《机械设计》第10版,高等教育出版社,2019</p>
+        <p lang="en">Piao Lianggui, Chen Guoding and Wu Liyan eds., Machine Design, 10th ed., Higher Education Press, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/34791668/" target="_blank" rel="noopener">核验依据 2 ISBN 9787040514216（豆瓣书目条目: 机械设计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#自由度</a> <a class="tag" href="#">#机械臂</a> <a class="tag" href="#">#运动学</a>
+    </article>
+
+
+    <article class="qitem" id="67abf61f15b5">
+      <h2 class="qz" lang="zh">为什么训练机器人学新动作常用“强化学习”，它和给指令编程有什么不同？</h2>
+      <p class="qen" lang="en">Why is reinforcement learning often used to teach robots new motions, and how does it differ from programming instructions?</p>
+      <div class="azh" lang="zh">传统编程是把每一步写死，环境一变就傻眼；强化学习让机器在试错中根据奖励自己摸索策略，更会应对不确定。像练骑车，摔几次后自己找到平衡。</div>
+      <div class="aen" lang="en">Traditional programming hard-codes every step and fails when the world changes; reinforcement learning lets the machine explore and shape its own policy from rewards, coping with uncertainty. Like learning to ride—after a few falls it finds balance.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Sutton &amp; Barto，《强化学习：导论》（第2版）</p>
+        <p lang="en">Sutton &amp; Barto, &#x27;Reinforcement Learning: An Introduction&#x27; (2nd ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/reinforcementlea0000sutt" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 reinforcementlea0000sutt：Reinforcement learni</a></p>
+        
+      </details>
+      <a class="tag" href="#">#强化学习</a> <a class="tag" href="#">#试错</a> <a class="tag" href="#">#奖励</a>
+    </article>
+
+
+    <article class="qitem" id="6b0bc50446fa">
+      <h2 class="qz" lang="zh">为什么六轴机械臂通常刚好六个自由度？</h2>
+      <p class="qen" lang="en">Why do six-axis arms usually have exactly six degrees of freedom?</p>
+      <div class="azh" lang="zh">空间中的刚体位姿由3个位置加3个姿态共6个量描述，六自由度足以让末端到达任意位姿，再多主要为了避障与灵活性。</div>
+      <div class="aen" lang="en">A rigid body pose needs 3 positions plus 3 orientations; six DOF lets the end-effector reach any pose, with extra joints mainly for avoidance and flexibility.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#运动学</a>
+    </article>
+
+
+    <article class="qitem" id="6c7bdff33cce">
+      <h2 class="qz" lang="zh">自动驾驶汽车是怎样知道自己在哪里、该往哪走的？</h2>
+      <p class="qen" lang="en">How does a self-driving car know where it is and where to go?</p>
+      <div class="azh" lang="zh">它用卫星定位知道大致位置，再用激光雷达和摄像头识别车道线与障碍物，配合高精度地图不断修正路线，由电脑决定加速、刹车和转向。</div>
+      <div class="aen" lang="en">It uses satellite positioning for a rough location, lidar and cameras to read lanes and obstacles, and a detailed map to refine the route while a computer controls speed, braking and steering.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard &amp; Fox，《概率机器人学》（2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#自动驾驶</a> <a class="tag" href="#">#定位</a>
+    </article>
+
+
+    <article class="qitem" id="70b8a9ede462">
+      <h2 class="qz" lang="zh">机器人的重复定位精度和绝对定位精度有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a robot&#x27;s repeatability and its absolute accuracy?</p>
+      <div class="azh" lang="zh">重复定位精度衡量机器人多次回到同一示教点时位置的分散程度，主要取决于机械间隙和编码器分辨率，工业臂常达到零点零几毫米。绝对定位精度衡量实际到达点与指令坐标的偏差，还受连杆尺寸误差、热变形和标定质量影响，通常比重复精度差一个数量级。离线编程依赖绝对精度，因此必须做运动学标定。</div>
+      <div class="aen" lang="en">Repeatability measures how tightly a robot returns to the same taught point on repeated trials and depends mainly on mechanical backlash and encoder resolution, often a few hundredths of a millimetre on industrial arms. Absolute accuracy measures the deviation between the point actually reached and the commanded coordinates, and is additionally affected by link dimension errors, thermal deformation and calibration quality, typically an order of magnitude worse. Offline programming relies on absolute accuracy, so kinematic calibration is essential.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">ISO 230-2 机床定位精度评定标准；K. K. Tan、S. Huang、T. H. Lee 等,《Precision Motion Control: Design and Implementation》第2版(Springer) 双反馈章节；西门子 SINAMICS V90 应用文档</p>
+        <p lang="en">ISO 230-2 positioning accuracy evaluation standard; K.K. Tan, S. Huang, T.H. Lee et al., Precision Motion Control: Design and Implementation, 2nd ed. (Springer), dual-feedback chapter; Siemens SINAMICS V90 application documentation</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17384900W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17384900W：Precision Motion Contr</a></p>
+        
+      </details>
+      <a class="tag" href="#">#重复精度</a> <a class="tag" href="#">#绝对精度</a> <a class="tag" href="#">#标定</a>
+    </article>
+
+
+    <article class="qitem" id="7eb81ba0dd5a">
+      <h2 class="qz" lang="zh">机械臂高速运动停下时末端为什么会抖动？</h2>
+      <p class="qen" lang="en">Why does a robot arm&#x27;s tip vibrate when it stops after fast motion?</p>
+      <div class="azh" lang="zh">臂杆、减速器和皮带都有弹性，高速运动积累的动能在减速时激发结构的低阶固有振动，表现为末端残余抖动。工程上通过提高结构刚度、减小末端惯量，以及采用S形加减速曲线或输入整形来抑制。控制上还可以加入振动观测和阻尼补偿。</div>
+      <div class="aen" lang="en">Links, reducers and belts all have finite elasticity, so the kinetic energy of fast motion excites the structure&#x27;s low-order natural modes during deceleration, appearing as residual vibration at the tip. Engineers suppress it by stiffening the structure, reducing distal inertia, and using S-curve acceleration profiles or input shaping. Controllers can additionally estimate the vibration and add active damping.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#残余振动</a> <a class="tag" href="#">#轨迹规划</a> <a class="tag" href="#">#刚度</a>
+    </article>
+
+
+    <article class="qitem" id="917c76b99eb4">
+      <h2 class="qz" lang="zh">机器人末端夹爪是怎样适应不同形状和材质的物体的？</h2>
+      <p class="qen" lang="en">How do robot end-effector grippers adapt to different shapes and materials?</p>
+      <div class="azh" lang="zh">夹爪有平行夹爪、三指、柔性手和真空吸盘等多种形式：刚性夹爪靠几何包络夹持，真空吸盘靠负压吸附光滑表面。设计时要考虑物体质量、表面摩擦和是否易碎，Monkman 等对此有系统总结。</div>
+      <div class="aen" lang="en">Grippers come as parallel jaws, three-finger hands, compliant hands, and vacuum cups: rigid jaws grip by geometric envelopment while vacuum cups cling to smooth surfaces by negative pressure. Mass, surface friction, and fragility all guide the choice—surveyed systematically by Monkman and others.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Monkman 等《机器人夹爪》(Robot Grippers)（Wiley-VCH，2007）</p>
+        <p lang="en">Monkman et al., &#x27;Robot Grippers&#x27; (Wiley-VCH, 2007)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Robot+Grippers" target="_blank" rel="noopener">核验依据 1 ISBN 9783527609895 (2007)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#夹爪</a> <a class="tag" href="#">#真空吸盘</a> <a class="tag" href="#">#末端执行器</a> <a class="tag" href="#">#柔性手</a>
+    </article>
+
+
+    <article class="qitem" id="9e23c7c5bb2a">
+      <h2 class="qz" lang="zh">机器人关节里装力矩传感器有什么用？</h2>
+      <p class="qen" lang="en">What is the purpose of a torque sensor inside a robot joint?</p>
+      <div class="azh" lang="zh">关节力矩传感器直接测量输出轴承受的力矩，比用电机电流估算更准确，因为它绕过了减速器摩擦和效率变化。有了它机器人可以感知碰撞并立即停下，也能实现精细的柔顺装配和拖动示教。代价是成本高、需要良好的抗过载与温漂设计。</div>
+      <div class="aen" lang="en">A joint torque sensor measures the torque actually transmitted by the output shaft, which is more accurate than estimating from motor current because it bypasses gearbox friction and efficiency variation. With it the robot can detect a collision and stop immediately, and can perform delicate compliant assembly or hand-guided teaching. The downsides are cost and the need for good overload protection and temperature-drift design.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#力矩传感器</a> <a class="tag" href="#">#碰撞检测</a> <a class="tag" href="#">#柔顺控制</a>
+    </article>
+
+
+    <article class="qitem" id="a075e47488e2">
+      <h2 class="qz" lang="zh">工业机械臂关节里为什么常用谐波减速器？</h2>
+      <p class="qen" lang="en">Why do industrial robot joints often use harmonic drive reducers?</p>
+      <div class="azh" lang="zh">谐波减速器靠一个柔性薄壁齿轮变形与刚性齿圈啮合，能在很小的体积内实现上百倍减速。它的齿隙极小、传动精度高，正好满足机械臂对定位精度的要求。代价是柔轮寿命有限、承受冲击的能力不如齿轮箱。</div>
+      <div class="aen" lang="en">A harmonic drive uses a thin flexible gear cup that deforms and meshes with a rigid ring gear, achieving reduction ratios of a hundred or more in a very compact package. Its backlash is extremely small and its transmission accuracy is high, which matches the positioning precision robot arms need. The trade-off is the limited fatigue life of the flexspline and lower tolerance to shock loads than a conventional gearbox.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">Harmonic Drive Systems 官方技术文献《Harmonic Drive Gearing》(谐波齿轮基本原理与应用)</p>
+        <p lang="en">Harmonic Drive Systems, &#x27;Harmonic Drive Gearing&#x27; Technical Literature (basic principles and applications)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#减速器</a> <a class="tag" href="#">#机械臂</a> <a class="tag" href="#">#传动</a>
+    </article>
+
+
+    <article class="qitem" id="b3b18c0c5fe4">
+      <h2 class="qz" lang="zh">为什么机械臂能精确控制抓取易碎物品的力度而不捏碎？</h2>
+      <p class="qen" lang="en">How can a robot arm grasp a fragile object without crushing it?</p>
+      <div class="azh" lang="zh">机械臂靠力/力矩传感器做闭环控制。六维力传感器装在腕部，同时测量三个方向的力和绕三个轴的力矩；指尖或夹爪上的触觉传感器则感知接触压强的分布。控制回路实时对比目标力与实际值，一旦超过阈值立即减小夹紧力。这就是为什么灵巧手能轻轻捏起鸡蛋，精密装配也能在接触瞬间感知碰撞而不损伤零件。</div>
+      <div class="aen" lang="en">A robot arm controls grasp force through closed-loop sensing. A six-axis force/torque sensor at the wrist measures forces in three axes and torques about three axes, while tactile sensors on the fingers map the distribution of contact pressure. The control loop compares the desired and actual force continuously and eases off the instant it exceeds the threshold. That is how a dexterous hand can gently pick up an egg, and how precision assembly can sense contact without damaging parts.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#力觉传感器</a> <a class="tag" href="#">#触觉</a> <a class="tag" href="#">#闭环控制</a>
+    </article>
+
+
+    <article class="qitem" id="c3d5688cece5">
+      <h2 class="qz" lang="zh">PID控制器中的三个字母分别代表什么？</h2>
+      <p class="qen" lang="en">What do the three terms in a PID controller mean?</p>
+      <div class="azh" lang="zh">P是比例，按当前误差大小反应；I是积分，消除长期稳态误差；D是微分，抑制超调与振荡。三者结合广泛用于运动控制。</div>
+      <div class="aen" lang="en">P is proportional to current error, I integrates to remove steady-state error, and D differentiates to damp overshoot; together they dominate motion control.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Astrom &amp; Hagglund《PID 控制器》(1995)</p>
+        <p lang="en">Astrom &amp; Hagglund, PID Controllers (1995)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#控制</a> <a class="tag" href="#">#PID</a>
+    </article>
+
+
+    <article class="qitem" id="c5e59372d515">
+      <h2 class="qz" lang="zh">自主移动机器人通常由哪些模块组成？</h2>
+      <p class="qen" lang="en">What modules make up an autonomous mobile robot?</p>
+      <div class="azh" lang="zh">典型包括感知、定位、规划、控制四大模块，形成看到、定位、决策、行动的闭环。</div>
+      <div class="aen" lang="en">It typically has perception, localization, planning and control, forming a closed loop of sense, locate, decide and act.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#系统架构</a>
+    </article>
+
+
+    <article class="qitem" id="c7ff7e16f5c6">
+      <h2 class="qz" lang="zh">机械臂换了新夹爪后为什么必须重新标定工具中心点？</h2>
+      <p class="qen" lang="en">Why must the tool centre point be recalibrated after changing a robot gripper?</p>
+      <div class="azh" lang="zh">机器人内部只知道法兰盘的位姿，工具中心点是法兰到实际作业点的一个固定偏移。换夹爪后这个偏移的长度和方向都变了，如果不重新标定，示教好的轨迹就会整体错位。标定通常让机器人用不同姿态触碰同一个固定尖点，反解出偏移量。</div>
+      <div class="aen" lang="en">The controller only knows the pose of the mounting flange; the tool centre point is a fixed offset from that flange to the actual working point. Changing the gripper changes both the length and direction of that offset, so without recalibration every taught trajectory is shifted. Calibration typically has the robot touch one fixed sharp point from several different orientations and solves for the offset.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig，《机器人学导论：力学与控制》（第4版）</p>
+        <p lang="en">Craig, &#x27;Introduction to Robotics: Mechanics and Control&#x27; (4th ed.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-gb/subject-catalog/p/introduction-to-robotics-global-edition/P200000003994/9781292498164" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-292-49816-4 (Global Edition, 4th ed., Pearson</a> · <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Robotics:+Mechanics+and+Control" target="_blank" rel="noopener">核验依据 2 ISBN 9780201543612 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#标定</a> <a class="tag" href="#">#工具坐标系</a> <a class="tag" href="#">#示教</a>
+    </article>
+
+
+    <article class="qitem" id="c9e52b5b18fd">
+      <h2 class="qz" lang="zh">机械臂为什么能一遍又一遍地做得很精准？</h2>
+      <p class="qen" lang="en">Why can a robotic arm repeat precise movements again and again?</p>
+      <div class="azh" lang="zh">机械臂每个关节都有编码器随时报告角度，控制器对照设定程序不断微调，所以每次都走到几乎完全相同的地方，比人手更稳。</div>
+      <div class="aen" lang="en">Each joint has an encoder reporting its angle, and a controller constantly corrects against the program, so the arm reaches nearly the same spot every time, steadier than a hand.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#机械臂</a> <a class="tag" href="#">#控制</a>
+    </article>
+
+
+    <article class="qitem" id="ce6823ff2249">
+      <h2 class="qz" lang="zh">扫地机器人在陌生房间里怎么知道自己在哪、该往哪走？</h2>
+      <p class="qen" lang="en">How does a robot vacuum know where it is in an unfamiliar room and where to go?</p>
+      <div class="azh" lang="zh">它使用SLAM（同时定位与建图）技术：激光雷达或视觉传感器持续提取环境特征，机器人一边估计自身位姿，一边把特征点拼成地图，同步完成&quot;我在哪里&quot;和&quot;周围长什么样&quot;。里程计、陀螺仪与观测数据用粒子滤波或图优化融合，消除长时间行走产生的累积漂移。清扫路径因此从随机乱撞变成了规划好的全覆盖，自动驾驶车的定位也依赖同一套思路。</div>
+      <div class="aen" lang="en">It uses SLAM (simultaneous localization and mapping): lidar or vision sensors keep extracting landmarks, and the robot estimates its own pose while stitching the features into a map — answering &quot;where am I&quot; and &quot;what does the place look like&quot; at the same time. Wheel odometry, gyros, and sensor measurements are fused with particle filters or graph optimization to remove the drift accumulated over long travel. That is why cleaning paths went from random bumping to planned full coverage; self-driving cars rely on the same idea.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SLAM</a> <a class="tag" href="#">#定位</a> <a class="tag" href="#">#建图</a>
+    </article>
+
+
+    <article class="qitem" id="d5b7bdebfb8d">
+      <h2 class="qz" lang="zh">深度相机常见的结构光、飞行时间和双目三种原理有何不同？</h2>
+      <p class="qen" lang="en">How do structured light, time-of-flight and stereo depth cameras differ?</p>
+      <div class="azh" lang="zh">结构光投出已知的编码图案，根据图案变形算深度，近距离精度高但怕强光。飞行时间相机测量调制光往返的时间或相位，帧率高、量程较远，分辨率一般。双目靠两个镜头的视差三角测量，不主动发光，但在纹理稀少的白墙上容易失效。</div>
+      <div class="aen" lang="en">Structured light projects a known coded pattern and computes depth from its distortion, giving high accuracy at short range but suffering in bright sunlight. Time-of-flight cameras measure the round-trip time or phase of modulated light, offering high frame rates and longer range with modest resolution. Stereo cameras triangulate the disparity between two lenses without emitting light, but fail on textureless surfaces such as blank walls.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Zanuttigh, Marin, Dal Mutto, Dominio,《Time-of-Flight and Structured Light Depth Cameras》, 2016 (DOI: 10.1007/978-3-319-30973-6)</p>
+        <p lang="en">Zanuttigh, Marin, Dal Mutto, Dominio, &#x27;Time-of-Flight and Structured Light Depth Cameras&#x27;, 2016, DOI: 10.1007/978-3-319-30973-6</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1007/978-3-319-30973-6" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1007/978-3-319-30973-6：Time-of-Flight and</a></p>
+        
+      </details>
+      <a class="tag" href="#">#深度相机</a> <a class="tag" href="#">#三维感知</a> <a class="tag" href="#">#传感器</a>
+    </article>
+
+
+    <article class="qitem" id="da6cf70da596">
+      <h2 class="qz" lang="zh">协作机器人和传统工业机器臂有何不同？</h2>
+      <p class="qen" lang="en">How do collaborative robots differ from traditional industrial arms?</p>
+      <div class="azh" lang="zh">协作机器人设计为人机共享工作空间，具备力觉与碰撞检测，碰撞即停，通常无需安全围栏；传统机器人速度快、需隔离防护。</div>
+      <div class="aen" lang="en">Cobots are built to share space with humans, with force sensing and collision detection so they stop on contact, usually needing no safety fence; traditional arms are fast and fenced off.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEC 61131-3（PLC）；ISO 3691-4（AGV 安全）；Groover《自动化生产系统》</p>
+        <p lang="en">IEC 61131-3 (PLC); ISO 3691-4 (AGV safety); Groover, Automation, Production Systems, and Computer-Integrated Manufacturing</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3752129W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3752129W：Automation, Production </a></p>
+        
+      </details>
+      <a class="tag" href="#">#协作机器人</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="df60b989f356">
+      <h2 class="qz" lang="zh">机器人用蒙特卡洛（粒子滤波）定位时，成百上千个『粒子』到底代表什么？</h2>
+      <p class="qen" lang="en">In Monte Carlo localization, what do the hundreds or thousands of particles a robot maintains actually represent?</p>
+      <div class="azh" lang="zh">每个粒子是对机器人位姿的一个假设，粒子群整体近似表示位姿的概率分布，因此分布可以是多峰的，不必像卡尔曼滤波那样假设高斯形状。机器人运动时按运动模型给每个粒子加噪声推进，收到激光或视觉观测后按观测似然给粒子打权重，再按权重重采样，使假设逐步向真实位姿聚集。在长走廊等对称环境里粒子会暂时分成几团，直到出现有区分度的观测才收敛，这正是它比单峰滤波更鲁棒的地方。</div>
+      <div class="aen" lang="en">Each particle is one hypothesis about the robot&#x27;s pose, and the particle set as a whole approximates the pose probability distribution, which may be multi-modal rather than the single Gaussian a Kalman filter assumes. Motion is propagated by sampling from the motion model, then laser or visual measurements assign importance weights, and resampling concentrates particles where the observation likelihood is high. In symmetric places such as long corridors the cloud legitimately splits into several clusters until a distinctive observation resolves the ambiguity, which is exactly why the method is more robust than unimodal filters.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard、Fox，《Probabilistic Robotics》（MIT Press，2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (MIT Press, 2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#蒙特卡洛定位</a> <a class="tag" href="#">#粒子滤波</a> <a class="tag" href="#">#概率机器人</a>
+    </article>
+
+
+    <article class="qitem" id="e0580e95214c">
+      <h2 class="qz" lang="zh">什么是末端执行器，不同任务为什么要换不同的夹爪？</h2>
+      <p class="qen" lang="en">What is an end-effector and why swap grippers for different tasks?</p>
+      <div class="azh" lang="zh">末端执行器是装在机械臂最前端的手，直接接触工件。抓取易碎蛋、拧螺丝、焊接需要的动作和力度完全不同，因此换上吸盘、夹钳或焊枪等专用工具才能高效完成任务。</div>
+      <div class="aen" lang="en">The end-effector is the hand at the arm&#x27;s tip that touches the work. Picking a fragile egg, tightening a screw, or welding need totally different motions and forces, so swapping in suction cups, grippers, or welders makes each task efficient.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#末端执行器</a> <a class="tag" href="#">#夹爪</a> <a class="tag" href="#">#工具</a>
+    </article>
+
+
+    <article class="qitem" id="eng_24_001">
+      <h2 class="qz" lang="zh">工业机械臂为什么能把焊枪送到同一个点,误差不到0.05毫米?</h2>
+      <p class="qen" lang="en">How do industrial robot arms return a welding torch to the same spot with errors under 0.05 mm?</p>
+      <div class="azh" lang="zh">三重保障叠加。其一是刚性:手臂多为铸钢或铝合金箱体结构,受载弹性变形很小;其二是传动:伺服电机的高转速经谐波减速器或RV减速器降速上百倍并放大扭矩,这类减速器还把齿隙压到1弧分以内,消除反向空程;其三是标定:出厂后用激光跟踪仪等设备辨识运动学参数表,控制器据此把目标位姿换算成各关节角度。重复精度因此远高于绝对精度——机器人擅长的是每次都回到上次的位置。</div>
+      <div class="aen" lang="en">Three layers stack up. Rigidity: cast-steel or aluminum box structures keep load deflection small. Transmission: servomotor speed passes through harmonic or RV reducers geared down over a hundredfold to multiply torque, with backlash squeezed below one arc-minute to eliminate lost motion on reversal. Calibration: laser trackers identify the kinematic parameters after assembly so the controller converts desired pose into joint angles. Hence repeat accuracy far exceeds absolute accuracy — robots excel at returning to where they were.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano 与 Khatib 主编,《Springer Handbook of Robotics》第2版,Springer,2016</p>
+        <p lang="en">B. Siciliano and O. Khatib eds., Springer Handbook of Robotics, 2nd ed., Springer, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Springer+Handbook+of+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9783319325507 (2016)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#工业机器人</a> <a class="tag" href="#">#谐波减速器</a> <a class="tag" href="#">#重复定位精度</a>
+    </article>
+
+
+    <article class="qitem" id="eng_24_017">
+      <h2 class="qz" lang="zh">协作机器人凭什么敢和工人共用一张工位而不用围栏?安全标准怎么定义的?</h2>
+      <p class="qen" lang="en">How do collaborative robots dare share a bench with workers fence-free? What do safety standards say?</p>
+      <div class="azh" lang="zh">传统工业机器人的安全策略是隔离:围栏加光栅,人进即停线。协作机器人换思路为内在安全:轻量化圆角外壳消除夹伤点;关节内置力矩传感器,碰撞检测从电机电流反推异常力,几毫秒内停机或反弹;速度与空间限制在ISO/TS 15066阈值内——标准甚至给出人体各部位可承受的最大压力与能量表(额头最脆弱),厂商据此标定停机距离。人机由此能真正交接零件。代价是负载多在十公斤级——安全的本质是能量管理,而非勇气。</div>
+      <div class="aen" lang="en">Classic industrial robots isolate: fences plus light curtains stop everything when humans approach. Cobots instead build safety inward: lightweight rounded shells remove pinch points; joint torque sensors detect abnormal forces from motor current within milliseconds, halting or rebounding; speed and space obey ISO/TS 15066 thresholds whose tables list maximum tolerable pressure and energy per body region (forehead most fragile) so makers calibrate stopping distances. Humans and robots can truly hand over parts. The tradeoff is payloads around ten kilograms — safety is energy management, not courage.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">国际标准化组织（ISO）,《Robots and robotic devices. Collaborative robots》,ISO/TS 15066 (DOI: 10.3403/30295037u)</p>
+        <p lang="en">ISO, &#x27;Robots and robotic devices. Collaborative robots&#x27;, ISO/TS 15066, DOI: 10.3403/30295037u</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.3403/30295037u" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.3403/30295037u</a></p>
+        
+      </details>
+      <a class="tag" href="#">#协作机器人</a> <a class="tag" href="#">#ISO/TS 15066</a> <a class="tag" href="#">#碰撞检测</a>
+    </article>
+
+
+    <article class="qitem" id="f558ee381e8a">
+      <h2 class="qz" lang="zh">轮式机器人的里程计为什么走久了位置就不准？</h2>
+      <p class="qen" lang="en">Why does a wheeled robot&#x27;s odometry position become inaccurate over time?</p>
+      <div class="azh" lang="zh">轮式里程计假设轮子纯滚动，用轮转数推算走了多远。实际地面会打滑、轮胎会磨损变径、两轮直径存在细微差异，这些误差在积分中不断累加，方向误差尤其致命。所以必须靠激光雷达、视觉或信标做闭环校正，把累积误差周期性拉回。</div>
+      <div class="aen" lang="en">Wheel odometry assumes pure rolling and infers travelled distance from wheel rotations. In practice wheels slip, tyres wear and change diameter, and the two wheels differ slightly in size; these errors accumulate through integration, with heading error being especially damaging. That is why lidar, vision or beacons are used to close the loop and periodically pull the accumulated error back.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard &amp; Fox，《概率机器人学》（2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#里程计</a> <a class="tag" href="#">#打滑</a> <a class="tag" href="#">#定位</a>
+    </article>
+
+
+    <article class="qitem" id="f837ccc64b4d">
+      <h2 class="qz" lang="zh">机器视觉在质量检测中如何工作？</h2>
+      <p class="qen" lang="en">How does machine vision work in quality inspection?</p>
+      <div class="azh" lang="zh">摄像头拍摄工件，算法对比标准模板检测尺寸、划痕、缺料等缺陷，速度快、可100%在线全检，减少人工漏检。</div>
+      <div class="aen" lang="en">A camera images the part and algorithms compare it to a standard to find size, scratch or missing-feature defects, enabling fast 100 percent inline inspection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器视觉</a> <a class="tag" href="#">#质量检测</a>
+    </article>
+
+
+    <article class="qitem" id="02d9aba12be6">
+      <h2 class="qz" lang="zh">ROS是什么？</h2>
+      <p class="qen" lang="en">What is ROS?</p>
+      <div class="azh" lang="zh">ROS（机器人操作系统）不是真正操作系统，而是一套用于机器人开发的通信框架与工具库，提供话题、服务、硬件抽象等，便于模块复用。</div>
+      <div class="aen" lang="en">ROS (Robot Operating System) is a middleware and toolset, not a true OS, offering topics, services and hardware abstraction that ease modular robot development.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Quigley 等《ROS：开源机器人操作系统》(2009/2014)</p>
+        <p lang="en">Quigley et al., ROS: The Open-Source Robot Operating System (2009/2014)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#软件</a>
+    </article>
+
+
+    <article class="qitem" id="071604e5b504">
+      <h2 class="qz" lang="zh">传感器融合有什么用？</h2>
+      <p class="qen" lang="en">What is sensor fusion used for?</p>
+      <div class="azh" lang="zh">它把IMU、GPS、摄像头、激光雷达等多源数据结合，得到比单一传感器更可靠的位置与状态估计，常用卡尔曼滤波实现。</div>
+      <div class="aen" lang="en">It combines data from IMU, GPS, cameras and lidar to produce more reliable state estimates than any single sensor, often via Kalman filtering.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#传感器融合</a>
+    </article>
+
+
+    <article class="qitem" id="0c0d4f85fd1d">
+      <h2 class="qz" lang="zh">为什么协作机器人要限制速度和接触力？</h2>
+      <p class="qen" lang="en">Why must collaborative robots limit their speed and contact force?</p>
+      <div class="azh" lang="zh">协作机器人和人共享工作空间，没有围栏保护，唯一的安全屏障是自身的功率与力限制。相关安全规范给出了人体不同部位可承受的压力与力阈值，机器人必须把速度、力矩和接触面压强控制在阈值以内。这也是协作臂通常负载小、动作慢的原因。</div>
+      <div class="aen" lang="en">Collaborative robots share workspace with people without fences, so their own power and force limits are the only safety barrier. Safety standards specify pressure and force thresholds that different parts of the human body can tolerate, and the robot must keep speed, torque and contact pressure below them. This is why collaborative arms usually have modest payloads and move slowly.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">ISO 10218-1《机器人与机器人装备 工业机器人安全要求 第1部分：机器人》</p>
+        <p lang="en">ISO 10218-1, &#x27;Robots and robotic devices — Safety requirements for industrial robots — Part 1: Robots&#x27;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#协作机器人</a> <a class="tag" href="#">#功率力限制</a> <a class="tag" href="#">#安全标准</a>
+    </article>
+
+
+    <article class="qitem" id="0ddf9d549ff5">
+      <h2 class="qz" lang="zh">工业机械臂突然断电时，为什么手臂不会直接砸下来？</h2>
+      <p class="qen" lang="en">When an industrial robot arm loses power abruptly, why doesn&#x27;t the arm simply crash down?</p>
+      <div class="azh" lang="zh">每个承重关节的电机尾部都装有失电制动器（抱闸）：线圈通电时弹簧被吸开、关节可自由转动，断电后弹簧立刻把摩擦片压紧锁住关节，属于故障导向安全的常闭式设计。抱闸只用于静态保持，不能当行车刹车反复使用，急停时一般先由驱动器做可控减速再落闸。安全标准要求这类保持机构在动力失效时仍能保住负载，因此拆装机械臂前必须先支撑臂体，否则手动释放抱闸会造成坠落伤人。</div>
+      <div class="aen" lang="en">Each load-bearing joint carries a spring-applied, power-off brake on the motor: energizing the coil pulls the spring back so the joint can turn, and losing power lets the spring clamp the friction disc, a fail-safe normally-closed arrangement. The brake is a holding device rather than a service brake, so a controlled stop normally decelerates through the drive before the brake engages. Safety standards require such holding means to retain the load when power fails, which is why an arm must be physically supported before technicians release the brakes by hand.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">ISO 10218-1《机器人与机器人装备 工业机器人安全要求 第1部分：机器人》</p>
+        <p lang="en">ISO 10218-1, &#x27;Robots and robotic devices — Safety requirements for industrial robots — Part 1: Robots&#x27;</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#失电制动器</a> <a class="tag" href="#">#抱闸</a> <a class="tag" href="#">#机器人安全</a>
+    </article>
+
+
+    <article class="qitem" id="44ac92613bdd">
+      <h2 class="qz" lang="zh">差速驱动和全向轮底盘有什么不同？</h2>
+      <p class="qen" lang="en">How do differential and omnidirectional drivetrains differ?</p>
+      <div class="azh" lang="zh">差速两轮靠左右轮速差转向，不能横向移动；全向轮（如麦克纳姆轮）可沿任意方向移动，适合狭窄空间。</div>
+      <div class="aen" lang="en">Differential two-wheel bases turn by speed difference and cannot move sideways, while omnidirectional wheels (e.g., Mecanum) move in any direction, suiting tight spaces.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#移动底盘</a>
+    </article>
+
+
+    <article class="qitem" id="4621ca8d9e75">
+      <h2 class="qz" lang="zh">什么是电子皮肤，它能给机器人带来什么？</h2>
+      <p class="qen" lang="en">What is electronic skin and what does it give a robot?</p>
+      <div class="azh" lang="zh">电子皮肤是把柔性压力、温度、接近觉传感单元阵列做在可弯曲基底上，像皮肤一样覆盖机器人表面。它让机器人知道自己身体哪里被碰到、力有多大，从而实现全身避碰和更安全的人机接触。难点在于大面积布线、耐磨以及海量信号的实时处理。</div>
+      <div class="aen" lang="en">Electronic skin is an array of flexible pressure, temperature and proximity sensing cells built on a bendable substrate that covers a robot&#x27;s surface like real skin. It tells the robot where on its body it is being touched and how hard, enabling whole-body collision avoidance and safer physical contact with people. The challenges are wiring large areas, surviving wear, and processing a huge number of signals in real time.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#电子皮肤</a> <a class="tag" href="#">#触觉</a> <a class="tag" href="#">#人机安全</a>
+    </article>
+
+
+    <article class="qitem" id="49a539a5592e">
+      <h2 class="qz" lang="zh">爬壁检测机器人怎么吸在大型钢罐外壁上？</h2>
+      <p class="qen" lang="en">How does an inspection robot cling to the outside of a big steel tank?</p>
+      <div class="azh" lang="zh">钢罐是铁磁材料，机器人在轮子或履带中嵌入永磁体，靠磁力把自身压在壁面上，摩擦力便足以支撑重量。它带着超声测厚探头爬行，可以在不搭脚手架的情况下检查腐蚀和减薄。设计时要平衡吸力和行走阻力，吸力太大会爬不动。</div>
+      <div class="aen" lang="en">Steel tanks are ferromagnetic, so the robot embeds permanent magnets in its wheels or tracks; magnetic attraction presses it against the wall and the resulting friction carries its weight. Carrying an ultrasonic thickness probe, it crawls over the surface to check corrosion and wall thinning without erecting scaffolding. Designers must balance holding force against rolling resistance, since too much attraction stops the robot from moving.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">磁吸附爬壁机器人（《Robotics and Autonomous Systems》）；ISO 10218</p>
+        <p lang="en">Magnetic-adhesion wall-climbing robots (Robotics and Autonomous Systems); ISO 10218</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#爬壁机器人</a> <a class="tag" href="#">#磁吸附</a> <a class="tag" href="#">#无损检测</a>
+    </article>
+
+
+    <article class="qitem" id="5a102c69b3d6">
+      <h2 class="qz" lang="zh">舵机和步进电机有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a servo and a stepper motor?</p>
+      <div class="azh" lang="zh">舵机内置反馈与减速机构，常用于限定角度（常见0到180度）的位置控制；步进电机靠脉冲逐步转动、可连续旋转且无内置反馈，更适合需要大范围旋转的开环场合。</div>
+      <div class="aen" lang="en">A servo has built-in feedback and gearing for limited-angle position control (often 0 to 180 degrees), while a stepper moves in discrete steps and can rotate continuously without feedback, suiting open-loop, wide-range motion.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#舵机</a>
+    </article>
+
+
+    <article class="qitem" id="65f9ebaaac5f">
+      <h2 class="qz" lang="zh">末端执行器是什么？</h2>
+      <p class="qen" lang="en">What is an end-effector?</p>
+      <div class="azh" lang="zh">它是安装在机械臂最前端的手，如两指夹爪、真空吸盘、焊枪或喷涂头，决定了机器人能完成什么具体操作。</div>
+      <div class="aen" lang="en">It is the hand at an arm&#x27;s tip, such as a gripper, suction cup, welder or spray head, and determines what task the robot can do.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#末端执行器</a>
+    </article>
+
+
+    <article class="qitem" id="69939185512c">
+      <h2 class="qz" lang="zh">为什么有的机器人用轮子、有的用腿？</h2>
+      <p class="qen" lang="en">Why do some robots use wheels while others use legs?</p>
+      <div class="azh" lang="zh">轮子在平地又快又省力，适合厂房和马路；腿能跨过台阶、石头和不平地面，适合救灾或野外，但控制更难、更费电。</div>
+      <div class="aen" lang="en">Wheels are fast and efficient on flat ground, good for factories and roads; legs can step over stairs, rocks and rough terrain for rescue or field use, but are harder to control and cost more energy.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#移动</a> <a class="tag" href="#">#轮腿</a>
+    </article>
+
+
+    <article class="qitem" id="7265f724bede">
+      <h2 class="qz" lang="zh">MEMS陀螺仪测量角速度的原理是什么？</h2>
+      <p class="qen" lang="en">How does a MEMS gyroscope measure angular rate?</p>
+      <div class="azh" lang="zh">它利用科里奥利力：当微型振动质量随载体旋转时，会产生与角速度成正比的横向力，由电容变化检测出来。</div>
+      <div class="aen" lang="en">It uses the Coriolis effect: a vibrating micro-mass experiences a sideways force proportional to angular rate, detected as a capacitance change.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Yazdi, Ayazi, Najafi,《Micromachined inertial sensors》,Proceedings of the IEEE,1998 (DOI: 10.1109/5.704269)</p>
+        <p lang="en">Yazdi, Ayazi, Najafi, &#x27;Micromachined inertial sensors&#x27;, Proceedings of the IEEE, 1998, DOI: 10.1109/5.704269</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/5.704269" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/5.704269</a></p>
+        
+      </details>
+      <a class="tag" href="#">#传感器</a> <a class="tag" href="#">#陀螺仪</a>
+    </article>
+
+
+    <article class="qitem" id="96d03ef7ee32">
+      <h2 class="qz" lang="zh">机器人和普通的电脑有什么不一样？</h2>
+      <p class="qen" lang="en">What is the difference between a robot and an ordinary computer?</p>
+      <div class="azh" lang="zh">电脑主要在屏幕里处理信息，而机器人还长着身体：有传感器去感觉、有马达去动，能在真实世界里做事情，比如扫地或抓东西。</div>
+      <div class="aen" lang="en">A computer mostly processes information on a screen, while a robot also has a body: sensors to feel and motors to move, so it can act in the real world like vacuuming or grabbing.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#感知</a> <a class="tag" href="#">#动作</a>
+    </article>
+
+
+    <article class="qitem" id="a374829bfbca">
+      <h2 class="qz" lang="zh">工厂里的真空吸盘能吸起纸箱和玻璃板，为什么遇到多孔的泡沫件或凹凸不平的铸件就吸不住？</h2>
+      <p class="qen" lang="en">Vacuum suction grippers lift cardboard boxes and glass panels easily, so why do they fail on porous foam parts or rough castings?</p>
+      <div class="azh" lang="zh">吸盘靠内外压差把工件压在密封唇上，可提供的力约等于真空度乘以有效吸附面积，因此必须先建立并维持一个密闭腔。多孔材料和粗糙、弯曲的表面会持续漏气，真空泵的抽气量跟不上泄漏量，压差建立不起来，抓取力迅速衰减。对这类工件通常改用磁力吸盘、机械夹指或针刺式夹具，或者先贴一层柔性密封垫，人为造出可密封的接触面。</div>
+      <div class="aen" lang="en">A suction cup holds a part through the pressure difference across its sealing lip, and the available force is roughly the vacuum level times the effective sealed area, so a closed cavity must exist first. Porous foams and rough or curved surfaces leak continuously; once leakage exceeds the pump&#x27;s flow capacity the pressure difference never builds up and holding force collapses. Such parts are handled with magnetic, mechanical-finger or needle grippers instead, or by adding a compliant sealing pad that creates a sealable contact face.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Monkman 等，《Robot Grippers》（Wiley-VCH，2007）</p>
+        <p lang="en">Monkman et al., &#x27;Robot Grippers&#x27; (Wiley-VCH, 2007)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Robot+Grippers" target="_blank" rel="noopener">核验依据 1 ISBN 9783527609895 (2007)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#真空吸盘</a> <a class="tag" href="#">#末端执行器</a> <a class="tag" href="#">#气密性</a>
+    </article>
+
+
+    <article class="qitem" id="a637fe995621">
+      <h2 class="qz" lang="zh">触觉传感器对机器人抓取有什么帮助？</h2>
+      <p class="qen" lang="en">How do tactile sensors help robot grasping?</p>
+      <div class="azh" lang="zh">触觉传感器检测接触力与压强分布，让机器人知道是否抓稳、用力是否合适，防止滑落或捏碎物体。</div>
+      <div class="aen" lang="en">Tactile sensors measure contact force and pressure distribution, telling the robot whether it has a stable, appropriate grip without slipping or crushing.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#触觉</a>
+    </article>
+
+
+    <article class="qitem" id="c716d66bbf56">
+      <h2 class="qz" lang="zh">工厂里的机械臂为什么能“看见”并抓起形状不一的零件，它靠什么判断位置？</h2>
+      <p class="qen" lang="en">How can factory robot arms &#x27;see&#x27; and grab varied parts—what tells them the position?</p>
+      <div class="azh" lang="zh">机械臂头顶或手上的3D相机拍出零件的形状和深度，视觉算法认出它的种类和朝向，再换算成抓取坐标。所以换一批不同零件，它也能自己找准下爪。</div>
+      <div class="aen" lang="en">A 3D camera on or above the arm captures each part&#x27;s shape and depth; vision algorithms recognize its type and orientation, then convert to grasp coordinates. So even a new batch of different parts gets picked accurately.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器视觉</a> <a class="tag" href="#">#3D抓取</a> <a class="tag" href="#">#定位</a>
+    </article>
+
+
+    <article class="qitem" id="c9e3d127a1e1">
+      <h2 class="qz" lang="zh">机器人的自由度是什么意思，六个自由度够用吗？</h2>
+      <p class="qen" lang="en">What does degrees of freedom mean for a robot, and are six enough?</p>
+      <div class="azh" lang="zh">自由度指机器人可以独立运动的方向数目。要让末端工具在空间中到达任意位置并保持任意姿态，需要三个位置量加三个姿态量，共六个自由度。六轴机械臂正好满足这一需求，因此成为工业标配。七轴机器人多出的一个自由度用来绕开障碍或避免奇异位形，代价是求解和标定更复杂。</div>
+      <div class="aen" lang="en">Degrees of freedom means the number of independent directions in which a robot can move. Placing a tool at an arbitrary position in space with an arbitrary orientation requires three position values plus three orientation values, six in total. A six-axis arm meets exactly that need, which is why it is the industrial standard. A seven-axis robot uses the extra freedom to dodge obstacles or avoid singularities, at the cost of harder inverse kinematics and calibration.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#自由度</a> <a class="tag" href="#">#机械臂</a> <a class="tag" href="#">#位姿</a>
+    </article>
+
+
+    <article class="qitem" id="cb3507d6d5e9">
+      <h2 class="qz" lang="zh">手术机器人为什么能比医生的手更稳？</h2>
+      <p class="qen" lang="en">Why can a surgical robot be steadier than a surgeon&#x27;s hand?</p>
+      <div class="azh" lang="zh">医生操作主手柄，机器人按设定比例缩小动作幅度，例如手移动一厘米、器械只走两毫米，误差同时被缩小。控制系统还会滤掉生理性手抖的高频成分，并支持远心不动点约束，保证器械绕切口转动。这样在狭小腔体内可以完成更精细、更省力的缝合与分离。</div>
+      <div class="aen" lang="en">The surgeon moves a master handle and the robot scales the motion down by a set ratio, so a one-centimetre hand movement may become two millimetres at the instrument, shrinking errors along with it. The control system also filters out the high-frequency components of physiological tremor and can enforce a remote centre of motion so the instrument pivots about the incision. The result is finer, less tiring suturing and dissection inside confined cavities.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Bronzino《生物医学工程手册》；医疗器械标准（ISO 13485）</p>
+        <p lang="en">Bronzino, Biomedical Engineering Handbook; medical device standards (ISO 13485)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL4781638W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL4781638W：The Biomedical Engineer</a></p>
+        
+      </details>
+      <a class="tag" href="#">#手术机器人</a> <a class="tag" href="#">#运动缩放</a> <a class="tag" href="#">#滤抖</a>
+    </article>
+
+
+    <article class="qitem" id="eng_25_014">
+      <h2 class="qz" lang="zh">扫地机器人画出的路线图为什么横平竖直像棋盘?它的导航原理是什么?</h2>
+      <p class="qen" lang="en">Why do robot vacuums clean in neat grid lines like chessboards?</p>
+      <div class="azh" lang="zh">早期机器人乱撞式清扫漏扫严重;现代机型用激光雷达或摄像头扫描房间轮廓,边沿先走一圈记住边界,再按弓字形路径一格一格覆盖,像割草机的作业图。定位靠传感器里程计加上特征匹配,即使被抱到另一个房间也能重新定位继续未完成的区域。算法把家务变成了数学覆盖问题。</div>
+      <div class="aen" lang="en">Older robots wandered randomly missing spots; modern ones scan room outlines by lidar or camera, trace edges once, then sweep back-and-forth rows covering every cell like mower plans. Localization blends wheel odometry with feature matching — moved mid-job they relocate and resume. Algorithms turned chores into coverage mathematics.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《十万个为什么》第六版电子与信息分册,少年儿童出版社,2013</p>
+        <p lang="en">Ten Thousand Whys: Electronics and Information volume, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#路径规划</a> <a class="tag" href="#">#激光雷达</a> <a class="tag" href="#">#覆盖算法</a>
+    </article>
+
+
+    <article class="qitem" id="f7903cc604f0">
+      <h2 class="qz" lang="zh">编码器在机器人里起什么作用？</h2>
+      <p class="qen" lang="en">What does an encoder do in a robot?</p>
+      <div class="azh" lang="zh">编码器测量电机转角和转速，提供位置反馈，使伺服系统形成闭环控制，知道转了多少、转多快。</div>
+      <div class="aen" lang="en">An encoder measures rotation angle and speed, giving position feedback so the servo runs in closed loop, knowing how far and how fast it turned.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器人</a> <a class="tag" href="#">#编码器</a>
+    </article>
+
+
+    <article class="qitem" id="ff6bd29dd3d8">
+      <h2 class="qz" lang="zh">工厂里的机械臂为什么能一直重复做同样的动作？</h2>
+      <p class="qen" lang="en">Why can a factory robot arm repeat the same motion endlessly?</p>
+      <div class="azh" lang="zh">工程师先把一套动作编成程序存进控制器，电机和编码器精确记住每个角度。每次运行都按同样的数字指令走，所以它能一模一样地重复成千上万次。</div>
+      <div class="aen" lang="en">Engineers program a sequence into the controller, and motors with encoders precisely remember each angle. Every run follows the same digital commands, so it repeats identically thousands of times.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Siciliano、Sciavicco、Villani &amp; Oriolo，《机器人学：建模、规划与控制》（Springer）</p>
+        <p lang="en">Siciliano, Sciavicco, Villani &amp; Oriolo, &#x27;Robotics: Modelling, Planning and Control&#x27; (Springer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.springer.com/us/product-marketing-tool/flyer/9781846286414?downloadType=PRODUCTFLYER" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-84628-641-4</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机械臂</a> <a class="tag" href="#">#编程</a> <a class="tag" href="#">#重复</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

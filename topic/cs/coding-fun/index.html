@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>coding_fun coding-fun · 计算机 Computer Science | 问答</title>
+<meta name="description" content="coding_fun（计算机）分类下的 19 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 19 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="coding_fun coding-fun · 计算机 Computer Science | 问答">
+<meta property="og:description" content="coding_fun（计算机）分类下的 19 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 19 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/coding-fun/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/coding-fun/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>coding_fun</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>coding_fun <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>19</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#778a875eeebb">编程里的“变量”是什么？</a></li><li><a href="#bf13620d255a">什么是“开源硬件”（如树莓派）？</a></li><li><a href="#c99dce56130d">“算法”和“程序”有什么不同？</a></li><li><a href="#f7aab3a79f46">为什么有人愿意免费写开源代码？</a></li><li><a href="#44ee2e547196">什么是“条件判断”（如果……就……）？</a></li><li><a href="#b3a82d03fd1f">编程里的“函数”像食谱里的步骤吗？</a></li><li><a href="#d0cded57b51a">什么是“调试”（debug）？</a></li><li><a href="#e57997522aff">编程里的“循环”是什么？</a></li><li><a href="#e6b075966598">为什么程序员要在代码里写“注释”？</a></li><li><a href="#f162b19c8f80">学编程一定要先学好数学吗？</a></li><li><a href="#212592394ac1">游戏里的“外挂/作弊代码”是用代码改游戏吗？</a></li><li><a href="#3670fcee0675">「橡皮鸭调试法」是什么，对着一只玩具鸭子讲话为什么真能找出 bug？</a></li><li><a href="#68e8e497e5f7">程序员数东西为什么常常从 0 开始，而不是从 1 开始？</a></li><li><a href="#6f688f509e11">什么是“黑客”，他们都是坏人吗？</a></li><li><a href="#76966f86c672">什么是“编程语言”？</a></li><li><a href="#8979db299fec">学编程的第一个程序为什么几乎总是打印一句「hello, world」？</a></li><li><a href="#b372e0b6e8b7">机器人能自己写程序吗？</a></li><li><a href="#c29d227d6a04">什么是“bug”（程序里的小虫子）？</a></li><li><a href="#c2a4638340a3">什么是“代码”？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="778a875eeebb">
+      <h2 class="qz" lang="zh">编程里的“变量”是什么？</h2>
+      <p class="qen" lang="en">What is a &#x27;variable&#x27; in programming?</p>
+      <div class="azh" lang="zh">变量就像一个贴了名字的盒子，里面可以装数字、文字等会变化的值。程序运行时往盒子里存、取东西，名字不变、内容可变，方便反复使用。</div>
+      <div class="aen" lang="en">A variable is a named box holding a value that can change—numbers, text, etc. The program stores and reads from it; the name stays, the content varies, easing reuse.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#变量</a> <a class="tag" href="#">#存储</a> <a class="tag" href="#">#编程</a>
+    </article>
+
+
+    <article class="qitem" id="bf13620d255a">
+      <h2 class="qz" lang="zh">什么是“开源硬件”（如树莓派）？</h2>
+      <p class="qen" lang="en">What is &#x27;open-source hardware&#x27; like Raspberry Pi?</p>
+      <div class="azh" lang="zh">开源硬件把电路设计和零件清单公开，谁都能照着做、改、学。树莓派就是一块便宜的小电脑板，常用来学编程、做机器人，因为资料全、门槛低。</div>
+      <div class="aen" lang="en">Open-source hardware publishes its circuit designs and parts list so anyone can build, modify and learn. Raspberry Pi is a cheap mini-board for learning coding and robots—full docs, low barrier.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#开源硬件</a> <a class="tag" href="#">#树莓派</a> <a class="tag" href="#">#DIY</a>
+    </article>
+
+
+    <article class="qitem" id="c99dce56130d">
+      <h2 class="qz" lang="zh">“算法”和“程序”有什么不同？</h2>
+      <p class="qen" lang="en">How do &#x27;algorithm&#x27; and &#x27;program&#x27; differ?</p>
+      <div class="azh" lang="zh">算法是解决问题的思路或步骤（比如怎么排序），程序是把算法用某种语言真正写出来、能在电脑上跑的代码。先有思路，再写成程序。</div>
+      <div class="aen" lang="en">An algorithm is the idea or steps to solve a problem (how to sort); a program is that algorithm written in a language and runnable on a computer. Idea first, then code.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#算法</a> <a class="tag" href="#">#程序</a> <a class="tag" href="#">#区别</a>
+    </article>
+
+
+    <article class="qitem" id="f7aab3a79f46">
+      <h2 class="qz" lang="zh">为什么有人愿意免费写开源代码？</h2>
+      <p class="qen" lang="en">Why do people write open-source code for free?</p>
+      <div class="azh" lang="zh">有人为了学本事、有人想解决自己的问题顺手分享，也有公司靠周边服务赚钱。社区里互相帮忙、署名和成就感，让很多人乐意免费贡献。</div>
+      <div class="aen" lang="en">Some learn, some solve their own problem and share, some companies earn from related services. Mutual help, credit and satisfaction keep many contributing for free.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#开源</a> <a class="tag" href="#">#社区</a> <a class="tag" href="#">#动机</a>
+    </article>
+
+
+    <article class="qitem" id="44ee2e547196">
+      <h2 class="qz" lang="zh">什么是“条件判断”（如果……就……）？</h2>
+      <p class="qen" lang="en">What is a &#x27;conditional&#x27; (if… then…)?</p>
+      <div class="azh" lang="zh">条件判断让程序做选择：满足某个条件就走一条路，否则走另一条。比如“如果下雨就提醒带伞，否则不用”。这是让程序“会思考”的基本方式。</div>
+      <div class="aen" lang="en">A conditional makes the program choose: if a condition holds, do one thing, else another—like &#x27;if raining, remind umbrella&#x27;. It&#x27;s how programs &#x27;decide&#x27;.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#条件</a> <a class="tag" href="#">#判断</a> <a class="tag" href="#">#逻辑</a>
+    </article>
+
+
+    <article class="qitem" id="b3a82d03fd1f">
+      <h2 class="qz" lang="zh">编程里的“函数”像食谱里的步骤吗？</h2>
+      <p class="qen" lang="en">Is a programming &#x27;function&#x27; like a step in a recipe?</p>
+      <div class="azh" lang="zh">很像。函数把一段常用操作打包，起个名，需要时喊一声就执行，还能传入不同材料（参数）做出不同结果。比如“加水(杯数)”就能重复用。</div>
+      <div class="aen" lang="en">Very much. A function packs a reusable action under a name; call it and it runs, taking inputs (parameters) for different results—like &#x27;addWater(cups)&#x27; reused anywhere.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#函数</a> <a class="tag" href="#">#复用</a> <a class="tag" href="#">#编程</a>
+    </article>
+
+
+    <article class="qitem" id="d0cded57b51a">
+      <h2 class="qz" lang="zh">什么是“调试”（debug）？</h2>
+      <p class="qen" lang="en">What is &#x27;debugging&#x27;?</p>
+      <div class="azh" lang="zh">调试就是找出并修好程序里的 bug。像侦探一样，看哪里出错、为什么出错，再改代码让程序正常。写代码一半时间可能都在调试。</div>
+      <div class="aen" lang="en">Debugging finds and fixes bugs—like a detective spotting what broke and why, then editing code. Half of coding time can be debugging.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#调试</a> <a class="tag" href="#">#bug</a> <a class="tag" href="#">#排错</a>
+    </article>
+
+
+    <article class="qitem" id="e57997522aff">
+      <h2 class="qz" lang="zh">编程里的“循环”是什么？</h2>
+      <p class="qen" lang="en">What is a &#x27;loop&#x27; in programming?</p>
+      <div class="azh" lang="zh">循环是让电脑把同一件事重复做很多次，不用你一句句写。比如“把 1 到 100 都加一遍”，写个循环比抄一百行省力多了。</div>
+      <div class="aen" lang="en">A loop repeats an action many times without writing it out. To &#x27;add 1 through 100&#x27;, a loop beats typing a hundred lines.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#循环</a> <a class="tag" href="#">#重复</a> <a class="tag" href="#">#编程</a>
+    </article>
+
+
+    <article class="qitem" id="e6b075966598">
+      <h2 class="qz" lang="zh">为什么程序员要在代码里写“注释”？</h2>
+      <p class="qen" lang="en">Why do programmers write &#x27;comments&#x27; in code?</p>
+      <div class="azh" lang="zh">注释是写给读代码的人看的说明，电脑会跳过它不执行。它能讲清这段代码想干啥，半年后自己或同事一看就懂，省得猜。</div>
+      <div class="aen" lang="en">Comments are notes for human readers; the computer ignores them. They explain what code intends, so you or a teammate understand it months later without guessing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#注释</a> <a class="tag" href="#">#代码</a> <a class="tag" href="#">#协作</a>
+    </article>
+
+
+    <article class="qitem" id="f162b19c8f80">
+      <h2 class="qz" lang="zh">学编程一定要先学好数学吗？</h2>
+      <p class="qen" lang="en">Must you be good at math before learning to program?</p>
+      <div class="azh" lang="zh">入门做网站、小游戏，普通加减乘除就够。但做图形、AI、加密这些，数学会帮大忙。所以先能写、再按需补数学，不用被吓退。</div>
+      <div class="aen" lang="en">For websites and simple games, basic arithmetic suffices. Graphics, AI and crypto need more math. Start coding, then learn math as needed—don&#x27;t be scared off.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#数学</a> <a class="tag" href="#">#入门</a>
+    </article>
+
+
+    <article class="qitem" id="212592394ac1">
+      <h2 class="qz" lang="zh">游戏里的“外挂/作弊代码”是用代码改游戏吗？</h2>
+      <p class="qen" lang="en">Are game &#x27;cheats&#x27; made by changing code?</p>
+      <div class="azh" lang="zh">是的，外挂常利用或改写游戏代码，让自己刀枪不入、看穿墙壁，破坏了公平。多数游戏会封号，所以作弊既不对也不划算。</div>
+      <div class="aen" lang="en">Yes, cheats exploit or alter game code for invincibility or x-ray vision, breaking fairness. Most games ban such accounts, so cheating is both wrong and risky.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#外挂</a> <a class="tag" href="#">#游戏</a> <a class="tag" href="#">#代码</a>
+    </article>
+
+
+    <article class="qitem" id="3670fcee0675">
+      <h2 class="qz" lang="zh">「橡皮鸭调试法」是什么，对着一只玩具鸭子讲话为什么真能找出 bug？</h2>
+      <p class="qen" lang="en">What is rubber duck debugging, and why does explaining code to a toy duck actually find bugs?</p>
+      <div class="azh" lang="zh">做法很简单：把代码逐行讲给桌上的橡皮鸭，或者任何不会回话的东西听，要求把每一步打算做什么说清楚。人在心里默读代码时会自动跳过和补全细节，一旦被迫用自然语言说出来，隐含假设就必须变成明确的句子，你以为成立的前提和实际写下的逻辑之间的差距随之暴露。这个名字出自《The Pragmatic Programmer》里的一则轶事，而同事之间「刚讲一半就自己想通了」的现象正是同一个原理。</div>
+      <div class="aen" lang="en">The method is literally to explain your code line by line to a rubber duck on your desk — or anything else that cannot answer — stating aloud what each step is supposed to accomplish. Reading code silently, the mind skims and auto-completes; forcing it into natural language turns hidden assumptions into explicit sentences, and the gap between what you believed the code does and what it actually does becomes visible. The name comes from an anecdote in the book &quot;The Pragmatic Programmer&quot;, and it is the same mechanism behind solving a problem halfway through describing it to a colleague.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Andrew Hunt 与 David Thomas《The Pragmatic Programmer》(1999) 第 3 章 Debugging 一节</p>
+        <p lang="en">Andrew Hunt &amp; David Thomas, &quot;The Pragmatic Programmer&quot; (1999), ch. 3, on debugging</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5748544W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5748544W：The Pragmatic Programme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#橡皮鸭调试</a> <a class="tag" href="#">#调试方法</a> <a class="tag" href="#">#显式表达</a> <a class="tag" href="#">#认知偏差</a>
+    </article>
+
+
+    <article class="qitem" id="68e8e497e5f7">
+      <h2 class="qz" lang="zh">程序员数东西为什么常常从 0 开始，而不是从 1 开始？</h2>
+      <p class="qen" lang="en">Why do programmers usually start counting from 0 instead of 1?</p>
+      <div class="azh" lang="zh">数组下标从 0 开始时，元素地址正好等于起始地址加上下标乘元素大小，不用每次减一，早期语言这样设计既省一次运算也贴近硬件寻址方式。更重要的是它让区间表示变漂亮：用含头不含尾的 [0, n) 表示 n 个元素，长度恰好等于 n，两个相邻区间 [0,k) 与 [k,n) 首尾正好衔接、既不重叠也不留缝，切片和循环边界都不容易写错。Dijkstra 在 1982 年一篇短文里正是用这个论证说明从零开始最自然。</div>
+      <div class="aen" lang="en">With zero-based indexing an element&#x27;s address is exactly the base address plus index times element size, with no subtraction, which saved an operation and matched hardware addressing in early languages. The deeper reason is that it makes ranges elegant: writing n elements as the half-open interval [0, n) makes the length exactly n, and two adjacent ranges [0, k) and [k, n) meet with neither overlap nor gap, so slices and loop bounds are far harder to get wrong. Dijkstra made precisely this argument in a short 1982 note titled &quot;Why numbering should start at zero&quot;.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Edsger W. Dijkstra《Why numbering should start at zero》(手稿 EWD 831, 1982)</p>
+        <p lang="en">Edsger W. Dijkstra, &quot;Why numbering should start at zero&quot; (manuscript EWD 831, 1982)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#零基索引</a> <a class="tag" href="#">#半开区间</a> <a class="tag" href="#">#数组下标</a> <a class="tag" href="#">#编程约定</a>
+    </article>
+
+
+    <article class="qitem" id="6f688f509e11">
+      <h2 class="qz" lang="zh">什么是“黑客”，他们都是坏人吗？</h2>
+      <p class="qen" lang="en">What is a &#x27;hacker&#x27;, and are they all bad?</p>
+      <div class="azh" lang="zh">黑客原指爱钻研技术、找系统漏洞的人。有人用来做好事（帮公司找漏洞），也有人用来干坏事（偷东西），后者更准确叫“黑帽”。所以不能一概说黑客是坏人。</div>
+      <div class="aen" lang="en">A hacker originally means someone who tinkers and finds system flaws. Some do good (report bugs); some do harm (theft)—better called &#x27;black hats&#x27;. So not all hackers are bad.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#黑客</a> <a class="tag" href="#">#安全</a> <a class="tag" href="#">#误解</a>
+    </article>
+
+
+    <article class="qitem" id="76966f86c672">
+      <h2 class="qz" lang="zh">什么是“编程语言”？</h2>
+      <p class="qen" lang="en">What is a &#x27;programming language&#x27;?</p>
+      <div class="azh" lang="zh">编程语言是人和电脑之间的“共同语言”，像 Python、Scratch。它比日常话更死板、更讲规矩，电脑才能准确照做。不同语言适合不同活。</div>
+      <div class="aen" lang="en">A programming language is a shared language between people and computers, like Python or Scratch. Stricter than speech so the computer follows exactly; different ones suit different jobs.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程语言</a> <a class="tag" href="#">#代码</a> <a class="tag" href="#">#基础</a>
+    </article>
+
+
+    <article class="qitem" id="8979db299fec">
+      <h2 class="qz" lang="zh">学编程的第一个程序为什么几乎总是打印一句「hello, world」？</h2>
+      <p class="qen" lang="en">Why is the very first program in almost every course one that prints hello, world?</p>
+      <div class="azh" lang="zh">这个惯例来自贝尔实验室：Brian Kernighan 在 1972 年为 B 语言写的教程里首次用它做例子，1978 年 Kernighan 与 Ritchie 的《The C Programming Language》把它放在全书第一页，随 C 语言传遍全世界。它之所以合适，是因为它是最小的端到端验证：这句话能打印出来，就说明编译器、链接器、运行环境和输出通道全都配好了；万一失败，可能的原因也少得可以逐一排查。今天几乎所有语言的入门文档仍沿用它，本质上是一次环境自检。</div>
+      <div class="aen" lang="en">The convention began at Bell Labs: Brian Kernighan first used it in a 1972 tutorial for the language B, and the 1978 Kernighan and Ritchie book on C put it on the opening page, from which it spread worldwide along with the language. It works so well because it is the smallest possible end-to-end check: if the line appears, the compiler, linker, runtime and output path are all correctly configured, and if it fails the set of possible causes is small enough to check one by one. Nearly every language&#x27;s getting-started guide still opens with it, essentially as an environment smoke test.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kernighan 与 Ritchie《The C Programming Language》(1978) 第 1 章；Kernighan《A Tutorial Introduction to the Language B》(Bell Laboratories, 1972)</p>
+        <p lang="en">Kernighan &amp; Ritchie, &quot;The C Programming Language&quot; (1978), ch. 1; Kernighan, &quot;A Tutorial Introduction to the Language B,&quot; Bell Laboratories (1972)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/a-tutorial-introduction-to-the-language-b" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 a-tutorial-introduction-to-the-language-b：A T</a></p>
+        
+      </details>
+      <a class="tag" href="#">#hello world</a> <a class="tag" href="#">#入门程序</a> <a class="tag" href="#">#C语言</a> <a class="tag" href="#">#环境验证</a>
+    </article>
+
+
+    <article class="qitem" id="b372e0b6e8b7">
+      <h2 class="qz" lang="zh">机器人能自己写程序吗？</h2>
+      <p class="qen" lang="en">Can a robot write its own programs?</p>
+      <div class="azh" lang="zh">现在有些聪明的 AI 能根据要求写出简单代码，但大多还要人检查、修改。真正“完全自己发明程序”的机器人还没有，人还是总指挥。</div>
+      <div class="aen" lang="en">Some smart AI can write simple code from a request, but a human still checks and fixes it. No robot fully invents programs alone yet—people stay in charge.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#AI</a> <a class="tag" href="#">#代码</a> <a class="tag" href="#">#机器人</a>
+    </article>
+
+
+    <article class="qitem" id="c29d227d6a04">
+      <h2 class="qz" lang="zh">什么是“bug”（程序里的小虫子）？</h2>
+      <p class="qen" lang="en">What is a &#x27;bug&#x27; in a program?</p>
+      <div class="azh" lang="zh">bug 就是程序写错了，导致它做错事或卡住，比如游戏突然闪退。程序员要找出 bug 修好它，让程序乖乖听话。</div>
+      <div class="aen" lang="en">A bug is a mistake in the program that makes it misbehave or freeze, like a game crashing. Programmers find and fix bugs so the program behaves.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#bug</a> <a class="tag" href="#">#错误</a> <a class="tag" href="#">#调试</a>
+    </article>
+
+
+    <article class="qitem" id="c2a4638340a3">
+      <h2 class="qz" lang="zh">什么是“代码”？</h2>
+      <p class="qen" lang="en">What is &#x27;code&#x27;?</p>
+      <div class="azh" lang="zh">代码是用编程语言写给电脑看的“说明书”，一行行告诉它该做什么。人把想法写成代码，电脑照着做，于是有了游戏、App 和网站。</div>
+      <div class="aen" lang="en">Code is a set of instructions written in a programming language telling the computer what to do. People write code; computers follow it to make games, apps and websites.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#代码</a> <a class="tag" href="#">#编程</a> <a class="tag" href="#">#基础</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

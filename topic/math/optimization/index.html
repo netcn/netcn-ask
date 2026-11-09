@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>optimization · 数学 Mathematics | 问答</title>
+<meta name="description" content="optimization（数学）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="optimization · 数学 Mathematics | 问答">
+<meta property="og:description" content="optimization（数学）分类下的 12 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 12 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/optimization/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/optimization/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>optimization</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>optimization <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>12</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_20_013">线性规划中,若原始可行解 x 与对偶可行解 y 满足互补松弛条件,凭什么断言两者</a></li><li><a href="#math_24_009">在约束优化问题中,为什么最优点处目标函数的梯度必须与约束曲面的法线方向平行?</a></li><li><a href="#0c794bce5760">为什么‘局部最优’不一定是‘全局最优’？</a></li><li><a href="#6cdddfe7e225">拉格朗日对偶是什么？</a></li><li><a href="#96bf64f9c313">内点法是什么？</a></li><li><a href="#ae423ba0f21f">凸优化是什么？</a></li><li><a href="#df4861cd182a">最优传输是什么？</a></li><li><a href="#math_20_005">单纯形法求解线性规划时,为什么只需要考察可行域的顶点?它在最坏情况下的效率如何?</a></li><li><a href="#math_24_012">机器学习训练时为什么总说「梯度下降」?沿着坡往下走就能找到最优吗?</a></li><li><a href="#50bab8d7ad59">旅行商问题（TSP）是什么？</a></li><li><a href="#math_24_008">当目标函数是凸函数时,为什么算法求得的局部最小值一定就是全局最小值?</a></li><li><a href="#math_24_011">快递员一天要送一百个包裹,路线怎么排才不绕路?旅行商问题难在哪?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_20_013">
+      <h2 class="qz" lang="zh">线性规划中,若原始可行解 x 与对偶可行解 y 满足互补松弛条件,凭什么断言两者同时达到各自的最优值?这一条件又是怎样被算法用作可快速核验的最优性证书的?</h2>
+      <p class="qen" lang="en">In linear programming, when primal-feasible x and dual-feasible y satisfy complementary slackness, what licenses the claim that both attain their optima simultaneously, and how do algorithms exploit the condition as a quickly verifiable optimality certificate?</p>
+      <div class="azh" lang="zh">弱对偶性给出单向夹逼:对一切原始可行的 x 与对偶可行的 y 都有 c^T x ≤ b^T y,因此只要找出一组使等号成立的解,上下界便同时被锁死。互补松弛要求每个不起作用的约束所对应的对偶变量为零,这使差值 Σ y_i (b_i − a_i x) 逐项归零,对偶间隙被强制闭合。既然任何一方都无法在不破坏可行性的前提下越过这条界,该解对即为最优;原始单纯形法的停机判据、内点法的中心路径极限以及整数规划中对偶间隙的分析,全都依赖这一可即时核验的证书。</div>
+      <div class="aen" lang="en">Weak duality supplies a one-way squeeze: c^T x ≤ b^T y holds for every primal-feasible x and dual-feasible y, so exhibiting any pair that attains equality pins both bounds down at once. Complementary slackness demands that the dual variable attached to every non-binding constraint vanish, which kills the gap term Σ y_i (b_i − a_i x) summand by summand and forces the duality gap closed. Since neither side can cross this bound without forfeiting feasibility, the pair is optimal; the simplex stopping rule, the central-path limit of interior-point methods, and duality-gap analyses in integer programming all lean on this instantly checkable certificate.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">D. Gale, H. W. Kuhn, A. W. Tucker, Linear Programming and the Theory of Games, Econometrica, vol. 19, no. 1, pp. 54-65, 1951</p>
+        <p lang="en">D. Gale, H. W. Kuhn, A. W. Tucker, Linear Programming and the Theory of Games, Econometrica 19 (1951) 54-65</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#线性规划</a> <a class="tag" href="#">#对偶理论</a>
+    </article>
+
+
+    <article class="qitem" id="math_24_009">
+      <h2 class="qz" lang="zh">在约束优化问题中,为什么最优点处目标函数的梯度必须与约束曲面的法线方向平行?</h2>
+      <p class="qen" lang="en">In a constrained optimization problem, why must the gradient of the objective be parallel to the normal direction of the constraint surface at an optimum?</p>
+      <div class="azh" lang="zh">因为可行点只能沿约束曲面移动。若目标函数的梯度在该点还带有沿曲面切向的分量,沿这个切向挪一小步,目标值就会继续下降(或上升),说明它并不是极值点;只有当切向分量消失,即梯度 ∇f 与约束的法向 ∇g 平行时,才可能是驻点。拉格朗日乘子法正是把这个平行条件写成 ∇f=λ∇g,其中乘子 λ 还表示约束每放松一单位时最优值的变化量,经济学里称为影子价格。</div>
+      <div class="aen" lang="en">Feasible points can move only along the constraint surface. If the objective gradient keeps a component tangent to that surface at the candidate point, a small slide in the tangential direction still lowers (or raises) the objective, so the point cannot be an extremum. An extremum requires the tangential component to vanish, i.e., the gradient grad f parallel to the constraint normal grad g — precisely the Lagrange condition grad f = lambda * grad g. The multiplier lambda also measures how much the optimal value changes per unit of relaxed constraint, the economist&#x27;s shadow price.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. Nocedal 与 S. J. Wright《Numerical Optimization》第2版,Springer,2006</p>
+        <p lang="en">J. Nocedal &amp; S. J. Wright, Numerical Optimization, 2nd ed., Springer, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780387987934 (1999)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387400655 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#最优化</a> <a class="tag" href="#">#拉格朗日乘子</a> <a class="tag" href="#">#影子价格</a>
+    </article>
+
+
+    <article class="qitem" id="0c794bce5760">
+      <h2 class="qz" lang="zh">为什么‘局部最优’不一定是‘全局最优’？</h2>
+      <p class="qen" lang="en">Why is a &#x27;local optimum&#x27; not necessarily the &#x27;global optimum&#x27;?</p>
+      <div class="azh" lang="zh">在起伏的山地里，你站上最近的小山顶（局部最优）却未必是整座山脉的最高峰（全局最优）。很多优化算法容易被困在局部，需要随机重启或全局搜索。</div>
+      <div class="aen" lang="en">In hilly terrain you may stand on the nearest small peak (local optimum) yet not the highest of the whole range (global). Many optimizers get stuck locally, needing random restarts or global search.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. Nocedal 与 S. J. Wright《Numerical Optimization》第2版,Springer,2006</p>
+        <p lang="en">J. Nocedal &amp; S. J. Wright, Numerical Optimization, 2nd ed., Springer, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780387987934 (1999)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387400655 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#全局</a>
+    </article>
+
+
+    <article class="qitem" id="6cdddfe7e225">
+      <h2 class="qz" lang="zh">拉格朗日对偶是什么？</h2>
+      <p class="qen" lang="en">What is Lagrange duality?</p>
+      <div class="azh" lang="zh">拉格朗日对偶为每个原问题构造一个“对偶问题”，其对偶目标给出原问题最优值的下界，且常可轻易求得。强对偶成立时两者相等，是 SVM 的理论核心。</div>
+      <div class="aen" lang="en">Lagrange duality forms a dual problem whose value bounds the primal optimum from below; under strong duality they coincide—the theory behind SVMs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《凸优化》Boyd 与 Vandenberghe</p>
+        <p lang="en">Convex Optimization by Boyd and Vandenberghe</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#对偶</a>
+    </article>
+
+
+    <article class="qitem" id="96bf64f9c313">
+      <h2 class="qz" lang="zh">内点法是什么？</h2>
+      <p class="qen" lang="en">What is an interior-point method?</p>
+      <div class="azh" lang="zh">内点法从可行域内部出发，沿中心路径逼近最优解，能在多项式时间内求解线性与凸规划。相比单纯形法，它对超大规模问题更稳定高效。</div>
+      <div class="aen" lang="en">Interior-point methods move inside the feasible region toward optimality in polynomial time; more stable than the simplex method for huge problems.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《凸优化》Boyd 与 Vandenberghe</p>
+        <p lang="en">Convex Optimization by Boyd and Vandenberghe</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#内点法</a>
+    </article>
+
+
+    <article class="qitem" id="ae423ba0f21f">
+      <h2 class="qz" lang="zh">凸优化是什么？</h2>
+      <p class="qen" lang="en">What is convex optimization?</p>
+      <div class="azh" lang="zh">凸优化在凸集上最小化凸函数；它的任何局部最优都是全局最优，因而高效可解。机器学习的大量训练问题都可写成凸优化（或近似凸）形式。</div>
+      <div class="aen" lang="en">Convex optimization minimizes a convex function over a convex set; every local minimum is global, making it efficiently solvable and central to ML.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《凸优化》Boyd 与 Vandenberghe</p>
+        <p lang="en">Convex Optimization by Boyd and Vandenberghe</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#凸优化</a>
+    </article>
+
+
+    <article class="qitem" id="df4861cd182a">
+      <h2 class="qz" lang="zh">最优传输是什么？</h2>
+      <p class="qen" lang="en">What is optimal transport?</p>
+      <div class="azh" lang="zh">最优传输研究把一堆质量（如概率分布）以最小“搬运成本”移到另一堆的最优方式，对应蒙日-安培方程。它在图像对齐、生成模型（Wasserstein GAN）中很热。</div>
+      <div class="aen" lang="en">Optimal transport finds the cheapest way to move one probability mass to another (Monge–Ampère); used in image alignment and Wasserstein GANs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#最优传输</a>
+    </article>
+
+
+    <article class="qitem" id="math_20_005">
+      <h2 class="qz" lang="zh">单纯形法求解线性规划时,为什么只需要考察可行域的顶点?它在最坏情况下的效率如何?</h2>
+      <p class="qen" lang="en">Why does the simplex method for linear programming only need to inspect vertices of the feasible region, and how efficient is it in the worst case?</p>
+      <div class="azh" lang="zh">线性目标函数若在多面体可行域上取到最优,必有某个极点(顶点)同样最优:目标的等值面是超平面,只要当前点不是顶点,就能沿改善目标的方向继续滑行,直到撞上边界顶点。于是单纯形法从一个顶点出发,反复转移到使目标值不减的相邻顶点,直到无邻点可改进即宣告最优。Klee 与 Minty 构造的实例迫使它遍历指数多个顶点,但实际运行通常很快;椭球法与内点法补上了多项式时间的理论保证。</div>
+      <div class="aen" lang="en">Whenever a linear objective attains an optimum over a polytope, some extreme point (vertex) is also optimal: level sets are hyperplanes, so from any non-vertex point you can keep sliding in an improving direction until you hit a boundary vertex. The simplex method exploits this by hopping from vertex to adjacent vertex, never letting the objective drop, and stops once no neighboring vertex improves it. Klee and Minty exhibited instances that force exponentially many vertices to be visited, yet the method runs fast in practice; the ellipsoid and interior-point methods supply the polynomial-time guarantees.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Dantzig, G. B.(1951). Maximization of a linear function of variables subject to linear inequalities, 载于 Koopmans (ed.), Activity Analysis of Production and Allocation, Wiley, pp.339-347;Klee &amp; Minty (1972)</p>
+        <p lang="en">Dantzig, G. B. (1951). Maximization of a linear function of variables subject to linear inequalities, in Koopmans (ed.), Activity Analysis of Production and Allocation, Wiley, pp. 339-347; Klee, V. and Minty, G. J. (1972). How good is the simplex algorithm?, Inequalities III, Academic Press, pp. 159-175</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL9189205W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL9189205W：Activity Analysis of Pr</a> · <a class="evlink" href="https://doi.org/10.2307/1907816" target="_blank" rel="noopener">核验依据 3 CROSSREF 标识 10.2307/1907816：Activity Analysis of Product</a></p>
+        
+      </details>
+      <a class="tag" href="#">#运筹优化</a> <a class="tag" href="#">#线性规划</a>
+    </article>
+
+
+    <article class="qitem" id="math_24_012">
+      <h2 class="qz" lang="zh">机器学习训练时为什么总说「梯度下降」?沿着坡往下走就能找到最优吗?</h2>
+      <p class="qen" lang="en">Why does machine learning keep saying gradient descent — and does walking downhill always find the best spot?</p>
+      <div class="azh" lang="zh">梯度是函数上升最快的方向,取负号便是下降最陡的方向;参数沿负梯度小步移动并反复迭代,损失函数像滚下山坡的球逐渐落到谷底。学习率是步长:太大来回震荡甚至发散,太小磨蹭到天荒地老;动量法给球加惯性冲过小坑,Adam 算法则为每个参数自适应调步长。深层网络的损失面并非碗状而是高维崎岖地形,幸运的是实践发现大量鞍点与平坦极小值反而带来更好的泛化——所以「找不到全局最优」常常无伤大雅,这也是深度学习能work的隐秘原因之一。</div>
+      <div class="aen" lang="en">The gradient points uphill fastest; step against it repeatedly and the loss rolls downhill like a ball seeking valleys. The learning rate is stride length: too large oscillates or diverges, too small crawls forever. Momentum adds inertia to roll past small dips; Adam tunes per-parameter strides adaptively. Deep-network loss surfaces are not bowls but rugged high-dimensional terrain — luckily practice finds abundant saddle points and flat minima that generalize well, so missing the global optimum usually costs little, one quiet reason deep learning works.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goodfellow, I., Bengio, Y. &amp; Courville, A.，《Deep Learning》，MIT Press，2016</p>
+        <p lang="en">Goodfellow, I., Bengio, Y. &amp; Courville, A., Deep Learning, MIT Press, 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#学习率</a> <a class="tag" href="#">#优化器</a>
+    </article>
+
+
+    <article class="qitem" id="50bab8d7ad59">
+      <h2 class="qz" lang="zh">旅行商问题（TSP）是什么？</h2>
+      <p class="qen" lang="en">What is the traveling salesman problem (TSP)?</p>
+      <div class="azh" lang="zh">TSP 要在访问每个城市一次后回到起点，使总路程最短。它是经典的 NP 难组合优化问题，近似算法与启发式（如分支定界）广泛用于物流调度。</div>
+      <div class="aen" lang="en">TSP seeks the shortest tour visiting every city once; a classic NP-hard problem with algorithms widely used in logistics.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Applegate、Bixby、Chvatal 与 Cook,《The Traveling Salesman Problem》,Princeton University Press,2006</p>
+        <p lang="en">D. L. Applegate et al., The Traveling Salesman Problem, Princeton University Press, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Traveling+Salesman+Problem" target="_blank" rel="noopener">核验依据 1 ISBN 9780691129938 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化</a> <a class="tag" href="#">#旅行商</a>
+    </article>
+
+
+    <article class="qitem" id="math_24_008">
+      <h2 class="qz" lang="zh">当目标函数是凸函数时,为什么算法求得的局部最小值一定就是全局最小值?</h2>
+      <p class="qen" lang="en">When the objective function is convex, why is any local minimum found by an algorithm guaranteed to be a global minimum?</p>
+      <div class="azh" lang="zh">因为凸函数的图像处处向上弯,任意两点之间的弦都落在函数图形上方。假如某点只是局部最小而别处另有更低点,那么连结这两点的弦在中段必然低于局部点的取值,而弦的中段又可以无限接近该局部点,这与它是局部最小矛盾。所以局部最优就是全局最优,梯度下降等迭代法不会被困在伪最优解上,这正是线性回归、支持向量机等凸模型可靠好解的原因。</div>
+      <div class="aen" lang="en">A convex function curves upward everywhere, so the chord joining any two of its points never dips below the function. If a point were merely a local minimum while a strictly lower value existed elsewhere, the chord to that better point would sit below the local value over its middle stretch, and those middle points lie arbitrarily close to the supposed minimum — contradiction. Hence local optimality implies global optimality, which is why descent methods solve convex models like linear regression and support vector machines reliably.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Boyd 与 L. Vandenberghe《Convex Optimization》,Cambridge University Press,2004</p>
+        <p lang="en">S. Boyd &amp; L. Vandenberghe, Convex Optimization, Cambridge University Press, 2004</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#凸优化</a> <a class="tag" href="#">#全局最优</a> <a class="tag" href="#">#梯度下降</a>
+    </article>
+
+
+    <article class="qitem" id="math_24_011">
+      <h2 class="qz" lang="zh">快递员一天要送一百个包裹,路线怎么排才不绕路?旅行商问题难在哪?</h2>
+      <p class="qen" lang="en">A courier delivers a hundred parcels daily — how to order stops without backtracking? Where does the traveling salesman difficulty hide?</p>
+      <div class="azh" lang="zh">难点在组合爆炸:10个城市的可能路线约18万条,100个城市的选择数超过可观测宇宙的原子总数。暴力枚举注定失败,于是运筹学兵分三路:精确算法(分支定界、动态规划)在小规模下保证最优;启发式(最近邻、2-opt局部改进)秒级给出可用解;现代求解器融合两者,已能对数万城市规模找到与最优解差距不到百分之一的路线。TSP 的价值远超快递——电路板钻孔、基因测序排序、天车调度都是它的变体,它也是 P 与 NP 问题的标志性成员。</div>
+      <div class="aen" lang="en">Combinatorial explosion is the enemy: ten cities offer about 180,000 tours, while a hundred cities exceed the atom count of the observable universe. Brute force dies fast, so operations research splits forces — exact algorithms (branch-and-bound, dynamic programming) guarantee optimality at small scale; heuristics (nearest-neighbor, 2-opt local search) return usable routes in seconds; modern solvers blend both, closing within one percent of optimal for tens of thousands of stops. TSP matters far beyond couriers — PCB drilling, genome ordering, crane scheduling are variants, and it stars in the P versus NP question.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Applegate、Bixby、Chvatal 与 Cook,《The Traveling Salesman Problem》,Princeton University Press,2006</p>
+        <p lang="en">D. L. Applegate et al., The Traveling Salesman Problem, Princeton University Press, 2006</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Traveling+Salesman+Problem" target="_blank" rel="noopener">核验依据 1 ISBN 9780691129938 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#旅行商问题</a> <a class="tag" href="#">#组合优化</a> <a class="tag" href="#">#启发式算法</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

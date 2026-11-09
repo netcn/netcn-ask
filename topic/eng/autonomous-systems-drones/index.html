@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自主系统与无人机 autonomous-systems-drones · 工程技术 Engineering | 问答</title>
+<meta name="description" content="自主系统与无人机（工程技术）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自主系统与无人机 autonomous-systems-drones · 工程技术 Engineering | 问答">
+<meta property="og:description" content="自主系统与无人机（工程技术）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/autonomous-systems-drones/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/autonomous-systems-drones/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>自主系统与无人机</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>自主系统与无人机 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#493c3f96766d">把强化学习用于机器人控制时，仿真到现实的域差距为何会成为部署瓶颈？</a></li><li><a href="#6c372785180a">在室内或城市峡谷等 GPS 拒止环境中，无人机靠什么实现自主定位？</a></li><li><a href="#9a9beead09e0">同时定位与建图（SLAM）中的闭环检测为什么对长期定位精度至关重要？</a></li><li><a href="#253de1603748">垂直起降（VTOL）飞行器相比固定翼在任务适应性上有什么优势与代价？</a></li><li><a href="#745201c4b848">自动驾驶中激光雷达（LiDAR）和摄像头在环境感知上如何互补？</a></li><li><a href="#dcf91f74ccfa">无人机集群通常用什么通信与决策方式实现协同？</a></li><li><a href="#e55414e4dedd">A* 路径规划算法相比简单的广度优先搜索，靠什么机制更高效？</a></li><li><a href="#f04acb821db9">自主系统中传感器融合主要解决什么问题？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="493c3f96766d">
+      <h2 class="qz" lang="zh">把强化学习用于机器人控制时，仿真到现实的域差距为何会成为部署瓶颈？</h2>
+      <p class="qen" lang="en">In applying reinforcement learning to robot control, why does the simulation-to-reality domain gap become a deployment bottleneck?</p>
+      <div class="azh" lang="zh">强化策略多在仿真中训练，而仿真与真实在动力学、摩擦、传感器噪声上存在差异，学到的策略一旦上机容易失效或失稳。常用域随机化（在仿真中加随机扰动）、系统辨识与真实数据微调来弥合差距，但这些方法仍难完全覆盖现实多样性。</div>
+      <div class="aen" lang="en">RL policies are mostly trained in simulation, yet sim and reality differ in dynamics, friction, and sensor noise, so learned policies often fail or destabilize on real hardware. Domain randomization, system identification, and real-data fine-tuning bridge the gap, but they still struggle to cover the full diversity of the real world.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Nature Machine Intelligence（机器人强化学习）</p>
+        <p lang="en">Nature Machine Intelligence (reinforcement learning for robotics)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#强化学习</a> <a class="tag" href="#">#仿真到现实</a> <a class="tag" href="#">#域随机化</a> <a class="tag" href="#">#机器人控制</a>
+    </article>
+
+
+    <article class="qitem" id="6c372785180a">
+      <h2 class="qz" lang="zh">在室内或城市峡谷等 GPS 拒止环境中，无人机靠什么实现自主定位？</h2>
+      <p class="qen" lang="en">In GPS-denied environments such as indoors or urban canyons, what does a drone rely on for autonomous localization?</p>
+      <div class="azh" lang="zh">此时依赖自身传感器：视觉惯性里程计用相机与 IMU 估计相对位姿，激光雷达或 UWB 信标提供绝对参照，配合地图匹配修正漂移。多传感器紧耦合融合可在无卫星信号时维持连续定位，但对计算资源与场景特征丰富度有要求。</div>
+      <div class="aen" lang="en">It then relies on onboard sensing: visual-inertial odometry fuses camera and IMU for relative pose, while LiDAR or UWB beacons supply absolute references, with map matching correcting drift. Tightly coupled multi-sensor fusion maintains continuous localization without satellites but demands compute and feature-rich scenes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Craig《机器人学导论》；Siegwart《自主移动机器人导论》；Thrun《概率机器人》(2005)</p>
+        <p lang="en">Craig, Introduction to Robotics; Siegwart, Introduction to Autonomous Mobile Robots; Thrun, Probabilistic Robotics (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#GPS 拒止</a> <a class="tag" href="#">#视觉惯性里程计</a> <a class="tag" href="#">#UWB</a> <a class="tag" href="#">#多传感器融合</a>
+    </article>
+
+
+    <article class="qitem" id="9a9beead09e0">
+      <h2 class="qz" lang="zh">同时定位与建图（SLAM）中的闭环检测为什么对长期定位精度至关重要？</h2>
+      <p class="qen" lang="en">Why is loop closure detection critical to long-term accuracy in simultaneous localization and mapping (SLAM)?</p>
+      <div class="azh" lang="zh">SLAM 通过递推估计机器人位姿，误差会随路径累积漂移；闭环检测在重访已建区域时识别出重复场景，用约束把累积误差全局修正回零点。没有闭环，长期运行的地图会严重失真，因此它是实现一致、可复用地图的关键。</div>
+      <div class="aen" lang="en">SLAM estimates pose recursively, so error drifts cumulatively along the path; loop closure recognizes a revisited area and applies a constraint that corrects accumulated error globally back to zero. Without it, long runs yield severely distorted maps, so it is key to consistent, reusable mapping.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Science Robotics（SLAM 与自主导航）</p>
+        <p lang="en">Science Robotics (SLAM and autonomous navigation)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#SLAM</a> <a class="tag" href="#">#闭环检测</a> <a class="tag" href="#">#位姿估计</a> <a class="tag" href="#">#累积误差</a>
+    </article>
+
+
+    <article class="qitem" id="253de1603748">
+      <h2 class="qz" lang="zh">垂直起降（VTOL）飞行器相比固定翼在任务适应性上有什么优势与代价？</h2>
+      <p class="qen" lang="en">What are the advantages and costs of vertical take-off and landing (VTOL) aircraft versus fixed-wing in mission flexibility?</p>
+      <div class="azh" lang="zh">VTOL 无需跑道即可起降，适合狭小平台与城市空运；但悬停时升力完全由旋翼提供、气动效率远低于巡航，导致能耗高、航时航程受限。近年电动垂直起降（eVTOL）通过分布式推进试图在续航与便捷间折中。</div>
+      <div class="aen" lang="en">VTOL needs no runway, suiting confined sites and urban air mobility, but during hover all lift comes from rotors at far lower aerodynamic efficiency than cruise, raising energy use and limiting endurance and range. Electric VTOL (eVTOL) with distributed propulsion seeks a compromise between range and convenience.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Seddon《直升机空气动力学基础》；NASA</p>
+        <p lang="en">Seddon, Basic Helicopter Aerodynamics; NASA</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL16495261W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL16495261W：Basic helicopter aerod</a></p>
+        
+      </details>
+      <a class="tag" href="#">#垂直起降</a> <a class="tag" href="#">#eVTOL</a> <a class="tag" href="#">#悬停效率</a> <a class="tag" href="#">#城市空运</a>
+    </article>
+
+
+    <article class="qitem" id="745201c4b848">
+      <h2 class="qz" lang="zh">自动驾驶中激光雷达（LiDAR）和摄像头在环境感知上如何互补？</h2>
+      <p class="qen" lang="en">How do LiDAR and cameras complement each other in autonomous-driving perception?</p>
+      <div class="azh" lang="zh">摄像头提供丰富的纹理与颜色信息，擅长识别车道、标志与分类，但在暗光和距离估计上较弱；激光雷达直接给出高精度三维点云与距离，对光照不敏感，却缺乏语义细节。两者融合才能获得既测距准确又语义完整的场景理解。</div>
+      <div class="aen" lang="en">Cameras give rich texture and color, excelling at lane, sign, and object classification but weak in low light and ranging; LiDAR yields high-precision 3D point clouds and distances independent of lighting but lacks semantic detail. Fusing both yields scene understanding that is both metrically accurate and semantically complete.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Maurer、Gerdes、Lenz &amp; Winner，《自动驾驶：技术、法律与社会视角》（Springer, 2016）</p>
+        <p lang="en">Maurer, Gerdes, Lenz &amp; Winner, &#x27;Autonomous Driving: Technical, Legal and Social Aspects&#x27; (Springer, 2016)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://link.springer.com/book/10.1007/978-3-662-45854-9" target="_blank" rel="noopener">核验依据 1 ISBN 978-3-662-45854-9 / DOI 10.1007/978-3-662-45854-9 (</a></p>
+        
+      </details>
+      <a class="tag" href="#">#激光雷达</a> <a class="tag" href="#">#摄像头</a> <a class="tag" href="#">#传感器融合</a> <a class="tag" href="#">#环境感知</a>
+    </article>
+
+
+    <article class="qitem" id="dcf91f74ccfa">
+      <h2 class="qz" lang="zh">无人机集群通常用什么通信与决策方式实现协同？</h2>
+      <p class="qen" lang="en">What communication and decision-making approaches do drone swarms typically use to coordinate?</p>
+      <div class="azh" lang="zh">集群多采用去中心化的相对定位与局部通信，每个单元依据邻居状态与简单规则（如分离、对齐、聚合）自行决策，整体涌现出编队、覆盖或围捕等行为。相比集中控制，这种方式对单点失效更鲁棒，也更易扩展规模。</div>
+      <div class="aen" lang="en">Swarms typically use decentralized relative positioning and local communication, where each unit decides from neighbors&#x27; states via simple rules such as separation, alignment, and cohesion, and the group emerges behaviors like formation, coverage, or encirclement. Versus centralized control, this is more robust to single-point failure and easier to scale.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Science Robotics（集群机器人）</p>
+        <p lang="en">Science Robotics (swarm robotics)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#无人机集群</a> <a class="tag" href="#">#去中心化</a> <a class="tag" href="#">#群体智能</a> <a class="tag" href="#">#协同</a>
+    </article>
+
+
+    <article class="qitem" id="e55414e4dedd">
+      <h2 class="qz" lang="zh">A* 路径规划算法相比简单的广度优先搜索，靠什么机制更高效？</h2>
+      <p class="qen" lang="en">Compared with plain breadth-first search, what mechanism makes the A* path-planning algorithm more efficient?</p>
+      <div class="azh" lang="zh">A* 在扩展节点时除记录已走代价 g 外，还用启发函数 h 估计到目标的剩余代价，优先扩展 f=g+h 最小的节点。借助合理的启发（如欧氏距离），它能在保证找到最优路径的同时大幅减少搜索范围，比盲目搜索更高效。</div>
+      <div class="aen" lang="en">A* tracks the cost-so-far g for each node and adds a heuristic h estimating remaining cost to the goal, expanding nodes with the smallest f=g+h first. With a suitable heuristic such as Euclidean distance, it finds the optimal path while pruning the search space far more than blind search.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#A*</a> <a class="tag" href="#">#路径规划</a> <a class="tag" href="#">#启发函数</a> <a class="tag" href="#">#最优路径</a>
+    </article>
+
+
+    <article class="qitem" id="f04acb821db9">
+      <h2 class="qz" lang="zh">自主系统中传感器融合主要解决什么问题？</h2>
+      <p class="qen" lang="en">What main problem does sensor fusion solve in autonomous systems?</p>
+      <div class="azh" lang="zh">单一传感器各有盲区与噪声，融合把多个异源传感器的观测按统计最优方式结合，得到比任一单独传感器更可靠、更完整的状态估计。卡尔曼滤波及其扩展是经典工具，能在噪声与缺失下持续给出位置、速度等关键信息。</div>
+      <div class="aen" lang="en">Each single sensor has blind spots and noise; fusion combines heterogeneous observations in a statistically optimal way to yield more reliable and complete state estimates than any sensor alone. The Kalman filter and its variants are classic tools, continuously providing position, velocity, and other key states under noise and dropouts.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Thrun、Burgard &amp; Fox，《概率机器人学》（2005）</p>
+        <p lang="en">Thrun, Burgard &amp; Fox, &#x27;Probabilistic Robotics&#x27; (2005)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Probabilistic+Robotics" target="_blank" rel="noopener">核验依据 1 ISBN 9780262332750 (2005)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#传感器融合</a> <a class="tag" href="#">#卡尔曼滤波</a> <a class="tag" href="#">#状态估计</a> <a class="tag" href="#">#冗余</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

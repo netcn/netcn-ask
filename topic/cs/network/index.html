@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>network · 计算机 Computer Science | 问答</title>
+<meta name="description" content="network（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="network · 计算机 Computer Science | 问答">
+<meta property="og:description" content="network（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/network/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/network/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>network</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>network <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#75fa286534a2">像 BBR 这样的拥塞控制算法目标是什么？</a></li><li><a href="#9ad940ac44ea">BGP 为什么被形容为“互联网的邮政路由”？</a></li><li><a href="#ee43de72c53c">子网掩码是做什么用的？</a></li><li><a href="#3347063a0243">QUIC 协议相比传统的 TCP+TLS 解决了哪些痛点？</a></li><li><a href="#90fc1a9e4737">DNS 是不是就像互联网的“电话簿”？</a></li><li><a href="#a2c4dce763c1">为什么有时候网页打不开？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="75fa286534a2">
+      <h2 class="qz" lang="zh">像 BBR 这样的拥塞控制算法目标是什么？</h2>
+      <p class="qen" lang="en">What is the goal of congestion-control algorithms like BBR?</p>
+      <div class="azh" lang="zh">传统算法靠丢包来“感觉”网络拥堵，往往要么太保守要么把缓冲区填满。BBR 通过测量带宽和往返时延来建模真实瓶颈，尽量以最高吞吐、最低时延发送，而不是等丢包才减速。</div>
+      <div class="aen" lang="en">Classic algorithms infer congestion from packet loss, often under- or over-shooting. BBR models the real bottleneck by measuring bandwidth and RTT, sending at maximum throughput with minimal delay instead of waiting for loss.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#拥塞控制</a> <a class="tag" href="#">#BBR</a>
+    </article>
+
+
+    <article class="qitem" id="9ad940ac44ea">
+      <h2 class="qz" lang="zh">BGP 为什么被形容为“互联网的邮政路由”？</h2>
+      <p class="qen" lang="en">Why is BGP described as the internet&#x27;s postal routing?</p>
+      <div class="azh" lang="zh">BGP 是各自治系统（AS）之间交换“去哪条路可达”的边界网关协议，靠策略而非最短距离选路，就像邮政按行政区划逐段转发。它缺乏内置的安全校验，因此曾出现路由被蓄意“劫持”的事件。</div>
+      <div class="aen" lang="en">BGP is the protocol by which autonomous systems exchange &#x27;which path reaches where&#x27;, choosing by policy rather than pure distance—like postal mail handed zone by zone. It lacks built-in security, so routes have been hijacked.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#BGP</a> <a class="tag" href="#">#路由</a>
+    </article>
+
+
+    <article class="qitem" id="ee43de72c53c">
+      <h2 class="qz" lang="zh">子网掩码是做什么用的？</h2>
+      <p class="qen" lang="en">What is a subnet mask used for?</p>
+      <div class="azh" lang="zh">子网掩码用比特位把 IP 地址分成网络号和主机号两部分，路由器据此判断目标地址是否在同一子网，从而决定是直接投递还是转发到网关。</div>
+      <div class="aen" lang="en">A subnet mask splits an IP into network and host portions; routers use it to decide whether a destination is on the local subnet or must be forwarded to a gateway.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#IP</a>
+    </article>
+
+
+    <article class="qitem" id="3347063a0243">
+      <h2 class="qz" lang="zh">QUIC 协议相比传统的 TCP+TLS 解决了哪些痛点？</h2>
+      <p class="qen" lang="en">What pain points does QUIC solve versus classic TCP+TLS?</p>
+      <div class="azh" lang="zh">QUIC 基于 UDP，把传输与加密握手合并，实现 0-RTT 或 1-RTT 建连，远快于 TCP 三次握手再加 TLS。它还把多个数据流放在同一连接且相互隔离，单个流丢包不会阻塞其他流，缓解了队头阻塞。</div>
+      <div class="aen" lang="en">QUIC runs over UDP and merges transport with encrypted handshake, enabling 0/1-RTT setup versus TCP&#x27;s three-way plus TLS. It multiplexes independent streams in one connection, so one lost stream doesn&#x27;t block others, easing head-of-line blocking.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#QUIC</a> <a class="tag" href="#">#HTTP3</a>
+    </article>
+
+
+    <article class="qitem" id="90fc1a9e4737">
+      <h2 class="qz" lang="zh">DNS 是不是就像互联网的“电话簿”？</h2>
+      <p class="qen" lang="en">Is DNS like the internet&#x27;s phone book?</p>
+      <div class="azh" lang="zh">是的。我们记的是“example.com”这样的名字，电脑要的是 IP 地址。DNS 负责把名字翻译成数字地址，就像电话簿把人名查成电话号码，你才连得上网站。</div>
+      <div class="aen" lang="en">Yes. We remember names like &#x27;example.com&#x27; but computers need IP addresses. DNS translates names to numeric addresses, like a phone book turning a name into a number so you can reach the site.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#域名</a>
+    </article>
+
+
+    <article class="qitem" id="a2c4dce763c1">
+      <h2 class="qz" lang="zh">为什么有时候网页打不开？</h2>
+      <p class="qen" lang="en">Why do web pages sometimes fail to load?</p>
+      <div class="azh" lang="zh">可能是网络断连、服务器太忙、域名解析失败或浏览器缓存出错；刷新、检查 Wi-Fi 或换个时间再试通常能解决。</div>
+      <div class="aen" lang="en">It could be a dropped connection, a busy server, failed name resolution or a bad cache; refreshing, checking Wi-Fi or trying later usually helps.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#故障</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

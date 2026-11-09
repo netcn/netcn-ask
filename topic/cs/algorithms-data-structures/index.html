@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>算法与数据结构 algorithms-data-structures · 计算机 Computer Science | 问答</title>
+<meta name="description" content="算法与数据结构（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="算法与数据结构 algorithms-data-structures · 计算机 Computer Science | 问答">
+<meta property="og:description" content="算法与数据结构（计算机）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/algorithms-data-structures/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/algorithms-data-structures/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>算法与数据结构</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>算法与数据结构 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#3e724714fe12">Dijkstra 最短路径算法为何要求边权非负才能正确工作?</a></li><li><a href="#51c1843b301d">哈希表的负载因子如何影响平均查找性能，工程上如何取舍?</a></li><li><a href="#5ee5b7998c97">快速排序在最坏情况下为何会退化为 O(n²)，实际实现如何规避?</a></li><li><a href="#300f185c6fad">广度优先搜索(BFS)通常用于解决哪类图问题?</a></li><li><a href="#5c554a268f11">在二叉搜索树中查找一个键的基本步骤是什么?</a></li><li><a href="#8cb62e14ef66">算法分析中的大 O 符号表达的是什么含义?</a></li><li><a href="#c2583418f3ea">归并排序为什么是稳定的排序算法?</a></li><li><a href="#e3f274348ffe">哈希表中发生哈希冲突时，链地址法是如何处理的?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="3e724714fe12">
+      <h2 class="qz" lang="zh">Dijkstra 最短路径算法为何要求边权非负才能正确工作?</h2>
+      <p class="qen" lang="en">Why does Dijkstra&#x27;s shortest-path algorithm require non-negative edge weights to be correct?</p>
+      <div class="azh" lang="zh">Dijkstra 采用贪心策略，一旦某个顶点被标记为已确定最短距离就永久固定，依据是此后不可能有更短路径到达它。若存在负权边，已确定的距离可能被后续经过负权边的路径推翻，而算法已不会再松弛该顶点，从而得出错误结果。</div>
+      <div class="aen" lang="en">Dijkstra uses a greedy rule that permanently finalizes a vertex&#x27;s shortest distance the moment it is settled, relying on the assumption that no shorter path can later reach it. With a negative-weight edge a later path through that edge could improve an already-settled distance, but the algorithm will not relax it again, yielding a wrong answer.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第24章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 24 (Single-Source Shortest Paths)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Dijkstra</a> <a class="tag" href="#">#最短路径</a> <a class="tag" href="#">#贪心</a>
+    </article>
+
+
+    <article class="qitem" id="51c1843b301d">
+      <h2 class="qz" lang="zh">哈希表的负载因子如何影响平均查找性能，工程上如何取舍?</h2>
+      <p class="qen" lang="en">How does a hash table&#x27;s load factor affect average lookup performance, and how is the trade-off managed in practice?</p>
+      <div class="azh" lang="zh">负载因子是已存元素数与桶数之比；它越大，冲突越频繁，平均查找时间从接近 O(1) 逐渐退化。当负载因子超过阈值（如 0.75）时，实现会扩容并重新散列所有元素，以用更多空间换取更低的冲突率。</div>
+      <div class="aen" lang="en">The load factor is the ratio of stored entries to buckets; as it grows, collisions become more frequent and average lookup time drifts away from O(1). Once it exceeds a threshold such as 0.75, implementations resize and rehash all entries, trading extra space for fewer collisions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第11章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 11 (Hash Tables)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#负载因子</a> <a class="tag" href="#">#扩容</a>
+    </article>
+
+
+    <article class="qitem" id="5ee5b7998c97">
+      <h2 class="qz" lang="zh">快速排序在最坏情况下为何会退化为 O(n²)，实际实现如何规避?</h2>
+      <p class="qen" lang="en">Why does quicksort degrade to O(n²) in the worst case, and how do practical implementations avoid it?</p>
+      <div class="azh" lang="zh">若每次划分都极不平衡（如输入已有序且总选首元素为基准），递归深度达到 n，比较次数累计为 O(n²)。工程实现通常采用随机化选取基准或三数取中来降低最坏情况概率，并对小数组切换到插入排序。</div>
+      <div class="aen" lang="en">If every partition is highly unbalanced, as when the input is already sorted and the first element is always chosen as pivot, the recursion depth reaches n and the total comparisons become O(n²). Practical implementations pick the pivot randomly or by median-of-three to reduce this probability, and switch to insertion sort for small subarrays.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Knuth《计算机程序设计艺术》第3卷 排序与查找 (国防工业出版社)</p>
+        <p lang="en">D. Knuth, The Art of Computer Programming, Volume 3 (Sorting and Searching), Section 5.2.2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26681685/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115360670（豆瓣书目条目）</a> · <a class="evlink" href="https://archive.org/details/B-001-002-138-NLA" target="_blank" rel="noopener">核验依据 3 ARCHIVE 标识 B-001-002-138-NLA：The Art of Computer Program</a></p>
+        
+      </details>
+      <a class="tag" href="#">#快速排序</a> <a class="tag" href="#">#时间复杂度</a> <a class="tag" href="#">#随机化</a>
+    </article>
+
+
+    <article class="qitem" id="300f185c6fad">
+      <h2 class="qz" lang="zh">广度优先搜索(BFS)通常用于解决哪类图问题?</h2>
+      <p class="qen" lang="en">What class of graph problems is breadth-first search (BFS) typically used for?</p>
+      <div class="azh" lang="zh">BFS 从起点逐层向外扩展，先访问距离近的节点，因此能求出无权图上从一个顶点到其余顶点的最短路径。它也常用于连通分量检测、社交网络中的一度二度关系发现等按层遍历的场景。</div>
+      <div class="aen" lang="en">BFS expands outward layer by layer from the start, visiting nearer nodes first, so it finds shortest paths on unweighted graphs from one vertex to all others. It is also used for connected-component detection and level-by-level traversal such as finding first- and second-degree connections in a social network.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第22章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 22 (Elementary Graph Algorithms)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#BFS</a> <a class="tag" href="#">#图遍历</a> <a class="tag" href="#">#最短路径</a>
+    </article>
+
+
+    <article class="qitem" id="5c554a268f11">
+      <h2 class="qz" lang="zh">在二叉搜索树中查找一个键的基本步骤是什么?</h2>
+      <p class="qen" lang="en">What are the basic steps to search for a key in a binary search tree?</p>
+      <div class="azh" lang="zh">从根节点出发，将目标键与当前节点键比较：若相等即找到，若更小则进入左子树，若更大则进入右子树，重复直到命中或到达空节点。该过程在平衡树中平均只需 O(log n) 次比较。</div>
+      <div class="aen" lang="en">Starting at the root, compare the target key with the current node: if equal you have found it, if smaller go left, if larger go right, repeating until a match or an empty subtree. In a balanced tree this takes on average only O(log n) comparisons.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第12章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 12 (Binary Search Trees)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#二叉搜索树</a> <a class="tag" href="#">#查找</a> <a class="tag" href="#">#分治</a>
+    </article>
+
+
+    <article class="qitem" id="8cb62e14ef66">
+      <h2 class="qz" lang="zh">算法分析中的大 O 符号表达的是什么含义?</h2>
+      <p class="qen" lang="en">What does big-O notation express in algorithm analysis?</p>
+      <div class="azh" lang="zh">大 O 描述算法运行时间或空间随输入规模增长的上界，忽略常数因子和低阶项，只反映渐进趋势。例如 O(n log n) 表示当 n 很大时，运行时间的增长不超过 n log n 的某个常数倍。</div>
+      <div class="aen" lang="en">Big-O describes an upper bound on an algorithm&#x27;s running time or space as the input size grows, ignoring constant factors and lower-order terms to capture only the asymptotic trend. O(n log n) means that for large n the time grows no faster than a constant multiple of n log n.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第3章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 3 (Growth of Functions)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大O</a> <a class="tag" href="#">#复杂度</a> <a class="tag" href="#">#渐进分析</a>
+    </article>
+
+
+    <article class="qitem" id="c2583418f3ea">
+      <h2 class="qz" lang="zh">归并排序为什么是稳定的排序算法?</h2>
+      <p class="qen" lang="en">Why is merge sort a stable sorting algorithm?</p>
+      <div class="azh" lang="zh">归并排序采用分治，把序列递归拆到单个元素再两两合并，合并时遇到相等元素总是优先取前半部分（左边）的元素。因为相等键的相对顺序在合并中保持不变，所以整体排序是稳定的。</div>
+      <div class="aen" lang="en">Merge sort uses divide and conquer, recursively splitting down to single elements and then merging pairs, and during a merge it always takes the element from the left half first when keys are equal. Because equal keys keep their relative order, the whole sort is stable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Knuth《计算机程序设计艺术》第3卷 排序与查找 (国防工业出版社)</p>
+        <p lang="en">D. Knuth, The Art of Computer Programming, Volume 3 (Sorting and Searching), Section 5.2.4 (Merge Sorting)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26681685/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115360670（豆瓣书目条目）</a> · <a class="evlink" href="https://archive.org/details/B-001-002-138-NLA" target="_blank" rel="noopener">核验依据 3 ARCHIVE 标识 B-001-002-138-NLA：The Art of Computer Program</a></p>
+        
+      </details>
+      <a class="tag" href="#">#归并排序</a> <a class="tag" href="#">#稳定性</a> <a class="tag" href="#">#分治</a>
+    </article>
+
+
+    <article class="qitem" id="e3f274348ffe">
+      <h2 class="qz" lang="zh">哈希表中发生哈希冲突时，链地址法是如何处理的?</h2>
+      <p class="qen" lang="en">When a hash collision occurs in a hash table, how does separate chaining handle it?</p>
+      <div class="azh" lang="zh">链地址法让每个桶存放一个链表（或动态结构），所有映射到同一桶的元素都挂在对应的链表上。查找时先通过哈希定位桶，再在链表内顺序比较键，因此冲突只会增加链表长度而不影响其他桶。</div>
+      <div class="aen" lang="en">Separate chaining gives each bucket a linked list into which all keys hashing to that bucket are inserted. To look up a key you first locate the bucket by hash and then scan the list linearly, so collisions only lengthen one list rather than affecting other buckets.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen《算法导论》第11章 (机械工业出版社)</p>
+        <p lang="en">T. Cormen et al., Introduction to Algorithms (CLRS), 4th ed., Chapter 11 (Hash Tables)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希表</a> <a class="tag" href="#">#冲突</a> <a class="tag" href="#">#链地址法</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

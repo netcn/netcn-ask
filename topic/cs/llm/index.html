@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>llm · 计算机 Computer Science | 问答</title>
+<meta name="description" content="llm（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="llm · 计算机 Computer Science | 问答">
+<meta property="og:description" content="llm（计算机）分类下的 14 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 14 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/llm/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/llm/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>llm</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>llm <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>14</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#4f1a018e389f">RLHF 是如何把大模型对齐到人类偏好的？</a></li><li><a href="#cs_19_006">自回归语言建模与掩码语言建模在训练目标上的本质差异,如何造成二者在生成与理解任务</a></li><li><a href="#cs_22_016">Transformer 大模型自回归解码时为什么要缓存历史的 Key 和 Val</a></li><li><a href="#1290282a4034">旋转位置编码（RoPE）解决了自注意力的什么问题？</a></li><li><a href="#2e4b960972ae">模型量化（如 INT8、INT4）为什么能缩小模型体积并提速？</a></li><li><a href="#6bd40cb60637">微调（fine-tuning）和提示工程（prompt engineering）</a></li><li><a href="#9100a8f86d27">混合专家模型（MoE）怎样在不大改算力的情况下扩大参数规模？</a></li><li><a href="#ac3dff7ba007">上下文窗口（context window）为什么是有限的？</a></li><li><a href="#cs_19_014">BERT 这类模型为什么不按词或按字切分,而要采用 WordPiece 这样的子</a></li><li><a href="#cs_22_008">Transformer 的自注意力机制是如何让模型聚焦到句子中相关词语上的？</a></li><li><a href="#69e0b3fe03f1">什么是大语言模型的“幻觉”？</a></li><li><a href="#ae122971e0a9">为什么大模型的推理要用 KV Cache 来加速？</a></li><li><a href="#c09cdf717f40">自注意力机制里查询（Q）、键（K）、值（V）各起什么作用？</a></li><li><a href="#f68c76fc510c">什么是词元（token），为什么说 token 数量影响使用成本？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="4f1a018e389f">
+      <h2 class="qz" lang="zh">RLHF 是如何把大模型对齐到人类偏好的？</h2>
+      <p class="qen" lang="en">How does RLHF align an LLM with human preferences?</p>
+      <div class="azh" lang="zh">先让人对模型输出排序，训练一个奖励模型学习“什么是更好的回答”；再用强化学习（如 PPO）优化语言模型，使其在保持流畅的同时最大化奖励模型给出的分数，从而贴近人类期望。</div>
+      <div class="aen" lang="en">Humans rank model outputs to train a reward model of &#x27;what is better&#x27;, then reinforcement learning (e.g. PPO) optimizes the language model to maximize that reward while staying fluent, nudging it toward human-preferred behavior.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RLHF</a> <a class="tag" href="#">#对齐</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_006">
+      <h2 class="qz" lang="zh">自回归语言建模与掩码语言建模在训练目标上的本质差异,如何造成二者在生成与理解任务上的分化?BERT 的独立重建假设又牺牲了什么?</h2>
+      <p class="qen" lang="en">How does the fundamental difference between autoregressive and masked language modeling objectives split the two families between generation and understanding tasks, and what does BERT&#x27;s independent-reconstruction assumption sacrifice?</p>
+      <div class="azh" lang="zh">自回归模型按链式法则从左到右分解联合概率,天然适配文本生成;掩码模型用双向上下文恢复被遮蔽的词,学到更适合分类、抽取等理解任务的表示。BERT 对每个掩码位独立预测,忽略了被遮蔽词之间的联合依赖,这正是 XLNet 采用置换语言建模试图修复的缺陷。</div>
+      <div class="aen" lang="en">Autoregressive models factor the joint probability left-to-right via the chain rule and fit generation naturally; masked models reconstruct corrupted tokens from bidirectional context, learning representations better suited to classification and extraction. BERT predicts each masked position independently, ignoring joint dependencies among masked tokens — the very shortcoming XLNet&#x27;s permutation language model set out to repair.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Z. Yang 等,《XLNet:广义自回归预训练》,NeurIPS 2019;Devlin 等的 BERT,NAACL 2019</p>
+        <p lang="en">Z. Yang et al., XLNet: Generalized Autoregressive Pretraining, NeurIPS 2019; Devlin et al., BERT, NAACL 2019</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#自然语言处理</a> <a class="tag" href="#">#预训练目标</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_016">
+      <h2 class="qz" lang="zh">Transformer 大模型自回归解码时为什么要缓存历史的 Key 和 Value（KV cache）？它省去了哪些重复计算，代价是什么？</h2>
+      <p class="qen" lang="en">Why do Transformer LLMs cache past Keys and Values (the KV cache) during autoregressive decoding? Which repeated computation does it save, and at what cost?</p>
+      <div class="azh" lang="zh">自回归解码时，每个新 token 都要对之前全部 token 做自注意力。若无缓存，每一步都要重算历史位置在各层的 Key/Value 投影，单步开销随已生成长度上升。缓存后，每步只为新 token 计算一份 Q/K/V 并追加，历史 K/V 直接复用；代价是缓存显存随上下文线性膨胀，长上下文时反成吞吐瓶颈。</div>
+      <div class="aen" lang="en">At each decoding step the new token must attend to every earlier token. Without a cache, the Key/Value projections for all previous positions would be recomputed layer by layer on every step, so per-step work grows with the length generated so far. With a KV cache, only the new token&#x27;s Q/K/V are computed once and appended, while historical K/V pairs are simply reused. The trade-off is that cache memory grows linearly with context length and becomes the throughput bottleneck for long contexts.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kwon, Li, Zhuang, Sheng,《Efficient Memory Management for Large Language Model Serving with PagedAttention》,Proceedings of the 29th Symposium on Operating Systems Princ,2023 (DOI: 10.1145/3600006.3613165)</p>
+        <p lang="en">Kwon, Li, Zhuang, Sheng, &#x27;Efficient Memory Management for Large Language Model Serving with PagedAttention&#x27;, Proceedings of the 29th Symposium on Operating Systems Princ, 2023, DOI: 10.1145/3600006.3613165</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/3600006.3613165" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/3600006.3613165</a></p>
+        
+      </details>
+      <a class="tag" href="#">#注意力机制</a> <a class="tag" href="#">#自回归解码</a> <a class="tag" href="#">#推理优化</a>
+    </article>
+
+
+    <article class="qitem" id="1290282a4034">
+      <h2 class="qz" lang="zh">旋转位置编码（RoPE）解决了自注意力的什么问题？</h2>
+      <p class="qen" lang="en">What does Rotary Position Embedding (RoPE) solve for attention?</p>
+      <div class="azh" lang="zh">Transformer 本身不自带词序信息，RoPE 把位置编码成旋转矩阵乘到 Q、K 上，使两个词元的内积只依赖它们的相对位置与夹角，既注入顺序又便于外推到更长的序列。</div>
+      <div class="aen" lang="en">Transformers have no built-in word order; RoPE rotates Q and K by position-dependent angles so their dot product depends mainly on relative position, injecting order while helping extrapolation to longer sequences.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#位置编码</a> <a class="tag" href="#">#RoPE</a>
+    </article>
+
+
+    <article class="qitem" id="2e4b960972ae">
+      <h2 class="qz" lang="zh">模型量化（如 INT8、INT4）为什么能缩小模型体积并提速？</h2>
+      <p class="qen" lang="en">Why does quantization (e.g. INT8, INT4) shrink models and speed them up?</p>
+      <div class="azh" lang="zh">量化把原本用 16 位或 32 位浮点存储的权重改用 8 位甚至 4 位整数表示，数据量成倍减少、内存占用下降，且整数运算通常比浮点更快，代价是少量精度损失。</div>
+      <div class="aen" lang="en">Quantization stores weights as 8-bit or even 4-bit integers instead of 16/32-bit floats, cutting size and memory bandwidth while integer math is often faster—at the cost of slight accuracy loss.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#量化</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="6bd40cb60637">
+      <h2 class="qz" lang="zh">微调（fine-tuning）和提示工程（prompt engineering）有什么不同？</h2>
+      <p class="qen" lang="en">How do fine-tuning and prompt engineering differ?</p>
+      <div class="azh" lang="zh">提示工程不改模型权重，只通过设计输入文字来引导已有模型；微调则用新数据更新部分或全部模型参数，让能力更持久地“固化”下来。前者快且零训练成本，后者更适配特定任务但需算力与数据。</div>
+      <div class="aen" lang="en">Prompt engineering leaves weights untouched and only shapes the input text to steer the model; fine-tuning updates some or all parameters with new data to bake in a capability. The former is cheap and instant, the latter fits a task better but needs compute and data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微调</a> <a class="tag" href="#">#提示</a>
+    </article>
+
+
+    <article class="qitem" id="9100a8f86d27">
+      <h2 class="qz" lang="zh">混合专家模型（MoE）怎样在不大改算力的情况下扩大参数规模？</h2>
+      <p class="qen" lang="en">How do Mixture-of-Experts (MoE) models grow parameters without scaling compute proportionally?</p>
+      <div class="azh" lang="zh">MoE 把前馈层拆成多个“专家”子网络，每个词元只由门控网络选中的少数专家处理，因此总参数量很大，但每次推理激活的参数量很小，从而兼顾容量与效率。</div>
+      <div class="aen" lang="en">MoE splits feed-forward layers into many expert sub-networks and, per token, a gating network activates only a few experts. Total parameters are huge, but per-inference active parameters stay small, balancing capacity and efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#MoE</a> <a class="tag" href="#">#稀疏</a>
+    </article>
+
+
+    <article class="qitem" id="ac3dff7ba007">
+      <h2 class="qz" lang="zh">上下文窗口（context window）为什么是有限的？</h2>
+      <p class="qen" lang="en">Why is the context window limited?</p>
+      <div class="azh" lang="zh">上下文窗口是模型一次能“看到”的词元数量上限，受注意力计算随长度平方增长、显存中 KV Cache 占用以及训练时见过的最大长度所限。超出窗口的内容会被丢弃或需要分段处理。</div>
+      <div class="aen" lang="en">The context window is the max number of tokens a model can see at once, bounded by quadratic attention cost, the KV cache memory, and the longest length seen in training. Anything beyond is dropped or must be chunked.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">A. Vaswani 等,《Attention Is All You Need》,NeurIPS 2017</p>
+        <p lang="en">A. Vaswani et al., Attention Is All You Need, NeurIPS 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/sseymens-attention-is-all-you-need" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 sseymens-attention-is-all-you-need：Attention </a></p>
+        
+      </details>
+      <a class="tag" href="#">#上下文</a> <a class="tag" href="#">#长度</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_014">
+      <h2 class="qz" lang="zh">BERT 这类模型为什么不按词或按字切分,而要采用 WordPiece 这样的子词方案?</h2>
+      <p class="qen" lang="en">What motivates subword schemes like WordPiece over word-level or character-level segmentation in models such as BERT?</p>
+      <div class="azh" lang="zh">按词建词表会让开放词汇无限膨胀,低频词与新造词一律沦为 UNK,形态丰富的语言受害最深;纯字符序列又太长且单字符几乎不带语义,训练与推理成本都高。子词切分把高频词保持完整、把低频词拆成可复用片段,例如 transformer 可拆为 transform 与 er,BERT 的三万词表因此几乎不产生 UNK。Sennrich 等在机器翻译中引入的 BPE 是这一思想的代表实现,WordPiece 本质上是按似然增益挑选合并的变体。</div>
+      <div class="aen" lang="en">A word vocabulary balloons toward unbounded size, dumping rare words and neologisms into UNK—a penalty morphologically rich languages pay hardest—while pure character streams stretch sequence length and carry almost no meaning per token. Subwords keep frequent words intact and split rare ones into reusable pieces, so transformer factors into transform and er, letting the 30k BERT vocabulary cover its corpus with almost no UNK tokens. Byte-pair encoding, introduced for machine translation by Sennrich et al., is the canonical implementation, and WordPiece is essentially a variant that merges whichever pair maximizes likelihood gain.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Sennrich 等《Neural Machine Translation of Rare Words with Subword Units》,ACL 2016</p>
+        <p lang="en">R. Sennrich et al., &quot;Neural Machine Translation of Rare Words with Subword Units&quot;, ACL 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1508.07909" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1508.07909：Neural Machine Translation o</a></p>
+        
+      </details>
+      <a class="tag" href="#">#文本切分</a> <a class="tag" href="#">#子词模型</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_008">
+      <h2 class="qz" lang="zh">Transformer 的自注意力机制是如何让模型聚焦到句子中相关词语上的？</h2>
+      <p class="qen" lang="en">How does the self-attention mechanism in a Transformer let the model focus on the relevant words in a sentence?</p>
+      <div class="azh" lang="zh">每个词向量经三组可学习矩阵投影为查询、键、值三种向量。某词的查询向量与全句各词的键向量做点积，缩放并归一化后得到注意力权重，权重越大代表关联越强；再以这些权重对所有值向量加权求和，得到该位置的新表示。于是代词能从远处的名词聚合信息，且各位置同时计算，训练可以完全并行。</div>
+      <div class="aen" lang="en">Learned matrices project each token vector into query, key, and value vectors. A token&#x27;s query is dotted with every key in the sequence, scaled, and softmax-normalized into attention weights—the better the match, the larger the weight. The new representation at that position is the weighted sum of all value vectors under these weights. This lets a pronoun gather information from a distant noun, and since all positions compute at once, training parallelizes completely.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Vaswani 等，《Attention Is All You Need》，Advances in Neural Information Processing Systems 30（NeurIPS 2017）。</p>
+        <p lang="en">A. Vaswani et al., &quot;Attention Is All You Need,&quot; Advances in Neural Information Processing Systems 30 (NeurIPS 2017).</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#自注意力</a> <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#注意力权重</a>
+    </article>
+
+
+    <article class="qitem" id="69e0b3fe03f1">
+      <h2 class="qz" lang="zh">什么是大语言模型的“幻觉”？</h2>
+      <p class="qen" lang="en">What is a &#x27;hallucination&#x27; in a large language model?</p>
+      <div class="azh" lang="zh">幻觉是指模型生成看似通顺却与事实不符或根本不存在的内容。它源于模型在预测下一个词时追求流畅，而非核对真实世界的事实。</div>
+      <div class="aen" lang="en">A hallucination is when the model produces fluent text that is false or fabricated. It happens because the model predicts plausible next words rather than verifying real-world facts.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大模型</a> <a class="tag" href="#">#幻觉</a>
+    </article>
+
+
+    <article class="qitem" id="ae122971e0a9">
+      <h2 class="qz" lang="zh">为什么大模型的推理要用 KV Cache 来加速？</h2>
+      <p class="qen" lang="en">Why does LLM inference use a KV cache to speed up?</p>
+      <div class="azh" lang="zh">生成时每输出一个新词元都要让它与之前所有词元做注意力计算。KV Cache 把已算好的历史 K、V 缓存起来，避免每步重复计算，使每步开销从与序列长度平方相关降到近似线性。</div>
+      <div class="aen" lang="en">When generating, each new token attends to all previous ones. The KV cache stores the already-computed past keys and values so they are not recomputed, dropping per-step cost from roughly quadratic to near-linear in sequence length.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#推理</a> <a class="tag" href="#">#KV缓存</a>
+    </article>
+
+
+    <article class="qitem" id="c09cdf717f40">
+      <h2 class="qz" lang="zh">自注意力机制里查询（Q）、键（K）、值（V）各起什么作用？</h2>
+      <p class="qen" lang="en">What do query (Q), key (K) and value (V) do in self-attention?</p>
+      <div class="azh" lang="zh">每个词元生成 Q、K、V 三个向量：用某个词的 Q 与其余词的 K 做点积得到相似度，再softmax成权重，最后用这些权重对 V 加权求和，从而得到融合了上下文信息的表示。</div>
+      <div class="aen" lang="en">Each token produces Q, K and V vectors: a token&#x27;s Q is compared with others&#x27; K via dot product to get similarity, softmaxed into weights, then used to take a weighted sum of the V vectors, yielding a context-aware representation.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Transformer</a> <a class="tag" href="#">#注意力</a>
+    </article>
+
+
+    <article class="qitem" id="f68c76fc510c">
+      <h2 class="qz" lang="zh">什么是词元（token），为什么说 token 数量影响使用成本？</h2>
+      <p class="qen" lang="en">What is a token, and why does token count affect cost?</p>
+      <div class="azh" lang="zh">词元是模型处理文本时切分出的基本单位，可能是一个字、词或标点。模型按输入和输出的词元数计费与计算力，因此同样一段话，切得越碎、生成越长，花费就越高。</div>
+      <div class="aen" lang="en">A token is the basic unit a model splits text into—a character, word piece or punctuation. Models bill and compute by the number of input and output tokens, so more (or longer) tokens cost more.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#词元</a> <a class="tag" href="#">#计费</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

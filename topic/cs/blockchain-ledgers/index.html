@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>区块链与分布式账本 blockchain-ledgers · 计算机 Computer Science | 问答</title>
+<meta name="description" content="区块链与分布式账本（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="区块链与分布式账本 blockchain-ledgers · 计算机 Computer Science | 问答">
+<meta property="og:description" content="区块链与分布式账本（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/blockchain-ledgers/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/blockchain-ledgers/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>区块链与分布式账本</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>区块链与分布式账本 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#22083f56db9a">工作量证明(PoW)如何达成去中心化共识，又为何害怕 51% 攻击?</a></li><li><a href="#704c63daa477">默克尔树(Merkle Tree)如何让轻节点高效验证一笔交易是否存在?</a></li><li><a href="#33e8ac3736b9">区块链为什么被称为「链」，其基本数据结构是怎样的?</a></li><li><a href="#4a3d0d35a8a3">区块链「不可篡改」的特性主要来自哪些机制?</a></li><li><a href="#8467b6540a32">密码学哈希函数在区块链中主要发挥哪些作用?</a></li><li><a href="#941a9e12a00b">区块链上的「智能合约」指的是什么?</a></li><li><a href="#9fae6550c5ff">加密货币中公钥和私钥分别用来做什么?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="22083f56db9a">
+      <h2 class="qz" lang="zh">工作量证明(PoW)如何达成去中心化共识，又为何害怕 51% 攻击?</h2>
+      <p class="qen" lang="en">How does proof of work achieve decentralized consensus, and why is a 51% attack feared?</p>
+      <div class="azh" lang="zh">PoW 要求节点投入算力求解一个难算易验的哈希难题，最长链被公认为有效账本，使诚实算力占优时篡改成本极高。若某个实体掌握过半算力，就能以概率优势构造更长私有链来双花或阻止交易确认，从而破坏共识安全。</div>
+      <div class="aen" lang="en">PoW forces nodes to spend computation solving a hard-but-verifiable hash puzzle, and the longest chain is accepted as the valid ledger, making tampering extremely costly while honest hash power dominates. If an entity controls over half the power, it can probabilistically build a longer private chain to double-spend or block confirmations, breaking consensus security.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#工作量证明</a> <a class="tag" href="#">#共识</a> <a class="tag" href="#">#51%攻击</a>
+    </article>
+
+
+    <article class="qitem" id="704c63daa477">
+      <h2 class="qz" lang="zh">默克尔树(Merkle Tree)如何让轻节点高效验证一笔交易是否存在?</h2>
+      <p class="qen" lang="en">How does a Merkle tree let a lightweight node efficiently verify that a transaction is included?</p>
+      <div class="azh" lang="zh">区块把所有交易两两哈希自底向上聚合成一棵二叉树，根哈希写入区块头。轻节点只需保存根哈希，配合从目标交易到根的一小段哈希路径（Merkle 证明），即可在对数级数据量下验证该交易确属该区块，而不必下载全部交易。</div>
+      <div class="aen" lang="en">A block hashes transactions pairwise upward into a binary tree whose root hash goes into the block header. A lightweight node keeps only the root and, given the short hash path from the target transaction to the root (a Merkle proof), can verify inclusion in logarithmic-sized data without downloading all transactions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008) 第7节</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008, Section 7 (Reclaiming Disk Space)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#默克尔树</a> <a class="tag" href="#">#Merkle证明</a> <a class="tag" href="#">#轻节点</a>
+    </article>
+
+
+    <article class="qitem" id="33e8ac3736b9">
+      <h2 class="qz" lang="zh">区块链为什么被称为「链」，其基本数据结构是怎样的?</h2>
+      <p class="qen" lang="en">Why is a blockchain called a chain, and what is its basic data structure?</p>
+      <div class="azh" lang="zh">区块链由按时间顺序排列的区块组成，每个区块除自身数据外还包含前一个区块的哈希值，从而像指针一样把区块前后串接成链。任何对历史区块的篡改都会改变其哈希，并导致后续所有区块的链接失效。</div>
+      <div class="aen" lang="en">A blockchain is an ordered sequence of blocks, each containing not only its own data but also the hash of the previous block, chaining them together like pointers. Any tampering with a historical block changes its hash and breaks the links of every subsequent block.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#哈希链</a> <a class="tag" href="#">#区块</a>
+    </article>
+
+
+    <article class="qitem" id="4a3d0d35a8a3">
+      <h2 class="qz" lang="zh">区块链「不可篡改」的特性主要来自哪些机制?</h2>
+      <p class="qen" lang="en">Which mechanisms mainly give a blockchain its immutability property?</p>
+      <div class="azh" lang="zh">不可篡改来自区块间的哈希链接、分布式多副本存储以及共识机制的经济成本：改一处历史需重算其后所有区块的工作量并说服多数节点接受。由于全网共同维护同一账本，单一节点难以悄悄伪造记录。</div>
+      <div class="aen" lang="en">Immutability comes from hash chaining between blocks, distributed replication across many nodes, and the economic cost of consensus: rewriting history means redoing the proof-of-work of all later blocks and convincing the majority. Because the whole network maintains one ledger, a single node cannot silently forge records.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#不可篡改</a> <a class="tag" href="#">#共识</a> <a class="tag" href="#">#分布式</a>
+    </article>
+
+
+    <article class="qitem" id="8467b6540a32">
+      <h2 class="qz" lang="zh">密码学哈希函数在区块链中主要发挥哪些作用?</h2>
+      <p class="qen" lang="en">What main roles do cryptographic hash functions play in a blockchain?</p>
+      <div class="azh" lang="zh">哈希函数把任意长度输入映射为固定长度摘要，且难以逆向或找到碰撞，因此被用来链接区块、标识交易以及在工作量证明中构造难度目标。它的确定性使全网节点能对同一数据得到一致的摘要。</div>
+      <div class="aen" lang="en">A hash function maps arbitrary input to a fixed-length digest that is hard to invert or collide, so it links blocks, identifies transactions, and builds the difficulty target in proof of work. Its determinism lets all nodes derive the same digest for the same data.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#哈希函数</a> <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#摘要</a>
+    </article>
+
+
+    <article class="qitem" id="941a9e12a00b">
+      <h2 class="qz" lang="zh">区块链上的「智能合约」指的是什么?</h2>
+      <p class="qen" lang="en">What does a smart contract on a blockchain refer to?</p>
+      <div class="azh" lang="zh">智能合约是部署在区块链上的可执行程序，其代码与状态由全网节点共同维护，并在满足预设条件时自动执行。由于运行在去中心化环境中，它能在没有中介的情况下实现可信的自动交易与约定。</div>
+      <div class="aen" lang="en">A smart contract is an executable program deployed on a blockchain whose code and state are maintained by all nodes and that runs automatically when preset conditions are met. Running in a decentralized environment, it enables trustworthy automatic transactions and agreements without an intermediary.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Buterin《Ethereum: A Next-Generation Smart Contract Platform》(2014)</p>
+        <p lang="en">V. Buterin, Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform, 2014</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#智能合约</a> <a class="tag" href="#">#以太坊</a> <a class="tag" href="#">#自动执行</a>
+    </article>
+
+
+    <article class="qitem" id="9fae6550c5ff">
+      <h2 class="qz" lang="zh">加密货币中公钥和私钥分别用来做什么?</h2>
+      <p class="qen" lang="en">What are public and private keys used for in cryptocurrencies?</p>
+      <div class="azh" lang="zh">私钥由持有者秘密保存，用于对交易进行数字签名以证明所有权；公钥由私钥推导而来并公开，他人用它验证签名并生成收款地址。谁掌握私钥谁就控制对应资产，因此私钥的保密至关重要。</div>
+      <div class="aen" lang="en">The private key is kept secret and used to digitally sign transactions to prove ownership, while the public key is derived from it and shared so others can verify signatures and derive a receiving address. Whoever holds the private key controls the associated funds, so keeping it secret is essential.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#公钥</a> <a class="tag" href="#">#私钥</a> <a class="tag" href="#">#数字签名</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

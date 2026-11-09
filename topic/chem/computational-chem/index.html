@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>computational-chem · 化学 Chemistry | 问答</title>
+<meta name="description" content="computational-chem（化学）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="computational-chem · 化学 Chemistry | 问答">
+<meta property="og:description" content="computational-chem（化学）分类下的 5 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 5 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/chem/computational-chem/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/chem/computational-chem/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/chem.html">化学</a> › <span>computational-chem</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>computational-chem <span class="en">Chemistry</span></h1>
+  <p class="cnt"><b>5</b> 个科学问题 · 化学 Chemistry</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#chem_26_002">模拟酶催化反应为什么普遍采用QM/MM组合方法，而不是把整个体系都交给纯量子力学</a></li><li><a href="#chem_26_012">为什么Car-Parrinello分子动力学不必在每个时间步做自洽场迭代，仍能让</a></li><li><a href="#chem_26_001">为什么常规密度泛函理论(DFT)算不准分子间的色散相互作用？实际计算中通常怎样修</a></li><li><a href="#chem_26_011">计算两个分子间的弱相互作用能时，基组重叠误差（BSSE）为什么会让结合能被系统性</a></li><li><a href="#chem_26_013">机器学习原子间势凭什么把原子模拟提速几个数量级，同时精度逼近直接的量子化学计算？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="chem_26_002">
+      <h2 class="qz" lang="zh">模拟酶催化反应为什么普遍采用QM/MM组合方法，而不是把整个体系都交给纯量子力学或纯分子力学？</h2>
+      <p class="qen" lang="en">Why do simulations of enzyme catalysis almost always combine QM and MM instead of treating the whole protein quantum-mechanically or purely classically?</p>
+      <div class="azh" lang="zh">因为只有量子力学能描述反应中化学键的断裂与生成，全蛋白QM计算代价又高得不可行，而纯力场无法处理成键变化，QM/MM正好取长补短。机理：将底物、辅因子及参与质子或电子转移的关键残基划入QM区，用DFT或半经验方法求解电子结构；其余蛋白和溶剂作为MM区用经典力场点电荷提供静电与范德华环境并影响QM区势能面，边界用连接原子封端。由此在可承受的计算量内同时保留化学精度和环境效应。</div>
+      <div class="aen" lang="en">Only quantum mechanics can describe bonds breaking and forming in a reaction step, full QM on an entire protein is hopelessly expensive, and classical force fields cannot handle bond changes, so QM/MM splits the labor. Substrates, cofactors, and key residues shuttling protons or electrons form a QM region solved with DFT or semiempirical methods; the rest of the protein and solvent act as MM point charges supplying electrostatics and van der Waals environments that shape the QM potential surface, capped by link atoms at the boundary. This keeps chemical fidelity and environmental effects together at affordable cost.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">A. Warshel、M. Levitt《Theoretical studies of enzymic reactions》，J. Mol. Biol.，1976年，第103卷，227页（该工作获2013年诺贝尔化学奖）</p>
+        <p lang="en">A. Warshel &amp; M. Levitt, J. Mol. Biol., 1976, 103, 227 (recognized by the 2013 Nobel Prize in Chemistry)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#QM/MM</a> <a class="tag" href="#">#酶催化模拟</a> <a class="tag" href="#">#多尺度计算</a>
+    </article>
+
+
+    <article class="qitem" id="chem_26_012">
+      <h2 class="qz" lang="zh">为什么Car-Parrinello分子动力学不必在每个时间步做自洽场迭代，仍能让体系保持在第一性原理的势面上运动？</h2>
+      <p class="qen" lang="en">Why does Car-Parrinello molecular dynamics keep a system moving on the first-principles potential surface without running self-consistency iterations at every time step?</p>
+      <div class="azh" lang="zh">因为它给电子轨道安上一个虚构小质量，让电子与原子核在同一套拉格朗日量下一起演化，电子态始终近似贴着基态势面运动。机理：扩展拉格朗日量中以虚拟惯性参数μ驱动Kohn-Sham轨道的动力学，只要μ远小于核质量、初始波函数收敛且时间步长足够小，轨道便绝热跟随核运动而不与其共振交换能量，任一时刻都接近瞬时基态，作用力直接由DFT泛函微分得到，免去Born-Oppenheimer路径中每步的自洽迭代。</div>
+      <div class="aen" lang="en">It hangs a small fictitious mass on the electronic degrees of freedom and propagates electrons and nuclei together under a single extended Lagrangian, letting the wavefunction glide along the ground-state surface. Provided the fictitious mass stays far below nuclear masses, the starting orbitals are well converged and the time step short enough, the orbitals evolve adiabatically without resonantly trading energy with the ions and remain close to the instantaneous ground state; forces come straight from differentiating the DFT functional, dispensing with the self-consistency loop required at every Born-Oppenheimer step.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">R. Car &amp; M. Parrinello《Unified approach for molecular dynamics and density-functional theory》，Physical Review Letters，1985年，第55卷，2471页</p>
+        <p lang="en">R. Car &amp; M. Parrinello, Phys. Rev. Lett., 1985, 55, 2471 (DOI: 10.1103/PhysRevLett.55.2471)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1103/PhysRevLett.55.2471" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1103/PhysRevLett.55.2471：Unified Approach</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Car-Parrinello分子动力学</a> <a class="tag" href="#">#扩展拉格朗日量</a> <a class="tag" href="#">#第一性原理模拟</a>
+    </article>
+
+
+    <article class="qitem" id="chem_26_001">
+      <h2 class="qz" lang="zh">为什么常规密度泛函理论(DFT)算不准分子间的色散相互作用？实际计算中通常怎样修正？</h2>
+      <p class="qen" lang="en">Why does ordinary density functional theory miss dispersion interactions between molecules, and how are such calculations usually corrected?</p>
+      <div class="azh" lang="zh">常规DFT缺少真正的长程色散吸引，须叠加DFT-D类校正。机理：色散源自电子瞬时涨落偶极间的远程相关，而LDA、GGA等半局域泛函的交换相关能只依赖局部密度及梯度，在分子间远距离处指数衰减为零，故弱复合物和分子晶体的结合被系统性低估。主流做法是Grimme的DFT-D方案，在总能量上叠加按元素参数化的原子对C6/R6项；或用vdW-DF、VV10非局域相关泛函直接由密度积分求出色散能。</div>
+      <div class="aen" lang="en">Plain DFT lacks genuine long-range dispersion attraction, so extra corrections are layered on top. Dispersion is the long-range correlation between fluctuating instantaneous dipoles, whereas the exchange-correlation energy of semilocal functionals such as LDA and GGA depends only on the local density and its gradient and decays exponentially to zero between molecules, leaving weak complexes and molecular crystals systematically underbound. Mainstream fixes add element-parameterized pairwise C6/R6 terms to the DFT energy (the Grimme DFT-D family), or use nonlocal correlation functionals like vdW-DF and VV10 that integrate the dispersion energy directly from the density.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Grimme、J. Antony、S. Ehrlich、H. Krieg《A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu》，J. Comput. Chem.，2010年，第31卷，1459页</p>
+        <p lang="en">S. Grimme, J. Antony, S. Ehrlich &amp; H. Krieg, J. Chem. Phys., 2010, 132, 154104 (DOI: 10.1063/1.3382344)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1063/1.3382344" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1063/1.3382344：A consistent and accurate </a></p>
+        
+      </details>
+      <a class="tag" href="#">#密度泛函理论</a> <a class="tag" href="#">#色散校正</a> <a class="tag" href="#">#计算化学</a>
+    </article>
+
+
+    <article class="qitem" id="chem_26_011">
+      <h2 class="qz" lang="zh">计算两个分子间的弱相互作用能时，基组重叠误差（BSSE）为什么会让结合能被系统性高估？counterpoise校正怎样消除它？</h2>
+      <p class="qen" lang="en">When computing weak interaction energies between two molecules, why does basis set superposition error systematically overestimate the binding, and how does the counterpoise correction remove it?</p>
+      <div class="azh" lang="zh">因为两单体在复合物中互借对方的基函数，变分能量被人为压低，相互作用能随之偏大。机理：有限基组下分子轨道只能在自身的原子函数上展开，形成复合物后各自多出邻居提供的变分自由度，由此带来的额外稳定化并非真实的电子相关，而是基组不完备的假象。Boys-Bernardi校正把单体能量放到完整的超分子基组中重算，即将另一单体的全部基函数作为不含电子的幽灵原子并入，两份同基组能量之差便扣除这项虚增。</div>
+      <div class="aen" lang="en">Because each monomer borrows the other&#x27;s basis functions inside the complex, variational energies sink artificially and the computed binding comes out too strong. With a finite basis, orbitals expand only on a molecule&#x27;s own functions until the complex forms, whereupon each monomer gains extra variational freedom donated by its neighbor; the resulting stabilization is an artifact of basis-set incompleteness rather than genuine electron correlation. The Boys-Bernardi counterpoise recipe recomputes every monomer energy in the complete supramolecular basis, the partner riding along as ghost atoms that carry no electrons, and the difference of two energies evaluated in one identical basis cancels the artificial gain.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. F. Boys &amp; F. Bernardi《The calculation of small molecular interactions by the differences of separate total energies. Some procedures with reduced errors》，Molecular Physics，1970年，第19卷，553页</p>
+        <p lang="en">S. F. Boys &amp; F. Bernardi, Molecular Physics, 1970, 19, 553 (DOI: 10.1080/00268977000101561)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1080/00268977000101561" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1080/00268977000101561：The calculation of</a></p>
+        
+      </details>
+      <a class="tag" href="#">#基组重叠误差</a> <a class="tag" href="#">#counterpoise校正</a> <a class="tag" href="#">#弱相互作用</a>
+    </article>
+
+
+    <article class="qitem" id="chem_26_013">
+      <h2 class="qz" lang="zh">机器学习原子间势凭什么把原子模拟提速几个数量级，同时精度逼近直接的量子化学计算？它的适用边界又在哪里？</h2>
+      <p class="qen" lang="en">How do machine-learning interatomic potentials speed atomistic simulations up by orders of magnitude while approaching direct quantum-chemical accuracy, and where do their limits lie?</p>
+      <div class="azh" lang="zh">因为它把昂贵的量子化学计算一次性转存为训练数据，模拟时只需评估神经网络，代价比逐步求解Kohn-Sham方程低几个数量级。机理：用满足平移、旋转和原子置换对称性的描述符刻画每个原子的局部化学环境，网络据此输出逐原子能量并求和为总势能，解析梯度直接驱动分子动力学；模型仅在训练集覆盖的构型空间内插值才可靠，外推构型会静默失真，须靠主动学习补样并以不确定性估计把关，长程静电与电荷转移也不易显式表达。</div>
+      <div class="aen" lang="en">Because the costly quantum chemistry is paid once up front as training data, while a simulation merely evaluates the fitted network, orders of magnitude cheaper than solving the Kohn-Sham equations step by step. Descriptors invariant to translation, rotation and atom swapping encode each atom&#x27;s local chemical environment; the network returns per-atom energies whose sum and analytic gradient drive molecular dynamics directly. Reliability holds only as interpolation inside the configuration space spanned by the training set - extrapolation fails silently - so active learning must replenish samples and uncertainty estimates vet novel structures, while long-range electrostatics and charge transfer stay hard to express explicitly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">J. Behler &amp; M. Parrinello《Generalized neural-network representation of high-dimensional potential-energy surfaces》，Physical Review Letters，2007年，第98卷，146401页</p>
+        <p lang="en">J. Behler &amp; M. Parrinello, Phys. Rev. Lett., 2007, 98, 146401 (DOI: 10.1103/PhysRevLett.98.146401)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1103/PhysRevLett.98.146401" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1103/PhysRevLett.98.146401：Generalized Ne</a></p>
+        
+      </details>
+      <a class="tag" href="#">#机器学习势</a> <a class="tag" href="#">#原子间势</a> <a class="tag" href="#">#主动学习</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

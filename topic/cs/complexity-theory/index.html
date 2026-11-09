@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>complexity-theory · 计算机 Computer Science | 问答</title>
+<meta name="description" content="complexity-theory（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="complexity-theory · 计算机 Computer Science | 问答">
+<meta property="og:description" content="complexity-theory（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/complexity-theory/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/complexity-theory/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>complexity-theory</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>complexity-theory <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_23_003">确定性时间层次定理的内容是什么？为什么由它可以推出 P 是 EXPTIME 的真</a></li><li><a href="#cs_23_019">Toda 定理（1991）陈述了什么结论？它为什么说明 #P 计数问题的计算能力</a></li><li><a href="#cs_23_011">什么是 NP 完全问题？Cook–Levin 定理为何被视为计算复杂性理论的基石</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_23_003">
+      <h2 class="qz" lang="zh">确定性时间层次定理的内容是什么？为什么由它可以推出 P 是 EXPTIME 的真子集？</h2>
+      <p class="qen" lang="en">What does the deterministic time hierarchy theorem state, and why does it imply that P is a proper subset of EXPTIME?</p>
+      <div class="azh" lang="zh">定理断言：对任意时间可构造函数 t(n)，存在一个语言可在 O(t(n)) 时间内判定，却不能在 o(t(n)/log t(n)) 时间内判定；证明采用对角化方法，模拟所有运行时间较短的机器并对每个结果取反，构造出一个与之不同的语言。取 t(n)=2^n 可得一个属于 EXPTIME 的语言，而任何固定多项式 n^k 都满足 n^k = o(2^n/n)，故该语言不属于任何 DTIME(n^k)，也就不在 P 中，于是 P 是 EXPTIME 的真子集。</div>
+      <div class="aen" lang="en">The theorem asserts that for every time-constructible function t(n), some language is decidable in O(t(n)) time but not in o(t(n)/log t(n)) time; the proof diagonalizes — it simulates each machine running within the smaller bound and flips its answer to define a new language. Choosing t(n) = 2^n yields a language in EXPTIME, while every fixed polynomial satisfies n^k = o(2^n/n), so that language lies outside every DTIME(n^k) and hence outside P. Therefore P is strictly contained in EXPTIME.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Michael Sipser,《Introduction to the Theory of Computation》第3版,Cengage Learning,2013,第8章 Time Complexity（确定性时间层次定理）</p>
+        <p lang="en">Michael Sipser, Introduction to the Theory of Computation, 3rd ed., Cengage Learning, 2013, Chapter 8 (Time Complexity; Deterministic Time Hierarchy Theorem)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL19859284W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL19859284W：Introduction to the th</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算复杂性</a> <a class="tag" href="#">#时间层次定理</a> <a class="tag" href="#">#对角化法</a> <a class="tag" href="#">#复杂度类</a>
+    </article>
+
+
+    <article class="qitem" id="cs_23_019">
+      <h2 class="qz" lang="zh">Toda 定理（1991）陈述了什么结论？它为什么说明 #P 计数问题的计算能力极强？</h2>
+      <p class="qen" lang="en">What does Toda&#x27;s theorem (1991) state, and why does it show that #P counting problems are computationally very powerful?</p>
+      <div class="azh" lang="zh">该定理断言 PH ⊆ P^#P：整座多项式层级都可归约到带 #P 预言机的多项式时间。#P 函数统计非确定性图灵机的接受路径数目。证明以 Valiant–Vazirani 归约与 BP· 算子把量词交替压缩成一次计数询问。既然 PH 被普遍认为远超 NP，一次计数即可模拟全层级，足见计数之强。</div>
+      <div class="aen" lang="en">Toda&#x27;s theorem asserts PH ⊆ P^#P: the entire polynomial hierarchy collapses into polynomial time with a #P oracle, where #P functions count accepting paths of nondeterministic polynomial-time machines. The proof combines the Valiant–Vazirani unique-SAT reduction with the BP· operator to replace quantifier alternation by a single counting query. Since PH is widely believed to far exceed NP, one counting query simulating the whole hierarchy shows how powerful counting is.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Toda《PP is as hard as the polynomial-time hierarchy》（STOC 1991），SIAM Journal on Computing 20(4):865-877, 1991，DOI:10.1137/0220053</p>
+        <p lang="en">S. Toda, &quot;PP is as hard as the polynomial-time hierarchy&quot; (STOC 1991), SIAM Journal on Computing 20(4):865-877, 1991, DOI:10.1137/0220053</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1137/0220053" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1137/0220053：PP is as Hard as the Polynom</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算复杂性</a> <a class="tag" href="#">#Toda定理</a> <a class="tag" href="#">##P</a> <a class="tag" href="#">#多项式层级</a>
+    </article>
+
+
+    <article class="qitem" id="cs_23_011">
+      <h2 class="qz" lang="zh">什么是 NP 完全问题？Cook–Levin 定理为何被视为计算复杂性理论的基石？</h2>
+      <p class="qen" lang="en">What is an NP-complete problem, and why is the Cook–Levin theorem regarded as a cornerstone of computational complexity theory?</p>
+      <div class="azh" lang="zh">NP 完全问题是 NP 中最难的一层：任何 NP 问题都可多项式时间归约到它。1971 年 Cook 证明布尔可满足性问题是 NP 完全的，Levin 也独立得到同一结论，首次确认此类问题存在。此后从 SAT 等已知完全问题构造多项式归约即可证出新问题的 NP 完全性；任一 NP 完全问题若有多项式算法即有 P=NP，大量实际难题的命运由此绑定。</div>
+      <div class="aen" lang="en">An NP-complete problem is among the hardest in NP: every language in NP reduces to it in polynomial time. In 1971 Cook proved that Boolean satisfiability (SAT) is NP-complete, and Levin independently obtained the same result, establishing that such problems exist at all. Afterwards, proving a new problem NP-complete only requires a polynomial reduction from SAT or another known complete problem. Because a polynomial-time algorithm for any single NP-complete problem would imply P = NP, the theorem ties the fate of thousands of practical optimization problems together.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. A. Cook，《定理证明过程的复杂性》，ACM 计算理论研讨会（STOC）论文集，1971，DOI: 10.1145/800157.805047</p>
+        <p lang="en">S. A. Cook, &#x27;The Complexity of Theorem-Proving Procedures&#x27;, Proc. 3rd ACM Symposium on Theory of Computing (STOC), 1971, DOI: 10.1145/800157.805047</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/800157.805047" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1145/800157.805047：The complexity of theo</a></p>
+        
+      </details>
+      <a class="tag" href="#">#NP完全性</a> <a class="tag" href="#">#多项式归约</a> <a class="tag" href="#">#布尔可满足性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

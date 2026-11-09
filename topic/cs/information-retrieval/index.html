@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>information-retrieval · 计算机 Computer Science | 问答</title>
+<meta name="description" content="information-retrieval（计算机）分类下的 2 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 2 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="information-retrieval · 计算机 Computer Science | 问答">
+<meta property="og:description" content="information-retrieval（计算机）分类下的 2 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 2 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/information-retrieval/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/information-retrieval/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>information-retrieval</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>information-retrieval <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>2</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_21_003">BM25 的打分公式相对经典 TF-IDF 做了哪些关键改进?其中词频饱和与文档</a></li><li><a href="#cs_21_011">搜索引擎给网页排序时,为什么既要算 TF-IDF 这类词项匹配权重,又要看 Pa</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_21_003">
+      <h2 class="qz" lang="zh">BM25 的打分公式相对经典 TF-IDF 做了哪些关键改进?其中词频饱和与文档长度归一化分别解决什么问题?</h2>
+      <p class="qen" lang="en">What key refinements does the BM25 scoring formula introduce over classic TF-IDF, and which problems do term-frequency saturation and document-length normalization each solve?</p>
+      <div class="azh" lang="zh">BM25 把线性增长的 TF 替换为饱和形式:词频分量为 (k1+1)·tf / (k1·(1−b+b·|D|/avgdl)+tf),随词频上升单调趋近上限,防止长文档靠反复堆砌同一个词无限抬分。长度归一化参数 b 将当前文档长度与集合均值对比,适度压低过长文档的得分,消除长短文档之间的系统性偏差。这两处改动源自 Robertson 与 Spärck Jones 的概率检索框架,使 BM25 比 TF-IDF 更稳健,并被 Apache Lucene 采用为默认排序算法。</div>
+      <div class="aen" lang="en">BM25 swaps the linearly growing TF for a saturating form: the frequency component is (k1+1)·tf / (k1·(1−b+b·|D|/avgdl)+tf), rising monotonically toward a ceiling as frequency grows, so a long document cannot inflate its score endlessly by repeating one word. The length-normalization parameter b weighs each document&#x27;s length against the collection average, gently demoting overly long documents and removing systematic bias between short and long ones. Both refinements come out of the Robertson-Sparck Jones probabilistic retrieval framework, make BM25 sturdier than TF-IDF, and led Apache Lucene to adopt BM25 as its default ranking algorithm.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Robertson &amp; Zaragoza,The Probabilistic Relevance Framework: BM25 and Beyond,Foundations and Trends in Information Retrieval,2009</p>
+        <p lang="en">Robertson &amp; Zaragoza, The Probabilistic Relevance Framework: BM25 and Beyond, Foundations and Trends in Information Retrieval, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1561/1500000019" target="_blank" rel="noopener">核验依据 1 DOI 10.1561/1500000019</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信息检索</a> <a class="tag" href="#">#相关性排序</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_011">
+      <h2 class="qz" lang="zh">搜索引擎给网页排序时,为什么既要算 TF-IDF 这类词项匹配权重,又要看 PageRank 这类链接分析信号?两者分别衡量了什么?</h2>
+      <p class="qen" lang="en">Why do search engines combine term-matching weights like TF-IDF with link-analysis signals like PageRank when ranking web pages, and what does each of them measure?</p>
+      <div class="azh" lang="zh">TF-IDF 从内容层面度量查询词与文档的匹配程度,回答的是“这篇文档讲了什么”;PageRank 基于链接图估计页面的全局权威度,回答的是“有多少页面为它背书”。两者互补:只看内容会放过关键词堆砌的垃圾页,只看链接会把主题无关的权威页排上来。现代引擎通常把它们作为特征交给学习排序(LTR)模型,自动学出融合权重。</div>
+      <div class="aen" lang="en">TF-IDF measures how well query terms match a document’s content, answering what the document is about; PageRank estimates a page’s global authority from the link graph, answering who endorses it. They complement each other: content-only ranking rewards keyword stuffing, while link-only ranking surfaces off-topic authority pages. Modern engines feed both into learning-to-rank models that learn the fusion weights automatically.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Manning、Raghavan 与 Schütze,《Introduction to Information Retrieval》(剑桥大学出版社),第15–16章与第21章;Brin &amp; Page,The Anatomy of a Large-Scale Hypertextual Web Search Engine,WWW 1998</p>
+        <p lang="en">Manning, Raghavan &amp; Schütze, Introduction to Information Retrieval (Cambridge University Press), chs. 15-16 and 21; Brin &amp; Page, The Anatomy of a Large-Scale Hypertextual Web Search Engine, WWW 1998</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Information+Retrieval" target="_blank" rel="noopener">核验依据 1 ISBN 9780521865715 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信息检索</a> <a class="tag" href="#">#排序算法</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

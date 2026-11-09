@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>优化与运筹 optimization-operations-research · 数学 Mathematics | 问答</title>
+<meta name="description" content="优化与运筹（数学）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="优化与运筹 optimization-operations-research · 数学 Mathematics | 问答">
+<meta property="og:description" content="优化与运筹（数学）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/optimization-operations-research/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/optimization-operations-research/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>优化与运筹</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>优化与运筹 <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>10</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#092a2ab2f6f2">排队论里的 Little 定律是什么？它为什么厉害？</a></li><li><a href="#1e37d4d4abcf">M/M/1 队列的平均等待时间公式是什么？</a></li><li><a href="#42e15d1b7c4c">什么是单纯形法？它为何在最坏情况下是指数时间却在实践中高效？</a></li><li><a href="#6cc349b66ffe">什么是拉格朗日对偶？强对偶性在优化中有什么意义？</a></li><li><a href="#d3989567f72b">什么是 NP 难问题？它与运筹优化中的组合爆炸有何关系？</a></li><li><a href="#4b780f0c02a3">什么是随机梯度下降？它在大规模机器学习优化中为何重要？</a></li><li><a href="#822321ed25bc">什么是线性规划？它解决的是哪一类优化问题？</a></li><li><a href="#a342688b1e0c">什么是整数规划？它和普通线性规划的区别是什么？</a></li><li><a href="#ba0b7835a521">什么是凸优化？凸性为何能保证找到全局最优？</a></li><li><a href="#ca53603340e2">什么是最大流最小割定理？它在网络中有什么应用？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="092a2ab2f6f2">
+      <h2 class="qz" lang="zh">排队论里的 Little 定律是什么？它为什么厉害？</h2>
+      <p class="qen" lang="en">What is Little&#x27;s Law in queueing theory and why is it powerful?</p>
+      <div class="azh" lang="zh">它说 系统中平均人数 L = 平均到达率 λ × 平均停留时间 W，即 L = λW。它不依赖具体到达或服务的分布，因此能跨系统通用地估算等待时间或队列长度。</div>
+      <div class="aen" lang="en">It states the average number in the system L equals arrival rate λ times average time in system W: L = λW. It holds regardless of arrival/service distributions, so it estimates waiting time or queue length universally.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《运筹学》Hillier 与 Lieberman</p>
+        <p lang="en">Introduction to Operations Research by Hillier and Lieberman</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#排队论</a> <a class="tag" href="#">#恒等式</a>
+    </article>
+
+
+    <article class="qitem" id="1e37d4d4abcf">
+      <h2 class="qz" lang="zh">M/M/1 队列的平均等待时间公式是什么？</h2>
+      <p class="qen" lang="en">What is the average waiting time formula for an M/M/1 queue?</p>
+      <div class="azh" lang="zh">设到达率 λ、服务率 μ，利用系数 ρ=λ/μ，平均系统内时间 W=1/(μ−λ)，平均排队时间 Wq=ρ/(μ−λ)。当 ρ 接近1时等待时间急剧上升。</div>
+      <div class="aen" lang="en">With arrival rate λ and service rate μ and utilization ρ=λ/μ, the mean time in system is W=1/(μ−λ) and mean queueing time Wq=ρ/(μ−λ). As ρ→1 the waiting time blows up.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《运筹学》Hillier 与 Lieberman</p>
+        <p lang="en">Introduction to Operations Research by Hillier and Lieberman</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#排队论</a> <a class="tag" href="#">#稳定性</a>
+    </article>
+
+
+    <article class="qitem" id="42e15d1b7c4c">
+      <h2 class="qz" lang="zh">什么是单纯形法？它为何在最坏情况下是指数时间却在实践中高效？</h2>
+      <p class="qen" lang="en">What is the simplex method, and why is it exponential in the worst case yet efficient in practice?</p>
+      <div class="azh" lang="zh">单纯形法沿多面体可行域的棱在顶点间移动，每步改进目标函数直至最优。最坏情形下（如 Klee-Minty 构造的退化例子）需遍历指数级顶点，但实测中顶点数远小于理论上界，平均步数近似多项式，因此实际极快。</div>
+      <div class="aen" lang="en">The simplex method moves along edges of the feasible polytope from vertex to vertex, improving the objective each step until optimal. In the worst case (e.g. Klee-Minty degenerate examples) it visits exponentially many vertices, yet real instances have far fewer, with near-polynomial average steps, so it is fast in practice.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《线性规划》Chvatal</p>
+        <p lang="en">Linear Programming by Vasek Chvatal</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#单纯形</a> <a class="tag" href="#">#顶点</a> <a class="tag" href="#">#最坏情形</a>
+    </article>
+
+
+    <article class="qitem" id="6cc349b66ffe">
+      <h2 class="qz" lang="zh">什么是拉格朗日对偶？强对偶性在优化中有什么意义？</h2>
+      <p class="qen" lang="en">What is Lagrangian duality, and what is the significance of strong duality in optimization?</p>
+      <div class="azh" lang="zh">拉格朗日对偶把原问题转化为极大极小对偶问题，给出原最优值的下界。若满足斯莱特条件等约束规范，强对偶成立即原问题与对偶问题最优值相等，可借对偶变量（价格）解释资源稀缺性，并支撑现代求解器。</div>
+      <div class="aen" lang="en">Lagrangian duality turns the primal problem into a max-min dual, giving a lower bound on the primal optimum. Under constraint qualifications like Slater&#x27;s condition, strong duality holds so the primal and dual optima coincide, letting dual variables (prices) interpret resource scarcity and supporting modern solvers.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《凸优化》Boyd 与 Vandenberghe</p>
+        <p lang="en">Convex Optimization by Boyd and Vandenberghe</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#对偶</a> <a class="tag" href="#">#拉格朗日</a> <a class="tag" href="#">#强对偶</a>
+    </article>
+
+
+    <article class="qitem" id="d3989567f72b">
+      <h2 class="qz" lang="zh">什么是 NP 难问题？它与运筹优化中的组合爆炸有何关系？</h2>
+      <p class="qen" lang="en">What is an NP-hard problem, and how is it related to combinatorial explosion in operations research?</p>
+      <div class="azh" lang="zh">NP 难问题至少与 NP 中最难问题一样难，目前没有已知多项式时间算法。旅行商、整数规划等运筹问题属 NP 难，随着规模增大可行解数量组合爆炸，只能依赖近似算法、分支定界或启发式在可接受时间内求近优解。</div>
+      <div class="aen" lang="en">An NP-hard problem is at least as hard as the hardest problems in NP, with no known polynomial-time algorithm. TSP and integer programming in operations research are NP-hard; as size grows the number of feasible solutions explodes combinatorially, so one relies on approximation, branch-and-bound, or heuristics for near-optimal solutions in reasonable time.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《计算机与难解性》Garey 与 Johnson</p>
+        <p lang="en">Computers and Intractability by Garey and Johnson</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#NP难</a> <a class="tag" href="#">#组合爆炸</a> <a class="tag" href="#">#整数规划</a>
+    </article>
+
+
+    <article class="qitem" id="4b780f0c02a3">
+      <h2 class="qz" lang="zh">什么是随机梯度下降？它在大规模机器学习优化中为何重要？</h2>
+      <p class="qen" lang="en">What is stochastic gradient descent, and why is it important in large-scale machine-learning optimization?</p>
+      <div class="azh" lang="zh">随机梯度下降用单个（或小批量）样本估计梯度来更新参数，而非计算全数据集梯度。每次更新廉价且带噪声，但噪声有助于逃离尖锐极小，使其在海量数据下比批量梯度下降快得多，是现代深度学习的默认优化器基础。</div>
+      <div class="aen" lang="en">Stochastic gradient descent updates parameters using the gradient estimated from a single (or mini-batch) sample rather than the full dataset. Each update is cheap and noisy, but the noise helps escape sharp minima, making it far faster than batch gradient descent on massive data and forming the basis of modern deep-learning optimizers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#随机梯度下降</a> <a class="tag" href="#">#优化</a> <a class="tag" href="#">#机器学习</a>
+    </article>
+
+
+    <article class="qitem" id="822321ed25bc">
+      <h2 class="qz" lang="zh">什么是线性规划？它解决的是哪一类优化问题？</h2>
+      <p class="qen" lang="en">What is linear programming, and what class of optimization problems does it solve?</p>
+      <div class="azh" lang="zh">线性规划是在线性等式与不等式约束下，极小或极大化线性目标函数的问题，标准形为 $\min c^T x$ 满足 $Ax\le b$。它用于资源分配、生产排程等，可由单纯形法或内点法高效求解。</div>
+      <div class="aen" lang="en">Linear programming minimizes or maximizes a linear objective $c^T x$ subject to linear equality and inequality constraints $Ax\le b$. It is used in resource allocation and scheduling and is solved efficiently by the simplex method or interior-point methods.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《运筹学》Hillier 与 Lieberman</p>
+        <p lang="en">Introduction to Operations Research by Hillier and Lieberman</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#线性规划</a> <a class="tag" href="#">#单纯形</a> <a class="tag" href="#">#约束</a>
+    </article>
+
+
+    <article class="qitem" id="a342688b1e0c">
+      <h2 class="qz" lang="zh">什么是整数规划？它和普通线性规划的区别是什么？</h2>
+      <p class="qen" lang="en">What is integer programming, and how does it differ from ordinary linear programming?</p>
+      <div class="azh" lang="zh">整数规划要求部分或全部变量取整数值。相比连续线性规划，整数约束使可行域变成分立点集，问题通常 NP 难。它用于排班、选址等必须取离散决策的场景，常通过分支定界求解。</div>
+      <div class="aen" lang="en">Integer programming requires some or all variables to take integer values. Unlike continuous linear programming, the integer constraints make the feasible region a set of discrete points, usually rendering the problem NP-hard. It models scheduling and facility location where decisions must be discrete, often solved by branch-and-bound.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录仅给书名，无版次与年份；同一书名常对应多个版次，不臆测具体版本。</p>
+        <p lang="zh">《运筹学》Hillier 与 Lieberman</p>
+        <p lang="en">Introduction to Operations Research by Hillier and Lieberman</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#整数规划</a> <a class="tag" href="#">#离散</a> <a class="tag" href="#">#分支定界</a>
+    </article>
+
+
+    <article class="qitem" id="ba0b7835a521">
+      <h2 class="qz" lang="zh">什么是凸优化？凸性为何能保证找到全局最优？</h2>
+      <p class="qen" lang="en">What is convex optimization, and why does convexity guarantee a global optimum?</p>
+      <div class="azh" lang="zh">凸优化是在凸集上极小化凸函数的问题。凸函数的任意局部极小也是全局极小：因连接任意两点的线段上的函数值不超过端点连线，故不存在欺骗性的局部谷底，梯度类与内点法都能可靠收敛到全局解。</div>
+      <div class="aen" lang="en">Convex optimization minimizes a convex function over a convex set. Any local minimum of a convex function is also global: the function value on the segment between two points lies below the chord, so there are no deceptive local valleys, and gradient or interior-point methods reliably reach the global solution.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《凸优化》Boyd 与 Vandenberghe</p>
+        <p lang="en">Convex Optimization by Boyd and Vandenberghe</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Convex+Optimization" target="_blank" rel="noopener">核验依据 1 ISBN 9780521833783 (2006)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#凸优化</a> <a class="tag" href="#">#凸函数</a> <a class="tag" href="#">#全局最优</a>
+    </article>
+
+
+    <article class="qitem" id="ca53603340e2">
+      <h2 class="qz" lang="zh">什么是最大流最小割定理？它在网络中有什么应用？</h2>
+      <p class="qen" lang="en">What is the max-flow min-cut theorem, and what is its application in networks?</p>
+      <div class="azh" lang="zh">最大流最小割定理指出：网络中从源到汇的最大流量等于分割源汇的最小割容量。它用于交通与通信网络的容量规划、二分图匹配（通过构造流网络）以及可靠性的瓶颈分析。</div>
+      <div class="aen" lang="en">The max-flow min-cut theorem states that the maximum flow from source to sink in a network equals the capacity of the minimum cut separating them. It is used in capacity planning of transport and communication networks, bipartite matching (via flow networks), and bottleneck reliability analysis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《算法导论》Cormen 等</p>
+        <p lang="en">Introduction to Algorithms by Cormen Leiserson Rivest and Stein</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-04630-5</a> · <a class="evlink" href="https://openlibrary.org/search?q=Dynamic+Programming" target="_blank" rel="noopener">核验依据 2 ISBN 9780691079516 (1957)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#最大流</a> <a class="tag" href="#">#最小割</a> <a class="tag" href="#">#网络</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

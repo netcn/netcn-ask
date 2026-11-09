@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>programming · 计算机 Computer Science | 问答</title>
+<meta name="description" content="programming（计算机）分类下的 34 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 34 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="programming · 计算机 Computer Science | 问答">
+<meta property="og:description" content="programming（计算机）分类下的 34 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 34 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/programming/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/programming/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>programming</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>programming <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>34</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1811c42a53ea">什么是尾递归优化？</a></li><li><a href="#451b5ed050a0">什么是 CI/CD？它解决了什么问题？</a></li><li><a href="#657cd3e43e99">什么是内存对齐，为什么影响性能？</a></li><li><a href="#70eaba8520fd">设计模式是什么？为什么说它是对经验的抽象？</a></li><li><a href="#73e5844d658d">什么是版本控制（如 Git）？</a></li><li><a href="#95ff23523c67">什么是递归和迭代，各有什么取舍？</a></li><li><a href="#9f3baa07d579">单例模式解决什么问题？</a></li><li><a href="#adb8eccb1c5a">什么是函数式编程？</a></li><li><a href="#d5c6a1ad98e6">不变性（Immutability）为什么重要？</a></li><li><a href="#311cface0468">垃圾回收（GC）是如何工作的？</a></li><li><a href="#3b400994321c">开源许可证（如 MIT 和 GPL）有什么区别？</a></li><li><a href="#42cf641337de">单元测试和集成测试有什么不同？</a></li><li><a href="#540aa9646b65">同步和异步编程有什么区别？</a></li><li><a href="#75de7362977e">什么是版本控制，Git 有什么用？</a></li><li><a href="#899c9ae109b3">什么是递归函数？</a></li><li><a href="#956b804e0125">什么是 API？</a></li><li><a href="#9e198b2ec050">代码审查为什么值得做？</a></li><li><a href="#b0696ae1cceb">什么是面向对象编程？</a></li><li><a href="#b8d00a473ce6">什么是变量？</a></li><li><a href="#b8dd1bae7a85">什么是调试（debug）？</a></li><li><a href="#cc393bd1d7d7">编译和解释有什么区别？</a></li><li><a href="#cs_25_013">程序员说的bug是什么?第一个电脑bug真的是一只飞蛾吗?</a></li><li><a href="#e73c0250b193">为什么程序里不该用等号直接比较两个浮点数？</a></li><li><a href="#e88dc1dc71ca">什么是「开源」软件？</a></li><li><a href="#e8af971454f6">什么是指针？</a></li><li><a href="#f72fa5b30691">Git 是怎么管理代码版本的？</a></li><li><a href="#fa004a6a2bad">为什么代码注释很重要？</a></li><li><a href="#0766a1ede34a">为什么程序员要写注释？</a></li><li><a href="#4bfadc1ae654">什么是编程语言？</a></li><li><a href="#4f837964618f">明明多写了测试代码，为什么反而说开发速度更快？</a></li><li><a href="#5b6484185de2">面向对象中的多态是什么意思？</a></li><li><a href="#66f2490ca667">什么是 Bug 和调试？</a></li><li><a href="#bff7166674d7">编程里的『bug』是什么意思？</a></li><li><a href="#cs_25_007">程序是什么?为什么电脑有时候会听错我的话?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1811c42a53ea">
+      <h2 class="qz" lang="zh">什么是尾递归优化？</h2>
+      <p class="qen" lang="en">What is tail-call optimization?</p>
+      <div class="azh" lang="zh">当递归调用是函数最后一步时，编译器可复用当前栈帧而非新建，把递归转为等价循环，避免深递归的栈溢出，函数式语言常依赖它。</div>
+      <div class="aen" lang="en">When the recursive call is the last step, the compiler can reuse the current stack frame instead of adding one, turning recursion into a loop and avoiding stack overflow; functional languages rely on it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#优化</a>
+    </article>
+
+
+    <article class="qitem" id="451b5ed050a0">
+      <h2 class="qz" lang="zh">什么是 CI/CD？它解决了什么问题？</h2>
+      <p class="qen" lang="en">What is CI/CD, and what problems does it solve?</p>
+      <div class="azh" lang="zh">CI（持续集成）指开发者的每次提交自动触发构建和测试，尽早暴露错误；CD（持续交付/部署）再把通过验证的产物自动发布到测试甚至生产环境。整套流水线由配置文件声明，跑在 Jenkins、GitHub Actions 等平台上。它消灭了“本地能跑、服务器不行”和手动发布出错两大痛点，让发布变成日常小事。</div>
+      <div class="aen" lang="en">CI (continuous integration) automatically builds and tests every commit to surface errors early; CD (continuous delivery/deployment) then ships validated artifacts to staging or production automatically. The whole pipeline is declared in configuration files and runs on platforms like Jenkins or GitHub Actions. It eliminates “works on my machine” and error-prone manual releases, making deployment routine.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Fowler《Continuous Integration》（martinfowler.com，2006 修订版）；Beck《解析极限编程》1999；Humble &amp; Farley《持续交付》2010</p>
+        <p lang="en">Fowler, &#x27;Continuous Integration&#x27; (martinfowler.com, 2006 revision); Beck, Extreme Programming Explained (1999); Humble &amp; Farley, Continuous Delivery (2010)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#CI/CD</a> <a class="tag" href="#">#流水线</a> <a class="tag" href="#">#自动化</a>
+    </article>
+
+
+    <article class="qitem" id="657cd3e43e99">
+      <h2 class="qz" lang="zh">什么是内存对齐，为什么影响性能？</h2>
+      <p class="qen" lang="en">What is memory alignment and why does it affect performance?</p>
+      <div class="azh" lang="zh">CPU 按字长边界读取数据，未对齐的变量可能跨越两个缓存行，需要多次访问甚至触发硬件异常；合理对齐可提升访问速度并避免某些架构上的错误。</div>
+      <div class="aen" lang="en">CPUs fetch data on word boundaries; misaligned variables may span two cache lines, needing extra accesses or causing faults on some architectures, so proper alignment improves speed and correctness.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hennessy &amp; Patterson,《Computer Architecture: A Quantitative Approach》第6版,Morgan Kaufmann,2017</p>
+        <p lang="en">J. L. Hennessy and D. A. Patterson, Computer Architecture, 6th ed., Morgan Kaufmann, 2017</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2664271W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2664271W：Computer architecture（按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#性能</a>
+    </article>
+
+
+    <article class="qitem" id="70eaba8520fd">
+      <h2 class="qz" lang="zh">设计模式是什么？为什么说它是对经验的抽象？</h2>
+      <p class="qen" lang="en">What are design patterns, and why are they called abstracted experience?</p>
+      <div class="azh" lang="zh">设计模式是反复出现的设计问题的成熟解决方案，由《设计模式》一书系统总结，例如单例保证全局只有一个实例，观察者让一个对象变化时自动通知多个依赖，工厂把对象的创建解耦。它不是可复制的代码，而是“结构怎么组织”的蓝图；滥用反而增加复杂度，所以要按需使用。</div>
+      <div class="aen" lang="en">Design patterns are proven solutions to recurring design problems, catalogued in the “Gang of Four” book—for example, Singleton guarantees one global instance, Observer notifies many dependents automatically when a subject changes, and Factory decouples object creation. They are not copyable code but blueprints for how to structure solutions; overuse adds complexity, so apply them deliberately.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#设计模式</a> <a class="tag" href="#">#单例</a> <a class="tag" href="#">#观察者</a>
+    </article>
+
+
+    <article class="qitem" id="73e5844d658d">
+      <h2 class="qz" lang="zh">什么是版本控制（如 Git）？</h2>
+      <p class="qen" lang="en">What is version control (like Git)?</p>
+      <div class="azh" lang="zh">版本控制记录代码每次修改的历史，让你能回溯、比较和合并改动，多人协作时避免互相覆盖。</div>
+      <div class="aen" lang="en">Version control records the history of code changes so you can revert, compare, and merge edits, and avoid overwriting each other when collaborating.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-06</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chacon《Pro Git》第1章 (Apress)</p>
+        <p lang="en">S. Chacon, B. Straub, Pro Git, 2nd ed., Chapter 1, Apress</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">核验依据 1 Pro Git 2nd ed. 官方全文（Apress / CC BY-NC-SA 3.0）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#版本控制</a> <a class="tag" href="#">#Git</a> <a class="tag" href="#">#协作</a>
+    </article>
+
+
+    <article class="qitem" id="95ff23523c67">
+      <h2 class="qz" lang="zh">什么是递归和迭代，各有什么取舍？</h2>
+      <p class="qen" lang="en">What are recursion and iteration, and how do they compare?</p>
+      <div class="azh" lang="zh">递归用函数自己调用自己表达问题，代码简洁但可能栈溢出；迭代用循环重复，通常更省内存、更易控制。</div>
+      <div class="aen" lang="en">Recursion expresses problems via self-calls—clean but risks stack overflow; iteration uses loops—usually more memory-efficient and controllable.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#递归</a> <a class="tag" href="#">#迭代</a> <a class="tag" href="#">#控制流</a>
+    </article>
+
+
+    <article class="qitem" id="9f3baa07d579">
+      <h2 class="qz" lang="zh">单例模式解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does the singleton pattern solve?</p>
+      <div class="azh" lang="zh">单例确保一个类全局只有一个实例并提供统一访问点，适合配置、连接池等共享资源；但过度使用会增加全局状态和测试难度，需注意线程安全。</div>
+      <div class="aen" lang="en">Singleton ensures exactly one global instance with a single access point, suiting shared resources like config or pools; overuse adds global state and test friction, and needs thread safety.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#设计模式</a> <a class="tag" href="#">#OOP</a>
+    </article>
+
+
+    <article class="qitem" id="adb8eccb1c5a">
+      <h2 class="qz" lang="zh">什么是函数式编程？</h2>
+      <p class="qen" lang="en">What is functional programming?</p>
+      <div class="azh" lang="zh">函数式编程把计算视为数学函数的求值，强调不可变数据和纯函数（相同输入永远得到相同输出、无副作用）。它便于并行和推理，常见于 Haskell、Scala，也被现代语言以 lambda 等方式采纳。与面向对象编程是两种不同的思维方式。</div>
+      <div class="aen" lang="en">Functional programming treats computation as evaluating mathematical functions, emphasizing immutable data and pure functions (same input always yields same output, no side effects). It eases parallelism and reasoning, seen in Haskell and Scala and adopted via lambdas in modern languages. It is a different mindset from object-oriented programming.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#函数式</a> <a class="tag" href="#">#纯函数</a> <a class="tag" href="#">#不可变</a>
+    </article>
+
+
+    <article class="qitem" id="d5c6a1ad98e6">
+      <h2 class="qz" lang="zh">不变性（Immutability）为什么重要？</h2>
+      <p class="qen" lang="en">Why does immutability matter?</p>
+      <div class="azh" lang="zh">不可变数据创建后不能修改，能避免共享状态被意外篡改、简化并发安全并让变更可预测，函数式编程和 React 状态管理都大量依赖它。</div>
+      <div class="aen" lang="en">Immutable data cannot be changed after creation, preventing accidental mutation of shared state, simplifying concurrency safety and making changes predictable—relied on by functional programming and React state.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#数据</a>
+    </article>
+
+
+    <article class="qitem" id="311cface0468">
+      <h2 class="qz" lang="zh">垃圾回收（GC）是如何工作的？</h2>
+      <p class="qen" lang="en">How does garbage collection work?</p>
+      <div class="azh" lang="zh">GC 自动回收不再被引用的对象所占内存，常见有标记-清除和分代回收：先标记可达对象，再清除不可达对象，减少手动内存管理的错误。</div>
+      <div class="aen" lang="en">GC automatically reclaims memory of unreachable objects; common schemes like mark-sweep and generational collection mark reachable objects then free the rest, reducing manual memory bugs.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Jones 等 GC 手册</p>
+        <p lang="en">Jones et al. GC Handbook</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#内存</a>
+    </article>
+
+
+    <article class="qitem" id="3b400994321c">
+      <h2 class="qz" lang="zh">开源许可证（如 MIT 和 GPL）有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between open-source licenses like MIT and GPL?</p>
+      <div class="azh" lang="zh">开源许可证规定代码怎么用、怎么改、怎么分发。MIT 宽松：几乎随便用，只要保留版权声明；GPL 是 copyleft：你分发修改版时必须开源并沿用 GPL，防止代码被私有化。选择许可证决定了代码生态的走向——宽松许可利于商业采用，copyleft 保护社区成果。</div>
+      <div class="aen" lang="en">Open-source licenses define how code may be used, modified, and distributed. MIT is permissive: use it almost any way, just keep the copyright notice. GPL is copyleft: modified versions you distribute must also be open and under GPL, stopping privatization. Choosing a license shapes the ecosystem—permissive licenses invite commercial adoption, copyleft protects community work.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Eric S. Raymond,《The Cathedral and the Bazaar》,O&#x27;Reilly Media,1999</p>
+        <p lang="en">E. S. Raymond, The Cathedral and the Bazaar, O&#x27;Reilly Media, 1999</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Cathedral+and+the+Bazaar" target="_blank" rel="noopener">核验依据 1 ISBN 9781565928756 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开源</a> <a class="tag" href="#">#MIT</a> <a class="tag" href="#">#GPL</a>
+    </article>
+
+
+    <article class="qitem" id="42cf641337de">
+      <h2 class="qz" lang="zh">单元测试和集成测试有什么不同？</h2>
+      <p class="qen" lang="en">What is the difference between unit tests and integration tests?</p>
+      <div class="azh" lang="zh">单元测试针对最小的代码单位（函数、方法），用桩件隔离依赖，跑得快、出错定位准；集成测试验证多个模块、数据库或外部接口配合是否正常，发现的是接口不一致、环境差异等问题。好的测试金字塔是：大量单元测试垫底，少量集成测试居中，端到端测试最少。</div>
+      <div class="aen" lang="en">Unit tests target the smallest units—functions and methods—isolated with stubs, running fast with precise failure locations; integration tests verify that modules, databases, and external APIs work together, catching mismatched interfaces and environment issues. A healthy test pyramid has many unit tests at the base, fewer integration tests in the middle, and the fewest end-to-end tests.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Fowler M., Continuous Integration, martinfowler.com, 2006;Humble J. 与 Farley D., Continuous Delivery, Addison-Wesley, 2010</p>
+        <p lang="en">Fowler M., Continuous Integration, martinfowler.com, 2006; Humble J. &amp; Farley D., Continuous Delivery, Addison-Wesley, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Continuous+Delivery" target="_blank" rel="noopener">核验依据 1 ISBN 9780321670229 (2010)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单元测试</a> <a class="tag" href="#">#集成测试</a> <a class="tag" href="#">#测试金字塔</a>
+    </article>
+
+
+    <article class="qitem" id="540aa9646b65">
+      <h2 class="qz" lang="zh">同步和异步编程有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between synchronous and asynchronous programming?</p>
+      <div class="azh" lang="zh">同步代码按顺序阻塞执行，一步完成才进行下一步；异步允许在等待 IO 等耗时操作时让出控制权去处理别的事，最终通过回调、Promise 或 async/await 取结果。</div>
+      <div class="aen" lang="en">Synchronous code runs in order and blocks; asynchronous code yields control while waiting on slow tasks like I/O and resumes via callbacks, Promises or async/await, improving throughput.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#并发</a>
+    </article>
+
+
+    <article class="qitem" id="75de7362977e">
+      <h2 class="qz" lang="zh">什么是版本控制，Git 有什么用？</h2>
+      <p class="qen" lang="en">What is version control and what is Git for?</p>
+      <div class="azh" lang="zh">版本控制记录代码随时间的每一次修改，方便回溯、比较和协作。Git 是最流行的分布式版本控制系统，每个开发者都有完整仓库副本，可离线工作再合并。它让多人同时开发同一项目成为可能。</div>
+      <div class="aen" lang="en">Version control records every change to code over time, making it easy to revert, compare, and collaborate. Git is the most popular distributed version control system; each developer has a full copy of the repository and can work offline then merge. It makes multi-person development of one project possible.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-06</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chacon《Pro Git》第1章 (Apress)</p>
+        <p lang="en">S. Chacon, B. Straub, Pro Git, 2nd ed., Chapter 1, Apress</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">核验依据 1 Pro Git 2nd ed. 官方全文（Apress / CC BY-NC-SA 3.0）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#版本控制</a> <a class="tag" href="#">#Git</a> <a class="tag" href="#">#协作</a>
+    </article>
+
+
+    <article class="qitem" id="899c9ae109b3">
+      <h2 class="qz" lang="zh">什么是递归函数？</h2>
+      <p class="qen" lang="en">What is a recursive function?</p>
+      <div class="azh" lang="zh">递归函数是直接或间接调用自身的函数，常用于解决可分解为相同子问题的情况，如阶乘、斐波那契数列和树遍历。它必须设置终止条件，否则会无限循环直至栈溢出。递归往往代码简洁但需注意效率。</div>
+      <div class="aen" lang="en">A recursive function calls itself directly or indirectly, often used for problems that split into identical subproblems, such as factorial, Fibonacci, and tree traversal. It must have a termination condition, or it loops forever until stack overflow. Recursion is often concise but needs attention to efficiency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#递归</a> <a class="tag" href="#">#函数</a> <a class="tag" href="#">#自我调用</a>
+    </article>
+
+
+    <article class="qitem" id="956b804e0125">
+      <h2 class="qz" lang="zh">什么是 API？</h2>
+      <p class="qen" lang="en">What is an API?</p>
+      <div class="azh" lang="zh">API（应用程序接口）是一套约定好的规则，让不同软件之间互相请求服务或数据，而不必知道对方内部如何实现。</div>
+      <div class="aen" lang="en">An API (application programming interface) is a set of rules letting different programs request services or data from each other without knowing the internals.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#API</a> <a class="tag" href="#">#接口</a> <a class="tag" href="#">#集成</a>
+    </article>
+
+
+    <article class="qitem" id="9e198b2ec050">
+      <h2 class="qz" lang="zh">代码审查为什么值得做？</h2>
+      <p class="qen" lang="en">Why is code review worth doing?</p>
+      <div class="azh" lang="zh">代码审查让另一位开发者阅读改动并给出意见，能提前发现逻辑错误、安全问题、可读性问题，也是团队知识传播的渠道——没人只懂自己写的模块。自动化工具查不到设计层面的问题，人的审查正好互补。研究发现审查过的代码缺陷率显著更低。</div>
+      <div class="aen" lang="en">Code review has another developer read the changes and give feedback, catching logic bugs, security holes, and readability issues early, while spreading knowledge—nobody owns a module alone. Automated tools miss design-level problems, which human review complements. Studies find reviewed code has markedly fewer defects.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cohn《Succeeding with Agile》第13章 (Prentice Hall), 2009</p>
+        <p lang="en">M. Cohn, Succeeding with Agile: Software Development Using Scrum, Chapter 13, Prentice Hall, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Succeeding+with+Agile" target="_blank" rel="noopener">核验依据 1 ISBN 9780321579362 (2009)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#代码审查</a> <a class="tag" href="#">#质量</a> <a class="tag" href="#">#协作</a>
+    </article>
+
+
+    <article class="qitem" id="b0696ae1cceb">
+      <h2 class="qz" lang="zh">什么是面向对象编程？</h2>
+      <p class="qen" lang="en">What is object-oriented programming?</p>
+      <div class="azh" lang="zh">面向对象编程把数据和操作组织成&quot;对象&quot;，通过封装、继承、多态来复用和建模真实世界，典型语言有 Java 和 Python。</div>
+      <div class="aen" lang="en">Object-oriented programming organizes data and behavior into &#x27;objects&#x27; using encapsulation, inheritance, and polymorphism to reuse code and model the real world; Java and Python are typical.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#面向对象</a> <a class="tag" href="#">#类</a> <a class="tag" href="#">#封装</a>
+    </article>
+
+
+    <article class="qitem" id="b8d00a473ce6">
+      <h2 class="qz" lang="zh">什么是变量？</h2>
+      <p class="qen" lang="en">What is a variable?</p>
+      <div class="azh" lang="zh">变量是给数据起的一个名字，相当于贴了标签的盒子，你可以把数字或文字放进去并随时更改。</div>
+      <div class="aen" lang="en">A variable is a named container for data, like a labeled box where you can store and change numbers or text.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#变量</a> <a class="tag" href="#">#数据</a>
+    </article>
+
+
+    <article class="qitem" id="b8dd1bae7a85">
+      <h2 class="qz" lang="zh">什么是调试（debug）？</h2>
+      <p class="qen" lang="en">What is debugging?</p>
+      <div class="azh" lang="zh">调试是找出并修正程序里的错误（bug）的过程，常借助打印信息或调试工具一步步观察程序运行。</div>
+      <div class="aen" lang="en">Debugging is finding and fixing errors (bugs) in a program, often by printing information or stepping through with a debugger.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Andrew Hunt 与 David Thomas《The Pragmatic Programmer》(1999) 第 3 章 Debugging 一节</p>
+        <p lang="en">Andrew Hunt &amp; David Thomas, &quot;The Pragmatic Programmer&quot; (1999), ch. 3, on debugging</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5748544W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5748544W：The Pragmatic Programme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#调试</a> <a class="tag" href="#">#Bug</a> <a class="tag" href="#">#排错</a>
+    </article>
+
+
+    <article class="qitem" id="cc393bd1d7d7">
+      <h2 class="qz" lang="zh">编译和解释有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between compiling and interpreting?</p>
+      <div class="azh" lang="zh">编译把整段源代码提前翻译成机器码一次成型；解释则边读边逐行执行，无需先生成完整机器码。</div>
+      <div class="aen" lang="en">Compiling translates the whole source code into machine code up front; interpreting runs code line by line without producing a full machine-code file first.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编译</a> <a class="tag" href="#">#解释</a> <a class="tag" href="#">#执行</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_013">
+      <h2 class="qz" lang="zh">程序员说的bug是什么?第一个电脑bug真的是一只飞蛾吗?</h2>
+      <p class="qen" lang="en">What do programmers mean by a bug? Was the first computer bug really a moth?</p>
+      <div class="azh" lang="zh">程序错误俗称bug(虫子)。1947年哈佛Mark II计算机故障,工程师真的从继电器里揪出一只飞蛾贴进工作日志,写下发现第一只实际案例。从此bug成为行话,修错就叫debug。今天绝大多数bug是代码逻辑疏漏而非真虫子,但排查精神一脉相承:复现问题、缩小范围、定位修复、回归测试。</div>
+      <div class="aen" lang="en">Program errors are commonly called bugs. In 1947 Harvard Mark II engineers pulled a real moth from a relay, taping it into the logbook labeled first actual case found — coining debug for fixing. Most bugs today are logic slips, not insects, yet the spirit persists: reproduce, narrow down, fix, retest.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">韩启德总主编《十万个为什么》(第六版),少年儿童出版社,2013</p>
+        <p lang="en">Han Qide chief ed., Ten Thousand Whys, 6th edition, Juvenile and Children Publishing House, 2013, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#程序调试</a> <a class="tag" href="#">#debug</a> <a class="tag" href="#">#软件质量</a>
+    </article>
+
+
+    <article class="qitem" id="e73c0250b193">
+      <h2 class="qz" lang="zh">为什么程序里不该用等号直接比较两个浮点数？</h2>
+      <p class="qen" lang="en">Why shouldn&#x27;t a program compare two floating-point numbers for exact equality?</p>
+      <div class="azh" lang="zh">二进制浮点无法精确表示 0.1、0.2 这类十进制小数，每一步运算又按 IEEE 754 规则舍入，所以 0.1 加 0.2 的结果是 0.30000000000000004，与字面量 0.3 的位模式不同，相等判断因此失败。正确做法是判断两数之差的绝对值是否小于某个容差，且容差要随数值量级缩放，例如比较 abs(a-b) 与 eps 乘 max(abs(a), abs(b))。涉及金额时更应彻底放弃浮点，改用十进制类型或以整数分为单位，如 Python 的 decimal.Decimal。</div>
+      <div class="aen" lang="en">Binary floating point cannot represent decimals like 0.1 or 0.2 exactly, and every operation rounds under IEEE 754, so 0.1 plus 0.2 yields 0.30000000000000004 whose bit pattern differs from the literal 0.3 and the equality test fails. The correct approach compares the magnitude of the difference against a tolerance that scales with the values involved, such as testing abs(a - b) against eps times max(abs(a), abs(b)), rather than a fixed epsilon. For money, abandon floats entirely and use a decimal type or integer minor units, for example Python&#x27;s decimal.Decimal.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goldberg《What Every Computer Scientist Should Know About Floating-Point Arithmetic》(ACM Computing Surveys, 1991)；IEEE 754-2019 标准</p>
+        <p lang="en">Goldberg, &quot;What Every Computer Scientist Should Know About Floating-Point Arithmetic,&quot; ACM Computing Surveys (1991); IEEE 754-2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/IEEE754Article" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 IEEE754Article：What every computer scientist </a></p>
+        
+      </details>
+      <a class="tag" href="#">#浮点比较</a> <a class="tag" href="#">#IEEE 754</a> <a class="tag" href="#">#舍入误差</a> <a class="tag" href="#">#数值容差</a>
+    </article>
+
+
+    <article class="qitem" id="e88dc1dc71ca">
+      <h2 class="qz" lang="zh">什么是「开源」软件？</h2>
+      <p class="qen" lang="en">What is open-source software?</p>
+      <div class="azh" lang="zh">开源软件的源代码对所有人公开，任何人都可以查看、修改和分发，通常由社区协作维护。Linux、Python、 Firefox 都是著名的开源项目。它促进了知识共享和软件质量的提升。</div>
+      <div class="aen" lang="en">Open-source software publishes its source code for everyone to view, modify, and distribute, usually maintained collaboratively by a community. Linux, Python, and Firefox are famous open-source projects. It promotes knowledge sharing and improves software quality.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Eric S. Raymond,《The Cathedral and the Bazaar》,O&#x27;Reilly Media,1999</p>
+        <p lang="en">E. S. Raymond, The Cathedral and the Bazaar, O&#x27;Reilly Media, 1999</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Cathedral+and+the+Bazaar" target="_blank" rel="noopener">核验依据 1 ISBN 9781565928756 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开源</a> <a class="tag" href="#">#源代码</a> <a class="tag" href="#">#社区</a>
+    </article>
+
+
+    <article class="qitem" id="e8af971454f6">
+      <h2 class="qz" lang="zh">什么是指针？</h2>
+      <p class="qen" lang="en">What is a pointer?</p>
+      <div class="azh" lang="zh">指针是保存另一块内存地址的变量，通过它可直接读写该地址的数据；它赋予灵活的内存与数据结构控制，但也容易引发悬空指针和内存泄漏。</div>
+      <div class="aen" lang="en">A pointer is a variable holding the memory address of another value, letting you read/write that memory directly; it enables flexible structures but risks dangling pointers and leaks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Charles Petzold,《Code: The Hidden Language of Computer Hardware and Software》第2版,Microsoft Press,2022</p>
+        <p lang="en">C. Petzold, Code, 2nd ed., Microsoft Press, 2022; Chinese ed.《编码》</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#内存</a>
+    </article>
+
+
+    <article class="qitem" id="f72fa5b30691">
+      <h2 class="qz" lang="zh">Git 是怎么管理代码版本的？</h2>
+      <p class="qen" lang="en">How does Git manage code versions?</p>
+      <div class="azh" lang="zh">Git 是分布式版本控制系统，把文件快照组织成有向无环图的提交链。每次 commit 都记录改动和作者信息；分支让多人并行开发，合并时自动三路合并，冲突需手动解决。因为每个开发者的本地都是完整仓库，无需中央服务器就能离线工作，也更易备份恢复。</div>
+      <div class="aen" lang="en">Git is a distributed version control system that organizes file snapshots into a chain of commits forming a directed acyclic graph. Each commit records changes and authorship; branches let people develop in parallel, and merges apply three-way merging, with conflicts resolved by hand. Since every developer has a full local repository, you can work offline with no central server and recover easily.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-06</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Chacon《Pro Git》第1章 (Apress)</p>
+        <p lang="en">S. Chacon, B. Straub, Pro Git, 2nd ed., Chapter 1, Apress</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">核验依据 1 Pro Git 2nd ed. 官方全文（Apress / CC BY-NC-SA 3.0）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Git</a> <a class="tag" href="#">#提交</a> <a class="tag" href="#">#分支</a>
+    </article>
+
+
+    <article class="qitem" id="fa004a6a2bad">
+      <h2 class="qz" lang="zh">为什么代码注释很重要？</h2>
+      <p class="qen" lang="en">Why are code comments important?</p>
+      <div class="azh" lang="zh">注释是写在代码里、给人和未来的自己看的说明，解释「为什么这样做」而非复述「做了什么」。好的注释能大幅降低维护和理解成本。但过度或错误的注释反而会产生误导。</div>
+      <div class="aen" lang="en">Comments are notes written in code for people and your future self, explaining why something is done rather than restating what is done. Good comments greatly lower maintenance and understanding costs. But excessive or wrong comments can mislead.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Robert C. Martin,《Clean Code》Prentice Hall,2008;中译《代码整洁之道》人民邮电出版社</p>
+        <p lang="en">R. C. Martin, Clean Code, Prentice Hall, 2008; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17618370W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL17618370W：Clean Code（按标题+作者/年份比对</a></p>
+        
+      </details>
+      <a class="tag" href="#">#注释</a> <a class="tag" href="#">#可读性</a> <a class="tag" href="#">#维护</a>
+    </article>
+
+
+    <article class="qitem" id="0766a1ede34a">
+      <h2 class="qz" lang="zh">为什么程序员要写注释？</h2>
+      <p class="qen" lang="en">Why do programmers write comments?</p>
+      <div class="azh" lang="zh">注释是写给人的说明文字，电脑会忽略它，但能帮自己和别人以后看懂这段代码在做什么。</div>
+      <div class="aen" lang="en">Comments are notes for humans that the computer ignores, helping you and others understand what the code does later.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#注释</a> <a class="tag" href="#">#编程习惯</a>
+    </article>
+
+
+    <article class="qitem" id="4bfadc1ae654">
+      <h2 class="qz" lang="zh">什么是编程语言？</h2>
+      <p class="qen" lang="en">What is a programming language?</p>
+      <div class="azh" lang="zh">编程语言是人用来给计算机下达指令的工具，比机器语言好懂，常见有 Python、Java、C++ 等。</div>
+      <div class="aen" lang="en">A programming language is a tool people use to give computers instructions in a form easier than machine code; examples include Python, Java, and C++.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#语言</a> <a class="tag" href="#">#基础</a>
+    </article>
+
+
+    <article class="qitem" id="4f837964618f">
+      <h2 class="qz" lang="zh">明明多写了测试代码，为什么反而说开发速度更快？</h2>
+      <p class="qen" lang="en">If tests mean writing extra code, why do they make development faster?</p>
+      <div class="azh" lang="zh">缺陷发现得越晚，定位与修复成本越高：排查线上回归往往要翻日志、复现环境、协调发布，而单元测试能在几秒内把责任范围缩小到刚改动的那几行。有了一套可信的测试，重构和升级依赖时不必靠「小心一点」来保证不破坏功能，改动的心理成本大幅下降。测试驱动开发进一步把测试当成设计工具：先写一个会失败的测试来明确需求边界，再写最少的代码让它通过，然后重构。</div>
+      <div class="aen" lang="en">The later a defect surfaces, the more it costs to locate and fix: chasing a production regression means digging through logs, reproducing an environment and coordinating a release, whereas a unit test narrows the blame to the lines you just touched within seconds. A trustworthy suite also removes the fear tax on refactoring and dependency upgrades, since correctness no longer depends on being careful. Test-driven development pushes further and treats tests as a design tool — write a failing test to pin down the requirement, write the least code that passes it, then refactor.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kent Beck《Test-Driven Development: By Example》(2002)</p>
+        <p lang="en">Kent Beck, &quot;Test-Driven Development: By Example&quot; (2002)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/est-driven-development-by-example" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 est-driven-development-by-example：Test-driven</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单元测试</a> <a class="tag" href="#">#测试驱动开发</a> <a class="tag" href="#">#重构</a> <a class="tag" href="#">#缺陷成本</a>
+    </article>
+
+
+    <article class="qitem" id="5b6484185de2">
+      <h2 class="qz" lang="zh">面向对象中的多态是什么意思？</h2>
+      <p class="qen" lang="en">What does polymorphism mean in OOP?</p>
+      <div class="azh" lang="zh">多态允许用统一接口操作不同类型的对象，运行时根据实际类型调用对应实现（如子类重写父类方法），提升代码可扩展性与可替换性。</div>
+      <div class="aen" lang="en">Polymorphism lets one interface operate on different object types, dispatching to the actual type&#x27;s implementation at runtime (e.g. overriding), improving extensibility and replaceability.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Abelson &amp; Sussman,《Structure and Interpretation of Computer Programs》MIT Press,1996 第二版</p>
+        <p lang="en">H. Abelson and G. J. Sussman, SICP, MIT Press, 1996</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#OOP</a>
+    </article>
+
+
+    <article class="qitem" id="66f2490ca667">
+      <h2 class="qz" lang="zh">什么是 Bug 和调试？</h2>
+      <p class="qen" lang="en">What are bugs and debugging?</p>
+      <div class="azh" lang="zh">Bug 是程序中的错误或缺陷，会导致运行结果不符合预期。调试是寻找并修复这些错误的过程，常用方法包括打印日志、单步执行和单元测试。几乎所有程序员都花大量时间在与 Bug 斗争上。</div>
+      <div class="aen" lang="en">A bug is an error or defect in a program that makes the result unexpected. Debugging is the process of finding and fixing such errors, often using logs, step-by-step execution, and unit tests. Almost every programmer spends much time fighting bugs.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Andrew Hunt 与 David Thomas《The Pragmatic Programmer》(1999) 第 3 章 Debugging 一节</p>
+        <p lang="en">Andrew Hunt &amp; David Thomas, &quot;The Pragmatic Programmer&quot; (1999), ch. 3, on debugging</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5748544W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5748544W：The Pragmatic Programme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Bug</a> <a class="tag" href="#">#调试</a> <a class="tag" href="#">#测试</a>
+    </article>
+
+
+    <article class="qitem" id="bff7166674d7">
+      <h2 class="qz" lang="zh">编程里的『bug』是什么意思？</h2>
+      <p class="qen" lang="en">What does a &#x27;bug&#x27; mean in programming?</p>
+      <div class="azh" lang="zh">Bug 是程序里让结果出错的缺陷或小错误，可能来自写错逻辑、漏掉情况或数据异常；找出并修复它叫做调试（debug）。</div>
+      <div class="aen" lang="en">A bug is a defect or small error that makes a program behave wrongly—from wrong logic, missed cases or bad data; finding and fixing it is called debugging.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Andrew Hunt 与 David Thomas《The Pragmatic Programmer》(1999) 第 3 章 Debugging 一节</p>
+        <p lang="en">Andrew Hunt &amp; David Thomas, &quot;The Pragmatic Programmer&quot; (1999), ch. 3, on debugging</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5748544W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5748544W：The Pragmatic Programme</a></p>
+        
+      </details>
+      <a class="tag" href="#">#编程</a> <a class="tag" href="#">#调试</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_007">
+      <h2 class="qz" lang="zh">程序是什么?为什么电脑有时候会听错我的话?</h2>
+      <p class="qen" lang="en">What is a program — why does the computer sometimes get me wrong?</p>
+      <div class="azh" lang="zh">程序是写给电脑的菜谱,一步一步写得清清楚楚。电脑没有常识,只会照字面执行:你说把文件都删掉,它连重要的也不问就删。所以写程序的人要把每个细节想到,电脑出错多半是菜谱没写清。</div>
+      <div class="aen" lang="en">A program is a recipe for computers, every step spelled out exactly. Computers have no common sense and follow words literally: say delete everything and it deletes the important files too without asking. Most mistakes are recipes missing details, not stubborn machines.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Linda Liukas,《Hello Ruby: Adventures in Coding》,Feiwel &amp; Friends,2015</p>
+        <p lang="en">Linda Liukas, Hello Ruby: Adventures in Coding, Feiwel &amp; Friends, 2015</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Hello%20Ruby%3A%20Adventures%20in%20Coding" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-14-330898-0 (2015, No Starch Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#程序</a> <a class="tag" href="#">#指令</a> <a class="tag" href="#">#逻辑</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

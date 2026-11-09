@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>datastructure · 计算机 Computer Science | 问答</title>
+<meta name="description" content="datastructure（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="datastructure · 计算机 Computer Science | 问答">
+<meta property="og:description" content="datastructure（计算机）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/datastructure/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/datastructure/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>datastructure</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>datastructure <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#08c22452cdcd">红黑树和 AVL 树各有什么特点？</a></li><li><a href="#1848aff96707">哈希表是如何实现 O(1) 平均查找的？</a></li><li><a href="#4a273ed93ec3">布隆过滤器是什么，有什么取舍？</a></li><li><a href="#dc041893249d">斐波那契堆为什么特别适合用来实现 Dijkstra 算法？</a></li><li><a href="#b34465fe0041">跳表（skip list）是怎么用“概率”换来平衡的？</a></li><li><a href="#fbf286a94ad1">堆和优先队列有什么关系？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="08c22452cdcd">
+      <h2 class="qz" lang="zh">红黑树和 AVL 树各有什么特点？</h2>
+      <p class="qen" lang="en">What are the characteristics of red-black and AVL trees?</p>
+      <div class="azh" lang="zh">两者都是自平衡二叉搜索树：AVL 更严格平衡，查找更快但插入删除旋转多；红黑树放宽平衡（黑高平衡），插入删除开销更低，因此更常用于系统级数据结构如 C++ map。</div>
+      <div class="aen" lang="en">Both are self-balancing BSTs: AVL is stricter (faster lookups, more rotations), while red-black relaxes balance for cheaper insertions/deletions, so it is common in system structures like C++ maps.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#树</a> <a class="tag" href="#">#平衡</a>
+    </article>
+
+
+    <article class="qitem" id="1848aff96707">
+      <h2 class="qz" lang="zh">哈希表是如何实现 O(1) 平均查找的？</h2>
+      <p class="qen" lang="en">How does a hash table achieve O(1) average lookup?</p>
+      <div class="azh" lang="zh">哈希函数把键映射到桶下标，理想情况下不同键均匀分布到不同桶，直接定位；冲突时常用链地址法或开放寻址法处理，负载因子过高会触发扩容再哈希。</div>
+      <div class="aen" lang="en">A hash function maps keys to bucket indices so the right bucket is found directly; collisions are handled by chaining or open addressing, and high load triggers resizing and rehashing.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据结构</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="4a273ed93ec3">
+      <h2 class="qz" lang="zh">布隆过滤器是什么，有什么取舍？</h2>
+      <p class="qen" lang="en">What is a Bloom filter and what are its trade-offs?</p>
+      <div class="azh" lang="zh">布隆过滤器用多个哈希函数和位数组判断元素是否可能在集合中：它绝不会漏报，但有一定误判率，且不支持删除，优点是空间开销极小。</div>
+      <div class="aen" lang="en">A Bloom filter uses several hash functions over a bit array to test membership: it never yields false negatives but has a tunable false-positive rate and cannot delete, trading accuracy for tiny space.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">论文 Bloom 1970</p>
+        <p lang="en">Bloom 1970 paper</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#概率</a> <a class="tag" href="#">#数据结构</a>
+    </article>
+
+
+    <article class="qitem" id="dc041893249d">
+      <h2 class="qz" lang="zh">斐波那契堆为什么特别适合用来实现 Dijkstra 算法？</h2>
+      <p class="qen" lang="en">Why is a Fibonacci heap especially suited to Dijkstra&#x27;s algorithm?</p>
+      <div class="azh" lang="zh">Dijkstra 需要大量“降低某个键的优先级”和“取最小”。斐波那契堆把插入和减键都做到摊还 O(1)，只在抽取最小值时才做昂贵的合并，使得整体最短路运行的摊还复杂度降到 O(E + V log V)，优于二叉堆。</div>
+      <div class="aen" lang="en">Dijkstra needs many &#x27;decrease-key&#x27; and &#x27;extract-min&#x27; ops. A Fibonacci heap does insert and decrease-key in amortized O(1) and only pays heavily at extract-min, bringing the shortest-path cost to O(E + V log V)—better than a binary heap.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#斐波那契堆</a> <a class="tag" href="#">#Dijkstra</a>
+    </article>
+
+
+    <article class="qitem" id="b34465fe0041">
+      <h2 class="qz" lang="zh">跳表（skip list）是怎么用“概率”换来平衡的？</h2>
+      <p class="qen" lang="en">How does a skip list use probability to achieve balance?</p>
+      <div class="azh" lang="zh">跳表是带多层索引的有序链表：每个节点以固定概率（如 1/2）再向上晋升一层，形成稀疏到稠密的多级指针。查找时从顶层大幅跳跃、逐层下降，期望代价 O(log n)，且不需要像平衡树那样做复杂的旋转。</div>
+      <div class="aen" lang="en">A skip list is an ordered linked list with multi-level indexes: each node is promoted one level up with a fixed probability (e.g. 1/2), forming sparse-to-dense pointers. Search jumps from the top and descends, costing expected O(log n) without the rotations of balanced trees.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#跳表</a> <a class="tag" href="#">#概率</a>
+    </article>
+
+
+    <article class="qitem" id="fbf286a94ad1">
+      <h2 class="qz" lang="zh">堆和优先队列有什么关系？</h2>
+      <p class="qen" lang="en">What is the relationship between a heap and a priority queue?</p>
+      <div class="azh" lang="zh">优先队列是一种抽象数据类型，堆（通常是二叉堆）是其高效实现：插入和取最值都能在 O(log n) 完成，常用于任务调度和 Dijkstra。</div>
+      <div class="aen" lang="en">A priority queue is an ADT, and a heap (usually binary) is its efficient implementation: insert and extract-min run in O(log n), used in scheduling and Dijkstra.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cormen, Leiserson, Rivest, Stein,《Introduction to Algorithms》第3版,MIT Press,2009</p>
+        <p lang="en">T. H. Cormen et al., Introduction to Algorithms, 3rd ed., MIT Press, 2009</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpressbookstore.mit.edu/book/9780262046305" target="_blank" rel="noopener">核验依据 2 ISBN 978-0-262-04630-5</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据结构</a> <a class="tag" href="#">#堆</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

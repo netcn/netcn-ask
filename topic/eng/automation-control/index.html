@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自动化与控制 automation-control · 工程技术 Engineering | 问答</title>
+<meta name="description" content="自动化与控制（工程技术）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="自动化与控制 automation-control · 工程技术 Engineering | 问答">
+<meta property="og:description" content="自动化与控制（工程技术）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/automation-control/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/automation-control/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>自动化与控制</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>自动化与控制 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>13</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1c37eb9bd071">PID控制里的积分饱和是怎么产生的，怎么处理？</a></li><li><a href="#2024bd019b4c">卡尔曼滤波为什么被称为最优估计？</a></li><li><a href="#a0f96e80f298">伺服系统为什么要设电流环、速度环和位置环三层结构？</a></li><li><a href="#bf5a6484b769">什么是串级控制，为什么加热炉常用它？</a></li><li><a href="#d5f9bf3d560f">为什么带纯滞后的过程特别难控制？</a></li><li><a href="#d8c07df7cafd">模型预测控制为什么适合有约束的多变量系统？</a></li><li><a href="#e7e4bb55e748">相位裕度和增益裕度说明了系统的什么性质？</a></li><li><a href="#020e2d0774ad">什么是自适应控制，它和固定参数的PID有什么不同？</a></li><li><a href="#06bb52941fff">评价一个控制系统好不好，通常看哪些阶跃响应指标？</a></li><li><a href="#2afd097e6c52">PID的微分项为什么容易被噪声放大？</a></li><li><a href="#97921aa525a6">什么是前馈控制，它和反馈控制怎么配合？</a></li><li><a href="#822bbef5a5a2">开环控制和闭环控制有什么本质区别？</a></li><li><a href="#ed4682f98200">为什么控制系统几乎都用负反馈？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1c37eb9bd071">
+      <h2 class="qz" lang="zh">PID控制里的积分饱和是怎么产生的，怎么处理？</h2>
+      <p class="qen" lang="en">How does integral windup arise in PID control and how is it handled?</p>
+      <div class="azh" lang="zh">当执行器已经到达极限却仍有偏差时，积分项还在不断累加，积分值可能涨到很大。等到偏差反向，积分需要很长时间才能退出饱和，表现为响应严重超调和长时间失控。抗饱和措施包括对积分项限幅、执行器饱和时暂停积分，或采用反算法把实际输出与期望输出之差反馈去修正积分器。</div>
+      <div class="aen" lang="en">When the actuator has already hit its limit but an error persists, the integral term keeps accumulating and can grow very large. Once the error reverses, the integrator takes a long time to unwind, showing up as severe overshoot and a long period of poor control. Anti-windup measures include clamping the integral term, freezing integration while the actuator is saturated, or back-calculation, which feeds the difference between commanded and actual output back to correct the integrator.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PID</a> <a class="tag" href="#">#积分饱和</a> <a class="tag" href="#">#抗饱和</a>
+    </article>
+
+
+    <article class="qitem" id="2024bd019b4c">
+      <h2 class="qz" lang="zh">卡尔曼滤波为什么被称为最优估计？</h2>
+      <p class="qen" lang="en">Why is the Kalman filter called an optimal estimator?</p>
+      <div class="azh" lang="zh">卡尔曼滤波把系统模型的预测与传感器的测量按各自不确定度加权融合，不确定度小的一方权重大。在线性系统且噪声为高斯白噪声的假设下，它给出的估计在均方误差意义上是最优的，同时还输出协方差表示置信度。工程上它广泛用于导航和组合定位，非线性问题则用扩展卡尔曼或粒子滤波近似处理。</div>
+      <div class="aen" lang="en">The Kalman filter blends the model&#x27;s prediction with the sensor measurement, weighting each by its uncertainty so that the more trustworthy source dominates. Under the assumptions of a linear system with Gaussian white noise its estimate is optimal in the minimum mean-square-error sense, and it also outputs a covariance describing confidence. It is widely used in navigation and integrated positioning, while nonlinear problems are approximated with extended Kalman or particle filters.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#卡尔曼滤波</a> <a class="tag" href="#">#状态估计</a> <a class="tag" href="#">#传感器融合</a>
+    </article>
+
+
+    <article class="qitem" id="a0f96e80f298">
+      <h2 class="qz" lang="zh">伺服系统为什么要设电流环、速度环和位置环三层结构？</h2>
+      <p class="qen" lang="en">Why is a servo system built with nested current, speed and position loops?</p>
+      <div class="azh" lang="zh">三个环带宽依次降低，最内的电流环直接控制转矩，响应最快，负责抑制电压扰动并限制过流；中间速度环控制转速，抑制负载扰动；最外位置环保证最终定位精度。分层设计让每一环只面对被内环整理过的简洁对象，参数调试可以由内向外逐层进行。若内环带宽不足，外环无论怎么调都难以稳定。</div>
+      <div class="aen" lang="en">The three loops have successively lower bandwidth: the innermost current loop directly controls torque, responds fastest, and rejects supply disturbances while limiting overcurrent; the middle speed loop regulates rotational speed and rejects load disturbances; the outer position loop delivers final positioning accuracy. This layering lets each loop face a simple plant already tamed by the loop inside it, so tuning proceeds from inside out. If the inner loop lacks bandwidth, no amount of outer-loop tuning will make the system stable.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#伺服</a> <a class="tag" href="#">#三环控制</a> <a class="tag" href="#">#带宽</a>
+    </article>
+
+
+    <article class="qitem" id="bf5a6484b769">
+      <h2 class="qz" lang="zh">什么是串级控制，为什么加热炉常用它？</h2>
+      <p class="qen" lang="en">What is cascade control and why is it common on industrial furnaces?</p>
+      <div class="azh" lang="zh">串级控制用两个嵌套回路，外环控制最终关心的慢变量并输出内环的设定值，内环控制响应快的中间变量。加热炉的炉温变化慢、滞后大，若直接调燃料阀，燃气压力波动会先破坏温度；把燃气流量做成内环快速稳住，外环温度回路就只需应对慢过程。这样抗扰能力和调节品质都明显提高。</div>
+      <div class="aen" lang="en">Cascade control uses two nested loops: the outer loop regulates the slow variable that really matters and outputs the setpoint for the inner loop, which regulates a fast intermediate variable. Furnace temperature changes slowly with large lag, so adjusting the fuel valve directly lets gas pressure fluctuations upset the temperature first; making gas flow a fast inner loop stabilises that quickly, leaving the outer temperature loop to handle only the slow process. Disturbance rejection and control quality both improve markedly.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#串级控制</a> <a class="tag" href="#">#嵌套回路</a> <a class="tag" href="#">#过程控制</a>
+    </article>
+
+
+    <article class="qitem" id="d5f9bf3d560f">
+      <h2 class="qz" lang="zh">为什么带纯滞后的过程特别难控制？</h2>
+      <p class="qen" lang="en">Why are processes with pure time delay especially hard to control?</p>
+      <div class="azh" lang="zh">纯滞后意味着控制动作要等一段时间才在测量上体现，比如长管道输送或大惯量加热。控制器在这段盲区里得不到反馈，容易继续加大动作，等结果出现时已经过量，形成振荡。频域上看滞后带来随频率线性增长的相位滞后，严重压缩相位裕度，因此增益必须调得很低，或采用史密斯预估器用模型补偿滞后。</div>
+      <div class="aen" lang="en">Pure delay means a control action shows up in the measurement only after some time, as with long transport pipes or high-inertia heating. During that blind period the controller gets no feedback and tends to keep pushing, so by the time the result appears the action has overshot and oscillation follows. In the frequency domain delay adds phase lag growing linearly with frequency, severely eroding phase margin, so gain must be kept low or a Smith predictor used to compensate the delay with a model.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#纯滞后</a> <a class="tag" href="#">#相位裕度</a> <a class="tag" href="#">#史密斯预估器</a>
+    </article>
+
+
+    <article class="qitem" id="d8c07df7cafd">
+      <h2 class="qz" lang="zh">模型预测控制为什么适合有约束的多变量系统？</h2>
+      <p class="qen" lang="en">Why does model predictive control suit constrained multivariable systems?</p>
+      <div class="azh" lang="zh">模型预测控制在每个采样时刻用系统模型预测未来若干步的响应，求解一个带约束的优化问题得到最优控制序列，只执行第一步，下一时刻再重新优化。因为约束直接写进优化问题，执行器限幅、变量上下限和安全边界都能被显式处理。它天然支持多输入多输出耦合系统，代价是计算量大、对模型质量敏感。</div>
+      <div class="aen" lang="en">At each sampling instant model predictive control uses a model to predict the response over a future horizon, solves a constrained optimisation for the best control sequence, applies only the first move, and re-optimises at the next instant. Because constraints enter the optimisation directly, actuator limits, variable bounds and safety margins are handled explicitly. It naturally handles coupled multi-input multi-output systems, at the cost of heavy computation and sensitivity to model quality.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#模型预测控制</a> <a class="tag" href="#">#约束优化</a> <a class="tag" href="#">#多变量</a>
+    </article>
+
+
+    <article class="qitem" id="e7e4bb55e748">
+      <h2 class="qz" lang="zh">相位裕度和增益裕度说明了系统的什么性质？</h2>
+      <p class="qen" lang="en">What do phase margin and gain margin tell us about a system?</p>
+      <div class="azh" lang="zh">在开环频率特性上，增益穿越一倍时对应的相位距离负一百八十度还差多少，就是相位裕度；相位到负一百八十度时增益比一倍小多少，就是增益裕度。两者衡量系统距离不稳定还有多远，裕度太小意味着轻微的参数漂移或额外滞后就会自激振荡。经验上相位裕度取三十到六十度、增益裕度六分贝以上比较稳妥。</div>
+      <div class="aen" lang="en">On the open-loop frequency response, phase margin is how far the phase is from minus one hundred and eighty degrees at the frequency where gain crosses unity, while gain margin is how far below unity the gain is when the phase reaches minus one hundred and eighty degrees. Together they measure how close the system is to instability, and margins that are too small mean slight parameter drift or extra delay will cause self-sustained oscillation. As a rule of thumb a phase margin of thirty to sixty degrees and gain margin above six decibels are considered safe.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#相位裕度</a> <a class="tag" href="#">#增益裕度</a> <a class="tag" href="#">#稳定性</a>
+    </article>
+
+
+    <article class="qitem" id="020e2d0774ad">
+      <h2 class="qz" lang="zh">什么是自适应控制，它和固定参数的PID有什么不同？</h2>
+      <p class="qen" lang="en">What is adaptive control and how does it differ from a fixed-gain PID?</p>
+      <div class="azh" lang="zh">固定参数控制器在设计工况附近表现最好，一旦对象特性改变，例如反应釜物料变化或飞机油量减少导致质量下降，性能就会退化。自适应控制在线辨识对象参数或直接调整控制器增益，使控制律随工况变化。常见形式有增益调度、模型参考自适应和自校正调节器。难点在于辨识需要足够激励，且必须保证辨识与控制耦合时整体依然稳定。</div>
+      <div class="aen" lang="en">A fixed-gain controller performs best near its design operating point, and performance degrades once plant characteristics change, for example when reactor feedstock changes or an aircraft grows lighter as fuel burns off. Adaptive control identifies plant parameters online or adjusts controller gains directly so the control law tracks the changing conditions. Common forms are gain scheduling, model reference adaptive control and self-tuning regulators. The difficulties are that identification needs sufficient excitation and that the coupled identification and control loop must remain stable overall.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#自适应控制</a> <a class="tag" href="#">#参数辨识</a> <a class="tag" href="#">#增益调度</a>
+    </article>
+
+
+    <article class="qitem" id="06bb52941fff">
+      <h2 class="qz" lang="zh">评价一个控制系统好不好，通常看哪些阶跃响应指标？</h2>
+      <p class="qen" lang="en">Which step-response metrics are used to judge a control system?</p>
+      <div class="azh" lang="zh">常用指标包括上升时间反映响应快慢，超调量表示最大冲过目标的百分比，调节时间指进入误差带并保持所需的时间，稳态误差衡量最终偏离目标多少。这些指标相互制约，追求快就容易超调，压低超调往往变慢。工程上还要看抗扰恢复能力和对参数变化的鲁棒性，而不只看单一阶跃曲线。</div>
+      <div class="aen" lang="en">Typical metrics are rise time for how quickly the system responds, overshoot for the percentage by which it passes the target, settling time for how long until it stays within an error band, and steady-state error for the final offset from the target. These conflict with one another: pushing for speed invites overshoot, while suppressing overshoot usually slows the response. Engineers also examine recovery from disturbances and robustness to parameter changes, not just one step curve.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#阶跃响应</a> <a class="tag" href="#">#超调</a> <a class="tag" href="#">#调节时间</a>
+    </article>
+
+
+    <article class="qitem" id="2afd097e6c52">
+      <h2 class="qz" lang="zh">PID的微分项为什么容易被噪声放大？</h2>
+      <p class="qen" lang="en">Why does the derivative term in PID amplify noise?</p>
+      <div class="azh" lang="zh">微分对信号变化率敏感，而噪声通常是高频小幅波动，其变化率却很大，因此微分放大了噪声而不是有用信号。表现为控制量剧烈抖动、执行器频繁动作发热。工程上给微分通道加低通滤波、采用不完全微分，或改用微分先行、只对测量值微分不对设定值微分的形式来缓解。</div>
+      <div class="aen" lang="en">Differentiation responds to rate of change, and noise is typically small in amplitude but high in frequency, so its rate of change is large and the derivative amplifies noise rather than the useful signal. The result is violently chattering control output and actuators that work hard and overheat. Practical fixes include low-pass filtering the derivative path, using a filtered or incomplete derivative, or taking the derivative of the measurement only rather than of the setpoint.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#微分作用</a> <a class="tag" href="#">#噪声</a> <a class="tag" href="#">#滤波</a>
+    </article>
+
+
+    <article class="qitem" id="97921aa525a6">
+      <h2 class="qz" lang="zh">什么是前馈控制，它和反馈控制怎么配合？</h2>
+      <p class="qen" lang="en">What is feedforward control and how does it work with feedback?</p>
+      <div class="azh" lang="zh">反馈控制必须先看到偏差才动作，本质上总是滞后一步。前馈控制直接测量已知的扰动源，例如进料流量或环境温度，按模型提前调整执行机构，让扰动还没影响输出就被抵消。前馈依赖模型准确度，无法处理未建模的误差，因此工程上常用前馈加反馈：前馈负责快速抑制主要扰动，反馈负责消除残余偏差。</div>
+      <div class="aen" lang="en">Feedback control must see an error before it acts, so it is inherently one step behind. Feedforward control measures a known disturbance directly, such as feed flow or ambient temperature, and adjusts the actuator in advance from a model so the disturbance is cancelled before it affects the output. Feedforward depends on model accuracy and cannot handle unmodelled errors, so practice combines the two: feedforward quickly suppresses the main disturbance while feedback removes the residual error.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#前馈控制</a> <a class="tag" href="#">#扰动抑制</a> <a class="tag" href="#">#复合控制</a>
+    </article>
+
+
+    <article class="qitem" id="822bbef5a5a2">
+      <h2 class="qz" lang="zh">开环控制和闭环控制有什么本质区别？</h2>
+      <p class="qen" lang="en">What is the essential difference between open-loop and closed-loop control?</p>
+      <div class="azh" lang="zh">开环控制按预定指令动作，不检查结果，比如定时洗衣或按时长烧水，简单便宜但无法应对干扰和参数漂移。闭环控制测量实际输出并与目标比较，用偏差调整控制量，能自动补偿负载变化和外部扰动。代价是需要传感器，还要考虑稳定性问题，反馈过强反而会振荡。</div>
+      <div class="aen" lang="en">Open-loop control follows a preset command without checking the result, as in washing for a fixed time or heating water for a set duration; it is simple and cheap but cannot cope with disturbances or drifting parameters. Closed-loop control measures the actual output, compares it with the target and adjusts the input based on the error, automatically compensating load changes and external disturbances. The price is the need for sensors and attention to stability, since excessive feedback gain causes oscillation.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开环</a> <a class="tag" href="#">#闭环</a> <a class="tag" href="#">#反馈</a>
+    </article>
+
+
+    <article class="qitem" id="ed4682f98200">
+      <h2 class="qz" lang="zh">为什么控制系统几乎都用负反馈？</h2>
+      <p class="qen" lang="en">Why do control systems almost always use negative feedback?</p>
+      <div class="azh" lang="zh">负反馈把输出的一部分反相送回输入，使系统偏离目标时产生纠正作用，误差自动被压缩。它还能降低系统对元件参数变化、温度和负载的敏感度，扩展带宽、提高线性度。正反馈则会放大偏差，只在需要振荡或快速翻转的比较器和振荡器中有意使用。</div>
+      <div class="aen" lang="en">Negative feedback returns part of the output inverted to the input, so any departure from the target generates a corrective action and the error is automatically squeezed down. It also makes the system less sensitive to component variation, temperature and load, while widening bandwidth and improving linearity. Positive feedback amplifies deviation instead, and is only used deliberately where oscillation or fast snap action is wanted, as in comparators and oscillators.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#负反馈</a> <a class="tag" href="#">#误差</a> <a class="tag" href="#">#鲁棒性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

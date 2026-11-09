@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数论与密码学 number-theory-cryptography · 数学 Mathematics | 问答</title>
+<meta name="description" content="数论与密码学（数学）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="数论与密码学 number-theory-cryptography · 数学 Mathematics | 问答">
+<meta property="og:description" content="数论与密码学（数学）分类下的 8 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 8 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/number-theory-cryptography/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/number-theory-cryptography/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>数论与密码学</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>数论与密码学 <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>8</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#139ce2ae513b">素数定理对不超过 $x$ 的素数个数给出了怎样的渐近估计？</a></li><li><a href="#803837f253ea">RSA 加密的安全性建立在哪个数论难题之上？</a></li><li><a href="#6168f073c2b7">为何模幂运算常被视为密码学中的单向函数？</a></li><li><a href="#99fa9245d02c">费马小定理对素数模下的幂运算给出了什么结论？</a></li><li><a href="#a1cd928ac029">欧拉定理如何把费马小定理推广到合数模数？</a></li><li><a href="#a844032ee6f1">如何用扩展欧几里得算法求模 $m$ 下 $a$ 的乘法逆元？</a></li><li><a href="#a9a4183a35ab">欧几里得是如何证明素数有无穷多个的？</a></li><li><a href="#c66317732a7b">中国剩余定理解决了怎样的同余方程组问题？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="139ce2ae513b">
+      <h2 class="qz" lang="zh">素数定理对不超过 $x$ 的素数个数给出了怎样的渐近估计？</h2>
+      <p class="qen" lang="en">What asymptotic estimate does the prime number theorem give for the count of primes not exceeding $x$?</p>
+      <div class="azh" lang="zh">记 $\pi(x)$ 为不超过 $x$ 的素数个数，素数定理断言 $\pi(x)\sim x/\ln x$，即 $\lim_{x\to\infty}\pi(x)\ln x/x=1$。等价于第 $n$ 个素数渐近为 $n\ln n$。该结果由 Hadamard 与 de la Vallee Poussin 于 1896 年独立证明。</div>
+      <div class="aen" lang="en">Let $\pi(x)$ be the number of primes not exceeding $x$; the prime number theorem states $\pi(x)\sim x/\ln x$, i.e. $\lim_{x\to\infty}\pi(x)\ln x/x=1$. Equivalently the $n$-th prime is asymptotic to $n\ln n$. It was proved independently by Hadamard and de la Vallee Poussin in 1896.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Apostol《Introduction to Analytic Number Theory》（Springer，UTM 丛书）素数定理章</p>
+        <p lang="en">Apostol, Introduction to Analytic Number Theory, Springer (UTM), chapter on the prime number theorem</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Analytic+Number+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780387901633 (1998)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#素数定理</a> <a class="tag" href="#">#素数计数函数</a> <a class="tag" href="#">#渐近</a>
+    </article>
+
+
+    <article class="qitem" id="803837f253ea">
+      <h2 class="qz" lang="zh">RSA 加密的安全性建立在哪个数论难题之上？</h2>
+      <p class="qen" lang="en">On which number-theoretic hardness problem does RSA encryption base its security?</p>
+      <div class="azh" lang="zh">RSA 依赖大整数分解的困难性：公钥含模数 $N=pq$（$p,q$ 为大素数）与公钥指数 $e$，私钥含 $d$ 使 $ed\equiv 1\pmod{\varphi(N)}$。由 $N$ 恢复 $\varphi(N)$ 等价于分解 $N$，而目前尚无多项式时间算法，故体系安全。</div>
+      <div class="aen" lang="en">RSA relies on the hardness of factoring large integers: the public key has modulus $N=pq$ (with large primes $p,q$) and exponent $e$, while the private key has $d$ with $ed\equiv 1\pmod{\varphi(N)}$. Recovering $\varphi(N)$ from $N$ is equivalent to factoring $N$, for which no polynomial-time algorithm is known.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#RSA</a> <a class="tag" href="#">#大整数分解</a> <a class="tag" href="#">#模幂</a>
+    </article>
+
+
+    <article class="qitem" id="6168f073c2b7">
+      <h2 class="qz" lang="zh">为何模幂运算常被视为密码学中的单向函数？</h2>
+      <p class="qen" lang="en">Why is modular exponentiation often regarded as a one-way function in cryptography?</p>
+      <div class="azh" lang="zh">计算 $b=a^x\bmod N$ 可借快速幂在多项式时间内完成，但由 $b$ 反求指数 $x$（离散对数问题）在适当选择的群中被认为是困难的。这种易正向、难逆向的非对称性正是 Diffie-Hellman 与 DSA 等协议的根基。</div>
+      <div class="aen" lang="en">Computing $b=a^x\bmod N$ is feasible in polynomial time via fast exponentiation, but recovering the exponent $x$ from $b$ (the discrete logarithm problem) is believed hard in suitably chosen groups. This easy-forward, hard-inverse asymmetry underlies Diffie-Hellman and DSA.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Menezes、van Oorschot、Vanstone《Handbook of Applied Cryptography》（CRC Press）</p>
+        <p lang="en">Menezes, van Oorschot, Vanstone, Handbook of Applied Cryptography, CRC Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Handbook%20of%20Applied%20Cryptography" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-4398-2191-6 (CRC Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单向函数</a> <a class="tag" href="#">#离散对数</a> <a class="tag" href="#">#模幂</a>
+    </article>
+
+
+    <article class="qitem" id="99fa9245d02c">
+      <h2 class="qz" lang="zh">费马小定理对素数模下的幂运算给出了什么结论？</h2>
+      <p class="qen" lang="en">What does Fermat&#x27;s little theorem say about exponentiation modulo a prime?</p>
+      <div class="azh" lang="zh">若 $p$ 为素数且整数 $a$ 不被 $p$ 整除，则 $a^{p-1}\equiv 1\pmod p$。等价地，对任意 $a$ 有 $a^p\equiv a\pmod p$。它是 RSA 等公钥算法的数论基础之一。</div>
+      <div class="aen" lang="en">If $p$ is prime and $p\nmid a$, then $a^{p-1}\equiv 1\pmod p$. Equivalently, $a^p\equiv a\pmod p$ for all integers $a$. It is one of the number-theoretic foundations of public-key schemes such as RSA.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《初等数论》</p>
+        <p lang="en">American Mathematical Society (AMS), Elementary Number Theory</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/21267842/" target="_blank" rel="noopener">核验依据 1 ISBN 9787301216125（豆瓣书目条目: 初等数论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#费马小定理</a> <a class="tag" href="#">#模运算</a> <a class="tag" href="#">#同余</a>
+    </article>
+
+
+    <article class="qitem" id="a1cd928ac029">
+      <h2 class="qz" lang="zh">欧拉定理如何把费马小定理推广到合数模数？</h2>
+      <p class="qen" lang="en">How does Euler&#x27;s theorem generalize Fermat&#x27;s little theorem to composite moduli?</p>
+      <div class="azh" lang="zh">对任意与 $n$ 互素的 $a$，欧拉定理给出 $a^{\varphi(n)}\equiv 1\pmod n$，其中 $\varphi(n)$ 为欧拉函数（不超过 $n$ 且与 $n$ 互素的正整数个数）。当 $n$ 为素数时 $\varphi(n)=n-1$，即退化为费马小定理。</div>
+      <div class="aen" lang="en">For any $a$ coprime to $n$, Euler&#x27;s theorem gives $a^{\varphi(n)}\equiv 1\pmod n$, where $\varphi(n)$ counts integers up to $n$ coprime to $n$. When $n$ is prime, $\varphi(n)=n-1$, recovering Fermat&#x27;s little theorem.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《初等数论》</p>
+        <p lang="en">American Mathematical Society (AMS), Elementary Number Theory</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/21267842/" target="_blank" rel="noopener">核验依据 1 ISBN 9787301216125（豆瓣书目条目: 初等数论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#欧拉定理</a> <a class="tag" href="#">#欧拉函数</a> <a class="tag" href="#">#互素</a>
+    </article>
+
+
+    <article class="qitem" id="a844032ee6f1">
+      <h2 class="qz" lang="zh">如何用扩展欧几里得算法求模 $m$ 下 $a$ 的乘法逆元？</h2>
+      <p class="qen" lang="en">How does the extended Euclidean algorithm find the modular multiplicative inverse of $a$ modulo $m$?</p>
+      <div class="azh" lang="zh">当 $\gcd(a,m)=1$ 时，扩展欧几里得算法给出整数 $x,y$ 使 $ax+my=\gcd(a,m)=1$，于是 $ax\equiv 1\pmod m$，故 $x\bmod m$ 即为 $a$ 在模 $m$ 下的逆元。若 $\gcd(a,m)\neq1$ 则逆元不存在。</div>
+      <div class="aen" lang="en">When $\gcd(a,m)=1$, the extended Euclidean algorithm produces integers $x,y$ with $ax+my=\gcd(a,m)=1$, so $ax\equiv 1\pmod m$ and $x\bmod m$ is the inverse of $a$ modulo $m$. If $\gcd(a,m)\neq1$ no inverse exists.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《初等数论》</p>
+        <p lang="en">American Mathematical Society (AMS), Elementary Number Theory</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/21267842/" target="_blank" rel="noopener">核验依据 1 ISBN 9787301216125（豆瓣书目条目: 初等数论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#模逆元</a> <a class="tag" href="#">#扩展欧几里得</a> <a class="tag" href="#">#最大公约数</a>
+    </article>
+
+
+    <article class="qitem" id="a9a4183a35ab">
+      <h2 class="qz" lang="zh">欧几里得是如何证明素数有无穷多个的？</h2>
+      <p class="qen" lang="en">How did Euclid prove that there are infinitely many prime numbers?</p>
+      <div class="azh" lang="zh">假设素数只有有限个 $p_1,\dots,p_n$，考虑 $N=p_1p_2\cdots p_n+1$。$N$ 不被任一 $p_i$ 整除，故 $N$ 有新的素因子或自身为素数，与假设矛盾，因此素数无穷多。</div>
+      <div class="aen" lang="en">Suppose primes are finitely many $p_1,\dots,p_n$, and form $N=p_1p_2\cdots p_n+1$. None of the $p_i$ divides $N$, so $N$ has a new prime factor or is itself prime, contradicting finiteness; hence there are infinitely many primes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《初等数论》</p>
+        <p lang="en">American Mathematical Society (AMS), Elementary Number Theory</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/21267842/" target="_blank" rel="noopener">核验依据 1 ISBN 9787301216125（豆瓣书目条目: 初等数论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#素数</a> <a class="tag" href="#">#欧几里得</a> <a class="tag" href="#">#反证法</a>
+    </article>
+
+
+    <article class="qitem" id="c66317732a7b">
+      <h2 class="qz" lang="zh">中国剩余定理解决了怎样的同余方程组问题？</h2>
+      <p class="qen" lang="en">What kind of simultaneous congruences does the Chinese remainder theorem solve?</p>
+      <div class="azh" lang="zh">若模数 $m_1,\dots,m_k$ 两两互素，则对任意余数 $a_i$，方程组 $x\equiv a_i\pmod{m_i}$ 在模 $M=m_1\cdots m_k$ 下有唯一解。它把大模数运算拆解为若干小模数，广泛用于 CRT 加速与秘密分享。</div>
+      <div class="aen" lang="en">If the moduli $m_1,\dots,m_k$ are pairwise coprime, the system $x\equiv a_i\pmod{m_i}$ has a unique solution modulo $M=m_1\cdots m_k$ for any remainders $a_i$. It splits computations into smaller moduli, used in CRT speedups and secret sharing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《初等数论》</p>
+        <p lang="en">American Mathematical Society (AMS), Elementary Number Theory</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/21267842/" target="_blank" rel="noopener">核验依据 1 ISBN 9787301216125（豆瓣书目条目: 初等数论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#中国剩余定理</a> <a class="tag" href="#">#同余</a> <a class="tag" href="#">#互素</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

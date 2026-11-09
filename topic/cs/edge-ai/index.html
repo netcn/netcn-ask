@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>edge_ai edge-ai · 计算机 Computer Science | 问答</title>
+<meta name="description" content="edge_ai（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="edge_ai edge-ai · 计算机 Computer Science | 问答">
+<meta property="og:description" content="edge_ai（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/edge-ai/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/edge-ai/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>edge_ai</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>edge_ai <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#3dcf83776208">模型剪枝（pruning）是如何压缩神经网络的？</a></li><li><a href="#95496d560a27">边缘 AI 为什么强调在设备本地做推理？</a></li><li><a href="#d256f88959e9">为什么现在的手机也能跑人工智能？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="3dcf83776208">
+      <h2 class="qz" lang="zh">模型剪枝（pruning）是如何压缩神经网络的？</h2>
+      <p class="qen" lang="en">How does model pruning compress a neural network?</p>
+      <div class="azh" lang="zh">剪枝会识别并移除权重中接近零或贡献很小的连接（或整个通道），把稠密网络变稀疏，从而减少参数量和计算量；之后常配合稀疏算子或再训练来恢复精度。</div>
+      <div class="aen" lang="en">Pruning removes connections (or whole channels) with near-zero or low contribution, turning a dense network sparse to cut parameters and compute; it is often followed by sparse kernels or retraining to recover accuracy.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#剪枝</a> <a class="tag" href="#">#压缩</a>
+    </article>
+
+
+    <article class="qitem" id="95496d560a27">
+      <h2 class="qz" lang="zh">边缘 AI 为什么强调在设备本地做推理？</h2>
+      <p class="qen" lang="en">Why does edge AI emphasize running inference on the device itself?</p>
+      <div class="azh" lang="zh">在手机、摄像头等终端本地推理可避免把数据传上云，从而降低延迟、节省带宽、保护隐私，并在断网时仍可用；代价是终端算力与电量有限，需要更小的模型。</div>
+      <div class="aen" lang="en">Running inference on phones or cameras avoids sending data to the cloud, cutting latency, saving bandwidth, protecting privacy, and working offline—at the cost of limited compute and battery, needing smaller models.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#边缘</a> <a class="tag" href="#">#本地</a>
+    </article>
+
+
+    <article class="qitem" id="d256f88959e9">
+      <h2 class="qz" lang="zh">为什么现在的手机也能跑人工智能？</h2>
+      <p class="qen" lang="en">Why can today&#x27;s phones run AI?</p>
+      <div class="azh" lang="zh">因为芯片里加入了专为矩阵运算设计的 NPU，并且模型被压缩得很小，再加上很多计算在手机本地完成，所以语音助手、拍照美颜等 AI 功能能在不打云的情况下运行。</div>
+      <div class="aen" lang="en">Phones now have NPUs built for matrix math, models are shrunk small, and much computing happens on the device, so features like voice assistants and camera AI run without the cloud.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#手机</a> <a class="tag" href="#">#端侧</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

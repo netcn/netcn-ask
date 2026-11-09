@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>measure-theory · 数学 Mathematics | 问答</title>
+<meta name="description" content="measure-theory（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="measure-theory · 数学 Mathematics | 问答">
+<meta property="og:description" content="measure-theory（数学）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/measure-theory/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/measure-theory/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>measure-theory</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>measure-theory <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_23_009">测度论中的“零测集”与“几乎处处成立”是什么意思？勒贝格积分理论凭什么可以忽略这</a></li><li><a href="#math_23_001">为什么狄利克雷函数（有理数的指示函数）在 [0,1] 上处处不连续、黎曼不可积，</a></li><li><a href="#math_23_017">勒贝格判据如何只凭不连续点集的大小，就完全判定闭区间上有界函数的黎曼可积性？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_23_009">
+      <h2 class="qz" lang="zh">测度论中的“零测集”与“几乎处处成立”是什么意思？勒贝格积分理论凭什么可以忽略这类集合？</h2>
+      <p class="qen" lang="en">What do &quot;null set&quot; and &quot;holds almost everywhere&quot; mean in measure theory, and why is Lebesgue integration theory entitled to ignore such sets?</p>
+      <div class="azh" lang="zh">能被总面积任意小的可数区间族覆盖的集合称为零测集：单点与可数集皆属此类，康托尔三分集虽不可数，测度仍为零。“几乎处处”指结论除某个零测集外处处成立，如单调函数几乎处处可微。勒贝格积分对零测集上的取值不敏感：改动这些点上的值不影响积分，仅在零测集上有差异的函数视为相同。这排除了病态例外，使逐点收敛下的积分极限定理得以建立。</div>
+      <div class="aen" lang="en">A set is null if it can be covered by countably many intervals of arbitrarily small total length. Single points and all countable sets are null, and even the uncountable Cantor ternary set has measure zero. A statement holds almost everywhere when it fails only on some null set — monotone functions, for example, are differentiable almost everywhere. The Lebesgue integral is insensitive to values on null sets: changing a function there alters no integral, and functions differing only on a null set count as identical. This convention discards pathological exceptions and makes the integral limit theorems under pointwise convergence possible.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">H. L. Royden 与 P. M. Fitzpatrick《实分析》第4版 (Real Analysis)，Pearson，2010。</p>
+        <p lang="en">H. L. Royden &amp; P. M. Fitzpatrick, Real Analysis, 4th edition, Pearson, 2010.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5278477W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5278477W：Real Analysis（首版 1963）按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#测度论</a> <a class="tag" href="#">#零测集</a> <a class="tag" href="#">#几乎处处</a> <a class="tag" href="#">#勒贝格积分</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_001">
+      <h2 class="qz" lang="zh">为什么狄利克雷函数（有理数的指示函数）在 [0,1] 上处处不连续、黎曼不可积，但它的勒贝格积分存在且等于 0？</h2>
+      <p class="qen" lang="en">Why is the Dirichlet function (the indicator of the rationals) discontinuous everywhere on [0,1] and not Riemann integrable, yet Lebesgue integrable with value 0?</p>
+      <div class="azh" lang="zh">黎曼积分要求函数在每个小区间上的振幅足够小，但 [0,1] 的任何非空子区间都同时含有有理数与无理数，故上、下积分不相等。勒贝格积分改为按函数值分层：该函数在有理数集上取 1，其余处取 0，而有理数集可数、测度为零，因此积分为 1×0+0×1=0。这体现了勒贝格理论处理极端不连续函数的能力。</div>
+      <div class="aen" lang="en">Riemann integration requires the oscillation to be small on every subinterval, yet every nonempty subinterval of [0,1] contains both rational and irrational points, so upper and lower sums never agree and the Riemann integral does not exist. Lebesgue integration instead stratifies by values: the function equals 1 on the rationals and 0 elsewhere, and since the rationals are countable they have Lebesgue measure zero, giving 1×0 + 0×1 = 0. This displays the theory&#x27;s power over extremely discontinuous functions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">P. R. Halmos《测度论》(Measure Theory)，D. Van Nostrand Company，1950。</p>
+        <p lang="en">P. R. Halmos, Measure Theory, D. Van Nostrand Company, 1950.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2776847W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2776847W：Measure theory（首版 1950）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#测度论</a> <a class="tag" href="#">#勒贝格积分</a> <a class="tag" href="#">#黎曼积分</a> <a class="tag" href="#">#零测集</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_017">
+      <h2 class="qz" lang="zh">勒贝格判据如何只凭不连续点集的大小，就完全判定闭区间上有界函数的黎曼可积性？</h2>
+      <p class="qen" lang="en">How does Lebesgue&#x27;s criterion fully decide whether a bounded function on a closed interval is Riemann integrable, using only the size of its discontinuity set?</p>
+      <div class="azh" lang="zh">该判据断言：闭区间上的有界函数黎曼可积，当且仅当它的不连续点集是勒贝格零测集。证明思路是用总长度任意小的区间族盖住振幅超过给定阈值的点，从而控制达布上、下和之差。它把可积性问题转化为测度问题：单调函数至多有可数个跳跃间断点，零测因而必可积；而不连续点占满区间的函数必不可积，统一解释了各种病态例子。</div>
+      <div class="aen" lang="en">Lebesgue&#x27;s criterion states that a bounded function on [a,b] is Riemann integrable if and only if its discontinuities form a set of Lebesgue measure zero. The proof covers points where oscillation exceeds any threshold by intervals of arbitrarily small total length, controlling the gap between Darboux upper and lower sums. Integrability thus becomes a measure question: monotone functions have at most countably many jumps and always integrate, while everywhere-discontinuous functions cannot.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">H.L. Royden、P.M. Fitzpatrick《实分析》第4版，Pearson，2010 年</p>
+        <p lang="en">H.L. Royden &amp; P.M. Fitzpatrick, Real Analysis, 4th edition, Pearson, 2010</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5278477W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5278477W：Real Analysis（首版 1963）按</a></p>
+        
+      </details>
+      <a class="tag" href="#">#勒贝格判据</a> <a class="tag" href="#">#黎曼可积性</a> <a class="tag" href="#">#零测集</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

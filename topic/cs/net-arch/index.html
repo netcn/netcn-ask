@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>net_arch net-arch · 计算机 Computer Science | 问答</title>
+<meta name="description" content="net_arch（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="net_arch net-arch · 计算机 Computer Science | 问答">
+<meta property="og:description" content="net_arch（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/net-arch/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/net-arch/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>net_arch</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>net_arch <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>13</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#08cc4cbaaedb">什么是 QUIC 协议？为什么 HTTP/3 用它？</a></li><li><a href="#2b40bd4bb68b">什么是 Anycast？它和 CDN 有什么关系？</a></li><li><a href="#547a5bba5e43">什么是 MTU 和 IP 分包（Fragmentation）？</a></li><li><a href="#9ddc1eb5f77a">除了 TCP 握手，TLS 握手又是在做什么？</a></li><li><a href="#0ab7fe7cbde9">HTTP/2 的多路复用（Multiplexing）解决了什么问题？</a></li><li><a href="#14ac5a932fad">为什么 TCP 断开连接需要四次挥手？</a></li><li><a href="#44d81640d4a2">什么是 HTTP 缓存（Cache-Control、ETag）？</a></li><li><a href="#49b0a28a2bb5">什么是负载均衡（Load Balancer）？</a></li><li><a href="#5c2ce893e000">什么是反向代理（Reverse Proxy）？</a></li><li><a href="#7d2e066f85c5">什么是 WebSocket？它和普通 HTTP 请求有什么不同？</a></li><li><a href="#3ed435a2e406">什么是 OSI 七层模型和 TCP/IP 四层模型？</a></li><li><a href="#75359a676991">什么是 CDN？为什么看视频和刷网页更快？</a></li><li><a href="#ce6a80764dfd">TCP 三次握手是怎么回事？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="08cc4cbaaedb">
+      <h2 class="qz" lang="zh">什么是 QUIC 协议？为什么 HTTP/3 用它？</h2>
+      <p class="qen" lang="en">What is the QUIC protocol, and why does HTTP/3 use it?</p>
+      <div class="azh" lang="zh">QUIC 基于 UDP 重建可靠传输，并把 TLS 握手与连接建立合并，减少往返次数；还能在切换网络时不断线，是 HTTP/3 的底层。</div>
+      <div class="aen" lang="en">QUIC runs reliable transport over UDP and merges the TLS handshake with connection setup to cut round trips; it also survives network changes, the base of HTTP/3.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">互联网工程任务组（IETF）,《QUIC: A UDP-Based Multiplexed and Secure Transport》,RFC 9000,2021 (DOI: 10.17487/rfc9000)</p>
+        <p lang="en">IETF, &#x27;QUIC: A UDP-Based Multiplexed and Secure Transport&#x27;, RFC 9000, 2021, DOI: 10.17487/rfc9000</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc9000" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc9000; RFC 9000</a></p>
+        
+      </details>
+      <a class="tag" href="#">#QUIC</a> <a class="tag" href="#">#HTTP3</a>
+    </article>
+
+
+    <article class="qitem" id="2b40bd4bb68b">
+      <h2 class="qz" lang="zh">什么是 Anycast？它和 CDN 有什么关系？</h2>
+      <p class="qen" lang="en">What is Anycast, and how is it related to CDNs?</p>
+      <div class="azh" lang="zh">Anycast 让同一个 IP 地址公布在多个地点的服务器上，网络会把你引到最近的那台，常用于 DNS 根服务器和 CDN 边缘节点。</div>
+      <div class="aen" lang="en">Anycast advertises the same IP from servers in many places, and routing sends you to the nearest one, used by DNS roots and CDN edges.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Anycast</a> <a class="tag" href="#">#路由</a>
+    </article>
+
+
+    <article class="qitem" id="547a5bba5e43">
+      <h2 class="qz" lang="zh">什么是 MTU 和 IP 分包（Fragmentation）？</h2>
+      <p class="qen" lang="en">What are MTU and IP fragmentation?</p>
+      <div class="azh" lang="zh">MTU 是网络层一次能传的最大包大小。若数据超出路径上某段 MTU，路由器可把包拆小，到目的地再重组。</div>
+      <div class="aen" lang="en">MTU is the largest packet a link layer can carry. If data exceeds a hop&#x27;s MTU, routers can split packets and reassemble them at the destination.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MTU</a> <a class="tag" href="#">#分包</a>
+    </article>
+
+
+    <article class="qitem" id="9ddc1eb5f77a">
+      <h2 class="qz" lang="zh">除了 TCP 握手，TLS 握手又是在做什么？</h2>
+      <p class="qen" lang="en">Beyond the TCP handshake, what does the TLS handshake do?</p>
+      <div class="azh" lang="zh">TLS 握手在 TCP 之上协商加密套件、验证服务器证书、用密钥交换生成共享密钥，之后通信内容才被加密，保证私密与防篡改。</div>
+      <div class="aen" lang="en">On top of TCP, the TLS handshake negotiates ciphers, verifies the server certificate, and uses key exchange to make a shared secret; only then is traffic encrypted.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TLS</a> <a class="tag" href="#">#HTTPS</a>
+    </article>
+
+
+    <article class="qitem" id="0ab7fe7cbde9">
+      <h2 class="qz" lang="zh">HTTP/2 的多路复用（Multiplexing）解决了什么问题？</h2>
+      <p class="qen" lang="en">What problem does HTTP/2 multiplexing solve?</p>
+      <div class="azh" lang="zh">HTTP/1.1 同域名要排队建多个连接，队头阻塞会拖慢页面。HTTP/2 在一条连接上并行传多个请求，减少等待、提升加载速度。</div>
+      <div class="aen" lang="en">HTTP/1.1 queued requests across several connections, and head-of-line blocking slowed pages. HTTP/2 sends many requests in parallel over one connection, cutting waits.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#HTTP2</a> <a class="tag" href="#">#多路复用</a>
+    </article>
+
+
+    <article class="qitem" id="14ac5a932fad">
+      <h2 class="qz" lang="zh">为什么 TCP 断开连接需要四次挥手？</h2>
+      <p class="qen" lang="en">Why does closing a TCP connection need four waves?</p>
+      <div class="azh" lang="zh">TCP 是全双工，关闭时双方要各自说一声我发完了。服务器收到 FIN 后先回 ACK，等自己数据发完再发 FIN，因此多一次往返。</div>
+      <div class="aen" lang="en">TCP is full-duplex, so each side must say it is done. The server ACKs your FIN, then sends its own FIN after finishing, adding an extra round trip.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#断开</a>
+    </article>
+
+
+    <article class="qitem" id="44d81640d4a2">
+      <h2 class="qz" lang="zh">什么是 HTTP 缓存（Cache-Control、ETag）？</h2>
+      <p class="qen" lang="en">What is HTTP caching (Cache-Control, ETag)?</p>
+      <div class="azh" lang="zh">服务器用 Cache-Control 告诉浏览器能缓存多久，用 ETag 给资源一个版本标识。再请求时浏览器可凭 ETag 问没变吧，没变就免传整份。</div>
+      <div class="aen" lang="en">Servers use Cache-Control to say how long to cache, and ETag to tag a version. On later requests the browser can ask if unchanged, and skip re-downloading if so.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#HTTP</a> <a class="tag" href="#">#缓存</a>
+    </article>
+
+
+    <article class="qitem" id="49b0a28a2bb5">
+      <h2 class="qz" lang="zh">什么是负载均衡（Load Balancer）？</h2>
+      <p class="qen" lang="en">What is a load balancer?</p>
+      <div class="azh" lang="zh">负载均衡器把大量请求分摊到多台服务器上，避免单机过载，同时某台宕机时还能把流量转到健康机器，提升可用性。</div>
+      <div class="aen" lang="en">A load balancer spreads many requests across servers to avoid overloading one, and reroutes traffic when a machine fails, improving availability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#负载均衡</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="5c2ce893e000">
+      <h2 class="qz" lang="zh">什么是反向代理（Reverse Proxy）？</h2>
+      <p class="qen" lang="en">What is a reverse proxy?</p>
+      <div class="azh" lang="zh">反向代理站在服务器前面，替后端接收请求并转发，可做负载均衡、缓存、HTTPS 卸载和隐藏真实服务器，是网站常见入口。</div>
+      <div class="aen" lang="en">A reverse proxy sits in front of servers, receiving and forwarding requests; it can load-balance, cache, terminate HTTPS, and hide backends, a common web entry point.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#反向代理</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="7d2e066f85c5">
+      <h2 class="qz" lang="zh">什么是 WebSocket？它和普通 HTTP 请求有什么不同？</h2>
+      <p class="qen" lang="en">What is WebSocket, and how does it differ from normal HTTP?</p>
+      <div class="azh" lang="zh">HTTP 是一问一答、连完就断；WebSocket 先握手再升级成一条长连接，之后服务器可主动随时推消息，适合聊天和实时行情。</div>
+      <div class="aen" lang="en">HTTP is request-response and closes; WebSocket upgrades to one long-lived connection after a handshake, so the server can push messages anytime, great for chat and live feeds.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#WebSocket</a> <a class="tag" href="#">#实时</a>
+    </article>
+
+
+    <article class="qitem" id="3ed435a2e406">
+      <h2 class="qz" lang="zh">什么是 OSI 七层模型和 TCP/IP 四层模型？</h2>
+      <p class="qen" lang="en">What are the OSI seven-layer and TCP/IP four-layer models?</p>
+      <div class="azh" lang="zh">它们把网络通信拆成层次，每层只管自己的事：从物理信号、网络寻址到应用数据。OSI 是理论七层，TCP/IP 是实际常用的四层。</div>
+      <div class="aen" lang="en">They split networking into layers, each handling its own job, from electrical signals and addressing to application data. OSI is the 7-layer theory; TCP/IP is the practical 4-layer stack.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#协议栈</a> <a class="tag" href="#">#模型</a>
+    </article>
+
+
+    <article class="qitem" id="75359a676991">
+      <h2 class="qz" lang="zh">什么是 CDN？为什么看视频和刷网页更快？</h2>
+      <p class="qen" lang="en">What is a CDN, and why does it make videos and pages load faster?</p>
+      <div class="azh" lang="zh">CDN 把内容缓存到离用户近的节点。你访问时从最近的节点取数据，路程短、延迟低，所以加载更快、源站压力也小。</div>
+      <div class="aen" lang="en">A CDN caches content on servers near users. You fetch from the closest node, so the trip is short and latency low, speeding loads and easing the origin server.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#CDN</a> <a class="tag" href="#">#加速</a>
+    </article>
+
+
+    <article class="qitem" id="ce6a80764dfd">
+      <h2 class="qz" lang="zh">TCP 三次握手是怎么回事？</h2>
+      <p class="qen" lang="en">How does the TCP three-way handshake work?</p>
+      <div class="azh" lang="zh">客户端发 SYN 请求连接，服务器回 SYN-ACK 表示收到并同意，客户端再发 ACK 确认。三次往返确保双方收发能力都正常。</div>
+      <div class="aen" lang="en">The client sends SYN, the server replies SYN-ACK, and the client sends ACK. These three steps confirm both sides can send and receive.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#握手</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

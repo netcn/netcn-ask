@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>web3 · 计算机 Computer Science | 问答</title>
+<meta name="description" content="web3（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="web3 · 计算机 Computer Science | 问答">
+<meta property="og:description" content="web3（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/web3/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/web3/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>web3</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>web3 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#9c94183436da">默克尔树（Merkle tree）在区块链里具体用来做什么？</a></li><li><a href="#6aeb4bf83aa7">区块链的“不可篡改”特性主要来自哪里？</a></li><li><a href="#d3e1092fd855">什么是零知识证明（ZKP）？</a></li><li><a href="#d7b1e768638a">什么是智能合约？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="9c94183436da">
+      <h2 class="qz" lang="zh">默克尔树（Merkle tree）在区块链里具体用来做什么？</h2>
+      <p class="qen" lang="en">What exactly does a Merkle tree do in a blockchain?</p>
+      <div class="azh" lang="zh">它把大量交易两两哈希、层层向上聚成一个根哈希，作为整批交易的“指纹”。轻节点只需保存根哈希，就能用很短的“成员证明”验证某笔交易是否真的在该区块里，而不必下载全部交易。</div>
+      <div class="aen" lang="en">It hashes transactions pairwise up to a single root hash acting as a fingerprint of the batch. A light node keeps only the root and can verify any transaction&#x27;s inclusion with a short proof, without downloading all transactions.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#默克尔树</a> <a class="tag" href="#">#验证</a>
+    </article>
+
+
+    <article class="qitem" id="6aeb4bf83aa7">
+      <h2 class="qz" lang="zh">区块链的“不可篡改”特性主要来自哪里？</h2>
+      <p class="qen" lang="en">Where does a blockchain&#x27;s &#x27;immutability&#x27; mainly come from?</p>
+      <div class="azh" lang="zh">每个区块都包含上一个区块的哈希，像锁链一样环环相扣；一旦改了某个历史区块，后面所有哈希都会失效，且要改写需控制全网多数算力或权益，因此成本高到不划算。</div>
+      <div class="aen" lang="en">Each block contains the hash of the previous one, chaining them together; altering a past block breaks every later hash, and rewriting history would require controlling the majority of the network&#x27;s power or stake—prohibitively costly.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》(2008)</p>
+        <p lang="en">S. Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#哈希</a>
+    </article>
+
+
+    <article class="qitem" id="d3e1092fd855">
+      <h2 class="qz" lang="zh">什么是零知识证明（ZKP）？</h2>
+      <p class="qen" lang="en">What is a zero-knowledge proof (ZKP)?</p>
+      <div class="azh" lang="zh">零知识证明让一方（证明者）向另一方证明“我知道某个秘密或某命题为真”，却不泄露秘密本身。比如你能证明自己知道密码而不说出密码，常用于隐私币和身份验证。</div>
+      <div class="aen" lang="en">A zero-knowledge proof lets a prover convince a verifier that a statement is true—or that they know a secret—without revealing the secret itself, used in privacy coins and identity checks.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goldwasser、Micali 与 Rackoff《交互式证明系统的知识复杂度》(SIAM Journal on Computing, 1985)；Katz 与 Lindell《现代密码学引论》</p>
+        <p lang="en">Goldwasser, Micali &amp; Rackoff, &#x27;The Knowledge Complexity of Interactive Proof Systems&#x27; (SIAM Journal on Computing, 1985); Katz &amp; Lindell, &#x27;Introduction to Modern Cryptography&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL508869W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL508869W：Introduction to modern c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#零知识</a> <a class="tag" href="#">#证明</a>
+    </article>
+
+
+    <article class="qitem" id="d7b1e768638a">
+      <h2 class="qz" lang="zh">什么是智能合约？</h2>
+      <p class="qen" lang="en">What is a smart contract?</p>
+      <div class="azh" lang="zh">智能合约是写在区块链上、满足条件就自动执行的程序，像一台没人能偷偷改动的自动售货机：规则公开、到点就按约定办事，无需中间人。</div>
+      <div class="aen" lang="en">A smart contract is a program on a blockchain that runs automatically when conditions are met—like a tamper-proof vending machine: the rules are public and it executes as agreed, with no middleman.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Buterin《Ethereum: A Next-Generation Smart Contract Platform》(2014)</p>
+        <p lang="en">V. Buterin, Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform, 2014</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#智能合约</a> <a class="tag" href="#">#区块链</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

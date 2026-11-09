@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>边缘AI与RISC-V edge-ai-risc-v · 计算机 Computer Science | 问答</title>
+<meta name="description" content="边缘AI与RISC-V（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="边缘AI与RISC-V edge-ai-risc-v · 计算机 Computer Science | 问答">
+<meta property="og:description" content="边缘AI与RISC-V（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/edge-ai-risc-v/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/edge-ai-risc-v/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>边缘AI与RISC-V</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>边缘AI与RISC-V <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#6a1827164c27">知识蒸馏中「软标签」（soft targets）为什么比硬标签携带更多训练信息？</a></li><li><a href="#c6c2cd80def6">训练后 INT8 量化如何把浮点权重映射到整数，并尽量抑制精度损失？</a></li><li><a href="#1ffc1b7ec2c5">端侧 AI 推理为什么常以「能效比」（TOPS/W）而非峰值算力衡量芯片？</a></li><li><a href="#6ebd4dd22022">RISC-V 向量扩展（RVV）如何支持可变长度的 SIMD 计算？</a></li><li><a href="#c568a6d011dc">结构化剪枝与非结构化剪枝在部署上有什么差别？</a></li><li><a href="#ce761ab48a2d">边缘 AI 相比把数据上传云端推理，有哪些主要优势与限制？</a></li><li><a href="#cf2f5a1a7942">RISC-V 的「开放指令集架构」对芯片设计意味着什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="6a1827164c27">
+      <h2 class="qz" lang="zh">知识蒸馏中「软标签」（soft targets）为什么比硬标签携带更多训练信息？</h2>
+      <p class="qen" lang="en">Why do soft targets carry more training information than hard labels in knowledge distillation?</p>
+      <div class="azh" lang="zh">教师模型输出的软化概率保留了类间相似性（如「2」与「7」的概率分布相近），这些信息作为正则帮助小模型学得更平滑的决策边界。温度参数用于放大暗知识，使蒸馏更有效。</div>
+      <div class="aen" lang="en">The teacher&#x27;s softened probabilities preserve class similarities (e.g. a distribution where 2 and 7 are close), acting as a regularizer that helps the small model learn smoother decision boundaries. A temperature parameter amplifies this dark knowledge to make distillation more effective.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Hinton, Vinyals, Dean, Distilling the Knowledge in a Neural Network, NIPS 2014 Deep Learning Workshop</p>
+        <p lang="en">Hinton, Vinyals, Dean, Distilling the Knowledge in a Neural Network, NIPS 2014 Workshop</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1002/essoar.10502348.1" target="_blank" rel="noopener">核验依据 1 DOI 10.1002/essoar.10502348.1</a></p>
+        
+      </details>
+      <a class="tag" href="#">#知识蒸馏</a> <a class="tag" href="#">#软标签</a> <a class="tag" href="#">#模型压缩</a>
+    </article>
+
+
+    <article class="qitem" id="c6c2cd80def6">
+      <h2 class="qz" lang="zh">训练后 INT8 量化如何把浮点权重映射到整数，并尽量抑制精度损失？</h2>
+      <p class="qen" lang="en">How does post-training INT8 quantization map floating-point weights to integers while suppressing accuracy loss?</p>
+      <div class="azh" lang="zh">量化用缩放因子与零点把 FP32 张量线性映射到 INT8 区间，推理时以整数运算近似浮点并反量化输出。通过校准集统计激活范围或采用逐通道、逐层量化，可在小幅精度下降下获得数倍加速与内存节省。</div>
+      <div class="aen" lang="en">Quantization uses a scale factor and zero point to map FP32 tensors linearly into the INT8 range, approximating floating-point with integer arithmetic and dequantizing at output. Calibrating activation ranges or using per-channel/per-layer quantization yields several times speedup and memory savings at small accuracy cost.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Jacob et al., Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference, CVPR 2018</p>
+        <p lang="en">Jacob et al., Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference, CVPR 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/cvpr.2018.00286" target="_blank" rel="noopener">核验依据 1 DOI 10.1109/cvpr.2018.00286</a></p>
+        
+      </details>
+      <a class="tag" href="#">#量化</a> <a class="tag" href="#">#INT8</a> <a class="tag" href="#">#模型压缩</a>
+    </article>
+
+
+    <article class="qitem" id="1ffc1b7ec2c5">
+      <h2 class="qz" lang="zh">端侧 AI 推理为什么常以「能效比」（TOPS/W）而非峰值算力衡量芯片？</h2>
+      <p class="qen" lang="en">Why is on-device AI inference often measured by energy efficiency (TOPS/W) rather than peak compute?</p>
+      <div class="azh" lang="zh">电池与散热限制了端侧设备的持续功耗，能否在有限瓦数下完成推理比瞬时峰值更重要。能效比反映每瓦可提供的算力，直接决定续航与可部署性。</div>
+      <div class="aen" lang="en">Battery and thermal limits cap sustained power on edge devices, so completing inference within a limited wattage matters more than instantaneous peak. Energy efficiency reflects compute per watt and directly determines battery life and deployability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#能效比</a> <a class="tag" href="#">#端侧</a> <a class="tag" href="#">#神经网络加速器</a>
+    </article>
+
+
+    <article class="qitem" id="6ebd4dd22022">
+      <h2 class="qz" lang="zh">RISC-V 向量扩展（RVV）如何支持可变长度的 SIMD 计算？</h2>
+      <p class="qen" lang="en">How does the RISC-V vector extension (RVV) support variable-length SIMD computation?</p>
+      <div class="azh" lang="zh">RVV 采用向量长度无关（vector-length agnostic）的设计：硬件实现固定的 VLEN，软件用 vsetvl 指令动态查询并设定实际运行向量长度 VL，使同一份代码能适配不同宽度的硬件。它用掩码与分段加载灵活处理不规则数据，适合端侧并行推理。</div>
+      <div class="aen" lang="en">RVV uses a vector-length-agnostic design: the hardware fixes VLEN while software uses the vsetvl instruction to query and set the actual runtime vector length VL dynamically, so the same code adapts to different hardware widths. Masks and segmented loads handle irregular data flexibly, suiting on-device parallel inference.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">RISC-V International, RISC-V V Vector Extension Specification</p>
+        <p lang="en">RISC-V International, RISC-V V Vector Extension Specification</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#RISC-V</a> <a class="tag" href="#">#向量扩展</a> <a class="tag" href="#">#SIMD</a>
+    </article>
+
+
+    <article class="qitem" id="c568a6d011dc">
+      <h2 class="qz" lang="zh">结构化剪枝与非结构化剪枝在部署上有什么差别？</h2>
+      <p class="qen" lang="en">What is the deployment difference between structured and unstructured pruning?</p>
+      <div class="azh" lang="zh">非结构化剪枝随机归零个别权重，压缩比高但需专用稀疏硬件才能提速；结构化剪枝移除整通道或滤波器，能直接在标准硬件上加速。取舍在于稀疏模式是否匹配现有计算库。</div>
+      <div class="aen" lang="en">Unstructured pruning zeros out individual weights, giving high compression but needing specialized sparse hardware to speed up; structured pruning removes whole channels or filters and accelerates directly on standard hardware. The trade-off is whether the sparsity pattern matches existing compute libraries.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Han et al., Deep Compression: Compressing DNNs with Pruning, Trained Quantization and Huffman Coding, ICLR 2016</p>
+        <p lang="en">Han et al., Deep Compression, ICLR 2016</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/arxiv-1510.00149" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 arxiv-1510.00149：Deep Compression: Compressin</a></p>
+        
+      </details>
+      <a class="tag" href="#">#剪枝</a> <a class="tag" href="#">#模型压缩</a> <a class="tag" href="#">#稀疏</a>
+    </article>
+
+
+    <article class="qitem" id="ce761ab48a2d">
+      <h2 class="qz" lang="zh">边缘 AI 相比把数据上传云端推理，有哪些主要优势与限制？</h2>
+      <p class="qen" lang="en">What are the main advantages and limitations of edge AI compared with sending data to the cloud for inference?</p>
+      <div class="azh" lang="zh">边缘 AI 在设备端完成推理，能降低延迟、减少带宽占用并保护隐私。限制是端侧算力、内存和功耗有限，往往需要对模型做压缩与硬件加速。</div>
+      <div class="aen" lang="en">Edge AI performs inference on the device, lowering latency, reducing bandwidth use, and protecting privacy. The limits are constrained on-device compute, memory, and power, which usually require model compression and hardware acceleration.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#边缘AI</a> <a class="tag" href="#">#端侧推理</a> <a class="tag" href="#">#低延迟</a>
+    </article>
+
+
+    <article class="qitem" id="cf2f5a1a7942">
+      <h2 class="qz" lang="zh">RISC-V 的「开放指令集架构」对芯片设计意味着什么？</h2>
+      <p class="qen" lang="en">What does an open instruction set architecture like RISC-V mean for chip design?</p>
+      <div class="azh" lang="zh">RISC-V 采用免费开放、模块化的指令集，厂商可自由扩展定制指令而不必授权封闭架构。这降低了芯片设计门槛，便于为 AI、IoT 等场景做领域专用加速。</div>
+      <div class="aen" lang="en">RISC-V offers a free, open, modular instruction set that vendors can extend with custom instructions without licensing a closed architecture. This lowers the barrier to chip design and eases domain-specific acceleration for AI, IoT, and similar scenarios.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Waterman &amp; Asanovic (eds.), The RISC-V Instruction Set Manual, UC Berkeley 2017</p>
+        <p lang="en">Waterman &amp; Asanovic (eds.), The RISC-V Instruction Set Manual, UC Berkeley 2017</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#RISC-V</a> <a class="tag" href="#">#指令集</a> <a class="tag" href="#">#开放架构</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

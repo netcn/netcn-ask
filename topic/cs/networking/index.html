@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>networking · 计算机 Computer Science | 问答</title>
+<meta name="description" content="networking（计算机）分类下的 30 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 30 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="networking · 计算机 Computer Science | 问答">
+<meta property="og:description" content="networking（计算机）分类下的 30 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 30 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/networking/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/networking/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>networking</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>networking <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>30</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#59b42dab767a">HTTP/3 为什么要从 TCP 换成基于 QUIC 的 UDP？</a></li><li><a href="#6122bd178e9c">分组交换比传统的电路交换更适合计算机通信在哪？</a></li><li><a href="#66b825f68257">TCP 拥塞控制的基本思路是什么？</a></li><li><a href="#81ffa60441d8">TCP 和 UDP 有什么区别？各自适合什么场景？</a></li><li><a href="#b70b1898cb68">什么是网络拥塞控制？</a></li><li><a href="#cb4635c2e3cf">TCP/IP 协议栈是怎样让异构网络互联的？</a></li><li><a href="#e2da2a2b4156">SYN 洪泛攻击利用了 TCP 握手的什么弱点，SYN cookie 怎么化解？</a></li><li><a href="#e5819823dab4">路由器是怎么决定把数据包往哪送的？</a></li><li><a href="#0b0f574a5792">Wi-Fi 信号显示满格，为什么网速还是很慢？</a></li><li><a href="#1004b95b6dca">输入网址后，DNS 是怎么找到对应服务器的？</a></li><li><a href="#237a6956fe36">子网掩码（subnet mask）是干什么用的？</a></li><li><a href="#271738144ec1">网络延迟为什么不可能无限降低，北京到纽约的 ping 值有物理下限吗？</a></li><li><a href="#2d19bfbebcb9">什么是CDN，为什么能让网站加载更快？</a></li><li><a href="#461d2b13aac8">什么是心跳（heartbeat）机制？</a></li><li><a href="#51e39d42180f">什么是 VPN？</a></li><li><a href="#52b597c29f44">为什么要从 IPv4 升级到 IPv6？</a></li><li><a href="#68550ff58a9b">REST 风格的 Web 接口为什么用 HTTP 的动词来操作资源？</a></li><li><a href="#9736a57956fd">什么是 MAC 地址？</a></li><li><a href="#acd247218bfb">NAT 是怎么让家里十几台设备共用一个公网 IP 的？</a></li><li><a href="#b63999668e46">路由器和交换机有什么区别？</a></li><li><a href="#be42a3da1d7f">网络为什么要分层（如TCP/IP模型）？</a></li><li><a href="#cs_24_007">网络明明没有坏,为什么一拥而上反而集体变慢?拥塞控制如何自救?</a></li><li><a href="#dc29287338d9">DNS 为什么被称为互联网的『电话簿』？</a></li><li><a href="#fef07e8972bf">HTTP 是无状态的，网站怎么记住“你”？</a></li><li><a href="#4a7652215177">Wi-Fi 是怎么把电脑连上网的？</a></li><li><a href="#61d5a52aa64d">IP 地址是不是就像网络世界的“门牌号”？</a></li><li><a href="#6e4030bb1493">OSI 七层模型分别是什么？</a></li><li><a href="#cs_24_006">在浏览器敲下网址到页面出现,这几百毫秒里互联网做了哪些事?</a></li><li><a href="#dcf6868f7ff6">BGP 在互联网中扮演什么角色？</a></li><li><a href="#e18fb98b04b9">什么是IP地址？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="59b42dab767a">
+      <h2 class="qz" lang="zh">HTTP/3 为什么要从 TCP 换成基于 QUIC 的 UDP？</h2>
+      <p class="qen" lang="en">Why does HTTP/3 move from TCP to UDP-based QUIC?</p>
+      <div class="azh" lang="zh">传统 HTTP/2 仍跑在 TCP 上，队头阻塞和一次丢包会拖慢整个连接；QUIC 在 UDP 之上自建可靠传输，把多个请求流独立多路复用，且支持 0-RTT 快速握手与连接迁移。IETF 在 2021 年发布 RFC 9000 将其标准化。</div>
+      <div class="aen" lang="en">HTTP/2 still runs over TCP, where head-of-line blocking and one lost packet stall the whole connection; QUIC builds its own reliable transport over UDP, multiplexing independent streams, with 0-RTT handshakes and connection migration. The IETF standardized it as RFC 9000 in 2021.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IETF《QUIC 传输协议》(RFC 9000, 2021)；Google《QUIC 原型》(2013)</p>
+        <p lang="en">IETF, &#x27;QUIC: A UDP-Based Multiplexed Transport&#x27; (RFC 9000, 2021); Google, &#x27;QUIC prototype&#x27; (2013)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc9000" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc9000（复合著录按段核验：本标识只担保第一段 IETF《QU</a></p>
+        
+      </details>
+      <a class="tag" href="#">#HTTP/3</a> <a class="tag" href="#">#QUIC</a> <a class="tag" href="#">#UDP</a> <a class="tag" href="#">#队头阻塞</a>
+    </article>
+
+
+    <article class="qitem" id="6122bd178e9c">
+      <h2 class="qz" lang="zh">分组交换比传统的电路交换更适合计算机通信在哪？</h2>
+      <p class="qen" lang="en">Why does packet switching suit computer communication better than circuit switching?</p>
+      <div class="azh" lang="zh">电路交换要先建立一条独占的端到端线路，空闲也占用资源；分组交换把数据切成小包、各自独立路由、在目的地重组，链路被多用户统计复用，更适合突发、不连续的计算机流量。Kleinrock 与 Baran 在 1960 年代奠定了其理论。</div>
+      <div class="aen" lang="en">Circuit switching reserves a dedicated end-to-end line even when idle; packet switching chops data into small packets routed independently and reassembled at the destination, statistically multiplexing the link—better for bursty computer traffic. Kleinrock and Baran laid the theory in the 1960s.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kleinrock《通信网络中的信息流》(1961)；Baran《分布式通信》(RAND, 1964)</p>
+        <p lang="en">Kleinrock, &#x27;Information Flow in Communication Nets&#x27; (1961); Baran, &#x27;On Distributed Communications&#x27; (RAND, 1964)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.7249/rm3420" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.7249/rm3420：On Distributed Communications</a></p>
+        
+      </details>
+      <a class="tag" href="#">#分组交换</a> <a class="tag" href="#">#电路交换</a> <a class="tag" href="#">#统计复用</a> <a class="tag" href="#">#路由</a>
+    </article>
+
+
+    <article class="qitem" id="66b825f68257">
+      <h2 class="qz" lang="zh">TCP 拥塞控制的基本思路是什么？</h2>
+      <p class="qen" lang="en">What is the basic idea of TCP congestion control?</p>
+      <div class="azh" lang="zh">发送方用拥塞窗口随 ACK 增长（慢启动、拥塞避免），丢包时减半窗口（或快速重传）以退避，从而在共享网络中动态逼近可用带宽而不压垮链路。</div>
+      <div class="aen" lang="en">The sender grows a congestion window on ACKs (slow start, congestion avoidance) and cuts it on loss (or fast retransmit) to back off, dynamically approaching available bandwidth without overwhelming the link.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">RFC 9293</p>
+        <p lang="en">RFC 9293</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#TCP</a>
+    </article>
+
+
+    <article class="qitem" id="81ffa60441d8">
+      <h2 class="qz" lang="zh">TCP 和 UDP 有什么区别？各自适合什么场景？</h2>
+      <p class="qen" lang="en">What is the difference between TCP and UDP, and when is each used?</p>
+      <div class="azh" lang="zh">TCP 是面向连接的可靠传输：三次握手建立连接，靠序号、确认和重传保证数据不丢不乱序，还有拥塞控制，代价是额外开销和延迟。UDP 无连接、不保证送达，只管快速发出去。网页、文件传输、邮件用 TCP；视频通话、在线游戏、实时音视频用 UDP（或基于 UDP 的 QUIC）。</div>
+      <div class="aen" lang="en">TCP is connection-oriented and reliable: a three-way handshake opens the connection, while sequence numbers, acknowledgments, and retransmission prevent loss and reordering, plus congestion control—at the cost of overhead and latency. UDP is connectionless and best-effort, just sending packets fast. Web pages, file transfers, and email use TCP; video calls, online games, and streaming media use UDP or QUIC built on it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose &amp; K. W. Ross, Computer Networking: A Top-Down Approach, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#UDP</a> <a class="tag" href="#">#三次握手</a>
+    </article>
+
+
+    <article class="qitem" id="b70b1898cb68">
+      <h2 class="qz" lang="zh">什么是网络拥塞控制？</h2>
+      <p class="qen" lang="en">What is network congestion control?</p>
+      <div class="azh" lang="zh">拥塞控制让发送方根据网络丢包和延迟动态调整发送速率，避免过多数据淹没网络造成崩溃，TCP 的慢启动和拥塞避免是典型例子。</div>
+      <div class="aen" lang="en">Congestion control makes senders adjust their rate based on loss and delay to avoid overwhelming the network; TCP slow start and congestion avoidance are classic examples.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#拥塞</a> <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#流量</a>
+    </article>
+
+
+    <article class="qitem" id="cb4635c2e3cf">
+      <h2 class="qz" lang="zh">TCP/IP 协议栈是怎样让异构网络互联的？</h2>
+      <p class="qen" lang="en">How does the TCP/IP stack interconnect heterogeneous networks?</p>
+      <div class="azh" lang="zh">Cerf 与 Kahn 在 1974 年设计的分层协议用 IP 做无连接、尽力而为的寻址与路由，TCP 在其上提供可靠、有序、流量可控的字节流。这种『端到端』思想使不同物理网络能无缝拼接成今天的互联网。</div>
+      <div class="aen" lang="en">The layered protocol Cerf and Kahn designed in 1974 uses IP for connectionless, best-effort addressing and routing, with TCP on top adding reliable, ordered, flow-controlled byte streams. This end-to-end principle let disparate physical networks stitch into today&#x27;s Internet.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Cerf 与 Kahn《分组网络互联协议》(IEEE Trans Comm, 1974)；Postel《TCP 规范》(RFC 793, 1981)</p>
+        <p lang="en">Cerf &amp; Kahn, &#x27;A Protocol for Packet Network Intercommunication&#x27; (1974); Postel, &#x27;Transmission Control Protocol&#x27; (RFC 793, 1981)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/tcom.1974.1092259" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1109/tcom.1974.1092259：A Protocol for Pac</a></p>
+        
+      </details>
+      <a class="tag" href="#">#TCP/IP</a> <a class="tag" href="#">#Cerf</a> <a class="tag" href="#">#端到端</a> <a class="tag" href="#">#可靠传输</a>
+    </article>
+
+
+    <article class="qitem" id="e2da2a2b4156">
+      <h2 class="qz" lang="zh">SYN 洪泛攻击利用了 TCP 握手的什么弱点，SYN cookie 怎么化解？</h2>
+      <p class="qen" lang="en">What weakness in the TCP handshake does a SYN flood exploit, and how do SYN cookies defeat it?</p>
+      <div class="azh" lang="zh">服务器收到 SYN 后必须为这个半开连接分配一条待完成连接记录（保存序号、选项等）并回 SYN-ACK，然后等待第三个包；攻击者用伪造源地址狂发 SYN 而从不回 ACK，很快占满有限的半连接队列，合法请求随之被丢弃。SYN cookie 让服务器不保存状态：把时间戳、MSS 索引和四元组的带密钥哈希编码进 SYN-ACK 的初始序号，只有客户端返回正确确认号才能验证这份票据，此时才真正建立套接字。代价是丢失部分 TCP 选项且需要额外哈希计算，因此内核通常只在队列即将溢出时启用。</div>
+      <div class="aen" lang="en">On receiving a SYN the server must allocate a half-open connection record holding sequence numbers and options, send a SYN-ACK and wait for the third packet; an attacker sprays SYNs from spoofed addresses and never replies, filling the finite backlog queue so legitimate connections get dropped. SYN cookies remove that state: the server encodes a timestamp, an MSS index and a keyed hash of the connection tuple into the initial sequence number it sends, and only an ACK carrying the right acknowledgement number proves the ticket, at which point the socket is really created. The trade-offs are lost TCP options and extra hashing, so kernels usually enable cookies only as the backlog nears overflow.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Eddy,《TCP SYN Flooding Attacks and Common Mitigations》,IETF RFC 4987,2007 (DOI: 10.17487/rfc4987)</p>
+        <p lang="en">Eddy, &#x27;TCP SYN Flooding Attacks and Common Mitigations&#x27;, IETF RFC 4987, 2007, DOI: 10.17487/rfc4987</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc4987" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc4987</a></p>
+        
+      </details>
+      <a class="tag" href="#">#SYN洪泛</a> <a class="tag" href="#">#SYN cookie</a> <a class="tag" href="#">#半连接队列</a> <a class="tag" href="#">#拒绝服务</a>
+    </article>
+
+
+    <article class="qitem" id="e5819823dab4">
+      <h2 class="qz" lang="zh">路由器是怎么决定把数据包往哪送的？</h2>
+      <p class="qen" lang="en">How does a router decide where to forward a packet?</p>
+      <div class="azh" lang="zh">路由器按“逐跳转发”工作：每个路由器维护一张路由表，用目的地址的最长前缀匹配查表，把包交给下一跳。路由表可以由管理员静态配置，也可以由 OSPF、BGP 等路由协议动态交换信息生成，综合考虑跳数、带宽和策略。数据包每经过一跳，路由器都要重新查表决定方向。</div>
+      <div class="aen" lang="en">Routers work hop by hop: each router keeps a routing table, matches the destination&#x27;s longest prefix, and hands the packet to the next hop. Tables are configured statically by operators or built dynamically by protocols such as OSPF and BGP that exchange reachability info weighing hops, bandwidth, and policy. At every hop the router consults the table again to pick the direction.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#路由表</a> <a class="tag" href="#">#包转发</a> <a class="tag" href="#">#OSPF</a> <a class="tag" href="#">#BGP</a>
+    </article>
+
+
+    <article class="qitem" id="0b0f574a5792">
+      <h2 class="qz" lang="zh">Wi-Fi 信号显示满格，为什么网速还是很慢？</h2>
+      <p class="qen" lang="en">Why can Wi-Fi be slow even when the signal bars are full?</p>
+      <div class="azh" lang="zh">信号格只反映接收到的信号强度，不代表可用带宽。Wi-Fi 是共享介质，所有设备用 CSMA/CA 轮流抢同一个信道，邻居的路由器占用重叠信道会让大家互相退避；2.4 GHz 只有 1、6、11 三个互不重叠的 20 MHz 信道，公寓楼里极易拥塞。此外隐藏节点导致的碰撞、旧设备以低速率长时间占用空口，都会拉低整体吞吐，而真正的瓶颈也常在宽带线路或对端服务器上——这些都不体现在信号格里。</div>
+      <div class="aen" lang="en">The bars report received signal strength, not available throughput. Wi-Fi is a shared medium in which every device takes turns under CSMA/CA, so neighbouring access points on overlapping channels force everyone to back off, and the 2.4 GHz band offers only three non-overlapping 20 MHz channels, numbers 1, 6 and 11, which saturates fast in an apartment block. Hidden-node collisions and legacy clients that hog airtime at low data rates drag the whole cell down as well, and often the real bottleneck is the broadband line or the remote server, none of which the bars can show.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEEE 802.11-2020 标准（CSMA/CA 与 DCF 机制）；Tanenbaum 与 Wetherall《Computer Networks》(第 5 版) 第 4 章</p>
+        <p lang="en">IEEE 802.11-2020 (CSMA/CA and the distributed coordination function); Tanenbaum &amp; Wetherall, &quot;Computer Networks&quot; (5th ed.), ch. 4</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-us/pearsonplus/p/9780137523214" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-13-7523214</a></p>
+        
+      </details>
+      <a class="tag" href="#">#Wi-Fi</a> <a class="tag" href="#">#共享信道</a> <a class="tag" href="#">#CSMA/CA</a> <a class="tag" href="#">#吞吐量</a>
+    </article>
+
+
+    <article class="qitem" id="1004b95b6dca">
+      <h2 class="qz" lang="zh">输入网址后，DNS 是怎么找到对应服务器的？</h2>
+      <p class="qen" lang="en">How does DNS find the server behind a web address?</p>
+      <div class="azh" lang="zh">浏览器先查本地缓存，再向递归解析器询问；解析器从根域名服务器开始，按“顶级域（如.com）→ 权威服务器”逐级下查，最终得到目标IP。整个过程本质上是把人好记的域名翻译成机器使用的IP地址，通常要经多级缓存加速。</div>
+      <div class="aen" lang="en">The browser checks its local cache first, then asks a recursive resolver, which walks down from root servers through top-level domains (such as .com) to the authoritative server to obtain the target IP. Essentially DNS translates human-friendly names into the IP addresses machines use, with caching at several levels to speed it up.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#域名解析</a> <a class="tag" href="#">#权威服务器</a>
+    </article>
+
+
+    <article class="qitem" id="237a6956fe36">
+      <h2 class="qz" lang="zh">子网掩码（subnet mask）是干什么用的？</h2>
+      <p class="qen" lang="en">What is a subnet mask used for?</p>
+      <div class="azh" lang="zh">子网掩码是一串和 IP 等长、前面全 1 后面全 0 的数，用来把 IP 地址切成“网络号”和“主机号”两部分。路由器借此判断目标是否在本地子网，从而决定直接送达还是交给上层网关转发。</div>
+      <div class="aen" lang="en">A subnet mask is a same-length number of leading 1s then 0s that splits an IP into network and host parts. Routers use it to tell whether a destination is local, deciding to deliver directly or forward to a gateway.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#子网掩码</a> <a class="tag" href="#">#IP</a>
+    </article>
+
+
+    <article class="qitem" id="271738144ec1">
+      <h2 class="qz" lang="zh">网络延迟为什么不可能无限降低，北京到纽约的 ping 值有物理下限吗？</h2>
+      <p class="qen" lang="en">Why can&#x27;t network latency be reduced indefinitely — is there a physical floor on the ping from Beijing to New York?</p>
+      <div class="azh" lang="zh">有，下限由光速和线路实际长度决定。光在单模光纤里因折射率约 1.47 只能跑约 20 万公里每秒，而北京到纽约的海缆路径超过一万公里，单程就要约 55 毫秒，往返 110 毫秒以上，这部分无法用增加带宽或换设备消除。实测 ping 通常更高，因为路由要绕行登陆站和交换节点，每一跳还叠加排队与转发时延。这也是为什么修建更直的新海缆、在本地部署边缘节点，比单纯加带宽更能改善体验。</div>
+      <div class="aen" lang="en">Yes — the floor is set by the speed of light and the actual path length. Light travels at about 200,000 km/s in single-mode fibre because the core&#x27;s refractive index is roughly 1.47, and the submarine route from Beijing to New York exceeds 10,000 km, so one way costs about 55 ms and a round trip more than 110 ms, which no amount of bandwidth or faster hardware removes. Measured pings run higher still because routes detour through landing stations and exchange points, each hop adding queueing and forwarding delay. That is why straighter new cables and local edge nodes improve experience more than simply buying bandwidth.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Tanenbaum 与 Wetherall《Computer Networks》(第 5 版) 第 2 章；ITU-T 建议 G.652（单模光纤特性）</p>
+        <p lang="en">Tanenbaum &amp; Wetherall, &quot;Computer Networks&quot; (5th ed.), ch. 2; ITU-T Recommendation G.652 on single-mode fibre</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://www.pearson.com/en-us/pearsonplus/p/9780137523214" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-13-7523214</a></p>
+        
+      </details>
+      <a class="tag" href="#">#网络延迟</a> <a class="tag" href="#">#光速限制</a> <a class="tag" href="#">#光纤折射率</a> <a class="tag" href="#">#海底光缆</a>
+    </article>
+
+
+    <article class="qitem" id="2d19bfbebcb9">
+      <h2 class="qz" lang="zh">什么是CDN，为什么能让网站加载更快？</h2>
+      <p class="qen" lang="en">What is a CDN and why does it make websites load faster?</p>
+      <div class="azh" lang="zh">CDN 把网站内容缓存到全球各地的服务器上，用户就近从最近的节点获取数据，缩短距离和延迟。</div>
+      <div class="aen" lang="en">A CDN caches website content on servers around the world so users fetch data from a nearby node, reducing distance and latency.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#CDN</a> <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#加速</a>
+    </article>
+
+
+    <article class="qitem" id="461d2b13aac8">
+      <h2 class="qz" lang="zh">什么是心跳（heartbeat）机制？</h2>
+      <p class="qen" lang="en">What is a heartbeat mechanism?</p>
+      <div class="azh" lang="zh">心跳是通信双方周期性发送的小包以确认对方仍在线，超时未收到即判定断连并触发重连或故障转移，广泛用于集群与长连接保活。</div>
+      <div class="aen" lang="en">A heartbeat is a periodic small packet confirming a peer is alive; missing it beyond a timeout marks a disconnect, triggering reconnect or failover—used in clusters and long connections.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#可用性</a>
+    </article>
+
+
+    <article class="qitem" id="51e39d42180f">
+      <h2 class="qz" lang="zh">什么是 VPN？</h2>
+      <p class="qen" lang="en">What is a VPN?</p>
+      <div class="azh" lang="zh">VPN（虚拟专用网络）在公共网络上建立一条加密的隧道，让设备像直接连在私有网络里一样安全地收发数据。</div>
+      <div class="aen" lang="en">A VPN (virtual private network) creates an encrypted tunnel over a public network so a device can send and receive data as if directly on a private network.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#VPN</a> <a class="tag" href="#">#加密</a> <a class="tag" href="#">#隧道</a>
+    </article>
+
+
+    <article class="qitem" id="52b597c29f44">
+      <h2 class="qz" lang="zh">为什么要从 IPv4 升级到 IPv6？</h2>
+      <p class="qen" lang="en">Why is the internet upgrading from IPv4 to IPv6?</p>
+      <div class="azh" lang="zh">IPv4 地址只有32位，理论最多约43亿个，早已不够给每个联网设备分配唯一地址，主要靠 NAT 变通。IPv6 把地址扩展到128位，可分配数量近乎无限，还简化了报文头部、内建安全性并支持更好的移动性。全球设备数仍在增长，IPv6 是长期出路。</div>
+      <div class="aen" lang="en">IPv4 has only 32-bit addresses, at most about 4.3 billion—nowhere near enough for every connected device, which is why NAT papers over the shortage. IPv6 extends addresses to 128 bits, an effectively endless pool, while simplifying headers, building in security, and improving mobility. With device counts still growing, IPv6 is the long-term answer.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose《计算机网络:自顶向下方法》第3章 (机械工业出版社)</p>
+        <p lang="en">J. Kurose, K. Ross, Computer Networking: A Top-Down Approach, 7th ed., Chapter 3 (Transport Layer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/36081529/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111712367（豆瓣书目条目: 计算机网络：自顶向下方法）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#IPv4</a> <a class="tag" href="#">#IPv6</a> <a class="tag" href="#">#地址空间</a>
+    </article>
+
+
+    <article class="qitem" id="68550ff58a9b">
+      <h2 class="qz" lang="zh">REST 风格的 Web 接口为什么用 HTTP 的动词来操作资源？</h2>
+      <p class="qen" lang="en">Why do REST-style web APIs use HTTP verbs to act on resources?</p>
+      <div class="azh" lang="zh">REST 把每个数据对象看作一个带 URL 的资源，用 GET/POST/PUT/DELETE 等标准方法表达增删改查，状态由服务器保存、请求自描述。Fielding 在 2000 年的博士论文中系统提出这一架构风格，使接口统一且易扩展。</div>
+      <div class="aen" lang="en">REST treats each data object as a URL-addressed resource and uses standard verbs GET/POST/PUT/DELETE for CRUD, with state kept server-side and requests self-descriptive. Fielding formalized this architectural style in his 2000 dissertation, yielding uniform, scalable interfaces.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Fielding《基于网络的软件架构风格》(博士论文, 2000)；IETF《HTTP/1.1》(RFC 2616)</p>
+        <p lang="en">Fielding, &#x27;Architectural Styles for Network-based Software&#x27; (PhD thesis, 2000); IETF, &#x27;HTTP/1.1&#x27; (RFC 2616)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#REST</a> <a class="tag" href="#">#HTTP动词</a> <a class="tag" href="#">#资源</a> <a class="tag" href="#">#无状态</a>
+    </article>
+
+
+    <article class="qitem" id="9736a57956fd">
+      <h2 class="qz" lang="zh">什么是 MAC 地址？</h2>
+      <p class="qen" lang="en">What is a MAC address?</p>
+      <div class="azh" lang="zh">MAC 地址是烧在网卡上的硬件编号，用于在同一个局域网内识别设备，和用于广域网寻址的 IP 地址不同。</div>
+      <div class="aen" lang="en">A MAC address is a hardware number burned into a network card to identify devices on a local network, unlike an IP address used for wider routing.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#MAC</a> <a class="tag" href="#">#局域网</a> <a class="tag" href="#">#硬件</a>
+    </article>
+
+
+    <article class="qitem" id="acd247218bfb">
+      <h2 class="qz" lang="zh">NAT 是怎么让家里十几台设备共用一个公网 IP 的？</h2>
+      <p class="qen" lang="en">How does NAT let a dozen home devices share a single public IP address?</p>
+      <div class="azh" lang="zh">家用路由器转发出站数据包时，把源地址从私有地址（例如 192.168.1.7）改写成自己的公网地址，同时把源端口换成一个唯一的新端口，并在转换表里记下这条映射。回包按目的端口查表还原成对应的内网地址和端口，因此多台设备可以复用同一个 IP，这种带端口复用的形式称为 NAPT。副作用是外部无法主动连入内网，需要端口转发、UPnP 或 STUN/TURN 打洞，点对点应用因此变复杂。</div>
+      <div class="aen" lang="en">As an outbound packet leaves the LAN, the router rewrites its source address from a private one such as 192.168.1.7 to the router&#x27;s own public address and replaces the source port with a unique new value, recording the mapping in a translation table. Reply packets are matched by that destination port and rewritten back to the correct internal host and port, so many devices multiplex one address — the port-multiplexing variant is called NAPT. The side effect is that outsiders cannot initiate connections inward without port forwarding, UPnP or STUN/TURN hole punching, which complicates peer-to-peer applications.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">RFC 3022《Traditional IP Network Address Translator (Traditional NAT)》；RFC 4787《NAT Behavioral Requirements for Unicast UDP》</p>
+        <p lang="en">RFC 3022, &quot;Traditional IP Network Address Translator (Traditional NAT)&quot;; RFC 4787, &quot;NAT Behavioral Requirements for Unicast UDP&quot;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc3022" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc3022（复合著录按段核验：本标识只担保该段，其余段未核）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#NAT</a> <a class="tag" href="#">#端口转换</a> <a class="tag" href="#">#私有地址</a> <a class="tag" href="#">#IPv4地址短缺</a>
+    </article>
+
+
+    <article class="qitem" id="b63999668e46">
+      <h2 class="qz" lang="zh">路由器和交换机有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a router and a switch?</p>
+      <div class="azh" lang="zh">交换机在局域网内基于 MAC 地址在二层转发，连接同一网段设备；路由器基于 IP 地址在三层转发，连接不同网络并决定跨网路径。</div>
+      <div class="aen" lang="en">A switch forwards by MAC address at layer 2 within a LAN; a router forwards by IP at layer 3 between networks and decides cross-network paths.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#设备</a>
+    </article>
+
+
+    <article class="qitem" id="be42a3da1d7f">
+      <h2 class="qz" lang="zh">网络为什么要分层（如TCP/IP模型）？</h2>
+      <p class="qen" lang="en">Why is networking organized in layers (like the TCP/IP model)?</p>
+      <div class="azh" lang="zh">分层把网络通信拆成应用、传输、网络、链路等独立层次，每层只负责自己的任务，并只依赖下一层提供的接口。这样上层不用关心数据具体怎么传输，下层升级换代不影响上层，整个系统才能让几十亿设备互通。</div>
+      <div class="aen" lang="en">Layering splits communication into independent levels—application, transport, internet, link—each handling its own job and using only the interface below. Upper layers need not care how data physically travels, and upgrading lower layers does not break upper ones, which is how billions of devices interoperate.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TCP/IP</a> <a class="tag" href="#">#分层</a> <a class="tag" href="#">#协议栈</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_007">
+      <h2 class="qz" lang="zh">网络明明没有坏,为什么一拥而上反而集体变慢?拥塞控制如何自救?</h2>
+      <p class="qen" lang="en">Nothing is broken, yet everyone slows down together — how does congestion control rescue a crowded network?</p>
+      <div class="azh" lang="zh">路由器缓冲区有限,注入速率超过瓶颈链路出口时排队延迟飙升直至溢出丢包;重传还会加倍流量,酿成拥塞崩溃。雅各布森1988年为TCP设计的方案成为教科书:各发送方加法增大窗口,侦测到丢包就乘性减半(AIMD),无需中心调度,仅凭端到端信号便收敛到公平分享带宽。后续BBR改用实测带宽与时延积建模,在高丢包无线网上更稳健,思想同源:把拥堵当反馈信号而非故障。</div>
+      <div class="aen" lang="en">Router buffers are finite: when offered load exceeds a link&#x27;s exit rate, queueing delay soars until drops begin, and retransmissions double traffic into collapse. Jacobson&#x27;s 1988 TCP recipe became the textbook answer: each sender probes by growing its window additively, cuts it in half upon loss, then climbs again — additive increase, multiplicative decrease — converging to fair shares without any central scheduler, pure emergent order from end-to-end signals. Modern BBR instead models measured bandwidth times delay, thriving on lossy wireless; same philosophy: treat congestion as feedback, not failure.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Jacobson,《Congestion avoidance and control》,ACM SIGCOMM Computer Communication Review 18,1988 (DOI: 10.1145/52325.52356)</p>
+        <p lang="en">V. Jacobson, &#x27;Congestion avoidance and control&#x27;, ACM SIGCOMM Computer Communication Review 18, 1988, DOI: 10.1145/52325.52356</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/52325.52356" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/52325.52356</a></p>
+        
+      </details>
+      <a class="tag" href="#">#拥塞控制</a> <a class="tag" href="#">#AIMD</a> <a class="tag" href="#">#TCP</a>
+    </article>
+
+
+    <article class="qitem" id="dc29287338d9">
+      <h2 class="qz" lang="zh">DNS 为什么被称为互联网的『电话簿』？</h2>
+      <p class="qen" lang="en">Why is DNS called the Internet&#x27;s phone book?</p>
+      <div class="azh" lang="zh">DNS 把人类易记的域名翻译成机器使用的 IP 地址，靠分布式的层级服务器（根、顶级域、权威）逐级解析。Mockapetris 在 1983 年设计这一系统，避免了全网维护一张巨型对照表。</div>
+      <div class="aen" lang="en">DNS translates human-friendly domain names into machine IP addresses via a distributed hierarchy—root, top-level, and authoritative servers—resolved step by step. Mockapetris designed it in 1983, avoiding one giant global lookup table.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">互联网工程任务组（IETF）,《Domain names - concepts and facilities》,RFC 1034,1987 (DOI: 10.17487/rfc1034)</p>
+        <p lang="en">IETF, &#x27;Domain names - concepts and facilities&#x27;, RFC 1034, 1987, DOI: 10.17487/rfc1034</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc1034" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc1034; RFC 1034</a></p>
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#域名解析</a> <a class="tag" href="#">#分布式</a> <a class="tag" href="#">#Mockapetris</a>
+    </article>
+
+
+    <article class="qitem" id="fef07e8972bf">
+      <h2 class="qz" lang="zh">HTTP 是无状态的，网站怎么记住“你”？</h2>
+      <p class="qen" lang="en">HTTP is stateless—how do websites remember you?</p>
+      <div class="azh" lang="zh">服务器可以在响应里带一个小数据块 Cookie，浏览器自动保存并在下次请求时原样带回，服务器据此识别会话，购物车、登录状态都靠它。Session 则是服务器端保存的用户状态，靠 Cookie 里的会话ID找到。Cookie 也可能被用于追踪，所以浏览器提供清理和屏蔽功能。</div>
+      <div class="aen" lang="en">A server can attach a small Cookie to its response, the browser stores it and echoes it back on later requests, letting the server recognize the session—shopping carts and login states rely on this. A session is the server-side state located by a session ID in the cookie. Cookies can also be used for tracking, so browsers offer clearing and blocking.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#Cookie</a> <a class="tag" href="#">#Session</a> <a class="tag" href="#">#无状态协议</a>
+    </article>
+
+
+    <article class="qitem" id="4a7652215177">
+      <h2 class="qz" lang="zh">Wi-Fi 是怎么把电脑连上网的？</h2>
+      <p class="qen" lang="en">How does Wi-Fi connect a computer to the internet?</p>
+      <div class="azh" lang="zh">Wi-Fi 用看不见的无线电波在电脑和无线路由器之间传送信息，路由器再连到更大的网络把信息送出去。</div>
+      <div class="aen" lang="en">Wi-Fi uses invisible radio waves to send information between your computer and a router, which then connects to the bigger network.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#无线</a> <a class="tag" href="#">#Wi-Fi</a> <a class="tag" href="#">#网络</a>
+    </article>
+
+
+    <article class="qitem" id="61d5a52aa64d">
+      <h2 class="qz" lang="zh">IP 地址是不是就像网络世界的“门牌号”？</h2>
+      <p class="qen" lang="en">Is an IP address like a &#x27;house number&#x27; in the online world?</p>
+      <div class="azh" lang="zh">没错。每台联网设备都有一个 IP 地址，就像每家每户的门牌号，数据包靠着它才能准确找到目的地、再原路把回信送回来。没有地址，信息就会迷路。</div>
+      <div class="aen" lang="en">Exactly. Every networked device has an IP address like a house number; data packets use it to reach the right destination and send replies back. Without an address, information gets lost.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#IP</a> <a class="tag" href="#">#地址</a>
+    </article>
+
+
+    <article class="qitem" id="6e4030bb1493">
+      <h2 class="qz" lang="zh">OSI 七层模型分别是什么？</h2>
+      <p class="qen" lang="en">What are the seven layers of the OSI model?</p>
+      <div class="azh" lang="zh">自底向上为物理层、数据链路层、网络层、传输层、会话层、表示层、应用层；它用于分层理解网络通信职责，实际互联网常用简化的 TCP/IP 四层模型。</div>
+      <div class="aen" lang="en">From bottom: physical, data link, network, transport, session, presentation, application; it frames networking responsibilities, though the Internet practically uses the simpler four-layer TCP/IP model.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">ITU-T X.200</p>
+        <p lang="en">ITU-T X.200</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#模型</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_006">
+      <h2 class="qz" lang="zh">在浏览器敲下网址到页面出现,这几百毫秒里互联网做了哪些事?</h2>
+      <p class="qen" lang="en">Between typing a URL and seeing the page, what does the internet do in those few hundred milliseconds?</p>
+      <div class="azh" lang="zh">一条完整接力:域名先经 DNS 解析为 IP(缓存未中则逐级询问根、顶级域与权威服务器);TCP 三次握手建连,TLS 握手协商加密并验证证书链;浏览器发出 HTTP 请求取回 HTML;解析中再对 CSS、JS、图片并行发起请求,常经 CDN 就近返回;渲染引擎排版绘制。每一跳靠路由器逐包转发,BGP 决定洲际路径。任一环节慢几十毫秒用户都能感知——这正是性能优化的战场地图。</div>
+      <div class="aen" lang="en">A full relay: the resolver turns the domain into an IP via DNS (asking root, TLD then authoritative servers on cache miss); TCP performs its three-way handshake for a reliable pipe; TLS negotiates ciphers and validates the certificate chain; the browser sends HTTP and receives HTML; parsing triggers parallel fetches for CSS, JS and images, often served from a nearby CDN edge; finally the engine lays out and paints. Each hop rides router-by-router packet forwarding with BGP quietly choosing intercontinental paths. Tens of milliseconds anywhere in this chain are user-visible — hence the performance battlefield.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose 与 Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking: A Top-Down Approach, 8th ed., Pearson, 2021</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL45032796W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL45032796W：Computer Networking a </a></p>
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#TCP握手</a> <a class="tag" href="#">#TLS</a>
+    </article>
+
+
+    <article class="qitem" id="dcf6868f7ff6">
+      <h2 class="qz" lang="zh">BGP 在互联网中扮演什么角色？</h2>
+      <p class="qen" lang="en">What role does BGP play on the Internet?</p>
+      <div class="azh" lang="zh">BGP（边界网关协议）是自治系统之间的路由协议，通过路径向量交换可达性信息，决定跨运营商的流量走向；配置错误或劫持会导致大规模路由异常。</div>
+      <div class="aen" lang="en">BGP is the inter-AS routing protocol; it exchanges reachability via path vectors to decide cross-ISP traffic paths, so misconfiguration or hijacks cause large-scale routing incidents.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">RFC 4271</p>
+        <p lang="en">RFC 4271</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#路由</a>
+    </article>
+
+
+    <article class="qitem" id="e18fb98b04b9">
+      <h2 class="qz" lang="zh">什么是IP地址？</h2>
+      <p class="qen" lang="en">What is an IP address?</p>
+      <div class="azh" lang="zh">IP地址是分配给联网设备的数字编号，就像每家每户的门牌号，用来在网络中找到并互相发送数据。</div>
+      <div class="aen" lang="en">An IP address is a numeric label assigned to a device on a network, like a house number, used to locate and send data to it.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#IP地址</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

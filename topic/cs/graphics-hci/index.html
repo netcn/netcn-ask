@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>图形与HCI graphics-hci · 计算机 Computer Science | 问答</title>
+<meta name="description" content="图形与HCI（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="图形与HCI graphics-hci · 计算机 Computer Science | 问答">
+<meta property="og:description" content="图形与HCI（计算机）分类下的 10 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 10 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/graphics-hci/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/graphics-hci/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>图形与HCI</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>图形与HCI <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>10</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#6b556db52195">基于物理的渲染（PBR）中的反射率方程如何描述表面对入射辐射度的反射？</a></li><li><a href="#8698fdb4b54f">实时光线追踪如何用包围体层次（BVH）把求交复杂度从 O(N) 降到接近 O(l</a></li><li><a href="#363935b7c7c0">交互系统中的「端到端延迟」由哪些环节构成，为何影响主观流畅度？</a></li><li><a href="#4d197666ac46">伽马校正解决显示中的什么问题，为什么要在线性空间做光照计算？</a></li><li><a href="#4ffaf645bcd9">人机交互中的「可访问性」为何强调文本对比度与屏幕阅读器支持？</a></li><li><a href="#cs_21_007">VR 设备在掉帧时靠异步时间扭曲(ATW)或异步重投影减轻眩晕,其原理是什么?哪</a></li><li><a href="#cs_21_015">戴上 VR 头显玩一会儿就头晕恶心是怎么回事?开发者在交互设计上有哪些被验证有效</a></li><li><a href="#cs_22_012">实时渲染中，深度缓冲（z-buffer）依据什么决定每个像素最终显示哪个三角形？</a></li><li><a href="#da124a03fa47">深度缓冲（z-buffer）如何解决三角形绘制的可见性问题？</a></li><li><a href="#e8c76f6a631d">实时图形管线中的光栅化阶段把几何变成像素的过程是怎样的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="6b556db52195">
+      <h2 class="qz" lang="zh">基于物理的渲染（PBR）中的反射率方程如何描述表面对入射辐射度的反射？</h2>
+      <p class="qen" lang="en">How does the reflectance equation in physically based rendering (PBR) describe surface reflection of incident radiance?</p>
+      <div class="azh" lang="zh">反射率方程把出射辐射度表示为半球面上入射辐射度乘以双向反射分布函数（BRDF）再乘余弦项并积分。Cook-Torrance 等微表面模型把 BRDF 拆为法线分布、几何遮蔽与菲涅尔项，从而在不同视角与材质下保持能量守恒与真实感。</div>
+      <div class="aen" lang="en">The reflectance equation expresses outgoing radiance as the integral over the hemisphere of incident radiance times the bidirectional reflectance distribution function (BRDF) times the cosine term. Microsurface models like Cook-Torrance split the BRDF into normal distribution, geometric occlusion, and Fresnel terms, preserving energy conservation and realism across views and materials.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PBR</a> <a class="tag" href="#">#BRDF</a> <a class="tag" href="#">#反射率方程</a>
+    </article>
+
+
+    <article class="qitem" id="8698fdb4b54f">
+      <h2 class="qz" lang="zh">实时光线追踪如何用包围体层次（BVH）把求交复杂度从 O(N) 降到接近 O(log N)？</h2>
+      <p class="qen" lang="en">How does real-time ray tracing use a bounding volume hierarchy (BVH) to reduce intersection cost from O(N) toward O(log N)?</p>
+      <div class="azh" lang="zh">BVH 用轴对齐包围盒递归划分子树，把场景组织成树；求交时先与父包围盒测试，命中才下探子节点，从而剪枝大量无关三角形。配合树旋转与 SAH 划分，可使每根光线仅访问少数节点，实现交互级光线追踪。</div>
+      <div class="aen" lang="en">A BVH recursively partitions the scene with axis-aligned bounding boxes into a tree; intersection first tests the parent box and only descends on a hit, pruning many irrelevant triangles. With tree rotations and SAH partitioning, each ray visits only a few nodes, enabling interactive ray tracing.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光线追踪</a> <a class="tag" href="#">#BVH</a> <a class="tag" href="#">#求交加速</a>
+    </article>
+
+
+    <article class="qitem" id="363935b7c7c0">
+      <h2 class="qz" lang="zh">交互系统中的「端到端延迟」由哪些环节构成，为何影响主观流畅度？</h2>
+      <p class="qen" lang="en">What stages make up end-to-end latency in an interactive system, and why does it affect perceived smoothness?</p>
+      <div class="azh" lang="zh">端到端延迟包括输入采样、处理、渲染与显示刷新等各环节的累积时间。即使帧率相同，高延迟也会让操作感觉黏滞，HCI 研究通常把低于约 10 到 20 毫秒视为难以察觉。</div>
+      <div class="aen" lang="en">End-to-end latency is the sum of input sampling, processing, rendering, and display refresh times. Even at the same frame rate, high latency makes interaction feel sluggish; HCI research often treats below about 10 to 20 milliseconds as imperceptible.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">NVIDIA, Latency in Games / Beyond 60 FPS 技术白皮书系列, NVIDIA Developer Technical Briefs</p>
+        <p lang="en">NVIDIA, Latency in Games / Beyond 60 FPS Whitepaper Series, NVIDIA Developer Technical Briefs</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#输入延迟</a> <a class="tag" href="#">#交互</a> <a class="tag" href="#">#刷新率</a>
+    </article>
+
+
+    <article class="qitem" id="4d197666ac46">
+      <h2 class="qz" lang="zh">伽马校正解决显示中的什么问题，为什么要在线性空间做光照计算？</h2>
+      <p class="qen" lang="en">What problem in display does gamma correction solve, and why compute lighting in linear space?</p>
+      <div class="azh" lang="zh">显示器对信号做非线性响应，人眼对暗部更敏感，伽马校正把存储值转换到感知均匀的空间。光照计算应在线性空间进行，否则叠加会偏暗失真，最后再编码回伽马空间显示。</div>
+      <div class="aen" lang="en">Displays respond nonlinearly to signal and human eyes are more sensitive to darks, so gamma correction maps stored values into a perceptually uniform space. Lighting should be computed in linear space, otherwise addition looks too dark and wrong; the result is then encoded back to gamma space for display.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Poynton, Digital Video and HD: Algorithms and Interfaces, 2nd ed.</p>
+        <p lang="en">Poynton, Digital Video and HD: Algorithms and Interfaces, 2nd ed.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#伽马校正</a> <a class="tag" href="#">#线性空间</a> <a class="tag" href="#">#颜色</a>
+    </article>
+
+
+    <article class="qitem" id="4ffaf645bcd9">
+      <h2 class="qz" lang="zh">人机交互中的「可访问性」为何强调文本对比度与屏幕阅读器支持？</h2>
+      <p class="qen" lang="en">Why does accessibility in human-computer interaction emphasize text contrast and screen-reader support?</p>
+      <div class="azh" lang="zh">足够的对比度帮助低视力用户分辨文字，屏幕阅读器把界面结构朗读给视障用户。符合 WCAG 等规范的对比度与语义标签能显著提升残障人士的可用性与合规性。</div>
+      <div class="aen" lang="en">Adequate contrast helps low-vision users distinguish text, and screen readers vocalize interface structure for blind users. Following standards like WCAG for contrast and semantic labels markedly improves usability and compliance for people with disabilities.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">W3C, Web Content Accessibility Guidelines (WCAG) 2.1, W3C Recommendation</p>
+        <p lang="en">W3C, Web Content Accessibility Guidelines (WCAG) 2.1, W3C Recommendation</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#可访问性</a> <a class="tag" href="#">#对比度</a> <a class="tag" href="#">#WCAG</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_007">
+      <h2 class="qz" lang="zh">VR 设备在掉帧时靠异步时间扭曲(ATW)或异步重投影减轻眩晕,其原理是什么?哪些场景下它会失效?</h2>
+      <p class="qen" lang="en">When a VR headset drops frames, how do asynchronous timewarp (ATW) and async reprojection ease motion sickness, and in which scenarios do they fail?</p>
+      <div class="azh" lang="zh">ATW 在画面送显前用最新头部姿态对上一帧做二次投影,把感知延迟压缩到一帧以内,缓解视觉与前庭信号的错位。它只能补偿旋转误差,无法修正手柄交互与世界移动的滞后;深度不连续处还会出现边缘撕裂。Meta 的 Application SpaceWarp 进一步通过合成中间帧在低帧率下保持流畅。</div>
+      <div class="aen" lang="en">Asynchronous timewarp reprojects the last rendered frame using the freshest head pose just before scan-out, squeezing perceived latency below one frame and easing the mismatch between visual and vestibular cues. It compensates only for rotational error, leaving hand-controller lag and world-space movement uncorrected, and depth discontinuities still produce edge tearing. Meta&#x27;s Application SpaceWarp goes further by synthesizing intermediate frames to stay smooth at lower render rates.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：作者 / 书名 / 版次 / 出版社 / 年份齐备，仅缺独立比对证据；已在可信度报告单列披露，不再重复核验。</p>
+        <p lang="zh">Steven M. LaValle《Virtual Reality》(剑桥大学出版社 2016)延迟章节;Oculus 开发者文档 Asynchronous Timewarp 说明页</p>
+        <p lang="en">Steven M. LaValle, Virtual Reality, Cambridge University Press, 2016 (latency chapter); Oculus developer documentation on Asynchronous Timewarp</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#扩展现实</a> <a class="tag" href="#">#异步时间扭曲</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_015">
+      <h2 class="qz" lang="zh">戴上 VR 头显玩一会儿就头晕恶心是怎么回事?开发者在交互设计上有哪些被验证有效的缓解手段?</h2>
+      <p class="qen" lang="en">Why do people get dizzy and nauseous after a short while in a VR headset, and which interaction-design mitigations have proven effective?</p>
+      <div class="azh" lang="zh">主流解释是感官冲突理论:前庭系统报告身体静止,而视觉通路呈现大幅运动,大脑整合冲突便产生晕动症状。工程上被反复验证的手段包括:锁定 72–90 FPS 以上的稳定帧率、运动时收缩视野(暗角)、用瞬移传送替代摇杆持续平移、以及允许玩家手动调整参考帧。Meta 与 Valve 的头显应用设计规范都把这些列为上架审核的基础项。</div>
+      <div class="aen" lang="en">The leading account is sensory conflict theory: the vestibular system reports a stationary body while vision presents sweeping motion, and the brain’s failed integration produces cybersickness symptoms. Repeatedly validated engineering measures include locking stable frame rates at 72–90 FPS or higher, narrowing the field of view with vignettes during motion, replacing thumbstick gliding with teleport locomotion, and letting users adjust their own reference frame. Meta’s and Valve’s headset app guidelines list these as baseline requirements for store submission.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">LaViola《A Discussion of Cybersickness in Virtual Environments》,ACM SIGCHI Bulletin 2000;Meta 开发者文档《Locomotion Design Guidelines for VR》</p>
+        <p lang="en">LaViola Jr., ‘A Discussion of Cybersickness in Virtual Environments’, ACM SIGCHI Bulletin 2000; Meta developer documentation, ‘Locomotion Design Guidelines for VR’</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1145/333329.333344" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1145/333329.333344</a></p>
+        
+      </details>
+      <a class="tag" href="#">#扩展现实</a> <a class="tag" href="#">#交互设计</a>
+    </article>
+
+
+    <article class="qitem" id="cs_22_012">
+      <h2 class="qz" lang="zh">实时渲染中，深度缓冲（z-buffer）依据什么决定每个像素最终显示哪个三角形？与先把多边形按远近排序再绘制的画家算法相比，它的优势是什么？</h2>
+      <p class="qen" lang="en">In real-time rendering, what does a depth buffer (z-buffer) base its decision on when choosing which triangle each pixel finally displays, and what advantage does it hold over the painter&#x27;s algorithm, which sorts polygons far-to-near before drawing?</p>
+      <div class="azh" lang="zh">显卡为每个像素保留一个深度值，记录目前离相机最近的片元；新片元只有在深度测试中证明自己更近，才能改写颜色与深度。判定逐像素独立完成，因此三角形以何种顺序到达、彼此如何穿插都不影响结果，完全无需对场景排序。画家算法遇到相互交叠或循环遮挡的多边形会排错顺序而失效，深度缓冲则以少量显存和每片元一次比较换来稳定正确的结果。</div>
+      <div class="aen" lang="en">The GPU keeps a depth value per pixel recording the nearest fragment found so far; an incoming fragment may overwrite color and depth only if it passes the depth test by proving itself closer. Because the decision runs independently for every pixel, neither arrival order nor interpenetrating geometry changes the outcome, so no scene-wide sorting is needed. The painter&#x27;s algorithm breaks down on mutually overlapping or cyclically occluding polygons, whereas the depth buffer buys stable correctness with modest memory and one comparison per fragment.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">E. Catmull 博士论文 显示曲面的细分算法，犹他大学，1974 年</p>
+        <p lang="en">E. Catmull, A Subdivision Algorithm for Computer Display of Curved Surfaces, PhD dissertation, University of Utah, 1974</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#计算机图形学</a> <a class="tag" href="#">#深度缓冲</a> <a class="tag" href="#">#可见性</a>
+    </article>
+
+
+    <article class="qitem" id="da124a03fa47">
+      <h2 class="qz" lang="zh">深度缓冲（z-buffer）如何解决三角形绘制的可见性问题？</h2>
+      <p class="qen" lang="en">How does a depth buffer (z-buffer) resolve visibility among drawn triangles?</p>
+      <div class="azh" lang="zh">z-buffer 为每个像素保存当前最近表面的深度值，新片元仅在更近时才覆盖颜色与深度。它以 O(1) 额外存储换取无需对场景排序即可正确遮挡，是实时渲染的标准做法。</div>
+      <div class="aen" lang="en">The z-buffer stores the depth of the nearest surface per pixel and overwrites color and depth only when a new fragment is closer. It trades O(1) extra storage for correct occlusion without sorting the scene, a standard real-time rendering technique.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Catmull, A Subdivision Algorithm for Computer Display of Curved Surfaces, PhD thesis 1974</p>
+        <p lang="en">Catmull, A Subdivision Algorithm for Computer Display of Curved Surfaces, PhD thesis 1974</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#深度缓冲</a> <a class="tag" href="#">#可见性</a> <a class="tag" href="#">#遮挡</a>
+    </article>
+
+
+    <article class="qitem" id="e8c76f6a631d">
+      <h2 class="qz" lang="zh">实时图形管线中的光栅化阶段把几何变成像素的过程是怎样的？</h2>
+      <p class="qen" lang="en">How does the rasterization stage of a real-time graphics pipeline turn geometry into pixels?</p>
+      <div class="azh" lang="zh">光栅化将投影后的三角形离散为屏幕上的片元，并对每个片元插值顶点属性（如颜色、纹理坐标）。它速度快、适合交互式渲染，但难以直接表达全局光照。</div>
+      <div class="aen" lang="en">Rasterization discretizes projected triangles into fragments on the screen and interpolates vertex attributes such as color and texture coordinates per fragment. It is fast and suited to interactive rendering, but cannot directly express global illumination.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller, Haines, Hoffman, Real-Time Rendering, 3rd ed., A K Peters 2008</p>
+        <p lang="en">Akenine-Moller, Haines, Hoffman, Real-Time Rendering, 3rd ed., 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL18354011W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL18354011W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光栅化</a> <a class="tag" href="#">#图形管线</a> <a class="tag" href="#">#片元</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

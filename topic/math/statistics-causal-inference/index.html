@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>统计学与因果推断 statistics-causal-inference · 数学 Mathematics | 问答</title>
+<meta name="description" content="统计学与因果推断（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="统计学与因果推断 statistics-causal-inference · 数学 Mathematics | 问答">
+<meta property="og:description" content="统计学与因果推断（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/statistics-causal-inference/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/statistics-causal-inference/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>统计学与因果推断</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>统计学与因果推断 <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#421a7fa4c10a">Pearl 的 do 算子如何区分「观察」与「干预」？</a></li><li><a href="#907495ba429d">因果推断中的有向无环图（DAG）如何帮助识别可估计的因果效应？</a></li><li><a href="#4ef150fbf283">假设检验中的第一类错误与第二类错误分别指什么？</a></li><li><a href="#cb5632ae8681">贝叶斯推断如何把先验分布与观测数据结合得到后验？</a></li><li><a href="#d98488db29b5">置信区间的正确含义是什么，常见误解有哪些？</a></li><li><a href="#ed978a6e311a">最大似然估计的基本思想是什么？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="421a7fa4c10a">
+      <h2 class="qz" lang="zh">Pearl 的 do 算子如何区分「观察」与「干预」？</h2>
+      <p class="qen" lang="en">How does Pearl&#x27;s do-operator distinguish observation from intervention?</p>
+      <div class="azh" lang="zh">$P(Y\mid X=x)$ 表示在观察到 $X=x$ 时 $Y$ 的分布，而 $P(Y\mid do(X=x))$ 表示主动把 $X$ 设为 $x$ 后的分布。do 算子切断了 $X$ 与其原有原因的联系，从而刻画干预效应，是因果推断区别于纯统计关联的关键。</div>
+      <div class="aen" lang="en">$P(Y\mid X=x)$ is the distribution of $Y$ when $X=x$ is observed, while $P(Y\mid do(X=x))$ is the distribution after forcibly setting $X=x$. The do-operator severs $X$ from its causes, capturing intervention effects—the crux distinguishing causal inference from mere association.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pearl、Glymour 与 Jewell《Causal Inference in Statistics: A Primer》（Wiley）</p>
+        <p lang="en">Pearl, Glymour and Jewell, Causal Inference in Statistics: A Primer, Wiley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Causal%20Inference%20in%20Statistics%3A%20A%20Primer" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-119-18687-8 (2016, Wiley)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#do算子</a> <a class="tag" href="#">#干预</a> <a class="tag" href="#">#因果</a>
+    </article>
+
+
+    <article class="qitem" id="907495ba429d">
+      <h2 class="qz" lang="zh">因果推断中的有向无环图（DAG）如何帮助识别可估计的因果效应？</h2>
+      <p class="qen" lang="en">How do directed acyclic graphs (DAGs) help identify estimable causal effects in causal inference?</p>
+      <div class="azh" lang="zh">DAG 用节点表示变量、有向边表示因果关系。通过后门准则可判断是否存在需调整的混杂变量集，使得调整后能无偏估计因果效应；若所有后门路径被阻断，则观测关联可解释为因果。这是 Pearl 因果框架的核心工具。</div>
+      <div class="aen" lang="en">A DAG represents variables as nodes and causal links as directed edges. The back-door criterion identifies sets of confounders to adjust for so a causal effect is estimated without bias; once all back-door paths are blocked, observed association can be interpreted causally. This is central to Pearl&#x27;s causal framework.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pearl、Glymour 与 Jewell《Causal Inference in Statistics: A Primer》（Wiley）</p>
+        <p lang="en">Pearl, Glymour and Jewell, Causal Inference in Statistics: A Primer, Wiley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Causal%20Inference%20in%20Statistics%3A%20A%20Primer" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-119-18687-8 (2016, Wiley)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#因果图</a> <a class="tag" href="#">#后门准则</a> <a class="tag" href="#">#混杂</a>
+    </article>
+
+
+    <article class="qitem" id="4ef150fbf283">
+      <h2 class="qz" lang="zh">假设检验中的第一类错误与第二类错误分别指什么？</h2>
+      <p class="qen" lang="en">What do Type I and Type II errors refer to in hypothesis testing?</p>
+      <div class="azh" lang="zh">第一类错误（弃真）是原假设实际为真却被拒绝，其概率记为 $\alpha$；第二类错误（取伪）是原假设为假却未被拒绝，概率记为 $\beta$。通常需在两者间权衡，提高检验功效（降低 $\beta$）往往要以增大 $\alpha$ 为代价。</div>
+      <div class="aen" lang="en">A Type I error (false positive) rejects a true null hypothesis with probability $\alpha$; a Type II error (false negative) fails to reject a false null with probability $\beta$. There is a trade-off: raising power (lowering $\beta$) often requires increasing $\alpha$.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数理统计》</p>
+        <p lang="en">American Mathematical Society (AMS), Mathematical Statistics</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/4136490/" target="_blank" rel="noopener">核验依据 1 ISBN 9787510005343（豆瓣书目条目: 数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#第一类错误</a> <a class="tag" href="#">#第二类错误</a> <a class="tag" href="#">#检验功效</a>
+    </article>
+
+
+    <article class="qitem" id="cb5632ae8681">
+      <h2 class="qz" lang="zh">贝叶斯推断如何把先验分布与观测数据结合得到后验？</h2>
+      <p class="qen" lang="en">How does Bayesian inference combine a prior distribution with observed data to obtain the posterior?</p>
+      <div class="azh" lang="zh">由贝叶斯公式 $P(\theta\mid D)=\frac{P(D\mid\theta)P(\theta)}{P(D)}$，先验 $P(\theta)$ 与似然 $P(D\mid\theta)$ 结合得到后验 $P(\theta\mid D)$。后验随数据更新，可作为进一步推断与决策的基础；分母 $P(D)$ 仅作归一化常数。</div>
+      <div class="aen" lang="en">By Bayes&#x27; rule $P(\theta\mid D)=\frac{P(D\mid\theta)P(\theta)}{P(D)}$, the prior $P(\theta)$ and likelihood $P(D\mid\theta)$ combine into the posterior $P(\theta\mid D)$. The posterior updates with data and underlies further inference and decisions; $P(D)$ is merely a normalizing constant.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数理统计》</p>
+        <p lang="en">American Mathematical Society (AMS), Mathematical Statistics</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/4136490/" target="_blank" rel="noopener">核验依据 1 ISBN 9787510005343（豆瓣书目条目: 数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#贝叶斯推断</a> <a class="tag" href="#">#后验</a> <a class="tag" href="#">#似然</a>
+    </article>
+
+
+    <article class="qitem" id="d98488db29b5">
+      <h2 class="qz" lang="zh">置信区间的正确含义是什么，常见误解有哪些？</h2>
+      <p class="qen" lang="en">What is the correct meaning of a confidence interval, and what are common misinterpretations?</p>
+      <div class="azh" lang="zh">95% 置信区间的含义是：在重复抽样下，这样构造的区间约有 95% 会覆盖真实参数；它并非「参数有 95% 概率落在此区间内」。参数本身是固定常数，区间才是随机的，这是最常见的误解。</div>
+      <div class="aen" lang="en">A 95% confidence interval means that under repeated sampling about 95% of such intervals would cover the true parameter; it is not that the parameter has a 95% probability of lying in this interval. The parameter is fixed and the interval is random—a common misinterpretation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数理统计》</p>
+        <p lang="en">American Mathematical Society (AMS), Mathematical Statistics</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/4136490/" target="_blank" rel="noopener">核验依据 1 ISBN 9787510005343（豆瓣书目条目: 数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#置信区间</a> <a class="tag" href="#">#重复抽样</a> <a class="tag" href="#">#误解</a>
+    </article>
+
+
+    <article class="qitem" id="ed978a6e311a">
+      <h2 class="qz" lang="zh">最大似然估计的基本思想是什么？</h2>
+      <p class="qen" lang="en">What is the basic idea of maximum likelihood estimation?</p>
+      <div class="azh" lang="zh">在给定模型下，选择使观测数据出现概率（似然）最大的参数值作为参数估计，即求解 $\hat\theta=\arg\max_\theta L(\theta;D)$。它直观、渐近有效，且在多数正则条件下具有相合性与渐近正态性。</div>
+      <div class="aen" lang="en">Under a given model, choose the parameter value that maximizes the probability (likelihood) of the observed data, i.e. $\hat\theta=\arg\max_\theta L(\theta;D)$. It is intuitive, asymptotically efficient, and under regularity conditions is consistent and asymptotically normal.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数理统计》</p>
+        <p lang="en">American Mathematical Society (AMS), Mathematical Statistics</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/4136490/" target="_blank" rel="noopener">核验依据 1 ISBN 9787510005343（豆瓣书目条目: 数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#最大似然</a> <a class="tag" href="#">#似然函数</a> <a class="tag" href="#">#相合性</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

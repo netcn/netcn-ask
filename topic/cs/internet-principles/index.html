@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>互联网原理 internet-principles · 计算机 Computer Science | 问答</title>
+<meta name="description" content="互联网原理（计算机）分类下的 15 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 15 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="互联网原理 internet-principles · 计算机 Computer Science | 问答">
+<meta property="og:description" content="互联网原理（计算机）分类下的 15 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 15 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/internet-principles/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/internet-principles/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>互联网原理</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>互联网原理 <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>15</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#4b1dfd3bc353">什么是负载均衡？</a></li><li><a href="#884c6e00c49a">什么是 NAT，它解决了什么问题？</a></li><li><a href="#909d966c073e">PageRank 是怎样利用网页之间的链接来给重要性打分的？</a></li><li><a href="#a18af2db5a3e">什么是子网掩码？</a></li><li><a href="#bcd6488474f8">TLS 握手过程大致是怎样的？</a></li><li><a href="#10284662b46d">什么是 CDN，它如何加速访问？</a></li><li><a href="#2832a399cc96">什么是 IPv6，为什么需要它？</a></li><li><a href="#637ce03d4a4a">数据包在网络中是如何被路由的？</a></li><li><a href="#a4893f1d20d7">协同过滤是怎么『从相似用户的行为』猜出你可能喜欢什么的？</a></li><li><a href="#c44c3e575177">HTTP 和 HTTPS 的主要区别是什么？</a></li><li><a href="#d69fab6c4f74">路由器和交换机有什么不同？</a></li><li><a href="#db6eb73acb0f">为什么建立连接需要“三次握手”？</a></li><li><a href="#f51f7ffbde33">什么是网络端口？</a></li><li><a href="#0b3c9c49afe5">什么是 DNS，它有什么用？</a></li><li><a href="#cc311c302769">什么是 URL？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="4b1dfd3bc353">
+      <h2 class="qz" lang="zh">什么是负载均衡？</h2>
+      <p class="qen" lang="en">What is load balancing?</p>
+      <div class="azh" lang="zh">负载均衡把大量请求分散到多台服务器上，避免单台过载并提高整体可用性和响应速度。它可按轮询、最少连接或哈希等策略分配流量。配合健康检查还能在服务器故障时自动剔除。</div>
+      <div class="aen" lang="en">Load balancing spreads many requests across multiple servers to avoid overloading one and to improve availability and speed. It can distribute by round-robin, least connections, or hashing. With health checks it can drop failing servers automatically.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#负载均衡</a> <a class="tag" href="#">#可用性</a> <a class="tag" href="#">#扩展</a>
+    </article>
+
+
+    <article class="qitem" id="884c6e00c49a">
+      <h2 class="qz" lang="zh">什么是 NAT，它解决了什么问题？</h2>
+      <p class="qen" lang="en">What is NAT and what problem does it solve?</p>
+      <div class="azh" lang="zh">NAT（网络地址转换）让多台内网设备共用一个公网 IP 上网，通过在路由器上改写包的源地址实现。它缓解了 IPv4 地址不足，也隐藏了内网结构。代价是增加了连接复杂性，并对某些点对点应用不友好。</div>
+      <div class="aen" lang="en">NAT (network address translation) lets many internal devices share one public IP by rewriting packet source addresses at the router. It eases IPv4 shortage and hides internal structure. The cost is extra connection complexity and poor fit for some peer-to-peer apps.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#NAT</a> <a class="tag" href="#">#地址转换</a> <a class="tag" href="#">#IPv4</a>
+    </article>
+
+
+    <article class="qitem" id="909d966c073e">
+      <h2 class="qz" lang="zh">PageRank 是怎样利用网页之间的链接来给重要性打分的？</h2>
+      <p class="qen" lang="en">How does PageRank use links between web pages to score importance?</p>
+      <div class="azh" lang="zh">PageRank 把链接视为『投票』：被很多重要页面指向的页面更重要，并迭代求解一个稳定的权重分布，相当于在随机游走中停留在某页的概率。Page 与 Brin 等在 1998–1999 年提出，成为 Google 早期排序核心。</div>
+      <div class="aen" lang="en">PageRank treats links as votes: a page pointed to by many important pages is itself important, solved as a stable weight distribution—the probability of landing on a page during a random walk. Page and Brin et al. proposed it in 1998–1999, becoming Google&#x27;s early ranking core.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Page、Brin、Motwani 与 Winograd《PageRank》(1999)；Brin 与 Page《大规模超文本搜索引擎》(1998)</p>
+        <p lang="en">Page, Brin, Motwani &amp; Winograd, &#x27;The PageRank Citation Ranking&#x27; (1999); Brin &amp; Page, &#x27;The Anatomy of a Large-Scale Search Engine&#x27; (1998)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1016/s0169-7552(98)00110-x" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1016/s0169-7552(98)00110-x（复合著录按段核验：本标识只</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PageRank</a> <a class="tag" href="#">#链接投票</a> <a class="tag" href="#">#随机游走</a> <a class="tag" href="#">#网页排序</a>
+    </article>
+
+
+    <article class="qitem" id="a18af2db5a3e">
+      <h2 class="qz" lang="zh">什么是子网掩码？</h2>
+      <p class="qen" lang="en">What is a subnet mask?</p>
+      <div class="azh" lang="zh">子网掩码是一串与 IP 等长的二进制数，用来划分地址中“网络部分”和“主机部分”。把 IP 与掩码做按位与，就能得到网络号，从而判断两台机器是否在同一子网。它是划分子网、控制广播范围的基础。</div>
+      <div class="aen" lang="en">A subnet mask is a binary string as long as the IP that separates the network portion from the host portion. Bitwise-AND of IP and mask yields the network number, telling whether two machines share a subnet. It underlies subnetting and broadcast control.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#子网掩码</a> <a class="tag" href="#">#IP划分</a> <a class="tag" href="#">#网络</a>
+    </article>
+
+
+    <article class="qitem" id="bcd6488474f8">
+      <h2 class="qz" lang="zh">TLS 握手过程大致是怎样的？</h2>
+      <p class="qen" lang="en">What does a TLS handshake roughly look like?</p>
+      <div class="azh" lang="zh">TLS 握手先由客户端发送支持的加密套件，服务器选定后发送证书以证明身份。双方再协商出对称密钥，之后通信内容都用该密钥加密。现代握手还支持会话复用以减少往返延迟。</div>
+      <div class="aen" lang="en">In a TLS handshake the client sends supported cipher suites; the server picks one and sends a certificate to prove identity. Both then derive a symmetric key used to encrypt the session. Modern handshakes also support session resumption to cut latency.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TLS</a> <a class="tag" href="#">#握手</a> <a class="tag" href="#">#加密</a>
+    </article>
+
+
+    <article class="qitem" id="10284662b46d">
+      <h2 class="qz" lang="zh">什么是 CDN，它如何加速访问？</h2>
+      <p class="qen" lang="en">What is a CDN and how does it speed up access?</p>
+      <div class="azh" lang="zh">CDN（内容分发网络）把网站内容缓存到离用户更近的多个节点，用户从就近服务器获取，减少距离带来的延迟。它还能分摊源站压力、提升可用性和抗攻击能力。视频和大图网站尤其依赖它。</div>
+      <div class="aen" lang="en">A CDN (content delivery network) caches site content on many nodes closer to users, so they fetch from a nearby server and cut distance latency. It also offloads the origin and improves availability and resilience. Video and image-heavy sites depend on it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#CDN</a> <a class="tag" href="#">#缓存</a> <a class="tag" href="#">#延迟</a>
+    </article>
+
+
+    <article class="qitem" id="2832a399cc96">
+      <h2 class="qz" lang="zh">什么是 IPv6，为什么需要它？</h2>
+      <p class="qen" lang="en">What is IPv6 and why is it needed?</p>
+      <div class="azh" lang="zh">IPv6 是新一代 IP 协议，地址长达 128 位，可提供几乎无限的地址空间。IPv4 地址已耗尽，难以支撑物联网等海量设备。IPv6 还简化了报头并内置更好的安全性。</div>
+      <div class="aen" lang="en">IPv6 is the new generation IP with 128-bit addresses, offering a nearly unlimited space. IPv4 addresses are exhausted and cannot support the huge number of IoT devices. IPv6 also simplifies headers and builds in better security.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#IPv6</a> <a class="tag" href="#">#地址耗尽</a> <a class="tag" href="#">#物联网</a>
+    </article>
+
+
+    <article class="qitem" id="637ce03d4a4a">
+      <h2 class="qz" lang="zh">数据包在网络中是如何被路由的？</h2>
+      <p class="qen" lang="en">How are data packets routed through a network?</p>
+      <div class="azh" lang="zh">路由器根据目标 IP 地址查询路由表，选择下一跳把数据包转发出去，逐跳逼近目的地。每跳可能走不同路径，因此包可能乱序到达，由 TCP 负责重组。路由协议让路由器交换拓扑信息以选最优路。</div>
+      <div class="aen" lang="en">Routers consult a routing table by destination IP and forward each packet to the next hop, getting closer hop by hop. Packets may take different paths and arrive out of order, with TCP reassembling them. Routing protocols let routers exchange topology to pick good paths.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#路由</a> <a class="tag" href="#">#路由器</a> <a class="tag" href="#">#IP</a>
+    </article>
+
+
+    <article class="qitem" id="a4893f1d20d7">
+      <h2 class="qz" lang="zh">协同过滤是怎么『从相似用户的行为』猜出你可能喜欢什么的？</h2>
+      <p class="qen" lang="en">How does collaborative filtering guess what you might like from similar users&#x27; behavior?</p>
+      <div class="azh" lang="zh">协同过滤基于『口味相近的人会做相近选择』：找到与你历史评分相似的用户群（基于用户）或相似物品群（基于物品），用他们的偏好预测你的空缺评分。Resnick 等在 1994 年用于群组推荐，Koren 等在 2009 年用矩阵分解大幅提升精度。</div>
+      <div class="aen" lang="en">Collaborative filtering assumes similar people choose similarly: it finds users or items close to yours and predicts your missing ratings from theirs. Resnick et al. used it for group recommendations in 1994; Koren et al. boosted accuracy with matrix factorization in 2009.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Resnick, Iacovou, Suchak &amp; Bergstrom,《GroupLens》,Proceedings of the 1994 ACM conference on Computer supported,1994 (DOI: 10.1145/192844.192905)；Koren, Bell &amp; Volinsky,《Matrix Factorization Techniques for Recommender Systems》,Computer,2009 (DOI: 10.1109/mc.2009.263)</p>
+        <p lang="en">Resnick, Iacovou, Suchak &amp; Bergstrom, &#x27;GroupLens&#x27;, Proceedings of the 1994 ACM conference on Computer supported, 1994, DOI: 10.1145/192844.192905; Koren, Bell &amp; Volinsky, &#x27;Matrix Factorization Techniques for Recommender Systems&#x27;, Computer, 2009, DOI: 10.1109/mc.2009.263</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1109/mc.2009.263" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1109/mc.2009.263</a> · <a class="evlink" href="https://doi.org/10.1145/192844.192905" target="_blank" rel="noopener">核验依据 2 Crossref DOI 10.1145/192844.192905</a></p>
+        
+      </details>
+      <a class="tag" href="#">#协同过滤</a> <a class="tag" href="#">#推荐系统</a> <a class="tag" href="#">#矩阵分解</a> <a class="tag" href="#">#相似用户</a>
+    </article>
+
+
+    <article class="qitem" id="c44c3e575177">
+      <h2 class="qz" lang="zh">HTTP 和 HTTPS 的主要区别是什么？</h2>
+      <p class="qen" lang="en">What is the main difference between HTTP and HTTPS?</p>
+      <div class="azh" lang="zh">HTTP 传输的内容是明文，容易被窃听和篡改；HTTPS 在 HTTP 外层加了 TLS 加密与身份认证。现在主流网站默认使用 HTTPS 以保护用户数据。浏览器也会标记纯 HTTP 站点为不安全。</div>
+      <div class="aen" lang="en">HTTP sends content in plaintext, easy to eavesdrop or alter; HTTPS wraps HTTP with TLS encryption and authentication. Most sites now default to HTTPS to protect users. Browsers also flag plain HTTP sites as insecure.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#HTTP</a> <a class="tag" href="#">#HTTPS</a> <a class="tag" href="#">#TLS</a>
+    </article>
+
+
+    <article class="qitem" id="d69fab6c4f74">
+      <h2 class="qz" lang="zh">路由器和交换机有什么不同？</h2>
+      <p class="qen" lang="en">How do routers and switches differ?</p>
+      <div class="azh" lang="zh">交换机工作在局域网内部，根据 MAC 地址把数据转发到同一网络的具体设备。路由器连接不同网络，根据 IP 地址在网与网之间选路。简单说，交换机管“同一栋楼”，路由器管“楼与楼之间”。</div>
+      <div class="aen" lang="en">A switch works inside a local network, forwarding by MAC address to specific devices. A router connects different networks and routes by IP address between them. Simply put, the switch manages one building, the router manages between buildings.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#路由器</a> <a class="tag" href="#">#交换机</a> <a class="tag" href="#">#局域网</a>
+    </article>
+
+
+    <article class="qitem" id="db6eb73acb0f">
+      <h2 class="qz" lang="zh">为什么建立连接需要“三次握手”？</h2>
+      <p class="qen" lang="en">Why does connection setup need a three-way handshake?</p>
+      <div class="azh" lang="zh">TCP 三次握手让通信双方确认彼此的发送和接收能力都正常，并协商初始序列号。第一次请求、第二次确认、第三次再确认，避免旧连接请求造成混乱。它保证了可靠连接的起点一致。</div>
+      <div class="aen" lang="en">The TCP three-way handshake lets both sides confirm their send and receive abilities and agree on initial sequence numbers. Request, acknowledge, then acknowledge again prevents confusion from stale connection requests. It ensures a consistent, reliable starting point.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#三次握手</a> <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#连接</a>
+    </article>
+
+
+    <article class="qitem" id="f51f7ffbde33">
+      <h2 class="qz" lang="zh">什么是网络端口？</h2>
+      <p class="qen" lang="en">What is a network port?</p>
+      <div class="azh" lang="zh">端口是 0 到 65535 的数字编号，用来在同一台机器上区分不同的服务或应用。IP 地址找到主机，端口找到主机里的具体程序，如 80 用于网页、443 用于 HTTPS。它让一台服务器可同时运行多种服务。</div>
+      <div class="aen" lang="en">A port is a number from 0 to 65535 that distinguishes services on one machine. The IP finds the host and the port finds the specific program, e.g. 80 for web and 443 for HTTPS. It lets one server run many services at once.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#端口</a> <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#服务</a>
+    </article>
+
+
+    <article class="qitem" id="0b3c9c49afe5">
+      <h2 class="qz" lang="zh">什么是 DNS，它有什么用？</h2>
+      <p class="qen" lang="en">What is DNS and what does it do?</p>
+      <div class="azh" lang="zh">DNS（域名系统）像互联网的电话簿，把便于记忆的域名如 example.com 翻译成机器用的 IP 地址。没有它，你得记住一长串数字才能访问网站。查询通常由你的运营商或公共 DNS 服务器完成。</div>
+      <div class="aen" lang="en">DNS (Domain Name System) is the internet&#x27;s phone book, translating memorable names like example.com into the IP addresses machines use. Without it you would memorize long number strings to visit sites. Your provider or a public DNS server usually handles the lookup.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#域名</a> <a class="tag" href="#">#IP</a>
+    </article>
+
+
+    <article class="qitem" id="cc311c302769">
+      <h2 class="qz" lang="zh">什么是 URL？</h2>
+      <p class="qen" lang="en">What is a URL?</p>
+      <div class="azh" lang="zh">URL（统一资源定位符）是网页或资源在互联网上的地址，通常包含协议、域名和路径。例如 https://example.com/page 中，https 是协议，example.com 是主机，/page 是路径。它告诉浏览器去哪里、用什么方式获取内容。</div>
+      <div class="aen" lang="en">A URL (Uniform Resource Locator) is the address of a web page or resource, usually with a protocol, domain, and path. In https://example.com/page, https is the protocol, example.com the host, and /page the path. It tells the browser where and how to fetch content.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose &amp; Ross,《Computer Networking: A Top-Down Approach》第8版,Pearson,2021</p>
+        <p lang="en">J. F. Kurose and K. W. Ross, Computer Networking, 8th ed., Pearson, 2021</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#URL</a> <a class="tag" href="#">#地址</a> <a class="tag" href="#">#协议</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

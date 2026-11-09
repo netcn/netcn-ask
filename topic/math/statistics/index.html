@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>statistics · 数学 Mathematics | 问答</title>
+<meta name="description" content="statistics（数学）分类下的 36 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 36 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="statistics · 数学 Mathematics | 问答">
+<meta property="og:description" content="statistics（数学）分类下的 36 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 36 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/statistics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/statistics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>statistics</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>statistics <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>36</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#180a41374f5f">为什么估计总体方差时，样本方差要除以 n-1 而不是 n？</a></li><li><a href="#24fd0137cd8b">贝叶斯因子（Bayes factor）是怎样用“数据支持度之比”来比较两个模型的</a></li><li><a href="#8db46b9f9b46">为什么无数互不相干的随机量加起来，结果都服从正态分布？</a></li><li><a href="#91c78511aa5e">什么是自助法（bootstrap）？</a></li><li><a href="#e12a0e6f5909">主成分分析（PCA）是什么？</a></li><li><a href="#f2a043df5f9a">最大似然估计是什么？</a></li><li><a href="#044b017c3880">什么是正态分布（钟形曲线）？</a></li><li><a href="#04db1c886911">什么是标准差？</a></li><li><a href="#0f36fcdf984a">尺子量出的每个数都带误差，用它们算出的结果误差会更大吗？</a></li><li><a href="#23ab2c873d35">AIC 与 BIC 是什么？</a></li><li><a href="#25eb0b71d891">什么是抽样调查？</a></li><li><a href="#2df016e2b980">什么是统计功效（statistical power），为什么样本越大越容易检出真</a></li><li><a href="#361501f05017">刀切法（jackknife）是怎样通过“每次留掉一个样本”来估计偏差和方差的？</a></li><li><a href="#42cd9079ac8a">第一类错误和第二类错误是什么？</a></li><li><a href="#44c2a3fe050e">生存分析研究什么？</a></li><li><a href="#6338da3ec96a">为什么很多测量数据会聚成一个“钟形”？</a></li><li><a href="#7122f343a4b0">什么是交叉验证？</a></li><li><a href="#8db96e18d340">质量检测中为什么常用“3σ 原则”作为控制线？</a></li><li><a href="#8e45d42b86b3">什么是 p 值？</a></li><li><a href="#9d41d21e04a3">什么是置信区间？</a></li><li><a href="#b147e7c28b87">什么是中位数？</a></li><li><a href="#b17fcf074ae8">为什么描述收入水平时，中位数常常比平均数更能代表“典型”？</a></li><li><a href="#b49418691f0e">什么是抽样偏差？</a></li><li><a href="#b9e3b988cc47">相关关系等于因果关系吗？</a></li><li><a href="#d25e26e4693b">为什么抛硬币抛得越多，正面比例越接近 1/2？</a></li><li><a href="#dc87950e28fd">什么是 p 值操纵（p-hacking）？</a></li><li><a href="#f529d7ebf098">什么是回归分析？</a></li><li><a href="#math_20_007">极大似然估计在什么条件下相合且渐近正态？为什么它的渐近方差恰好是 Fisher </a></li><li><a href="#math_20_015">看到 p=0.03,许多人会解读为『原假设有 97% 的概率不成立』,这个读法错</a></li><li><a href="#math_23_007">单因素方差分析为什么要用“组间均方 / 组内均方”之比构造 F 统计量，而不是对</a></li><li><a href="#math_23_015">随机化区组设计中，为什么按已知的干扰来源划分区组能提高处理间比较的精度？这种设计</a></li><li><a href="#14a266ad26fa">什么是数据？</a></li><li><a href="#1c09d395e9cb">什么是众数？</a></li><li><a href="#63d8ddfd9852">什么是统计图表？</a></li><li><a href="#66d12a9b3cf9">什么是平均数？</a></li><li><a href="#94065a876e1e">什么是极差？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="180a41374f5f">
+      <h2 class="qz" lang="zh">为什么估计总体方差时，样本方差要除以 n-1 而不是 n？</h2>
+      <p class="qen" lang="en">Why does the sample variance divide by n-1 instead of n when estimating the population variance?</p>
+      <div class="azh" lang="zh">因为样本均值本身是从数据算出来的，它会把数据“拉向”自己，使残差平方和偏小：用 n 作分母得到的方差平均来说低于真方差。除以 n-1 恰好修正这个偏差，使 E[s²]=σ²，即得到无偏估计。自由度视角是：样本均值已知后，n 个残差里只有 n-1 个可以自由变化，最后一个被约束。n 较大时两者几乎相等，但小样本下差别显著。</div>
+      <div class="aen" lang="en">The sample mean is itself computed from the data and pulls the data toward it, shrinking the sum of squared residuals: dividing by n yields an average below the true variance. Dividing by n-1 corrects exactly this bias, giving E[s²]=σ², an unbiased estimator. In degrees-of-freedom terms, once the sample mean is fixed, only n-1 of the n residuals can vary freely; the last is constrained. For large n the two nearly agree, but the difference matters for small samples.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#样本方差</a> <a class="tag" href="#">#无偏估计</a> <a class="tag" href="#">#自由度</a>
+    </article>
+
+
+    <article class="qitem" id="24fd0137cd8b">
+      <h2 class="qz" lang="zh">贝叶斯因子（Bayes factor）是怎样用“数据支持度之比”来比较两个模型的？</h2>
+      <p class="qen" lang="en">How does the Bayes factor compare two models via &#x27;the ratio of how much the data supports each&#x27;?</p>
+      <div class="azh" lang="zh">贝叶斯因子 BF₁₂ 等于在模型 M₁ 与 M₂ 下观测数据的边际似然之比 P(D|M₁)/P(D|M₂)，大于 1 表示数据更支持 M₁。它直接量化证据强度、不依赖先验概率的取舍，但边际似然需对参数空间积分，计算常依赖 MCMC；与 AIC/BIC 不同，它给出的是“证据倍数”而非点估计惩罚。</div>
+      <div class="aen" lang="en">The Bayes factor BF₁₂ is the ratio of marginal likelihoods P(D|M₁)/P(D|M₂); above 1 the data favor M₁. It quantifies evidence strength directly, independent of prior model probabilities, but needs integration over parameter space (often via MCMC); unlike AIC/BIC it reports an &#x27;odds multiple,&#x27; not a penalized point estimate.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Kass, R. E. 与 Raftery, A. E., 《贝叶斯因子》, Journal of the American Statistical Association 90(430), 1995</p>
+        <p lang="en">Kass, R. E. &amp; Raftery, A. E., &#x27;Bayes Factors&#x27;, JASA 90(430), 1995</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#贝叶斯因子</a> <a class="tag" href="#">#边际似然</a> <a class="tag" href="#">#模型比较</a> <a class="tag" href="#">#贝叶斯</a>
+    </article>
+
+
+    <article class="qitem" id="8db46b9f9b46">
+      <h2 class="qz" lang="zh">为什么无数互不相干的随机量加起来，结果都服从正态分布？</h2>
+      <p class="qen" lang="en">Why do sums of countless unrelated random quantities always follow a normal distribution?</p>
+      <div class="azh" lang="zh">中心极限定理说：只要各随机量相互独立、方差有限，大量它们的平均值（标准化后）就近似服从标准正态分布，无论原分布长什么样。原因在于卷积的多次迭代会把分布的细节“抹平”，只保留均值和方差两个参数。标准误 σ/√n 也随之而来：样本量翻四倍，估计误差才减半。这是统计推断里置信区间和假设检验的数学根据。</div>
+      <div class="aen" lang="en">The central limit theorem states that as long as random variables are independent with finite variance, the standardized average of many of them is approximately standard normal — no matter what the original distribution looks like. Convolution iterated many times smooths away distribution details, leaving only the mean and variance. The standard error σ/√n follows: quadruple the sample size and the estimation error only halves. This is the mathematical basis of confidence intervals and hypothesis testing.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 3 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Feller,《An Introduction to Probability Theory and Its Applications》第3版,Wiley,1968</p>
+        <p lang="en">W. Feller, An Introduction to Probability Theory and Its Applications, 3rd ed., Wiley, 1968</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=An+Introduction+to+Probability+Theory+and+Its+Applications" target="_blank" rel="noopener">核验依据 1 ISBN 9789994311071 (1968)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Probability" target="_blank" rel="noopener">核验依据 2 ISBN 9780821807491 (1997)</a> · <a class="evlink" href="https://openlibrary.org/search?q=An+Introduction+to+Probability+Theory+and+Its+Applications" target="_blank" rel="noopener">核验依据 3 ISBN 9789994311071 (1991)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#中心极限定理</a> <a class="tag" href="#">#正态分布</a> <a class="tag" href="#">#标准误</a>
+    </article>
+
+
+    <article class="qitem" id="91c78511aa5e">
+      <h2 class="qz" lang="zh">什么是自助法（bootstrap）？</h2>
+      <p class="qen" lang="en">What is the bootstrap method?</p>
+      <div class="azh" lang="zh">自助法通过从原样本中反复有放回地重抽样，来估计统计量的不确定性（如标准误、置信区间），无需复杂理论公式。</div>
+      <div class="aen" lang="en">Bootstrap repeatedly resamples with replacement from data to estimate uncertainty (errors, intervals) without heavy theory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Efron, B. 与 Hastie, T., 《计算机时代的统计推断》, Cambridge University Press</p>
+        <p lang="en">Efron, B. &amp; Hastie, T., &#x27;Computer Age Statistical Inference&#x27;, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#重抽样</a>
+    </article>
+
+
+    <article class="qitem" id="e12a0e6f5909">
+      <h2 class="qz" lang="zh">主成分分析（PCA）是什么？</h2>
+      <p class="qen" lang="en">What is principal component analysis (PCA)?</p>
+      <div class="azh" lang="zh">PCA 把高维数据投影到少数能保留最多方差的方向上，实现降维与去噪。它常用于可视化、压缩和特征提取。</div>
+      <div class="aen" lang="en">PCA projects high-dimensional data onto a few directions capturing the most variance, for dimensionality reduction and denoising. It is commonly used for visualization, compression, and feature extraction.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">H. Hotelling《Analysis of a Complex Statistical Variable into Principal Components》, Journal of Educational Psychology 24(6):417–441, 1933</p>
+        <p lang="en">H. Hotelling, &#x27;Analysis of a Complex Statistical Variable into Principal Components&#x27;, Journal of Educational Psychology 24(6):417–441, 1933</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1007/978-3-540-72244-1_9" target="_blank" rel="noopener">核验依据 1 DOI 10.1007/978-3-540-72244-1_9</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#降维</a>
+    </article>
+
+
+    <article class="qitem" id="f2a043df5f9a">
+      <h2 class="qz" lang="zh">最大似然估计是什么？</h2>
+      <p class="qen" lang="en">What is maximum likelihood estimation?</p>
+      <div class="azh" lang="zh">它在给定模型下，选择使观测数据出现概率最大的参数值。它是现代统计与机器学习中拟合模型最常用的准则之一。</div>
+      <div class="aen" lang="en">It picks parameters that maximize the probability of the observed data under the model; a core fitting principle in statistics and ML.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#估计</a>
+    </article>
+
+
+    <article class="qitem" id="044b017c3880">
+      <h2 class="qz" lang="zh">什么是正态分布（钟形曲线）？</h2>
+      <p class="qen" lang="en">What is the normal distribution (bell curve)?</p>
+      <div class="azh" lang="zh">正态分布呈对称的钟形，中间高、两端低，由均值和标准差决定。很多自然现象（如身高）近似服从正态分布。</div>
+      <div class="aen" lang="en">The normal distribution is a symmetric bell shape set by its mean and standard deviation; many traits like height are approximately normal.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#分布</a>
+    </article>
+
+
+    <article class="qitem" id="04db1c886911">
+      <h2 class="qz" lang="zh">什么是标准差？</h2>
+      <p class="qen" lang="en">What is standard deviation?</p>
+      <div class="azh" lang="zh">标准差衡量一组数据里每个值偏离平均数的典型幅度：各值与均值之差平方后取平均得方差，再开平方就是标准差。开方不只是走形式，它把量纲从平方单位还原成与原始数据相同，所以标准差能和均值直接比大小，方差不能。用处在于对照均值看离散：均值相同而标准差悬殊，均值的代表性就完全不同；单位不同时，还要改比它与均值的比值。</div>
+      <div class="aen" lang="en">Standard deviation measures the typical way each value in a set departs from the mean: the differences from the mean are squared and averaged into the variance, and the square root of that is the standard deviation. The root is not a formality - it brings the units back from the squared scale to those of the original data, so the standard deviation can be compared directly with the mean while the variance cannot. Its use lies in reading spread against the mean: two groups with the same mean but very different standard deviations have means of quite different representativeness, and where the units differ, it is the ratio of standard deviation to mean that should be compared.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#离散程度</a>
+    </article>
+
+
+    <article class="qitem" id="0f36fcdf984a">
+      <h2 class="qz" lang="zh">尺子量出的每个数都带误差，用它们算出的结果误差会更大吗？</h2>
+      <p class="qen" lang="en">Every number from a ruler carries error — does the result computed from them get even more inaccurate?</p>
+      <div class="azh" lang="zh">会，误差会传播。加减运算里绝对误差相加：比如两个各带 ±0.1 厘米的长度相加，结果误差约 ±0.2 厘米。乘除运算里则是相对误差（误差除以数值）相加：10±0.1 乘 20±0.2，相对误差约 1% 加 1%，共约 2%。理解这一点，实验和工程里才不会被“看似精确”的数字骗到。</div>
+      <div class="aen" lang="en">Yes — errors propagate. In addition or subtraction, absolute errors add: two lengths each off by ±0.1 cm give a sum accurate to about ±0.2 cm. In multiplication or division, relative errors (error divided by value) add: 10±0.1 times 20±0.2 carries a relative error of about 1% plus 1%, roughly 2%. Knowing this keeps experiments and engineering from being fooled by seemingly precise numbers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">美国数学会(AMS)《数值分析》</p>
+        <p lang="en">American Mathematical Society (AMS), Numerical Analysis</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Analysis" target="_blank" rel="noopener">核验依据 1 ISBN 9780538733519 (2011)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Numerical+Optimization" target="_blank" rel="noopener">核验依据 2 ISBN 9780387987934 (1999)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#误差传播</a> <a class="tag" href="#">#测量误差</a> <a class="tag" href="#">#相对误差</a>
+    </article>
+
+
+    <article class="qitem" id="23ab2c873d35">
+      <h2 class="qz" lang="zh">AIC 与 BIC 是什么？</h2>
+      <p class="qen" lang="en">What are AIC and BIC?</p>
+      <div class="azh" lang="zh">它们是衡量统计模型优劣的准则，在拟合优度与模型复杂度之间权衡：AIC≈2k−2ln L，BIC 还随样本量加重惩罚。它们帮助避免一味追求高拟合导致的过拟合。</div>
+      <div class="aen" lang="en">AIC and BIC trade goodness-of-fit against complexity (AIC≈2k−2ln L; BIC penalizes more with sample size), guarding against overfitting.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Wasserman, L., 《全部统计学》, Springer</p>
+        <p lang="en">Wasserman, L., &#x27;All of Statistics&#x27;, Springer</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#模型选择</a>
+    </article>
+
+
+    <article class="qitem" id="25eb0b71d891">
+      <h2 class="qz" lang="zh">什么是抽样调查？</h2>
+      <p class="qen" lang="en">What is sampling survey?</p>
+      <div class="azh" lang="zh">抽样调查是从总体中选取一部分样本进行研究，用样本结果推断整体，以节省成本和时间。</div>
+      <div class="aen" lang="en">Sampling studies a subset to infer about the whole, saving cost and time.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#抽样</a>
+    </article>
+
+
+    <article class="qitem" id="2df016e2b980">
+      <h2 class="qz" lang="zh">什么是统计功效（statistical power），为什么样本越大越容易检出真实效应？</h2>
+      <p class="qen" lang="en">What is statistical power, and why does a larger sample make it easier to detect a true effect?</p>
+      <div class="azh" lang="zh">统计功效是当原假设实际为假时，检验正确拒绝它的概率，等于 1−β（β 为第二类错误率）。效应量固定时，样本量越大、测量越精确，检验统计量的分布越分离，功效越高；这正是实验设计要预先估算“所需样本量”的原因。</div>
+      <div class="aen" lang="en">Statistical power is the probability of correctly rejecting a false null hypothesis, equal to 1−β (β being the Type II error rate). With a fixed effect size, larger samples and less noise separate the test-statistic distributions more, raising power—which is why experiments pre-compute the required sample size.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计功效</a> <a class="tag" href="#">#第二类错误</a> <a class="tag" href="#">#效应量</a> <a class="tag" href="#">#样本量</a>
+    </article>
+
+
+    <article class="qitem" id="361501f05017">
+      <h2 class="qz" lang="zh">刀切法（jackknife）是怎样通过“每次留掉一个样本”来估计偏差和方差的？</h2>
+      <p class="qen" lang="en">How does the jackknife estimate bias and variance by &#x27;leaving out one sample at a time&#x27;?</p>
+      <div class="azh" lang="zh">刀切法依次从 n 个样本中去掉第 i 个、用其余 n−1 个重算统计量，得到 n 个“伪值”，再用伪值的均值与离散程度估计原估计的偏差与标准误。它是自助法的前身，思路直观、计算稳定，适合样本量不大时的误差评估。</div>
+      <div class="aen" lang="en">The jackknife drops the i-th of n samples one at a time, recomputes the statistic on the remaining n−1, and forms n &#x27;pseudovalues&#x27; whose mean and spread estimate the original estimator&#x27;s bias and standard error. A precursor to the bootstrap, it is intuitive and stable for modest samples.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Efron, B. 与 Hastie, T., 《计算机时代的统计推断》, Cambridge University Press</p>
+        <p lang="en">Efron, B. &amp; Hastie, T., &#x27;Computer Age Statistical Inference&#x27;, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#刀切法</a> <a class="tag" href="#">#伪值</a> <a class="tag" href="#">#偏差估计</a> <a class="tag" href="#">#重抽样</a>
+    </article>
+
+
+    <article class="qitem" id="42cd9079ac8a">
+      <h2 class="qz" lang="zh">第一类错误和第二类错误是什么？</h2>
+      <p class="qen" lang="en">What are Type I and Type II errors?</p>
+      <div class="azh" lang="zh">第一类错误是“假阳性”（错误地拒绝真假设），第二类错误是“假阴性”（错误地保留假假设）。检验需在两者间权衡。</div>
+      <div class="aen" lang="en">Type I is a false positive (rejecting truth); Type II is a false negative (missing an effect); tests trade them off.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#假设检验</a>
+    </article>
+
+
+    <article class="qitem" id="44c2a3fe050e">
+      <h2 class="qz" lang="zh">生存分析研究什么？</h2>
+      <p class="qen" lang="en">What does survival analysis study?</p>
+      <div class="azh" lang="zh">生存分析处理“到某事件（如失效、死亡）的时间”，并处理删失数据（部分个体在研究结束时仍未发生事件）。常用 Kaplan-Meier 曲线与 Cox 比例风险模型。</div>
+      <div class="aen" lang="en">Survival analysis models time-to-event with censoring (some subjects never experience the event by study end); uses Kaplan–Meier curves and Cox models.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#生存分析</a>
+    </article>
+
+
+    <article class="qitem" id="6338da3ec96a">
+      <h2 class="qz" lang="zh">为什么很多测量数据会聚成一个“钟形”？</h2>
+      <p class="qen" lang="en">Why do many kinds of measurements bunch up in a bell shape?</p>
+      <div class="azh" lang="zh">身高、体重、测量误差等数据常围绕一个平均值铺开，中间高、两头低，形成钟形曲线，这就是正态分布。原因是这类数值往往是大量独立微小因素叠加的结果：根据中心极限定理，许多相互独立、方差有限的随机量相加，整体就近似服从正态分布，无论单个因素长什么样。它的形状只由平均值 μ 和标准差 σ 决定，约 68% 的数据落在 μ±σ 内，95% 落在 μ±2σ 内。</div>
+      <div class="aen" lang="en">Heights, weights, and measurement errors spread around a mean — high in the middle, low at both tails — tracing a bell-shaped curve, the normal distribution. The reason is that such values aggregate many small independent effects: by the central limit theorem, sums of many independent random quantities with finite variance are approximately normal regardless of their individual shapes. Its shape is set entirely by the mean μ and standard deviation σ, with about 68% of data within μ±σ and 95% within μ±2σ.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">吴军,《数学之美》第3版,人民邮电出版社,2020</p>
+        <p lang="en">Wu Jun, Beauty of Mathematics, 3rd ed., Posts &amp; Telecom Press, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35033507/" target="_blank" rel="noopener">核验依据 2 ISBN 9787115537973（豆瓣书目条目: 数学之美）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#正态分布</a> <a class="tag" href="#">#钟形曲线</a> <a class="tag" href="#">#标准差</a>
+    </article>
+
+
+    <article class="qitem" id="7122f343a4b0">
+      <h2 class="qz" lang="zh">什么是交叉验证？</h2>
+      <p class="qen" lang="en">What is cross-validation?</p>
+      <div class="azh" lang="zh">交叉验证把数据分成若干折，轮流用一部分训练、其余验证，以估计模型在未见数据上的表现。它能在不浪费数据的前提下检测过拟合。</div>
+      <div class="aen" lang="en">Cross-validation splits data into folds, training on some and testing on the rest in rotation, estimating performance on unseen data and detecting overfitting.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Efron, B. 与 Hastie, T., 《计算机时代的统计推断》, Cambridge University Press</p>
+        <p lang="en">Efron, B. &amp; Hastie, T., &#x27;Computer Age Statistical Inference&#x27;, Cambridge University Press</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#交叉验证</a>
+    </article>
+
+
+    <article class="qitem" id="8db96e18d340">
+      <h2 class="qz" lang="zh">质量检测中为什么常用“3σ 原则”作为控制线？</h2>
+      <p class="qen" lang="en">Why is the &quot;3-sigma rule&quot; commonly used as the control limit in quality inspection?</p>
+      <div class="azh" lang="zh">在统计过程控制（休哈特控制图）中，样本统计量（如每批的均值）在中心极限定理下近似服从正态分布，落在均值 ±3σ 之外的概率仅约 0.3%。因此控制图上的点一旦越出 3σ 线，就被视为过程可能失控的异常信号，提示需要停机检查，而不是随机波动。</div>
+      <div class="aen" lang="en">In statistical process control (Shewhart charts), sample statistics such as batch means are approximately normal by the central limit theorem, so falling beyond mean ±3σ has probability only about 0.3%. A point crossing the 3σ limit on a control chart is therefore treated as a signal of possible out-of-control process—an assignable cause to investigate, not random variation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#质量控制</a> <a class="tag" href="#">#休哈特控制图</a> <a class="tag" href="#">#3σ原则</a>
+    </article>
+
+
+    <article class="qitem" id="8e45d42b86b3">
+      <h2 class="qz" lang="zh">什么是 p 值？</h2>
+      <p class="qen" lang="en">What is a p-value?</p>
+      <div class="azh" lang="zh">p值是假设检验中“在零假设成立时观察到当前结果或更极端结果”的概率。p值很小，就更倾向于拒绝零假设。</div>
+      <div class="aen" lang="en">The p-value is the probability, under the null hypothesis, of results at least as extreme; a small p suggests rejecting the null.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#假设检验</a>
+    </article>
+
+
+    <article class="qitem" id="9d41d21e04a3">
+      <h2 class="qz" lang="zh">什么是置信区间？</h2>
+      <p class="qen" lang="en">What is a confidence interval?</p>
+      <div class="azh" lang="zh">置信区间给出未知参数一个可能的取值范围，并附置信水平（如95%）。它表达的是估计的不确定性，而非参数落在区间的概率。</div>
+      <div class="aen" lang="en">A confidence interval gives a plausible range for a parameter with a level (e.g. 95%), expressing estimation uncertainty.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#区间估计</a>
+    </article>
+
+
+    <article class="qitem" id="b147e7c28b87">
+      <h2 class="qz" lang="zh">什么是中位数？</h2>
+      <p class="qen" lang="en">What is the median?</p>
+      <div class="azh" lang="zh">中位数是把数据从小到大排列后位于正中间的数。它比平均数更不容易受极端值影响。</div>
+      <div class="aen" lang="en">The median is the middle value of sorted data, less affected by outliers than the mean.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#中位数</a>
+    </article>
+
+
+    <article class="qitem" id="b17fcf074ae8">
+      <h2 class="qz" lang="zh">为什么描述收入水平时，中位数常常比平均数更能代表“典型”？</h2>
+      <p class="qen" lang="en">Why is the median often more representative of a &quot;typical&quot; income than the mean?</p>
+      <div class="azh" lang="zh">平均数对每个数据一视同仁，少数极高的收入会把它拉得很高，掩盖大多数人的水平。中位数只关心排序后正中间的值，对极端值不敏感，因此更稳健。所以公布收入、房价这类偏斜分布的数据时，往往同时报告两者；两者差距越大，说明分布越偏斜。</div>
+      <div class="aen" lang="en">The mean treats every value equally, so a few extremely high incomes drag it upward and mask what most people earn. The median depends only on the middle value after sorting and is insensitive to outliers—more robust. That is why skewed data such as income or housing prices usually report both; a wider gap between them signals stronger skewness.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#中位数</a> <a class="tag" href="#">#平均数</a> <a class="tag" href="#">#稳健统计</a>
+    </article>
+
+
+    <article class="qitem" id="b49418691f0e">
+      <h2 class="qz" lang="zh">什么是抽样偏差？</h2>
+      <p class="qen" lang="en">What is sampling bias?</p>
+      <div class="azh" lang="zh">抽样偏差指样本不能代表总体，导致结论偏斜。例如只在网上调查会忽略不上网的人群，使结果失真。</div>
+      <div class="aen" lang="en">Sampling bias occurs when the sample misrepresents the population, e.g. online-only surveys miss non-internet users.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Wasserman, L., 《全部统计学》, Springer</p>
+        <p lang="en">Wasserman, L., &#x27;All of Statistics&#x27;, Springer</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#偏差</a>
+    </article>
+
+
+    <article class="qitem" id="b9e3b988cc47">
+      <h2 class="qz" lang="zh">相关关系等于因果关系吗？</h2>
+      <p class="qen" lang="en">Does correlation imply causation?</p>
+      <div class="azh" lang="zh">不等于。两个变量相关可能只是巧合或受第三因素驱动。例如冰淇淋销量与溺水人数同升，是因为夏天高温这个共同原因。</div>
+      <div class="aen" lang="en">No. Correlation may be coincidence or driven by a third factor; ice-cream sales and drownings both rise in hot weather.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pearl、Glymour 与 Jewell《Causal Inference in Statistics: A Primer》（Wiley）</p>
+        <p lang="en">Pearl, Glymour and Jewell, Causal Inference in Statistics: A Primer, Wiley</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Causal%20Inference%20in%20Statistics%3A%20A%20Primer" target="_blank" rel="noopener">核验依据 1 ISBN 978-1-119-18687-8 (2016, Wiley)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#相关</a>
+    </article>
+
+
+    <article class="qitem" id="d25e26e4693b">
+      <h2 class="qz" lang="zh">为什么抛硬币抛得越多，正面比例越接近 1/2？</h2>
+      <p class="qen" lang="en">Why does the proportion of heads get closer to 1/2 the more times you toss a coin?</p>
+      <div class="azh" lang="zh">每次抛掷独立且各有 1/2 概率，但大数定律说的是“比例”趋稳，不是“次数”扯平：抛 1 万次里正面比例通常离 0.5 很近，而偏差的绝对值反而可能更大。这个定律保证长期统计的稳定性，是保险公司和赌场“稳赚不赔”的数学依据。</div>
+      <div class="aen" lang="en">Each toss is independent with a 1/2 chance, but the law of large numbers stabilizes the proportion, not the count: over 10,000 tosses the head proportion is typically very close to 0.5, even while the absolute deviation can grow. This stability of long-run averages is the mathematics behind why insurers and casinos can count on the long run.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Grinstead, C. M. 与 Snell, J. L., 《概率导论》, 美国数学会 (AMS)</p>
+        <p lang="en">Grinstead, C. M. &amp; Snell, J. L., &#x27;Introduction to Probability&#x27;, American Mathematical Society</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Introduction+to+Probability" target="_blank" rel="noopener">核验依据 1 ISBN 9780821807491 (1997)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#大数定律</a> <a class="tag" href="#">#频率</a> <a class="tag" href="#">#长期平均</a>
+    </article>
+
+
+    <article class="qitem" id="dc87950e28fd">
+      <h2 class="qz" lang="zh">什么是 p 值操纵（p-hacking）？</h2>
+      <p class="qen" lang="en">What is p-hacking?</p>
+      <div class="azh" lang="zh">p-hacking 指不断尝试分组、变量或截止线直到得到显著 p 值（如 &lt;0.05）的做法。它让假阳性率飙升，是“可重复性危机”的重要来源。</div>
+      <div class="aen" lang="en">p-hacking tries many cuts/variables until p&lt;0.05 appears; it inflates false positives and is a major cause of the reproducibility crisis.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Open Science Collaboration（2015）《Science》重复百项心理学研究；Simmons、Nelson 与 Simonsohn（2011）《Psychological Science》假阳性心理学</p>
+        <p lang="en">Open Science Collaboration (2015), Science, Estimating the reproducibility of psychological science; Simmons, Nelson and Simonsohn (2011), Psychological Science, False-positive psychology</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1126/science.aac4716" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1126/science.aac4716：Estimating the repro</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#p值操纵</a>
+    </article>
+
+
+    <article class="qitem" id="f529d7ebf098">
+      <h2 class="qz" lang="zh">什么是回归分析？</h2>
+      <p class="qen" lang="en">What is regression analysis?</p>
+      <div class="azh" lang="zh">回归分析是给变量间的关系配一条能算的线：先假设因变量随自变量怎样变，再调参数让预测与观测整体最接近，常用最小二乘，即把各点竖直偏差的平方和调到最小。平方让偏得远的点更吃重，代价是个别异常值就能把线拖走。它给出自变量每增一个单位时因变量平均变多少，如用身高估体重；但它只描述共同变化，不证明因果，向样本范围外推也不可靠。</div>
+      <div class="aen" lang="en">Regression fits a calculable line to the relationship between variables: you propose how a dependent variable responds to the explanatory variables, then tune the parameters so that predictions match the observations as closely as possible overall, the standard choice being least squares, which drives the sum of the squared vertical deviations of the points to its minimum. Squaring puts heavier weight on the points that miss badly, and the price is that a few outliers can drag the whole line. What it delivers is the average change in the outcome for each unit change in the input, as when height is used to estimate weight; but it describes covariation only, it cannot prove cause, and extrapolating beyond the range the sample covers is unreliable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Legendre《Nouvelles méthodes》（1805）；Gauss《Theoria Motus》（1809）；Weisberg《Applied Linear Regression》</p>
+        <p lang="en">Legendre, Nouvelles méthodes (1805); Gauss, Theoria Motus (1809); Weisberg, Applied Linear Regression</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL5476057W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL5476057W：Applied linear regressi</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#回归</a>
+    </article>
+
+
+    <article class="qitem" id="math_20_007">
+      <h2 class="qz" lang="zh">极大似然估计在什么条件下相合且渐近正态？为什么它的渐近方差恰好是 Fisher 信息的倒数？</h2>
+      <p class="qen" lang="en">Under what conditions is a maximum likelihood estimator consistent and asymptotically normal, and why is its asymptotic variance exactly the inverse of the Fisher information?</p>
+      <div class="azh" lang="zh">在参数可识别、支撑集不随参数变化、对数似然二阶可微且求导与期望可交换等正则条件下，sqrt(n)·(θ_mle − θ0) 收敛到均值零、方差为 I(θ0)^(-1) 的正态分布，其中 I 为单次观测的 Fisher 信息。直观地说，Fisher 信息度量对数似然在真值附近的平均曲率：峰越尖，数据对参数的约束越强，估计越稳定。这也正是达到该方差的估计被称为渐近有效的原因。</div>
+      <div class="aen" lang="en">Under regularity conditions such as identifiability, parameter-independent support, a twice differentiable log-likelihood with differentiation interchangeable with expectation, sqrt(n)·(θ_mle − θ0) converges to a normal distribution with mean zero and variance I(θ0)^(-1), where I is the per-observation Fisher information. Intuitively, the Fisher information measures the average curvature of the log-likelihood near the true value: the sharper the peak, the more strongly the data pin down the parameter. This is why estimators attaining that variance are called asymptotically efficient.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella 与 Berger《Statistical Inference》第 2 版，Duxbury，2002，第 10.1 节（点估计的渐近评价）</p>
+        <p lang="en">George Casella and Roger L. Berger, Statistical Inference, 2nd ed., Duxbury, 2002, Sec. 10.1 (Asymptotic Evaluations)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计推断</a> <a class="tag" href="#">#极大似然估计</a>
+    </article>
+
+
+    <article class="qitem" id="math_20_015">
+      <h2 class="qz" lang="zh">看到 p=0.03,许多人会解读为『原假设有 97% 的概率不成立』,这个读法错在哪一步?p 值真正度量的是什么对象?</h2>
+      <p class="qen" lang="en">Confronted with p=0.03, many people read it as a 97% chance that the null hypothesis is false. At which step does that reading break down, and what object does a p-value actually measure?</p>
+      <div class="azh" lang="zh">p 值的定义是:在假定原假设成立的前提下,出现与手头数据同等极端或更极端结果的概率,即 P(数据至少这么极端 | H0 为真),它谈论数据而非假设本身。把它误读成 P(H0 为假 | 数据) 颠倒了条件化的方向,并悄悄掺入了两个假设各自的先验可信度,这正是所谓检察官谬误的统计版本。同一个 p=0.03 在不同先验与不同样本量之下对应的可信结论可以相去甚远,美国统计学会 2016 年的正式声明因此明确禁止将 p 值解释为原假设为真或为假的概率。</div>
+      <div class="aen" lang="en">By definition, a p-value is the probability, calculated assuming the null hypothesis holds, of obtaining results at least as extreme as those observed: P(data this extreme | H0 true) — a statement about the data, never about the hypothesis. Misreading it as P(H0 false | data) reverses the direction of conditioning and silently imports the prior plausibility of the competing hypotheses, the statistical face of the prosecutor&#x27;s fallacy. One and the same p = 0.03 supports wildly different conclusions under different priors and sample sizes, and the American Statistical Association&#x27;s 2016 formal statement accordingly forbids interpreting a p-value as the probability that the null hypothesis is true or false.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Casella, G. 与 Berger, R. L., 《统计推断》(第2版), Duxbury</p>
+        <p lang="en">Casella, G. &amp; Berger, R. L., &#x27;Statistical Inference&#x27; (2nd ed.), Duxbury</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Statistical+Inference" target="_blank" rel="noopener">核验依据 1 ISBN 9788131503942 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计推断</a> <a class="tag" href="#">#p值</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_007">
+      <h2 class="qz" lang="zh">单因素方差分析为什么要用“组间均方 / 组内均方”之比构造 F 统计量，而不是对每两组直接做 t 检验？</h2>
+      <p class="qen" lang="en">Why does one-way ANOVA construct its F statistic as the ratio of the between-group mean square to the within-group mean square, rather than running a t-test on every pair of groups?</p>
+      <div class="azh" lang="zh">方差分析把总变异分解为组间（处理效应）与组内（随机误差）两部分。原假设“各组均值相等”成立时，两种均方估计的是同一误差方差，比值服从 F 分布；处理若真有效应，组间项被抬高，F 随之增大。两两 t 检验要做 k(k-1)/2 次，即便每次水平仅 0.05，累计第一类错误率也急剧膨胀；F 检验一次给出整体结论，并以全部残差估计误差。</div>
+      <div class="aen" lang="en">ANOVA partitions total variability into a between-group part, which reflects treatment effects, and a within-group part, which reflects random error. Under the null hypothesis of equal group means, both mean squares estimate the same error variance, so their ratio follows an F distribution; if a treatment genuinely works, the between-group term inflates and F grows. Pairwise t-tests across k groups require k(k-1)/2 comparisons, and even at level 0.05 apiece the family-wise Type I error rate balloons. A single F test controls that overall rate while estimating error variance from all residuals at once.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">D. C. Montgomery《实验设计与分析》第8版 (Design and Analysis of Experiments)，John Wiley &amp; Sons，2013。</p>
+        <p lang="en">D. C. Montgomery, Design and Analysis of Experiments, 8th edition, John Wiley &amp; Sons, 2013.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1942890W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL1942890W：Design and analysis of </a></p>
+        
+      </details>
+      <a class="tag" href="#">#实验设计</a> <a class="tag" href="#">#方差分析</a> <a class="tag" href="#">#F检验</a> <a class="tag" href="#">#多重比较</a>
+    </article>
+
+
+    <article class="qitem" id="math_23_015">
+      <h2 class="qz" lang="zh">随机化区组设计中，为什么按已知的干扰来源划分区组能提高处理间比较的精度？这种设计何时反而不如同等规模的完全随机设计？</h2>
+      <p class="qen" lang="en">In a randomized block design, why does grouping experimental units by a known nuisance source improve the precision of treatment comparisons, and when does the design fare worse than a completely randomized one of equal size?</p>
+      <div class="azh" lang="zh">把地块、批次、试验日等干扰来源划成内部均匀的区组，并在区组内随机分配处理，使处理比较都在同一区组内进行，区组间差异由此从误差项中剥离；误差平方和随之缩小，标准误变小，检验更灵敏。代价是比同等规模的完全随机设计少 b−1 个误差自由度，只有当区组间差异明显大于区内随机波动时，这一交换才划算。</div>
+      <div class="aen" lang="en">Nuisance sources such as plots, batches, or testing days are divided into internally homogeneous blocks, and treatments are randomized within each block, so every treatment comparison happens inside a block while block-to-block variation is stripped out of the error term. The error sum of squares shrinks accordingly, standard errors of treatment means fall, and tests gain power. The cost is b−1 fewer error degrees of freedom than a completely randomized design of equal size; the trade pays off only when genuine block differences clearly exceed within-block noise.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Montgomery, D. C.，《实验设计与分析》(Design and Analysis of Experiments)，第8版，Wiley，2013年。</p>
+        <p lang="en">Montgomery, D. C., Design and Analysis of Experiments, 8th ed., Wiley, 2013.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL1942890W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL1942890W：Design and analysis of </a></p>
+        
+      </details>
+      <a class="tag" href="#">#随机化区组设计</a> <a class="tag" href="#">#方差分析</a> <a class="tag" href="#">#实验误差</a>
+    </article>
+
+
+    <article class="qitem" id="14a266ad26fa">
+      <h2 class="qz" lang="zh">什么是数据？</h2>
+      <p class="qen" lang="en">What is data?</p>
+      <div class="azh" lang="zh">数据是用数字或符号记录下来的事实与观察，例如温度、人数、得分。把数据整理好，就能发现规律和做决定。</div>
+      <div class="aen" lang="en">Data are recorded facts and observations like temperatures or scores; organized well, they reveal patterns for decisions.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#基础</a>
+    </article>
+
+
+    <article class="qitem" id="1c09d395e9cb">
+      <h2 class="qz" lang="zh">什么是众数？</h2>
+      <p class="qen" lang="en">What is the mode?</p>
+      <div class="azh" lang="zh">众数是一组数据中出现次数最多的数值。例如 1、2、2、3 的众数是 2。</div>
+      <div class="aen" lang="en">The mode is the most frequently occurring value; in 1,2,2,3 the mode is 2.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#众数</a>
+    </article>
+
+
+    <article class="qitem" id="63d8ddfd9852">
+      <h2 class="qz" lang="zh">什么是统计图表？</h2>
+      <p class="qen" lang="en">What are statistical charts?</p>
+      <div class="azh" lang="zh">统计图表（如条形图、折线图、饼图）把数据变成图形，便于比较大小和发现规律。</div>
+      <div class="aen" lang="en">Statistical charts (bar, line, pie) turn data into visuals for easy comparison.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#图表</a>
+    </article>
+
+
+    <article class="qitem" id="66d12a9b3cf9">
+      <h2 class="qz" lang="zh">什么是平均数？</h2>
+      <p class="qen" lang="en">What is the average (mean)?</p>
+      <div class="azh" lang="zh">平均数是把所有数值相加再除以个数，反映一组数据的集中水平。例如 2、4、6 的平均数是 (2+4+6)/3 = 4。</div>
+      <div class="aen" lang="en">The mean sums values and divides by count; for 2,4,6 the mean is 4.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#平均数</a>
+    </article>
+
+
+    <article class="qitem" id="94065a876e1e">
+      <h2 class="qz" lang="zh">什么是极差？</h2>
+      <p class="qen" lang="en">What is the range?</p>
+      <div class="azh" lang="zh">极差是一组数据中最大值减最小值，反映数据的跨度。例如 3、7、9 的极差是 9−3 = 6。</div>
+      <div class="aen" lang="en">The range is the max minus the min, showing spread; for 3,7,9 the range is 9−3=6.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《概率论与数理统计》</p>
+        <p lang="en">Probability Theory and Mathematical Statistics (《概率论与数理统计》)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/2201479/" target="_blank" rel="noopener">核验依据 1 ISBN 9787312018381（豆瓣书目条目: 概率论与数理统计）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#统计</a> <a class="tag" href="#">#离散程度</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control Engineering control-engineering · 工程技术 Engineering | 问答</title>
+<meta name="description" content="Control Engineering（工程技术）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Control Engineering control-engineering · 工程技术 Engineering | 问答">
+<meta property="og:description" content="Control Engineering（工程技术）分类下的 20 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 20 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/control-engineering/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/control-engineering/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>Control Engineering</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Control Engineering <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>20</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#118668897d92">什么是『自适应控制』？</a></li><li><a href="#19d064332149">PID控制器中的比例、积分、微分各解决什么问题？</a></li><li><a href="#1eac978c252b">控制中的『鲁棒性』是什么？</a></li><li><a href="#4ea72fc8bfb6">什么是鲁棒控制，它解决什么问题？</a></li><li><a href="#5fe75aff7a57">奈奎斯特稳定判据是怎样只用开环数据判断闭环稳定性的？</a></li><li><a href="#78b7354c4f6f">什么是“负反馈”？它为何能提升系统的稳定性与精度？</a></li><li><a href="#86efdb08d3b4">什么是状态空间法，它适合控制什么系统？</a></li><li><a href="#e85e0dcda989">卡尔曼滤波在工程中如何估计无法直接测量的状态？</a></li><li><a href="#1b6b26de8372">控制系统中的『传感器』和『执行器』分别做什么？</a></li><li><a href="#2344a1278af2">什么是“状态空间”模型？它与传递函数有何不同？</a></li><li><a href="#2c81cfbf3e1a">什么是比例-积分-微分（PID）控制的三个作用？</a></li><li><a href="#6e77b4c2098d">什么是反馈，它为什么能让系统稳定？</a></li><li><a href="#a92e047be9fd">什么是PLC，它在工业中做什么？</a></li><li><a href="#da3fff47fd9e">控制里说的系统『稳定』是什么意思？</a></li><li><a href="#03a8eac3405a">自动调温器里的『反馈控制』是怎么工作的？</a></li><li><a href="#32c96b3d7c97">什么是执行机构？</a></li><li><a href="#751f9774b845">什么是传感器？</a></li><li><a href="#8f504f1257dc">什么是自动控制系统？</a></li><li><a href="#cd54ff1fd271">什么是开环控制和闭环控制？</a></li><li><a href="#eba580e662fa">『开环控制』和『闭环控制』有什么差别？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="118668897d92">
+      <h2 class="qz" lang="zh">什么是『自适应控制』？</h2>
+      <p class="qen" lang="en">What is &#x27;adaptive control&#x27;?</p>
+      <div class="azh" lang="zh">自适应控制在运行中在线估计系统参数并自动调整控制器，使对象特性随时间或工况变化时仍保持良好表现，常用于飞行器、机器人和工况多变的工业过程。</div>
+      <div class="aen" lang="en">Adaptive control estimates parameters online and retunes itself during operation, keeping performance as the plant changes over time or conditions—used in flight, robotics, and varying industrial processes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#自适应</a> <a class="tag" href="#">#在线</a> <a class="tag" href="#">#参数</a>
+    </article>
+
+
+    <article class="qitem" id="19d064332149">
+      <h2 class="qz" lang="zh">PID控制器中的比例、积分、微分各解决什么问题？</h2>
+      <p class="qen" lang="en">What do the proportional, integral, and derivative terms in a PID controller each address?</p>
+      <div class="azh" lang="zh">比例项按当前误差大小给出纠正力度；积分项累计历史误差以消除稳态余差；微分项依据误差变化率提前抑制超调。三者配合可在多数过程控制中取得平稳响应。</div>
+      <div class="aen" lang="en">The proportional term reacts to current error; the integral accumulates past error to wipe steady-state offset; the derivative anticipates via error rate to curb overshoot. Together they give smooth control in many processes.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">K. Ogata,《现代控制工程》第5版,Pearson,2010,PID控制章节</p>
+        <p lang="en">K. Ogata, Modern Control Engineering, 5th ed., Pearson, 2010, PID control chapter</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PID</a> <a class="tag" href="#">#比例</a> <a class="tag" href="#">#积分</a> <a class="tag" href="#">#微分</a>
+    </article>
+
+
+    <article class="qitem" id="1eac978c252b">
+      <h2 class="qz" lang="zh">控制中的『鲁棒性』是什么？</h2>
+      <p class="qen" lang="en">What is &#x27;robustness&#x27; in control?</p>
+      <div class="azh" lang="zh">鲁棒性指控制器在模型不准、参数漂移或存在外界扰动时仍能保持良好性能的能力。设计鲁棒控制器就是要让系统在不确定性下也不易失稳或失效。</div>
+      <div class="aen" lang="en">Robustness is a controller&#x27;s ability to keep performing well despite model error, parameter drift, or disturbances. Robust design keeps the system stable and effective under uncertainty.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#鲁棒性</a> <a class="tag" href="#">#不确定性</a> <a class="tag" href="#">#扰动</a>
+    </article>
+
+
+    <article class="qitem" id="4ea72fc8bfb6">
+      <h2 class="qz" lang="zh">什么是鲁棒控制，它解决什么问题？</h2>
+      <p class="qen" lang="en">What is robust control and what problem does it solve?</p>
+      <div class="azh" lang="zh">鲁棒控制研究当系统存在模型误差、参数漂移和外部扰动时仍能保持性能的控制设计方法。它不依赖精确模型，适合航空航天、过程和机器人等不确定性强的场合。</div>
+      <div class="aen" lang="en">Robust control designs controllers that keep performance despite model error, parameter drift, and external disturbances. It does not rely on an exact model and suits aerospace, process, and robotics applications with strong uncertainty.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#鲁棒</a> <a class="tag" href="#">#不确定性</a> <a class="tag" href="#">#扰动</a>
+    </article>
+
+
+    <article class="qitem" id="5fe75aff7a57">
+      <h2 class="qz" lang="zh">奈奎斯特稳定判据是怎样只用开环数据判断闭环稳定性的？</h2>
+      <p class="qen" lang="en">How does the Nyquist stability criterion judge closed-loop stability from open-loop data alone?</p>
+      <div class="azh" lang="zh">奈奎斯特判据看开环频率响应的复平面轨迹如何绕过点 (-1,0)，结合右半平面开环极点数判断闭环是否稳定，无需先求出闭环特征方程。它在存在时延和不确定时尤其有用。Nyquist 在 1932 年提出这一思想。</div>
+      <div class="aen" lang="en">The Nyquist criterion looks at how the open-loop frequency-response locus encircles the point (-1,0) and, with the count of right-half-plane open-loop poles, decides closed-loop stability without solving the characteristic equation. It is valuable when delays and uncertainty are present. Nyquist proposed it in 1932.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nyquist《再生理论》(Bell System Tech J, 1932)；Ogata《现代控制工程》(Modern Control Engineering)</p>
+        <p lang="en">Nyquist, &#x27;Regeneration theory&#x27; (Bell System Tech J, 1932); Ogata, &#x27;Modern Control Engineering&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）；本条出处含多部著作，此标识只担保上面点名的</a> · <a class="evlink" href="https://openlibrary.org/works/OL2717669W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL2717669W：Modern control engineer</a></p>
+        
+      </details>
+      <a class="tag" href="#">#奈奎斯特</a> <a class="tag" href="#">#稳定判据</a> <a class="tag" href="#">#频率响应</a> <a class="tag" href="#">#闭环</a>
+    </article>
+
+
+    <article class="qitem" id="78b7354c4f6f">
+      <h2 class="qz" lang="zh">什么是“负反馈”？它为何能提升系统的稳定性与精度？</h2>
+      <p class="qen" lang="en">What is negative feedback, and why does it improve a system&#x27;s stability and accuracy?</p>
+      <div class="azh" lang="zh">负反馈把输出的一部分减去后送回输入端，从而减小对参数变化的敏感度、拓宽带宽并降低失真。但若相位滞后过大则可能引发振荡，需用奈奎斯特/伯德判据分析稳定性。</div>
+      <div class="aen" lang="en">Negative feedback subtracts a portion of the output from the input, reducing sensitivity to parameter variations, widening bandwidth, and lowering distortion. But excessive phase lag can cause oscillation, so stability is analyzed with Nyquist or Bode criteria.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEEE 控制系统学会；Franklin, Powell &amp; Emami-Naeini《动态系统的反馈控制》</p>
+        <p lang="en">IEEE Control Systems Society; Franklin, Powell &amp; Emami-Naeini, &#x27;Feedback Control of Dynamic Systems&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL2716594W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL2716594W：Feedback control of dyn</a></p>
+        
+      </details>
+      <a class="tag" href="#">#负反馈</a> <a class="tag" href="#">#稳定性</a> <a class="tag" href="#">#带宽</a> <a class="tag" href="#">#奈奎斯特判据</a>
+    </article>
+
+
+    <article class="qitem" id="86efdb08d3b4">
+      <h2 class="qz" lang="zh">什么是状态空间法，它适合控制什么系统？</h2>
+      <p class="qen" lang="en">What is the state-space method and what systems is it suited for?</p>
+      <div class="azh" lang="zh">状态空间法用一组一阶微分方程描述系统内部状态，并写成矩阵形式进行设计和分析。它能方便地处理多输入多输出、时变和非线性系统，是现代控制理论的核心工具。</div>
+      <div class="aen" lang="en">The state-space method describes a system&#x27;s internal states with first-order differential equations in matrix form for design and analysis. It readily handles multiple-input multiple-output, time-varying, and nonlinear systems and is central to modern control theory.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#状态空间</a> <a class="tag" href="#">#多变量</a> <a class="tag" href="#">#现代控制</a>
+    </article>
+
+
+    <article class="qitem" id="e85e0dcda989">
+      <h2 class="qz" lang="zh">卡尔曼滤波在工程中如何估计无法直接测量的状态？</h2>
+      <p class="qen" lang="en">How does the Kalman filter estimate states that cannot be measured directly?</p>
+      <div class="azh" lang="zh">它以系统状态方程和带噪声的量测为输入，每步先由模型预测、再用新量测做最优加权修正，递推得到均值与协方差最小均方误差估计。广泛用于导航、制导和信号去噪。</div>
+      <div class="aen" lang="en">Given a state model and noisy measurements, it predicts forward each step then optimally blends the new measurement, yielding a minimum-variance estimate of the mean and covariance recursively. It is widely used in navigation, guidance, and denoising.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kalman《线性滤波与预测问题的新方法》(Journal of Basic Engineering, 1960)；Maybeck《随机模型、估计与控制》(Stochastic Models, Estimation, and Control, 1979)</p>
+        <p lang="en">Kalman, &#x27;A New Approach to Linear Filtering and Prediction Problems&#x27; (Journal of Basic Engineering, 1960); Maybeck, &#x27;Stochastic Models, Estimation, and Control&#x27; (1979)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1115/1.3662552" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1115/1.3662552：A New Approach to Linear F</a></p>
+        
+      </details>
+      <a class="tag" href="#">#卡尔曼滤波</a> <a class="tag" href="#">#状态估计</a> <a class="tag" href="#">#最小均方</a> <a class="tag" href="#">#递推</a>
+    </article>
+
+
+    <article class="qitem" id="1b6b26de8372">
+      <h2 class="qz" lang="zh">控制系统中的『传感器』和『执行器』分别做什么？</h2>
+      <p class="qen" lang="en">What do &#x27;sensors&#x27; and &#x27;actuators&#x27; do in a control system?</p>
+      <div class="azh" lang="zh">传感器相当于系统的感官，把温度、位置、压力等物理量转成电信号供控制器读取；执行器相当于手脚，把控制器的电信号变成动作，如电机转动或阀门开合。</div>
+      <div class="aen" lang="en">Sensors are the senses, converting temperature, position, pressure into signals the controller reads; actuators are the limbs, turning control signals into action like motor motion or valve movement.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#传感器</a> <a class="tag" href="#">#执行器</a> <a class="tag" href="#">#信号</a>
+    </article>
+
+
+    <article class="qitem" id="2344a1278af2">
+      <h2 class="qz" lang="zh">什么是“状态空间”模型？它与传递函数有何不同？</h2>
+      <p class="qen" lang="en">What is a state-space model, and how does it differ from a transfer function?</p>
+      <div class="azh" lang="zh">状态空间用一组一阶微分方程 x&#x27; = Ax + Bu、y = Cx + Du 描述系统，可处理多输入多输出、非线性与任意初始条件。传递函数是线性时不变系统的频域输入输出比值，通常只适用于单输入单输出。</div>
+      <div class="aen" lang="en">State space describes a system by first-order equations x&#x27; = Ax + Bu and y = Cx + Du, handling MIMO, nonlinear, and arbitrary initial conditions. A transfer function is the frequency-domain input-output ratio of a linear time-invariant system and is usually limited to SISO.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ogata《现代控制工程》；IEEE 控制系统学会</p>
+        <p lang="en">Ogata, &#x27;Modern Control Engineering&#x27;; IEEE Control Systems Society</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1016/c2013-0-05616-2" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1016/c2013-0-05616-2：Modern Control Engin</a></p>
+        
+      </details>
+      <a class="tag" href="#">#状态空间</a> <a class="tag" href="#">#传递函数</a> <a class="tag" href="#">#MIMO</a> <a class="tag" href="#">#线性时不变</a>
+    </article>
+
+
+    <article class="qitem" id="2c81cfbf3e1a">
+      <h2 class="qz" lang="zh">什么是比例-积分-微分（PID）控制的三个作用？</h2>
+      <p class="qen" lang="en">What are the three actions of PID control?</p>
+      <div class="azh" lang="zh">比例项按当前误差大小快速响应，积分项消除长期稳态误差，微分项根据误差变化速度提前抑制超调。三者配合能在速度和稳定之间取得良好平衡。</div>
+      <div class="aen" lang="en">The proportional term responds quickly to the current error, the integral term removes long-term steady error, and the derivative term anticipates overshoot by the error&#x27;s rate of change. Together they balance speed and stability well.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PID</a> <a class="tag" href="#">#比例</a> <a class="tag" href="#">#积分</a> <a class="tag" href="#">#微分</a>
+    </article>
+
+
+    <article class="qitem" id="6e77b4c2098d">
+      <h2 class="qz" lang="zh">什么是反馈，它为什么能让系统稳定？</h2>
+      <p class="qen" lang="en">What is feedback and why does it stabilize a system?</p>
+      <div class="azh" lang="zh">反馈是把系统输出的一部分送回输入端，与设定目标比较产生纠正动作。负反馈能抵消偏离，使温度、速度等保持在目标附近，是大多数稳定控制的基础。</div>
+      <div class="aen" lang="en">Feedback sends part of a system&#x27;s output back to its input to compare with the target and produce correction. Negative feedback counteracts deviation, holding temperature, speed, and the like near the goal, the basis of most stable control.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反馈</a> <a class="tag" href="#">#负反馈</a> <a class="tag" href="#">#稳定</a>
+    </article>
+
+
+    <article class="qitem" id="a92e047be9fd">
+      <h2 class="qz" lang="zh">什么是PLC，它在工业中做什么？</h2>
+      <p class="qen" lang="en">What is a PLC and what does it do in industry?</p>
+      <div class="azh" lang="zh">PLC（可编程逻辑控制器）是专为工业环境设计的耐用计算机，按编写的逻辑循环扫描输入并控制输出。它广泛用于流水线、机床和楼宇设备的自动顺序控制。</div>
+      <div class="aen" lang="en">A PLC (Programmable Logic Controller) is a rugged computer built for industrial settings that scans inputs and controls outputs by written logic in cycles. It is widely used for automated sequence control of production lines, machines, and building equipment.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IEC 61131-3（PLC）；ISO 3691-4（AGV 安全）；Groover《自动化生产系统》</p>
+        <p lang="en">IEC 61131-3 (PLC); ISO 3691-4 (AGV safety); Groover, Automation, Production Systems, and Computer-Integrated Manufacturing</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL3752129W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL3752129W：Automation, Production </a></p>
+        
+      </details>
+      <a class="tag" href="#">#PLC</a> <a class="tag" href="#">#可编程</a> <a class="tag" href="#">#工业控制</a>
+    </article>
+
+
+    <article class="qitem" id="da3fff47fd9e">
+      <h2 class="qz" lang="zh">控制里说的系统『稳定』是什么意思？</h2>
+      <p class="qen" lang="en">What does &#x27;stability&#x27; of a system mean in control?</p>
+      <div class="azh" lang="zh">稳定指系统受扰动偏离平衡后，能在有限时间内回到或接近原状态；不稳定则会持续发散或振荡。稳定性是控制器设计首先要保证的性质。</div>
+      <div class="aen" lang="en">Stability means a system perturbed from equilibrium returns or stays near it in finite time; instability means it diverges or oscillates without bound. It is the first property a controller must guarantee.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#稳定性</a> <a class="tag" href="#">#扰动</a> <a class="tag" href="#">#平衡</a>
+    </article>
+
+
+    <article class="qitem" id="03a8eac3405a">
+      <h2 class="qz" lang="zh">自动调温器里的『反馈控制』是怎么工作的？</h2>
+      <p class="qen" lang="en">How does &#x27;feedback control&#x27; work in a thermostat?</p>
+      <div class="azh" lang="zh">反馈控制不断测量实际温度并与设定值比较，用差值去调节加热器或空调，使温度回到目标附近。因为依据结果修正，所以能抵消干扰、保持稳态。</div>
+      <div class="aen" lang="en">Feedback control keeps measuring the actual temperature against the setpoint and uses the error to adjust the heater or cooler, holding the target. Correcting by result rejects disturbances.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反馈</a> <a class="tag" href="#">#控制</a> <a class="tag" href="#">#设定值</a>
+    </article>
+
+
+    <article class="qitem" id="32c96b3d7c97">
+      <h2 class="qz" lang="zh">什么是执行机构？</h2>
+      <p class="qen" lang="en">What is an actuator in control systems?</p>
+      <div class="azh" lang="zh">执行机构接收控制器的指令，直接对受控对象施加动作，比如电动机、阀门和液压缸。它把微弱的控制信号变成实际的力或运动，是控制的“手脚”。</div>
+      <div class="aen" lang="en">An actuator receives commands from the controller and acts directly on the controlled object, such as motors, valves, and hydraulic cylinders. It turns weak control signals into real force or motion, the hands and feet of control.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#执行机构</a> <a class="tag" href="#">#阀门</a> <a class="tag" href="#">#电机</a>
+    </article>
+
+
+    <article class="qitem" id="751f9774b845">
+      <h2 class="qz" lang="zh">什么是传感器？</h2>
+      <p class="qen" lang="en">What is a sensor?</p>
+      <div class="azh" lang="zh">传感器是把温度、光、压力等物理量转换成电信号的装置，相当于系统的“感觉器官”。手机里的加速度计、温度计里的热敏电阻都是传感器。</div>
+      <div class="aen" lang="en">A sensor converts physical quantities like temperature, light, and pressure into electrical signals, acting as a system&#x27;s sense organ. The accelerometer in a phone and the thermistor in a thermometer are both sensors.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学低段(6-8)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">W. Bolton,《Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering》第7版,Pearson</p>
+        <p lang="en">W. Bolton, Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering, 7th ed., Pearson</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Mechatronics:+Electronic+Control+Systems+in+Mechanical+and+Electrical+Engineering" target="_blank" rel="noopener">核验依据 1 ISBN 9780582256347 (2008)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#传感器</a> <a class="tag" href="#">#信号</a> <a class="tag" href="#">#测量</a>
+    </article>
+
+
+    <article class="qitem" id="8f504f1257dc">
+      <h2 class="qz" lang="zh">什么是自动控制系统？</h2>
+      <p class="qen" lang="en">What is an automatic control system?</p>
+      <div class="azh" lang="zh">自动控制系统能在没有人持续干预下，根据测量结果自动调节设备以达到设定目标。空调恒温、电饭煲控温都是常见的闭环控制例子。</div>
+      <div class="aen" lang="en">An automatic control system adjusts a device to a set goal based on measurements, without continuous human intervention. Thermostat air conditioning and rice-cooker temperature control are common closed-loop examples.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#控制</a> <a class="tag" href="#">#自动化</a> <a class="tag" href="#">#反馈</a>
+    </article>
+
+
+    <article class="qitem" id="cd54ff1fd271">
+      <h2 class="qz" lang="zh">什么是开环控制和闭环控制？</h2>
+      <p class="qen" lang="en">What are open-loop and closed-loop control?</p>
+      <div class="azh" lang="zh">开环控制按固定程序输出而不检查实际结果，比如定时开关的路灯。闭环控制不断测量输出并和设定值比较来纠正偏差，比如空调根据室温自动调节。</div>
+      <div class="aen" lang="en">Open-loop control acts by a fixed program without checking the actual result, like a timer-switch streetlight. Closed-loop control keeps measuring the output and compares it with the setpoint to correct error, like an air conditioner adjusting to room temperature.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开环</a> <a class="tag" href="#">#闭环</a> <a class="tag" href="#">#反馈</a>
+    </article>
+
+
+    <article class="qitem" id="eba580e662fa">
+      <h2 class="qz" lang="zh">『开环控制』和『闭环控制』有什么差别？</h2>
+      <p class="qen" lang="en">What is the difference between open-loop and closed-loop control?</p>
+      <div class="azh" lang="zh">开环控制按预定指令执行、不测输出，简单但不抗干扰；闭环控制测输出并反馈比较，能自动纠偏，所以多数精密系统用闭环。</div>
+      <div class="aen" lang="en">Open-loop acts on preset commands without measuring output—simple but disturbance-prone. Closed-loop measures output and feeds it back to correct, so precision systems use it.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">David Macaulay,《The Way Things Work》,Houghton Mifflin,1988;中译《万物运转的秘密》</p>
+        <p lang="en">D. Macaulay, The Way Things Work, Houghton Mifflin, 1988; Chinese ed.</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL15130328W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL15130328W：The Way Things Work（按标</a></p>
+        
+      </details>
+      <a class="tag" href="#">#开环</a> <a class="tag" href="#">#闭环</a> <a class="tag" href="#">#反馈</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

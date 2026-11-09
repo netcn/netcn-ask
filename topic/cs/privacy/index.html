@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>privacy · 计算机 Computer Science | 问答</title>
+<meta name="description" content="privacy（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="privacy · 计算机 Computer Science | 问答">
+<meta property="og:description" content="privacy（计算机）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/privacy/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>privacy</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>privacy <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#0458a7cf727a">安全多方计算（MPC）的威胁模型假设了什么？</a></li><li><a href="#9b2824dd3618">同态加密允许在密文上做哪些计算？</a></li><li><a href="#7e694b97d29f">联邦学习怎么做到不把本地数据传出去也能训练模型？</a></li><li><a href="#a90ee630423c">差分隐私是如何用数学方式保护个人数据的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="0458a7cf727a">
+      <h2 class="qz" lang="zh">安全多方计算（MPC）的威胁模型假设了什么？</h2>
+      <p class="qen" lang="en">What does the threat model of secure multi-party computation (MPC) assume?</p>
+      <div class="azh" lang="zh">MPC 假设参与方互不信任，但其中最多有 t 个（可设）会作恶或串谋；它保证即使这些恶意方合谋，也学不到其他方的私输入，只能得到约定的计算结果。它不抵抗所有方一起作弊。</div>
+      <div class="aen" lang="en">MPC assumes mutually distrusting parties where at most t (a chosen threshold) may cheat or collude; it guarantees they learn nothing beyond the agreed result even if they collude, but cannot stop everyone cheating together.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Goldwasser、Micali 与 Rackoff《交互式证明系统的知识复杂度》(SIAM Journal on Computing, 1985)；Katz 与 Lindell《现代密码学引论》</p>
+        <p lang="en">Goldwasser, Micali &amp; Rackoff, &#x27;The Knowledge Complexity of Interactive Proof Systems&#x27; (SIAM Journal on Computing, 1985); Katz &amp; Lindell, &#x27;Introduction to Modern Cryptography&#x27;</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL508869W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL508869W：Introduction to modern c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#MPC</a> <a class="tag" href="#">#安全</a>
+    </article>
+
+
+    <article class="qitem" id="9b2824dd3618">
+      <h2 class="qz" lang="zh">同态加密允许在密文上做哪些计算？</h2>
+      <p class="qen" lang="en">What computations does homomorphic encryption allow on ciphertext?</p>
+      <div class="azh" lang="zh">同态加密让你可以直接对加密数据做加法、乘法等运算，得到的结果解密后等于对明文做同样运算的结果。这样云服务器能在看不到原始数据的情况下完成计算，典型应用如加密的投票统计或隐私查询。</div>
+      <div class="aen" lang="en">Homomorphic encryption lets you add or multiply encrypted data so that decrypting the result equals doing the same op on plaintext. A server can compute without seeing the data—e.g. tallying encrypted votes or private queries.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Gentry, A Fully Homomorphic Encryption Scheme, PhD Thesis, Stanford 2009</p>
+        <p lang="en">Gentry, A Fully Homomorphic Encryption Scheme, PhD Thesis, Stanford 2009</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#同态加密</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="7e694b97d29f">
+      <h2 class="qz" lang="zh">联邦学习怎么做到不把本地数据传出去也能训练模型？</h2>
+      <p class="qen" lang="en">How does federated learning train without sending local data out?</p>
+      <div class="azh" lang="zh">各设备先用本地数据训练模型，只把更新后的参数或梯度（而非原始数据）加密上传，服务器聚合成一个更好的全局模型再下发。原始数据始终留在设备上，从而保护隐私。</div>
+      <div class="aen" lang="en">Each device trains locally and uploads only model updates or gradients—not raw data—which the server aggregates into a better global model and sends back. Raw data never leaves the device.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《Federated Learning: Collaborative Machine Learning Without Data Sharing》,Journal of Computational Analysis and Applications,2025 (DOI: 10.48047/jocaaa.2025.34.12.02)</p>
+        <p lang="en">&#x27;Federated Learning: Collaborative Machine Learning Without Data Sharing&#x27;, Journal of Computational Analysis and Applications, 2025, DOI: 10.48047/jocaaa.2025.34.12.02</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.48047/jocaaa.2025.34.12.02" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.48047/jocaaa.2025.34.12.02：Federated Lear</a></p>
+        
+      </details>
+      <a class="tag" href="#">#联邦学习</a> <a class="tag" href="#">#隐私</a>
+    </article>
+
+
+    <article class="qitem" id="a90ee630423c">
+      <h2 class="qz" lang="zh">差分隐私是如何用数学方式保护个人数据的？</h2>
+      <p class="qen" lang="en">How does differential privacy mathematically protect individuals?</p>
+      <div class="azh" lang="zh">差分隐私在统计结果里加入经过标定的随机噪声，使得任何单条记录“在或不在”数据集中都不会显著改变输出。这样即使攻击者拿到结果，也难以反推出某个具体人的信息，并用参数 ε 控制泄露程度。</div>
+      <div class="aen" lang="en">Differential privacy adds carefully calibrated random noise so that any single record&#x27;s presence barely changes the output. An attacker seeing the result can&#x27;t pin down one person, with a parameter ε bounding the leakage.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Dwork 与 Roth,《The Algorithmic Foundations of Differential Privacy》,Foundations and Trends® in Theoretical Computer Science,2014 (DOI: 10.1561/0400000042)</p>
+        <p lang="en">Dwork, C. &amp; Roth, A., &#x27;The Algorithmic Foundations of Differential Privacy&#x27;, Foundations and Trends® in Theoretical Computer Science, 2014, DOI: 10.1561/0400000042</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1561/0400000042" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1561/0400000042</a></p>
+        
+      </details>
+      <a class="tag" href="#">#差分隐私</a> <a class="tag" href="#">#噪声</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

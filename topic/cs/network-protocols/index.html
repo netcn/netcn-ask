@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>network-protocols · 计算机 Computer Science | 问答</title>
+<meta name="description" content="network-protocols（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="network-protocols · 计算机 Computer Science | 问答">
+<meta property="og:description" content="network-protocols（计算机）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/network-protocols/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/network-protocols/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>network-protocols</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>network-protocols <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>11</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#dbe243223054">TCP 的慢启动阶段是如何逐步扩大拥塞窗口的?</a></li><li><a href="#f468c84344dc">当 IP 数据包超过链路 MTU 时，网络层如何处理分片与重组?</a></li><li><a href="#1dcbf950d78e">UDP 与 TCP 在传输特性上的关键差异是什么?</a></li><li><a href="#3dcb37f9bff0">为什么 TCP 建立连接需要三次握手而不是两次?</a></li><li><a href="#5b236115fbb7">HTTP 状态码的五大类别各自代表什么含义?</a></li><li><a href="#79e1fc46bcdd">在浏览器地址栏输入网址并回车后，大致会经历哪些步骤?</a></li><li><a href="#c77322b3dc7f">NAT 是什么，为什么需要它？</a></li><li><a href="#cs_21_002">建立 TCP 连接为什么需要三次握手而不是两次?省略最后一次 ACK 会带来什么</a></li><li><a href="#cs_21_010">TCP 为何选择加性增、乘性减(AIMD)作为拥塞控制骨架?快速重传相对等待 R</a></li><li><a href="#cs_21_018">TCP 靠哪些机制保证可靠传输?四次挥手为什么需要四个报文,主动关闭方为何还要在</a></li><li><a href="#eddfd9b5a0fc">HTTPS 相比 HTTP 在安全性上主要增加了什么机制?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="dbe243223054">
+      <h2 class="qz" lang="zh">TCP 的慢启动阶段是如何逐步扩大拥塞窗口的?</h2>
+      <p class="qen" lang="en">How does TCP&#x27;s slow-start phase gradually grow the congestion window?</p>
+      <div class="azh" lang="zh">连接初始拥塞窗口很小，每当接收到一个确认就把拥塞窗口增加一个报文段，使窗口随往返次数呈指数增长。当窗口达到慢启动阈值或检测到丢包时，算法转入拥塞避免阶段改为线性增长。</div>
+      <div class="aen" lang="en">The connection starts with a small congestion window and increments it by one segment for each acknowledgment received, so the window grows exponentially with each round trip. Once the window reaches the slow-start threshold or loss is detected, the algorithm switches to congestion avoidance and grows linearly.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">RFC 5681 (TCP Congestion Control) 与 Kurose《计算机网络》第3章</p>
+        <p lang="en">RFC 5681 (TCP Congestion Control) and J. Kurose, K. Ross, Computer Networking, 7th ed., Chapter 3</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL56272W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL56272W：Computer networking（首版 19</a></p>
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#拥塞控制</a> <a class="tag" href="#">#慢启动</a>
+    </article>
+
+
+    <article class="qitem" id="f468c84344dc">
+      <h2 class="qz" lang="zh">当 IP 数据包超过链路 MTU 时，网络层如何处理分片与重组?</h2>
+      <p class="qen" lang="en">When an IP packet exceeds the link MTU, how does the network layer handle fragmentation and reassembly?</p>
+      <div class="azh" lang="zh">发送方或中间路由器按 MTU 把大数据报切分为多个分片，每个分片携带相同的标识字段、各自的片偏移与标志位。只有目的主机依据标识、偏移和标志把属于同一数据报的分片重新组装成原始报文，中间路由器不做重组。</div>
+      <div class="aen" lang="en">The sender or an intermediate router splits a large datagram into fragments sized to the MTU, each carrying the same identification field with its own fragment offset and flags. Only the destination host reassembles the original datagram from fragments using the identification, offset, and flags; intermediate routers do not reassemble.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-05</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">互联网工程任务组（IETF）,《Internet Protocol》,RFC 791,1981 (DOI: 10.17487/rfc791)</p>
+        <p lang="en">IETF, &#x27;Internet Protocol&#x27;, RFC 791, 1981, DOI: 10.17487/rfc791</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc791" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc791; RFC 791</a></p>
+        
+      </details>
+      <a class="tag" href="#">#IP</a> <a class="tag" href="#">#分片</a> <a class="tag" href="#">#MTU</a>
+    </article>
+
+
+    <article class="qitem" id="1dcbf950d78e">
+      <h2 class="qz" lang="zh">UDP 与 TCP 在传输特性上的关键差异是什么?</h2>
+      <p class="qen" lang="en">What are the key differences in transport characteristics between UDP and TCP?</p>
+      <div class="azh" lang="zh">TCP 提供面向连接、可靠有序且带流量与拥塞控制的字节流服务；UDP 是无连接、尽力交付的数据报协议，不保证到达顺序也不重传丢失报文。因此 UDP 开销更低、延迟更小，适合实时音视频等对时延敏感的场景。</div>
+      <div class="aen" lang="en">TCP offers a connection-oriented, reliable, ordered byte stream with flow and congestion control, whereas UDP is a connectionless, best-effort datagram protocol that gives no ordering or retransmission guarantees. UDP therefore has lower overhead and latency, suiting delay-sensitive uses like real-time audio and video.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose《计算机网络:自顶向下方法》第3章 (机械工业出版社)</p>
+        <p lang="en">J. Kurose, K. Ross, Computer Networking: A Top-Down Approach, 7th ed., Chapter 3 (Transport Layer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/36081529/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111712367（豆瓣书目条目: 计算机网络：自顶向下方法）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#UDP</a> <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#传输层</a>
+    </article>
+
+
+    <article class="qitem" id="3dcb37f9bff0">
+      <h2 class="qz" lang="zh">为什么 TCP 建立连接需要三次握手而不是两次?</h2>
+      <p class="qen" lang="en">Why does TCP require a three-way handshake to establish a connection rather than two?</p>
+      <div class="azh" lang="zh">三次握手让客户端和服务器各自确认对方的发送与接收能力都正常：客户端发 SYN，服务器回 SYN-ACK，客户端再回 ACK。若只用两次握手，服务器无法确认客户端的接收能力，可能建立无效连接并浪费资源。</div>
+      <div class="aen" lang="en">The three-way handshake lets both client and server confirm each other&#x27;s send and receive capability: the client sends SYN, the server replies SYN-ACK, and the client returns ACK. With only two steps the server cannot confirm the client&#x27;s receive ability, risking a wasted half-open connection.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose《计算机网络:自顶向下方法》第3章 (机械工业出版社)</p>
+        <p lang="en">J. Kurose, K. Ross, Computer Networking: A Top-Down Approach, 7th ed., Chapter 3 (Transport Layer)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/36081529/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111712367（豆瓣书目条目: 计算机网络：自顶向下方法）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#三次握手</a> <a class="tag" href="#">#连接</a>
+    </article>
+
+
+    <article class="qitem" id="5b236115fbb7">
+      <h2 class="qz" lang="zh">HTTP 状态码的五大类别各自代表什么含义?</h2>
+      <p class="qen" lang="en">What do the five classes of HTTP status codes represent?</p>
+      <div class="azh" lang="zh">状态码由三位数字组成：1xx 表示信息提示，2xx 表示成功，3xx 表示重定向，4xx 表示客户端错误，5xx 表示服务器错误。通过首位数字即可快速判断请求的处理结果属于哪一类。</div>
+      <div class="aen" lang="en">A status code is a three-digit number: 1xx indicates informational, 2xx success, 3xx redirection, 4xx client error, and 5xx server error. The leading digit alone tells you which broad class the outcome belongs to.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">RFC 7231 (HTTP/1.1 Semantics) 第6章</p>
+        <p lang="en">RFC 7231 (HTTP/1.1 Semantics and Content), Section 6 (Response Status Codes)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#HTTP</a> <a class="tag" href="#">#状态码</a> <a class="tag" href="#">#REST</a>
+    </article>
+
+
+    <article class="qitem" id="79e1fc46bcdd">
+      <h2 class="qz" lang="zh">在浏览器地址栏输入网址并回车后，大致会经历哪些步骤?</h2>
+      <p class="qen" lang="en">What are the rough steps after you type a URL into a browser and press enter?</p>
+      <div class="azh" lang="zh">浏览器先通过 DNS 把域名解析成 IP，再与服务器建立 TCP 连接（HTTPS 还需 TLS 握手），随后发送 HTTP 请求并接收响应。浏览器解析返回的内容（HTML/CSS/JS）并渲染成页面，期间可能并行加载更多资源。</div>
+      <div class="aen" lang="en">The browser first resolves the domain to an IP via DNS, then establishes a TCP connection with the server (and a TLS handshake for HTTPS), and sends an HTTP request to receive a response. It parses the returned HTML/CSS/JS and renders the page, often fetching additional resources in parallel.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose《计算机网络:自顶向下方法》第1章 (机械工业出版社)</p>
+        <p lang="en">J. Kurose, K. Ross, Computer Networking: A Top-Down Approach, 7th ed., Chapter 1 (Computer Networks and the Internet)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/36081529/" target="_blank" rel="noopener">核验依据 1 ISBN 9787111712367（豆瓣书目条目: 计算机网络：自顶向下方法）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#浏览器</a> <a class="tag" href="#">#DNS</a> <a class="tag" href="#">#HTTP</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="c77322b3dc7f">
+      <h2 class="qz" lang="zh">NAT 是什么，为什么需要它？</h2>
+      <p class="qen" lang="en">What is NAT and why is it needed?</p>
+      <div class="azh" lang="zh">NAT（网络地址转换）把内网私有 IP 映射成公网 IP，让多台设备共用一个出口地址，既缓解 IPv4 地址短缺又对外部隐藏内网结构。</div>
+      <div class="aen" lang="en">NAT maps private internal IPs to a public IP so many devices share one outbound address, easing IPv4 shortage and hiding the internal network from outside.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">RFC 3022</p>
+        <p lang="en">RFC 3022</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#网络</a> <a class="tag" href="#">#IP</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_002">
+      <h2 class="qz" lang="zh">建立 TCP 连接为什么需要三次握手而不是两次?省略最后一次 ACK 会带来什么问题?</h2>
+      <p class="qen" lang="en">Why does establishing a TCP connection take a three-way handshake instead of two messages, and what goes wrong if the final ACK is omitted?</p>
+      <div class="azh" lang="zh">三次握手的本质是让双方各自确认对方的初始序列号:客户端发送携带自身 ISN 的 SYN,服务器以 SYN+ACK 回应并给出自己的 ISN,客户端最后再补一个 ACK。如果只有两次报文,服务器无法确认客户端收到了自己的序列号,在网络中滞留的旧连接请求一旦迟到就会建立起半开连接,白白占用缓冲区甚至扰乱字节流顺序。因此第三个 ACK 正是过滤历史重复请求、保证双向序列号同步的关键。</div>
+      <div class="aen" lang="en">The point of the three-way handshake is for both ends to confirm each other&#x27;s initial sequence number: the client sends a SYN carrying its ISN, the server answers with SYN+ACK supplying its own ISN, and the client closes the loop with an ACK. With only two messages the server can never learn whether the client received its sequence number, so a delayed duplicate connection request arriving late would open a half-open connection that wastes buffer space or scrambles byte-stream ordering. The third ACK is thus the filter against stale duplicates and the guarantee that both directions agree on sequence numbers.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">IETF,《Transmission Control Protocol (TCP)》,IETF RFC 9293,2022 (DOI: 10.17487/rfc9293)</p>
+        <p lang="en">IETF, &#x27;Transmission Control Protocol (TCP)&#x27;, IETF RFC 9293, 2022, DOI: 10.17487/rfc9293</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.17487/rfc9293" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.17487/rfc9293</a></p>
+        
+      </details>
+      <a class="tag" href="#">#计算机网络</a> <a class="tag" href="#">#TCP 握手</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_010">
+      <h2 class="qz" lang="zh">TCP 为何选择加性增、乘性减(AIMD)作为拥塞控制骨架?快速重传相对等待 RTO 超时解决了什么问题?</h2>
+      <p class="qen" lang="en">Why does TCP build its congestion control on additive-increase multiplicative-decrease (AIMD), and what problem does fast retransmit solve compared with waiting for an RTO timeout?</p>
+      <div class="azh" lang="zh">AIMD 探测带宽时线性增大窗口,一旦丢包即减半,该策略可收敛到公平且高效的带宽共享,是分布式优化的经典结论。快速重传依据三个重复 ACK 立刻补发缺失报文,无需等 RTO 超时,避免连接跌回慢启动。CUBIC 与 BBR 又分别用三次增长曲线和带宽-RTT 显式建模进一步优化了 Reno 式调节。</div>
+      <div class="aen" lang="en">AIMD raises the window linearly while probing for bandwidth and halves it upon loss, a policy proven to converge to fair and efficient sharing — a classic result in distributed optimization. Fast retransmit resends the missing segment immediately after three duplicate ACKs rather than waiting out the RTO, sparing the connection a collapse back into slow start. CUBIC and BBR later refined Reno-style dynamics with cubic growth curves and explicit bandwidth-RTT modeling respectively.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Kurose 与 Ross《Computer Networking: A Top-Down Approach》传输层章节;Allman、Paxson 与 Blanton,RFC 5681《TCP Congestion Control》</p>
+        <p lang="en">Kurose &amp; Ross, Computer Networking: A Top-Down Approach, transport-layer chapter; Allman, Paxson &amp; Blanton, RFC 5681, TCP Congestion Control</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL45032796W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL45032796W：Computer Networking a </a></p>
+        
+      </details>
+      <a class="tag" href="#">#TCP/IP 协议栈</a> <a class="tag" href="#">#拥塞控制</a>
+    </article>
+
+
+    <article class="qitem" id="cs_21_018">
+      <h2 class="qz" lang="zh">TCP 靠哪些机制保证可靠传输?四次挥手为什么需要四个报文,主动关闭方为何还要在 TIME_WAIT 状态停留一段时间?</h2>
+      <p class="qen" lang="en">Which mechanisms make TCP delivery reliable, and why does connection teardown take four segments, with the active closer lingering in TIME_WAIT?</p>
+      <div class="azh" lang="zh">可靠性由序号加确认应答、超时重传、滑动窗口流量控制以及拥塞控制共同保证:接收端逐段确认,发送方对丢失段退避重发,自适应的 RTT 估计驱动重传定时器。四次挥手是因为 TCP 全双工,两个方向的数据流必须各自单独关闭,一方收到 FIN 并回 ACK 后仍可继续发送剩余数据(半关闭)。主动关闭方随后进入 TIME_WAIT 停留 2MSL,确保最后的 ACK 丢失时可重发,并让迷路的旧报文在网络中消亡,避免污染复用同一四元组的新连接。</div>
+      <div class="aen" lang="en">Reliability rests on sequence numbers with acknowledgments, retransmission timeouts driven by adaptive RTT estimation, sliding-window flow control, and congestion control: the receiver ACKs every segment and the sender backs off and resends lost ones. Teardown takes four segments because TCP is full-duplex — each direction closes independently, and after answering FIN with ACK a side may still send remaining data (half-close). The active closer then lingers in TIME_WAIT for 2MSL so the final ACK can be retransmitted and stray old packets die out before the same 4-tuple is reused.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：作者 / 书名 / 版次 / 出版社 / 年份齐备，仅缺独立比对证据；已在可信度报告单列披露，不再重复核验。</p>
+        <p lang="zh">W. Richard Stevens,《TCP/IP Illustrated, Volume 1: The Protocols》,Addison-Wesley,1994</p>
+        <p lang="en">W. Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, 1994</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#TCP</a> <a class="tag" href="#">#可靠传输</a>
+    </article>
+
+
+    <article class="qitem" id="eddfd9b5a0fc">
+      <h2 class="qz" lang="zh">HTTPS 相比 HTTP 在安全性上主要增加了什么机制?</h2>
+      <p class="qen" lang="en">What security mechanism does HTTPS add over HTTP?</p>
+      <div class="azh" lang="zh">HTTPS 在 HTTP 之下叠加了 TLS/SSL 加密层，对传输内容加密并在握手阶段通过证书验证服务器身份。这使通信内容难以被窃听或篡改，也能防止中间人冒充服务器。</div>
+      <div class="aen" lang="en">HTTPS layers TLS/SSL beneath HTTP, encrypting the payload and using certificates during the handshake to authenticate the server&#x27;s identity. This makes the traffic hard to eavesdrop or tamper with and prevents man-in-the-middle impersonation.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">RFC 2818 (HTTP over TLS) 与 Kurose《计算机网络》第8章</p>
+        <p lang="en">RFC 2818 (HTTP Over TLS) and J. Kurose, K. Ross, Computer Networking, 7th ed., Chapter 8 (Network Security)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL56272W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL56272W：Computer networking（首版 19</a></p>
+        
+      </details>
+      <a class="tag" href="#">#HTTP</a> <a class="tag" href="#">#HTTPS</a> <a class="tag" href="#">#TLS</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

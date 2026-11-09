@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blockchain · 计算机 Computer Science | 问答</title>
+<meta name="description" content="blockchain（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="blockchain · 计算机 Computer Science | 问答">
+<meta property="og:description" content="blockchain（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/blockchain/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/blockchain/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>blockchain</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>blockchain <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#cs_19_004">比特币的最长链规则把分叉中落败的区块彻底丢弃,这带来了怎样的激励扭曲?GHOST</a></li><li><a href="#cs_19_012">比特币轻节点只下载区块头也能确认收款,Merkle 证明在其中扮演什么角色?</a></li><li><a href="#cs_19_020">掌握全网一半以下算力的攻击者究竟能做什么、又做不到什么?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="cs_19_004">
+      <h2 class="qz" lang="zh">比特币的最长链规则把分叉中落败的区块彻底丢弃,这带来了怎样的激励扭曲?GHOST 规则如何修正?</h2>
+      <p class="qen" lang="en">Bitcoin&#x27;s longest-chain rule discards losing fork blocks entirely — what incentive distortion follows, and how does the GHOST rule correct it?</p>
+      <div class="azh" lang="zh">被丢弃的陈旧块让诚实矿工的算力白白损失,而大矿池产出陈旧块的比例更低,获得相对优势,这正为自私挖矿攻击提供了温床。GHOST 在选择主链时把陈旧块计入子树权重并给其矿工发放奖励,显著降低高速出块下的孤块率,以太坊据此在更短出块间隔下维持安全性。</div>
+      <div class="aen" lang="en">Discarded stale blocks waste honest miners&#x27; work, while large pools suffer proportionally fewer orphans and gain a relative edge — fertile ground for selfish-mining attacks. GHOST weighs subtrees including stale blocks when selecting the main chain and rewards their miners, cutting orphan rates at high block frequencies, which is how Ethereum stays secure with faster block times.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Y. Sompolinsky 与 A. Zohar,《比特币的安全高速交易处理》,Financial Cryptography 2015</p>
+        <p lang="en">Y. Sompolinsky and A. Zohar, Secure High-Rate Transaction Processing in Bitcoin, Financial Cryptography 2015</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#区块链</a> <a class="tag" href="#">#共识协议</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_012">
+      <h2 class="qz" lang="zh">比特币轻节点只下载区块头也能确认收款,Merkle 证明在其中扮演什么角色?</h2>
+      <p class="qen" lang="en">Bitcoin light clients can confirm incoming payments while downloading nothing but block headers — what role do Merkle proofs play in this?</p>
+      <div class="azh" lang="zh">每个区块头的 80 字节里只存放交易树的根哈希,付款方随附一条 Merkle 路径,轻节点沿路重算哈希即可确认该笔交易确实被写入此块,开销仅为 O(log n) 次哈希、几百字节流量。轻节点因此不必存储或验证全部交易,只需跟踪最长链的累计难度来判断确认深度。这种以多数算力为信任前提的取舍,正是中本聪白皮书第 8 节描述的简化支付验证机制。</div>
+      <div class="aen" lang="en">An 80-byte header carries only the Merkle root, so a payer hands over an authentication path and the node recomputes roughly log n hashes—about 500 bytes—to confirm the transaction is committed in that block. Light nodes therefore skip storing and executing all transactions, instead tracking cumulative difficulty along the longest chain to gauge confirmation depth. This trade-off of trusting majority hash power rather than full validation is exactly the simplified payment verification scheme of Section 8 of the Bitcoin whitepaper.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Nakamoto《Bitcoin: A Peer-to-Peer Electronic Cash System》第 8 节(2008)</p>
+        <p lang="en">S. Nakamoto, &quot;Bitcoin: A Peer-to-Peer Electronic Cash System&quot;, Section 8, 2008</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/academictorrents_8c271f4d2e92a3449e2d1bde633cd49f64af888f" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 academictorrents_8c271f4d2e92a3449e2d1bde633c</a></p>
+        
+      </details>
+      <a class="tag" href="#">#默克尔树</a> <a class="tag" href="#">#简化支付验证</a>
+    </article>
+
+
+    <article class="qitem" id="cs_19_020">
+      <h2 class="qz" lang="zh">掌握全网一半以下算力的攻击者究竟能做什么、又做不到什么?</h2>
+      <p class="qen" lang="en">With less than half of total hash power, what can a blockchain attacker actually do—and what stays out of reach?</p>
+      <div class="azh" lang="zh">共识规则由每个全节点独立校验,算力再大也造不出伪造签名或凭空增发的有效块,这类无效区块会被网络直接丢弃。多数算力真正买到的是对排序权的短期垄断:隐瞒区块使最近若干区块作废(链重组),以及对自己的历史交易反悔实施双花。攻击偷不走他人的私钥资产,却能摧毁市场信心,2019 年 Ethereum Classic 遭遇的 51% 攻击令交易所损失数百万美元即是实例。</div>
+      <div class="aen" lang="en">Every full node independently validates consensus rules, so no amount of hash power mints valid-looking blocks with forged signatures or inflated supply—such blocks are simply discarded. What majority hashing actually buys is short-term monopoly on ordering: withholding blocks to orphan recent competitors (chain reorganization) and reversing one&#x27;s own past transactions in a double-spend. The attack steals nobody&#x27;s keys yet torches market confidence, as when Ethereum Classic suffered 51% attacks in 2019 costing exchanges millions of dollars.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Narayanan 等《Bitcoin and Cryptocurrency Technologies》第 2 章;Ethereum Classic 攻击事件公开事后报告(2019)</p>
+        <p lang="en">A. Narayanan et al., &quot;Bitcoin and Cryptocurrency Technologies&quot;, Chapter 2; public post-mortems of the 2019 Ethereum Classic attacks</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL20056158W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL20056158W：Bitcoin and cryptocurr</a></p>
+        
+      </details>
+      <a class="tag" href="#">#双花攻击</a> <a class="tag" href="#">#链重组</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>diffusion · 计算机 Computer Science | 问答</title>
+<meta name="description" content="diffusion（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="diffusion · 计算机 Computer Science | 问答">
+<meta property="og:description" content="diffusion（计算机）分类下的 3 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 3 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/diffusion/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/diffusion/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>diffusion</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>diffusion <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>3</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#da31c1257c38">扩散模型的前向过程与反向过程分别做什么？</a></li><li><a href="#dfb9ee24a3ef">为什么扩散模型生成图像往往比 GAN 更稳定？</a></li><li><a href="#3d29f779b7ba">文生图模型是怎么把一段文字变成一幅画的？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="da31c1257c38">
+      <h2 class="qz" lang="zh">扩散模型的前向过程与反向过程分别做什么？</h2>
+      <p class="qen" lang="en">What do the forward and reverse processes of a diffusion model do?</p>
+      <div class="azh" lang="zh">前向过程逐步往真实图像里加入高斯噪声，直到变成纯噪声；反向过程训练一个神经网络从噪声中一步步预测并减去噪声，最终“雕”出清晰图像。采样就是反复运行反向过程。</div>
+      <div class="aen" lang="en">The forward process gradually adds Gaussian noise to a real image until it is pure noise; the reverse process trains a network to predict and remove noise step by step, &#x27;sculpting&#x27; a clean image. Sampling repeatedly runs the reverse process.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Ho、Jain、Abbeel,《Denoising Diffusion Probabilistic Models》,NeurIPS,2020</p>
+        <p lang="en">J. Ho, A. Jain, P. Abbeel, Denoising Diffusion Probabilistic Models, NeurIPS 2020</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#扩散</a> <a class="tag" href="#">#生成</a>
+    </article>
+
+
+    <article class="qitem" id="dfb9ee24a3ef">
+      <h2 class="qz" lang="zh">为什么扩散模型生成图像往往比 GAN 更稳定？</h2>
+      <p class="qen" lang="en">Why is diffusion often more stable than GANs for image generation?</p>
+      <div class="azh" lang="zh">GAN 靠生成器与判别器对抗训练，容易模式崩溃且难调参；扩散模型把生成拆成许多小步去噪，训练目标简单（预测噪声），因此收敛更平稳、模式覆盖更全。</div>
+      <div class="aen" lang="en">GANs pit a generator against a discriminator and easily collapse or need careful tuning; diffusion breaks generation into many small denoising steps with a simple noise-prediction loss, so training is steadier and covers modes better.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#扩散</a> <a class="tag" href="#">#GAN</a>
+    </article>
+
+
+    <article class="qitem" id="3d29f779b7ba">
+      <h2 class="qz" lang="zh">文生图模型是怎么把一段文字变成一幅画的？</h2>
+      <p class="qen" lang="en">How does a text-to-image model turn words into a picture?</p>
+      <div class="azh" lang="zh">模型先把你的文字编码成含义向量，再以一张随机噪点图起步，一边理解文字含义一边逐步抹去噪点、显出轮廓与色彩，最终得到符合描述的画面。</div>
+      <div class="aen" lang="en">The model encodes your text into a meaning vector, starts from random noise, and while &#x27;reading&#x27; the text gradually removes noise to reveal shapes and colors, ending with a picture that matches the description.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Russell &amp; Norvig,《Artificial Intelligence: A Modern Approach》第4版,Pearson,2020</p>
+        <p lang="en">S. Russell and P. Norvig, Artificial Intelligence: A Modern Approach, 4th ed., Pearson, 2020</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/isbn_9788177583670" target="_blank" rel="noopener">核验依据 2 ARCHIVE 标识 isbn_9788177583670：Artificial Intelligence: A</a></p>
+        
+      </details>
+      <a class="tag" href="#">#文生图</a> <a class="tag" href="#">#扩散</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

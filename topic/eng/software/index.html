@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>software · 工程技术 Engineering | 问答</title>
+<meta name="description" content="software（工程技术）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="software · 工程技术 Engineering | 问答">
+<meta property="og:description" content="software（工程技术）分类下的 11 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 11 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/software/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/software/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>software</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>software <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>11</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#3e9c0ac1ea65">&quot;DevOps&quot;到底在解决什么问题？</a></li><li><a href="#6806660fbaa4">为什么越来越多公司把软件拆成几十个&quot;微服务&quot;而不是做成一个整体？</a></li><li><a href="#6c0b36ae94b3">为什么软件里修复一个需求的成本会随开发阶段&quot;越拖越贵&quot;？</a></li><li><a href="#7f81bfb2adfb">ISO 26262的汽车功能安全标准如何划分安全完整性等级（ASIL）？开发流程</a></li><li><a href="#0c35d2204e2f">边缘计算解决什么问题？为什么工业现场和自动驾驶需要它？</a></li><li><a href="#2ae848578e56">为什么大型软件发布前要跑成千上万条自动化测试？</a></li><li><a href="#311ad204aaf1">为什么写代码一定要用版本控制（如Git）？</a></li><li><a href="#497a5fadfd52">工业4.0的核心特征是什么？数字孪生在其中起什么作用？</a></li><li><a href="#bb3d167482e9">物联网（IoT）的四层架构是什么？各层的作用是什么？</a></li><li><a href="#d867a2b100f3">什么是嵌入式系统？实时操作系统（RTOS）与通用操作系统有何关键区别？</a></li><li><a href="#ec63dc0b9f0c">为什么好的网站要专门做&quot;无障碍设计&quot;？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="3e9c0ac1ea65">
+      <h2 class="qz" lang="zh">&quot;DevOps&quot;到底在解决什么问题？</h2>
+      <p class="qen" lang="en">What problem does DevOps actually solve?</p>
+      <div class="azh" lang="zh">传统流程里开发和运维分属两个团队，开发把代码&quot;扔过墙&quot;，运维负责上线，导致交付慢、环境不一致、上线事故频发。DevOps是文化、流程与工具的结合：让同一批人从代码提交一路负责到生产环境，用基础设施即代码管理服务器配置，用CI/CD流水线让每次提交自动构建、测试、部署，用容器化统一开发与生产环境，再配合监控和日志做到快速回滚。核心收益是缩短交付周期、提高发布可靠性与故障恢复速度。</div>
+      <div class="aen" lang="en">In the old model developers and operators lived in separate teams — devs threw code &quot;over the wall&quot; and ops ran it, causing slow delivery, environment drift, and release-night disasters. DevOps combines culture, process, and tooling: the same people own code from commit to production, using infrastructure-as-code to manage server config, CI/CD pipelines to auto build, test, and deploy on every commit, containerization to unify dev and production environments, plus monitoring and logging for fast rollback. The payoff is shorter delivery cycles, more reliable releases, and quicker recovery.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#DevOps</a> <a class="tag" href="#">#CI/CD</a> <a class="tag" href="#">#基础设施即代码</a>
+    </article>
+
+
+    <article class="qitem" id="6806660fbaa4">
+      <h2 class="qz" lang="zh">为什么越来越多公司把软件拆成几十个&quot;微服务&quot;而不是做成一个整体？</h2>
+      <p class="qen" lang="en">Why do companies split software into dozens of microservices instead of one monolith?</p>
+      <div class="azh" lang="zh">微服务把一个大系统按业务边界拆成许多独立部署的小服务，各自拥有独立的数据库，服务之间用HTTP/RPC或消息队列通信。好处是：不同团队能独立开发、测试、上线，互不阻塞；各服务可以按自身负载单独扩容，比如把访问量大的服务多开几个实例；单个服务故障被隔离，不会拖垮整个系统。代价是分布式带来的难题——网络延迟、部分失败、数据一致性、服务发现与监控成本，远比单体架构复杂。所以只有当规模和团队达到一定程度才值得拆分。</div>
+      <div class="aen" lang="en">Microservices split a large system along business boundaries into many independently deployable services, each with its own database, communicating over HTTP/RPC or message queues. The benefits: teams develop, test, and ship independently without blocking each other; each service scales separately under its own load, e.g., running more instances of a hot service; one failing service is contained instead of taking down the whole system. The price is distributed-systems pain — network latency, partial failures, data consistency, service discovery, and monitoring overhead — far more complex than a monolith. That is why you split only once scale and team size justify it.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Fielding《基于网络的软件架构风格》(博士论文, 2000)；IETF《HTTP/1.1》(RFC 2616)</p>
+        <p lang="en">Fielding, &#x27;Architectural Styles for Network-based Software&#x27; (PhD thesis, 2000); IETF, &#x27;HTTP/1.1&#x27; (RFC 2616)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#微服务</a> <a class="tag" href="#">#分布式系统</a> <a class="tag" href="#">#架构</a>
+    </article>
+
+
+    <article class="qitem" id="6c0b36ae94b3">
+      <h2 class="qz" lang="zh">为什么软件里修复一个需求的成本会随开发阶段&quot;越拖越贵&quot;？</h2>
+      <p class="qen" lang="en">Why does fixing a requirement cost more the later it is found?</p>
+      <div class="azh" lang="zh">需求一旦落入设计、代码、测试，就会层层固化：改一个需求可能牵动架构假设、数据库结构、界面和文档。在需求阶段修改只需改几行描述，到了测试阶段再改则要重新设计、改代码、改测试并做回归验证，成本相差可达几十上百倍。这就是软件工程里著名的&quot;缺陷放大曲线&quot;。所以业界强调尽早澄清需求、用原型验证想法、采用迭代式开发和架构评审，把错误拦截在成本最低的阶段。</div>
+      <div class="aen" lang="en">Once a requirement sinks into design, code, and tests it solidifies layer by layer: changing it may ripple through architectural assumptions, database schemas, user interfaces, and documentation. A change during the requirements stage costs a few edited lines of description; the same change in the testing stage means redesign, recoding, rewriting tests, and regression checks — tens to hundreds of times more expensive. This is the famous &quot;defect amplification curve&quot; of software engineering. That is why the industry pushes early requirement clarification, prototype validation, iterative development, and architecture reviews to catch errors at the cheapest stage.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#需求工程</a> <a class="tag" href="#">#软件架构</a> <a class="tag" href="#">#缺陷成本</a>
+    </article>
+
+
+    <article class="qitem" id="7f81bfb2adfb">
+      <h2 class="qz" lang="zh">ISO 26262的汽车功能安全标准如何划分安全完整性等级（ASIL）？开发流程如何保证安全？</h2>
+      <p class="qen" lang="en">How does ISO 26262 assign Automotive Safety Integrity Levels (ASIL), and how does the development process ensure safety?</p>
+      <div class="azh" lang="zh">ISO 26262根据危害分析确定ASIL等级（A到D四级，D最高），评定依据是严重度、暴露率和可控性三个因素，等级越高要求越严。标准把安全生命周期贯穿概念、开发、生产、运行与报废各阶段，采用V模型规定每个环节的安全活动、文档和验证，并用安全机制（如双通道冗余、自检、故障检测）把残余风险降到可接受水平。不同ASIL等级对应的硬件失效率指标（如PMHF）和软件独立性要求也不同。</div>
+      <div class="aen" lang="en">ISO 26262 derives ASIL levels A to D (D the most stringent) from hazard analysis, rating severity, exposure and controllability, with stricter demands at higher levels. The standard threads a safety lifecycle through concept, development, production, operation and decommissioning, using the V-model to define safety activities, artefacts and verification at every stage, and safety mechanisms such as dual-channel redundancy, self-tests and fault detection reduce residual risk to an acceptable level. Different ASIL levels impose different hardware failure metrics (e.g. PMHF) and software independence requirements.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">国际标准化组织（ISO 26262）</p>
+        <p lang="en">ISO 26262 (Road vehicles, Functional safety)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://archive.org/details/manualzilla-id-5907502" target="_blank" rel="noopener">核验依据 1 ARCHIVE 标识 manualzilla-id-5907502：EMC and Functional Saf</a></p>
+        
+      </details>
+      <a class="tag" href="#">#ISO 26262</a> <a class="tag" href="#">#功能安全</a> <a class="tag" href="#">#ASIL</a>
+    </article>
+
+
+    <article class="qitem" id="0c35d2204e2f">
+      <h2 class="qz" lang="zh">边缘计算解决什么问题？为什么工业现场和自动驾驶需要它？</h2>
+      <p class="qen" lang="en">What problem does edge computing solve, and why do industrial sites and autonomous driving need it?</p>
+      <div class="azh" lang="zh">边缘计算把数据处理放在靠近数据源的网络边缘，避免所有数据都上传云中心，从而降低时延、节省带宽、减少网络依赖，并可在本地处理敏感数据。自动驾驶需要在几十毫秒内完成环境感知和决策，工业设备需要毫秒级的实时控制，云端往返延迟无法满足，因此必须在车载或工厂边缘完成低延迟计算，云端只承担训练模型和大数据分析等非实时任务。</div>
+      <div class="aen" lang="en">Edge computing processes data near its source instead of shipping everything to a central cloud, cutting latency, saving bandwidth, reducing dependence on the network and keeping sensitive data local. Autonomous driving must finish perception and decision-making within tens of milliseconds, and industrial machines need millisecond-level real-time control, which round-trips to the cloud cannot meet, so low-latency computation happens at the vehicle or factory edge while the cloud handles offline tasks such as model training and big-data analytics.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#边缘计算</a> <a class="tag" href="#">#低时延</a> <a class="tag" href="#">#工业物联网</a>
+    </article>
+
+
+    <article class="qitem" id="2ae848578e56">
+      <h2 class="qz" lang="zh">为什么大型软件发布前要跑成千上万条自动化测试？</h2>
+      <p class="qen" lang="en">Why do large software projects run thousands of automated tests before release?</p>
+      <div class="azh" lang="zh">软件越改越复杂，一处修改可能悄悄破坏远不相干的功能，这就是回归缺陷。自动化测试把检查变成可重复执行的代码：单元测试验证单个函数或模块的行为，集成测试检查模块之间的配合，端到端测试走完整的用户流程。每次代码提交由持续集成（CI）自动触发全套测试，几分钟内就能知道有没有破坏。它比人工点击更快更准，给了开发者不断修改代码的信心。</div>
+      <div class="aen" lang="en">Software grows complex, and one change can quietly break unrelated features elsewhere — a regression. Automated testing turns checks into repeatable code: unit tests verify individual functions or modules, integration tests check how modules cooperate, and end-to-end tests walk through complete user flows. Continuous integration (CI) reruns the whole suite on every commit and reports breakage within minutes. It is faster and more reliable than clicking through a UI by hand, and it gives developers the confidence to keep changing code.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">S. Freeman, N. Pryce《测试驱动的面向对象软件开发》(GOOS) 第3章 (人民邮电出版社) ; 另见: S. Freeman, N. Pryce, Growing Object-Oriented Software, Guided by Tests, Addison-Wesley, 2009</p>
+        <p lang="en">S. Freeman, N. Pryce, Growing Object-Oriented Software, Guided by Tests, Addison-Wesley, 2009 ; see also: S. Freeman, N. Pryce《测试驱动的面向对象软件开发》(GOOS) 第3章 (人民邮电出版社)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL33322675W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL33322675W：Growing object-oriente</a></p>
+        
+      </details>
+      <a class="tag" href="#">#单元测试</a> <a class="tag" href="#">#持续集成</a> <a class="tag" href="#">#回归</a>
+    </article>
+
+
+    <article class="qitem" id="311ad204aaf1">
+      <h2 class="qz" lang="zh">为什么写代码一定要用版本控制（如Git）？</h2>
+      <p class="qen" lang="en">Why must developers use version control like Git?</p>
+      <div class="azh" lang="zh">版本控制记录代码文件的每一次修改，相当于给代码库拍快照。Git的分支让多人能并行开发不同功能而不互相踩踏；提交记录&quot;谁在何时改了什么&quot;；两人改到同一处时，合并会提示冲突供人工解决。一旦出错，可以回退到任意历史版本，或用二分查找定位到引入缺陷的那次提交。它是团队协作、代码审计和发布管理的地基。</div>
+      <div class="aen" lang="en">Version control snapshots every change to the codebase. Git&#x27;s branches let many people develop features in parallel without stepping on each other; commits record who changed what and when; if two people edit the same lines, merging flags a conflict for a human to resolve. When something breaks, you can revert to any historical state or bisect to the exact commit that introduced the bug. It is the foundation of teamwork, auditing, and release management.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Beecher,《Getting Started with Git》,2020 (DOI: 10.1007/978-1-4842-6353-2)</p>
+        <p lang="en">Beecher, &#x27;Getting Started with Git&#x27;, 2020, DOI: 10.1007/978-1-4842-6353-2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1007/978-1-4842-6353-2" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1007/978-1-4842-6353-2</a></p>
+        
+      </details>
+      <a class="tag" href="#">#版本控制</a> <a class="tag" href="#">#Git</a> <a class="tag" href="#">#分支</a>
+    </article>
+
+
+    <article class="qitem" id="497a5fadfd52">
+      <h2 class="qz" lang="zh">工业4.0的核心特征是什么？数字孪生在其中起什么作用？</h2>
+      <p class="qen" lang="en">What are the core characteristics of Industry 4.0, and what role does the digital twin play in it?</p>
+      <div class="azh" lang="zh">工业4.0以信息物理系统（CPS）为核心，把物理工厂与数字世界连接，实现设备互联、数据驱动的智能制造和柔性化生产。数字孪生是物理资产的实时虚拟镜像，通过传感器数据持续同步状态，可用来仿真预测、故障诊断、工艺优化和虚拟调试：先在孪生体上试验新方案，确认无误再应用到物理系统，降低试错成本。</div>
+      <div class="aen" lang="en">Industry 4.0 centres on cyber-physical systems (CPS) that connect the physical factory with the digital world, enabling machine interconnection, data-driven smart manufacturing and flexible production. A digital twin is a live virtual mirror of a physical asset, continuously synced by sensor data; it supports simulation, fault diagnosis, process optimisation and virtual commissioning, new schemes are tested on the twin first and only applied to the real system once verified, cutting trial-and-error cost.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">德国国家科学与工程院（acatech，工业4.0平台）</p>
+        <p lang="en">acatech (Plattform Industrie 4.0)</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#工业4.0</a> <a class="tag" href="#">#数字孪生</a> <a class="tag" href="#">#智能制造</a>
+    </article>
+
+
+    <article class="qitem" id="bb3d167482e9">
+      <h2 class="qz" lang="zh">物联网（IoT）的四层架构是什么？各层的作用是什么？</h2>
+      <p class="qen" lang="en">What is the four-layer architecture of the Internet of Things (IoT), and what does each layer do?</p>
+      <div class="azh" lang="zh">典型架构包括感知层、网络层、平台层和应用层。感知层用传感器、RFID、摄像头等采集物理世界的数据；网络层通过NB-IoT、LoRa、WiFi、5G等把数据传输到云端或边缘；平台层负责设备管理、数据存储与处理、规则引擎和消息路由；应用层面向智能家居、工业监控等具体业务，把数据转化为服务和决策。层与层之间通过MQTT、CoAP等协议衔接。</div>
+      <div class="aen" lang="en">A typical IoT stack has perception, network, platform and application layers. The perception layer collects data with sensors, RFID and cameras; the network layer carries it over NB-IoT, LoRa, Wi-Fi or 5G to the cloud or edge; the platform layer handles device management, storage, analytics, rule engines and message routing; and the application layer turns the data into services and decisions such as smart home or industrial monitoring. Layers are linked by protocols such as MQTT and CoAP.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#物联网</a> <a class="tag" href="#">#IoT架构</a> <a class="tag" href="#">#协议</a>
+    </article>
+
+
+    <article class="qitem" id="d867a2b100f3">
+      <h2 class="qz" lang="zh">什么是嵌入式系统？实时操作系统（RTOS）与通用操作系统有何关键区别？</h2>
+      <p class="qen" lang="en">What is an embedded system, and what is the key difference between a real-time operating system (RTOS) and a general-purpose OS?</p>
+      <div class="azh" lang="zh">嵌入式系统是嵌入到特定设备中、为特定功能定制的计算机系统，资源受限但要求高可靠性，广泛用于汽车电子、家电、医疗和工业控制。RTOS强调可预测的响应时间，通过优先级调度保证任务在规定的截止时间内完成，因此行为可确定；通用操作系统如Windows或Linux优化的是平均吞吐量，响应时间存在不确定性，无法满足硬实时控制需求。</div>
+      <div class="aen" lang="en">An embedded system is a computer dedicated to a specific function inside a larger device, resource-constrained but highly reliable, found across automotive electronics, appliances, medical equipment and industrial control. An RTOS stresses predictable response: priority-based scheduling guarantees that tasks finish within their deadlines, so behaviour is deterministic; general-purpose OSes such as Windows or Linux optimise average throughput and have non-deterministic response times, which cannot meet hard real-time control requirements.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：本题原挂出处与答案内容不符，已撤回；具体书目待补，暂不展示来源。</p>
+        <p lang="zh">本题原挂出处与答案内容不符，已撤回；具体书目待补。</p>
+        <p lang="en">Previous citation withdrawn as unsupported for this answer; a specific source is pending.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#嵌入式系统</a> <a class="tag" href="#">#RTOS</a> <a class="tag" href="#">#实时控制</a>
+    </article>
+
+
+    <article class="qitem" id="ec63dc0b9f0c">
+      <h2 class="qz" lang="zh">为什么好的网站要专门做&quot;无障碍设计&quot;？</h2>
+      <p class="qen" lang="en">Why do good websites invest in accessibility design?</p>
+      <div class="azh" lang="zh">可访问性让所有人——包括视障、听障、行动不便者——都能使用产品。具体手段包括：给图片写替代文本供读屏软件朗读，保证整个流程可用键盘操作，让颜色对比度足够色弱者看清，为表单提供明确的标签和错误提示，给视频配上字幕。设计时遵循WCAG等标准，受益的不只是残障人士，还有老年人和临时受限的人；在某些地区这甚至是法律要求。</div>
+      <div class="aen" lang="en">Accessibility lets everyone use a product, including people who are blind, deaf, or have limited mobility. Concrete techniques include alt text for images so screen readers can speak them, full keyboard operability, sufficient color contrast for color-blind users, clearly labeled forms with error feedback, and captions on video. Following standards like WCAG benefits not only people with disabilities but also seniors and temporarily constrained users, and in some regions it is a legal requirement.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《人机交互》（清华大学出版社）</p>
+        <p lang="en">Sweller, Ayres &amp; Kalyuga, Cognitive Load Theory, Springer</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21308956W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL21308956W：Cognitive Load Theory（</a></p>
+        
+      </details>
+      <a class="tag" href="#">#可访问性</a> <a class="tag" href="#">#无障碍</a> <a class="tag" href="#">#WCAG</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

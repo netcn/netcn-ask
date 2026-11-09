@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>db · 计算机 Computer Science | 问答</title>
+<meta name="description" content="db（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="db · 计算机 Computer Science | 问答">
+<meta property="og:description" content="db（计算机）分类下的 13 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 13 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/db/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/db/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>db</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>db <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>13</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#40acefbaa7db">数据库索引为什么能加快查询？</a></li><li><a href="#91c91f0aa873">MVCC 多版本并发控制是怎么实现“快照隔离”的？</a></li><li><a href="#935eade67bb7">B+ 树索引为什么特别适合放在磁盘上？</a></li><li><a href="#bd7ad80449da">数据库范式是用来解决什么问题的？</a></li><li><a href="#fbc0e6ef1b8c">CAP 定理说明了什么权衡？</a></li><li><a href="#25a7be32305d">查询优化器的“代价模型”是干什么的？</a></li><li><a href="#47984d210deb">乐观锁和悲观锁有什么区别？</a></li><li><a href="#a8e9e921fb9b">数据库死锁是怎么产生的？</a></li><li><a href="#bc5a5c753b73">数据库主从复制有什么作用？</a></li><li><a href="#d8773abb5e53">视图和物化视图有什么区别？</a></li><li><a href="#f0aa9896e640">预写日志（WAL）为什么能让数据库崩溃后恢复？</a></li><li><a href="#9a8ab6c1e0e7">NoSQL 和关系型数据库该如何选择？</a></li><li><a href="#fb94f76a5411">数据库的“索引”是不是就像书的目录？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="40acefbaa7db">
+      <h2 class="qz" lang="zh">数据库索引为什么能加快查询？</h2>
+      <p class="qen" lang="en">Why do database indexes speed up queries?</p>
+      <div class="azh" lang="zh">索引通常用 B+ 树组织，把无序的全表扫描变成树上有序查找，复杂度从 O(n) 降到 O(log n)，并把相邻数据聚簇在磁盘页上以减少 IO。</div>
+      <div class="aen" lang="en">Indexes usually use B+ trees, turning a full scan into an ordered tree search from O(n) to O(log n), and cluster adjacent rows on disk pages to reduce IO.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Database System Concepts</p>
+        <p lang="en">Database System Concepts</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#索引</a>
+    </article>
+
+
+    <article class="qitem" id="91c91f0aa873">
+      <h2 class="qz" lang="zh">MVCC 多版本并发控制是怎么实现“快照隔离”的？</h2>
+      <p class="qen" lang="en">How does MVCC implement snapshot isolation?</p>
+      <div class="azh" lang="zh">MVCC 给每行数据保留多个版本，并打上事务可见性标记（如事务 ID、时间戳）。一个事务启动时看到的是那一刻的一致性快照，读不阻塞写、写不阻塞读，从而在高并发下既保证隔离又减少锁争用。</div>
+      <div class="aen" lang="en">MVCC keeps several versions of each row tagged with visibility info (transaction IDs, timestamps). A transaction sees a consistent snapshot from its start; reads don&#x27;t block writes and vice versa, giving isolation with less locking under concurrency.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#MVCC</a> <a class="tag" href="#">#并发</a>
+    </article>
+
+
+    <article class="qitem" id="935eade67bb7">
+      <h2 class="qz" lang="zh">B+ 树索引为什么特别适合放在磁盘上？</h2>
+      <p class="qen" lang="en">Why is a B+ tree index especially suited to disks?</p>
+      <div class="azh" lang="zh">B+ 树是矮胖的多路平衡树，一个节点存很多键、高度很低，每次查找只需很少次磁盘 I/O；且所有数据都放在叶子节点并用链表串起来，范围扫描非常高效，正好契合磁盘按块读写的特性。</div>
+      <div class="aen" lang="en">A B+ tree is a short, fat balanced multi-way tree: each node holds many keys, so lookups need few disk I/Os; all data sits in leaf nodes linked in a list, making range scans efficient—ideal for block-oriented disks.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#B+树</a> <a class="tag" href="#">#索引</a>
+    </article>
+
+
+    <article class="qitem" id="bd7ad80449da">
+      <h2 class="qz" lang="zh">数据库范式是用来解决什么问题的？</h2>
+      <p class="qen" lang="en">What problem do database normal forms solve?</p>
+      <div class="azh" lang="zh">范式通过拆分表消除数据冗余与更新异常（插入、删除、修改异常），例如第三范式要求非主属性不传递依赖于主键；过度范式化可能增加联表开销。</div>
+      <div class="aen" lang="en">Normal forms split tables to remove redundancy and update anomalies (insert/delete/modify), e.g. 3NF requires non-key attributes depend only on the key; over-normalizing can add join cost.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#设计</a>
+    </article>
+
+
+    <article class="qitem" id="fbc0e6ef1b8c">
+      <h2 class="qz" lang="zh">CAP 定理说明了什么权衡？</h2>
+      <p class="qen" lang="en">What trade-off does the CAP theorem describe?</p>
+      <div class="azh" lang="zh">CAP 指出分布式系统在网络分区（P）发生时，只能在一致性（C）和可用性（A）之间二选一；实际系统通常保 P，并在 CP 与 AP 间依业务取舍。</div>
+      <div class="aen" lang="en">CAP says that during a network partition (P) a distributed system must choose between consistency (C) and availability (A); real systems keep P and trade C vs A by needs.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Brewer 2000</p>
+        <p lang="en">Brewer 2000</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#理论</a>
+    </article>
+
+
+    <article class="qitem" id="25a7be32305d">
+      <h2 class="qz" lang="zh">查询优化器的“代价模型”是干什么的？</h2>
+      <p class="qen" lang="en">What does a query optimizer&#x27;s cost model do?</p>
+      <div class="azh" lang="zh">面对同一条查询，数据库有很多种执行方式（如先连接还是先过滤）。代价模型根据表大小、索引、统计信息估算每种计划的 I/O 与 CPU 开销，挑出估算最便宜的一条去执行。</div>
+      <div class="aen" lang="en">One query can be executed many ways (join order, filter first, etc.). The cost model uses table sizes, indexes and statistics to estimate each plan&#x27;s I/O and CPU cost, then picks the cheapest estimated plan.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#优化器</a> <a class="tag" href="#">#代价</a>
+    </article>
+
+
+    <article class="qitem" id="47984d210deb">
+      <h2 class="qz" lang="zh">乐观锁和悲观锁有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between optimistic and pessimistic locking?</p>
+      <div class="azh" lang="zh">悲观锁假设冲突频发，提前加锁（如 SELECT FOR UPDATE）阻塞他人；乐观锁假设冲突少，提交时校验版本号或时间戳，冲突则重试，适合读多写少、并发高的场景。</div>
+      <div class="aen" lang="en">Pessimistic locking assumes frequent conflicts and locks early (e.g. SELECT FOR UPDATE); optimistic locking assumes rare conflicts and checks a version/timestamp at commit, retrying on conflict—good for read-heavy, high-concurrency cases.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Database System Concepts</p>
+        <p lang="en">Database System Concepts</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#并发</a> <a class="tag" href="#">#锁</a>
+    </article>
+
+
+    <article class="qitem" id="a8e9e921fb9b">
+      <h2 class="qz" lang="zh">数据库死锁是怎么产生的？</h2>
+      <p class="qen" lang="en">How does a database deadlock occur?</p>
+      <div class="azh" lang="zh">当两个事务各自持有对方需要的锁并互相等待时形成循环等待，数据库通常用超时或等待图检测并回滚其中一个事务来解除。</div>
+      <div class="aen" lang="en">A deadlock occurs when two transactions each hold a lock the other needs and wait on each other; databases detect it via timeout or wait-for graphs and roll back one transaction.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">Database System Concepts</p>
+        <p lang="en">Database System Concepts</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#并发</a> <a class="tag" href="#">#死锁</a>
+    </article>
+
+
+    <article class="qitem" id="bc5a5c753b73">
+      <h2 class="qz" lang="zh">数据库主从复制有什么作用？</h2>
+      <p class="qen" lang="en">What is the purpose of database master-slave replication?</p>
+      <div class="azh" lang="zh">主库处理写操作并把变更日志异步或半同步地复制到从库，从库承担读请求实现读写分离与水平扩展，并作为备份与故障切换节点提升可用性。</div>
+      <div class="aen" lang="en">The master handles writes and ships change logs to replicas, which serve reads for read/write splitting and scale-out, and also act as backups and failover nodes for availability.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#复制</a>
+    </article>
+
+
+    <article class="qitem" id="d8773abb5e53">
+      <h2 class="qz" lang="zh">视图和物化视图有什么区别？</h2>
+      <p class="qen" lang="en">What is the difference between a view and a materialized view?</p>
+      <div class="azh" lang="zh">普通视图是保存的查询，每次访问实时计算，不占存储；物化视图把结果实际存成表，查询快但需刷新以保持与基表同步，适合昂贵的聚合报表。</div>
+      <div class="aen" lang="en">A normal view is a stored query computed live with no storage; a materialized view physically stores results for fast reads but must be refreshed to stay in sync, suiting expensive aggregates.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">PostgreSQL 文档</p>
+        <p lang="en">PostgreSQL Docs</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#视图</a>
+    </article>
+
+
+    <article class="qitem" id="f0aa9896e640">
+      <h2 class="qz" lang="zh">预写日志（WAL）为什么能让数据库崩溃后恢复？</h2>
+      <p class="qen" lang="en">Why does write-ahead logging (WAL) let a database recover after a crash?</p>
+      <div class="azh" lang="zh">WAL 规定任何修改都要先按顺序写进日志、再改内存页。崩溃重启时，数据库重放（redo）已提交但未落盘的日志、撤销（undo）未提交的日志，从而回到一致状态，保证“要么全做、要么不做”。</div>
+      <div class="aen" lang="en">WAL requires every change to be logged before the page is modified. After a crash, the DB replays (redo) committed-but-unsaved log entries and undoes uncommitted ones, restoring consistency and the all-or-nothing guarantee.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#WAL</a> <a class="tag" href="#">#恢复</a>
+    </article>
+
+
+    <article class="qitem" id="9a8ab6c1e0e7">
+      <h2 class="qz" lang="zh">NoSQL 和关系型数据库该如何选择？</h2>
+      <p class="qen" lang="en">How to choose between NoSQL and relational databases?</p>
+      <div class="azh" lang="zh">关系库强一致、支持复杂事务与联表，适合结构化强、一致性要求高的场景；NoSQL（文档/键值/列族/图）以灵活 schema 和高可扩展性见长，适合海量、结构多变或低延迟的场景，常牺牲强一致换可用性。</div>
+      <div class="aen" lang="en">Relational DBs give strong consistency, transactions and joins for structured, consistency-critical data; NoSQL (document/key-value/column/graph) offers flexible schema and scale, trading strong consistency for availability.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：此条未指向带版次的可引用著作（通识性内容、机构文件或未展开的英文书名），本库不提供独立书目出处；如需精确引用，需由编辑补全具体篇目与版次。</p>
+        <p lang="zh">MongoDB 白皮书</p>
+        <p lang="en">MongoDB whitepaper</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#数据库</a> <a class="tag" href="#">#选型</a>
+    </article>
+
+
+    <article class="qitem" id="fb94f76a5411">
+      <h2 class="qz" lang="zh">数据库的“索引”是不是就像书的目录？</h2>
+      <p class="qen" lang="en">Is a database index like a book&#x27;s table of contents?</p>
+      <div class="azh" lang="zh">很像！目录告诉你“某主题在第几页”，索引告诉数据库“某条数据在哪个位置”，这样不用一页页翻就能直接跳过去找到，速度快很多。</div>
+      <div class="aen" lang="en">Very much! A contents page tells you &#x27;this topic is on page X&#x27;; an index tells the database &#x27;this record is at position Y&#x27;, so it jumps straight there instead of flipping through everything.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 幼儿(3-6)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Silberschatz 等,《Database System Concepts》第7版,McGraw-Hill,2019</p>
+        <p lang="en">A. Silberschatz et al., Database System Concepts, 7th ed., McGraw-Hill, 2019</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL21198749W" target="_blank" rel="noopener">核验依据 2 OPENLIBRARY 标识 /works/OL21198749W：Database System Concep</a></p>
+        
+      </details>
+      <a class="tag" href="#">#索引</a> <a class="tag" href="#">#数据库</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

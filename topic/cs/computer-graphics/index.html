@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Graphics computer-graphics · 计算机 Computer Science | 问答</title>
+<meta name="description" content="Computer Graphics（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Computer Graphics computer-graphics · 计算机 Computer Science | 问答">
+<meta property="og:description" content="Computer Graphics（计算机）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/cs/computer-graphics/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/cs/computer-graphics/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/cs.html">计算机</a> › <span>Computer Graphics</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>Computer Graphics <span class="en">Computer Science</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 计算机 Computer Science</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#1aa9ee81d0f5">什么是 GPU，为什么擅长图形？</a></li><li><a href="#715c0ea4a711">什么是光线追踪？</a></li><li><a href="#20f174214085">什么是光栅化？</a></li><li><a href="#bc76c05bed15">什么是多边形网格？</a></li><li><a href="#cs_24_012">光线追踪和光栅化有什么本质区别?为什么电影特效和最新显卡都爱它?</a></li><li><a href="#cs_24_011">游戏里的人物为什么有时像纸片?三角形是怎么拼出3D世界的?</a></li><li><a href="#cs_25_015">动画电影每秒24格画面,为什么看起来动作是连续流畅的?</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="1aa9ee81d0f5">
+      <h2 class="qz" lang="zh">什么是 GPU，为什么擅长图形？</h2>
+      <p class="qen" lang="en">What is a GPU and why is it good at graphics?</p>
+      <div class="azh" lang="zh">GPU（图形处理器）拥有成千上万个小型核心，擅长对大量数据并行做相同的简单运算。图形渲染中每个像素的着色彼此独立，正好契合这种并行结构，因此 GPU 比 CPU 更适合画图与深度学习。</div>
+      <div class="aen" lang="en">A GPU (graphics processing unit) packs thousands of small cores that excel at applying the same simple operation to vast data in parallel. Since shading each pixel is independent, this parallelism fits graphics perfectly, making GPUs better than CPUs for rendering and deep learning.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">Owens, J. D. 等 (2008). 《GPU 计算》. Proceedings of the IEEE, 96(5), 879-899.</p>
+        <p lang="en">Owens, J. D., et al. (2008). GPU Computing. Proceedings of the IEEE, 96(5), 879-899.</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#GPU</a> <a class="tag" href="#">#并行计算</a> <a class="tag" href="#">#渲染</a>
+    </article>
+
+
+    <article class="qitem" id="715c0ea4a711">
+      <h2 class="qz" lang="zh">什么是光线追踪？</h2>
+      <p class="qen" lang="en">What is ray tracing?</p>
+      <div class="azh" lang="zh">光线追踪从相机出发，模拟光线在场景中反弹、折射和反射，从而生成高度真实的阴影、反射与折射效果。它计算量很大，近年借助专用硬件才得以在游戏中实时运行。</div>
+      <div class="aen" lang="en">Ray tracing shoots rays from the camera and simulates how light bounces, refracts, and reflects in a scene to produce highly realistic shadows, reflections, and refractions. It is computationally heavy; only with dedicated hardware has real-time in-game ray tracing become feasible.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光线追踪</a> <a class="tag" href="#">#反射</a> <a class="tag" href="#">#真实渲染</a>
+    </article>
+
+
+    <article class="qitem" id="20f174214085">
+      <h2 class="qz" lang="zh">什么是光栅化？</h2>
+      <p class="qen" lang="en">What is rasterization?</p>
+      <div class="azh" lang="zh">光栅化是把三维模型的几何描述（点线面）转换为屏幕上像素的过程，是实时渲染（如游戏）的主流方法。它先投影再逐三角形填充，速度快但处理复杂光影不如光线追踪精确。</div>
+      <div class="aen" lang="en">Rasterization converts the geometric description of 3D models (points, lines, faces) into screen pixels and is the dominant method for real-time rendering such as games. It projects then fills triangles, fast but less precise than ray tracing for complex lighting.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光栅化</a> <a class="tag" href="#">#渲染</a> <a class="tag" href="#">#像素</a>
+    </article>
+
+
+    <article class="qitem" id="bc76c05bed15">
+      <h2 class="qz" lang="zh">什么是多边形网格？</h2>
+      <p class="qen" lang="en">What is a polygon mesh?</p>
+      <div class="azh" lang="zh">多边形网格用顶点、边和面（通常是三角形或四边形）来近似表示三维物体的表面，是游戏和电影里最常见的模型格式。网格越密，形状越平滑，但占用内存也越多。</div>
+      <div class="aen" lang="en">A polygon mesh represents a 3D object&#x27;s surface by vertices, edges, and faces (usually triangles or quads), the most common model format in games and film. A denser mesh looks smoother but uses more memory.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《计算机图形学原理及实践》（Foley 等）</p>
+        <p lang="en">Computer Graphics: Principles and Practice (Foley et al.)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Computer+Graphics:+Principles+and+Practice" target="_blank" rel="noopener">核验依据 1 ISBN 9780201121100 (1990)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#多边形网格</a> <a class="tag" href="#">#三角形</a> <a class="tag" href="#">#三维模型</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_012">
+      <h2 class="qz" lang="zh">光线追踪和光栅化有什么本质区别?为什么电影特效和最新显卡都爱它?</h2>
+      <p class="qen" lang="en">What truly separates ray tracing from rasterization, and why do film VFX and new GPUs both embrace it?</p>
+      <div class="azh" lang="zh">光栅化回答「哪些物体盖住这些像素」,是从物体到屏幕的投影近似;光线追踪反过来,从相机向每像素发射光线,追踪其弹射、折射、抵达光源的完整路径,直接模拟光的传播。阴影、镜面反射、玻璃焦散等全局光照效应在光栅化中要靠阴影贴图等技巧伪造,路径追踪则让其自然涌现——代价是每像素成百上千条光线加降噪。电影早已用农场级算力离线渲染;实时光追显卡近年让游戏改用「光栅化打底+关键效果追光」的混合管线逼近真实感。</div>
+      <div class="aen" lang="en">Rasterization answers which objects cover which pixels — a projection approximation from objects to screen. Ray tracing reverses the flow: cast rays per pixel and follow bounces, refractions and paths to lights, mirroring light transport physically. Shadows, mirrors and glass caustics must be faked in rasterizers via shadow maps and probes, while path tracing yields them naturally — at the price of hundreds of rays per pixel plus denoising. Film has long rendered offline on farm-scale compute; hardware-accelerated real-time tracing only recently let games blend rasterized bases with traced highlights toward photorealism.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Pharr、Jakob 与 Humphreys,《Physically Based Rendering》第4版,MIT Press,2023</p>
+        <p lang="en">M. Pharr et al., Physically Based Rendering, 4th ed., MIT Press, 2023</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Physically+Based+Rendering" target="_blank" rel="noopener">核验依据 1 ISBN 9780262048026 (2023)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光线追踪</a> <a class="tag" href="#">#路径追踪</a> <a class="tag" href="#">#全局光照</a>
+    </article>
+
+
+    <article class="qitem" id="cs_24_011">
+      <h2 class="qz" lang="zh">游戏里的人物为什么有时像纸片?三角形是怎么拼出3D世界的?</h2>
+      <p class="qen" lang="en">Why do game characters sometimes look like cardboard? How do triangles build 3D worlds?</p>
+      <div class="azh" lang="zh">显卡的通用货币是三角形:任何曲面都能被三角网格逼近,顶点带位置、法线与纹理坐标。渲染流水线把每个三角形经矩阵变换投影到屏幕,光栅化阶段判断哪些像素被覆盖,再按插值的属性跑像素着色器算颜色——金属反光还是布料漫反射全在这段小程序里。当模型离得太远或朝向侧面时,贴图分辨率不足或面片过少,纸片感与锯齿便出现;Mipmap预生成缩放版纹理与抗锯齿采样就是对症药。实时渲染的本质是用每秒上百次的三角洪水骗过人眼。</div>
+      <div class="aen" lang="en">Triangles are GPU currency: any surface approximates as a triangle mesh whose vertices carry position, normals and texture coordinates. The pipeline transforms each triangle into screen space, rasterization finds covered pixels, and fragment shaders compute colors per pixel — metallic glint or cloth diffuse lives in those small programs. Distant or edge-on models reveal low-resolution textures and coarse meshes as cardboard flatness and jaggies; mipmapped textures and antialiasing sampling are the remedies. Real-time rendering is a flood of triangles per frame, fooling the eye a hundred times a second.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-03</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Akenine-Moller、Haines 与 Hoffman,《Real-Time Rendering》第4版,CRC Press,2018</p>
+        <p lang="en">T. Akenine-Moller et al., Real-Time Rendering, 4th ed., CRC Press, 2018</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/works/OL17682001W" target="_blank" rel="noopener">核验依据 1 OPENLIBRARY 标识 /works/OL17682001W：Real-time rendering（首版</a></p>
+        
+      </details>
+      <a class="tag" href="#">#光栅化</a> <a class="tag" href="#">#着色器</a> <a class="tag" href="#">#纹理映射</a>
+    </article>
+
+
+    <article class="qitem" id="cs_25_015">
+      <h2 class="qz" lang="zh">动画电影每秒24格画面,为什么看起来动作是连续流畅的?</h2>
+      <p class="qen" lang="en">Movies flash twenty-four frames per second — why does motion look smooth?</p>
+      <div class="azh" lang="zh">人眼的视觉暂留会让图像在消失后残留约十分之一秒,加上大脑天生爱把相似画面脑补成连续运动(似动现象),于是快速切换的静止画面被读成了流畅动作。翻页小人书就是原理演示。现代电影用24帧、游戏追求60帧以上,帧率越高动作越顺滑,但超过一定程度人眼就分辨不出了。</div>
+      <div class="aen" lang="en">Vision lingers about a tenth of a second after images vanish; brains also love connecting similar frames into motion (phi phenomenon), so rapid stills read as fluid action — flipbooks demonstrate the principle. Films use twenty-four frames per second, games chase sixty-plus; higher framerates smooth further until eyes cannot tell.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-03 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">韩启德总主编《十万个为什么》(第六版),少年儿童出版社,2013</p>
+        <p lang="en">Han Qide chief ed., Ten Thousand Whys, 6th edition, Juvenile and Children Publishing House, 2013, 6th ed., Juvenile and Children Publishing House, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://libopac.nudt.edu.cn/opac/book/955185" target="_blank" rel="noopener">核验依据 1 ISBN 978-7-5324-9328-9</a> · <a class="evlink" href="http://www.shsjcb.com/SJCB/view.aspx?id=2020100000995515" target="_blank" rel="noopener">核验依据 2 ISBN 9787532493289</a></p>
+        
+      </details>
+      <a class="tag" href="#">#视觉暂留</a> <a class="tag" href="#">#似动现象</a> <a class="tag" href="#">#帧率</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

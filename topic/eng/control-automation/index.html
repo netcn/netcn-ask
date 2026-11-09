@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>控制与自动化 control-automation · 工程技术 Engineering | 问答</title>
+<meta name="description" content="控制与自动化（工程技术）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="控制与自动化 control-automation · 工程技术 Engineering | 问答">
+<meta property="og:description" content="控制与自动化（工程技术）分类下的 7 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 7 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/eng/control-automation/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/eng/control-automation/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/eng.html">工程技术</a> › <span>控制与自动化</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>控制与自动化 <span class="en">Engineering</span></h1>
+  <p class="cnt"><b>7</b> 个科学问题 · 工程技术 Engineering</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#69dc64f769ad">PID 控制器中积分项引入会带来什么副作用，工程上如何缓解？</a></li><li><a href="#ad7f71d29a46">李雅普诺夫稳定性理论的核心思想是什么，第二法为何实用？</a></li><li><a href="#4cb7e313a80e">反馈控制相比开环控制最大的优点是什么？</a></li><li><a href="#5a56c61b8324">状态空间法相比传递函数法在控制设计中能处理哪些问题？</a></li><li><a href="#7daaa0ae3f6a">什么是闭环系统的带宽，它对控制性能意味着什么？</a></li><li><a href="#a5ee0ff2862f">什么是系统的稳定性，劳斯判据用来判断什么？</a></li><li><a href="#b98acd043a3b">什么是前馈控制，它和反馈控制如何配合使用？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="69dc64f769ad">
+      <h2 class="qz" lang="zh">PID 控制器中积分项引入会带来什么副作用，工程上如何缓解？</h2>
+      <p class="qen" lang="en">What side effect does the integral term introduce in a PID controller, and how is it mitigated in practice?</p>
+      <div class="azh" lang="zh">积分项消除稳态误差，但在大偏差或执行器饱和时会持续累积，产生积分饱和（windup），导致超调与恢复缓慢。工程上常用抗积分饱和（clamping 或 back-calculation）限制积分累积。</div>
+      <div class="aen" lang="en">The integral term removes steady-state error but, under large error or actuator saturation, keeps accumulating and causes integral windup, leading to overshoot and slow recovery. Practitioners use anti-windup (clamping or back-calculation) to limit integral buildup.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《现代控制工程》（绪方胜彦，电子工业出版社）</p>
+        <p lang="en">Ogata, Modern Control Engineering, Prentice Hall</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/6082221/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121123146（豆瓣书目条目: 现代控制工程）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#PID</a> <a class="tag" href="#">#积分饱和</a> <a class="tag" href="#">#抗饱和</a>
+    </article>
+
+
+    <article class="qitem" id="ad7f71d29a46">
+      <h2 class="qz" lang="zh">李雅普诺夫稳定性理论的核心思想是什么，第二法为何实用？</h2>
+      <p class="qen" lang="en">What is the core idea of Lyapunov stability theory, and why is the second method practical?</p>
+      <div class="azh" lang="zh">李雅普诺夫思想是不直接解微分方程，而构造一个随状态趋近平衡点而递减的能量型函数（正定且导数负定）来判定稳定。第二法只需验证函数性质，无需知道系统轨迹，特别适合非线性与时变系统。</div>
+      <div class="aen" lang="en">Lyapunov&#x27;s idea is to avoid solving differential equations and instead construct an energy-like function that decreases toward the equilibrium (positive definite with negative-definite derivative) to prove stability. The second method only checks the function&#x27;s properties without knowing trajectories, suiting nonlinear and time-varying systems.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Khalil《非线性系统》（电子工业出版社）</p>
+        <p lang="en">Nonlinear Systems, Khalil</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/35786714/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121427763（豆瓣书目条目: 非线性系统）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#李雅普诺夫</a> <a class="tag" href="#">#稳定性</a> <a class="tag" href="#">#能量函数</a>
+    </article>
+
+
+    <article class="qitem" id="4cb7e313a80e">
+      <h2 class="qz" lang="zh">反馈控制相比开环控制最大的优点是什么？</h2>
+      <p class="qen" lang="en">What is the greatest advantage of feedback control over open-loop control?</p>
+      <div class="azh" lang="zh">反馈控制持续测量输出并据此修正输入，能抑制模型误差、外部扰动与参数漂移带来的影响，使被控量稳定在期望附近。开环则完全依赖模型准确，对扰动无能为力。</div>
+      <div class="aen" lang="en">Feedback control continuously measures the output and corrects the input, rejecting model error, disturbance, and parameter drift to keep the variable near the setpoint. Open-loop control relies entirely on an accurate model and cannot handle disturbances.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#反馈控制</a> <a class="tag" href="#">#开环</a> <a class="tag" href="#">#抗扰动</a>
+    </article>
+
+
+    <article class="qitem" id="5a56c61b8324">
+      <h2 class="qz" lang="zh">状态空间法相比传递函数法在控制设计中能处理哪些问题？</h2>
+      <p class="qen" lang="en">What problems can state-space methods handle that transfer-function methods cannot?</p>
+      <div class="azh" lang="zh">状态空间以内部状态描述系统，天然支持多输入多输出、时变与非线性系统，并能配置极点、设计最优控制与观测器。传递函数仅适用于线性时不变单变量系统，且会丢失不可观不可控的内部模态。</div>
+      <div class="aen" lang="en">State space describes a system by internal states, naturally handling MIMO, time-varying, and nonlinear systems, enabling pole placement, optimal control, and observers. Transfer functions apply only to LTI SISO systems and lose unobservable/uncontrollable internal modes.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#状态空间</a> <a class="tag" href="#">#MIMO</a> <a class="tag" href="#">#极点配置</a>
+    </article>
+
+
+    <article class="qitem" id="7daaa0ae3f6a">
+      <h2 class="qz" lang="zh">什么是闭环系统的带宽，它对控制性能意味着什么？</h2>
+      <p class="qen" lang="en">What is the bandwidth of a closed-loop system, and what does it imply for control performance?</p>
+      <div class="azh" lang="zh">带宽指系统能较好地跟踪或衰减输入的频率范围上限，通常取增益下降到低频值 -3 dB 处。带宽越宽，系统响应越快、能跟踪更高频指令，但也可能放大噪声与敏感于未建模动态。</div>
+      <div class="aen" lang="en">Bandwidth is the upper frequency limit over which a closed-loop system tracks or attenuates input well, usually the -3 dB point. Wider bandwidth means faster response and higher-frequency tracking, but also more noise amplification and sensitivity to unmodeled dynamics.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#带宽</a> <a class="tag" href="#">#闭环</a> <a class="tag" href="#">#频响</a>
+    </article>
+
+
+    <article class="qitem" id="a5ee0ff2862f">
+      <h2 class="qz" lang="zh">什么是系统的稳定性，劳斯判据用来判断什么？</h2>
+      <p class="qen" lang="en">What is system stability, and what does the Routh criterion judge?</p>
+      <div class="azh" lang="zh">稳定性指系统在扰动后能否回到平衡或跟踪期望，不发散。劳斯判据由特征多项式系数构造表格，无需求根即可判断闭环极点是否全在左半平面，从而判定线性系统稳定与否。</div>
+      <div class="aen" lang="en">Stability means a system returns to equilibrium or tracks the setpoint after disturbance without diverging. The Routh criterion builds a table from characteristic polynomial coefficients to judge, without root-finding, whether all closed-loop poles lie in the left half-plane.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#稳定性</a> <a class="tag" href="#">#劳斯判据</a> <a class="tag" href="#">#特征多项式</a>
+    </article>
+
+
+    <article class="qitem" id="b98acd043a3b">
+      <h2 class="qz" lang="zh">什么是前馈控制，它和反馈控制如何配合使用？</h2>
+      <p class="qen" lang="en">What is feedforward control, and how is it combined with feedback control?</p>
+      <div class="azh" lang="zh">前馈根据可测扰动或指令提前施加补偿，在偏差出现前抵消其影响，提速且减小波动。它常与反馈结合：前馈处理已知可测扰动，反馈消除残差与未建模误差。</div>
+      <div class="aen" lang="en">Feedforward acts on measured disturbances or commands to compensate before an error appears, speeding response and reducing variation. It is often paired with feedback: feedforward handles known measurable disturbances, feedback removes residual and unmodeled errors.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-08-23 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">胡寿松 主编,《自动控制原理》第6版,科学出版社,2013</p>
+        <p lang="en">Hu Shousong ed., Principles of Automatic Control, 6th ed., Science Press, 2013</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/23860663/" target="_blank" rel="noopener">核验依据 2 ISBN 9787030370563（豆瓣书目条目: 自动控制原理）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#前馈控制</a> <a class="tag" href="#">#复合控制</a> <a class="tag" href="#">#扰动补偿</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

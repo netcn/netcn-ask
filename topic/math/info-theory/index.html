@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>info-theory · 数学 Mathematics | 问答</title>
+<meta name="description" content="info-theory（数学）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="info-theory · 数学 Mathematics | 问答">
+<meta property="og:description" content="info-theory（数学）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/info-theory/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/info-theory/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>info-theory</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>info-theory <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#math_22_004">香农熵的公式 H=-Σ p_i log p_i 是怎么来的，为什么它能度量平均不</a></li><li><a href="#math_22_012">电话线路上总有噪声，为什么香农断言：只要传输速率低于信道容量 C，就能做到几乎无</a></li><li><a href="#math_22_020">对一个有 n 种可能结果的实验，为什么所有结果等概率时香农熵达到最大？这一事实如</a></li><li><a href="#math_26_018">信息量为什么偏偏用比特来计量？而且一条消息越是出人意料，它携带的信息量为何反而越</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="math_22_004">
+      <h2 class="qz" lang="zh">香农熵的公式 H=-Σ p_i log p_i 是怎么来的，为什么它能度量平均不确定性？</h2>
+      <p class="qen" lang="en">Where does Shannon&#x27;s entropy formula H=-Σ p_i log p_i come from, and why does it measure average uncertainty?</p>
+      <div class="azh" lang="zh">直觉要求：概率越小的事件信息越多，独立试验的信息量应相加。取概率的对数作单事件信息量恰满足可加性，加负号使总量非负，按概率加权平均即得 H=-Σ p_i log p_i。香农进一步证明：任何满足连续性、对均匀分布的单调性与可加性的合理度量必取此形式；对数以 2 为底时单位是比特，这奠定了数据压缩极限的理论基础。</div>
+      <div class="aen" lang="en">Intuition demands that rarer events carry more information and that independent experiments contribute additively. Taking the logarithm of a probability as an event&#x27;s information is precisely the additive choice; a minus sign keeps the total nonnegative, and averaging under the distribution gives H=-Σ p_i log p_i. Shannon proved more: any reasonable measure obeying continuity, monotonicity for uniform distributions, and additivity must take this form. With base-2 logs the unit is the bit, grounding the theoretical limits of data compression.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Shannon,《A Mathematical Theory of Communication》,Bell System Technical Journal,1948 (DOI: 10.1002/j.1538-7305.1948.tb01338.x)</p>
+        <p lang="en">Shannon, &#x27;A Mathematical Theory of Communication&#x27;, Bell System Technical Journal, 1948, DOI: 10.1002/j.1538-7305.1948.tb01338.x</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" rel="noopener">核验依据 1 Crossref DOI 10.1002/j.1538-7305.1948.tb01338.x</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信息论</a> <a class="tag" href="#">#香农熵</a> <a class="tag" href="#">#比特</a>
+    </article>
+
+
+    <article class="qitem" id="math_22_012">
+      <h2 class="qz" lang="zh">电话线路上总有噪声，为什么香农断言：只要传输速率低于信道容量 C，就能做到几乎无差错的通信？</h2>
+      <p class="qen" lang="en">A telephone line always carries noise, so why did Shannon assert that as long as the transmission rate stays below the channel capacity C, communication can be made almost error-free?</p>
+      <div class="azh" lang="zh">诀窍是主动加入冗余。发送端把长串消息编成大码块；噪声虽会翻转部分比特，但只要速率低于容量 C 且码块足够长，码字之间就被安排得足够远，少量翻转无法让一个码字冒充另一个，接收端照样认出原块——这就是有噪信道编码定理。反之速率超过 C，则显著差错不可避免。该定理给出可靠通信的速度上限及其达成路径，是数字通信的基石。</div>
+      <div class="aen" lang="en">The trick is deliberate redundancy. The sender packs long message strings into large code blocks before they enter the channel; noise flips some bits, yet as long as the rate stays below the capacity C and blocks are long enough, codewords are spaced so far apart that a few flips cannot make one block impersonate another, and the receiver still recognizes the original — this is the noisy-channel coding theorem. Above C, by contrast, no encoding escapes a significant error rate. The theorem sets the speed limit of reliable communication and shows how to reach it.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">T. M. Cover 与 J. A. Thomas《Elements of Information Theory》（第2版），Wiley，2006，第7章</p>
+        <p lang="en">T. M. Cover &amp; J. A. Thomas, Elements of Information Theory, 2nd ed., Wiley, 2006, Chapter 7</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信息论</a> <a class="tag" href="#">#信道容量</a> <a class="tag" href="#">#信道编码</a>
+    </article>
+
+
+    <article class="qitem" id="math_22_020">
+      <h2 class="qz" lang="zh">对一个有 n 种可能结果的实验，为什么所有结果等概率时香农熵达到最大？这一事实如何支撑“熵是不确定性的度量”这一解释？</h2>
+      <p class="qen" lang="en">For an experiment with n possible outcomes, why does Shannon entropy peak when all outcomes are equally likely, and how does this support reading entropy as a measure of uncertainty?</p>
+      <div class="azh" lang="zh">把熵写成 H = E[log₂(1/p_i)]，即平均惊喜度。对数为凹，Jensen 不等式给出 H ≤ log₂ Σ p_i(1/p_i) = log₂ n，等号当且仅当每个 p_i = 1/n。分布越均匀越难猜中；偏爱某些结果时其余几乎注定，熵随之下降。上界 log₂ n 比特是无法区分 n 个结局的最坏不确定度。</div>
+      <div class="aen" lang="en">Write the entropy as H = E[log₂(1/p_i)], the average surprise of an outcome. The logarithm is concave, so Jensen&#x27;s inequality gives H ≤ log₂ Σ p_i(1/p_i) = log₂ n, with equality exactly when 1/p_i is constant, i.e., every p_i = 1/n. Intuition agrees: the more uniform the distribution, the harder the outcome is to guess, while favoring some outcomes makes others nearly certain and lowers uncertainty. The ceiling log₂ n bits marks maximal doubt when all n outcomes are equally indistinguishable.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">T. M. Cover 与 J. A. Thomas《Elements of Information Theory》（第2版），Wiley，2006，第2章</p>
+        <p lang="en">T. M. Cover &amp; J. A. Thomas, Elements of Information Theory, 2nd ed., Wiley, 2006, Chapter 2</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=Elements+of+Information+Theory" target="_blank" rel="noopener">核验依据 1 ISBN 9780471241959 (2006)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#信息论</a> <a class="tag" href="#">#香农熵</a> <a class="tag" href="#">#詹森不等式</a> <a class="tag" href="#">#均匀分布</a>
+    </article>
+
+
+    <article class="qitem" id="math_26_018">
+      <h2 class="qz" lang="zh">信息量为什么偏偏用比特来计量？而且一条消息越是出人意料，它携带的信息量为何反而越大？</h2>
+      <p class="qen" lang="en">Why is information measured in bits, and why does the more surprising a message strikes us, the more information it turns out to carry?</p>
+      <div class="azh" lang="zh">因为信息量度量的正是不确定性的消除：概率为p的事件，其自信息定义为−log₂p，概率越小、发生越意外，信息量就越大；掷均匀硬币这类二选一恰好对应1比特，单位由此得名。对整个信源取平均便得到香农熵H=−Σp log₂p，它刻画平均意外程度，而信源编码定理进一步证明：熵就是无损压缩长度的下限，数据越接近均匀随机，越难再压短。</div>
+      <div class="aen" lang="en">Because information quantifies the removal of uncertainty: an event with probability p carries self-information −log₂p, so the smaller the probability, the greater the surprise and the more information the occurrence delivers. A fair coin flip, the archetypal binary choice, maps to exactly one bit, whence the unit takes its name. Averaging over the source gives Shannon&#x27;s entropy H = −Σp log₂p, the mean surprise per message, and the source coding theorem adds that entropy is the lower bound of lossless compression: the closer data approach pure randomness, the harder they are to shrink.</div>
+      <div class="meta">
+        <span class="lv">难度 入门 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge warn">来源待核验 · Source pending review</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        <p class="src-note" style="margin:6px 0 0;font-size:12px;line-height:1.7;color:var(--nc-ink3,#8a8aa0)">出处备注：著录含书名，但缺版次 / 出版社 / 年份中的一部分，需编辑补全后才能做独立比对。</p>
+        <p lang="zh">香农,《A Mathematical Theory of Communication》,Bell System Technical Journal 第27卷,1948</p>
+        <p lang="en">C. E. Shannon, A Mathematical Theory of Communication, Bell System Technical Journal 27, 1948</p>
+        
+        
+      </details>
+      <a class="tag" href="#">#香农熵</a> <a class="tag" href="#">#自信息</a> <a class="tag" href="#">#信源编码定理</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

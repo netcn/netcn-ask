@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数学与AI math-and-ai · 数学 Mathematics | 问答</title>
+<meta name="description" content="数学与AI（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="数学与AI math-and-ai · 数学 Mathematics | 问答">
+<meta property="og:description" content="数学与AI（数学）分类下的 6 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 6 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/math/math-and-ai/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/math/math-and-ai/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/math.html">数学</a> › <span>数学与AI</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>数学与AI <span class="en">Mathematics</span></h1>
+  <p class="cnt"><b>6</b> 个科学问题 · 数学 Mathematics</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#21f99267dace">什么是 VC 维？它如何从理论上界定模型的泛化能力？</a></li><li><a href="#90c8de80c5e6">什么是贝叶斯推断？它如何将先验与似然结合得到后验？</a></li><li><a href="#fdf3a950f0db">什么是核方法？核技巧如何在不显式计算高维映射的情况下实现非线性分类？</a></li><li><a href="#029885f9cad5">什么是梯度下降？它在训练神经网络中扮演什么角色？</a></li><li><a href="#85c552ea4795">什么是损失函数？均方误差与交叉熵各适用于什么任务？</a></li><li><a href="#c4041d117cdb">什么是过拟合？正则化如何从数学上抑制它？</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="21f99267dace">
+      <h2 class="qz" lang="zh">什么是 VC 维？它如何从理论上界定模型的泛化能力？</h2>
+      <p class="qen" lang="en">What is the VC dimension, and how does it theoretically bound a model&#x27;s generalization ability?</p>
+      <div class="azh" lang="zh">VC 维衡量假设类能打散的最大样本数，反映模型容量。VC 理论给出泛化误差上界随 $\sqrt{d/n}$ 增长（d 为 VC 维、n 为样本数），说明容量越大越易过拟合，为模型选择与样本量需求提供了严格的理论依据。</div>
+      <div class="aen" lang="en">The VC dimension measures the largest sample a hypothesis class can shatter, reflecting model capacity. VC theory gives a generalization error bound growing like $\sqrt{d/n}$ (d the VC dimension, n the sample size), showing larger capacity risks overfitting and providing a rigorous basis for model selection and sample requirements.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《统计学习理论》Vapnik</p>
+        <p lang="en">Statistical Learning Theory by Vladimir Vapnik</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/26392541/" target="_blank" rel="noopener">核验依据 1 ISBN 9787121258756（豆瓣书目条目: 统计学习理论）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#VC维</a> <a class="tag" href="#">#泛化</a> <a class="tag" href="#">#模型容量</a>
+    </article>
+
+
+    <article class="qitem" id="90c8de80c5e6">
+      <h2 class="qz" lang="zh">什么是贝叶斯推断？它如何将先验与似然结合得到后验？</h2>
+      <p class="qen" lang="en">What is Bayesian inference, and how does it combine prior and likelihood into a posterior?</p>
+      <div class="azh" lang="zh">贝叶斯推断用贝叶斯公式 $P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}$ 把先验分布 $P(\theta)$ 与观测似然 $P(D|\theta)$ 结合为后验 $P(\theta|D)$。它把参数视为随机变量，随数据更新信念，广泛应用于机器学习的不确定性估计与因果建模。</div>
+      <div class="aen" lang="en">Bayesian inference uses Bayes&#x27; rule $P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}$ to combine a prior $P(\theta)$ with the observed likelihood $P(D|\theta)$ into the posterior $P(\theta|D)$. Treating parameters as random variables, it updates belief with data and is widely used for uncertainty estimation and causal modeling in machine learning.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《模式识别与机器学习》Bishop</p>
+        <p lang="en">Pattern Recognition and Machine Learning by Christopher Bishop</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://book.douban.com/subject/37868649/" target="_blank" rel="noopener">核验依据 1 ISBN 9787115681409（豆瓣书目条目: 模式识别与机器学习）</a></p>
+        
+      </details>
+      <a class="tag" href="#">#贝叶斯</a> <a class="tag" href="#">#后验</a> <a class="tag" href="#">#先验</a>
+    </article>
+
+
+    <article class="qitem" id="fdf3a950f0db">
+      <h2 class="qz" lang="zh">什么是核方法？核技巧如何在不显式计算高维映射的情况下实现非线性分类？</h2>
+      <p class="qen" lang="en">What are kernel methods, and how does the kernel trick enable nonlinear classification without explicitly computing high-dimensional maps?</p>
+      <div class="azh" lang="zh">核方法把输入通过映射 $\phi$ 送入高维特征空间再线性分类。核技巧直接用核函数 $k(x,x&#x27;)=\langle\phi(x),\phi(x&#x27;)\rangle$ 计算内积，无需写出 $\phi$ 本身，从而以低成本获得非线性决策边界，代表算法为支持向量机（SVM）。</div>
+      <div class="aen" lang="en">Kernel methods map inputs via $\phi$ into a high-dimensional feature space and classify linearly there. The kernel trick computes the inner product directly via $k(x,x&#x27;)=\langle\phi(x),\phi(x&#x27;)\rangle$ without ever forming $\phi$, cheaply yielding nonlinear decision boundaries; the canonical algorithm is the support vector machine (SVM).</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 高中(15-18)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04 · 2 条独立证据</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《统计学习基础》Hastie、Tibshirani 与 Friedman</p>
+        <p lang="en">The Elements of Statistical Learning by Hastie Tibshirani and Friedman</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://openlibrary.org/search?q=The+Elements+of+Statistical+Learning" target="_blank" rel="noopener">核验依据 1 ISBN 9780387848846 (2009)</a> · <a class="evlink" href="https://openlibrary.org/search?q=Elements" target="_blank" rel="noopener">核验依据 2 ISBN 9780665590955 (2002)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#核方法</a> <a class="tag" href="#">#核技巧</a> <a class="tag" href="#">#SVM</a>
+    </article>
+
+
+    <article class="qitem" id="029885f9cad5">
+      <h2 class="qz" lang="zh">什么是梯度下降？它在训练神经网络中扮演什么角色？</h2>
+      <p class="qen" lang="en">What is gradient descent, and what role does it play in training neural networks?</p>
+      <div class="azh" lang="zh">梯度下降沿损失函数负梯度方向迭代更新参数 $w\leftarrow w-\eta\nabla L$，以逐步降低训练误差。它是训练神经网络的核心优化算法，配合反向传播计算梯度，学习率 $\eta$ 控制步长，是深度学习的引擎。</div>
+      <div class="aen" lang="en">Gradient descent iteratively updates parameters along the negative gradient $w\leftarrow w-\eta\nabla L$ to reduce training error. It is the core optimization algorithm for training neural networks, combined with backpropagation to compute gradients, where the learning rate $\eta$ controls step size and serves as the engine of deep learning.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#梯度下降</a> <a class="tag" href="#">#反向传播</a> <a class="tag" href="#">#神经网络</a>
+    </article>
+
+
+    <article class="qitem" id="85c552ea4795">
+      <h2 class="qz" lang="zh">什么是损失函数？均方误差与交叉熵各适用于什么任务？</h2>
+      <p class="qen" lang="en">What is a loss function, and what tasks do mean squared error and cross-entropy suit?</p>
+      <div class="azh" lang="zh">损失函数量化模型预测与真实值的差距，指导优化。均方误差 $\frac1n\sum(y-\hat y)^2$ 适用于回归；交叉熵 $-\sum y\log\hat y$ 适用于分类（尤其多类概率输出），因它最大化正确类的对数似然而对错误预测惩罚重。</div>
+      <div class="aen" lang="en">A loss function quantifies the gap between predictions and true values, guiding optimization. Mean squared error $\frac1n\sum(y-\hat y)^2$ suits regression; cross-entropy $-\sum y\log\hat y$ suits classification (especially multi-class probabilistic output) because it maximizes the log-likelihood of the correct class and heavily penalizes wrong predictions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#损失函数</a> <a class="tag" href="#">#均方误差</a> <a class="tag" href="#">#交叉熵</a>
+    </article>
+
+
+    <article class="qitem" id="c4041d117cdb">
+      <h2 class="qz" lang="zh">什么是过拟合？正则化如何从数学上抑制它？</h2>
+      <p class="qen" lang="en">What is overfitting, and how does regularization mathematically suppress it?</p>
+      <div class="azh" lang="zh">过拟合是模型在训练集上误差极小却在未见数据上表现差，源于过度拟合噪声。正则化在损失函数中加惩罚项如 $\lambda\|w\|^2$（岭回归），约束参数规模，等价于在参数空间施加先验，从而降低模型复杂度、提升泛化。</div>
+      <div class="aen" lang="en">Overfitting occurs when a model achieves tiny training error but poor performance on unseen data, having fit noise. Regularization adds a penalty such as $\lambda\|w\|^2$ (ridge regression) to the loss, constraining parameter magnitude and effectively imposing a prior, which reduces model complexity and improves generalization.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-10-04</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">《深度学习》Goodfellow、Bengio 与 Courville</p>
+        <p lang="en">Deep Learning by Goodfellow Bengio and Courville</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://mitpress.mit.edu/9780262035613/deep-learning/" target="_blank" rel="noopener">核验依据 1 ISBN 978-0-262-03561-3 (MIT Press)</a></p>
+        
+      </details>
+      <a class="tag" href="#">#过拟合</a> <a class="tag" href="#">#正则化</a> <a class="tag" href="#">#泛化</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>

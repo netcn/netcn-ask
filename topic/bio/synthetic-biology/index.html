@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>synthetic-biology · 生物 Biology | 问答</title>
+<meta name="description" content="synthetic-biology（生物）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="synthetic-biology · 生物 Biology | 问答">
+<meta property="og:description" content="synthetic-biology（生物）分类下的 4 个科学问题，逐一给出中英双语解答与可溯源出处。内容以 CC BY 4.0 发布。 4 bilingual science Q&amp;A with traceable sources, CC BY 4.0.">
+<link rel="icon" href="/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" href="/assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta property="og:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
+<link rel="canonical" href="https://ask.netcn.org/topic/bio/synthetic-biology/">
+<link rel="alternate" hreflang="x-default" href="https://ask.netcn.org/topic/bio/synthetic-biology/">
+<link rel="stylesheet" href="../../../assets/css/main.css">
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261107c6">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261107c6">
+<script src="/shell/shell.js?v=20261107c6"></script>
+</head>
+<body class="qpage">
+<nav class="nc-shell" aria-label="netcn 站点导航"><a class="nc-brand" href="../../../" aria-label="返回首页"><span class="nc-mk" aria-hidden="true"></span><span class="nc-brand-txt">科学问答</span></a><nav class="nc-sw" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><form class="nc-search has-icon" action="../../../index.html" method="get"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" name="q" placeholder="搜索科学问题 / search" aria-label="搜索"></form><div class="nc-tools"><button class="nc-tool" id="ncTheme" type="button" aria-label="切换明暗">☾</button><button class="nc-tool" id="ncLang" type="button" aria-label="切换语言">EN</button></div></nav>
+<header class="qhead">
+  <nav class="crumbs"><a href="../../../index.html">首页</a> › <a href="../../../cat/bio.html">生物</a> › <span>synthetic-biology</span></nav>
+</header>
+<main>
+<section class="topic-hero">
+  <h1>synthetic-biology <span class="en">Biology</span></h1>
+  <p class="cnt"><b>4</b> 个科学问题 · 生物 Biology</p>
+</section>
+<section class="toc"><h2>本页目录</h2><ul><li><a href="#bio_26_019">扩散模型凭什么能从零设计出自然界没有的功能蛋白,RFdiffusion比以往方法</a></li><li><a href="#bio_26_001">科学家如何把酿酒酵母改造成生产抗疟药青蒿素前体青蒿酸的「细胞工厂」?</a></li><li><a href="#bio_26_006">2010年J·克雷格·文特尔研究所的JCVI-syn1.0为何被称为首个由化学合</a></li><li><a href="#bio_26_007">Gardner与Collins在大肠杆菌里搭建的基因拨动开关是怎样工作的,它对合</a></li></ul></section>
+<section class="qlist">
+    <article class="qitem" id="bio_26_019">
+      <h2 class="qz" lang="zh">扩散模型凭什么能从零设计出自然界没有的功能蛋白,RFdiffusion比以往方法强在哪里?</h2>
+      <p class="qen" lang="en">Why can diffusion models design never-before-seen functional proteins from scratch, and where does RFdiffusion outperform earlier approaches?</p>
+      <div class="azh" lang="zh">它把结构的破坏与重建学成了先验知识。Watson等将图像扩散模型改造成蛋白质设计引擎:训练时对真实主链坐标逐步加噪,神经网络学习逆转每一步,生成时便从纯噪声出发逐级去噪出全新主链,再以RoseTTAFold类工具检验能否折叠;相较依赖手工规则与片段拼装的Rosetta方案,它能按对称性、结合基序等条件定向生成,实验成功率提升约一个数量级。</div>
+      <div class="aen" lang="en">It learns the breaking and rebuilding of structures as prior knowledge. Watson and colleagues turned an image diffusion model into a protein-design engine: during training, noise corrupts real backbone coordinates step by step and the network learns to reverse each step; at generation time it starts from pure noise and denoises brand-new backbones, whose foldability is then screened with RoseTTAFold-class predictors. Compared with Rosetta pipelines built on hand rules and fragment assembly, it generates on demand under conditions such as symmetry or specified binding motifs, lifting experimental success rates by roughly an order of magnitude.</div>
+      <div class="meta">
+        <span class="lv">难度 专业 · 适合 小学高段(9-12)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Watson JL等论文《De novo design of protein structure and function with RFdiffusion》,Nature 2023(华盛顿大学蛋白质设计研究所)</p>
+        <p lang="en">Watson JL et al., &#x27;De novo design of protein structure and function with RFdiffusion&#x27;, Nature, 2023 (Institute for Protein Design, University of Washington)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://europepmc.org/article/MED/37433327" target="_blank" rel="noopener">核验依据 1 EUROPEPMC 标识 37433327：De novo design of protein structur</a></p>
+        
+      </details>
+      <a class="tag" href="#">#蛋白质设计</a> <a class="tag" href="#">#扩散模型</a> <a class="tag" href="#">#合成生物学</a>
+    </article>
+
+
+    <article class="qitem" id="bio_26_001">
+      <h2 class="qz" lang="zh">科学家如何把酿酒酵母改造成生产抗疟药青蒿素前体青蒿酸的「细胞工厂」?</h2>
+      <p class="qen" lang="en">How did scientists engineer brewer&#x27;s yeast into a cell factory that produces artemisinic acid, the precursor of antimalarial artemisinin?</p>
+      <div class="azh" lang="zh">靠导入青蒿合成途径基因并重构酵母代谢流。Keasling团队将青蒿的紫穗槐-4,11-二烯合酶基因与细胞色素P450氧化修饰基因转入酿酒酵母,上调限速的HMG-CoA还原酶、下调竞争甾醇支路ERG9,使碳源集中流向倍半萜途径,发酵罐中大量积累青蒿酸,再化学加氢即得青蒿素,开创了「设计—构建—测试」的合成生物学范式。</div>
+      <div class="aen" lang="en">By importing Artemisia pathway genes and rewiring yeast metabolism. Keasling&#x27;s team moved amorphadiene synthase plus cytochrome P450 oxidation genes from Artemisia annua into Saccharomyces cerevisiae, up-regulated rate-limiting HMG-CoA reductase, and shut down the competing sterol branch ERG9, so carbon flux pours into the sesquiterpene route and fermenters accumulate artemisinic acid, which simple hydrogenation converts to artemisinin - a founding example of design-build-test synthetic biology.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Ro DK等论文《Production of the antimalarial drug precursor artemisinic acid in engineered yeast》,Nature 2006(加州大学伯克利分校Keasling实验室)</p>
+        <p lang="en">Ro DK et al., &#x27;Production of the antimalarial drug precursor artemisinic acid in engineered yeast&#x27;, Nature, 2006 (Keasling lab, UC Berkeley)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1038/nature04640" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1038/nature04640：Production of the antima</a></p>
+        
+      </details>
+      <a class="tag" href="#">#合成生物学</a> <a class="tag" href="#">#青蒿素</a> <a class="tag" href="#">#酿酒酵母</a>
+    </article>
+
+
+    <article class="qitem" id="bio_26_006">
+      <h2 class="qz" lang="zh">2010年J·克雷格·文特尔研究所的JCVI-syn1.0为何被称为首个由化学合成基因组驱动的活细胞,它是怎样被制造出来的?</h2>
+      <p class="qen" lang="en">Why is JCVI-syn1.0 from the J. Craig Venter Institute hailed as the first cell controlled by a chemically synthesized genome, and how was it built?</p>
+      <div class="azh" lang="zh">靠全合成DNA移植重启了受体细胞的命运。研究者先测定蕈状支原体基因组序列,分段化学合成DNA并借酵母同源重组拼成完整环状基因组,再移植入山羊支原体的空壳细胞;移植一度失败,追查到合成片段中单个碱基缺失并补齐后,合成基因组接管代谢与分裂,细胞完全按人工蓝图繁殖,证明DNA序列本身足以承载生命指令。</div>
+      <div class="aen" lang="en">By rebooting a recipient cell with wholly synthesized DNA. After sequencing the Mycoplasma mycoides genome, researchers chemically made it in segments, stitched them into one circular chromosome through yeast homologous recombination, and transplanted it into an emptied shell of Mycoplasma capricolum. Early failures were traced to a single deleted base in one fragment; once repaired, the synthetic genome took over metabolism and division, and cells multiplied purely on the artificial blueprint - proof that sequence alone can carry life&#x27;s instructions.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 大众</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Gibson DG等论文《Creation of a bacterial cell controlled by a chemically synthesized genome》,Science 2010(J. Craig Venter研究所)</p>
+        <p lang="en">Gibson DG et al., &#x27;Creation of a bacterial cell controlled by a chemically synthesized genome&#x27;, Science, 2010 (J. Craig Venter Institute)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://europepmc.org/article/MED/20488990" target="_blank" rel="noopener">核验依据 1 EUROPEPMC 标识 20488990：Creation of a bacterial cell contr</a></p>
+        
+      </details>
+      <a class="tag" href="#">#合成生物学</a> <a class="tag" href="#">#基因组移植</a> <a class="tag" href="#">#人造细胞</a>
+    </article>
+
+
+    <article class="qitem" id="bio_26_007">
+      <h2 class="qz" lang="zh">Gardner与Collins在大肠杆菌里搭建的基因拨动开关是怎样工作的,它对合成生物学意味着什么?</h2>
+      <p class="qen" lang="en">How does the genetic toggle switch that Gardner and Collins built in Escherichia coli work, and what did it mean for synthetic biology?</p>
+      <div class="azh" lang="zh">用两个相互阻遏的操纵子构成双稳态基因网络。LacI压制tetR的表达,TetR再反向关闭lacI,任一阻遏物占优便锁定该状态并可遗传给后代;加入IPTG或脱水四环素即可把开关翻向另一稳态,协同阻遏赋予其类似触发器的迟滞与记忆。这项工作首次证明调控线路能像电路一样被理性设计,与同年出现的阻遏振荡器一道奠定了合成生物学的工程学起点。</div>
+      <div class="aen" lang="en">Two mutually repressing operons form a bistable gene network. LacI shuts down tetR while TetR reciprocally switches off lacI, so whichever repressor dominates locks the cell into that state heritably; adding IPTG or anhydrotetracycline flips the switch to the other stable state, with cooperative repression conferring flip-flop-like hysteresis and memory. This work first showed that regulatory circuits can be rationally designed like electronic ones, laying the engineering foundation of synthetic biology alongside the same-year repressilator.</div>
+      <div class="meta">
+        <span class="lv">难度 进阶 · 适合 初中(12-15)</span>
+        <span class="lic">CC BY 4.0 · <span class="badge ok">已核验 · Verified 2026-11-02</span></span>
+      </div>
+      <details class="srcdet">
+        <summary>来源 · Source</summary>
+        
+        <p lang="zh">Gardner TS等论文《Construction of a genetic toggle switch in Escherichia coli》,Nature 2000(波士顿大学Collins实验室)</p>
+        <p lang="en">Gardner TS et al., &#x27;Construction of a genetic toggle switch in Escherichia coli&#x27;, Nature, 2000 (Collins lab, Boston University)</p>
+        <p class="evlinks">独立核验依据 · Independent verification: <a class="evlink" href="https://doi.org/10.1038/35002131" target="_blank" rel="noopener">核验依据 1 CROSSREF 标识 10.1038/35002131：Construction of a genetic t</a></p>
+        
+      </details>
+      <a class="tag" href="#">#基因线路</a> <a class="tag" href="#">#双稳态开关</a> <a class="tag" href="#">#大肠杆菌</a>
+    </article>
+</section>
+</main>
+<footer class="nc-foot"><nav class="nc-foot-nav" aria-label="netcn 站点"><a href="https://netcn.org/" data-nc-to="nav">导航</a><a href="https://ask.netcn.org/" data-nc-to="ask">科学问答</a><a href="https://quiz.netcn.org/" data-nc-to="quiz">头脑体操</a><a href="https://game.netcn.org/" data-nc-to="game">玩游戏</a><a href="https://sky.netcn.org/" data-nc-to="sky">火烧云</a></nav><span class="nc-foot-note">© 2011–2026 netcn.org</span><span class="nc-foot-site">内容以 <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a> 发布，署名 问答 ask.netcn.org · <a href="../../../trust/">来源可信度报告</a></span></footer></body>
+</html>
