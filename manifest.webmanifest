@@ -1,9 +1,10 @@
 {
- "name": "问答 · 科学冒险百科",
- "short_name": "问答",
+ "name": "科学问答 · Science Q&A | ask.netcn.org",
+ "short_name": "科学问答",
  "start_url": "./",
  "display": "standalone",
- "background_color": "#0b1020",
+ "background_color": "#fafbfc",
+ "description": "17,305 道真实科学问答 · 17,305 verified science questions, bilingual.",
  "theme_color": "#0F6E56",
  "icons": [
   {
