@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta charset="utf-8"><script id="ncn-theme-boot">(function(){try{var d=document.documentElement,t="";try{t=localStorage.getItem("theme")||""}catch(e){}if(t!=="dark"&&t!=="light"){var m=(document.cookie||"").match(/(?:^|; )ncn_theme=(dark|light)/);t=m?m[1]:""}if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"}d.setAttribute("data-theme",t);if(t==="dark"){d.classList.add("dark")}else{d.classList.remove("dark")}}catch(e){}})();</script>
+<meta charset="utf-8"><script id="ncn-theme-boot">(function(){try{var d=document.documentElement,t="";var m=(document.cookie||"").match(/(?:^|; )ncn_theme=(dark|light)/g);if(m&&m.length){t=m[m.length-1].split("=")[1]||""}if(t!=="dark"&&t!=="light"){try{t=localStorage.getItem("theme")||""}catch(e){}}if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"}d.setAttribute("data-theme",t);if(t==="dark"){d.classList.add("dark")}else{d.classList.remove("dark")}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>问答 · 科学冒险百科 · Ask · Science Q&A Encyclopedia</title>
 <meta name="description" content="17,305 道真实科学问答，写下你的问题就能找到答案，也可以按学科、学习路径和生活场景慢慢逛。中英双语，内容采用 CC BY 4.0。 A bilingual science Q&A library with 17,305 verified questions — ask, read, or browse by subject.">
@@ -17,9 +17,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://ask.netcn.org/assets/icons/og-share.png">
 <link rel="stylesheet" href="assets/css/main.css?v=5">
-<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261111b1">
-<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261111b1">
-<script src="/shell/shell.js?v=20261111b1"></script>
+<link rel="stylesheet" href="/shell/netcn-shell.css?v=20261111b3">
+<link rel="stylesheet" href="/shell/netcn-ui.css?v=20261111b3">
+<script src="/shell/shell.js?v=20261111b3"></script>
 <link rel="modulepreload" href="assets/js/app.js?v=4">
 <link rel="modulepreload" href="assets/js/ui.js?v=4">
 <link rel="modulepreload" href="assets/js/store.js?v=4">
