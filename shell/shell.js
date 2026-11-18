@@ -1,13 +1,13 @@
 /* ============================================================
-   netcn 统一运行时内核 · v20261111b3
+   netcn 统一运行时内核 · v20261118a2
    ------------------------------------------------------------
    五站共用一份：判站、明暗、中英字典、顶栏/页脚/搜索/无障碍文案、
    首页标题、移动端 App 底部 Tab、状态栏颜色、PWA 安装钩子。
    各站业务核心（检索 / 题库 / 游戏 / 气象）仍完全独立，不在此文件内。
 
-   设计要点：顶栏与页脚文案不再硬编码在 1,662 个 HTML 里，
-   由本文件按 data-nc-to / .nc-brand-txt / .nc-foot-* 等稳定选择器
-   在运行时按语言重渲染；新增分站只改 I18N 字典。
+   2026-11-18：五个 netcn 站统一为同一套「五站 + 三外站」入口。
+   顶栏 / 页脚 / 底部 Tab 都由本文件补齐缺失的外站链接与免责声明，
+   这样 1,662 个既有 HTML 不需要逐个改也能保持同一顺序。
    事件契约不变：ncn:theme / ncn:lang 仍是唯一真源。
    ============================================================ */
 (function () {
@@ -42,29 +42,35 @@
   };
   var URLS = local ? URL_LOCAL : URL_LIVE;
   var ICON = { nav: '🧭', ask: '🔬', quiz: '🧩', game: '🕹️', sky: '🌇' };
+  /* 三个站群外站：不再只挂在 nav 首页；五站顶栏/页脚/Tab 都补齐。 */
+  var EXTRA_TAB = [
+    { key: 'chenhua', href: 'https://chenhua.net/', icon: '🖼️' },
+    { key: 'xiqi', href: 'https://xiqiqi.com/', icon: '🔮' },
+    { key: 'chidu', href: 'https://chidu.org/', icon: '📐' }
+  ];
 
   /* ---------- 1. 全站中英字典（唯一真源） ---------- */
   var I18N = {
     zh: {
-      site: { nav: '导航', ask: '科学问答', quiz: '头脑体操', game: '游戏厅', sky: '火烧云' },
-      tab: { nav: '首页', ask: '问答', quiz: '脑力', game: '游戏', sky: '观天' },
+      site: { nav: '导航', ask: '科学问答', quiz: '头脑体操', game: '游戏厅', sky: '火烧云', chenhua: '出尘入画', xiqi: '稀奇奇', chidu: '尺度' },
+      tab: { nav: '导航', ask: '问答', quiz: '脑力', game: '游戏', sky: '观天', chenhua: '尘画', xiqi: '稀奇', chidu: '尺度' },
       brand: { nav: '简洁导航', ask: '科学问答', quiz: '头脑体操', game: '游戏厅', sky: '火烧云' },
       ph: {
-        nav: '搜索站点...', ask: '搜索科学问题，或随便逛逛…', quiz: '搜索题目…（回车定位）',
+        nav: '搜索站点...', ask: '搜索科学问题，或随便逛逛…', quiz: '搜索 1,166 题…',
         game: '搜索游戏…（按 / 聚焦）', sky: '搜城市，如 上海 / 敦煌'
       },
       footNote: '© 2011–2026 netcn.org',
       footSite: {
         nav: '900+ 站点',
-        ask: '13,925 题 · <a href="https://ask.netcn.org/trust/">来源可信度报告</a> · CC BY 4.0 署名 问答 ask.netcn.org',
-        quiz: '3,193 题 · 脑筋急转弯 / 字谜 / 谜语 / 智力测试',
-        game: '53 款游戏 · 打开即玩 · 纪录仅存本地',
-        sky: '晚霞 · 朝霞 · 星空 · 月亮 · 流星雨 数据仅供参考'
+        ask: '1,057 题 · 93 篇深度 Hub',
+        quiz: '1,166 题',
+        game: '53 款游戏',
+        sky: '518 城 · 数据仅供参考'
       },
       title: {
         nav: '简洁导航 - 精选网址导航 | netcn.org',
-        ask: '科学问答 · 好奇心有答案 | ask.netcn.org',
-        quiz: '头脑体操 - 脑筋急转弯·猜字谜·猜谜语·智力测试',
+        ask: '科学问答 · 93 篇深度 Hub + 1,057 题 | ask.netcn.org',
+        quiz: '头脑体操 - 1,166 道脑筋急转弯·猜字谜·猜谜语·智力测试',
         game: '游戏厅 · 53 款游戏 | netcn.org',
         sky: '火烧云 · 今晚晚霞、朝霞、星空、月亮观测指南'
       },
@@ -75,25 +81,25 @@
       installTitle: '把 netcn 装到桌面，用起来更像 App', installBtn: '安装', installNo: '不用了'
     },
     en: {
-      site: { nav: 'Nav', ask: 'Science Q&A', quiz: 'Brain Teasers', game: 'Arcade', sky: 'Sky Watch' },
-      tab: { nav: 'Home', ask: 'Ask', quiz: 'Quiz', game: 'Games', sky: 'Sky' },
+      site: { nav: 'Nav', ask: 'Science Q&A', quiz: 'Brain Teasers', game: 'Arcade', sky: 'Sky Watch', chenhua: '出尘入画', xiqi: '稀奇奇', chidu: '尺度' },
+      tab: { nav: 'Nav', ask: 'Ask', quiz: 'Quiz', game: 'Games', sky: 'Sky', chenhua: '尘画', xiqi: '稀奇', chidu: '尺度' },
       brand: { nav: 'Simple Nav', ask: 'Science Q&A', quiz: 'Brain Teasers', game: 'Arcade', sky: 'Sky Watch' },
       ph: {
         nav: 'Search sites...', ask: 'Search science questions, or just wander…',
-        quiz: 'Search questions...', game: 'Search games...', sky: 'Search a city, e.g. Shanghai'
+        quiz: 'Search 1,166 questions...', game: 'Search games...', sky: 'Search a city, e.g. Shanghai'
       },
       footNote: '© 2011–2026 netcn.org',
       footSite: {
         nav: '900+ sites',
-        ask: '13,925 questions · <a href="https://ask.netcn.org/trust/">Source credibility</a> · CC BY 4.0 · ask.netcn.org',
-        quiz: '3,193 Chinese wordplay puzzles · English UI, original Chinese questions',
-        game: '53 games · play instantly · high scores stay local',
-        sky: 'Sunset, sunrise, stars, moon & meteors · for reference only'
+        ask: '1,057 Q · 93 hubs',
+        quiz: '1,166 puzzles',
+        game: '53 games',
+        sky: '518 cities · for reference'
       },
       title: {
         nav: 'Simple Nav - A clean start page | netcn.org',
-        ask: 'Science Q&A · 13,925 real questions, each with a source | ask.netcn.org',
-        quiz: 'Brain Teasers · Chinese wordplay & IQ puzzles | quiz.netcn.org',
+        ask: 'Science Q&A · 93 hubs, 1,057 questions | ask.netcn.org',
+        quiz: 'Brain Teasers · 1,166 Chinese wordplay & IQ puzzles | quiz.netcn.org',
         game: 'Arcade · 53 games, play instantly | game.netcn.org',
         sky: "Sky Watch · Tonight's sunset, stars & moon outlook | sky.netcn.org"
       },
@@ -167,6 +173,36 @@
     var p = (location.pathname || '').replace(/index\.html$/, '');
     return p === '/' || p === '' || (local && /^\/(home|quiz|game|sky|ask\/www)\/$/.test(p));
   }
+  /* 现有 1,662 个 HTML 只写入了五站入口；三个外站和免责声明由这里补齐。
+     只在缺失时追加，主站已经静态写死的 8 项不会被重复插入。 */
+  function ensureShell() {
+    var l = curLang(), t = T(l);
+    ['.nc-sw', '.nc-foot-nav'].forEach(function (sel) {
+      var box = d.querySelector(sel);
+      if (!box) return;
+      EXTRA_TAB.forEach(function (item) {
+        if (box.querySelector('[data-nc-to="' + item.key + '"]')) return;
+        var a = d.createElement('a');
+        a.href = item.href;
+        a.setAttribute('data-nc-to', item.key);
+        if (sel === '.nc-sw') a.className = 'nc-sw-ext';
+        else a.className = 'nc-foot-ext';
+        a.textContent = t.site[item.key];
+        box.appendChild(a);
+      });
+    });
+    [].slice.call(d.querySelectorAll('.nc-foot')).forEach(function (foot) {
+      if (foot.querySelector('.nc-foot-legal')) return;
+      var a = d.createElement('a');
+      a.className = 'nc-foot-legal';
+      a.href = 'https://netcn.org/disclaimer/';
+      a.textContent = l === 'en' ? 'Disclaimer' : '免责声明';
+      a.setAttribute('data-zh', '免责声明');
+      a.setAttribute('data-en', 'Disclaimer');
+      var site = foot.querySelector('.nc-foot-site');
+      if (site) foot.insertBefore(a, site); else foot.appendChild(a);
+    });
+  }
   function applyI18n(l) {
     var t = T(l);
     /* 站名：顶栏与页脚，按 data-nc-to 定位，与静态文案无关 */
@@ -175,7 +211,7 @@
       if (t.site[k]) a.textContent = t.site[k];
     });
     /* 品牌名 */
-    [].slice.call(d.querySelectorAll('.nc-brand-txt')).forEach(function (e) { e.textContent = t.brand[key]; });
+    [].slice.call(d.querySelectorAll('.nc-brand-txt')).forEach(function (e) { if (t.brand[key]) e.textContent = t.brand[key]; });
     /* 搜索框 */
     [].slice.call(d.querySelectorAll('.nc-search input')).forEach(function (e) {
       e.setAttribute('placeholder', t.ph[key]);
@@ -204,6 +240,9 @@
       if (key === 'sky' && e.hasAttribute('data-zh') && e.hasAttribute('data-en')) return;
       e.innerHTML = t.footSite[key];
     });
+    [].slice.call(d.querySelectorAll('.nc-foot-legal')).forEach(function (a) {
+      a.textContent = l === 'en' ? 'Disclaimer' : '免责声明';
+    });
     /* 首页标题（内页标题保留，避免破坏 SEO） */
     if (isHome() && t.title[key]) d.title = t.title[key];
     /* 底部 Tab */
@@ -212,7 +251,8 @@
       bar.setAttribute('aria-label', t.aTab);
       [].slice.call(bar.querySelectorAll('a[data-nc-to]')).forEach(function (a) {
         var k = a.getAttribute('data-nc-to'), tx = a.querySelector('.nc-tab-tx');
-        if (tx && t.tab[k]) tx.textContent = t.tab[k];
+        var label = t.tab[k];
+        if (tx && label) tx.textContent = label;
       });
     }
     r.setAttribute('data-nc-lang', l);
@@ -265,13 +305,16 @@
     bar.className = 'nc-tabbar';
     bar.setAttribute('aria-label', t.aTab);
     bar.setAttribute('data-nc', key);
-    SITES.forEach(function (k) {
+    var tabs = SITES.map(function (k) { return { key: k, href: URLS[k], icon: ICON[k] }; }).concat(EXTRA_TAB);
+    tabs.forEach(function (item) {
+      var k = item.key;
       var a = d.createElement('a');
-      a.href = URLS[k];
+      a.href = item.href;
       a.setAttribute('data-nc-to', k);
       if (k === key) a.setAttribute('aria-current', 'page');
-      a.innerHTML = '<span class="nc-tab-ic" aria-hidden="true">' + ICON[k] + '</span>' +
-        '<span class="nc-tab-tx">' + t.tab[k] + '</span>';
+      var label = t.tab[k];
+      a.innerHTML = '<span class="nc-tab-ic" aria-hidden="true">' + item.icon + '</span>' +
+        '<span class="nc-tab-tx">' + label + '</span>';
       bar.appendChild(a);
     });
     d.body.appendChild(bar);
@@ -307,6 +350,7 @@
 
   /* ---------- 7. 初始化 ---------- */
   function init() {
+    ensureShell();
     paint();
     applyTheme(curTheme(), true);
     applyLang(curLang(), true);

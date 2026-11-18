@@ -62,6 +62,13 @@
   color:var(--nc-ink2);border:1px solid var(--nc-line);background:transparent;
   transition:color .16s,border-color .16s,background .16s}
 .nc-sw a:hover{color:var(--nc-ac);border-color:var(--nc-ac);background:var(--nc-soft)}
+/* 外站三条只在宽屏顶栏出现；≤1199 中文收起，英文到 1279 再收起，把空间留给搜索 */
+@media (max-width:1199px){
+  .nc-shell .nc-sw a.nc-sw-ext{display:none}
+}
+@media (max-width:1279px){
+  html[lang="en"] .nc-shell .nc-sw a.nc-sw-ext{display:none}
+}
 /* 当前站：无底色，仅主色文字 + 细下划线，视觉重量与普通胶囊一致 */
 .nc-sw a[aria-current="page"]{color:var(--nc-ac);background:transparent;
   border-color:var(--nc-line);font-weight:800;
@@ -103,12 +110,28 @@
 .nc-foot-site{margin-left:auto;text-align:right}
 .nc-foot-site a{color:var(--nc-ink2);text-decoration:underline;text-underline-offset:2px}
 .nc-foot-site a:hover{color:var(--nc-ac)}
+.nc-foot-legal{color:inherit;font:inherit;text-decoration:none;white-space:nowrap}
+.nc-foot-legal:hover{color:var(--nc-ac);text-decoration:underline}
+
+/* 8 个站群入口在桌面单行；769–1023 宽度不足时站点说明让位，避免 53px 页脚裁切 */
+@media (min-width:769px) and (max-width:1100px){
+  .nc-foot{gap:4px 7px}
+}
+@media (min-width:769px) and (max-width:1023px){
+  .nc-foot-site{display:none}
+}
+
+/* 桌面端顶栏保持单行；搜索槽按剩余空间伸缩，不让 8 个入口把顶栏撑成两行 */
+@media (min-width:769px){
+  .nc-shell,.nc-inner{flex-wrap:nowrap!important}
+  .nc-sw{flex-wrap:nowrap}
+}
 
 /* ---------- 窄屏与触屏 ---------- */
 @media (max-width:760px){
   .nc-shell,.nc-inner,.nc-foot{--nc-h:34px}
   .nc-sw a{padding:0 7px;font-size:11.5px}
-  .nc-foot-site{margin-left:0;text-align:left;flex:1 1 100%}
+  .nc-foot-site{margin-left:auto;text-align:right;flex:0 1 auto;min-width:0}
 }
 
 /* 五站导航：窄屏优先保证一行放下 5 个入口，品牌收成图标 */
@@ -124,6 +147,8 @@
   .nc-shell{--ui-pad:8px}
   .nc-sw a{padding:0 4px;font-size:10.5px}
   .nc-sw{gap:2px}
+  .nc-foot{font-size:10px}
+  .nc-foot-legal{font-size:10px}
 }
 
 @media (pointer:coarse){.nc-shell,.nc-inner{--nc-h:44px}.nc-mk{width:32px;height:32px}}
@@ -150,10 +175,11 @@
   .nc-tools{gap:4px}
   .nc-tools button{padding-left:6px;padding-right:6px}
   .nc-search input{font-size:13px}
-  /* 页脚只保留版权与说明，五站链接由 Tab 承担 */
+  /* 页脚只保留版权、免责声明与说明，八项站群链接由 Tab 承担 */
   .nc-foot-nav{display:none}
-  .nc-foot{font-size:11px;gap:4px 10px}
-  .nc-foot-site{margin-left:0;text-align:left;flex:1 1 100%}
+  .nc-foot{font-size:11px;gap:4px 8px;flex-wrap:nowrap}
+  .nc-foot-site{margin-left:auto;text-align:right;flex:0 1 auto;min-width:0;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
   .nc-tabbar{
     display:flex;position:fixed;left:0;right:0;bottom:0;z-index:110;
@@ -182,8 +208,10 @@
      用页脚 margin 兜底：game 内页的 family-bridge.css 会用 !important
      把 body padding 清零，页脚这条同样 !important 且特异性更高，仍然生效。 */
   body.nc-has-tabbar:not(:has(> .nc-foot)){padding-bottom:calc(62px + env(safe-area-inset-bottom,0px))}
-  body.nc-has-tabbar > .nc-foot{
-    height:62px!important;overflow:hidden!important;
+  body.nc-has-tabbar > .nc-foot.nc-foot{
+    height:auto!important;overflow:visible!important;
+    margin-top:6px!important;
+    padding-top:5px!important;padding-bottom:5px!important;
     margin-bottom:calc(62px + env(safe-area-inset-bottom,0px))!important;
   }
 

@@ -1,0 +1,6 @@
+# 科学问答
+
+> 中文科学问答库：93 篇深度 Hub 与 1,057 个问题，覆盖日常现象、人体、自然、技术与社会议题。
+
+- 首页：https://ask.netcn.org/
+- Sitemap：https://ask.netcn.org/sitemap.xml
