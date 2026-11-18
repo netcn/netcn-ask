@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">喝酒脸红：乙醛代谢受阻</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">乙醇 → 乙醛 → ALDH2 分解 → 血管扩张</text>
+<rect x="40.0" y="124.0" width="126.4" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="124.0" width="126.4" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="66.0" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="66.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">01</text>
+<text x="84.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">乙醇摄入</text>
+<text x="54.0" y="222.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">饮酒后乙醇经胃</text>
+<text x="54.0" y="240.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">肠吸收进入血液</text>
+<path d="M169.4 216.0 L184.4 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="188.4" y="124.0" width="126.4" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="188.4" y="124.0" width="126.4" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="214.4" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="214.4" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#7fb069" text-anchor="middle" opacity="1.00">02</text>
+<text x="232.4" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">ADH 氧化</text>
+<text x="202.4" y="213.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">乙醇在肝脏由乙</text>
+<text x="202.4" y="231.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">醇脱氢酶氧化为</text>
+<text x="202.4" y="249.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">乙醛</text>
+<path d="M317.8 216.0 L332.8 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="336.8" y="124.0" width="126.4" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="336.8" y="124.0" width="126.4" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="362.8" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="362.8" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">03</text>
+<text x="380.8" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">ALDH2 受阻</text>
+<text x="350.8" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">ALDH2*2 变异酶</text>
+<text x="350.8" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">活性低，乙醛不</text>
+<text x="350.8" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">能快速分解</text>
+<rect x="348.8" y="268.0" width="102.4" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="400.0" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">酶活性不足</text>
+<path d="M466.2 216.0 L481.2 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="485.2" y="124.0" width="126.4" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="485.2" y="124.0" width="126.4" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="511.2" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="511.2" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#7fb069" text-anchor="middle" opacity="1.00">04</text>
+<text x="529.2" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">乙醛蓄积</text>
+<text x="499.2" y="213.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">乙醛在体内堆积</text>
+<text x="499.2" y="231.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">，刺激血管与相</text>
+<text x="499.2" y="249.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">关炎性反应</text>
+<path d="M614.6 216.0 L629.6 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="633.6" y="124.0" width="126.4" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="633.6" y="124.0" width="126.4" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="659.6" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="659.6" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">05</text>
+<text x="677.6" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">面部潮红</text>
+<text x="647.6" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">皮肤血管扩张，</text>
+<text x="647.6" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">面颈发红、心跳</text>
+<text x="647.6" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">加快</text>
+<rect x="645.6" y="268.0" width="102.4" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="696.8" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">表型不是酒量</text>
+<rect x="40.0" y="336.0" width="720.0" height="56.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="359.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">约 30%–40% 东亚人群携带失活 ALDH2*2 等位基因；脸红是酶活性不足的表型，并不代表酒量好。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

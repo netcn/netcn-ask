@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">生物多样性的三个层次</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">基因、物种与生态系统嵌套支撑</text>
+<rect x="40.0" y="122.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="122.0" width="6.0" height="56.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">基因多样性</text>
+<text x="190.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">种内等位基因与种群间遗传变异</text>
+<text x="748.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2f7d5d" text-anchor="end" opacity="1.00">适应与育种原材料</text>
+<rect x="40.0" y="186.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="186.0" width="6.0" height="56.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">物种多样性</text>
+<text x="190.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">区域内物种种类、多度与组成</text>
+<text x="748.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7fb069" text-anchor="end" opacity="1.00">群落成分</text>
+<rect x="40.0" y="250.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="250.0" width="6.0" height="56.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">生态系统多样性</text>
+<text x="190.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">生境类型、群落与生态过程</text>
+<text x="748.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2f7d5d" text-anchor="end" opacity="1.00">共存的环境基础</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">三层相互支撑；单一物种保护不能替代生境与种群结构维护。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

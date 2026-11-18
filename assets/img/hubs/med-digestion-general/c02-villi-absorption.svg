@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7f8c"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c46a6a"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">小肠怎样放大吸收面积：皱襞、绒毛与微绒毛</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">结构层级从宏观皱襞到上皮微突起，营养物分两路进入循环</text>
+<rect x="40.0" y="122.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="122.0" width="6.0" height="56.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">环形皱襞</text>
+<text x="190.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">黏膜与黏膜下层深褶，延长食糜通过路径并撑开管腔</text>
+<text x="748.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2f7f8c" text-anchor="end" opacity="1.00">三级放大第一级</text>
+<rect x="40.0" y="186.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="186.0" width="6.0" height="56.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">绒毛</text>
+<text x="190.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">0.5–1 mm 指状突起，内含毛细血管床与乳糜管</text>
+<text x="748.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#c46a6a" text-anchor="end" opacity="1.00">20–40 根/mm²</text>
+<rect x="40.0" y="250.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="250.0" width="6.0" height="56.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">微绒毛</text>
+<text x="190.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">上皮细胞表面约 1 µm 突起，膜上固定刷状缘酶</text>
+<text x="748.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2f7f8c" text-anchor="end" opacity="1.00">约 2 亿根/mm²</text>
+<rect x="40.0" y="314.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="314.0" width="6.0" height="56.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">吸收上皮</text>
+<text x="190.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">单糖、氨基酸入毛细血管；脂类包装后入乳糜管</text>
+<text x="748.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#c46a6a" text-anchor="end" opacity="1.00">总面积约 200 m²</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">三级结构使吸收面积扩大 600 倍以上；每日约 9 L 液体中约九成水在小肠被吸收。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

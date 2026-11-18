@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="锂的两种主要富集路径：伟晶岩岩浆分异形成锂辉石，干旱封闭盆地的卤水蒸发形成锂富集">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f0f9ff"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0369a1"/></marker></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0369a1"/>
+<text x="40" y="45" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0f172a">锂：从平均分布到可开采富集</text>
+<text x="40" y="73" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">Lithium is not rare; economic concentrations require special geology</text>
+<rect x="30" y="92" width="365" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="50" y="120" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#9a3412">① 伟晶岩：岩浆分异</text>
+<rect x="50" y="138" width="325" height="48" rx="8" fill="#fff7ed" stroke="#fdba74" stroke-width="1.4"/>
+<text x="64" y="168" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#78350f">花岗质岩浆缓慢冷却</text>
+<line x1="212" y1="186" x2="212" y2="208" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="50" y="210" width="325" height="48" rx="8" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.4"/>
+<text x="64" y="240" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#78350f">锂留在残余熔体</text>
+<line x1="212" y1="258" x2="212" y2="280" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="50" y="282" width="325" height="62" rx="8" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.4"/>
+<text x="64" y="308" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#92400e">伟晶岩：锂辉石/透锂长石</text>
+<text x="64" y="330" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#78350f">例如 Greenbushes（澳大利亚）</text>
+<text x="64" y="370" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" fill="#475569">分异越充分，锂越集中在少数矿物中。</text>
+<text x="64" y="394" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#64748b">随后可开采、选矿、提炼。</text>
+<rect x="408" y="92" width="362" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="428" y="120" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0369a1">② 盐湖卤水：蒸发浓缩</text>
+<rect x="428" y="138" width="322" height="48" rx="8" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.4"/>
+<text x="442" y="168" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#075985">火山岩/火山灰提供锂</text>
+<line x1="590" y1="186" x2="590" y2="208" stroke="#0369a1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="428" y="210" width="322" height="48" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.4"/>
+<text x="442" y="240" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#075985">地下卤水溶解并搬运锂</text>
+<line x1="590" y1="258" x2="590" y2="280" stroke="#0369a1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="428" y="282" width="322" height="62" rx="8" fill="#ecfeff" stroke="#67e8f9" stroke-width="1.4"/>
+<text x="442" y="308" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0e7490">封闭盆地 + 强烈蒸发</text>
+<text x="442" y="330" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#155e75">例如 Salar de Atacama（智利）</text>
+<text x="442" y="370" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" fill="#475569">水走掉，锂和其他盐留下；卤水被泵入蒸发池。</text>
+<text x="442" y="394" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#64748b">干旱、封闭、无排水口是关键。</text>
+<rect x="40" y="442" width="720" height="30" rx="7" fill="#f1f5f9"/>
+<text x="54" y="463" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#334155">地壳平均约 17–20 ppm；可开采的是被地质过程浓缩的少数矿床。</text>
+<text x="40" y="486" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

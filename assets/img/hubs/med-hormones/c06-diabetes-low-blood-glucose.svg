@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7f8c"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c46a6a"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">糖尿病为什么会出现低血糖：诱因、阈值与症状分层</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">低血糖是血糖供给、药物作用与消耗之间的失衡；症状按血糖水平分层出现</text>
+<rect x="40.0" y="124.0" width="163.5" height="202.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="66.0" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="66.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">01</text>
+<text x="84.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">常见诱因</text>
+<text x="54.0" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">胰岛素或促泌剂剂量、</text>
+<text x="54.0" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">未按时进食、运动量增</text>
+<text x="54.0" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">大、饮酒等使血糖供给</text>
+<text x="54.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">或下降速度失衡</text>
+<rect x="52.0" y="286.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="121.8" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">外源性降糖</text>
+<path d="M206.5 225.0 L221.5 225.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="225.5" y="124.0" width="163.5" height="202.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="225.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="251.5" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="251.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#c46a6a" text-anchor="middle" opacity="1.00">02</text>
+<text x="269.5" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">血糖跌破阈值</text>
+<text x="239.5" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">血浆葡萄糖低于约 70 m</text>
+<text x="239.5" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">g/dL（3.9 mmol/L）进</text>
+<text x="239.5" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">入低血糖区间，症状常</text>
+<text x="239.5" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">在更低水平出现</text>
+<rect x="237.5" y="286.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="307.2" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">&lt;70 mg/dL</text>
+<path d="M392.0 225.0 L407.0 225.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="411.0" y="124.0" width="163.5" height="202.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="411.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="437.0" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="437.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">03</text>
+<text x="455.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">交感兴奋</text>
+<text x="425.0" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">低于约 55 mg/dL 时出</text>
+<text x="425.0" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">现出汗、心慌、颤抖、</text>
+<text x="425.0" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">饥饿、焦虑等肾上腺素</text>
+<text x="425.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">能症状</text>
+<rect x="423.0" y="286.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="492.8" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">出汗心慌</text>
+<path d="M577.5 225.0 L592.5 225.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="596.5" y="124.0" width="163.5" height="202.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="596.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="622.5" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="622.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#c46a6a" text-anchor="middle" opacity="1.00">04</text>
+<text x="640.5" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">脑供糖不足</text>
+<text x="610.5" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">血糖继续下降至约 48–</text>
+<text x="610.5" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">50 mg/dL 以下，脑供</text>
+<text x="610.5" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">糖不足，出现头晕、意</text>
+<text x="610.5" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">识模糊甚至昏迷</text>
+<rect x="608.5" y="286.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="678.2" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">神经低糖</text>
+<rect x="40.0" y="354.0" width="720.0" height="56.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="377.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">Whipple 三联征：低血糖症状、测得低血糖、补糖后症状缓解；反复低血糖者症状阈值可能被调低，感知变迟钝。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

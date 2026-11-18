@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">一个复选框背后的判断</title>
+  <desc id="desc">用户点击“我不是机器人”后，浏览器信号进入风险评分，低风险直接发令牌，高风险进入图片或音频加试，最后站点验证令牌或分数。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#edf7f3"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="7" fill="#0f9d8c"/>
+  <rect x="20" y="24" width="760" height="452" rx="16" fill="#ffffff" stroke="#dbe7e3"/>
+
+  <text x="48" y="65" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#0f172a">一个复选框背后的判断</text>
+  <text x="48" y="92" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" fill="#64748b">点击只是触发；真正决定放行的是后台风险评分</text>
+  <line x1="48" y1="108" x2="752" y2="108" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- four stages -->
+  <g filter="url(#soft)">
+    <rect x="44" y="132" width="154" height="80" rx="12" fill="#f0fdfa" stroke="#99f6e4"/>
+    <rect x="222" y="132" width="154" height="80" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+    <rect x="400" y="132" width="154" height="80" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+    <rect x="578" y="132" width="178" height="80" rx="12" fill="#f5f3ff" stroke="#ddd6fe"/>
+  </g>
+  <text x="121" y="158" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#0f766e">用户点击</text>
+  <text x="121" y="181" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#475569">「我不是机器人」</text>
+  <text x="121" y="199" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">看起来像普通复选框</text>
+
+  <text x="299" y="158" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#334155">浏览器信号</text>
+  <text x="299" y="181" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#475569">鼠标 / 键盘 / 触摸</text>
+  <text x="299" y="199" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">语言 / Cookie / 网络</text>
+
+  <text x="477" y="158" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#b45309">风险评分</text>
+  <text x="477" y="181" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#475569">0.0 ←→ 1.0</text>
+  <text x="477" y="199" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">权重不公开</text>
+
+  <text x="667" y="158" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#6d28d9">站点验证</text>
+  <text x="667" y="181" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#475569">token 或分数</text>
+  <text x="667" y="199" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">后端决定放行或拦截</text>
+
+  <line x1="200" y1="172" x2="216" y2="172" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="378" y1="172" x2="394" y2="172" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="556" y1="172" x2="572" y2="172" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- decision branches -->
+  <path d="M477 212 V238" stroke="#0f766e" stroke-width="2" fill="none"/>
+  <path d="M477 238 H194 V266" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M477 238 H524 V266" stroke="#b45309" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <g filter="url(#soft)">
+    <rect x="44" y="270" width="300" height="98" rx="12" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <rect x="374" y="270" width="300" height="98" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  </g>
+  <text x="194" y="298" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#15803d">低风险：直接放行</text>
+  <text x="194" y="323" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">签发通过令牌，用户几乎无感</text>
+  <text x="194" y="345" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">多数正常访客走这条路径</text>
+
+  <text x="524" y="298" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#b45309">高风险：加试或拦截</text>
+  <text x="524" y="323" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">九宫格图片、声音题，或直接拒绝</text>
+  <text x="524" y="345" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">也可能是误判</text>
+
+  <text x="44" y="394" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">误判来源：共享 IP、无痕模式、禁用 Cookie、键盘导航。</text>
+  <text x="44" y="412" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">复选框不证明“你是人”，只说明“这次会话风险低”。</text>
+
+  <rect x="44" y="428" width="712" height="32" rx="8" fill="#ecfdf5"/>
+  <text x="400" y="449" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="700" fill="#0f766e">结论：它拦的是低投入脚本，不是有目标的攻击者。</text>
+</svg>

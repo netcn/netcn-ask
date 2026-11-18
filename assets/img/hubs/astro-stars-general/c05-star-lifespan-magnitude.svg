@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d99a2b"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3a6ea5"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">恒星质量—主序寿命对照</text>
+<rect x="40.0" y="87.0" width="720.0" height="36.0" rx="6" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="111.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">恒星质量</text>
+<text x="288.0" y="111.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">主序寿命</text>
+<text x="520.0" y="111.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">特征</text>
+<rect x="40.0" y="125.0" width="720.0" height="52.0" rx="4" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="145.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">0.1 M☉ 红矮星</text>
+<text x="288.0" y="145.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">1000 亿年以上</text>
+<text x="520.0" y="145.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">核反应缓慢，寿命可超当前宇宙年龄</text>
+<rect x="40.0" y="177.0" width="720.0" height="52.0" rx="4" fill="#f8fafb" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="197.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">1 M☉ 太阳</text>
+<text x="288.0" y="197.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">约 100 亿年</text>
+<text x="520.0" y="197.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">走质子-质子链；绝对星等约 4.83</text>
+<rect x="40.0" y="229.0" width="720.0" height="52.0" rx="4" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="249.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">约 10 M☉ 大质量星</text>
+<text x="288.0" y="249.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">千万年量级</text>
+<text x="520.0" y="249.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">走 CNO 循环；核心高温、燃烧猛烈</text>
+<text x="40.0" y="303.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">视星等同时受光度与距离影响：太阳视星等约 −26.7 只因距近；天狼星距 8.6 光年，视星等约 −1.46。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

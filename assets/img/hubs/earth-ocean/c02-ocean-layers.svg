@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5b7f3a"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#9a6b3f"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#5b7f3a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#22301f" text-anchor="start" opacity="1.00">海洋垂直分层：混合层、温跃层与深层冷水</text>
+<rect x="40.0" y="89.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="89.0" width="6.0" height="56.0" rx="0" fill="#5b7f3a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="122.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#22301f" text-anchor="start" opacity="1.00">表层混合层</text>
+<text x="190.0" y="122.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">风与波浪搅动，温度较高、盐度均匀</text>
+<text x="748.0" y="122.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#5b7f3a" text-anchor="end" opacity="1.00">几十至数百米</text>
+<rect x="40.0" y="153.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="153.0" width="6.0" height="56.0" rx="0" fill="#9a6b3f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#22301f" text-anchor="start" opacity="1.00">温跃层</text>
+<text x="190.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">温度随深度快速下降，密度随之上增，上下水体难以交换</text>
+<text x="748.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#9a6b3f" text-anchor="end" opacity="1.00">密度跃层</text>
+<rect x="40.0" y="217.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="217.0" width="6.0" height="56.0" rx="0" fill="#5b7f3a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="250.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#22301f" text-anchor="start" opacity="1.00">深层冷水</text>
+<text x="190.0" y="250.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">盐度高、密度大，沿洋底缓慢流动</text>
+<text x="748.0" y="250.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#5b7f3a" text-anchor="end" opacity="1.00">约 0–3 °C</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">海水含盐使密度峰值低于 4 °C；压力约每 10 米增加 1 个大气压，水本身可压缩性很小。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

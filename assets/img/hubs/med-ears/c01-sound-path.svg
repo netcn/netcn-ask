@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">声音从耳廓到听神经的通路</title>
+  <desc id="desc">声波经耳廓收集、耳道传导、鼓膜振动、听小骨放大，在耳蜗转为电信号，沿听神经传向大脑。</desc>
+  <rect width="800" height="450" fill="#f7f9fc"/>
+  <text x="32" y="48" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="27" font-weight="700" fill="#14213d">声音怎样变成神经信号</text>
+  <text x="32" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#5b6b82">From air vibration to electrical signals</text>
+
+  <g font-family="'Microsoft YaHei','Noto Sans SC',sans-serif">
+    <rect x="30" y="135" width="108" height="92" rx="12" fill="#e8f1ff" stroke="#3778c2" stroke-width="2"/>
+    <text x="84" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#173b66">耳廓</text>
+    <text x="84" y="198" text-anchor="middle" font-size="12" fill="#48627f">收集声波</text>
+    <text x="84" y="216" text-anchor="middle" font-size="11" fill="#6b7c92">Pinna</text>
+
+    <rect x="155" y="135" width="108" height="92" rx="12" fill="#e8f1ff" stroke="#3778c2" stroke-width="2"/>
+    <text x="209" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#173b66">耳道</text>
+    <text x="209" y="198" text-anchor="middle" font-size="12" fill="#48627f">引导声波</text>
+    <text x="209" y="216" text-anchor="middle" font-size="11" fill="#6b7c92">Ear canal</text>
+
+    <rect x="280" y="135" width="108" height="92" rx="12" fill="#fff2df" stroke="#d68a1d" stroke-width="2"/>
+    <text x="334" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#71430a">鼓膜</text>
+    <text x="334" y="198" text-anchor="middle" font-size="12" fill="#7a5a2d">随压力振动</text>
+    <text x="334" y="216" text-anchor="middle" font-size="11" fill="#8b7355">Eardrum</text>
+
+    <rect x="405" y="135" width="108" height="92" rx="12" fill="#fff2df" stroke="#d68a1d" stroke-width="2"/>
+    <text x="459" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#71430a">听小骨</text>
+    <text x="459" y="198" text-anchor="middle" font-size="12" fill="#7a5a2d">放大并传力</text>
+    <text x="459" y="216" text-anchor="middle" font-size="11" fill="#8b7355">Ossicles</text>
+
+    <rect x="530" y="135" width="108" height="92" rx="12" fill="#e6f7ef" stroke="#1f8a5b" stroke-width="2"/>
+    <text x="584" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#0d4d32">耳蜗</text>
+    <text x="584" y="198" text-anchor="middle" font-size="12" fill="#386b53">毛细胞转电信号</text>
+    <text x="584" y="216" text-anchor="middle" font-size="11" fill="#5c7a6b">Cochlea</text>
+
+    <rect x="655" y="135" width="108" height="92" rx="12" fill="#e6f7ef" stroke="#1f8a5b" stroke-width="2"/>
+    <text x="709" y="174" text-anchor="middle" font-size="19" font-weight="700" fill="#0d4d32">听神经</text>
+    <text x="709" y="198" text-anchor="middle" font-size="12" fill="#386b53">传向大脑</text>
+    <text x="709" y="216" text-anchor="middle" font-size="11" fill="#5c7a6b">Auditory nerve</text>
+  </g>
+
+  <g stroke="#8fa3bd" stroke-width="3" fill="none">
+    <path d="M138 181 L153 181" marker-end="url(#arrow)"/>
+    <path d="M263 181 L278 181" marker-end="url(#arrow)"/>
+    <path d="M388 181 L403 181" marker-end="url(#arrow)"/>
+    <path d="M513 181 L528 181" marker-end="url(#arrow)"/>
+    <path d="M638 181 L653 181" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8fa3bd"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="275" width="740" height="62" rx="14" fill="#14213d"/>
+  <text x="400" y="303" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="20" font-weight="700" fill="#ffffff">空气振动 → 机械振动 → 电信号</text>
+  <text x="400" y="324" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#c9d6e8">Air pressure → mechanical motion → neural code</text>
+
+  <text x="30" y="382" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="15" fill="#334155">关键不是“耳朵听到”，而是耳蜗把不同频率分配到不同位置，再由听神经编码。</text>
+  <text x="30" y="407" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#64748b">高频靠近耳蜗入口，低频靠近顶端；毛细胞一旦死亡，人体不能自行再生。</text>
+  <text x="30" y="432" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#7b8ba1">示意图 · 依据 OpenStax Anatomy &amp; Physiology 2e, Ch.14 与 NIDCD “How Do We Hear?”</text>
+</svg>

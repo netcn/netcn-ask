@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="地球本影、半影与月食几何关系">
+  <rect width="720" height="460" fill="#f8fafc"/>
+  <text x="40" y="40" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">月食：月球进入地球的影子</text>
+
+  <!-- 太阳 -->
+  <g font-family="sans-serif">
+    <circle cx="70" cy="230" r="42" fill="#fbbf24"/>
+    <g stroke="#f59e0b" stroke-width="2">
+      <line x1="70" y1="180" x2="70" y2="166"/><line x1="120" y1="230" x2="134" y2="230"/>
+      <line x1="70" y1="280" x2="70" y2="294"/><line x1="100" y1="200" x2="110" y2="190"/>
+      <line x1="100" y1="260" x2="110" y2="270"/>
+    </g>
+    <text x="70" y="330" text-anchor="middle" font-size="13" fill="#7c2d12">太阳</text>
+  </g>
+
+  <!-- 半影 -->
+  <path d="M300 188 L700 110 L700 350 L300 272 Z" fill="#94a3b8" opacity="0.22"/>
+  <!-- 本影 -->
+  <path d="M300 188 L640 230 L300 272 Z" fill="#334155" opacity="0.65"/>
+
+  <!-- 地球 -->
+  <g font-family="sans-serif">
+    <circle cx="300" cy="230" r="42" fill="#3b82f6"/>
+    <path d="M278 208 Q296 200 310 214 Q324 228 302 242 Q280 252 270 232 Z" fill="#22c55e" opacity="0.8"/>
+    <text x="300" y="280" text-anchor="middle" font-size="13" fill="#1e3a8a">地球</text>
+  </g>
+
+  <!-- 月球 -->
+  <g font-family="sans-serif">
+    <circle cx="560" cy="230" r="18" fill="#7f1d1d"/>
+    <circle cx="560" cy="230" r="18" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <text x="560" y="206" text-anchor="middle" font-size="12" fill="#b91c1c">月球（月全食）</text>
+  </g>
+
+  <g font-family="sans-serif">
+    <text x="470" y="214" text-anchor="middle" font-size="12" fill="#e2e8f0">本影</text>
+    <text x="470" y="160" text-anchor="middle" font-size="12" fill="#475569">半影</text>
+  </g>
+
+  <text x="360" y="408" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">月食只发生在满月；月球轨道相对黄道倾斜约 5°，所以多数满月从影子的上方或下方掠过。</text>
+  <text x="360" y="432" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">月全食时，地球大气把红光折射进本影，月球呈暗红色，而不是完全消失。</text>
+</svg>

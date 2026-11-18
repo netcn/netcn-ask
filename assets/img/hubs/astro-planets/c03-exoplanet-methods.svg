@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d99a2b"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3a6ea5"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">发现系外行星的三类主方法</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">凌星、视向速度与直接成像，各有选择偏差</text>
+<rect x="40.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="54.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">凌星法</text>
+<text x="54.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">恒星亮度周期性小幅下降</text>
+<text x="54.0" y="208.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">光变深度给出行星半径</text>
+<text x="54.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">间隔给出轨道周期</text>
+<text x="54.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">要求轨道侧对地球</text>
+<text x="54.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d99a2b" text-anchor="start" opacity="1.00">开普勒 / TESS 测光巡天</text>
+<rect x="288.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="288.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#3a6ea5" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="302.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">视向速度法</text>
+<text x="302.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">恒星沿视线往返摆动</text>
+<text x="302.0" y="208.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">光谱线周期红移蓝移</text>
+<text x="302.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">得到行星质量下限</text>
+<text x="302.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">对近轨大行星更敏感</text>
+<text x="302.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#3a6ea5" text-anchor="start" opacity="1.00">多普勒光谱测量</text>
+<rect x="536.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="536.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#8a9aa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="550.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">直接成像</text>
+<text x="550.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">日冕仪遮挡恒星本体</text>
+<text x="550.0" y="208.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">只拍年轻高温远距大行星</text>
+<text x="550.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">辅以红外成像</text>
+<text x="550.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">样本数量最少</text>
+<text x="550.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#8a9aa8" text-anchor="start" opacity="1.00">JWST / 地面极大望远镜</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">半径谷位于 1.5–2 R⊕；宜居带由恒星光度决定，不等于宜居。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

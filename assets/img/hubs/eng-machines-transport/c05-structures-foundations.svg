@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f6f8c"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b06a2c"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#3f6f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#1b2632" text-anchor="start" opacity="1.00">地基沉降与静水压强：斜塔与河堤的结构逻辑</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">上部结构承重，地基与断面形状决定稳定性，材料抗压抗拉分工</text>
+<rect x="40.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#3f6f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1b2632" text-anchor="start" opacity="1.00">不均匀沉降</text>
+<line x1="58.0" y1="175.0" x2="352.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="62.0" cy="188.0" r="3.2" fill="#3f6f8c"/>
+<text x="74.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">软弱冲积土层一侧下沉更多</text>
+<circle cx="62.0" cy="231.3" r="3.2" fill="#3f6f8c"/>
+<text x="74.0" y="235.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">倾斜侧地基压力集中、土体再压缩</text>
+<circle cx="62.0" cy="274.7" r="3.2" fill="#3f6f8c"/>
+<text x="74.0" y="278.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">加固地基、抽土纠偏与配重控倾角</text>
+<rect x="54.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="66.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#3f6f8c" text-anchor="start" opacity="1.00">稳定先看持力层</text>
+<rect x="430.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="430.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#b06a2c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="448.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1b2632" text-anchor="start" opacity="1.00">堤坝断面</text>
+<line x1="448.0" y1="175.0" x2="742.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="452.0" cy="188.0" r="3.2" fill="#b06a2c"/>
+<text x="464.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">液体压强 p=ρgh，深度越大推力越大</text>
+<circle cx="452.0" cy="231.3" r="3.2" fill="#b06a2c"/>
+<text x="464.0" y="235.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">下宽上窄分散压力、增加自重抗滑</text>
+<circle cx="452.0" cy="274.7" r="3.2" fill="#b06a2c"/>
+<text x="464.0" y="278.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">基础嵌入不透水层减小渗流扬压力</text>
+<rect x="444.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="456.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b06a2c" text-anchor="start" opacity="1.00">断面由水压分布决定</text>
+<circle cx="400.0" cy="262.0" r="22.0" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7d8b98" text-anchor="middle" opacity="1.00">vs</text>
+<rect x="40.0" y="410.0" width="720.0" height="50.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="431.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">拱券把荷载分解为沿拱圈的压力；风、地震与不均匀沉降需在结构布置中预留冗余。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

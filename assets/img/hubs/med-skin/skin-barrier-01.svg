@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
+<title id="t">皮肤怎样晒黑、怎样挡住酒精</title>
+<desc id="d">三层结构、黑素细胞与经皮吸收：晒黑是损伤后的防护，不是“打底”；完整皮肤很少吸收酒精。</desc>
+<rect x="0" y="0" width="800" height="500" fill="#fbfaf7"/>
+<rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#e7e2d8" stroke-width="1"/>
+<text x="30" y="38" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="700" fill="#17202a">皮肤怎样晒黑、怎样挡住酒精</text>
+<text x="30" y="62" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#5b6673">三层结构、黑素细胞与经皮吸收：晒黑是损伤后的防护，不是“打底”；完整皮肤很少吸收酒精。</text>
+<rect x="30" y="84" width="240" height="350" rx="15" fill="#ffffff" stroke="#ddd8cf" stroke-width="1.1"/>
+<rect x="30" y="84" width="240" height="42" rx="15" fill="#0f766e"/>
+<rect x="30" y="108" width="240" height="18" fill="#0f766e"/>
+<text x="45" y="111" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#ffffff">① 紫外线与晒黑</text>
+<text x="45" y="146" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12" fill="#6b6257">DNA 损伤 → 黑素细胞加班</text>
+<text x="45" y="170" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">UVB 伤表皮，UVA 进真皮</text>
+<text x="45" y="193" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">p53–POMC–α-MSH–MC1R</text>
+<text x="45" y="216" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">酪氨酸酶合成新黑素</text>
+<text x="45" y="239" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">黑素小体转运到角质细胞</text>
+<text x="45" y="262" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">核上方形成“黑素伞”</text>
+<rect x="44" y="322" width="212" height="92" rx="9" fill="#f7f4ee" stroke="#e5dfd4"/>
+<text x="56" y="342" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">晒黑是防护反应，不是健康</text>
+<text x="56" y="362" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">迟发晒黑峰值约 10 天–4 周</text>
+<rect x="285" y="84" width="240" height="350" rx="15" fill="#ffffff" stroke="#ddd8cf" stroke-width="1.1"/>
+<rect x="285" y="84" width="240" height="42" rx="15" fill="#b4533f"/>
+<rect x="285" y="108" width="240" height="18" fill="#b4533f"/>
+<text x="300" y="111" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#ffffff">② 皮肤强度</text>
+<text x="300" y="146" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12" fill="#6b6257">薄，但胶原网络很韧</text>
+<text x="300" y="170" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">表皮约 0.05–0.15 mm</text>
+<text x="300" y="193" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">真皮约 0.15–4 mm</text>
+<text x="300" y="216" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">胶原约占真皮干重 70%</text>
+<text x="300" y="239" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">弹性纤维负责回弹</text>
+<text x="300" y="262" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">不能直接和兽皮比厚</text>
+<rect x="299" y="322" width="212" height="92" rx="9" fill="#f7f4ee" stroke="#e5dfd4"/>
+<text x="311" y="342" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">人皮肤强在感觉、散热与屏障</text>
+<text x="311" y="362" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">不是抗撕咬的“铠甲”</text>
+<rect x="540" y="84" width="240" height="350" rx="15" fill="#ffffff" stroke="#ddd8cf" stroke-width="1.1"/>
+<rect x="540" y="84" width="240" height="42" rx="15" fill="#a16207"/>
+<rect x="540" y="108" width="240" height="18" fill="#a16207"/>
+<text x="555" y="111" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#ffffff">③ 经皮吸收</text>
+<text x="555" y="146" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12" fill="#6b6257">完整皮肤低，破损皮肤高</text>
+<text x="555" y="170" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">完整皮肤：乙醇 1%–2%</text>
+<text x="555" y="193" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">大部分很快蒸发</text>
+<text x="555" y="216" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">擦伤、湿疹、封闭会升高</text>
+<text x="555" y="239" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">大量 + 长时间 + 破损</text>
+<text x="555" y="262" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#2d3742">才可能出现中毒</text>
+<rect x="554" y="322" width="212" height="92" rx="9" fill="#f7f4ee" stroke="#e5dfd4"/>
+<text x="566" y="342" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">病例：62% 洗手液封闭 30 小时</text>
+<text x="566" y="362" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#7a5a3a">血乙醇 3.7 g/L；不是“皮肤喝酒”</text>
+<text x="30" y="470" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="11" fill="#8a857c">原创机制示意图，CC BY 4.0；不按比例，仅示机制。</text>
+</svg>

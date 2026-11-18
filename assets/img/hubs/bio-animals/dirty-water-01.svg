@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="动物喝浑水的三层防线">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0284c7"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#0284c7" stroke="#0284c7" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">动物喝浑水的三层防线</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Three lines of drinking-water defence</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="132" width="380" height="68" rx="10" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="76" y="160" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0369a1" text-anchor="start">第一层</text>
+<text x="76" y="182" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">嗅觉回避：腐败气味、藻华强烈的水，本能绕开</text>
+<path d="M250 203 L250 212" fill="none" stroke="#0284c7" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="60" y="216" width="380" height="68" rx="10" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="76" y="244" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0369a1" text-anchor="start">第二层</text>
+<text x="76" y="266" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">强酸胃/瘤胃：牛羊发酵罐、秃鹫强酸硬扛病原</text>
+<path d="M250 287 L250 296" fill="none" stroke="#0284c7" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="60" y="300" width="380" height="68" rx="10" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="76" y="328" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0369a1" text-anchor="start">第三层</text>
+<text x="76" y="350" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">暴露史：低剂量长期接触→部分免疫记忆（有赌注）</text>
+<rect x="480" y="132" width="260" height="240" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+<text x="610" y="164" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#e11d48" text-anchor="middle">并非百毒不侵</text>
+<text x="610" y="200" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">霍乱弧菌、蓝藻毒素同样致命</text>
+<text x="610" y="226" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">野鸟大规模死于肉毒中毒</text>
+<text x="610" y="252" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">犬猫死于钩虫的记录很多</text>
+<text x="610" y="278" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">贾第鞭毛虫、弓形虫</text>
+<text x="610" y="304" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">会由动物传回人类</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">所以：野外水源对人类和宠物都不建议生饮</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

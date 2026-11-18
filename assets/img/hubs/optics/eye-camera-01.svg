@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="眼睛和相机的类比与差异">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f0fdfa"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0f766e"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a">眼睛和相机：像在哪里，不像在哪里</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">A useful analogy, not a literal equivalence</text>
+<rect x="40" y="100" width="720" height="340" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="126" width="330" height="294" rx="10" fill="#f0fdfa" stroke="#5eead4" stroke-width="1.2"/>
+<text x="76" y="152" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#0f766e">眼睛：角膜+晶状体→视网膜</text>
+<circle cx="170" cy="220" r="58" fill="#ecfeff" stroke="#0f766e" stroke-width="1.5"/>
+<path d="M112 220 Q96 220 112 204" fill="none" stroke="#0284c7" stroke-width="2"/>
+<path d="M112 236 Q96 236 112 220" fill="none" stroke="#0284c7" stroke-width="2"/>
+<path d="M150 172 Q170 220 150 268" fill="none" stroke="#0d9488" stroke-width="2"/>
+<path d="M210 166 Q236 220 210 274" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<line x1="170" y1="220" x2="210" y2="220" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="76" y="300" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#0f766e">角膜：主要的屈光面</text>
+<text x="76" y="316" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#0f766e">晶状体：睫状肌改变形状，微调焦点</text>
+<text x="76" y="332" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#0f766e">视网膜：弯曲的感光面，形成倒立实像</text>
+<text x="76" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#0f766e">瞳孔：虹膜围成的光圈，约 2–8 mm</text>
+<text x="246" y="206" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="9.5" fill="#475569">视网膜</text>
+<text x="90" y="200" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="9.5" fill="#475569">角膜</text>
+<text x="146" y="246" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="9.5" fill="#475569">晶状体</text>
+<rect x="410" y="126" width="330" height="294" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.2"/>
+<text x="426" y="152" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#9a3412">相机：镜头组 → 传感器</text>
+<rect x="470" y="180" width="210" height="96" rx="12" fill="#ffedd5" stroke="#f97316" stroke-width="1.5"/>
+<circle cx="470" cy="228" r="34" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+<circle cx="470" cy="228" r="22" fill="#fed7aa" stroke="#f97316" stroke-width="1.5"/>
+<line x1="680" y1="192" x2="680" y2="264" stroke="#ea580c" stroke-width="4"/>
+<text x="426" y="300" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#9a3412">镜头组：多片镜片，移动或变焦对焦</text>
+<text x="426" y="316" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#9a3412">光圈：叶片开合，控制进光量与景深</text>
+<text x="426" y="332" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#9a3412">传感器：平面感光阵列，记录一张画面</text>
+<text x="426" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#9a3412">图像处理器：去马赛克、降噪、压缩</text>
+<text x="500" y="170" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="9.5" fill="#475569">镜头组</text>
+<text x="650" y="183" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="9.5" fill="#475569">传感器</text>
+<text x="60" y="444" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#475569">相同：都用凸透镜系统把外界光线聚焦到感光面，形成倒立、左右反转的实像。</text>
+<text x="60" y="460" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#475569">不同：眼睛自动调焦、适应亮度，并由大脑校正；相机靠机械/电子系统，画面是“一次性”记录。</text>
+<rect x="60" y="470" width="680" height="1" fill="#e2e8f0"/>
+<text x="40" y="490" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

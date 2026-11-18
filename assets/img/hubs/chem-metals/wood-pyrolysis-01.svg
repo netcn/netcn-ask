@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="木材在无氧高温下的热解过程：约200至400摄氏度分解，继续升温得到木炭、焦油和气体，没有液态木材">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f0fdf4"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0f766e"/></marker></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0f766e"/>
+<text x="40" y="45" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0f172a">木头没有熔点：缺氧时先热解</text>
+<text x="40" y="73" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">Wood has no melting point; without oxygen it pyrolyses into char, tar and gas</text>
+<rect x="30" y="92" width="740" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="50" y="122" width="132" height="120" rx="10" fill="#ecfdf5" stroke="#86efac" stroke-width="1.6"/>
+<text x="86" y="160" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#166534">木材</text>
+<text x="66" y="188" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">纤维素</text>
+<text x="66" y="210" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">半纤维素</text>
+<text x="66" y="232" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">木质素</text>
+<line x1="190" y1="182" x2="220" y2="182" stroke="#0f766e" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="228" y="122" width="166" height="120" rx="10" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.6"/>
+<text x="244" y="152" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#92400e">200–400°C</text>
+<text x="244" y="178" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#78350f">大分子开始断裂</text>
+<text x="244" y="200" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#78350f">挥发物逸出</text>
+<text x="244" y="224" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#b91c1c">没有液态木材</text>
+<line x1="402" y1="182" x2="432" y2="182" stroke="#0f766e" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="440" y="122" width="152" height="120" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="1.6"/>
+<text x="454" y="152" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#9a3412">400–700°C</text>
+<text x="454" y="178" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#7c2d12">炭化加深</text>
+<text x="454" y="200" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#7c2d12">焦油裂解/缩聚</text>
+<line x1="600" y1="182" x2="630" y2="182" stroke="#0f766e" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="638" y="122" width="112" height="120" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.6"/>
+<text x="652" y="152" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#334155">产物</text>
+<text x="652" y="178" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">木炭</text>
+<text x="652" y="200" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">焦油</text>
+<text x="652" y="222" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#475569">可燃气</text>
+<rect x="50" y="270" width="390" height="50" rx="8" fill="#f8fafc"/>
+<text x="64" y="302" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#334155">没有氧气：燃烧被关掉，热解仍在进行。</text>
+<rect x="456" y="270" width="294" height="50" rx="8" fill="#ecfdf5"/>
+<text x="470" y="302" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#166534">可以热解，不能熔化。</text>
+<rect x="50" y="340" width="700" height="58" rx="8" fill="#ffffff" stroke="#d1d5db" stroke-width="1.2"/>
+<text x="66" y="364" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" fill="#334155">木材不是纯物质；高温无氧时碳骨架仍在，不会变成一整块液体。</text>
+<text x="66" y="385" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" fill="#334155">继续升温只会进一步炭化/气化，不会出现“液态木头”。</text>
+<text x="40" y="462" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

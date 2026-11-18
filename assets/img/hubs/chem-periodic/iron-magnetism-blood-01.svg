@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">铁的磁性、居里温度与血液中的铁</title>
+  <desc id="desc">左侧展示铁磁畴在无外磁场时杂乱、在外磁场中转向并增强磁场，标注居里温度约 770 摄氏度；右侧展示血红素中 Fe²⁺ 与 O₂ 结合，并列出铜与钒的少数替代方案。</desc>
+  <metadata>原创机制示意图，CC BY 4.0，netcn ask，2026-11-16。依据 OpenStax University Physics 与 Chemistry 2e、血红蛋白与血蓝蛋白资料。</metadata>
+  <rect width="800" height="500" fill="#f7f4ec"/>
+  <text x="28" y="34" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1f2937">一块铁，两种生命故事</text>
+  <text x="28" y="58" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#4b5563">磁畴让铁被磁铁吸引；血红素让铁把氧送给全身</text>
+
+  <rect x="22" y="78" width="374" height="354" rx="10" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="42" y="110" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#1f2937">铁磁性：磁畴的集体转向</text>
+
+  <text x="44" y="140" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">未磁化：方向杂乱</text>
+  <rect x="44" y="152" width="150" height="82" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="62" y1="172" x2="86" y2="164" stroke="#374151" stroke-width="4"/>
+  <line x1="94" y1="216" x2="76" y2="200" stroke="#374151" stroke-width="4"/>
+  <line x1="112" y1="166" x2="136" y2="182" stroke="#374151" stroke-width="4"/>
+  <line x1="142" y1="210" x2="126" y2="226" stroke="#374151" stroke-width="4"/>
+  <line x1="158" y1="174" x2="180" y2="190" stroke="#374151" stroke-width="4"/>
+  <line x1="60" y1="214" x2="86" y2="226" stroke="#374151" stroke-width="4"/>
+
+  <text x="218" y="140" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">外磁场：转向增强</text>
+  <rect x="218" y="152" width="150" height="82" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <line x1="236" y1="170" x2="266" y2="170" stroke="#2563eb" stroke-width="4"/>
+  <line x1="236" y1="190" x2="266" y2="190" stroke="#2563eb" stroke-width="4"/>
+  <line x1="236" y1="210" x2="266" y2="210" stroke="#2563eb" stroke-width="4"/>
+  <line x1="282" y1="170" x2="312" y2="170" stroke="#2563eb" stroke-width="4"/>
+  <line x1="282" y1="190" x2="312" y2="190" stroke="#2563eb" stroke-width="4"/>
+  <line x1="282" y1="210" x2="312" y2="210" stroke="#2563eb" stroke-width="4"/>
+  <text x="350" y="198" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="24" fill="#2563eb">→</text>
+
+  <rect x="42" y="260" width="320" height="64" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="58" y="286" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#92400e">居里温度：约 770°C</text>
+  <text x="58" y="310" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#92400e">再热，磁畴失序，铁不再被吸引。</text>
+
+  <text x="42" y="356" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">钴、镍也有铁磁性；铁的优势是</text>
+  <text x="42" y="380" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">饱和磁化强、储量较大、加工成熟。</text>
+  <text x="42" y="410" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#6b7280">“最吸引”是比较说法，不是严格排行。</text>
+
+  <rect x="410" y="78" width="368" height="354" rx="10" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="430" y="110" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#1f2937">血液里的铁：血红素</text>
+
+  <circle cx="548" cy="200" r="56" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <circle cx="548" cy="200" r="24" fill="#fbcfe8" stroke="#be185d" stroke-width="2"/>
+  <text x="548" y="207" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#9d174d">Fe²⁺</text>
+  <text x="548" y="144" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#9d174d">卟啉环</text>
+  <line x1="548" y1="144" x2="548" y2="176" stroke="#be185d" stroke-width="2"/>
+  <line x1="604" y1="200" x2="630" y2="200" stroke="#be185d" stroke-width="2"/>
+  <circle cx="652" cy="200" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="652" y="207" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#1d4ed8">O₂</text>
+  <text x="620" y="244" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#1d4ed8">可逆结合</text>
+
+  <text x="430" y="290" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">Fe²⁺ 与卟啉环、组氨酸配位。</text>
+  <text x="430" y="314" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">结合 O₂ 后，在组织中释放。</text>
+  <text x="430" y="346" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">铜（血蓝蛋白）见于少数</text>
+  <text x="430" y="370" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#374151">无脊椎动物；钒更少见。</text>
+
+  <rect x="430" y="390" width="326" height="26" rx="6" fill="#fef3c7"/>
+  <text x="440" y="409" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#92400e">人类没有“无铁血红蛋白”的已知方案。</text>
+</svg>

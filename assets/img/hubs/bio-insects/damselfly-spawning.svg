@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">蜻蜓点水是在做什么</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">雌虫把卵产入水中，稚虫在水生环境中发育</text>
+<rect x="40.0" y="124.0" width="163.5" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="66.0" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="66.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">01</text>
+<text x="84.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">交配</text>
+<text x="54.0" y="212.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">雌雄蜻蜓连接成串，完</text>
+<text x="54.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">成体内受精</text>
+<rect x="52.0" y="268.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="121.8" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">多在飞行中进行</text>
+<path d="M206.5 216.0 L221.5 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="225.5" y="124.0" width="163.5" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="225.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="251.5" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="251.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#7fb069" text-anchor="middle" opacity="1.00">02</text>
+<text x="269.5" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">点水产卵</text>
+<text x="239.5" y="203.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">雌虫腹部末端触水，把</text>
+<text x="239.5" y="221.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">卵产进水中或水生植物</text>
+<text x="239.5" y="239.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">茎内</text>
+<rect x="237.5" y="268.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="307.2" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">一次可产数十至上百粒</text>
+<path d="M392.0 216.0 L407.0 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="411.0" y="124.0" width="163.5" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="411.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="437.0" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="437.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">03</text>
+<text x="455.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">稚虫水生</text>
+<text x="425.0" y="212.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">孵化出的水虿在水中捕</text>
+<text x="425.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">食孑孓、蝌蚪等</text>
+<rect x="423.0" y="268.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="492.8" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">蜕皮约 9–14 次</text>
+<path d="M577.5 216.0 L592.5 216.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="596.5" y="124.0" width="163.5" height="184.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="596.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<circle cx="622.5" cy="150.0" r="12.0" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0"/>
+<text x="622.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#7fb069" text-anchor="middle" opacity="1.00">04</text>
+<text x="640.5" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">羽化出水</text>
+<text x="610.5" y="212.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">稚虫爬出水面，蜕皮展</text>
+<text x="610.5" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">开翅膀成为成虫</text>
+<rect x="608.5" y="268.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="678.2" y="287.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="middle" opacity="1.00">稚虫期数月到数年</text>
+<rect x="40.0" y="336.0" width="720.0" height="56.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="359.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">点水不是喝水或嬉戏，而是产卵行为；蜻蜓的卵和稚虫都依赖水体，成虫才离开水面飞行。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

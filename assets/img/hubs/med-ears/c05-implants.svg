@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">人工耳蜗的工作链路</title>
+  <desc id="desc">声音由麦克风收集，言语处理器编码后经发射线圈传到体内，电极阵列直接刺激听神经。</desc>
+  <rect width="800" height="450" fill="#f7f5ff"/>
+  <text x="32" y="48" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="27" font-weight="700" fill="#2d1d5a">人工耳蜗怎样绕过毛细胞</text>
+  <text x="32" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#635a86">A cochlear implant stimulates the auditory nerve directly</text>
+
+  <g font-family="'Microsoft YaHei','Noto Sans SC',sans-serif">
+    <rect x="30" y="115" width="120" height="88" rx="12" fill="#eee9ff" stroke="#6b5ab5" stroke-width="2"/>
+    <text x="90" y="151" text-anchor="middle" font-size="19" font-weight="700" fill="#3b2b75">声音</text>
+    <text x="90" y="176" text-anchor="middle" font-size="12" fill="#635a86">Sound</text>
+
+    <rect x="165" y="115" width="120" height="88" rx="12" fill="#eee9ff" stroke="#6b5ab5" stroke-width="2"/>
+    <text x="225" y="151" text-anchor="middle" font-size="19" font-weight="700" fill="#3b2b75">麦克风</text>
+    <text x="225" y="176" text-anchor="middle" font-size="12" fill="#635a86">Microphone</text>
+
+    <rect x="300" y="115" width="135" height="88" rx="12" fill="#eee9ff" stroke="#6b5ab5" stroke-width="2"/>
+    <text x="367" y="151" text-anchor="middle" font-size="19" font-weight="700" fill="#3b2b75">言语处理器</text>
+    <text x="367" y="176" text-anchor="middle" font-size="12" fill="#635a86">Speech processor</text>
+
+    <rect x="450" y="115" width="120" height="88" rx="12" fill="#e8f1ff" stroke="#3778c2" stroke-width="2"/>
+    <text x="510" y="151" text-anchor="middle" font-size="19" font-weight="700" fill="#173b66">发射线圈</text>
+    <text x="510" y="176" text-anchor="middle" font-size="12" fill="#48627f">Transmitter</text>
+
+    <rect x="585" y="115" width="185" height="88" rx="12" fill="#e6f7ef" stroke="#1f8a5b" stroke-width="2"/>
+    <text x="677" y="151" text-anchor="middle" font-size="19" font-weight="700" fill="#0d4d32">电极阵列</text>
+    <text x="677" y="176" text-anchor="middle" font-size="12" fill="#386b53">Electrode array</text>
+  </g>
+
+  <g stroke="#8b7fc0" stroke-width="3" fill="none">
+    <path d="M150 159 L163 159" marker-end="url(#a5)"/>
+    <path d="M285 159 L298 159" marker-end="url(#a5)"/>
+    <path d="M435 159 L448 159" marker-end="url(#a5)"/>
+    <path d="M570 159 L583 159" marker-end="url(#a5)"/>
+  </g>
+  <defs>
+    <marker id="a5" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b7fc0"/></marker>
+  </defs>
+
+  <rect x="35" y="240" width="360" height="135" rx="16" fill="#ffffff" stroke="#c9c1e8" stroke-width="2"/>
+  <text x="215" y="270" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="17" font-weight="700" fill="#3b2b75">耳蜗内的电极阵列</text>
+  <path d="M95 330 C95 285 220 275 285 300 C330 318 320 345 260 345 C215 345 195 325 225 310" fill="none" stroke="#1f8a5b" stroke-width="10"/>
+  <g fill="#6b5ab5">
+    <circle cx="120" cy="315" r="4"/><circle cx="145" cy="303" r="4"/><circle cx="172" cy="296" r="4"/>
+    <circle cx="200" cy="295" r="4"/><circle cx="228" cy="300" r="4"/><circle cx="255" cy="310" r="4"/>
+    <circle cx="278" cy="324" r="4"/><circle cx="286" cy="340" r="4"/>
+  </g>
+  <text x="215" y="365" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#635a86">不同位置对应不同频率，直接刺激听神经</text>
+
+  <rect x="425" y="240" width="340" height="135" rx="16" fill="#ffffff" stroke="#c9c1e8" stroke-width="2"/>
+  <text x="595" y="270" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="17" font-weight="700" fill="#3b2b75">助听器 vs 人工耳蜗</text>
+  <text x="450" y="300" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#4b3f73">助听器：放大声音，仍走毛细胞</text>
+  <text x="450" y="326" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#4b3f73">人工耳蜗：绕过毛细胞，电刺激听神经</text>
+  <text x="450" y="352" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#7b6f9e">适用：重度以上感音神经性聋，助听器帮助有限</text>
+
+  <rect x="35" y="397" width="730" height="34" rx="9" fill="#2d1d5a"/>
+  <text x="400" y="419" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="16" font-weight="700" fill="#ffffff">术后不是立刻“正常听见”：需要开机调试与听觉康复训练</text>
+  <text x="35" y="445" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6c6390">示意图 · 依据 FDA Cochlear Implants 与 NIDCD 资料</text>
+</svg>

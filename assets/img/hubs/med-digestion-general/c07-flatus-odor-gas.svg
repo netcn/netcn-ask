@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7f8c"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c46a6a"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">肠道气体从哪来、臭味由谁决定：三条来源对照</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">气体分两条路径进入肠道，臭味则来自占比很小的含硫挥发物，而不是气体总量</text>
+<rect x="40.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="54.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">吞咽空气</text>
+<text x="54.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">进食快、边吃边说话、嚼口香糖、喝</text>
+<text x="54.0" y="202.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">碳酸饮料</text>
+<text x="54.0" y="224.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">空气随唾液食物入胃再到结肠</text>
+<text x="54.0" y="246.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">以氮气为主，基本无味</text>
+<text x="54.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">过多只增加腹胀和排气次数</text>
+<text x="54.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="start" opacity="1.00">对臭味贡献有限</text>
+<rect x="288.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="288.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="302.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">菌群发酵</text>
+<text x="302.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">未消化的碳水化合物进入结肠</text>
+<text x="302.0" y="208.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">700 余种细菌分解残余糖和纤维</text>
+<text x="302.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">产生氢、二氧化碳和甲烷</text>
+<text x="302.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">一日产气最多约 1500 mL</text>
+<text x="302.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#c46a6a" text-anchor="start" opacity="1.00">气体总量主要来源</text>
+<rect x="536.0" y="120.0" width="224.0" height="296.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="536.0" y="120.0" width="224.0" height="6.0" rx="0" fill="#8a9aa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="550.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">硫化物致臭</text>
+<text x="550.0" y="186.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">发酵中少量生成挥发性硫化物</text>
+<text x="550.0" y="208.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">硫化氢、甲硫醇、二甲基硫醚</text>
+<text x="550.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">嗅觉阈值极低，微量即臭</text>
+<text x="550.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">吲哚、粪臭素辅助参与气味</text>
+<text x="550.0" y="392.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#8a9aa8" text-anchor="start" opacity="1.00">气味由硫化物决定</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">约一成氢气经直肠排出，其余被其他细菌消耗或吸收入血后经呼吸排出；菌群与饮食决定发酵产物比例。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

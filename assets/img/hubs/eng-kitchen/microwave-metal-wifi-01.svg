@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs>
+  <marker id="c1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#0f766e"/></marker>
+  <marker id="c2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#b91c1c"/></marker>
+</defs>
+<rect width="800" height="500" fill="#f8fafc"/>
+<text x="38" y="40" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="21" font-weight="700" fill="#0f172a">金属、微波与 Wi‑Fi：同一家族，不同剂量</text>
+<text x="38" y="66" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="13" fill="#475569">非电离辐射不等于无害；关键看功率、距离、暴露时间和约束方式</text>
+<rect x="46" y="88" width="540" height="34" rx="17" fill="#dcfce7" stroke="#86efac"/>
+<rect x="586" y="88" width="168" height="34" rx="17" fill="#fee2e2" stroke="#fca5a5"/>
+<text x="58" y="110" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#166534">无线电 / Wi‑Fi / 微波：非电离</text>
+<text x="598" y="110" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#991b1b">可见光 / X 射线：电离</text>
+<text x="46" y="140" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#64748b">频率升高 → 单个光子能量升高；2.45 GHz 微波的光子能量仍远低于化学键</text>
+<rect x="46" y="162" width="344" height="286" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="410" y="162" width="344" height="286" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="66" y="190" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#1e3a8a">微波炉：高功率 + 金属腔体</text>
+<rect x="66" y="204" width="210" height="150" rx="8" fill="#eff6ff" stroke="#64748b" stroke-width="2"/>
+<path d="M84 220 H258 M84 338 H258" stroke="#94a3b8" stroke-width="4"/>
+<path d="M150 250 Q180 230 210 250 M150 272 Q184 248 218 272 M150 294 Q188 266 226 294" stroke="#2563eb" stroke-width="2" fill="none"/>
+<path d="M206 266 l-22 -16 8 22 26 6 z" fill="#fca5a5" stroke="#b91c1c"/>
+<text x="232" y="260" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#991b1b">金属叉/铝箔</text>
+<text x="232" y="278" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#991b1b">反射、集中</text>
+<text x="82" y="330" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#475569">金属壁把微波反射回食物</text>
+<text x="66" y="378" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#334155">泄漏限值：约 2 英寸处 5 mW/cm²</text>
+<text x="66" y="399" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#334155">两道独立互锁：开门即停止产生微波</text>
+<text x="66" y="426" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#64748b">腔体是屏蔽层；餐具是腔内的反射体。</text>
+<text x="430" y="190" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#065f46">Wi‑Fi：低功率 + 开放空间</text>
+<path d="M500 252 q30 -18 60 0 q-30 18 -60 0 M610 240 q-24 -16 -48 0" stroke="#0f766e" stroke-width="2" fill="none"/>
+<rect x="448" y="270" width="236" height="52" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/>
+<text x="462" y="292" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#065f46">路由器 / 接入点：典型约 0.1 W</text>
+<text x="462" y="312" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#047857">距离越远，暴露迅速下降</text>
+<text x="430" y="354" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#334155">合规水平下：没有一致的不良健康证据</text>
+<text x="430" y="376" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#334155">但“安全”是低于限值，不是绝对零风险</text>
+<text x="430" y="404" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#64748b">WHO 将射频列为 2B“可能致癌”：证据有限，</text>
+<text x="430" y="423" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#64748b">不能排除偶然、偏差与混杂。</text>
+<text x="38" y="474" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#64748b">同一波段，不同暴露：微波炉把高功率关在腔里；Wi‑Fi 把低功率散布在环境中。</text>
+</svg>

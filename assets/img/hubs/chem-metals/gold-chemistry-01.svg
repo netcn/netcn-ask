@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="金的化学稳定性：普通化学不改变原子序数，核反应可产生微量金但成本极高；金的标准还原电位约正1.50伏，因此耐腐蚀">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#fffbeb"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#b45309"/>
+<text x="40" y="45" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0f172a">金为什么稳定？热力学上的“不愿意”</text>
+<text x="40" y="73" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">Strongly positive reduction potential: gold gives up electrons only with difficulty</text>
+<rect x="30" y="92" width="360" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="50" y="120" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#9a3412">① 化学 vs 核反应</text>
+<rect x="50" y="136" width="320" height="74" rx="9" fill="#fff7ed" stroke="#fdba74" stroke-width="1.4"/>
+<text x="64" y="160" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#9a3412">普通化学</text>
+<text x="64" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#334155">原子序数不变</text>
+<text x="64" y="202" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#64748b">所以造不出金</text>
+<rect x="50" y="222" width="320" height="74" rx="9" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="1.4"/>
+<text x="64" y="246" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0369a1">核反应</text>
+<text x="64" y="270" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#334155">可造微量金</text>
+<text x="64" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#64748b">但产额小、成本极高</text>
+<rect x="50" y="308" width="320" height="94" rx="9" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="64" y="332" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#334155">卫星上的“金箔”</text>
+<text x="64" y="356" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#92400e">是 MLI 隔热毯</text>
+<text x="64" y="378" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#64748b">多层镀金属薄膜，不是实心黄金</text>
+<rect x="410" y="92" width="360" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="430" y="120" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#0f172a">② 标准还原电位（25°C）</text>
+<line x1="460" y1="160" x2="460" y2="330" stroke="#cbd5e1" stroke-width="3"/>
+<circle cx="460" cy="185" r="8" fill="#b45309"/>
+<text x="480" y="181" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#b45309">Au³⁺ + 3e⁻ → Au</text>
+<text x="480" y="205" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#92400e">+1.50 V</text>
+<circle cx="460" cy="255" r="8" fill="#0369a1"/>
+<text x="480" y="251" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#0369a1">2H⁺ + 2e⁻ → H₂</text>
+<text x="480" y="275" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#0369a1">0 V</text>
+<circle cx="460" cy="315" r="8" fill="#dc2626"/>
+<text x="480" y="311" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#dc2626">Fe²⁺ + 2e⁻ → Fe</text>
+<text x="480" y="335" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#dc2626">−0.44 V</text>
+<text x="430" y="370" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#334155">越正：越难失去电子，越耐氧化。</text>
+<text x="430" y="394" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" fill="#64748b">但王水、氰化物仍可溶解金。</text>
+<text x="40" y="462" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#92400e">耐腐蚀 ≠ 硬：纯金很软，常用金合金提高强度。</text>
+<text x="40" y="486" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

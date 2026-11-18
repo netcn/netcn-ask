@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b06a1f"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f7d8c"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#b06a1f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">奶酪气孔：第二次发酵的二氧化碳气泡</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">丙酸杆菌分解乳酸产生 CO₂，在弹性凝乳内部撑开并固定成眼孔</text>
+<rect x="40.0" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#b06a1f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="54.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">凝乳成型</text>
+<text x="54.0" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">凝乳切割后压榨排出乳</text>
+<text x="54.0" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">清，形成半凝固的酪蛋</text>
+<text x="54.0" y="216.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">白网络</text>
+<rect x="52.0" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="121.8" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b06a1f" text-anchor="middle" opacity="1.00">Swiss 型干酪</text>
+<path d="M206.5 229.0 L221.5 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="225.5" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="225.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#3f7d8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="239.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">丙酸菌发酵</text>
+<text x="239.5" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">费氏丙酸杆菌分解乳酸</text>
+<text x="239.5" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">，生成丙酸、乙酸与二</text>
+<text x="239.5" y="216.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">氧化碳</text>
+<rect x="237.5" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="307.2" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b06a1f" text-anchor="middle" opacity="1.00">成熟温度约 20–24 °C</text>
+<path d="M392.0 229.0 L407.0 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="411.0" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="411.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#b06a1f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="425.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">气泡生成</text>
+<text x="425.0" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">CO₂ 被包裹在凝乳内部</text>
+<text x="425.0" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">，缓慢膨胀成球形空腔</text>
+<rect x="423.0" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="492.8" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b06a1f" text-anchor="middle" opacity="1.00">气孔直径 1–数 cm</text>
+<path d="M577.5 229.0 L592.5 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="596.5" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="596.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#3f7d8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="610.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">气孔固定</text>
+<text x="610.5" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">低温储存时弹性凝乳把</text>
+<text x="610.5" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">气泡边界固定，形成可</text>
+<text x="610.5" y="216.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">见眼孔</text>
+<rect x="608.5" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="678.2" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b06a1f" text-anchor="middle" opacity="1.00">低温定型</text>
+<rect x="40.0" y="362.0" width="720.0" height="56.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="385.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">蓝纹干酪的青灰纹路是接种霉菌的菌丝，不是气体孔；并非所有奶酪都有孔。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

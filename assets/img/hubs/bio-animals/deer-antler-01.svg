@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="鹿茸生长周期：活骨、茸皮、钙化、脱落与再生">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker>
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#16a34a" stroke="#16a34a" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">鹿茸是活骨，受损会疼</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Velvet antler is living bone that can hurt</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<line x1="150" y1="240" x2="690" y2="240" stroke="#16a34a" stroke-width="2.5"/>
+<circle cx="150" cy="240" r="22" fill="#16a34a"/>
+<text x="150" y="245" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">春</text>
+<text x="150" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">带血管的活骨</text>
+<text x="150" y="306" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">每天长 1.5–3cm</text>
+<circle cx="330" cy="240" r="22" fill="#16a34a"/>
+<text x="330" y="245" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">夏</text>
+<text x="330" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">钙化完成</text>
+<text x="330" y="306" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">蹭掉干茸皮</text>
+<circle cx="510" cy="240" r="22" fill="#16a34a"/>
+<text x="510" y="245" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">秋</text>
+<text x="510" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">交配季角力</text>
+<circle cx="690" cy="240" r="22" fill="#16a34a"/>
+<text x="690" y="245" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">冬末</text>
+<text x="690" y="288" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">薄弱面脱落</text>
+<text x="690" y="306" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="middle">来年再长</text>
+<rect x="60" y="360" width="680" height="50" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="360" y="391" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">鹿茸不是“角质”，而是有血管和神经的活骨；每年脱落是正常剧本，不是受伤</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">“四不像”=麋鹿，正牌鹿科成员，1985 年起从英国保存种群回国重建</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

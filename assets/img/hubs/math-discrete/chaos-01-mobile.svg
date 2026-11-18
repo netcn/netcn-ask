@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="蝴蝶效应与同水分子的概率">
+<rect width="600" height="1300" fill="#f7f4ea"/>
+<rect x="0" y="0" width="600" height="8" fill="#0f6b6b"/>
+<text x="28" y="44" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="24" font-weight="700" fill="#18323f">微小差异，如何变成完全不同的未来？</text>
+<text x="28" y="76" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">蝴蝶效应与巨大数：两件看起来无关的事</text>
+<g>
+<rect x="24" y="100" width="552" height="290" rx="12" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="140" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#0f6b6b">① 混沌：初值差 10⁻⁶</text>
+<path d="M 60,250 C 130,250 150,120 230,110 C 300,100 320,190 400,180 C 470,170 500,90 560,80" fill="none" stroke="#c46a1b" stroke-width="3"/>
+<path d="M 60,250 C 130,250 150,150 230,170 C 300,190 320,240 400,260 C 470,280 500,190 560,160" fill="none" stroke="#0f6b6b" stroke-width="3"/>
+<circle cx="60" cy="250" r="6" fill="#18323f"/>
+<text x="44" y="296" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">起初几乎重合，几天后分叉</text>
+<text x="44" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">|δ(t)| ≈ |δ₀| · exp(λt)</text>
+<text x="44" y="370" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">不是蝴蝶扇了一下翅膀，</text>
+<text x="44" y="398" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">而是微小误差被指数放大。</text>
+</g>
+<g>
+<rect x="24" y="420" width="552" height="300" rx="12" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="460" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#c46a1b">② 巨大数：一杯水里的分子</text>
+<text x="44" y="500" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="19" fill="#18323f">一杯水 ≈ 8×10²⁴ 个分子</text>
+<text x="44" y="536" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="19" fill="#18323f">地球水 ≈ 4.6×10⁴⁶ 个分子</text>
+<text x="44" y="574" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="19" fill="#18323f">P ≈ 1 − exp(−n²/2m) ≈ 1</text>
+<text x="44" y="612" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">两杯水几乎必然共享至少一个分子；</text>
+<text x="44" y="640" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">但指定某一个分子，概率只有 ~10⁻²²。</text>
+</g>
+<g>
+<rect x="24" y="752" width="552" height="170" rx="12" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="44" y="792" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="20" font-weight="700" fill="#0f6b6b">边界</text>
+<text x="44" y="828" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#18323f">混沌不等于没有规律；它限制的是长期预测。</text>
+<text x="44" y="860" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#18323f">水分子会交换质子，“同一个分子”会变得模糊。</text>
+</g>
+<g transform="translate(24,942)">
+<rect x="0" y="0" width="552" height="300" rx="12" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="20" y="34" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#0f6b6b">三个数字，三个尺度</text>
+<text x="20" y="74" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">10⁻⁶：初值误差，被指数放大</text>
+<text x="20" y="110" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">8×10²⁴：一杯水里的分子数</text>
+<text x="20" y="146" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">10⁻²²：指定一个分子的概率</text>
+<text x="20" y="190" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">短期可预测，长期要用集合预报；</text>
+<text x="20" y="218" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">概率接近 1，不等于“必然同一杯”。</text>
+<text x="20" y="246" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">尺度变了，直觉也要跟着换。</text>
+</g>
+</svg>

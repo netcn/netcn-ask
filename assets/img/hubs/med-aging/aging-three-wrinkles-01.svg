@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">三种皱纹，同一类失稳</title>
+  <desc id="desc">皮肤、苹果与岩层三种尺度上的皱纹示意图：皮肤支撑变薄、苹果失水、岩层受挤压，表层都会屈曲起褶。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#f7f4ee"/>
+  <text x="40" y="38" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="24" font-weight="700" fill="#1f2933">三种皱纹，同一类失稳</text>
+  <text x="40" y="64" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#52606d">皮肤失弹 · 果实失水 · 岩层受压：支撑变弱，表层就起褶</text>
+
+  <!-- panel 1: skin -->
+  <g>
+    <rect x="40" y="86" width="220" height="330" rx="12" fill="#ffffff" stroke="#d9d2c5" stroke-width="1"/>
+    <text x="58" y="112" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" fill="#1f2933">皮肤</text>
+    <text x="58" y="132" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="12" fill="#52606d">支撑变薄，表皮折叠</text>
+    <path d="M58 162 C78 148 98 176 118 162 C138 148 158 176 178 162 C198 148 218 176 238 162" fill="none" stroke="#c2410c" stroke-width="3"/>
+    <path d="M58 170 C78 156 98 184 118 170 C138 156 158 184 178 170 C198 156 218 184 238 170" fill="none" stroke="#e8b4a0" stroke-width="2"/>
+    <rect x="58" y="172" width="180" height="112" rx="6" fill="#f6d7c9" opacity="0.45"/>
+    <path d="M62 196 L234 196 M62 218 L234 218 M62 240 L234 240 M62 262 L234 262" stroke="#d18b6f" stroke-width="1" opacity="0.7"/>
+    <path d="M68 196 L82 218 M100 196 L114 218 M132 196 L146 218 M164 196 L178 218 M196 196 L210 218" stroke="#d18b6f" stroke-width="1" opacity="0.5"/>
+    <path d="M62 284 Q150 274 234 284 L234 330 Q150 320 62 330 Z" fill="#f0e3d3"/>
+    <circle cx="82" cy="304" r="8" fill="#ffffff" stroke="#cbb79d" stroke-width="1"/>
+    <circle cx="112" cy="312" r="9" fill="#ffffff" stroke="#cbb79d" stroke-width="1"/>
+    <circle cx="146" cy="302" r="7" fill="#ffffff" stroke="#cbb79d" stroke-width="1"/>
+    <circle cx="178" cy="312" r="8" fill="#ffffff" stroke="#cbb79d" stroke-width="1"/>
+    <circle cx="208" cy="303" r="7" fill="#ffffff" stroke="#cbb79d" stroke-width="1"/>
+    <text x="58" y="352" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">表皮</text>
+    <text x="112" y="352" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">真皮：胶原 / 弹性纤维</text>
+    <text x="58" y="374" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">皮下脂肪垫萎缩</text>
+    <line x1="164" y1="146" x2="164" y2="184" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="170" y="166" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#0f766e">支撑</text>
+    <text x="170" y="180" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#0f766e">减少</text>
+    <text x="58" y="398" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#9a3412">细纹固定为折痕</text>
+  </g>
+
+  <!-- panel 2: apple -->
+  <g>
+    <rect x="290" y="86" width="220" height="330" rx="12" fill="#ffffff" stroke="#d9d2c5" stroke-width="1"/>
+    <text x="308" y="112" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" fill="#1f2933">苹果</text>
+    <text x="308" y="132" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="12" fill="#52606d">失水，膨压下降</text>
+    <path d="M400 156 C408 150 414 160 426 156" fill="none" stroke="#7c4a2d" stroke-width="3"/>
+    <path d="M398 176 C350 172 330 210 334 254 C338 300 364 326 400 328 C436 326 462 300 466 254 C470 210 450 172 402 176" fill="none" stroke="#b45309" stroke-width="3" stroke-dasharray="4 3"/>
+    <path d="M400 188 C370 186 350 214 353 250 C356 286 376 310 400 312 C424 310 444 286 447 250 C450 214 430 186 400 188" fill="#f3c18c" opacity="0.55"/>
+    <path d="M400 200 C380 198 365 220 368 246 C371 274 384 294 400 296 C416 294 429 274 432 246 C435 220 420 198 400 200" fill="#f6d7b8"/>
+    <line x1="466" y1="236" x2="500" y2="222" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="466" y1="264" x2="500" y2="278" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="334" y1="236" x2="300" y2="222" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="334" y1="264" x2="300" y2="278" stroke="#0f766e" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="470" y="214" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#0f766e">水分</text>
+    <text x="470" y="226" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#0f766e">蒸腾</text>
+    <text x="308" y="352" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">果皮失去膨压</text>
+    <text x="308" y="374" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">细胞壁不再绷紧</text>
+    <text x="308" y="398" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#9a3412">像泄了气的气球</text>
+  </g>
+
+  <!-- panel 3: rock -->
+  <g>
+    <rect x="540" y="86" width="220" height="330" rx="12" fill="#ffffff" stroke="#d9d2c5" stroke-width="1"/>
+    <text x="558" y="112" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" fill="#1f2933">岩层</text>
+    <text x="558" y="132" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="12" fill="#52606d">挤压，塑性弯曲</text>
+    <path d="M570 190 C600 170 630 210 660 190 C690 170 720 210 748 190 L748 210 C720 230 690 190 660 210 C630 230 600 190 570 210 Z" fill="#94a3b8"/>
+    <path d="M570 226 C600 206 630 246 660 226 C690 206 720 246 748 226 L748 246 C720 266 690 226 660 246 C630 266 600 226 570 246 Z" fill="#64748b"/>
+    <path d="M570 262 C600 242 630 282 660 262 C690 242 720 282 748 262 L748 282 C720 302 690 262 660 282 C630 302 600 262 570 282 Z" fill="#475569"/>
+    <line x1="560" y1="246" x2="588" y2="246" stroke="#c2410c" stroke-width="2" marker-end="url(#arrowOrange)"/>
+    <line x1="760" y1="246" x2="732" y2="246" stroke="#c2410c" stroke-width="2" marker-end="url(#arrowOrange)"/>
+    <text x="556" y="240" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#9a3412">压</text>
+    <text x="742" y="240" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#9a3412">压</text>
+    <text x="558" y="352" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">层状岩层受压缩</text>
+    <text x="558" y="374" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">高温高压下缓慢弯曲</text>
+    <text x="558" y="398" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#9a3412">背斜与向斜</text>
+  </g>
+
+  <text x="40" y="446" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="12" fill="#1f2933" font-weight="700">共同点：薄层在变弱或收缩的基底上失去稳定，只能以屈曲换取空间。</text>
+  <text x="40" y="468" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="11" fill="#52606d">但机制不同：皮肤靠失水、失弹与脂肪流失；苹果靠蒸腾失水；岩层靠构造应力与塑性变形。示意图，非比例尺。</text>
+  <text x="40" y="486" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="10" fill="#7b8794">原创机制示意图 · CC BY 4.0</text>
+</svg>

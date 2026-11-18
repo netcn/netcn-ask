@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="随机搜索、集齐扑克牌与二项分布">
+<rect width="600" height="1300" fill="#f7f4ea"/>
+<rect x="0" y="0" width="600" height="8" fill="#0f6b6b"/>
+<text x="28" y="46" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="25" font-weight="700" fill="#18323f" text-anchor="start">随机搜索的三个尺度</text>
+<text x="28" y="78" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="400" fill="#5d6f78" text-anchor="start">相遇、集齐、恰好一半</text>
+<rect x="24" y="104" width="552" height="342" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="142" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#c46a1b" text-anchor="start">① 游乐园找人：都动通常更快</text>
+<line x1="60" y1="168" x2="60" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="168" x2="252" y2="168" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="84" y1="168" x2="84" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="192" x2="252" y2="192" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="108" y1="168" x2="108" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="216" x2="252" y2="216" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="132" y1="168" x2="132" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="240" x2="252" y2="240" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="156" y1="168" x2="156" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="264" x2="252" y2="264" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="180" y1="168" x2="180" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="288" x2="252" y2="288" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="204" y1="168" x2="204" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="312" x2="252" y2="312" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="228" y1="168" x2="228" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="336" x2="252" y2="336" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="252" y1="168" x2="252" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<line x1="60" y1="360" x2="252" y2="360" stroke="#cfc7b8" stroke-width="1"/>
+<path d="M 84,360 L 108,360 L 108,336 L 132,336 L 132,312 L 156,312 L 156,288 L 180,288 L 180,264 L 204,264" fill="none" stroke="#b23a2e" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 252,216 L 228,216 L 228,240 L 204,240 L 204,264" fill="none" stroke="#0f6b6b" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="204" cy="264" r="8" fill="#f2c14e" stroke="#8a5a00"/>
+<text x="272" y="380" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="400" fill="#18323f" text-anchor="start">8×8 网格：都动约 53 步，一停约 73 步</text>
+<text x="272" y="410" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#5d6f78" text-anchor="start">16×16：257 对 453 步</text>
+<rect x="24" y="468" width="552" height="360" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="506" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#0f6b6b" text-anchor="start">② 集齐 52 张牌：末端越来越慢</text>
+<line x1="70" y1="740" x2="540" y2="740" stroke="#b9b1a2" stroke-width="1.5"/>
+<line x1="70" y1="540" x2="70" y2="740" stroke="#b9b1a2" stroke-width="1.5"/>
+<path d="M 80.0,740.0 L 88.6,739.0 L 97.3,738.1 L 105.9,737.1 L 114.5,736.1 L 123.1,735.0 L 131.8,734.0 L 140.4,732.9 L 149.0,731.8 L 157.6,730.7 L 166.3,729.5 L 174.9,728.3 L 183.5,727.1 L 192.2,725.9 L 200.8,724.6 L 209.4,723.3 L 218.0,722.0 L 226.7,720.6 L 235.3,719.2 L 243.9,717.7 L 252.5,716.2 L 261.2,714.6 L 269.8,713.0 L 278.4,711.4 L 287.1,709.6 L 295.7,707.9 L 304.3,706.0 L 312.9,704.1 L 321.6,702.1 L 330.2,700.0 L 338.8,697.8 L 347.5,695.5 L 356.1,693.1 L 364.7,690.6 L 373.3,688.0 L 382.0,685.2 L 390.6,682.2 L 399.2,679.0 L 407.8,675.6 L 416.5,672.0 L 425.1,668.1 L 433.7,663.8 L 442.4,659.1 L 451.0,654.0 L 459.6,648.2 L 468.2,641.6 L 476.9,634.1 L 485.5,625.1 L 494.1,614.2 L 502.7,600.1 L 511.4,580.2 L 520.0,552.0" fill="none" stroke="#0f6b6b" stroke-width="4"/>
+<line x1="520" y1="740" x2="520" y2="580" stroke="#c46a1b" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="512" y="570" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#c46a1b" text-anchor="end">52 天</text>
+<text x="44" y="778" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="19" font-weight="700" fill="#18323f" text-anchor="start">总计 ≈ 236 天；最后一张平均 52 天</text>
+<text x="44" y="808" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#5d6f78" text-anchor="start">倒数第二张平均 26 天</text>
+<rect x="24" y="850" width="552" height="330" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="888" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#2c5f8a" text-anchor="start">③ 一百万个硬币：恰好一半很窄</text>
+<path d="M 90.0,1078.3 L 95.2,1077.9 L 100.5,1077.4 L 105.8,1076.8 L 111.0,1076.1 L 116.2,1075.2 L 121.5,1074.2 L 126.8,1073.0 L 132.0,1071.6 L 137.2,1069.9 L 142.5,1068.1 L 147.8,1065.9 L 153.0,1063.5 L 158.2,1060.7 L 163.5,1057.6 L 168.8,1054.1 L 174.0,1050.3 L 179.2,1046.1 L 184.5,1041.5 L 189.8,1036.6 L 195.0,1031.3 L 200.2,1025.7 L 205.5,1019.7 L 210.8,1013.5 L 216.0,1007.0 L 221.2,1000.3 L 226.5,993.6 L 231.8,986.7 L 237.0,980.0 L 242.2,973.3 L 247.5,966.8 L 252.8,960.6 L 258.0,954.7 L 263.2,949.3 L 268.5,944.4 L 273.8,940.2 L 279.0,936.6 L 284.2,933.7 L 289.5,931.7 L 294.8,930.4 L 300.0,930.0 L 305.2,930.4 L 310.5,931.7 L 315.8,933.7 L 321.0,936.6 L 326.2,940.2 L 331.5,944.4 L 336.8,949.3 L 342.0,954.7 L 347.2,960.6 L 352.5,966.8 L 357.8,973.3 L 363.0,980.0 L 368.2,986.7 L 373.5,993.6 L 378.8,1000.3 L 384.0,1007.0 L 389.2,1013.5 L 394.5,1019.7 L 399.8,1025.7 L 405.0,1031.3 L 410.2,1036.6 L 415.5,1041.5 L 420.8,1046.1 L 426.0,1050.3 L 431.2,1054.1 L 436.5,1057.6 L 441.8,1060.7 L 447.0,1063.5 L 452.2,1065.9 L 457.5,1068.1 L 462.8,1069.9 L 468.0,1071.6 L 473.2,1073.0 L 478.5,1074.2 L 483.8,1075.2 L 489.0,1076.1 L 494.2,1076.8 L 499.5,1077.4 L 504.8,1077.9 L 510.0,1078.3" fill="none" stroke="#2c5f8a" stroke-width="3.5"/>
+<line x1="300" y1="880" x2="300" y2="1090" stroke="#c46a1b" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="300" y="1110" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#5d6f78" text-anchor="middle">500,000</text>
+<text x="44" y="1145" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="20" font-weight="700" fill="#c46a1b" text-anchor="start">恰好 50 万正面 ≈ 0.08%</text>
+<text x="44" y="1175" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="400" fill="#5d6f78" text-anchor="start">±500 内 ≈ 68%；±1000 内 ≈ 95%</text>
+</svg>

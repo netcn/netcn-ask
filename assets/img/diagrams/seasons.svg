@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="地轴倾斜与地球公转造成四季的示意图">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <circle cx="360" cy="210" r="42" fill="url(#sun)"/>
+  <text x="360" y="216" text-anchor="middle" font-size="14" fill="#92400e" font-family="sans-serif">太阳</text>
+  <ellipse cx="360" cy="210" rx="250" ry="135" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 7"/>
+  <path d="M110 210 A250 135 0 0 1 360 75" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="210" y="98" font-size="12" fill="#64748b" font-family="sans-serif">公转方向（逆时针）</text>
+
+  <!-- 四个位置 -->
+  <g font-family="sans-serif">
+    <!-- 夏至：地球在左，北极朝向太阳 -->
+    <g transform="translate(110,210)">
+      <circle r="26" fill="#93c5fd"/>
+      <line x1="-26" y1="0" x2="26" y2="0" stroke="#1e3a8a" stroke-width="2" opacity="0.4"/>
+      <line x1="0" y1="-40" x2="0" y2="40" stroke="#1e3a8a" stroke-width="4" transform="rotate(23.4)"/>
+      <text x="0" y="58" text-anchor="middle" font-size="14" fill="#1e3a8a">夏至（北半球）</text>
+      <text x="0" y="76" text-anchor="middle" font-size="12" fill="#475569">北极朝向太阳</text>
+    </g>
+    <!-- 冬至：地球在右，北极背向太阳 -->
+    <g transform="translate(610,210)">
+      <circle r="26" fill="#93c5fd"/>
+      <line x1="-26" y1="0" x2="26" y2="0" stroke="#1e3a8a" stroke-width="2" opacity="0.4"/>
+      <line x1="0" y1="-40" x2="0" y2="40" stroke="#1e3a8a" stroke-width="4" transform="rotate(23.4)"/>
+      <text x="0" y="58" text-anchor="middle" font-size="14" fill="#1e3a8a">冬至（北半球）</text>
+      <text x="0" y="76" text-anchor="middle" font-size="12" fill="#475569">北极背向太阳</text>
+    </g>
+    <!-- 春分：地球在下方 -->
+    <g transform="translate(360,345)">
+      <circle r="26" fill="#93c5fd"/>
+      <line x1="-26" y1="0" x2="26" y2="0" stroke="#1e3a8a" stroke-width="2" opacity="0.4"/>
+      <line x1="0" y1="-40" x2="0" y2="40" stroke="#1e3a8a" stroke-width="4" transform="rotate(23.4)"/>
+      <text x="0" y="-36" text-anchor="middle" font-size="14" fill="#1e3a8a">春分</text>
+    </g>
+    <!-- 秋分：地球在上方 -->
+    <g transform="translate(360,75)">
+      <circle r="26" fill="#93c5fd"/>
+      <line x1="-26" y1="0" x2="26" y2="0" stroke="#1e3a8a" stroke-width="2" opacity="0.4"/>
+      <line x1="0" y1="-40" x2="0" y2="40" stroke="#1e3a8a" stroke-width="4" transform="rotate(23.4)"/>
+      <text x="0" y="-36" text-anchor="middle" font-size="14" fill="#1e3a8a">秋分</text>
+    </g>
+  </g>
+
+  <g stroke="#f59e0b" stroke-width="2" opacity="0.7">
+    <line x1="318" y1="180" x2="150" y2="180"/><line x1="318" y1="210" x2="150" y2="210"/>
+    <line x1="318" y1="240" x2="150" y2="240"/>
+    <line x1="402" y1="180" x2="570" y2="180"/><line x1="402" y1="210" x2="570" y2="210"/>
+    <line x1="402" y1="240" x2="570" y2="240"/>
+  </g>
+  <text x="360" y="398" text-anchor="middle" font-size="13" fill="#475569" font-family="sans-serif">地轴倾角约 23.4°：太阳直射点南北移动，造成四季和昼夜长短变化</text>
+</svg>

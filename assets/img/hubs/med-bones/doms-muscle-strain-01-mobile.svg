@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="DOMS 时间线与肌肉拉伤对比">
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#126b63"/></marker></defs>
+<rect width="600" height="1300" fill="#f6f3ea"/>
+<rect x="0" y="0" width="600" height="8" fill="#126b63"/>
+<text x="28" y="48" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="28" font-weight="700" fill="#1d3238" text-anchor="start">酸痛不是乳酸</text>
+<text x="28" y="82" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="400" fill="#60727a" text-anchor="start">DOMS 的时间线，以及它和拉伤的区别</text>
+<rect x="24" y="108" width="552" height="520" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="46" y="148" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#bd6a22" text-anchor="start">① 运动后 0–7 天</text>
+<rect x="46" y="168" width="136" height="42" rx="9" fill="#bd6a22" opacity="0.12"/>
+<text x="114" y="195" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#bd6a22" text-anchor="middle">离心收缩</text>
+<rect x="208" y="168" width="136" height="42" rx="9" fill="#ad3b32" opacity="0.12"/>
+<text x="276" y="195" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#ad3b32" text-anchor="middle">微撕裂</text>
+<rect x="370" y="168" width="136" height="42" rx="9" fill="#126b63" opacity="0.12"/>
+<text x="438" y="195" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#126b63" text-anchor="middle">炎症/修复</text>
+<line x1="182" y1="189" x2="204" y2="189" stroke="#60727a" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="344" y1="189" x2="366" y2="189" stroke="#60727a" stroke-width="2" marker-end="url(#arw)"/>
+<line x1="60" y1="520" x2="548" y2="520" stroke="#b9b1a2" stroke-width="1.5"/>
+<line x1="60" y1="250" x2="60" y2="520" stroke="#b9b1a2" stroke-width="1.5"/>
+<path d="M 60,508 L 100,460 L 140,410 L 180,356 L 220,310 L 260,292 L 300,320 L 340,386 L 380,444 L 420,480 L 460,500 L 500,508 L 548,508" fill="none" stroke="#bd6a22" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="140" cy="410" r="7" fill="#2d5e86"/>
+<text x="140" y="392" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#2d5e86" text-anchor="middle">12–24h 起</text>
+<circle cx="260" cy="292" r="7" fill="#ad3b32"/>
+<text x="260" y="274" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#ad3b32" text-anchor="middle">24–72h 峰</text>
+<circle cx="492" cy="504" r="7" fill="#126b63"/>
+<text x="492" y="486" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#126b63" text-anchor="middle">5–7 天退</text>
+<text x="60" y="548" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="middle">0</text>
+<text x="300" y="548" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="middle">3 天</text>
+<text x="544" y="548" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="middle">7 天</text>
+<text x="46" y="592" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#ad3b32" text-anchor="start">与乳酸无关；力量恢复常比酸痛慢。</text>
+<rect x="24" y="648" width="552" height="604" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="46" y="688" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#126b63" text-anchor="start">② 酸痛 vs 拉伤</text>
+<text x="46" y="724" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="400" fill="#60727a" text-anchor="start">看起始、外观和能不能用力</text>
+<rect x="44" y="734" width="512" height="66" rx="8" fill="#f2eee3"/>
+<text x="60" y="762" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="start">起始</text>
+<text x="164" y="762" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#1d3238" text-anchor="start">12–24 小时</text>
+<text x="396" y="762" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">立即</text>
+<rect x="44" y="816" width="512" height="66" rx="8" fill="#f2eee3"/>
+<text x="60" y="844" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="start">疼痛</text>
+<text x="164" y="844" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#1d3238" text-anchor="start">钝痛、按压痛</text>
+<text x="396" y="844" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">尖锐、撕裂</text>
+<rect x="44" y="898" width="512" height="66" rx="8" fill="#f2eee3"/>
+<text x="60" y="926" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="start">外观</text>
+<text x="164" y="926" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#1d3238" text-anchor="start">少肿少瘀</text>
+<text x="396" y="926" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">肿胀、瘀斑</text>
+<rect x="44" y="980" width="512" height="66" rx="8" fill="#f2eee3"/>
+<text x="60" y="1008" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="start">力量</text>
+<text x="164" y="1008" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#1d3238" text-anchor="start">略降</text>
+<text x="396" y="1008" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">明显无力</text>
+<rect x="44" y="1062" width="512" height="66" rx="8" fill="#f2eee3"/>
+<text x="60" y="1090" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="start">恢复</text>
+<text x="164" y="1090" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#1d3238" text-anchor="start">5–7 天</text>
+<text x="396" y="1090" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">2–6 周</text>
+<text x="44" y="1210" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#ad3b32" text-anchor="start">红旗：畸形、麻木、不能负重、剧痛加重 → 就医。</text>
+</svg>

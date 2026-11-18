@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7f8c"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c46a6a"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">鼻黏膜防御：过滤、加温加湿与纤毛清除</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">黏液黏附颗粒，纤毛后推，黏膜血管加温，鼻泪管引流泪液</text>
+<rect x="40.0" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="54.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">鼻毛与黏液</text>
+<text x="54.0" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">黏附灰尘、花粉和微生</text>
+<text x="54.0" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">物</text>
+<rect x="52.0" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="121.8" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">第一道过滤</text>
+<path d="M206.5 229.0 L221.5 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="225.5" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="225.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="239.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">纤毛清除</text>
+<text x="239.5" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">把黏液连同颗粒推向咽</text>
+<text x="239.5" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">部</text>
+<rect x="237.5" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="307.2" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">吞咽或咳出</text>
+<path d="M392.0 229.0 L407.0 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="411.0" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="411.0" y="124.0" width="163.5" height="5.0" rx="0" fill="#2f7f8c" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="425.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">加温加湿</text>
+<text x="425.0" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">黏膜血管网加热空气，</text>
+<text x="425.0" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">黏液补水分</text>
+<rect x="423.0" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="492.8" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">保护下呼吸道</text>
+<path d="M577.5 229.0 L592.5 229.0" fill="none" stroke="#a9b6c2" stroke-width="2.0" marker-end="url(#ar)"/>
+<rect x="596.5" y="124.0" width="163.5" height="210.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="596.5" y="124.0" width="163.5" height="5.0" rx="0" fill="#c46a6a" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="610.5" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#123840" text-anchor="start" opacity="1.00">炎症放大</text>
+<text x="610.5" y="180.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">感冒时分泌增多、血管</text>
+<text x="610.5" y="198.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">扩张、组织水肿</text>
+<rect x="608.5" y="294.0" width="139.5" height="28.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="678.2" y="313.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7f8c" text-anchor="middle" opacity="1.00">鼻塞流涕</text>
+<rect x="40.0" y="362.0" width="720.0" height="56.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="385.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">鼻泪管引流泪液入鼻，哭泣时鼻涕增多；黏膜肿胀可堵塞鼻泪管开口。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

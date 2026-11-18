@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="繁殖看“日历”，不看天气">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#d97706" stroke="#d97706" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">繁殖看“日历”，不看天气</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Breeding reads the calendar, not the weather</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="150" width="118" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="119" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">日照变长</text>
+<path d="M180 185 L198 185" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="200" y="150" width="118" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="259" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">眼睛/松果体</text>
+<path d="M320 185 L338 185" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="340" y="150" width="118" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="399" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">褪黑素节律</text>
+<path d="M460 185 L478 185" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="480" y="150" width="118" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="539" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">性腺发育</text>
+<path d="M600 185 L618 185" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="620" y="150" width="118" height="70" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="679" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d97706" text-anchor="middle">春末产仔</text>
+<rect x="60" y="270" width="320" height="110" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+<text x="220" y="306" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#e11d48" text-anchor="middle">气温</text>
+<text x="220" y="336" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">年年波动，还年年反常</text>
+<text x="220" y="360" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">→ 不可靠的日历</text>
+<rect x="420" y="270" width="320" height="110" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+<text x="580" y="306" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#16a34a" text-anchor="middle">日照长度</text>
+<text x="580" y="336" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">由地球公转决定，分秒不差</text>
+<text x="580" y="360" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#16a34a" text-anchor="middle">→ 动物真正看的“日历”</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">晚冬异常暖但日照不变时，很多动物照样按时发情——光周期实验直接证实</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="器官数目与身体计划">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#d97706" stroke="#d97706" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">器官数目与身体计划</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Organ numbers and the body plan</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="140" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="76" y="170" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">成双＝备份件</text>
+<text x="76" y="194" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">肺肾眼：左右对称的镜像复制</text>
+<rect x="420" y="140" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="436" y="170" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">单发＝发育结果</text>
+<text x="436" y="194" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">心肝：原基在中线融合或偏侧化</text>
+<rect x="60" y="254" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="76" y="284" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">尾巴退化</text>
+<text x="76" y="308" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">胚胎第 3–5 周长尾，随后程序性凋亡</text>
+<rect x="420" y="254" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="436" y="284" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">先爬后走</text>
+<text x="436" y="308" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">四足步态的发育遗产，成熟脊柱与髋协调</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">九成右利手来自胚胎期左右偏侧化：左侧脑环路占优。高个的心脏略大，但不等比例。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

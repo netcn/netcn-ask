@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="正午与傍晚阳光穿过大气的路径长短对比">
+  <defs>
+    <linearGradient id="atm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfdbfe"/><stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <marker id="sp-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+    <marker id="sb-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  <rect width="720" height="460" fill="#f8fafc"/>
+  <text x="40" y="40" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">为什么傍晚的阳光更红？</text>
+
+  <rect x="40" y="60" width="640" height="300" fill="url(#atm)"/>
+  <rect x="40" y="360" width="640" height="60" fill="#e2e8f0"/>
+  <text x="360" y="394" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">地面</text>
+
+  <!-- 正午太阳 -->
+  <g font-family="sans-serif">
+    <circle cx="360" cy="86" r="24" fill="#fbbf24"/>
+    <g stroke="#f59e0b" stroke-width="2">
+      <line x1="360" y1="48" x2="360" y2="36"/><line x1="398" y1="86" x2="410" y2="86"/>
+      <line x1="322" y1="86" x2="310" y2="86"/><line x1="387" y1="59" x2="396" y2="50"/>
+      <line x1="333" y1="59" x2="324" y2="50"/>
+    </g>
+    <text x="360" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#7c2d12">正午</text>
+    <line x1="360" y1="140" x2="540" y2="320" stroke="#f59e0b" stroke-width="3" opacity="0.8"/>
+    <text x="430" y="238" font-size="12" fill="#b45309" transform="rotate(43 430 238)">光程短</text>
+  </g>
+
+  <!-- 傍晚太阳 -->
+  <g font-family="sans-serif">
+    <circle cx="86" cy="330" r="22" fill="#fb923c"/>
+    <text x="86" y="374" text-anchor="middle" font-size="13" font-weight="700" fill="#7c2d12">傍晚</text>
+    <path d="M108 330 Q300 336 540 320" fill="none" stroke="#f97316" stroke-width="3" opacity="0.85"/>
+    <text x="300" y="358" font-size="12" fill="#b45309">光程长得多</text>
+
+    <!-- 被散射掉的蓝光 -->
+    <g stroke="#3b82f6" stroke-width="1.6" opacity="0.8">
+      <line x1="180" y1="330" x2="160" y2="300" marker-end="url(#sb-arrow)"/>
+      <line x1="240" y1="332" x2="220" y2="300" marker-end="url(#sb-arrow)"/>
+      <line x1="300" y1="333" x2="280" y2="302" marker-end="url(#sb-arrow)"/>
+      <line x1="360" y1="331" x2="340" y2="300" marker-end="url(#sb-arrow)"/>
+      <line x1="420" y1="329" x2="400" y2="298" marker-end="url(#sb-arrow)"/>
+      <line x1="480" y1="327" x2="460" y2="296" marker-end="url(#sb-arrow)"/>
+    </g>
+    <text x="250" y="286" text-anchor="middle" font-size="12" fill="#2563eb">蓝光被散射出视线</text>
+  </g>
+
+  <g font-family="sans-serif">
+    <circle cx="560" cy="330" r="9" fill="#0f172a"/>
+    <text x="560" y="356" text-anchor="middle" font-size="12" fill="#334155">观察者</text>
+    <line x1="500" y1="330" x2="548" y2="330" stroke="#dc2626" stroke-width="3" marker-end="url(#sp-arrow)"/>
+    <text x="500" y="316" text-anchor="middle" font-size="12" fill="#b91c1c">红橙光到达</text>
+  </g>
+
+  <text x="360" y="444" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">傍晚阳光斜穿更厚的大气，蓝光在路上被散射掉，剩下红橙光直达眼睛。</text>
+</svg>

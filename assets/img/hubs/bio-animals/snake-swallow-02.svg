@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="蛇能吞下的猎物大小存在上限：受张口、猎物直径与体力限制">
+<defs>
+<linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#ecfeff"/></linearGradient>
+</defs>
+<rect width="800" height="500" fill="url(#bg5)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0e7490"/>
+<text x="40" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0f172a">能吞多大？看张口与体围，不是看照片</text>
+<text x="40" y="72" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">蛇能吞下比头大的猎物，但存在由张口、猎物直径和体力决定的上限</text>
+
+<g font-family="Microsoft YaHei, Segoe UI, sans-serif">
+<!-- panel 1 -->
+<rect x="40" y="100" width="225" height="270" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="58" y="126" font-size="12" font-weight="700" fill="#166534">可以</text>
+<ellipse cx="152" cy="190" rx="52" ry="30" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<ellipse cx="152" cy="190" rx="16" ry="10" fill="#fecaca" stroke="#ef4444"/>
+<path d="M120,235 Q152,260 184,235" fill="none" stroke="#16a34a" stroke-width="2"/>
+<text x="152" y="286" text-anchor="middle" font-size="11" fill="#166534">猎物直径小于张口</text>
+<text x="152" y="306" text-anchor="middle" font-size="11" fill="#166534">体力充足，方向顺</text>
+<text x="152" y="342" text-anchor="middle" font-size="22" fill="#16a34a">✓</text>
+
+<!-- panel 2 -->
+<rect x="287" y="100" width="225" height="270" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="305" y="126" font-size="12" font-weight="700" fill="#92400e">勉强</text>
+<ellipse cx="399" cy="190" rx="52" ry="34" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+<ellipse cx="399" cy="190" rx="30" ry="20" fill="#fecaca" stroke="#ef4444"/>
+<path d="M367,240 Q399,268 431,240" fill="none" stroke="#f59e0b" stroke-width="2"/>
+<text x="399" y="286" text-anchor="middle" font-size="11" fill="#92400e">接近张口/体围上限</text>
+<text x="399" y="306" text-anchor="middle" font-size="11" fill="#92400e">耗时长，风险升高</text>
+<text x="399" y="342" text-anchor="middle" font-size="22" fill="#f59e0b">!</text>
+
+<!-- panel 3 -->
+<rect x="534" y="100" width="225" height="270" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="552" y="126" font-size="12" font-weight="700" fill="#991b1b">不行</text>
+<ellipse cx="646" cy="190" rx="52" ry="38" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+<ellipse cx="646" cy="190" rx="44" ry="30" fill="#fecaca" stroke="#ef4444"/>
+<path d="M614,242 Q646,270 678,242" fill="none" stroke="#ef4444" stroke-width="2"/>
+<text x="646" y="286" text-anchor="middle" font-size="11" fill="#991b1b">超过张口或体围</text>
+<text x="646" y="306" text-anchor="middle" font-size="11" fill="#991b1b">会卡住、反吐、损伤</text>
+<text x="646" y="342" text-anchor="middle" font-size="22" fill="#ef4444">✕</text>
+</g>
+
+<rect x="40" y="404" width="720" height="44" rx="10" fill="#ecfeff" stroke="#a5f3fc"/>
+<text x="58" y="424" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#155e75">判断标准不是“头看起来小”</text>
+<text x="58" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#475569">而是猎物最粗处与蛇的最大张口、头部和体围的比例；照片里的“大”没有尺度。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">Cundall 1983; Basa et al. 2025 · 原创机制示意图 CC BY 4.0</text>
+</svg>

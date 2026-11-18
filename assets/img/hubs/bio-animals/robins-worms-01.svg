@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="知更鸟靠“听振”找蚯蚓">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">知更鸟靠“听振”找蚯蚓</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Robins find worms by listening for vibration</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<circle cx="400" cy="170" r="46" fill="#f5d0fe" stroke="#0f766e" stroke-width="2"/>
+<text x="400" y="176" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#86198f" text-anchor="middle">知更鸟</text>
+<circle cx="356" cy="152" r="9" fill="#0f766e"/>
+<circle cx="444" cy="152" r="9" fill="#0f766e"/>
+<line x1="365" y1="161" x2="392" y2="190" stroke="#0f766e" stroke-width="1.5"/>
+<line x1="435" y1="161" x2="408" y2="190" stroke="#0f766e" stroke-width="1.5"/>
+<text x="300" y="140" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#0f766e" text-anchor="start">左耳</text>
+<text x="500" y="140" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#0f766e" text-anchor="start">右耳</text>
+<line x1="120" y1="330" x2="680" y2="330" stroke="#a3a3a3" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="650" y="324" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#737373" text-anchor="start">土表</text>
+<rect x="385" y="370" width="30" height="10" rx="5" fill="#c2410c" stroke="#c2410c" stroke-width="1.5"/>
+<text x="400" y="396" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#c2410c" text-anchor="middle">蚯蚓啃咬/蠕动</text>
+<path d="M366 360 Q400 305.6 434 360" fill="none" stroke="#fb923c" stroke-width="1.8"/>
+<path d="M342 360 Q400 267.2 458 360" fill="none" stroke="#fb923c" stroke-width="1.8"/>
+<path d="M318 360 Q400 228.79999999999998 482 360" fill="none" stroke="#fb923c" stroke-width="1.8"/>
+<path d="M400 350 L400 222" fill="none" stroke="#fb923c" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="140" y="205" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 微弱振动穿过土壤向上传导</text>
+<text x="140" y="227" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 歪头 = 微调双耳的时差与相位差</text>
+<text x="140" y="249" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 能在 5–10 cm 覆盖物下锁定猎物</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">雨后蚯蚓出土时视觉主导，深埋时听觉接管——雨后清晨效率最高</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

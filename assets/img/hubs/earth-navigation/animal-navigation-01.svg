@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<rect width="800" height="500" fill="#f8fafc"/>
+<text x="38" y="40" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="21" font-weight="700" fill="#0f172a">动物没有 GPS，靠多套罗盘互相校准</text>
+<text x="38" y="65" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#475569">太阳、星空、地磁、偏振光、地标与气味；不同物种权重不同</text>
+<rect x="38" y="90" width="360" height="330" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="54" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#0f172a">鸟：多套罗盘</text>
+<path d="M150 190 Q178 162 202 186 Q226 162 260 190 Q230 198 202 193 Q176 198 150 190 Z" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+<path d="M196 186 L202 193 L208 186" stroke="#3b82f6" stroke-width="1.5" fill="none"/>
+<text x="150" y="230" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#475569">方向 = 罗盘 + 地图 + 校准</text>
+<rect x="54" y="250" width="150" height="38" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+<text x="66" y="274" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#9a3412">太阳 + 生物钟</text>
+<rect x="218" y="250" width="150" height="38" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="230" y="274" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#1e3a8a">星空旋转</text>
+<rect x="54" y="300" width="150" height="38" rx="8" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="66" y="324" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#065f46">地磁场</text>
+<rect x="218" y="300" width="150" height="38" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+<text x="230" y="324" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#991b1b">偏振光 / 地标 / 气味</text>
+<text x="54" y="370" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">实验：镜像移动太阳、改变光周期、</text>
+<text x="54" y="386" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">屏蔽地磁，都会改变鸟的朝向。</text>
+<text x="54" y="406" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">野外仍受天气、光源与地磁异常影响。</text>
+<rect x="425" y="90" width="337" height="330" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="443" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#0f172a">昆虫：路径积分 + 太阳罗盘</text>
+<circle cx="470" cy="180" r="15" fill="#fef3c7" stroke="#d97706"/>
+<text x="448" y="208" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#92400e">巢</text>
+<circle cx="690" cy="145" r="12" fill="#dcfce7" stroke="#16a34a"/>
+<text x="676" y="173" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#166534">食物</text>
+<path d="M470 180 L540 150 L610 205 L690 145" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<circle cx="540" cy="150" r="3" fill="#3b82f6"/><circle cx="610" cy="205" r="3" fill="#3b82f6"/>
+<path d="M690 145 L470 180" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="540" y="235" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#991b1b">归巢向量：方向 + 距离</text>
+<rect x="443" y="255" width="140" height="38" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+<text x="455" y="279" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#9a3412">太阳 / 偏振光</text>
+<rect x="595" y="255" width="150" height="38" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="607" y="279" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#1e3a8a">步数 / 光流测距</text>
+<rect x="443" y="305" width="140" height="38" rx="8" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="455" y="329" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#065f46">气味 / 地标</text>
+<rect x="595" y="305" width="150" height="38" rx="8" fill="#fef2f2" stroke="#fca5a5"/>
+<text x="607" y="329" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#991b1b">蜜蜂摇摆舞</text>
+<text x="443" y="370" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">路径积分会累积误差；熟悉地标用于校正。</text>
+<text x="443" y="386" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">阴天时，偏振光仍可提供罗盘信息。</text>
+<text x="443" y="406" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">“第六感”不是答案，多线索加权才是。</text>
+<rect x="38" y="438" width="724" height="48" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="54" y="456" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#065f46">帝王蝶：时补偿太阳罗盘 + 倾斜地磁罗盘；阴天可切换，但罗盘不等于完整地图。</text>
+<text x="54" y="474" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#065f46">鸟与昆虫的导航不是“超能力”，而是可被实验拆解的多种线索与校准机制。</text>
+</svg>

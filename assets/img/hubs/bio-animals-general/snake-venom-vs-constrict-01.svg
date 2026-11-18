@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="为什么没有“绞杀+剧毒”的蛇？">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#e11d48" stroke="#e11d48" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">为什么没有“绞杀+剧毒”的蛇？</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Why no snake maxes out both predatory routes</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="140" width="320" height="180" rx="12" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+<text x="220" y="174" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#e11d48" text-anchor="middle">绞杀路线</text>
+<text x="76" y="208" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 粗壮躯干与肋骨</text>
+<text x="76" y="232" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 结实的头骨和咬合肌</text>
+<text x="76" y="256" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 猎物呼气时一圈圈勒紧</text>
+<text x="76" y="280" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 死于窒息与循环受阻</text>
+<rect x="420" y="140" width="320" height="180" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+<text x="580" y="174" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#7c3aed" text-anchor="middle">毒液路线</text>
+<text x="436" y="208" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 唾腺特化为毒腺（很占地方）</text>
+<text x="436" y="232" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 配管牙或沟牙</text>
+<text x="436" y="256" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 化学武器产线挤压头部空间</text>
+<text x="436" y="280" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">· 毒液制造本身也昂贵</text>
+<circle cx="400" cy="230" r="44" fill="#ffffff" stroke="#0f172a" stroke-width="2"/>
+<text x="400" y="222" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">抢同一套</text>
+<text x="400" y="242" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">头面预算</text>
+<rect x="60" y="340" width="680" height="66" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="360" y="366" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">中间形态存在（后牙游蛇、大蚺咬合力惊人）</text>
+<text x="360" y="390" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#64748b" text-anchor="middle">但两条路线都做到极限的蛇，自然界没有</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">眼镜王蛇专吃其他蛇——“剧毒”不是保命符，同业的命除外</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

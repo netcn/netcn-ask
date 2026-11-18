@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="37 轮换整除与有限域除以零">
+<rect width="800" height="500" fill="#f7f4ea"/>
+<rect x="0" y="0" width="800" height="6" fill="#0f6b6b"/>
+<text x="28" y="42" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#18323f">轮换数字，为什么不改变 37 的整除性？</text>
+<text x="28" y="68" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">因为 1000 除以 37 余 1；有限域里 0 没有倒数</text>
+<g>
+<rect x="24" y="88" width="366" height="178" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="40" y="120" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" fill="#c46a1b" font-weight="700">999 = 27 × 37</text>
+<text x="40" y="154" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#18323f">1000 ≡ 1 (mod 37)</text>
+<text x="40" y="190" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">三位数 abc = 100a+10b+c</text>
+<text x="40" y="216" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">轮换后 R = 100b+10c+a</text>
+<text x="40" y="248" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">10N − R = 999a = 27×37×a</text>
+<text x="40" y="274" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" fill="#c46a1b">例：259 → 592，二者都能被 37 整除</text>
+</g>
+<g>
+<rect x="410" y="88" width="366" height="178" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="426" y="120" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" fill="#0f6b6b" font-weight="700">为什么不是巧合？</text>
+<text x="426" y="154" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">若 37 | N，则 37 | 10N</text>
+<text x="426" y="180" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">10N 与 R 只差 999a</text>
+<text x="426" y="206" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">999a 是 37 的倍数</text>
+<text x="426" y="232" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">所以 37 | R</text>
+<text x="426" y="258" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" fill="#5d6f78">10 在模 37 下可逆，轮换是线性变换</text>
+</g>
+<g transform="translate(24,286)">
+<rect x="0" y="0" width="752" height="190" rx="10" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="18" y="32" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#0f6b6b">有限域 F₅：非零元素都有倒数，0 没有</text>
+<text x="18" y="68" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f" xml:space="preserve">1 ↔ 1     2 ↔ 3     3 ↔ 2     4 ↔ 4</text>
+<text x="18" y="102" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f">0 不在乘法群中；若 0 有逆元 x，则 0·x = 1</text>
+<text x="18" y="130" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f">但任何环里 0·x = 0，于是 0 = 1，矛盾</text>
+<text x="18" y="164" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">“除以 0”不是得到一个数，而是根本没有唯一的逆运算。</text>
+</g>
+</svg>

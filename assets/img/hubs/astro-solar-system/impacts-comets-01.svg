@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <radialGradient id="craterGlow" cx="35%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#f4c27a"/>
+      <stop offset="55%" stop-color="#8c5a2b"/>
+      <stop offset="100%" stop-color="#1b1410"/>
+    </radialGradient>
+    <linearGradient id="space" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="100%" stop-color="#02060d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8fd3ff"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="url(#space)"/>
+  <text x="40" y="45" fill="#e8f2ff" font-size="19" font-weight="700">撞击坑与彗星轨道</text>
+  <text x="40" y="70" fill="#8fa8c2" font-size="13">坑的圆形来自径向抛射；彗星轨道决定它只是过客还是被太阳撕裂</text>
+
+  <!-- left: crater -->
+  <g>
+    <circle cx="220" cy="255" r="132" fill="#0b1826" stroke="#41627f" stroke-width="1.5"/>
+    <circle cx="220" cy="255" r="92" fill="url(#craterGlow)" stroke="#d7a25c" stroke-width="2"/>
+    <circle cx="220" cy="255" r="63" fill="#26170f" stroke="#f0bd72" stroke-width="1.2"/>
+    <circle cx="220" cy="255" r="34" fill="#120c09" stroke="#d99a4e" stroke-width="1"/>
+    <g stroke="#f5c47c" stroke-width="2" opacity="0.85">
+      <line x1="220" y1="255" x2="90" y2="170"/>
+      <line x1="220" y1="255" x2="90" y2="255"/>
+      <line x1="220" y1="255" x2="105" y2="345"/>
+      <line x1="220" y1="255" x2="220" y2="120"/>
+      <line x1="220" y1="255" x2="330" y2="155"/>
+      <line x1="220" y1="255" x2="350" y2="255"/>
+      <line x1="220" y1="255" x2="325" y2="350"/>
+      <line x1="220" y1="255" x2="220" y2="390"/>
+    </g>
+    <text x="220" y="432" text-anchor="middle" fill="#dcecff" font-size="13">抛射物向四周展开</text>
+    <text x="220" y="452" text-anchor="middle" fill="#8fa8c2" font-size="12">坑形近似圆形，不是撞击体本身圆</text>
+  </g>
+
+  <!-- right: orbits -->
+  <g>
+    <circle cx="585" cy="245" r="26" fill="#ffcc66"/>
+    <circle cx="585" cy="245" r="6" fill="#fff3c4"/>
+    <ellipse cx="585" cy="245" rx="142" ry="82" fill="none" stroke="#4d7a9a" stroke-width="1.4" opacity="0.8"/>
+    <path d="M 470 160 C 560 95, 690 115, 760 205" fill="none" stroke="#78d6ff" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 470 340 C 560 415, 690 385, 760 300" fill="none" stroke="#78d6ff" stroke-width="2" opacity="0.65"/>
+    <circle cx="500" cy="180" r="7" fill="#b9e8ff"/>
+    <text x="498" y="166" fill="#b9e8ff" font-size="12">2I/Borisov</text>
+    <text x="585" y="245" fill="#fff3c4" font-size="12" text-anchor="middle" dy="-34">太阳</text>
+    <text x="590" y="405" fill="#8fa8c2" font-size="11.5">双曲线：星际过客，不再回来</text>
+    <text x="590" y="425" fill="#8fa8c2" font-size="11.5">椭圆：周期彗星，受太阳束缚</text>
+    <text x="590" y="445" fill="#f0bd72" font-size="11.5">掠日彗星：常被撕裂、蒸发</text>
+  </g>
+
+  <line x1="400" y1="100" x2="400" y2="430" stroke="#294660" stroke-width="1" stroke-dasharray="6 8"/>
+  <text x="40" y="482" fill="#6f8aa5" font-size="11">示意图，非按真实尺度；数据见 NASA Hubble / SOHO 与 LPI。</text>
+</svg>

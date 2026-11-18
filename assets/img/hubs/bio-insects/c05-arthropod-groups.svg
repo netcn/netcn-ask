@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">节肢动物主要支系对照</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">昆虫六足两对翅，其他支系附肢与呼吸方式不同</text>
+<rect x="40.0" y="120.0" width="720.0" height="36.0" rx="6" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="144.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">类群</text>
+<text x="288.0" y="144.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">附肢与运动</text>
+<text x="520.0" y="144.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" opacity="1.00">呼吸与生境</text>
+<rect x="40.0" y="158.0" width="720.0" height="52.0" rx="4" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="178.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">昆虫纲</text>
+<text x="288.0" y="178.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">六足；成虫多数两对膜质翅</text>
+<text x="520.0" y="178.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">气管系统；陆地、空中与淡水</text>
+<rect x="40.0" y="210.0" width="720.0" height="52.0" rx="4" fill="#f8fafb" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">蛛形纲</text>
+<text x="288.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">四对足；无翅，触肢参与取食</text>
+<text x="520.0" y="230.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">书肺或气管；多陆地捕食</text>
+<rect x="40.0" y="262.0" width="720.0" height="52.0" rx="4" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="282.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">甲壳纲</text>
+<text x="288.0" y="282.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">游泳足与螯；附肢多对</text>
+<text x="520.0" y="282.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">鳃；多水生</text>
+<rect x="40.0" y="314.0" width="720.0" height="52.0" rx="4" fill="#f8fafb" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<text x="58.0" y="334.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">多足纲</text>
+<text x="288.0" y="334.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">多数步足；爬行为主</text>
+<text x="520.0" y="334.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">气管；陆地落叶层</text>
+<text x="40.0" y="388.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">平方-立方约束放大后相对力量下降，气管供氧限制巨型体型。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

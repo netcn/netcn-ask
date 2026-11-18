@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<rect width="800" height="500" fill="#f8fafc"/>
+<text x="38" y="40" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="21" font-weight="700" fill="#0f172a">卫星导航：相对论 + 地球自转</text>
+<text x="38" y="65" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#475569">GPS/北斗靠原子钟测距；时钟差 1 μs，距离差约 300 m</text>
+<rect x="38" y="90" width="450" height="330" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="54" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#0f172a">三种轨道分工</text>
+<rect x="54" y="136" width="418" height="58" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+<text x="66" y="157" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" font-weight="700" fill="#9a3412">GEO · 地球静止</text>
+<text x="66" y="178" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#9a3412">3 颗 · 35,786 km · 定点赤道上空</text>
+<circle cx="360" cy="165" r="18" fill="#dbeafe" stroke="#60a5fa"/>
+<rect x="392" y="158" width="12" height="14" rx="2" fill="#f59e0b"/>
+<path d="M378 165 H404" stroke="#94a3b8" stroke-width="2"/>
+<rect x="54" y="205" width="418" height="58" rx="8" fill="#ecfeff" stroke="#67e8f9"/>
+<text x="66" y="226" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" font-weight="700" fill="#155e75">IGSO · 倾斜地球同步</text>
+<text x="66" y="247" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#155e75">3 颗 · 35,786 km · 倾角 55° · 画“8”字</text>
+<circle cx="360" cy="234" r="18" fill="#dbeafe" stroke="#60a5fa"/>
+<rect x="392" y="227" width="12" height="14" rx="2" fill="#06b6d4"/>
+<path d="M374 240 L406 228" stroke="#94a3b8" stroke-width="2"/>
+<rect x="54" y="274" width="418" height="58" rx="8" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="66" y="295" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" font-weight="700" fill="#1e3a8a">MEO · 中圆地球轨道</text>
+<text x="66" y="316" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#1e3a8a">24 颗 · 21,528 km · 倾角 55° · Walker 24/3/1</text>
+<circle cx="360" cy="303" r="18" fill="#dbeafe" stroke="#60a5fa"/>
+<rect x="392" y="296" width="12" height="14" rx="2" fill="#3b82f6"/>
+<path d="M390 310 A 28 20 0 0 1 420 298" stroke="#94a3b8" stroke-width="2" fill="none"/>
+<text x="54" y="356" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#475569">GEO 覆盖亚太；IGSO 改善低纬与遮挡；MEO 提供全球几何。</text>
+<text x="54" y="378" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#475569">混合星座不是“轨道越多越好”，而是让可见卫星的几何更稳。</text>
+<rect x="54" y="392" width="418" height="18" rx="5" fill="#f1f5f9"/>
+<text x="64" y="405" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#64748b">数据：北斗 ICD 3.0；GEO/IGSO 35,786 km，MEO 21,528 km</text>
+<rect x="505" y="90" width="257" height="330" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="521" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#0f172a">时钟账本（每天）</text>
+<text x="521" y="150" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="20" font-weight="700" fill="#dc2626">+45 μs</text>
+<text x="596" y="150" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#475569">引力势较高</text>
+<text x="521" y="178" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="20" font-weight="700" fill="#2563eb">−7 μs</text>
+<text x="596" y="178" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#475569">轨道速度 3.874 km/s</text>
+<rect x="521" y="194" width="225" height="55" rx="8" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="533" y="215" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="15" font-weight="700" fill="#065f46">净值 +38 μs / 天</text>
+<text x="533" y="237" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#065f46">卫星钟比地面钟每天快约 38 微秒</text>
+<text x="521" y="274" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#334155">1 μs × 光速 ≈ 300 m</text>
+<text x="521" y="294" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#334155">38 μs × 光速 ≈ 11 km</text>
+<text x="521" y="314" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" font-weight="700" fill="#991b1b">不校正，定位每天漂约 11 km</text>
+<text x="521" y="344" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">校正被预置进卫星钟频率，</text>
+<text x="521" y="360" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">不是每天“手动拨表”。</text>
+<rect x="521" y="374" width="225" height="30" rx="6" fill="#fee2e2"/>
+<text x="531" y="393" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#991b1b">地面控制段仍会持续监测与上传修正</text>
+<rect x="38" y="438" width="724" height="48" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+<text x="54" y="456" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#065f46">24 h 是平太阳日；恒星日约 23 h 56 m 4 s，二者相差约 4 分钟。</text>
+<text x="54" y="474" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#065f46">UTC 用闰秒把 |UTC − UT1| 保持在 0.9 s 内；卫星导航另用连续时间尺度。</text>
+</svg>

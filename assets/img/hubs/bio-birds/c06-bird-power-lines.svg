@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">鸟站高压线为什么不触电：等电位对照跨接回路</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">触电需要电位差与闭合回路，缺一不可</text>
+<rect x="40.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">同一根导线：等电位，不触电</text>
+<line x1="58.0" y1="175.0" x2="352.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="62.0" cy="188.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">两脚同时落在同一相导线上</text>
+<circle cx="62.0" cy="220.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">两脚间电位差接近 0，身体两点电压≈0</text>
+<circle cx="62.0" cy="253.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">几乎没有电流流过鸟体</text>
+<circle cx="62.0" cy="285.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">安全来自等电位与间距，不是鸟不导电</text>
+<rect x="54.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="66.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="start" opacity="1.00">压差≈0、无回路，鸟站线安全</text>
+<rect x="430.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="430.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="448.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">跨接两相或接地：形成回路，触电</text>
+<line x1="448.0" y1="175.0" x2="742.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="452.0" cy="188.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">翅膀同时碰到两根不同相导线</text>
+<circle cx="452.0" cy="220.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">导线碰到接地电杆、拉线或树枝</text>
+<circle cx="452.0" cy="253.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">身体跨接两个电位，电流流过形成回路</text>
+<circle cx="452.0" cy="285.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">翼展宽的大鸟起降时风险更高</text>
+<rect x="444.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="456.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#7fb069" text-anchor="start" opacity="1.00">压差驱动电流，才会造成触电</text>
+<circle cx="400.0" cy="262.0" r="22.0" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7d8b98" text-anchor="middle" opacity="1.00">vs</text>
+<rect x="40.0" y="410.0" width="720.0" height="50.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="431.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">常见 10 kV 级线路按规程留足相间与对地绝缘间隙；鸟巢铁丝、枝条搭接导线与横担可造成短路，现场有防鸟措施。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

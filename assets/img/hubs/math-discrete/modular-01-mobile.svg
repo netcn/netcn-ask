@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="37 轮换整除与有限域除以零">
+<rect width="600" height="1300" fill="#f7f4ea"/>
+<rect x="0" y="0" width="600" height="8" fill="#0f6b6b"/>
+<text x="28" y="44" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="26" font-weight="700" fill="#18323f">轮换数字，为什么不改变 37 的整除性？</text>
+<text x="28" y="76" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">因为 1000 除以 37 余 1</text>
+<g>
+<rect x="24" y="100" width="552" height="206" rx="12" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="140" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#c46a1b">999 = 27 × 37</text>
+<text x="44" y="180" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="20" fill="#18323f">1000 ≡ 1 (mod 37)</text>
+<text x="44" y="222" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">把三位数 abc 写成 100a+10b+c</text>
+<text x="44" y="260" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">轮换后是 100b+10c+a</text>
+</g>
+<g>
+<rect x="24" y="330" width="552" height="250" rx="12" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="44" y="370" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#0f6b6b">关键一步</text>
+<text x="44" y="410" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="20" fill="#18323f">10N − R = 999a</text>
+<text x="44" y="446" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="20" fill="#18323f">= 27 × 37 × a</text>
+<text x="44" y="488" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">若 37 | N，则 37 | 10N</text>
+<text x="44" y="522" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">所以 37 | R：轮换后仍整除</text>
+<text x="44" y="560" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#c46a1b">例：259 = 37×7 → 592 = 37×16</text>
+</g>
+<g>
+<rect x="24" y="612" width="552" height="330" rx="12" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="44" y="652" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#0f6b6b">有限域里，0 没有倒数</text>
+<text x="44" y="692" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">F₅ = {0,1,2,3,4}，模 5 运算</text>
+<text x="44" y="730" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f" xml:space="preserve">1↔1  2↔3  3↔2  4↔4</text>
+<text x="44" y="768" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">0 不在乘法群里，没有逆元</text>
+<text x="44" y="810" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">若 0 有逆元 x，则 0·x=1</text>
+<text x="44" y="844" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#5d6f78">但 0·x=0，矛盾：0=1</text>
+<text x="44" y="886" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#c46a1b">所以“除以 0”没有定义</text>
+</g>
+<g transform="translate(24,962)">
+<rect x="0" y="0" width="552" height="300" rx="12" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="20" y="34" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#0f6b6b">把两件事放在一起</text>
+<text x="20" y="74" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">37 的轮换不变性：来自 10³ ≡ 1</text>
+<text x="20" y="110" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">有限域：0 不在乘法群里</text>
+<text x="20" y="146" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">除以 0：没有唯一解，不是“无穷大”</text>
+<text x="20" y="190" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">一个是“轮换后仍整除”，</text>
+<text x="20" y="218" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">一个是“0 不能做除数”；</text>
+<text x="20" y="246" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" fill="#5d6f78">共同点是：先看运算的封闭结构。</text>
+</g>
+</svg>

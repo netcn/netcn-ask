@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="动物为什么爱用强酸？">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/></marker>
+<linearGradient id="phg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ef4444"/><stop offset="0.36" stop-color="#f59e0b"/><stop offset="0.5" stop-color="#10b981"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#e11d48" stroke="#e11d48" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">动物为什么爱用强酸？</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Why animals love strong acid</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="100" y="170" width="600" height="30" rx="6" fill="url(#phg)"/>
+<line x1="100.0" y1="200" x2="100.0" y2="208" stroke="#94a3b8" stroke-width="1"/>
+<text x="100.0" y="222" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<line x1="400.0" y1="200" x2="400.0" y2="208" stroke="#94a3b8" stroke-width="1"/>
+<text x="400.0" y="222" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">7</text>
+<line x1="700.0" y1="200" x2="700.0" y2="208" stroke="#94a3b8" stroke-width="1"/>
+<text x="700.0" y="222" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10" font-weight="400" fill="#64748b" text-anchor="middle">14</text>
+<line x1="168.57142857142856" y1="129" x2="168.57142857142856" y2="168" stroke="#e11d48" stroke-width="1.5"/>
+<circle cx="168.57142857142856" cy="168" r="3" fill="#e11d48"/>
+<text x="168.57142857142856" y="124" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">胃酸 pH 1–2</text>
+<line x1="211.42857142857144" y1="147" x2="211.42857142857144" y2="168" stroke="#b45309" stroke-width="1.5"/>
+<circle cx="211.42857142857144" cy="168" r="3" fill="#b45309"/>
+<text x="211.42857142857144" y="142" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b45309" text-anchor="middle">蚁酸 2–3</text>
+<line x1="417.14285714285717" y1="129" x2="417.14285714285717" y2="168" stroke="#0284c7" stroke-width="1.5"/>
+<circle cx="417.14285714285717" cy="168" r="3" fill="#0284c7"/>
+<text x="417.14285714285717" y="124" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">血液 ~7.4</text>
+<line x1="447.14285714285717" y1="147" x2="447.14285714285717" y2="168" stroke="#0284c7" stroke-width="1.5"/>
+<circle cx="447.14285714285717" cy="168" r="3" fill="#0284c7"/>
+<text x="447.14285714285717" y="142" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0284c7" text-anchor="middle">海水 8.1</text>
+<rect x="60" y="268" width="320" height="60" rx="10" fill="#fef2f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="76" y="298" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#e11d48" text-anchor="start">消化</text>
+<text x="76" y="322" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">变性蛋白、激活胃蛋白酶</text>
+<text x="76" y="340" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">顺手杀灭随食进入的微生物</text>
+<rect x="60" y="338" width="320" height="60" rx="10" fill="#fef2f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="76" y="368" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#e11d48" text-anchor="start">防御</text>
+<text x="76" y="392" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">便宜、快、不需要武器结构</text>
+<text x="76" y="410" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">蚂蚁举腹喷蚁酸即是</text>
+<rect x="420" y="268" width="320" height="120" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+<text x="436" y="298" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#e11d48" text-anchor="start">矿化</text>
+<text x="436" y="322" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">局部酸化帮助珊瑚、海胆</text>
+<text x="436" y="340" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">把海水离子沉积成骨骼</text>
+<text x="436" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">前提是都有防自伤结构</text>
+<text x="436" y="376" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">（胃的重碳酸盐屏障等）</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">pH 越低不等于越“危险”：关键看用在哪里、有没有配套防护</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

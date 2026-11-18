@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="哭为什么会“流鼻涕”">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">哭为什么会“流鼻涕”</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Why crying makes your nose run</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="140" width="150" height="90" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="135" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f766e" text-anchor="middle">泪腺分泌</text>
+<path d="M212 185 L234 185" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="236" y="140" width="150" height="90" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="311" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f766e" text-anchor="middle">经鼻泪管引流</text>
+<path d="M388 185 L410 185" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="412" y="140" width="150" height="90" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="487" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f766e" text-anchor="middle">鼻腔处理不及</text>
+<path d="M564 185 L586 185" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="588" y="140" width="150" height="90" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="663" y="189" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f766e" text-anchor="middle">从鼻孔溢出</text>
+<rect x="120" y="292" width="560" height="58" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="136" y="322" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start">正常分泌</text>
+<text x="136" y="346" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">少量泪液悄悄排入鼻腔，无人察觉</text>
+<rect x="120" y="366" width="560" height="58" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.5"/>
+<text x="136" y="396" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#0f766e" text-anchor="start">情绪性哭泣</text>
+<text x="136" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">分泌量骤增数十倍，溢出成“鼻涕”</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">那是改道的眼泪，不是鼻腔发炎。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

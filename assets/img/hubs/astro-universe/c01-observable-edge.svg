@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d99a2b"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3a6ea5"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">可观测宇宙的距离层级</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">从日地距离到 465 亿光年共动半径</text>
+<rect x="40.0" y="122.0" width="720.0" height="47.2" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="122.0" width="6.0" height="47.2" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="150.6" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">日地距离</text>
+<text x="190.0" y="150.6" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">约 1.5 亿千米（1 AU）</text>
+<text x="748.0" y="150.6" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#d99a2b" text-anchor="end" opacity="1.00">太阳系内尺度</text>
+<rect x="40.0" y="177.2" width="720.0" height="47.2" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="177.2" width="6.0" height="47.2" rx="0" fill="#3a6ea5" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="205.8" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">太阳系</text>
+<text x="190.0" y="205.8" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">海王星轨道约 30 AU</text>
+<text x="748.0" y="205.8" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a6ea5" text-anchor="end" opacity="1.00">受太阳引力束缚</text>
+<rect x="40.0" y="232.4" width="720.0" height="47.2" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="232.4" width="6.0" height="47.2" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="261.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">银河系</text>
+<text x="190.0" y="261.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">直径约 10 万光年</text>
+<text x="748.0" y="261.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#d99a2b" text-anchor="end" opacity="1.00">太阳距银心约 2.6 万光年</text>
+<rect x="40.0" y="287.6" width="720.0" height="47.2" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="287.6" width="6.0" height="47.2" rx="0" fill="#3a6ea5" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="316.2" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">本星系群与超星系团</text>
+<text x="190.0" y="316.2" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">银河系与仙女座等数十个星系</text>
+<text x="748.0" y="316.2" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a6ea5" text-anchor="end" opacity="1.00">纤维状大尺度结构</text>
+<rect x="40.0" y="342.8" width="720.0" height="47.2" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="342.8" width="6.0" height="47.2" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="371.4" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">可观测宇宙</text>
+<text x="190.0" y="371.4" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">共动半径约 465 亿光年</text>
+<text x="748.0" y="371.4" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#d99a2b" text-anchor="end" opacity="1.00">CMB 红移 z ≈ 1100 为观测墙</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">宇宙年龄约 138 亿年；视界之外的光尚未到达，不等于不存在。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

@@ -1,0 +1,44 @@
+# 问答 ask.netcn.org · Cloudflare Pages 头部规则（Hub-only 新站）
+
+# —— 安全头（全局）——
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# —— 入口与文档：绝不长缓存 ——
+/
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/404.html
+  Cache-Control: no-cache
+/sitemap.xml
+  Cache-Control: no-cache
+/robots.txt
+  Cache-Control: no-cache
+
+# —— 搜索索引：内容寻址，命中即永久缓存 ——
+/data/hub-search-*.json
+  Cache-Control: public, max-age=31536000, immutable
+
+# —— 静态资源：长缓存 ——
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+/shell/*
+  Cache-Control: public, max-age=86400
+
+# —— Hub 页面：中等缓存，便于改稿后较快生效 ——
+/article/*
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
+
+# —— 预览环境：禁止收录 ——
+/*
+  X-Robots-Tag: noindex, nofollow

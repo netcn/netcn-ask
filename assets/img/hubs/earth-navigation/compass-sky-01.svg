@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<rect width="800" height="500" fill="#f8fafc"/>
+<text x="38" y="40" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="21" font-weight="700" fill="#0f172a">指南针与北斗：两套方向基准</text>
+<text x="38" y="65" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="12" fill="#475569">磁针指向当地磁场，北斗指向北极星；都不等于地图上的正北</text>
+<rect x="38" y="90" width="360" height="330" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="54" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#0f172a">地磁场与磁偏角</text>
+<circle cx="180" cy="285" r="70" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+<path d="M180 210 V360" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>
+<path d="M162 230 L198 345" stroke="#dc2626" stroke-width="2"/>
+<text x="100" y="225" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#64748b">自转轴</text>
+<text x="210" y="332" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#991b1b">磁轴</text>
+<circle cx="180" cy="205" r="18" fill="#ffffff" stroke="#475569"/>
+<path d="M180 189 V221" stroke="#16a34a" stroke-width="3"/>
+<path d="M170 215 L190 195" stroke="#dc2626" stroke-width="3"/>
+<text x="202" y="190" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#166534">真北</text>
+<text x="204" y="212" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#991b1b">磁北</text>
+<path d="M190 196 A 18 18 0 0 0 194 208" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+<text x="210" y="232" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" font-weight="700" fill="#92400e">磁偏角 D</text>
+<text x="54" y="378" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#334155">磁针沿当地磁场的水平分量排列，</text>
+<text x="54" y="396" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#334155">不是指向某个“磁极点”。</text>
+<text x="54" y="414" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="9" fill="#64748b">磁偏角随地点和时间变化；钢铁、电子设备会局部干扰。</text>
+<rect x="425" y="90" width="337" height="330" rx="12" fill="#0b1220" stroke="#334155"/>
+<text x="443" y="120" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="16" font-weight="700" fill="#f8fafc">北斗指极</text>
+<text x="443" y="140" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#94a3b8">星群（asterism），不是星座</text>
+<circle cx="500" cy="170" r="4" fill="#f8fafc"/><circle cx="540" cy="185" r="4" fill="#f8fafc"/>
+<circle cx="525" cy="230" r="4" fill="#f8fafc"/><circle cx="485" cy="215" r="4" fill="#f8fafc"/>
+<circle cx="445" cy="225" r="4" fill="#f8fafc"/><circle cx="405" cy="245" r="4" fill="#f8fafc"/>
+<circle cx="365" cy="270" r="4" fill="#f8fafc"/>
+<path d="M500 170 L485 215 L525 230 L540 185 Z" stroke="#f8fafc" stroke-width="1.4" fill="none" opacity="0.7"/>
+<path d="M485 215 L445 225 L405 245 L365 270" stroke="#f8fafc" stroke-width="1.4" fill="none" opacity="0.7"/>
+<path d="M500 170 L700 250" stroke="#fca5a5" stroke-width="1.5" stroke-dasharray="6 4"/>
+<circle cx="700" cy="250" r="4.5" fill="#fde68a"/>
+<text x="650" y="238" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#fde68a">北极星</text>
+<text x="500" y="300" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#cbd5e1">勺口两星连线，向勺口外延长约 5 倍</text>
+<text x="500" y="318" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#cbd5e1">可找到北极星（北天极附近）</text>
+<text x="443" y="360" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#94a3b8">北斗七星的“勺形”是从地球视角看到的</text>
+<text x="443" y="376" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#94a3b8">投影；成员并非都在同一距离。</text>
+<text x="443" y="398" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="10" fill="#94a3b8">南半球看不到北斗，需用南十字等。</text>
+<rect x="38" y="438" width="724" height="48" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="54" y="456" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#1e3a8a">指南针：磁针转矩来自地磁场；磁偏角用于把磁方位换算成真方位。</text>
+<text x="54" y="474" font-family="Noto Sans SC,Source Han Sans SC,sans-serif" font-size="11" fill="#1e3a8a">北斗：勺口两星（天枢、天璇）指极；北极星靠近北天极，夜里几乎不动。</text>
+</svg>

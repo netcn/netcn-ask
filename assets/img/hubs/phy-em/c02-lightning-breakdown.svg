@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3b5fa8"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a2b"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#3b5fa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">闪电：从电荷分离到通道击穿</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">雷暴云—地面之间的放电过程</text>
+<rect x="40.0" y="122.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="122.0" width="6.0" height="56.0" rx="0" fill="#3b5fa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">电荷分离</text>
+<text x="190.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">上升气流碰撞冰晶水滴，云内上下层异号积累</text>
+<text x="748.0" y="155.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3b5fa8" text-anchor="end" opacity="1.00">云内±电荷分层</text>
+<rect x="40.0" y="186.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="186.0" width="6.0" height="56.0" rx="0" fill="#c98a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">电场增强</text>
+<text x="190.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">云底负电荷感应地面正电荷，电场持续上升</text>
+<text x="748.0" y="219.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#c98a2b" text-anchor="end" opacity="1.00">可达数百万伏</text>
+<rect x="40.0" y="250.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="250.0" width="6.0" height="56.0" rx="0" fill="#3b5fa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">空气击穿</text>
+<text x="190.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">场强约 3×10⁶ V/m 时空气电离导电</text>
+<text x="748.0" y="283.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3b5fa8" text-anchor="end" opacity="1.00">先导向下伸展</text>
+<rect x="40.0" y="314.0" width="720.0" height="56.0" rx="9" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<rect x="40.0" y="314.0" width="6.0" height="56.0" rx="0" fill="#c98a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="60.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">回击成闪</text>
+<text x="190.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">迎面先导接通，大电流流过通道发光发热</text>
+<text x="748.0" y="347.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#c98a2b" text-anchor="end" opacity="1.00">峰值数万至十万安</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">通道高温加热空气产生冲击波，衰减后成为雷声；光速快于声速，约 3 秒对应 1 km。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

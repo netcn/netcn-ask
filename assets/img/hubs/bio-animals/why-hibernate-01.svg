@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="冬眠期间体温在深冬眠与周期性觉醒之间交替">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f0fdf4"/></linearGradient>
+<linearGradient id="torpor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16a34a"/><stop offset="1" stop-color="#86efac"/></linearGradient>
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#16a34a"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a">冬眠是深睡与觉醒的交替</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">体温、心率与代谢率在低代谢与周期性复温之间切换</text>
+
+<rect x="40" y="98" width="720" height="250" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="58" y="122" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569">体温 °C</text>
+<g stroke="#e2e8f0" stroke-width="1">
+<line x1="70" y1="140" x2="730" y2="140"/><line x1="70" y1="190" x2="730" y2="190"/>
+<line x1="70" y1="240" x2="730" y2="240"/><line x1="70" y1="290" x2="730" y2="290"/>
+<line x1="70" y1="330" x2="730" y2="330"/>
+</g>
+<g font-family="Segoe UI, sans-serif" font-size="11" fill="#94a3b8">
+<text x="52" y="144" text-anchor="end">40</text><text x="52" y="194" text-anchor="end">30</text>
+<text x="52" y="244" text-anchor="end">20</text><text x="52" y="294" text-anchor="end">10</text>
+<text x="52" y="334" text-anchor="end">0</text>
+</g>
+<g font-family="Segoe UI, sans-serif" font-size="11" fill="#94a3b8">
+<text x="70" y="356" text-anchor="middle">0</text><text x="290" y="356" text-anchor="middle">10</text>
+<text x="510" y="356" text-anchor="middle">20</text><text x="710" y="356" text-anchor="middle">30 天</text>
+</g>
+
+<!-- torpor bouts: low line with brief arousals to 37C -->
+<path d="M70,300 L220,302 L235,145 L250,302 L400,304 L415,145 L430,304 L580,306 L595,145 L610,306 L730,308" fill="none" stroke="url(#torpor)" stroke-width="3.2"/>
+<g fill="#f59e0b">
+<circle cx="235" cy="145" r="5"/><circle cx="415" cy="145" r="5"/><circle cx="595" cy="145" r="5"/>
+</g>
+<g font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#166534">
+<rect x="78" y="268" width="190" height="26" rx="7" fill="#f0fdf4" stroke="#bbf7d0"/>
+<text x="92" y="286">深冬眠：5–7°C，7–10 天</text>
+</g>
+<g font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#92400e">
+<rect x="210" y="156" width="176" height="26" rx="7" fill="#fffbeb" stroke="#fde68a"/>
+<text x="224" y="174">觉醒：37°C，&lt;24 小时</text>
+</g>
+<text x="70" y="378" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#475569">深冬眠不是“整冬沉睡”：每段低代谢之后，都会短暂复温、排泄、活动，再重新降回去。</text>
+
+<g font-family="Microsoft YaHei, Segoe UI, sans-serif">
+<rect x="40" y="402" width="230" height="58" rx="10" fill="#f0fdf4" stroke="#bbf7d0"/>
+<text x="56" y="424" font-size="12" font-weight="700" fill="#166534">代谢率</text>
+<text x="56" y="444" font-size="12" fill="#475569">降到正常的 2–4%</text>
+<rect x="285" y="402" width="230" height="58" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="301" y="424" font-size="12" font-weight="700" fill="#1d4ed8">心率</text>
+<text x="301" y="444" font-size="12" fill="#475569">200–300 → 3–5 次/分</text>
+<rect x="530" y="402" width="230" height="58" rx="10" fill="#fffbeb" stroke="#fde68a"/>
+<text x="546" y="424" font-size="12" font-weight="700" fill="#92400e">复温代价</text>
+<text x="546" y="444" font-size="12" fill="#475569">占冬眠总能量约 70%</text>
+</g>
+<text x="40" y="486" font-family="Segoe UI, sans-serif" font-size="11" fill="#94a3b8">数据示意：Mohr et al. 2020; Andrews 2019; Drew et al. 2023 · 原创机制示意图 CC BY 4.0</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="太阳光进入大气后蓝光被散射的示意图">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+  <rect width="720" height="420" fill="#f8fafc"/>
+  <rect x="0" y="0" width="720" height="420" fill="url(#sky)" opacity="0.55"/>
+  <circle cx="100" cy="100" r="38" fill="#fbbf24"/>
+  <g stroke="#fbbf24" stroke-width="3" stroke-linecap="round">
+    <line x1="100" y1="42" x2="100" y2="24"/><line x1="100" y1="158" x2="100" y2="176"/>
+    <line x1="42" y1="100" x2="24" y2="100"/><line x1="158" y1="100" x2="176" y2="100"/>
+    <line x1="59" y1="59" x2="46" y2="46"/><line x1="141" y1="141" x2="154" y2="154"/>
+    <line x1="141" y1="59" x2="154" y2="46"/><line x1="59" y1="141" x2="46" y2="154"/>
+  </g>
+  <text x="100" y="208" text-anchor="middle" font-size="15" fill="#92400e" font-family="sans-serif">太阳</text>
+  <text x="100" y="228" text-anchor="middle" font-size="13" fill="#92400e" font-family="sans-serif">白光 = 各种颜色</text>
+
+  <path d="M138 100 L610 100" stroke="#f59e0b" stroke-width="10" opacity="0.35"/>
+  <path d="M138 100 L610 100" stroke="#fff7ed" stroke-width="4"/>
+
+  <g fill="#334155" font-family="sans-serif">
+    <circle cx="250" cy="82" r="5"/><circle cx="320" cy="118" r="5"/><circle cx="390" cy="84" r="5"/>
+    <circle cx="465" cy="116" r="5"/><circle cx="530" cy="86" r="5"/><circle cx="585" cy="116" r="5"/>
+  </g>
+  <text x="360" y="64" text-anchor="middle" font-size="14" fill="#334155" font-family="sans-serif">大气中的氮气、氧气分子</text>
+
+  <g stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arrowB)">
+    <path d="M250 82 L190 36"/><path d="M250 82 L205 146"/>
+    <path d="M320 118 L262 170"/><path d="M320 118 L372 182"/>
+    <path d="M390 84 L350 28"/><path d="M390 84 L448 36"/>
+    <path d="M465 116 L420 174"/><path d="M465 116 L525 170"/>
+    <path d="M530 86 L492 30"/><path d="M530 86 L588 36"/>
+    <path d="M585 116 L548 180"/>
+  </g>
+  <text x="360" y="208" text-anchor="middle" font-size="14" fill="#1d4ed8" font-family="sans-serif">蓝光波长短，被空气分子散射到四面八方</text>
+
+  <path d="M138 128 L630 128" stroke="#dc2626" stroke-width="4" fill="none" marker-end="url(#arrowR)"/>
+  <text x="385" y="152" text-anchor="middle" font-size="14" fill="#b91c1c" font-family="sans-serif">红光波长长，更容易穿过大气</text>
+
+  <circle cx="640" cy="230" r="13" fill="#0f172a"/>
+  <path d="M640 243 L640 285" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M640 258 L620 278 M640 258 L660 278" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M640 285 L626 320 M640 285 L654 320" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+  <text x="640" y="348" text-anchor="middle" font-size="14" fill="#0f172a" font-family="sans-serif">观察者</text>
+  <text x="360" y="392" text-anchor="middle" font-size="13" fill="#475569" font-family="sans-serif">天空的蓝色来自被散射的蓝光，不是海水反射</text>
+</svg>

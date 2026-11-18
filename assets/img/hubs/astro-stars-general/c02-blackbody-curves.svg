@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d99a2b"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3a6ea5"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">黑体辐射：温度决定颜色与峰值</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">三条归一化黑体谱，横轴波长，纵轴相对辐射强度</text>
+<rect x="40.0" y="112.0" width="720.0" height="306.0" rx="10" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+
+<line x1="104.0" y1="118.0" x2="104.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="104.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">200</text>
+<line x1="201.7" y1="118.0" x2="201.7" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="201.7" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">500</text>
+<line x1="299.3" y1="118.0" x2="299.3" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="299.3" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">800</text>
+<line x1="397.0" y1="118.0" x2="397.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="397.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">1100</text>
+<line x1="494.7" y1="118.0" x2="494.7" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="494.7" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">1400</text>
+<line x1="592.3" y1="118.0" x2="592.3" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="592.3" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">1700</text>
+<line x1="690.0" y1="118.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="690.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">2000</text>
+<line x1="104.0" y1="372.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="376.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0</text>
+<line x1="104.0" y1="322.4" x2="690.0" y2="322.4" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="326.4" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0.21</text>
+<line x1="104.0" y1="272.8" x2="690.0" y2="272.8" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="276.8" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0.42</text>
+<line x1="104.0" y1="223.2" x2="690.0" y2="223.2" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="227.2" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0.63</text>
+<line x1="104.0" y1="173.6" x2="690.0" y2="173.6" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="177.6" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0.84</text>
+<line x1="104.0" y1="124.0" x2="690.0" y2="124.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="128.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">1.05</text>
+<text x="397.0" y="412.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#41505e" text-anchor="middle" opacity="1.00">波长 (nm)</text>
+<polyline points="104.0,358.5 118.7,324.3 133.3,273.5 147.9,220.6 162.6,178.3 177.2,150.7 191.9,137.5 206.6,135.8 221.2,142.4 235.8,154.0 250.5,168.6 265.1,184.5 279.8,200.5 294.5,216.1 309.1,230.8 323.8,244.5 338.4,257.0 353.0,268.3 367.7,278.5 382.3,287.4 397.0,295.7 411.7,303.0 426.3,309.6 440.9,315.3 455.6,320.7 470.2,325.2 484.9,329.5 499.6,333.3 514.2,336.6 528.8,339.6 543.5,342.5 558.2,344.8 572.8,347.0 587.5,349.1 602.1,350.7 616.8,352.4 631.4,354.0 646.1,355.2 660.7,356.4 675.4,357.6 690.0,358.8" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="104.0,371.1 118.7,364.4 133.3,346.3 147.9,315.1 162.6,275.6 177.2,235.0 191.9,198.9 206.6,170.5 221.2,151.2 235.8,139.8 250.5,135.8 265.1,137.2 279.8,142.9 294.5,151.6 309.1,162.0 323.8,173.8 338.4,185.9 353.0,197.9 367.7,210.0 382.3,221.5 397.0,232.4 411.7,242.8 426.3,252.5 440.9,261.5 455.6,269.7 470.2,277.5 484.9,284.6 499.6,291.2 514.2,297.1 528.8,302.6 543.5,307.8 558.2,312.5 572.8,316.7 587.5,320.5 602.1,324.1 616.8,327.4 631.4,330.4 646.1,333.3 660.7,335.9 675.4,338.2 690.0,340.4" fill="none" stroke="#d99a2b" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="104.0,372.0 118.7,372.0 133.3,372.0 147.9,371.5 162.6,369.6 177.2,365.4 191.9,357.4 206.6,344.8 221.2,328.1 235.8,307.8 250.5,285.3 265.1,261.9 279.8,239.0 294.5,217.3 309.1,197.9 323.8,180.9 338.4,166.8 353.0,155.4 367.7,146.9 382.3,141.0 397.0,137.2 411.7,135.8 426.3,136.0 440.9,137.9 455.6,141.0 470.2,145.3 484.9,150.2 499.6,155.9 514.2,162.0 528.8,168.6 543.5,175.3 558.2,182.1 572.8,189.2 587.5,196.0 602.1,202.9 616.8,209.7 631.4,216.4 646.1,222.7 660.7,228.9 675.4,235.0 690.0,240.9" fill="none" stroke="#a85a3a" stroke-width="2.6" stroke-linejoin="round"/>
+<line x1="120.0" y1="138.0" x2="144.0" y2="138.0" stroke="#3a6ea5" stroke-width="3.0"/>
+<text x="152.0" y="142.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">5800 K（太阳）</text>
+<line x1="120.0" y1="156.0" x2="144.0" y2="156.0" stroke="#d99a2b" stroke-width="3.0"/>
+<text x="152.0" y="160.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">4400 K</text>
+<line x1="120.0" y1="174.0" x2="144.0" y2="174.0" stroke="#a85a3a" stroke-width="3.0"/>
+<text x="152.0" y="178.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">2500 K</text>
+<circle cx="207.2" cy="147.6" r="4.0" fill="#d99a2b" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="216.2" y="126.6" width="131.9" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="216.2" y="138.6" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">5800 K 峰值约 517 nm</text>
+<circle cx="260.9" cy="159.4" r="4.0" fill="#d99a2b" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="269.9" y="165.4" width="131.9" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="269.9" y="177.4" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">4400 K 峰值约 682 nm</text>
+<circle cx="416.5" cy="183.0" r="4.0" fill="#d99a2b" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="425.5" y="162.0" width="184.2" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="425.5" y="174.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">2500 K 峰值约 1160 nm（红外）</text>
+<text x="40.0" y="440.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">温度越高，峰值越短、总辐射越强（F = σT⁴）；白炽灯丝约 2500 K，多数能量在红外。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+<rect x="634.0" y="118" width="56.0" height="17" rx="3" fill="#ffffff" stroke="none" opacity="0.94"/><text x="686.0" y="130.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#7d8b98" text-anchor="end" opacity="1.00">相对强度</text></svg>

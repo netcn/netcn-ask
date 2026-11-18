@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">耳鸣的中枢增益示意</title>
+  <desc id="desc">耳蜗或听神经受损后，大脑提高中枢增益，安静环境中耳鸣更明显。</desc>
+  <rect width="800" height="450" fill="#f5f7ff"/>
+  <text x="32" y="48" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="27" font-weight="700" fill="#191c4d">耳鸣不是耳朵在“响”</text>
+  <text x="32" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#5c628c">Tinnitus as a central-gain phenomenon</text>
+
+  <rect x="35" y="115" width="205" height="112" rx="14" fill="#ffe9e4" stroke="#d06b5a" stroke-width="2"/>
+  <text x="137" y="150" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="20" font-weight="700" fill="#7d2d22">耳蜗 / 听神经受损</text>
+  <text x="137" y="176" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#8c4a40">毛细胞减少，输入变弱</text>
+  <text x="137" y="199" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#9b6a61">Reduced peripheral input</text>
+
+  <rect x="295" y="115" width="205" height="112" rx="14" fill="#e8f1ff" stroke="#3778c2" stroke-width="2"/>
+  <text x="397" y="150" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="20" font-weight="700" fill="#173b66">中枢增益上调</text>
+  <text x="397" y="176" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#48627f">大脑“调大音量”寻找信号</text>
+  <text x="397" y="199" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#6b7c92">Central gain increases</text>
+
+  <rect x="555" y="115" width="205" height="112" rx="14" fill="#fff7df" stroke="#c9941f" stroke-width="2"/>
+  <text x="657" y="150" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="20" font-weight="700" fill="#6b4b08">耳鸣被放大</text>
+  <text x="657" y="176" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#7a5a1d">安静时尤其明显</text>
+  <text x="657" y="199" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8b7355">Perceived in quiet</text>
+
+  <g stroke="#7b8ba1" stroke-width="3" fill="none">
+    <path d="M240 171 L293 171" marker-end="url(#a2)"/>
+    <path d="M500 171 L553 171" marker-end="url(#a2)"/>
+  </g>
+  <path d="M657 228 C657 300 397 300 397 230" stroke="#c9941f" stroke-width="3" fill="none" stroke-dasharray="7 6" marker-end="url(#a3)"/>
+  <text x="525" y="285" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#8a6b28">反馈回路：越安静，越容易听见</text>
+  <defs>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7b8ba1"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c9941f"/></marker>
+  </defs>
+
+  <rect x="35" y="320" width="725" height="72" rx="14" fill="#191c4d"/>
+  <text x="397" y="348" text-anchor="middle" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="18" font-weight="700" fill="#ffffff">治疗目标不是“追求绝对无声”，而是降低耳鸣对睡眠和注意力的控制</text>
+  <text x="397" y="372" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#c9cdea">CBT, sound therapy and hearing aids reduce distress, not necessarily the sound itself</text>
+  <text x="35" y="425" font-family="'Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" fill="#4b527a">搏动性耳鸣（与心跳同步）或单侧耳鸣伴听力下降，需要优先排除血管性和结构性问题。</text>
+  <text x="35" y="445" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#7b82a6">示意图 · 依据 NHS Tinnitus 与 NIDCD 耳鸣资料</text>
+</svg>

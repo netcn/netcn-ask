@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="反日点、42度圆锥与彩虹圆弧的几何关系">
+  <rect width="720" height="460" fill="#f8fafc"/>
+  <text x="40" y="40" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">彩虹为什么是一个以反日点为中心的圆？</text>
+
+  <!-- 雨幕 -->
+  <rect x="60" y="60" width="600" height="330" fill="#dbeafe" opacity="0.45"/>
+  <g stroke="#93c5fd" stroke-width="1.5" opacity="0.8">
+    <line x1="100" y1="60" x2="100" y2="390"/><line x1="160" y1="60" x2="160" y2="390"/>
+    <line x1="220" y1="60" x2="220" y2="390"/><line x1="280" y1="60" x2="280" y2="390"/>
+    <line x1="340" y1="60" x2="340" y2="390"/><line x1="400" y1="60" x2="400" y2="390"/>
+    <line x1="460" y1="60" x2="460" y2="390"/><line x1="520" y1="60" x2="520" y2="390"/>
+    <line x1="580" y1="60" x2="580" y2="390"/><line x1="640" y1="60" x2="640" y2="390"/>
+  </g>
+  <text x="620" y="82" text-anchor="end" font-size="12" fill="#1d4ed8" font-family="sans-serif">雨幕</text>
+
+  <!-- 反日点与 42° 圆 -->
+  <circle cx="360" cy="200" r="150" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="360" cy="200" r="5" fill="#0f172a"/>
+  <text x="360" y="188" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a" font-family="sans-serif">反日点</text>
+
+  <!-- 彩虹弧：外红内紫 -->
+  <g fill="none" stroke-width="3">
+    <path d="M210 200 A150 150 0 0 1 510 200" stroke="#dc2626"/>
+    <path d="M213 200 A147 147 0 0 1 507 200" stroke="#f97316"/>
+    <path d="M216 200 A144 144 0 0 1 504 200" stroke="#eab308"/>
+    <path d="M219 200 A141 141 0 0 1 501 200" stroke="#16a34a"/>
+    <path d="M222 200 A138 138 0 0 1 498 200" stroke="#0891b2"/>
+    <path d="M225 200 A135 135 0 0 1 495 200" stroke="#2563eb"/>
+    <path d="M228 200 A132 132 0 0 1 492 200" stroke="#7c3aed"/>
+  </g>
+  <text x="360" y="88" text-anchor="middle" font-size="12" fill="#b91c1c" font-family="sans-serif">42°</text>
+  <line x1="360" y1="200" x2="466" y2="94" stroke="#b91c1c" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="474" y="106" font-size="12" fill="#b91c1c" font-family="sans-serif">42°</text>
+
+  <!-- 观察者与太阳 -->
+  <g font-family="sans-serif">
+    <circle cx="360" cy="414" r="10" fill="#0f172a"/>
+    <text x="360" y="442" text-anchor="middle" font-size="12" fill="#334155">观察者</text>
+    <line x1="360" y1="404" x2="360" y2="210" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <circle cx="360" cy="438" r="12" fill="#fbbf24"/>
+    <text x="386" y="442" font-size="11" fill="#b45309">太阳在身后</text>
+  </g>
+
+  <text x="360" y="456" text-anchor="middle" font-size="11" fill="#64748b" font-family="sans-serif">所有位于反日点周围约 42° 的雨滴，都会把同一颜色的光送进你的眼睛。</text>
+</svg>

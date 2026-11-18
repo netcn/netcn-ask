@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="冬眠不死：三条线同时降级">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">冬眠不死：三条线同时降级</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Torpor: water, waste, and energy all downgraded</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="132" width="210" height="180" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<circle cx="84" cy="158" r="7" fill="#2563eb"/>
+<text x="100" y="163" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#2563eb" text-anchor="start">水</text>
+<text x="76" y="198" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">脂肪氧化产生代谢水</text>
+<text x="76" y="218" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">几乎不排尿，呼吸</text>
+<text x="76" y="238" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">与皮肤散失也降到底</text>
+<rect x="290" y="132" width="210" height="180" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<circle cx="314" cy="158" r="7" fill="#2563eb"/>
+<text x="330" y="163" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#2563eb" text-anchor="start">废物</text>
+<text x="306" y="198" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">肠道菌把尿素拆回</text>
+<text x="306" y="218" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">氨基酸——“厕所”</text>
+<text x="306" y="238" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">变“蛋白工厂”</text>
+<rect x="520" y="132" width="210" height="180" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<circle cx="544" cy="158" r="7" fill="#2563eb"/>
+<text x="560" y="163" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#2563eb" text-anchor="start">能量</text>
+<text x="536" y="198" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">心率、体温、耗氧</text>
+<text x="536" y="218" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">全面下调，按</text>
+<text x="536" y="238" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#475569" text-anchor="start">最低配给发放</text>
+<rect x="60" y="340" width="680" height="60" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="360" y="366" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">冬眠中确实会死，但多因入眠前储备不足或带病——</text>
+<text x="360" y="388" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">帝企鹅雄鸟可绝食百天，配方相同：低代谢 + 脂肪仓 + 废物回收</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

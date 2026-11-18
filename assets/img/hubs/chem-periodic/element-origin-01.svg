@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">元素的宇宙来源与 92 种天然元素</title>
+  <desc id="desc">从大爆炸、恒星核心聚变、渐近巨星 s 过程到超新星与中子星并合 r 过程的元素来源时间线；说明铁以上聚变不再放能，92 种天然元素指 Z=1 到 92。</desc>
+  <metadata>原创机制示意图，CC BY 4.0，netcn ask，2026-11-16。依据 OpenStax Chemistry 2e、NASA Chandra 与 IUPAC 元素资料。</metadata>
+  <rect width="800" height="500" fill="#f7f4ec"/>
+  <text x="28" y="34" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#1f2937">元素从哪里来？</text>
+  <text x="28" y="58" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" fill="#4b5563">宇宙先把轻元素造出来，再用恒星与爆炸补齐重元素</text>
+
+  <line x1="46" y1="178" x2="754" y2="178" stroke="#9ca3af" stroke-width="3"/>
+  <polygon points="754,178 740,170 740,186" fill="#9ca3af"/>
+
+  <rect x="28" y="92" width="132" height="142" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="94" y="120" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#1d4ed8">大爆炸</text>
+  <text x="94" y="150" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#1e40af">H、He、Li</text>
+  <text x="94" y="180" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#1e40af">几分钟内形成</text>
+  <text x="94" y="208" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#1e40af">宇宙最早的元素</text>
+
+  <rect x="174" y="92" width="146" height="142" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="247" y="120" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#92400e">恒星核心</text>
+  <text x="247" y="150" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#92400e">C 到 Fe</text>
+  <text x="247" y="180" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#92400e">聚变释放能量</text>
+  <text x="247" y="208" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#92400e">铁是“能量谷底”</text>
+
+  <rect x="334" y="92" width="146" height="142" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="407" y="120" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#166534">渐近巨星</text>
+  <text x="407" y="150" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#166534">s 过程</text>
+  <text x="407" y="180" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#166534">慢中子捕获</text>
+  <text x="407" y="208" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#166534">Sr、Ba、Pb</text>
+
+  <rect x="494" y="92" width="146" height="142" rx="10" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="567" y="120" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#9d174d">超新星/并合</text>
+  <text x="567" y="150" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#9d174d">r 过程</text>
+  <text x="567" y="180" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#9d174d">快中子捕获</text>
+  <text x="567" y="208" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#9d174d">Au、Pt、U</text>
+
+  <rect x="654" y="92" width="124" height="142" rx="10" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="716" y="120" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700" fill="#5b21b6">地球</text>
+  <text x="716" y="150" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="21" fill="#5b21b6">92 种</text>
+  <text x="716" y="180" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#5b21b6">天然元素</text>
+  <text x="716" y="208" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="17" fill="#5b21b6">Z = 1–92</text>
+
+  <text x="94" y="246" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">宇宙冷却</text>
+  <text x="247" y="246" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">引力坍缩点燃</text>
+  <text x="407" y="246" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">老年恒星</text>
+  <text x="567" y="246" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">剧烈爆炸</text>
+  <text x="716" y="246" text-anchor="middle" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="16" fill="#6b7280">混合、分化</text>
+
+  <rect x="28" y="280" width="746" height="164" rx="10" fill="#ffffff" stroke="#d6d3d1" stroke-width="1.5"/>
+  <text x="48" y="312" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#1f2937">两个关键边界</text>
+  <text x="48" y="346" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" fill="#374151">1. 铁以上聚变不再释放能量，重元素主要靠中子捕获，</text>
+  <text x="48" y="372" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" fill="#374151">而不是继续“烧”上去。</text>
+  <text x="48" y="402" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" fill="#374151">2. “92 种”指 Z=1–92；Tc、Pm 没有稳定同位素，</text>
+  <text x="48" y="428" font-family="DejaVu Sans, Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="19" fill="#374151">Np、Pu 只在矿石中痕量存在。</text>
+</svg>

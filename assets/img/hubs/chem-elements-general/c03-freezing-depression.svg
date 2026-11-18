@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b06a1f"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f7d8c"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#b06a1f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">凝固点降低随溶质浓度变化</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">ΔTf = Kf·m·i，水的 Kf ≈ 1.86 °C·kg/mol；电解质 i 接近 2</text>
+<rect x="40.0" y="112.0" width="720.0" height="306.0" rx="10" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<line x1="104.0" y1="118.0" x2="104.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="104.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">0</text>
+<line x1="299.3" y1="118.0" x2="299.3" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="299.3" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">0.5</text>
+<line x1="494.7" y1="118.0" x2="494.7" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="494.7" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">1</text>
+<line x1="690.0" y1="118.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="690.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">1.5</text>
+<line x1="104.0" y1="372.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="376.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0</text>
+<line x1="104.0" y1="289.3" x2="690.0" y2="289.3" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="293.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">2</text>
+<line x1="104.0" y1="206.7" x2="690.0" y2="206.7" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="210.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">4</text>
+<line x1="104.0" y1="124.0" x2="690.0" y2="124.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="128.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">6</text>
+<text x="397.0" y="412.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#41505e" text-anchor="middle" opacity="1.00">质量摩尔浓度 m（mol/kg）</text>
+<polyline points="104.0,372.0 299.3,295.1 494.7,218.2 690.0,141.4" fill="none" stroke="#5b7f3a" stroke-width="2.6" stroke-linejoin="round"/>
+<polyline points="104.0,372.0 299.3,333.6 494.7,295.1 690.0,256.7" fill="none" stroke="#9a6b3f" stroke-width="2.6" stroke-linejoin="round"/>
+<line x1="120.0" y1="138.0" x2="144.0" y2="138.0" stroke="#5b7f3a" stroke-width="3.0"/>
+<text x="152.0" y="142.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">NaCl（i≈2）</text>
+<line x1="120.0" y1="156.0" x2="144.0" y2="156.0" stroke="#9a6b3f" stroke-width="3.0"/>
+<text x="152.0" y="160.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">非电解质（i=1）</text>
+<circle cx="494.7" cy="218.2" r="4.0" fill="#5b7f3a" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="503.7" y="197.2" width="58.0" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="503.7" y="209.2" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">NaCl i≈2</text>
+<circle cx="494.7" cy="295.1" r="4.0" fill="#9a6b3f" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="503.7" y="301.1" width="24.0" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="503.7" y="313.1" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">i=1</text>
+<text x="40.0" y="440.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">稀溶液近似；浓溶液中离子相互作用使 i 偏离理想值。</text>
+<rect x="550.7" y="118.0" width="139.3" height="17.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.94"/>
+<text x="686.0" y="130.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#7d8b98" text-anchor="end" opacity="1.00">凝固点降低 ΔTf（°C）</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

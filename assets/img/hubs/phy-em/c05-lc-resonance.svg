@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3b5fa8"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a2b"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#3b5fa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">LC 谐振频率随 L、C 增大而降低</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">f=1/(2π√LC)，能量在电场能与磁场能间互换</text>
+<rect x="40.0" y="112.0" width="720.0" height="306.0" rx="10" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<line x1="104.0" y1="118.0" x2="104.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="104.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">0</text>
+<line x1="221.2" y1="118.0" x2="221.2" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="221.2" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">2</text>
+<line x1="338.4" y1="118.0" x2="338.4" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="338.4" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">4</text>
+<line x1="455.6" y1="118.0" x2="455.6" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="455.6" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">6</text>
+<line x1="572.8" y1="118.0" x2="572.8" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="572.8" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">8</text>
+<line x1="690.0" y1="118.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="690.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">10</text>
+<line x1="104.0" y1="372.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="376.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0</text>
+<line x1="104.0" y1="330.7" x2="690.0" y2="330.7" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="334.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">3</text>
+<line x1="104.0" y1="289.3" x2="690.0" y2="289.3" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="293.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">6</text>
+<line x1="104.0" y1="248.0" x2="690.0" y2="248.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">9</text>
+<line x1="104.0" y1="206.7" x2="690.0" y2="206.7" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="210.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">12</text>
+<line x1="104.0" y1="165.3" x2="690.0" y2="165.3" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="169.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">15</text>
+<line x1="104.0" y1="124.0" x2="690.0" y2="124.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="128.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">18</text>
+<text x="397.0" y="412.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#41505e" text-anchor="middle" opacity="1.00">相对 √(LC)（任意单位）</text>
+<polyline points="162.6,152.9 221.2,216.3 279.8,245.2 338.4,262.3 397.0,273.9 455.6,282.4 572.8,294.6 690.0,302.7" fill="none" stroke="#3b5fa8" stroke-width="2.6" stroke-linejoin="round"/>
+<line x1="120.0" y1="138.0" x2="144.0" y2="138.0" stroke="#3b5fa8" stroke-width="3.0"/>
+<text x="152.0" y="142.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">谐振频率 f</text>
+<circle cx="338.4" cy="262.3" r="4.0" fill="#3b5fa8" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="347.4" y="241.3" width="122.1" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="347.4" y="253.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">L、C 增大 → f 降低</text>
+<circle cx="162.6" cy="152.9" r="4.0" fill="#3b5fa8" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="171.6" y="158.9" width="122.1" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="171.6" y="170.9" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">L、C 减小 → f 升高</text>
+<text x="40.0" y="440.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">振荡电流加速电荷，按麦克斯韦理论辐射电磁波；真空中 c=λf。</text>
+<rect x="575.1" y="118.0" width="114.9" height="17.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.94"/>
+<text x="686.0" y="130.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#7d8b98" text-anchor="end" opacity="1.00">频率 f（相对单位）</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

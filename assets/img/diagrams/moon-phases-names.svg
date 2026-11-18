@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-label="八个月相名称与亮面形状">
+  <defs>
+    <clipPath id="mc">
+      <circle cx="0" cy="0" r="28"/>
+    </clipPath>
+  </defs>
+  <rect width="720" height="300" fill="#f8fafc"/>
+  <text x="40" y="38" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">八个月相：亮面从无到有，再从有到无</text>
+  <text x="200" y="66" text-anchor="middle" font-size="12" fill="#0f766e" font-family="sans-serif">盈 →</text>
+  <text x="520" y="66" text-anchor="middle" font-size="12" fill="#0f766e" font-family="sans-serif">← 亏</text>
+
+  <!-- 新月 -->
+  <g transform="translate(60 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#0f172a"/>
+  </g>
+  <circle cx="60" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="60" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">新月</text>
+
+  <!-- 蛾眉月：右侧亮 -->
+  <g transform="translate(148 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#f8fafc"/><circle cx="-12" r="28" fill="#0f172a"/>
+  </g>
+  <circle cx="148" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="148" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">蛾眉月</text>
+
+  <!-- 上弦月：右半亮 -->
+  <g transform="translate(236 130)" clip-path="url(#mc)">
+    <path d="M0,-28 A28,28 0 0 1 0,28 Z" fill="#f8fafc"/>
+  </g>
+  <circle cx="236" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="236" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">上弦月</text>
+
+  <!-- 盈凸月：右侧大部分亮 -->
+  <g transform="translate(324 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#f8fafc"/><circle cx="-14" r="28" fill="#0f172a"/>
+  </g>
+  <circle cx="324" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="324" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">盈凸月</text>
+
+  <!-- 满月 -->
+  <g transform="translate(412 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#f8fafc"/>
+  </g>
+  <circle cx="412" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="412" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">满月</text>
+
+  <!-- 亏凸月 -->
+  <g transform="translate(500 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#f8fafc"/><circle cx="14" r="28" fill="#0f172a"/>
+  </g>
+  <circle cx="500" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="500" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">亏凸月</text>
+
+  <!-- 下弦月 -->
+  <g transform="translate(588 130)" clip-path="url(#mc)">
+    <path d="M0,-28 A28,28 0 0 0 0,28 Z" fill="#f8fafc"/>
+  </g>
+  <circle cx="588" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="588" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">下弦月</text>
+
+  <!-- 残月 -->
+  <g transform="translate(676 130)" clip-path="url(#mc)">
+    <circle r="28" fill="#f8fafc"/><circle cx="12" r="28" fill="#0f172a"/>
+  </g>
+  <circle cx="676" cy="130" r="28" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <text x="676" y="184" text-anchor="middle" font-size="12" fill="#334155" font-family="sans-serif">残月</text>
+
+  <text x="360" y="250" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">亮面比例连续变化，八个名称只是方便描述；南半球看到的左右方向相反。</text>
+</svg>

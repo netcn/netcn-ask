@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="胃壁的三层防线">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0f766e"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a">胃壁的三层防线</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">Why the stomach does not digest itself</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="136" width="350" height="58" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+<text x="76" y="160" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#b91c1c">胃腔：pH 1.5–3.5</text>
+<text x="76" y="180" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#7f1d1d">盐酸 + 胃蛋白酶，能分解蛋白质</text>
+<circle cx="330" cy="160" r="4" fill="#ef4444"/><circle cx="348" cy="176" r="3" fill="#f97316"/><circle cx="312" cy="180" r="3" fill="#ef4444"/>
+<rect x="60" y="202" width="350" height="56" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+<text x="76" y="226" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#047857">黏液–碳酸氢盐层</text>
+<text x="76" y="246" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#065f46">黏液凝胶 + 上皮分泌 HCO₃⁻，把表面 pH 拉回中性</text>
+<rect x="60" y="266" width="350" height="56" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="76" y="290" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#166534">表面上皮 + 紧密连接</text>
+<text x="76" y="310" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#14532d">细胞间缝隙收紧，酸和酶不能顺着缝隙渗入</text>
+<path d="M300 286 q10 -12 20 0 q10 12 20 0" fill="none" stroke="#22c55e" stroke-width="2"/>
+<rect x="60" y="330" width="350" height="76" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+<text x="76" y="354" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#991b1b">黏膜血流 + 细胞更新</text>
+<text x="76" y="374" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#7f1d1d">带走少量反渗的 H⁺；受损上皮几天内被替换</text>
+<path d="M300 392 C320 378 338 402 360 388" fill="none" stroke="#dc2626" stroke-width="3"/>
+<text x="430" y="132" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#0f766e">三个常见误解</text>
+<rect x="430" y="144" width="300" height="78" rx="10" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.2"/>
+<text x="444" y="168" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" font-weight="700" fill="#0f766e">① 胃酸不是一缸恒定强酸</text>
+<text x="444" y="190" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#334155">进食后食物缓冲，pH 会升到 4–5；</text>
+<text x="444" y="207" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#334155">两餐之间才回到更酸的空腹水平。</text>
+<rect x="430" y="234" width="300" height="78" rx="10" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.2"/>
+<text x="444" y="258" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" font-weight="700" fill="#0f766e">② 食物和黏液先挡一道</text>
+<text x="444" y="280" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#334155">胃内容物不是纯酸；黏液层让</text>
+<text x="444" y="297" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#334155">上皮表面接近中性。</text>
+<rect x="430" y="324" width="300" height="78" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.2"/>
+<text x="444" y="348" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" font-weight="700" fill="#9a3412">③ 屏障破了，胃也会受伤</text>
+<text x="444" y="370" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#7c2d12">NSAIDs、H. pylori、缺血或严重应激</text>
+<text x="444" y="387" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10.5" fill="#7c2d12">会破坏屏障，导致胃炎或溃疡。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

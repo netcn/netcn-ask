@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="space3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06111f"/>
+      <stop offset="100%" stop-color="#02050a"/>
+    </linearGradient>
+    <radialGradient id="star" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff2c4"/>
+      <stop offset="45%" stop-color="#ffb45e"/>
+      <stop offset="100%" stop-color="#d34e2a"/>
+    </radialGradient>
+    <marker id="arrow3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8fd3ff"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="url(#space3)"/>
+  <text x="40" y="45" fill="#e8f2ff" font-size="19" font-weight="700">绕银河的太阳系与 TRAPPIST-1</text>
+  <text x="40" y="70" fill="#8fa8c2" font-size="13">太阳绕银心约 2.3 亿年；邻近恒星也在动，所以星空在人的尺度上几乎不变</text>
+
+  <!-- galaxy -->
+  <g transform="translate(40,105)">
+    <ellipse cx="195" cy="150" rx="165" ry="95" fill="#0a1d31" stroke="#345a77" stroke-width="1.2"/>
+    <path d="M 40 180 C 100 80, 270 75, 355 155 C 285 205, 115 225, 55 180" fill="none" stroke="#7ba7c4" stroke-width="2" opacity="0.75"/>
+    <path d="M 60 135 C 130 55, 285 60, 345 125 C 270 160, 120 190, 70 150" fill="none" stroke="#4e7592" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="195" cy="150" r="20" fill="#ffe6a3" opacity="0.8"/>
+    <circle cx="276" cy="162" r="5" fill="#ffd166"/>
+    <rect x="280" y="168" width="44" height="16" rx="3" fill="#06111f" opacity="0.9"/>
+    <text x="284" y="180" fill="#ffd166" font-size="11">太阳系</text>
+    <text x="195" y="268" text-anchor="middle" fill="#dcecff" font-size="13">太阳绕银心一圈 ≈ 2.3 亿年</text>
+    <text x="195" y="288" text-anchor="middle" fill="#8fa8c2" font-size="11">约 72 万公里/小时，但恒星相对运动很小</text>
+  </g>
+
+  <!-- TRAPPIST -->
+  <g transform="translate(440,105)">
+    <circle cx="55" cy="150" r="38" fill="url(#star)"/>
+    <text x="55" y="154" text-anchor="middle" fill="#3a1c0c" font-size="11">TRAPPIST-1</text>
+    <g fill="none" stroke="#7fc7de" stroke-width="1.1">
+      <ellipse cx="55" cy="150" rx="62" ry="52"/>
+      <ellipse cx="55" cy="150" rx="78" ry="66" opacity="0.9"/>
+      <ellipse cx="55" cy="150" rx="94" ry="80" opacity="0.8"/>
+      <ellipse cx="55" cy="150" rx="110" ry="94" opacity="0.7"/>
+      <ellipse cx="55" cy="150" rx="126" ry="108" opacity="0.6"/>
+      <ellipse cx="55" cy="150" rx="142" ry="122" opacity="0.5"/>
+      <ellipse cx="55" cy="150" rx="158" ry="136" opacity="0.4"/>
+    </g>
+    <g fill="#d8f6ff">
+      <circle cx="117" cy="150" r="4"/><circle cx="133" cy="150" r="4"/>
+      <circle cx="149" cy="150" r="4"/><circle cx="165" cy="150" r="4"/>
+      <circle cx="181" cy="150" r="4"/><circle cx="197" cy="150" r="4"/>
+      <circle cx="213" cy="150" r="4"/>
+    </g>
+    <text x="165" y="265" text-anchor="middle" fill="#dcecff" font-size="13">7 颗地球大小岩质行星</text>
+    <text x="165" y="285" text-anchor="middle" fill="#8fa8c2" font-size="11">40 光年；3 颗位于宜居带</text>
+    <text x="165" y="305" text-anchor="middle" fill="#f0bd72" font-size="11">“宜居带”不是生命证据</text>
+  </g>
+
+  <line x1="400" y1="105" x2="400" y2="435" stroke="#294660" stroke-width="1" stroke-dasharray="6 8"/>
+  <text x="40" y="480" fill="#6f8aa5" font-size="11">示意图，非按真实尺度；数据见 NASA Sun Facts / AMNH / NASA Exoplanets。</text>
+</svg>

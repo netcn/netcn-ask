@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="块炼铁炉剖面示意图：木炭和矿石在约1100至1300摄氏度被一氧化碳还原成块铁，纯铁熔点1538摄氏度">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#fff7ed"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#b45309"/></marker></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#b45309"/>
+<text x="40" y="45" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0f172a">块炼铁：把氧拿走，不必把铁熔化</text>
+<text x="40" y="73" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">Bloomery smelting: solid-state reduction at about 1100–1300 °C</text>
+<rect x="30" y="92" width="500" height="322" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="50" y="118" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#9a3412">竖炉剖面：炭和矿石交替装料</text>
+<path d="M130 338 L220 130 L310 338 L286 375 L154 375 Z" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
+<rect x="174" y="180" width="90" height="34" rx="6" fill="#92400e"/>
+<text x="184" y="203" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">炭 + 矿石</text>
+<path d="M184 238 L256 238 L274 338 L166 338 Z" fill="#c2410c"/>
+<text x="195" y="285" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">还原区</text>
+<text x="315" y="220" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" fill="#7c2d12">CO 向上</text>
+<line x1="100" y1="312" x2="145" y2="312" stroke="#b45309" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="50" y="304" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#b45309">鼓风</text>
+<text x="50" y="322" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">风箱</text>
+<circle cx="210" cy="354" r="10" fill="#334155"/>
+<text x="238" y="361" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#334155">块铁</text>
+<text x="118" y="390" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">炉渣从底部排出</text>
+<rect x="550" y="92" width="220" height="322" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="566" y="118" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#9a3412">温度阶梯</text>
+<line x1="610" y1="150" x2="610" y2="345" stroke="#fcd34d" stroke-width="3"/>
+<circle cx="610" cy="180" r="8" fill="#dc2626"/>
+<text x="630" y="177" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#b91c1c">1538°C</text>
+<text x="630" y="196" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#475569">纯铁熔点</text>
+<circle cx="610" cy="280" r="8" fill="#b45309"/>
+<text x="630" y="277" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#92400e">1100–1300°C</text>
+<text x="630" y="296" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#475569">块炼铁操作带</text>
+<text x="566" y="370" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#7c2d12">固态还原 ≠ 熔化</text>
+<rect x="30" y="428" width="740" height="30" rx="8" fill="#fffbeb"/>
+<text x="44" y="449" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="16" fill="#78350f">Fe₂O₃ + 3CO → 2Fe + 3CO₂</text>
+<text x="300" y="449" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#92400e">木炭提供 CO，也把热量留在炉内。</text>
+<text x="40" y="484" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

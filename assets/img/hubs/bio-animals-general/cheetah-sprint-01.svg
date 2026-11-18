@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="猎豹为什么是陆地冲刺冠军？">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#d97706" stroke="#d97706" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">猎豹为什么是陆地冲刺冠军？</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Why is the cheetah the land sprint champion?</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="132" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="76" y="162" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">弹簧脊柱</text>
+<text x="76" y="186" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">腾空时拱起再弹直，步幅可达 6–7 米</text>
+<rect x="420" y="132" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="436" y="162" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">长尾当舵</text>
+<text x="436" y="186" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">高速急转弯时保持平衡</text>
+<rect x="60" y="246" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="76" y="276" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">爪不能完全收起</text>
+<text x="76" y="300" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">落地时像钉鞋抓地防滑</text>
+<rect x="420" y="246" width="340" height="96" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="436" y="276" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#d97706" text-anchor="start">心肺与鼻腔容量大</text>
+<text x="436" y="300" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">为几秒内的冲刺供氧</text>
+<rect x="60" y="356" width="680" height="64" rx="10" fill="#fff7ed" stroke="#fdba74" stroke-width="1.5"/>
+<text x="360" y="394" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#9a3419" text-anchor="middle">代价：冲刺产热极快，不到 1 分钟就要停下散热——所以猎豹靠伏击+短爆</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">极速只在陆地与短距离：耐力型猎手靠耗耐力就能拖垮它</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

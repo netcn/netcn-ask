@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">鱼为什么离不开水：鳃丝展开与身体支撑的两套依赖</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">多数硬骨鱼没有可活动眼睑；鳃丝在空气中黏连是离水后的首要威胁</text>
+<rect x="40.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">在水中</text>
+<line x1="58.0" y1="175.0" x2="352.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="62.0" cy="188.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">水流持续冲洗鳃盖与鳃腔</text>
+<circle cx="62.0" cy="220.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">鳃丝和次级鳃瓣被撑开，气体交换面积大</text>
+<circle cx="62.0" cy="253.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">水提供浮力，骨骼肌肉只需维持姿态</text>
+<circle cx="62.0" cy="285.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">角膜被水体持续冲洗，无需眨眼湿润</text>
+<rect x="54.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="66.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="start" opacity="1.00">鳃交换面积与浮力支撑都依赖水环境</text>
+<rect x="430.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="430.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="448.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">离开水</text>
+<line x1="448.0" y1="175.0" x2="742.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="452.0" cy="188.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">表面张力使鳃丝黏连成束，交换面塌缩</text>
+<circle cx="452.0" cy="220.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">空气无法托住身体，体重压迫组织</text>
+<circle cx="452.0" cy="253.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">鳃盖活动效率下降，缺氧先于脱水出现</text>
+<circle cx="452.0" cy="285.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">眼球表面快速干燥，失去水体冲洗</text>
+<rect x="444.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="456.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#7fb069" text-anchor="start" opacity="1.00">离水后呼吸面积与身体支撑同时失效</text>
+<circle cx="400.0" cy="262.0" r="22.0" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7d8b98" text-anchor="middle" opacity="1.00">vs</text>
+<rect x="40.0" y="410.0" width="720.0" height="50.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="431.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">少数鲨鱼具瞬膜样结构；鱼离水后最先受威胁的是鳃的气体交换，而不是皮肤脱水。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

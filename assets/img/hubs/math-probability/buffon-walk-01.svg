@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="蒲丰投针几何与一维随机游走">
+<rect width="800" height="500" fill="#f7f4ea"/><rect x="0" y="0" width="800" height="6" fill="#0f6b6b"/><text x="28" y="42" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#18323f" text-anchor="start">抛针与随机路：两种“随机”</text><text x="28" y="68" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#5d6f78" text-anchor="start">几何概率估计 π；随机游走碰到资金边界就停</text>
+<rect x="24" y="88" width="360" height="372" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="42" y="118" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#c46a1b" text-anchor="start">① 蒲丰投针：数相交</text>
+<line x1="42" y1="160" x2="352" y2="160" stroke="#b9b1a2" stroke-width="1.2"/>
+<line x1="42" y1="270" x2="352" y2="270" stroke="#b9b1a2" stroke-width="1.2"/>
+<line x1="42" y1="380" x2="352" y2="380" stroke="#b9b1a2" stroke-width="1.2"/>
+<line x1="130" y1="335" x2="200" y2="250" stroke="#b23a2e" stroke-width="4" stroke-linecap="round"/>
+<circle cx="165" cy="292" r="5" fill="#b23a2e"/>
+<line x1="165" y1="292" x2="165" y2="270" stroke="#0f6b6b" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="174" y="286" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#0f6b6b" text-anchor="start">y</text>
+<line x1="165" y1="292" x2="250" y2="292" stroke="#0f6b6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M 195 292 A 30 30 0 0 1 185 269" fill="none" stroke="#0f6b6b" stroke-width="1.5"/>
+<text x="202" y="278" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" font-weight="700" fill="#0f6b6b" text-anchor="start">θ</text>
+<line x1="328" y1="160" x2="328" y2="270" stroke="#5d6f78" stroke-width="1.2"/>
+<text x="334" y="219" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#5d6f78" text-anchor="start">D</text>
+<text x="42" y="414" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="19" font-weight="700" fill="#18323f" text-anchor="start">P = 2L / (πD)</text>
+<text x="42" y="442" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#5d6f78" text-anchor="start">L ≤ D；取 L=D/2 时，P = 1/π</text>
+<rect x="400" y="88" width="376" height="372" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="418" y="118" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#0f6b6b" text-anchor="start">② 一维随机游走：先撞哪条线？</text>
+<line x1="430" y1="160" x2="748" y2="160" stroke="#c46a1b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="430" y1="390" x2="748" y2="390" stroke="#c46a1b" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="424" y="154" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#c46a1b" text-anchor="end">N</text>
+<text x="424" y="398" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#c46a1b" text-anchor="end">0</text>
+<path d="M 455,326 L 470,308 L 485,326 L 500,344 L 515,326 L 530,308 L 545,290 L 560,308 L 575,326 L 590,344 L 605,362 L 620,344 L 635,326 L 650,308 L 665,290 L 680,272 L 695,254 L 710,236 L 725,218 L 740,200 L 748,160" fill="none" stroke="#0f6b6b" stroke-width="3.2" stroke-linejoin="round"/>
+<circle cx="455" cy="326" r="2.6" fill="#0f6b6b"/>
+<circle cx="515" cy="326" r="2.6" fill="#0f6b6b"/>
+<circle cx="575" cy="326" r="2.6" fill="#0f6b6b"/>
+<circle cx="635" cy="326" r="2.6" fill="#0f6b6b"/>
+<circle cx="695" cy="254" r="2.6" fill="#0f6b6b"/>
+<circle cx="748" cy="160" r="6" fill="#b23a2e"/>
+<text x="452" y="345" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" font-weight="400" fill="#5d6f78" text-anchor="start">起点 i</text>
+<text x="738" y="148" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#b23a2e" text-anchor="end">先到 N</text>
+<text x="418" y="420" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#18323f" text-anchor="start">P(先到 N) = i/N</text>
+<text x="418" y="445" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#5d6f78" text-anchor="start">E[局数] = i(N−i)</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">二进制与算法：从开关到结果</title>
+  <desc id="desc">八个开关表示一个字节，开关的通断对应二进制位权；右侧把输入、编码、运算、解码和显示串成算法流程。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f2f8f6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="7" fill="#0f9d8c"/>
+  <rect x="20" y="24" width="760" height="452" rx="16" fill="#ffffff" stroke="#dbe7e3"/>
+
+  <text x="44" y="64" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0f172a">二进制不是“更聪明的十进制”</text>
+  <text x="44" y="91" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13.5" fill="#64748b">它只要求电路稳定区分两种状态；十进制要在一条线上分出十个电压台阶</text>
+  <line x1="44" y1="108" x2="756" y2="108" stroke="#e2e8f0"/>
+
+  <!-- left: switches -->
+  <rect x="42" y="126" width="358" height="238" rx="14" fill="#f8fafc" stroke="#dbe7e3"/>
+  <text x="60" y="154" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0f766e">8 个开关 = 1 个字节</text>
+  <text x="60" y="176" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#64748b">以 156 为例：10011100</text>
+  <text x="71" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">128</text>
+  <rect x="58" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="71" cy="226" r="9" fill="#0f9d8c"/>
+  <text x="71" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0f766e">1</text>
+  <text x="113" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">64</text>
+  <rect x="100" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="113" cy="245" r="9" fill="#cbd5e1"/>
+  <text x="113" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">0</text>
+  <text x="155" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">32</text>
+  <rect x="142" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="155" cy="245" r="9" fill="#cbd5e1"/>
+  <text x="155" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">0</text>
+  <text x="197" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">16</text>
+  <rect x="184" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="197" cy="226" r="9" fill="#0f9d8c"/>
+  <text x="197" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0f766e">1</text>
+  <text x="239" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">8</text>
+  <rect x="226" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="239" cy="226" r="9" fill="#0f9d8c"/>
+  <text x="239" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0f766e">1</text>
+  <text x="281" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">4</text>
+  <rect x="268" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="281" cy="226" r="9" fill="#0f9d8c"/>
+  <text x="281" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0f766e">1</text>
+  <text x="323" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">2</text>
+  <rect x="310" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="323" cy="245" r="9" fill="#cbd5e1"/>
+  <text x="323" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">0</text>
+  <text x="365" y="200" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#64748b">1</text>
+  <rect x="352" y="208" width="26" height="52" rx="13" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <circle cx="365" cy="245" r="9" fill="#cbd5e1"/>
+  <text x="365" y="281" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#94a3b8">0</text>
+  <text x="60" y="315" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#334155">128 + 16 + 8 + 4 = <tspan font-weight="700" fill="#0f766e">156</tspan></text>
+  <text x="60" y="340" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#64748b">每位权重是 2 的幂；逢二进一，借一当二。</text>
+
+  <!-- right: flow -->
+  <rect x="420" y="126" width="338" height="238" rx="14" fill="#fffdf7" stroke="#fde68a"/>
+  <text x="438" y="154" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#b45309">算法：把输入变成输出</text>
+  <text x="438" y="176" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12" fill="#64748b">同样五步，可由不同程序实现</text>
+  <rect x="438" y="190" width="300" height="27" rx="7" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="450" y="208" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#92400e">输入</text>
+  <text x="512" y="208" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" fill="#475569">用户按 123</text>
+  <line x1="588" y1="217" x2="588" y2="221" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="438" y="223" width="300" height="27" rx="7" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="450" y="241" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#92400e">编码</text>
+  <text x="512" y="241" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" fill="#475569">转成 1111011</text>
+  <line x1="588" y1="250" x2="588" y2="254" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="438" y="256" width="300" height="27" rx="7" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="450" y="274" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#92400e">运算</text>
+  <text x="512" y="274" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" fill="#475569">逐位加法 / 进位</text>
+  <line x1="588" y1="283" x2="588" y2="287" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="438" y="289" width="300" height="27" rx="7" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="450" y="307" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#92400e">解码</text>
+  <text x="512" y="307" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" fill="#475569">11110110 = 246</text>
+  <line x1="588" y1="316" x2="588" y2="320" stroke="#b45309" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="438" y="322" width="300" height="27" rx="7" fill="#ffffff" stroke="#fcd34d"/>
+  <text x="450" y="340" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#92400e">输出</text>
+  <text x="512" y="340" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="12.5" fill="#475569">屏幕显示 246</text>
+  <text x="438" y="360" font-family="{font}" font-size="12" fill="#64748b">程序只是算法的一种语言实现，不是算法本身。</text>
+
+  <rect x="42" y="380" width="716" height="66" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="60" y="404" font-family="{font}" font-size="14" font-weight="700" fill="#0f766e">三个关键点</text>
+  <text x="60" y="428" font-family="{font}" font-size="12.5" fill="#334155">① 两种稳定状态 = 抗噪声　② 有限、确定、可执行 = 算法　③ 十进制机器不是不可能，只是更贵更慢</text>
+  <text x="400" y="466" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

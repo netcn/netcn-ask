@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="375" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">三种皱纹，同一类失稳</title>
+  <desc id="desc">皮肤、苹果与岩层三种尺度上的皱纹示意图：皮肤支撑变薄、苹果失水、岩层受挤压，表层都会屈曲起褶。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c2410c"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="#f7f4ee"/>
+  <text x="30" y="42" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="30" font-weight="700" fill="#1f2933">三种皱纹，同一类失稳</text>
+  <text x="30" y="72" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" fill="#52606d">皮肤失弹 · 果实失水 · 岩层受压：支撑变弱，表层就起褶</text>
+
+  <!-- skin card -->
+  <rect x="24" y="88" width="370" height="184" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="44" y="122" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" fill="#1f2933">皮肤</text>
+  <text x="44" y="148" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#52606d">支撑变薄</text>
+  <!-- skin layers -->
+  <path d="M44 176 Q70 166 96 176 Q122 186 148 176 Q174 166 200 176 L200 190 L44 190 Z" fill="#f2c9c1"/>
+  <rect x="44" y="190" width="156" height="32" fill="#fbe5df"/>
+  <path d="M44 198 H200 M44 208 H200 M44 218 H200" stroke="#efb9ae" stroke-width="1.2"/>
+  <rect x="44" y="222" width="156" height="20" fill="#f3eee4"/>
+  <circle cx="62" cy="232" r="5" fill="#fff7ea" stroke="#d9cbb5"/><circle cx="86" cy="232" r="5" fill="#fff7ea" stroke="#d9cbb5"/><circle cx="110" cy="232" r="5" fill="#fff7ea" stroke="#d9cbb5"/><circle cx="134" cy="232" r="5" fill="#fff7ea" stroke="#d9cbb5"/><circle cx="158" cy="232" r="5" fill="#fff7ea" stroke="#d9cbb5"/>
+  <line x1="250" y1="170" x2="250" y2="196" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="258" y="184" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" fill="#0f766e">支撑减少</text>
+  <text x="44" y="246" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#9a3412">表皮折叠，细纹固定</text>
+
+  <!-- apple card -->
+  <rect x="406" y="88" width="370" height="184" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="426" y="122" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" fill="#1f2933">苹果</text>
+  <text x="426" y="148" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#52606d">失水</text>
+  <!-- apple -->
+  <path d="M516 196 Q500 184 506 170 Q520 164 530 176 Q542 164 556 170 Q562 186 548 202 Q540 216 528 220 Q522 212 516 196 Z" fill="#f4b183" stroke="#c2410c" stroke-width="1.6"/>
+  <path d="M534 166 Q538 152 550 148" stroke="#7c4a20" stroke-width="3" fill="none"/>
+  <ellipse cx="552" cy="160" rx="9" ry="5" fill="#9a6a2f"/>
+  <path d="M520 188 Q526 196 520 204 M532 184 Q538 194 532 206 M544 188 Q550 196 544 204" stroke="#c2410c" stroke-width="1.5" fill="none" opacity="0.55"/>
+  <line x1="496" y1="224" x2="468" y2="246" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="580" y1="224" x2="608" y2="246" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="426" y="260" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#9a3412">膨压下降，果皮起褶</text>
+
+  <!-- rock card -->
+  <rect x="24" y="282" width="370" height="168" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="44" y="316" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" fill="#1f2933">岩层</text>
+  <text x="44" y="342" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#52606d">受压</text>
+  <path d="M44 362 Q64 346 84 362 Q104 378 124 362 Q144 346 164 362 Q184 378 204 362" stroke="#5b6b7c" stroke-width="8" fill="none"/>
+  <path d="M44 382 Q64 366 84 382 Q104 398 124 382 Q144 366 164 382 Q184 398 204 382" stroke="#8a9bab" stroke-width="8" fill="none"/>
+  <path d="M44 402 Q64 386 84 402 Q104 418 124 402 Q144 386 164 402 Q184 418 204 402" stroke="#b8c4cf" stroke-width="8" fill="none"/>
+  <line x1="24" y1="382" x2="44" y2="382" stroke="#c2410c" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <line x1="204" y1="382" x2="224" y2="382" stroke="#c2410c" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="44" y="432" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#9a3412">塑性弯曲，背斜与向斜</text>
+
+  <!-- common card -->
+  <rect x="406" y="282" width="370" height="168" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="426" y="316" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="26" font-weight="700" fill="#1f2933">共同点</text>
+  <text x="426" y="342" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#52606d">薄层失稳</text>
+  <text x="426" y="376" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#52606d">支撑变弱，或体积收缩</text>
+  <text x="426" y="402" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#52606d">薄层只能屈曲</text>
+  <text x="426" y="432" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" fill="#9a3412">机制不同：失弹 / 失水 / 受压</text>
+
+  <text x="30" y="482" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" fill="#7b8794">原创机制示意图 · 非比例尺 · CC BY 4.0</text>
+</svg>

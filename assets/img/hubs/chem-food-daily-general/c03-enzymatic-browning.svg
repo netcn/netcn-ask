@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b06a1f"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3f7d8c"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#b06a1f" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#3a2a14" text-anchor="start" opacity="1.00">酶促褐变的反应循环</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">破损组织中 PPO 催化多酚氧化，最终形成褐色黑色素</text>
+<path d="M614.7 249.0 L565.6 205.8" fill="none" stroke="#b06a1f" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M556.8 201.7 L485.0 183.5" fill="none" stroke="#b06a1f" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M614.7 311.0 L565.6 354.2" fill="none" stroke="#3f7d8c" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M556.8 358.3 L485.0 376.5" fill="none" stroke="#3f7d8c" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M185.3 311.0 L234.4 354.2" fill="none" stroke="#b06a1f" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M243.2 358.3 L315.0 376.5" fill="none" stroke="#b06a1f" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M185.3 249.0 L234.4 205.8" fill="none" stroke="#3f7d8c" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M243.2 201.7 L315.0 183.5" fill="none" stroke="#3f7d8c" stroke-width="1.8" marker-end="url(#ar2)"/><rect x="315.0" y="131.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="400.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a2a14" text-anchor="middle" opacity="1.00">组织破损</text>
+<text x="400.0" y="173.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">['碰伤、削皮破坏细胞分隔', '</text>
+<text x="400.0" y="187.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">酶与多酚底物相遇']</text>
+<circle cx="562.6" cy="203.2" r="3.2" fill="#b06a1f"/>
+<rect x="565.0" y="249.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="650.0" y="272.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a2a14" text-anchor="middle" opacity="1.00">PPO 催化</text>
+<text x="650.0" y="291.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">['多酚氧化酶接触氧气', '多酚</text>
+<text x="650.0" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">被氧化为醌类']</text>
+<circle cx="562.6" cy="356.8" r="3.2" fill="#3f7d8c"/>
+<rect x="315.0" y="367.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="400.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a2a14" text-anchor="middle" opacity="1.00">醌类聚合</text>
+<text x="400.0" y="409.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">['醌进一步缩合', '生成褐色多</text>
+<text x="400.0" y="423.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">聚物']</text>
+<circle cx="237.4" cy="356.8" r="3.2" fill="#b06a1f"/>
+<rect x="65.0" y="249.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="150.0" y="272.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a2a14" text-anchor="middle" opacity="1.00">褐色斑点</text>
+<text x="150.0" y="291.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">['果皮或切口变褐变黑', '低温</text>
+<text x="150.0" y="305.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">隔氧可减缓']</text>
+<circle cx="237.4" cy="203.2" r="3.2" fill="#3f7d8c"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#3a2a14" text-anchor="middle" opacity="1.00">酶促褐变常温生物酶催化</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">与加热引起的美拉德反应、焦糖化路径不同；变色不等于一定变质。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

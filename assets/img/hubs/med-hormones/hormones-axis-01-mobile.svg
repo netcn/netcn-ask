@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-labelledby="t d">
+<title id="t">激素怎样改变身体（手机版）</title>
+<desc id="d">竖排四段：信号轴、雌激素、雄激素与关键提醒。</desc>
+<rect x="0" y="0" width="600" height="1300" fill="#fbfaf7"/>
+<rect x="0.5" y="0.5" width="599" height="1299" fill="none" stroke="#e7e2d8" stroke-width="1"/>
+<text x="28" y="48" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#17202a">激素怎样改变身体</text>
+<text x="28" y="78" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="19" fill="#5b6673">信号轴、剂量与可逆性</text>
+
+<!-- 1 signal -->
+<rect x="26" y="100" width="548" height="230" rx="18" fill="#ffffff" stroke="#d8e3df" stroke-width="1.4"/>
+<rect x="26" y="100" width="548" height="50" rx="18" fill="#0f766e"/>
+<rect x="26" y="132" width="548" height="18" fill="#0f766e"/>
+<text x="44" y="135" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#ffffff">① 信号轴</text>
+<text x="44" y="174" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="19" fill="#33534f">大脑 → 垂体 → 性腺；青春期启动后脉冲增强</text>
+<rect x="44" y="188" width="512" height="36" rx="8" fill="#eef8f6" stroke="#b9dcd5"/>
+<text x="300" y="212" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#0f5f57" text-anchor="middle">下丘脑释放 GnRH 脉冲</text>
+<path d="M300 224 L300 234" stroke="#0f766e" stroke-width="3"/>
+<path d="M292 230 L300 240 L308 230" fill="none" stroke="#0f766e" stroke-width="3"/>
+<rect x="44" y="242" width="512" height="36" rx="8" fill="#eef8f6" stroke="#b9dcd5"/>
+<text x="300" y="266" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#0f5f57" text-anchor="middle">垂体分泌 LH / FSH</text>
+<path d="M300 278 L300 288" stroke="#0f766e" stroke-width="3"/>
+<path d="M292 284 L300 294 L308 284" fill="none" stroke="#0f766e" stroke-width="3"/>
+<rect x="44" y="296" width="512" height="36" rx="8" fill="#eef8f6" stroke="#b9dcd5"/>
+<text x="300" y="320" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#0f5f57" text-anchor="middle">卵巢 / 睾丸产生雌激素 / 雄激素</text>
+
+<!-- 2 estrogen -->
+<rect x="26" y="345" width="548" height="320" rx="18" fill="#ffffff" stroke="#ead8d1" stroke-width="1.4"/>
+<rect x="26" y="345" width="548" height="50" rx="18" fill="#b4533f"/>
+<rect x="26" y="377" width="548" height="18" fill="#b4533f"/>
+<text x="44" y="380" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#ffffff">② 雌激素</text>
+<text x="44" y="419" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6b5a52">青春期与激素治疗中常见</text>
+<circle cx="50" cy="449" r="6" fill="#b4533f"/>
+<text x="68" y="457" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">乳房腺体与脂肪组织发育</text>
+<circle cx="50" cy="482" r="6" fill="#b4533f"/>
+<text x="68" y="490" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">脂肪更易分布在臀部与大腿</text>
+<circle cx="50" cy="515" r="6" fill="#b4533f"/>
+<text x="68" y="523" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">皮肤保水、胶原与弹性变化</text>
+<circle cx="50" cy="548" r="6" fill="#b4533f"/>
+<text x="68" y="556" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">可能影响骨量与血管舒缩</text>
+<rect x="44" y="575" width="512" height="80" rx="12" fill="#fdf3ef" stroke="#ecd0c6"/>
+<text x="60" y="600" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#8b3d2e">罩杯大小 ≠ 血清雌激素水平</text>
+<text x="60" y="625" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6b5a52">乳房大小还受遗传、体重与脂肪分布影响</text>
+<text x="60" y="648" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6b5a52">不能只看外观推断</text>
+
+<!-- 3 testosterone -->
+<rect x="26" y="680" width="548" height="320" rx="18" fill="#ffffff" stroke="#e5dfcd" stroke-width="1.4"/>
+<rect x="26" y="680" width="548" height="50" rx="18" fill="#a16207"/>
+<rect x="26" y="712" width="548" height="18" fill="#a16207"/>
+<text x="44" y="715" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#ffffff">③ 雄激素</text>
+<text x="44" y="754" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6e6047">青春期与睾酮治疗中常见</text>
+<circle cx="50" cy="784" r="6" fill="#a16207"/>
+<text x="68" y="792" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">声音变低、喉结更明显</text>
+<circle cx="50" cy="817" r="6" fill="#a16207"/>
+<text x="68" y="825" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">胡须、体毛与皮脂增加</text>
+<circle cx="50" cy="850" r="6" fill="#a16207"/>
+<text x="68" y="858" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">肌肉量与力量增加</text>
+<circle cx="50" cy="883" r="6" fill="#a16207"/>
+<text x="68" y="891" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="23" fill="#2d3742">可能影响性欲与情绪</text>
+<rect x="44" y="910" width="512" height="80" rx="12" fill="#fbf6e8" stroke="#e8d9ac"/>
+<text x="60" y="935" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#7a4d05">部分变化停药后仍保留</text>
+<text x="60" y="960" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6e6047">声音、胡须等变化通常不可逆；</text>
+<text x="60" y="983" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#6e6047">肌肉、脂肪变化可部分回退</text>
+
+<!-- 4 key -->
+<rect x="26" y="1015" width="548" height="200" rx="18" fill="#ffffff" stroke="#d8dde3" stroke-width="1.4"/>
+<rect x="26" y="1015" width="548" height="50" rx="18" fill="#17202a"/>
+<rect x="26" y="1047" width="548" height="18" fill="#17202a"/>
+<text x="44" y="1050" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#ffffff">④ 关键提醒</text>
+<text x="44" y="1092" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#0f5f57">剂量</text>
+<text x="150" y="1092" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" fill="#5b6673">决定作用强度</text>
+<text x="44" y="1126" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#0f5f57">年龄</text>
+<text x="150" y="1126" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" fill="#5b6673">决定可塑空间</text>
+<text x="44" y="1160" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#0f5f57">时长</text>
+<text x="150" y="1160" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="21" fill="#5b6673">决定是否稳定</text>
+<text x="44" y="1194" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" fill="#5b6673">外观 ≠ 激素水平，也不能单独判断生育能力</text>
+
+<!-- bottom -->
+<rect x="26" y="1230" width="548" height="52" rx="10" fill="#17202a"/>
+<text x="44" y="1255" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#ffffff">效果由剂量、年龄、持续时间共同决定。</text>
+<text x="44" y="1275" font-family="Noto Sans SC, Source Han Sans SC, Microsoft YaHei, sans-serif" font-size="17" fill="#c9d3de">部分可逆，部分不可逆；有疑问看内分泌与生殖专科。</text>
+</svg>

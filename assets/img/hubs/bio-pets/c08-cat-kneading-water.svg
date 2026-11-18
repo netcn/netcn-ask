@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">猫踩奶与怕水：幼期行为残留与被毛、应激回避</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">两类看似无关的动作分别对应安抚残留和浸水厌恶</text>
+<rect x="40.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">踩奶：哺乳行为残留</text>
+<line x1="58.0" y1="175.0" x2="352.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="62.0" cy="188.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">幼猫交替按压乳房周围刺激泌乳、保持放松</text>
+<circle cx="62.0" cy="220.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">成年猫在安心依恋情境下重现动作</text>
+<circle cx="62.0" cy="253.0" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">按压增加局部血流并留下爪垫气味标记</text>
+<circle cx="62.0" cy="285.5" r="3.2" fill="#2f7d5d"/>
+<text x="74.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">表达差异受断奶时间与依恋经历影响</text>
+<rect x="54.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="66.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2f7d5d" text-anchor="start" opacity="1.00">属于安抚行为延伸，不是想喝奶</text>
+<rect x="430.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="430.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#7fb069" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="448.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">怕水：被毛与应激回避</text>
+<line x1="448.0" y1="175.0" x2="742.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="452.0" cy="188.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">护毛防水有限，湿毛破坏保温层并带走油脂</text>
+<circle cx="452.0" cy="220.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="224.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">耳道短而弯曲，进水后干燥慢、易滋生微生物</text>
+<circle cx="452.0" cy="253.0" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="257.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">被按住、打滑、无法逃脱形成负强化记忆</text>
+<circle cx="452.0" cy="285.5" r="3.2" fill="#7fb069"/>
+<text x="464.0" y="289.5" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">多数猫排斥全身浸湿，不排斥流动饮水</text>
+<rect x="444.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="456.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#7fb069" text-anchor="start" opacity="1.00">程度随品种与早期社会化变化</text>
+<circle cx="400.0" cy="262.0" r="22.0" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7d8b98" text-anchor="middle" opacity="1.00">vs</text>
+<rect x="40.0" y="410.0" width="720.0" height="50.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="431.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">行为判断需结合耳朵、尾巴、瞳孔与身体姿态；持续恐惧或皮肤问题应就医评估。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

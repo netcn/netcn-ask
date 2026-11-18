@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-label="睡前运动时间窗与脂肪氧化去向">
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#126b63"/></marker></defs>
+<rect width="600" height="1300" fill="#f6f3ea"/>
+<rect x="0" y="0" width="600" height="8" fill="#126b63"/>
+<text x="28" y="48" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="27" font-weight="700" fill="#1d3238" text-anchor="start">睡前运动与脂肪去向</text>
+<text x="28" y="82" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="400" fill="#60727a" text-anchor="start">两个常见误解，各用一条时间线拆开</text>
+<rect x="24" y="108" width="552" height="510" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="46" y="148" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#bd6a22" text-anchor="start">① 运动结束离睡觉多远？</text>
+<line x1="60" y1="300" x2="542" y2="300" stroke="#b9b1a2" stroke-width="2"/>
+<line x1="60" y1="292" x2="60" y2="308" stroke="#60727a" stroke-width="2"/>
+<text x="60" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#60727a" text-anchor="middle">18:00</text>
+<line x1="180.5" y1="292" x2="180.5" y2="308" stroke="#60727a" stroke-width="2"/>
+<text x="180.5" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#60727a" text-anchor="middle">20:00</text>
+<line x1="301.0" y1="292" x2="301.0" y2="308" stroke="#60727a" stroke-width="2"/>
+<text x="301.0" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#60727a" text-anchor="middle">22:00</text>
+<line x1="421.5" y1="292" x2="421.5" y2="308" stroke="#60727a" stroke-width="2"/>
+<text x="421.5" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#60727a" text-anchor="middle">00:00</text>
+<line x1="542" y1="292" x2="542" y2="308" stroke="#60727a" stroke-width="2"/>
+<text x="542" y="334" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#60727a" text-anchor="middle">02:00</text>
+<rect x="261" y="244" width="40" height="48" rx="8" fill="#ad3b32" opacity="0.85"/>
+<text x="281" y="274" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">运动</text>
+<text x="281" y="208" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#ad3b32" text-anchor="middle">21:20–22:00</text>
+<line x1="311" y1="214" x2="311" y2="292" stroke="#126b63" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="322" y="278" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#126b63" text-anchor="start">入睡</text>
+<rect x="60" y="170" width="241" height="28" rx="14" fill="#126b63" opacity="0.12"/>
+<text x="180" y="189" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#126b63" text-anchor="middle">≥4 小时：与睡眠变化无关</text>
+<text x="46" y="398" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#1d3238" text-anchor="start">高强度、结束太晚：</text>
+<text x="46" y="430" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="400" fill="#ad3b32" text-anchor="start">入睡潜伏期 +14 分钟；心率 +25.7 次/分。</text>
+<text x="46" y="466" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="400" fill="#60727a" text-anchor="start">14,689 人、408 万夜：晚近高负荷与</text>
+<text x="46" y="492" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="400" fill="#60727a" text-anchor="start">入睡延迟、睡眠缩短、HRV 降低相关。</text>
+<text x="46" y="532" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#126b63" text-anchor="start">看强度、结束时间与个体差异，不是一刀切。</text>
+<rect x="24" y="642" width="552" height="620" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="46" y="682" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="21" font-weight="700" fill="#126b63" text-anchor="start">② 脂肪变成了什么？</text>
+<text x="46" y="722" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#1d3238" text-anchor="start">C₅₅H₁₀₄O₆ + 78 O₂</text>
+<text x="46" y="756" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#1d3238" text-anchor="start">→ 55 CO₂ + 52 H₂O + 能量</text>
+<circle cx="166" cy="916" r="86" fill="#e7e0d2"/>
+<path d="M166 830 A86 86 0 0 1 252 916 L166 916 Z" fill="#2d5e86"/>
+<circle cx="166" cy="916" r="46" fill="#fffdf7"/>
+<text x="166" y="908" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="26" font-weight="700" fill="#2d5e86" text-anchor="middle">84%</text>
+<text x="166" y="936" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="700" fill="#60727a" text-anchor="middle">CO₂</text>
+<text x="274" y="888" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#126b63" text-anchor="start">16%</text>
+<text x="274" y="918" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="400" fill="#60727a" text-anchor="start">水</text>
+<text x="46" y="1054" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#1d3238" text-anchor="start">10 kg 脂肪 → 8.4 kg CO₂ + 1.6 kg 水</text>
+<text x="46" y="1092" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="400" fill="#60727a" text-anchor="start">需 29 kg 氧气；肺是主要排泄器官。</text>
+<text x="46" y="1140" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="17" font-weight="700" fill="#ad3b32" text-anchor="start">脂肪细胞缩小，不会变成肌肉。</text>
+<text x="46" y="1174" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="16" font-weight="400" fill="#60727a" text-anchor="start">出汗、排毒不是脂肪的主要出口。</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="地球轨道偏心率、地轴倾角和岁差三种米兰科维奇循环">
+  <rect width="720" height="460" fill="#f8fafc"/>
+  <text x="40" y="40" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">米兰科维奇循环：地球轨道的三组慢变化</text>
+
+  <!-- 偏心率 -->
+  <g font-family="sans-serif">
+    <ellipse cx="140" cy="190" rx="92" ry="56" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="108" cy="190" r="12" fill="#fbbf24"/>
+    <circle cx="230" cy="190" r="5" fill="#3b82f6"/>
+    <text x="140" y="292" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">轨道偏心率</text>
+    <text x="140" y="314" text-anchor="middle" font-size="12" fill="#64748b">约 10 万年</text>
+    <text x="140" y="336" text-anchor="middle" font-size="11" fill="#64748b">椭圆程度缓慢变化</text>
+  </g>
+
+  <!-- 倾角 -->
+  <g font-family="sans-serif">
+    <circle cx="360" cy="190" r="52" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="360" y1="118" x2="360" y2="262" stroke="#0f172a" stroke-width="2" stroke-dasharray="4 4"/>
+    <line x1="326" y1="130" x2="394" y2="250" stroke="#dc2626" stroke-width="3"/>
+    <path d="M360 134 A28 28 0 0 1 386 150" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <text x="399" y="146" font-size="12" fill="#b91c1c">23.4°</text>
+    <text x="360" y="292" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">地轴倾角</text>
+    <text x="360" y="314" text-anchor="middle" font-size="12" fill="#64748b">约 4.1 万年</text>
+    <text x="360" y="336" text-anchor="middle" font-size="11" fill="#64748b">在 22°–24.5° 间摆动</text>
+  </g>
+
+  <!-- 岁差 -->
+  <g font-family="sans-serif">
+    <circle cx="580" cy="190" r="52" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <ellipse cx="580" cy="190" rx="26" ry="10" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="580" y1="190" x2="580" y2="132" stroke="#dc2626" stroke-width="3"/>
+    <path d="M580 154 A18 18 0 0 0 562 172" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#prec-arrow)"/>
+    <text x="580" y="292" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">岁差</text>
+    <text x="580" y="314" text-anchor="middle" font-size="12" fill="#64748b">约 2.3 万年</text>
+    <text x="580" y="336" text-anchor="middle" font-size="11" fill="#64748b">地轴指向缓慢旋转</text>
+  </g>
+
+  <defs>
+    <marker id="prec-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="360" y="402" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">这三组变化改变太阳辐射在不同纬度和季节的分布，被认为是冰期与间冰期交替的重要驱动因素。</text>
+  <text x="360" y="430" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">它们不影响一年的四季循环，但会在数万到十万年尺度上改变气候。</text>
+</svg>

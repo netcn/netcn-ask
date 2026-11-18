@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="嗅觉适应：气味持续刺激使嗅觉受体反应下降，离开后逐渐恢复">
+<defs>
+<linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
+</defs>
+<rect width="800" height="500" fill="url(#bg4)"/>
+<rect x="0" y="0" width="800" height="7" fill="#7c3aed"/>
+<text x="40" y="46" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#0f172a">闻久了不香，是受体在“调低音量”</text>
+<text x="40" y="72" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" fill="#64748b">气味持续结合受体 → 钙信号与受体脱敏 → 反应下降；离开后很快恢复</text>
+
+<rect x="40" y="96" width="330" height="292" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="58" y="122" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#6d28d9">嗅上皮与受体</text>
+<!-- epithelium layers -->
+<rect x="72" y="240" width="270" height="80" rx="8" fill="#faf5ff" stroke="#d8b4fe"/>
+<rect x="72" y="240" width="270" height="18" fill="#f3e8ff"/>
+<text x="207" y="253" text-anchor="middle" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="10" fill="#6d28d9">嗅上皮</text>
+<!-- cilia -->
+<g stroke="#a855f7" stroke-width="1.5">
+<line x1="100" y1="240" x2="100" y2="218"/><line x1="130" y1="240" x2="130" y2="214"/><line x1="160" y1="240" x2="160" y2="220"/>
+<line x1="190" y1="240" x2="190" y2="214"/><line x1="220" y1="240" x2="220" y2="218"/><line x1="250" y1="240" x2="250" y2="212"/>
+</g>
+<!-- odor molecules -->
+<g fill="#7c3aed">
+<circle cx="98" cy="194" r="5"/><circle cx="128" cy="188" r="5"/><circle cx="158" cy="196" r="5"/>
+<circle cx="188" cy="188" r="5"/><circle cx="218" cy="194" r="5"/><circle cx="248" cy="186" r="5"/>
+</g>
+<text x="72" y="340" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#475569">气味分子持续结合 → 受体细胞内钙升高</text>
+<text x="72" y="358" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#475569">→ 通道敏感度下调、受体被内吞 → 信号变弱</text>
+<text x="72" y="376" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">OpenStax A&amp;P 2e §14.1; Takeuchi 2024</text>
+
+<rect x="395" y="96" width="365" height="292" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<text x="413" y="122" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#6d28d9">反应强度随时间</text>
+<!-- axes -->
+<line x1="435" y1="320" x2="725" y2="320" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="435" y1="150" x2="435" y2="320" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="435" y="340" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#94a3b8">时间</text>
+<text x="420" y="145" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" fill="#94a3b8">强</text>
+<text x="420" y="325" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" fill="#94a3b8">弱</text>
+<!-- curve -->
+<path d="M445,170 Q470,165 500,190 Q540,235 590,265 Q650,292 715,300" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="445" cy="170" r="4" fill="#7c3aed"/><circle cx="715" cy="300" r="4" fill="#7c3aed"/>
+<text x="470" y="160" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#6d28d9">刚闻到：强</text>
+<text x="610" y="286" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#6d28d9">持续闻：弱</text>
+<!-- recovery arrow -->
+<path d="M690,330 Q740,330 740,290" fill="none" stroke="#0f766e" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="650" y="352" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#0f766e">离开后：逐渐恢复</text>
+<text x="413" y="378" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">曲线为示意，不是精确测量值</text>
+
+<rect x="40" y="404" width="720" height="44" rx="10" fill="#faf5ff" stroke="#d8b4fe"/>
+<text x="58" y="424" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#6d28d9">这不是鼻子坏了</text>
+<text x="58" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#475569">适应让神经系统把注意力留给“变化”，而不是恒定背景；感冒后的嗅觉下降则是另一回事。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" fill="#94a3b8">OpenStax A&amp;P 2e §14.1; Takeuchi 2024 · 原创机制示意图 CC BY 4.0</text>
+</svg>

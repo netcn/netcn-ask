@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3b5fa8"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a2b"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#3b5fa8" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">雷诺数划分层流与湍流区间</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">Re=ρvL/μ，圆管经验分界</text>
+<rect x="40.0" y="112.0" width="720.0" height="306.0" rx="10" fill="#ffffff" stroke="#e2e9ef" stroke-width="1.0" opacity="1.00"/>
+<line x1="104.0" y1="118.0" x2="104.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="104.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">0</text>
+<line x1="221.2" y1="118.0" x2="221.2" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="221.2" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">2000</text>
+<line x1="338.4" y1="118.0" x2="338.4" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="338.4" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">4000</text>
+<line x1="455.6" y1="118.0" x2="455.6" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="455.6" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">6000</text>
+<line x1="572.8" y1="118.0" x2="572.8" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="572.8" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">8000</text>
+<line x1="690.0" y1="118.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="690.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="middle" opacity="1.00">10000</text>
+<line x1="104.0" y1="372.0" x2="690.0" y2="372.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="376.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0</text>
+<line x1="104.0" y1="248.0" x2="690.0" y2="248.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="252.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">0.7</text>
+<line x1="104.0" y1="124.0" x2="690.0" y2="124.0" stroke="#eef2f6" stroke-width="1.4"/>
+<text x="94.0" y="128.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#6b7a88" text-anchor="end" opacity="1.00">1.4</text>
+<text x="397.0" y="412.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#41505e" text-anchor="middle" opacity="1.00">雷诺数 Re（对数示意）</text>
+<polyline points="104.0,194.9 221.2,194.9 221.2,372.0 338.4,372.0 338.4,194.9 690.0,194.9" fill="none" stroke="#3b5fa8" stroke-width="2.6" stroke-linejoin="round"/>
+<line x1="120.0" y1="138.0" x2="144.0" y2="138.0" stroke="#3b5fa8" stroke-width="3.0"/>
+<text x="152.0" y="142.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">流动状态分界</text>
+<circle cx="221.2" cy="186.0" r="4.0" fill="#3b5fa8" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="230.2" y="165.0" width="110.1" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="230.2" y="177.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">Re≈2000 层流上限</text>
+<circle cx="338.4" cy="310.0" r="4.0" fill="#3b5fa8" stroke="#ffffff" stroke-width="1.0"/>
+<rect x="347.4" y="316.0" width="110.1" height="16.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.92"/>
+<text x="347.4" y="328.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#16243d" text-anchor="start" opacity="1.00">Re≈4000 湍流起点</text>
+<text x="40.0" y="440.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">低 Re 黏性主导、分层平稳；高 Re 惯性主导、旋涡掺混。分界随几何与扰动变化。</text>
+<rect x="657.0" y="118.0" width="33.0" height="17.0" rx="3" fill="#ffffff" stroke="none" stroke-width="0.0" opacity="0.94"/>
+<text x="686.0" y="130.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#7d8b98" text-anchor="end" opacity="1.00">流态</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

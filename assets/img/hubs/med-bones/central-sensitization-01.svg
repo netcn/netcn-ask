@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="中枢敏化的脊髓背角机制">
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#126b63"/></marker></defs>
+<rect width="800" height="500" fill="#f6f3ea"/>
+<rect x="0" y="0" width="800" height="6" fill="#126b63"/>
+<text x="28" y="42" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#1d3238" text-anchor="start">中枢敏化：疼痛的放大器被卡住了</text>
+<text x="28" y="68" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="400" fill="#60727a" text-anchor="start">持续的伤害信号 → 脊髓背角阈值下降 → 轻触也痛</text>
+<rect x="24" y="88" width="292" height="380" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="42" y="118" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#bd6a22" text-anchor="start">① 从外周走到背角</text>
+<circle cx="86" cy="174" r="20" fill="#ead7c3"/>
+<path d="M66 198 Q86 186 106 198 L112 286 Q86 300 60 286 Z" fill="#ead7c3"/>
+<circle cx="92" cy="266" r="26" fill="#ad3b32" opacity="0.28"/>
+<text x="86" y="270" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#ad3b32" text-anchor="middle">痛</text>
+<line x1="128" y1="236" x2="160" y2="236" stroke="#126b63" stroke-width="2.5" marker-end="url(#arw)"/>
+<ellipse cx="190" cy="236" rx="24" ry="58" fill="#e7ded0" stroke="#d9d2c3"/>
+<path d="M190 178 Q178 236 190 294 Q202 236 190 178 Z" fill="#c9b8a4"/>
+<text x="190" y="324" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#1d3238" text-anchor="middle">背角</text>
+<line x1="214" y1="210" x2="258" y2="166" stroke="#126b63" stroke-width="2.5" marker-end="url(#arw)"/>
+<path d="M258 150 Q290 130 306 160 Q290 186 258 176 Z" fill="#dce7e4" stroke="#126b63"/>
+<text x="282" y="166" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#126b63" text-anchor="middle">脑</text>
+<text x="42" y="356" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#1d3238" text-anchor="start">C 纤维持续放电</text>
+<text x="42" y="380" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" font-weight="400" fill="#bd6a22" text-anchor="start">谷氨酸 + 物质 P</text>
+<text x="42" y="404" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="400" fill="#60727a" text-anchor="start">伤害信号被反复放大</text>
+<text x="42" y="434" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="700" fill="#ad3b32" text-anchor="start">不是“想出来的”，是神经可塑性。</text>
+<rect x="332" y="88" width="444" height="380" rx="10" fill="#fffdf7" stroke="#d9d2c3"/>
+<text x="350" y="118" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#126b63" text-anchor="start">② 四个放大器</text>
+<rect x="350" y="130" width="16" height="16" rx="8" fill="#bd6a22"/>
+<text x="376" y="144" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#bd6a22" text-anchor="start">NMDA 解锁</text>
+<text x="376" y="168" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="400" fill="#1d3238" text-anchor="start">持续谷氨酸把镁阻移开，钙内流，通道更敏感。</text>
+<rect x="350" y="206" width="16" height="16" rx="8" fill="#ad3b32"/>
+<text x="376" y="220" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#ad3b32" text-anchor="start">GABA 刹车失灵</text>
+<text x="376" y="244" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="400" fill="#1d3238" text-anchor="start">KCC2 下调，抑制性输入变弱，阈值下降。</text>
+<rect x="350" y="282" width="16" height="16" rx="8" fill="#75558a"/>
+<text x="376" y="296" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#75558a" text-anchor="start">胶质细胞放大</text>
+<text x="376" y="320" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="400" fill="#1d3238" text-anchor="start">小胶质/星形胶质释放 BDNF、细胞因子，维持兴奋。</text>
+<rect x="350" y="358" width="16" height="16" rx="8" fill="#2d5e86"/>
+<text x="376" y="372" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#2d5e86" text-anchor="start">下行易化占优</text>
+<text x="376" y="396" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="400" fill="#1d3238" text-anchor="start">脑干促进信号增强、抑制信号减弱，形成环路。</text>
+<text x="350" y="456" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="11" font-weight="700" fill="#ad3b32" text-anchor="start">临床：痛觉过敏、触诱发痛、弥散性疼痛。</text>
+</svg>

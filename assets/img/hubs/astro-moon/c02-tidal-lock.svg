@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#d99a2b"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3a6ea5"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">潮汐锁定：自转周期与公转周期相等</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">同一面朝向地球；天平动使可见表面约占 59%</text>
+<rect x="40.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="40.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#d99a2b" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="58.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">潮汐锁定</text>
+<line x1="58.0" y1="175.0" x2="352.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="62.0" cy="188.0" r="3.2" fill="#d99a2b"/>
+<text x="74.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">自转一圈 = 公转一圈</text>
+<circle cx="62.0" cy="231.3" r="3.2" fill="#d99a2b"/>
+<text x="74.0" y="235.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">同一半球朝向地球</text>
+<circle cx="62.0" cy="274.7" r="3.2" fill="#d99a2b"/>
+<text x="74.0" y="278.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">质心略偏向地球一侧</text>
+<rect x="54.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="66.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#d99a2b" text-anchor="start" opacity="1.00">同步自转</text>
+<rect x="430.0" y="128.0" width="330.0" height="268.0" rx="12" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<rect x="430.0" y="128.0" width="330.0" height="5.0" rx="0" fill="#3a6ea5" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="448.0" y="161.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#14243f" text-anchor="start" opacity="1.00">未锁定对照</text>
+<line x1="448.0" y1="175.0" x2="742.0" y2="175.0" stroke="#eef2f6" stroke-width="1.2"/>
+<circle cx="452.0" cy="188.0" r="3.2" fill="#3a6ea5"/>
+<text x="464.0" y="192.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">自转与公转不同步</text>
+<circle cx="452.0" cy="231.3" r="3.2" fill="#3a6ea5"/>
+<text x="464.0" y="235.3" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">不同半球轮流朝向地球</text>
+<circle cx="452.0" cy="274.7" r="3.2" fill="#3a6ea5"/>
+<text x="464.0" y="278.7" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">不会固定展示同一面</text>
+<rect x="444.0" y="342.0" width="302.0" height="42.0" rx="8" fill="#f1f5f8" stroke="#dfe6ec" stroke-width="1.0" opacity="1.00"/>
+<text x="456.0" y="360.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#3a6ea5" text-anchor="start" opacity="1.00">自由自转</text>
+<circle cx="400.0" cy="262.0" r="22.0" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#7d8b98" text-anchor="middle" opacity="1.00">vs</text>
+<rect x="40.0" y="410.0" width="720.0" height="50.0" rx="10" fill="#ffffff" stroke="#e6edf2" stroke-width="1.0" opacity="1.00"/>
+<text x="52.0" y="431.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#41505e" text-anchor="start" opacity="1.00">月球确实在自转，只是自转角速度与公转角速度相同；背面不是永远黑暗。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="素数无穷证明与科赫雪花">
+<rect width="800" height="500" fill="#f7f4ea"/>
+<rect x="0" y="0" width="800" height="6" fill="#0f6b6b"/>
+<text x="28" y="42" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="22" font-weight="700" fill="#18323f">无穷不是一个大数</text>
+<text x="28" y="68" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">素数无穷与科赫雪花：两条不同的“无限”</text>
+<g>
+<rect x="24" y="90" width="238" height="154" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="40" y="122" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" fill="#c46a1b" font-weight="700">① 假设有限</text>
+<text x="40" y="156" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">2, 3, 5, …, pₙ</text>
+<text x="40" y="192" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">把所有已知素数乘起来</text>
+<text x="40" y="220" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">再问：还有没有新的素数？</text>
+</g>
+<text x="278" y="170" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#0f6b6b">→</text>
+<g>
+<rect x="302" y="90" width="238" height="154" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="318" y="122" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" fill="#c46a1b" font-weight="700">② 构造 N</text>
+<text x="318" y="156" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" fill="#18323f">N = 乘积 + 1</text>
+<text x="318" y="192" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">N 除以已知素数都余 1</text>
+<text x="318" y="220" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">N 的素因子不在表内</text>
+</g>
+<text x="556" y="170" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#0f6b6b">→</text>
+<g>
+<rect x="580" y="90" width="196" height="154" rx="10" fill="#e7f1ee" stroke="#0f6b6b"/>
+<text x="596" y="122" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" fill="#0f6b6b" font-weight="700">③ 矛盾</text>
+<text x="596" y="158" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="18" font-weight="700" fill="#0f6b6b">素数无穷多</text>
+<text x="596" y="192" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">Euclid, Elements IX.20</text>
+<text x="596" y="220" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="30" fill="#c46a1b">∞</text>
+</g>
+<g transform="translate(24,270)">
+<rect x="0" y="0" width="370" height="206" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="16" y="30" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#18323f">科赫雪花：3 步之后</text>
+<path d="M 110.0,54.0 L 112.1,57.6 L 116.2,57.6 L 114.1,61.1 L 116.2,64.7 L 128.5,64.7 L 122.3,75.3 L 124.4,78.9 L 128.5,78.9 L 126.4,82.4 L 128.5,86.0 L 165.4,86.0 L 147.0,118.0 L 149.0,121.6 L 153.1,121.6 L 151.1,125.1 L 153.1,128.7 L 165.4,128.7 L 159.3,139.3 L 161.3,142.9 L 165.4,142.9 L 163.4,146.4 L 165.4,150.0 L 161.3,150.0 L 159.3,153.6 L 157.2,150.0 L 153.1,150.0 L 147.0,160.7 L 140.8,150.0 L 136.7,150.0 L 134.6,153.6 L 132.6,150.0 L 128.5,150.0 L 110.0,182.0 L 91.5,150.0 L 87.4,150.0 L 85.4,153.6 L 83.3,150.0 L 79.2,150.0 L 73.0,160.7 L 66.9,150.0 L 62.8,150.0 L 60.7,153.6 L 58.7,150.0 L 54.6,150.0 L 56.6,146.4 L 54.6,142.9 L 58.7,142.9 L 60.7,139.3 L 54.6,128.7 L 66.9,128.7 L 68.9,125.1 L 66.9,121.6 L 71.0,121.6 L 73.0,118.0 L 54.6,86.0 L 91.5,86.0 L 93.6,82.4 L 91.5,78.9 L 95.6,78.9 L 97.7,75.3 L 91.5,64.7 L 103.8,64.7 L 105.9,61.1 L 103.8,57.6 L 107.9,57.6 L 110.0,54.0 Z" fill="#fdf0d8" stroke="#c46a1b" stroke-width="2"/>
+<text x="210" y="66" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f">Pₙ = 3s(4/3)ⁿ</text>
+<text x="210" y="94" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f">→ ∞</text>
+<text x="210" y="126" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="14" fill="#18323f">A∞ = (8/5)A₀</text>
+<text x="210" y="158" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="12" fill="#5d6f78">周长发散，面积收敛</text>
+</g>
+<g transform="translate(414,270)">
+<rect x="0" y="0" width="362" height="206" rx="10" fill="#fffdf7" stroke="#d8d2c4"/>
+<text x="16" y="30" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="15" font-weight="700" fill="#18323f">“无限”不是同一种东西</text>
+<text x="16" y="64" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">素数：个数无限，但可以逐个数</text>
+<text x="16" y="92" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">科赫边界：长度无限，却围住有限面积</text>
+<text x="16" y="120" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#18323f">分形维数 log4/log3 ≈ 1.262</text>
+<text x="16" y="156" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">“无限”是对过程的描述，</text>
+<text x="16" y="178" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',sans-serif" font-size="13" fill="#5d6f78">不是一个可以写完的数。</text>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f5f8"/></linearGradient><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f7d5d"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7fb069"/></marker></defs>
+<rect x="0.0" y="0.0" width="800.0" height="500.0" rx="0" fill="url(#bg)" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<rect x="0.0" y="0.0" width="800.0" height="9.0" rx="0" fill="#2f7d5d" stroke="none" stroke-width="1.2" opacity="1.00"/>
+<text x="40.0" y="48.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#123a2e" text-anchor="start" opacity="1.00">海洋洄游：归巢导航与深潜节流</text>
+<text x="40.0" y="85.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">化学印记 + 地磁线索 + 洋流；深潜靠心动过缓与血液节流</text>
+<path d="M614.7 249.0 L565.6 205.8" fill="none" stroke="#2f7d5d" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M556.8 201.7 L485.0 183.5" fill="none" stroke="#2f7d5d" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M614.7 311.0 L565.6 354.2" fill="none" stroke="#7fb069" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M556.8 358.3 L485.0 376.5" fill="none" stroke="#7fb069" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M185.3 311.0 L234.4 354.2" fill="none" stroke="#2f7d5d" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M243.2 358.3 L315.0 376.5" fill="none" stroke="#2f7d5d" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M185.3 249.0 L234.4 205.8" fill="none" stroke="#7fb069" stroke-width="1.8" marker-end="url(#ar2)"/><path d="M243.2 201.7 L315.0 183.5" fill="none" stroke="#7fb069" stroke-width="1.8" marker-end="url(#ar2)"/><rect x="315.0" y="131.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="400.0" y="154.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#123a2e" text-anchor="middle" opacity="1.00">幼龟印记</text>
+<text x="400.0" y="173.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">记录沿岸气味与化学成分</text>
+<circle cx="562.6" cy="203.2" r="3.2" fill="#2f7d5d"/>
+<rect x="565.0" y="249.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="650.0" y="272.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#123a2e" text-anchor="middle" opacity="1.00">洋流洄游</text>
+<text x="650.0" y="291.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">沿大洋漂移路线移动</text>
+<circle cx="562.6" cy="356.8" r="3.2" fill="#7fb069"/>
+<rect x="315.0" y="367.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="400.0" y="390.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#123a2e" text-anchor="middle" opacity="1.00">地磁校正</text>
+<text x="400.0" y="409.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">叠加磁偏角与磁场强度</text>
+<circle cx="237.4" cy="356.8" r="3.2" fill="#2f7d5d"/>
+<rect x="65.0" y="249.0" width="170.0" height="62.0" rx="10" fill="#ffffff" stroke="#dfe6ec" stroke-width="1.2" opacity="1.00"/>
+<text x="150.0" y="272.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#123a2e" text-anchor="middle" opacity="1.00">归巢产卵</text>
+<text x="150.0" y="291.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#5b6b7a" text-anchor="middle" opacity="1.00">回到出生附近海滩繁殖</text>
+<circle cx="237.4" cy="203.2" r="3.2" fill="#7fb069"/>
+<text x="400.0" y="268.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#123a2e" text-anchor="middle" opacity="1.00">线索组合导航</text>
+<text x="40.0" y="452.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#5b6b7a" text-anchor="start" opacity="1.00">近岸阶段嗅觉权重更高，远洋阶段地磁与洋流主导；线索冲突时沿漂道修正。</text>
+<text x="40.0" y="478.0" font-family="Microsoft YaHei, Noto Sans CJK SC, PingFang SC, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#7d8b98" text-anchor="start" opacity="1.00">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>

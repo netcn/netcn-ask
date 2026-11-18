@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="space2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06111f"/>
+      <stop offset="100%" stop-color="#02050a"/>
+    </linearGradient>
+    <radialGradient id="mercury" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d9d4c7"/>
+      <stop offset="55%" stop-color="#8d8880"/>
+      <stop offset="100%" stop-color="#3b3835"/>
+    </radialGradient>
+    <radialGradient id="uranus" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d9fbff"/>
+      <stop offset="60%" stop-color="#9bdde6"/>
+      <stop offset="100%" stop-color="#4b929e"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#space2)"/>
+  <text x="40" y="45" fill="#e8f2ff" font-size="19" font-weight="700">水星的冰与天王星的“平滑”</text>
+  <text x="40" y="70" fill="#8fa8c2" font-size="13">极区冷阱保存水冰；天王星的雾霾和极端季节遮住了云带</text>
+
+  <!-- Mercury -->
+  <g transform="translate(40,105)">
+    <circle cx="145" cy="150" r="108" fill="url(#mercury)" stroke="#517085" stroke-width="1.5"/>
+    <ellipse cx="145" cy="55" rx="88" ry="28" fill="#f3d36b" opacity="0.28" stroke="#f3d36b" stroke-width="1"/>
+    <g fill="#f5d65b" opacity="0.9">
+      <circle cx="96" cy="82" r="6"/><circle cx="123" cy="66" r="4"/>
+      <circle cx="161" cy="72" r="5"/><circle cx="190" cy="96" r="4"/>
+      <circle cx="118" cy="104" r="3"/><circle cx="176" cy="50" r="3"/>
+    </g>
+    <text x="145" y="292" text-anchor="middle" fill="#dcecff" font-size="13">水星北极：黄色为雷达亮斑</text>
+    <text x="145" y="312" text-anchor="middle" fill="#8fa8c2" font-size="11">永久阴影坑温度足够低，冰可长期稳定</text>
+    <text x="145" y="332" text-anchor="middle" fill="#f3d36b" font-size="11">有冰 ≠ 有液态水</text>
+  </g>
+
+  <!-- Uranus -->
+  <g transform="translate(385,92)">
+    <circle cx="165" cy="170" r="105" fill="url(#uranus)" stroke="#b8f4ff" stroke-width="1.2"/>
+    <line x1="165" y1="45" x2="165" y2="295" stroke="#ffd166" stroke-width="2" stroke-dasharray="7 7"/>
+    <line x1="70" y1="170" x2="260" y2="170" stroke="#55758b" stroke-width="1" stroke-dasharray="4 5"/>
+    <path d="M 165 45 A 125 125 0 0 1 275 100" fill="none" stroke="#ffd166" stroke-width="2"/>
+    <text x="285" y="78" fill="#ffd166" font-size="13">≈98°</text>
+    <text x="165" y="330" text-anchor="middle" fill="#dcecff" font-size="13">自转轴几乎躺倒</text>
+    <text x="165" y="350" text-anchor="middle" fill="#8fa8c2" font-size="11">一个极点长期朝向太阳，季节极端</text>
+    <text x="165" y="370" text-anchor="middle" fill="#8fa8c2" font-size="11">1986 年旅行者 2 号只看到雾霾包裹的蓝绿色球</text>
+  </g>
+
+  <text x="40" y="480" fill="#6f8aa5" font-size="11">示意图，非按真实尺度；数据见 NASA MESSENGER / Webb 与 Voyager 2。</text>
+</svg>

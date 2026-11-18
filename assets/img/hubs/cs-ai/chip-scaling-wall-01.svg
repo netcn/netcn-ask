@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">硅缩放的四本账</title>
+  <desc id="desc">量子隧穿、功耗与散热、光刻分辨率、互连与成本四条约束同时收紧；产业用 FinFET/GAA、EUV、3D 封装和材料创新绕路。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef7f4"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="7" fill="#0f9d8c"/>
+  <rect x="20" y="24" width="760" height="452" rx="16" fill="#ffffff" stroke="#dbe7e3"/>
+
+  <text x="48" y="65" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#0f172a">硅缩放的四本账</text>
+  <text x="48" y="92" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" fill="#64748b">不是一堵墙，而是四条曲线同时变陡</text>
+  <line x1="48" y1="108" x2="752" y2="108" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- constraint cards -->
+  <g filter="url(#soft)">
+    <rect x="36" y="118" width="230" height="104" rx="12" fill="#f0fdfa" stroke="#99f6e4"/>
+    <rect x="534" y="118" width="230" height="104" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+    <rect x="36" y="300" width="230" height="104" rx="12" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <rect x="534" y="300" width="230" height="104" rx="12" fill="#fef2f2" stroke="#fecaca"/>
+  </g>
+
+  <text x="151" y="147" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#0f766e">量子账</text>
+  <text x="151" y="173" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">栅极变薄</text>
+  <text x="151" y="196" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">电子隧穿，关不干净</text>
+
+  <text x="649" y="147" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#b45309">热账</text>
+  <text x="649" y="173" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">密度上升</text>
+  <text x="649" y="196" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">功耗密度与散热吃紧</text>
+
+  <text x="151" y="329" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#6d28d9">光刻账</text>
+  <text x="151" y="355" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">EUV 13.5 nm</text>
+  <text x="151" y="378" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">High NA 约 8 nm 分辨率</text>
+
+  <text x="649" y="329" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#b91c1c">互连 / 成本账</text>
+  <text x="649" y="355" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#475569">线更细、层更多</text>
+  <text x="649" y="378" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#64748b">RC 延迟，每代更贵</text>
+
+  <!-- arrows to chip -->
+  <line x1="266" y1="170" x2="304" y2="170" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="534" y1="170" x2="496" y2="170" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="266" y1="352" x2="304" y2="352" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="534" y1="352" x2="496" y2="352" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- chip -->
+  <rect x="310" y="126" width="180" height="220" rx="14" fill="url(#chip)" stroke="#0b3b38" stroke-width="2"/>
+  <rect x="324" y="140" width="152" height="192" rx="8" fill="none" stroke="#5eead4" stroke-opacity="0.35"/>
+  <text x="400" y="211" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="44" font-weight="700" fill="#ffffff">硅</text>
+  <text x="400" y="240" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="13" fill="#a7f3d0">晶体管缩小到原子尺度</text>
+  <text x="400" y="262" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#ccfbf1">开关不再“确定”</text>
+  <text x="400" y="302" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="12" fill="#99f6e4">不是某一天突然关门</text>
+
+  <!-- roadmap -->
+  <rect x="36" y="408" width="728" height="44" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="400" y="435" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="700" fill="#0f766e">绕路：FinFET / GAA · EUV · 3D 封装 · 新材料</text>
+
+  <text x="400" y="461" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="11.5" fill="#64748b">结论：硅仍会用，但不再靠单线缩小；性能来自架构、封装与软件。</text>
+</svg>

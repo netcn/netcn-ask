@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="把太阳换成同质量黑洞后地球轨道保持不变">
+  <rect width="720" height="440" fill="#f8fafc"/>
+  <text x="40" y="42" font-size="20" font-weight="700" fill="#0f172a" font-family="sans-serif">把太阳换成黑洞，地球会掉进去吗？</text>
+
+  <!-- 左：太阳 -->
+  <g font-family="sans-serif">
+    <circle cx="180" cy="220" r="118" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 7"/>
+    <circle cx="180" cy="220" r="34" fill="#fbbf24"/>
+    <circle cx="180" cy="220" r="34" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="298" cy="220" r="10" fill="#3b82f6"/>
+    <text x="180" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">今天的太阳</text>
+    <text x="180" y="390" text-anchor="middle" font-size="12" fill="#64748b">地球照常公转</text>
+    <text x="180" y="226" text-anchor="middle" font-size="12" fill="#7c2d12">太阳</text>
+  </g>
+
+  <!-- 右：同质量黑洞 -->
+  <g font-family="sans-serif">
+    <circle cx="540" cy="220" r="118" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 7"/>
+    <circle cx="540" cy="220" r="26" fill="#000"/>
+    <circle cx="540" cy="220" r="26" fill="none" stroke="#f97316" stroke-width="2.5"/>
+    <ellipse cx="540" cy="220" rx="46" ry="12" fill="none" stroke="#fdba74" stroke-width="2" opacity="0.8"/>
+    <circle cx="658" cy="220" r="10" fill="#3b82f6"/>
+    <text x="540" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">换成同质量黑洞</text>
+    <text x="540" y="390" text-anchor="middle" font-size="12" fill="#64748b">地球轨道几乎不变</text>
+    <text x="540" y="252" text-anchor="middle" font-size="12" fill="#fdba74">黑洞</text>
+  </g>
+
+  <g stroke="#94a3b8" stroke-width="2.5" fill="none">
+    <path d="M338 220 L382 220" marker-end="url(#oarrow)"/>
+  </g>
+  <defs>
+    <marker id="oarrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <text x="360" y="416" text-anchor="middle" font-size="12" fill="#64748b" font-family="sans-serif">引力只取决于质量和距离；黑洞不会像吸尘器一样把远处的天体“吸”过去。</text>
+</svg>

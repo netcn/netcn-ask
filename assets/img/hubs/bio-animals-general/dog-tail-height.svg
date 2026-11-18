@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="尾巴高度：相对背线的三个区间">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" fill="#0f766e"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">尾巴高度：相对背线的三个区间</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Tail height is read against the dog's own back line</text>
+<rect x="40" y="100" width="390" height="330" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<line x1="76" y1="270" x2="396" y2="270" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 6"/>
+<rect x="70" y="256" width="230" height="28" rx="14" fill="#cbd5e1"/>
+<text x="76" y="246" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">背线（基准）</text>
+<path d="M300,270 C 330,258 350,205 365,150" fill="none" stroke="#e11d48" stroke-width="11" stroke-linecap="round"/>
+<path d="M300,270 C 340,268 365,278 380,286" fill="none" stroke="#d97706" stroke-width="11" stroke-linecap="round"/>
+<path d="M300,270 C 330,300 330,335 330,362" fill="none" stroke="#2563eb" stroke-width="11" stroke-linecap="round"/>
+<circle cx="300" cy="270" r="6" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<text x="376" y="148" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#e11d48" text-anchor="start">高举</text>
+<text x="392" y="291" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#d97706" text-anchor="start">自然</text>
+<text x="342" y="372" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="start">夹低</text>
+<text x="235" y="410" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">尾根位置比“摇不摇”更能说明情绪</text>
+<rect x="450" y="100" width="310" height="104" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="450" y="100" width="6" height="104" rx="3" fill="#e11d48"/>
+<text x="472" y="130" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#e11d48" text-anchor="start">高于背线</text>
+<text x="472" y="151" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">High tail base</text>
+<text x="472" y="175" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#334155" text-anchor="start">兴奋、警觉、准备互动</text>
+<text x="472" y="196" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">僵硬快摆要谨慎，别直接伸手</text>
+<rect x="450" y="212" width="310" height="104" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="450" y="212" width="6" height="104" rx="3" fill="#d97706"/>
+<text x="472" y="242" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#d97706" text-anchor="start">与背线齐平</text>
+<text x="472" y="263" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Neutral tail base</text>
+<text x="472" y="287" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#334155" text-anchor="start">放松、友好，摆动柔软</text>
+<text x="472" y="308" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">身体动作连贯，愿意靠近</text>
+<rect x="450" y="324" width="310" height="104" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="450" y="324" width="6" height="104" rx="3" fill="#2563eb"/>
+<text x="472" y="354" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#2563eb" text-anchor="start">低于背线</text>
+<text x="472" y="375" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">Low or tucked tail</text>
+<text x="472" y="399" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#334155" text-anchor="start">紧张、害怕、服从</text>
+<text x="472" y="420" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="start">身体压低、想后退，先给它空间</text>
+<text x="400" y="455" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" font-weight="400" fill="#64748b" text-anchor="middle">卷尾、断尾的狗不能套用；僵住的抖动比高度更值得警惕。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

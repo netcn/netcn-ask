@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="凝血：哪里破损哪里启动">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e11d48"/></marker>
+
+</defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<rect x="0" y="0" width="800" height="7" rx="0" fill="#e11d48" stroke="#e11d48" stroke-width="1.5"/>
+<text x="40" y="48" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="25" font-weight="700" fill="#0f172a" text-anchor="start">凝血：哪里破损哪里启动</text>
+<text x="40" y="76" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#64748b" text-anchor="start">Clotting starts only at the breach</text>
+<rect x="40" y="104" width="720" height="330" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="60" y="140" width="110" height="80" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="115" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">血管破损</text>
+<path d="M172 180 L200 180" fill="none" stroke="#e11d48" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="202" y="140" width="110" height="80" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="257" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">暴露胶原</text>
+<path d="M314 180 L342 180" fill="none" stroke="#e11d48" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="344" y="140" width="110" height="80" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="399" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">血小板聚集</text>
+<path d="M456 180 L484 180" fill="none" stroke="#e11d48" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="486" y="140" width="110" height="80" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="541" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">因子级联放大</text>
+<path d="M598 180 L626 180" fill="none" stroke="#e11d48" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="628" y="140" width="110" height="80" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="683" y="184" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#e11d48" text-anchor="middle">纤维蛋白网</text>
+<rect x="60" y="280" width="680" height="60" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="76" y="310" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#e11d48" text-anchor="start">只在破损处启动</text>
+<text x="76" y="334" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">胶原暴露才触发级联，全身循环里没有这条件</text>
+<rect x="60" y="354" width="680" height="60" rx="10" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+<text x="76" y="384" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#e11d48" text-anchor="start">级联失灵＝出血不止</text>
+<text x="76" y="408" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start">血友病就是某凝血因子缺失</text>
+<text x="400" y="440" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#64748b" text-anchor="middle">健康人几小时内伤口初步封闭；激光除纹身是把墨粒打碎让淋巴带走。</text>
+<text x="40" y="478" font-family="Microsoft YaHei, Segoe UI, sans-serif" font-size="11" font-weight="400" fill="#94a3b8" text-anchor="start">原创示意图 · CC BY 4.0 · 问答 ask.netcn.org</text>
+</svg>

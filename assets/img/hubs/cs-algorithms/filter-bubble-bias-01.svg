@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">推荐系统怎样把选择变成回路</title>
+  <desc id="desc">行为数据进入推荐模型，模型排序决定曝光，曝光又改变行为；数据、目标和标签三处偏差进入模型，气泡厚度因平台而异。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#f2f8f6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/>
+    </marker>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="7" fill="#0f9d8c"/>
+  <rect x="20" y="24" width="760" height="452" rx="16" fill="#ffffff" stroke="#dbe7e3"/>
+
+  <text x="44" y="64" font-family="{font}" font-size="24" font-weight="700" fill="#0f172a">信息茧房不是一台“洗脑机”</text>
+  <text x="44" y="91" font-family="{font}" font-size="13.5" fill="#64748b">它更像一个反馈回路：曝光改变行为，行为又反过来决定下一次曝光</text>
+  <line x1="44" y1="108" x2="756" y2="108" stroke="#e2e8f0"/>
+
+  <!-- left loop -->
+  <rect x="42" y="126" width="390" height="238" rx="14" fill="#f8fafc" stroke="#dbe7e3"/>
+  <text x="60" y="154" font-family="{font}" font-size="15" font-weight="700" fill="#0f766e">四步反馈回路</text>
+  <g filter="url(#soft)">
+    <rect x="62" y="172" width="150" height="54" rx="10" fill="#ecfdf5" stroke="#99f6e4"/>
+    <rect x="262" y="172" width="150" height="54" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
+    <rect x="262" y="292" width="150" height="54" rx="10" fill="#fef2f2" stroke="#fecaca"/>
+    <rect x="62" y="292" width="150" height="54" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  </g>
+  <text x="137" y="195" text-anchor="middle" font-family="{font}" font-size="14" font-weight="700" fill="#0f766e">行为数据</text>
+  <text x="137" y="215" text-anchor="middle" font-family="{font}" font-size="11.5" fill="#475569">点击 / 停留 / 关注</text>
+  <text x="337" y="195" text-anchor="middle" font-family="{font}" font-size="14" font-weight="700" fill="#b45309">模型排序</text>
+  <text x="337" y="215" text-anchor="middle" font-family="{font}" font-size="11.5" fill="#475569">猜你会不会点</text>
+  <text x="337" y="315" text-anchor="middle" font-family="{font}" font-size="14" font-weight="700" fill="#b91c1c">曝光内容</text>
+  <text x="337" y="335" text-anchor="middle" font-family="{font}" font-size="11.5" fill="#475569">更相似、更抓眼</text>
+  <text x="137" y="315" text-anchor="middle" font-family="{font}" font-size="14" font-weight="700" fill="#1d4ed8">你的下一次行为</text>
+  <text x="137" y="335" text-anchor="middle" font-family="{font}" font-size="11.5" fill="#475569">更可预测</text>
+
+  <path d="M212 199 H256" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M337 226 V286" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M262 319 H218" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M137 292 V232" stroke="#0f766e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- right bias inputs -->
+  <rect x="452" y="126" width="306" height="238" rx="14" fill="#fffdf7" stroke="#fde68a"/>
+  <text x="470" y="154" font-family="{font}" font-size="15" font-weight="700" fill="#b45309">偏见从三个入口进入</text>
+  <g font-family="{font}">
+    <rect x="470" y="172" width="270" height="54" rx="9" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="484" y="194" font-size="13.5" font-weight="700" fill="#92400e">数据</text>
+    <text x="484" y="214" font-size="11.5" fill="#475569">曝光偏差、历史点击、代理变量</text>
+    <rect x="470" y="238" width="270" height="54" rx="9" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="484" y="260" font-size="13.5" font-weight="700" fill="#92400e">目标</text>
+    <text x="484" y="280" font-size="11.5" fill="#475569">停留时长、互动率、“增长优先”</text>
+    <rect x="470" y="304" width="270" height="42" rx="9" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="484" y="326" font-size="13.5" font-weight="700" fill="#92400e">标签</text>
+    <text x="536" y="326" font-size="11.5" fill="#475569">谁被标成“重要 / 高风险”</text>
+  </g>
+
+  <rect x="42" y="380" width="716" height="66" rx="12" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="60" y="404" font-family="{font}" font-size="14" font-weight="700" fill="#b91c1c">气泡厚度因平台而异</text>
+  <text x="60" y="422" font-family="{font}" font-size="11.5" fill="#334155">PNAS 2021：Facebook / Twitter 的同质化聚合更明显；</text>
+  <text x="60" y="440" font-family="{font}" font-size="11.5" fill="#334155">Reddit / Gab 的扩散并不都朝同温层收窄。图为结构示意，不是实测比例。</text>
+  <text x="400" y="466" text-anchor="middle" font-family="Noto Sans SC, Microsoft YaHei, Segoe UI, sans-serif" font-size="11.5" fill="#94a3b8">原创机制示意图 · CC BY 4.0 · ask.netcn.org</text>
+</svg>
