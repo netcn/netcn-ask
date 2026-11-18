@@ -1209,3 +1209,9 @@ html.dark .q-badge.tier-B{ color:#93c5fd; }
   box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent),var(--shadow-lg);
   transition:box-shadow .25s ease,border-color .25s ease;
 }
+
+/* 全站语言切换：同一份 HTML 内嵌 .lang-zh / .lang-en，按根元素语言显隐。
+   这样无 JS 时默认中文可读，切换语言不需要重新请求页面。 */
+html[data-nc-lang="en"] .lang-zh,
+html[lang="en"] .lang-zh{display:none!important}
+html:not([data-nc-lang="en"]):not([lang="en"]) .lang-en{display:none!important}

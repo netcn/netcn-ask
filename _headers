@@ -38,7 +38,3 @@
 # —— Hub 页面：中等缓存，便于改稿后较快生效 ——
 /article/*
   Cache-Control: public, max-age=300, stale-while-revalidate=86400
-
-# —— 预览环境：禁止收录 ——
-/*
-  X-Robots-Tag: noindex, nofollow
