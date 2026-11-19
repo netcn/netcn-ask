@@ -10,6 +10,8 @@
   --nc-ac:#2563eb; --nc-ac2:#7aa2ff;
   --nc-gap:8px; --nc-h:36px;
 }
+/* 锚点跳转时给吸顶栏留出空间（问答文章目录、跳转链接等） */
+[id]{scroll-margin-top:64px}
 /* 深色态：显式标 data-nc-tone="dark"，或跟随页面根元素的 data-theme="dark" / class="dark" */
 [data-nc-tone="dark"],
 [data-theme="dark"] .nc-shell,[data-theme="dark"] .nc-inner,[data-theme="dark"] .nc-foot,
@@ -204,15 +206,21 @@
     background:var(--ui-ac-soft,rgba(37,99,235,.08));
   }
   .nc-tabbar a:active{transform:scale(.94)}
+  .nc-tabbar a .nc-tab-tx{
+    display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  }
   /* 内容区为固定 Tab 留出空间（含全面屏底部安全区）。
-     用页脚 margin 兜底：game 内页的 family-bridge.css 会用 !important
-     把 body padding 清零，页脚这条同样 !important 且特异性更高，仍然生效。 */
-  body.nc-has-tabbar:not(:has(> .nc-foot)){padding-bottom:calc(62px + env(safe-area-inset-bottom,0px))}
+     统一用 body 的 padding-bottom 兜底。页脚自身的 margin-bottom 会和 body
+     发生外边距合并，在无 padding 的 404 页上会失效，因此不再依赖 margin。 */
+  body.nc-has-tabbar{padding-bottom:calc(62px + env(safe-area-inset-bottom,0px))!important}
+  /* 有些旧页面（问答站）把 body 高度锁成 100%，页脚会被裁在视口内，
+     滚到底时被固定 Tab 盖住；移动端让文档高度随内容自然增长。 */
+  body.nc-has-tabbar{height:auto!important}
   body.nc-has-tabbar > .nc-foot.nc-foot{
     height:auto!important;overflow:visible!important;
     margin-top:6px!important;
     padding-top:5px!important;padding-bottom:5px!important;
-    margin-bottom:calc(62px + env(safe-area-inset-bottom,0px))!important;
+    margin-bottom:0!important;
   }
 
   .nc-install{
@@ -232,6 +240,14 @@
   }
   .nc-install .nc-install-go{background:var(--ui-ac,#2563eb);border-color:var(--ui-ac,#2563eb);color:#fff}
   .nc-install .nc-install-no{padding:4px 9px;font-size:14px;line-height:1}
+}
+
+/* 320px 极窄屏：8 个站群 Tab 仍保持单行，英文长标签也不互相挤压 */
+@media (max-width:360px){
+  .nc-tabbar{padding-left:3px;padding-right:3px;gap:1px}
+  .nc-tabbar a{font-size:9px;gap:1px;padding-left:0;padding-right:0}
+  .nc-tabbar a .nc-tab-ic{font-size:16px}
+  .nc-tabbar a .nc-tab-tx{font-size:9px;line-height:1.1;letter-spacing:-.3px}
 }
 
 /* 已安装成 PWA（standalone）时，顶栏让出状态栏安全区 */

@@ -1,5 +1,5 @@
 /* ============================================================
-   netcn 统一运行时内核 · v20261118b3
+   netcn 统一运行时内核 · v20261119b1
    ------------------------------------------------------------
    五站共用一份：判站、明暗、中英字典、顶栏/页脚/搜索/无障碍文案、
    首页标题、移动端 App 底部 Tab、状态栏颜色、PWA 安装钩子。
@@ -175,6 +175,34 @@
   }
   /* 现有 1,662 个 HTML 只写入了五站入口；三个外站和免责声明由这里补齐。
      只在缺失时追加，主站已经静态写死的 8 项不会被重复插入。 */
+  /* 内页（尤其头脑体操 1,200+ 道题）历史上只写了站内工具，没有主题/语言键。
+     在这些页面补上同一组控件；游戏详情页由另一条适配线处理，避免插手。 */
+  function ensureTools() {
+    if (key === 'game') return;
+    var l = curLang();
+    var shell = d.querySelector('.nc-shell');
+    if (!shell) return;
+    var tools = shell.querySelector('.nc-tools');
+    if (!tools) {
+      tools = d.createElement('div');
+      tools.className = 'nc-tools';
+      shell.appendChild(tools);
+    }
+    if (!d.getElementById('ncTheme')) {
+      var th = d.createElement('button');
+      th.className = 'nc-tool'; th.id = 'ncTheme'; th.type = 'button';
+      th.setAttribute('aria-label', l === 'en' ? 'Switch to dark' : '切换明暗');
+      th.textContent = '☾';
+      tools.appendChild(th);
+    }
+    if (!d.getElementById('ncLang')) {
+      var lg = d.createElement('button');
+      lg.className = 'nc-tool'; lg.id = 'ncLang'; lg.type = 'button';
+      lg.setAttribute('aria-label', l === 'en' ? 'Switch to Chinese' : '切换到英文');
+      lg.textContent = l === 'en' ? 'ZH' : 'EN';
+      tools.appendChild(lg);
+    }
+  }
   function ensureShell() {
     var l = curLang(), t = T(l);
     ['.nc-sw', '.nc-foot-nav'].forEach(function (sel) {
@@ -202,6 +230,7 @@
       var site = foot.querySelector('.nc-foot-site');
       if (site) foot.insertBefore(a, site); else foot.appendChild(a);
     });
+    ensureTools();
   }
   function applyI18n(l) {
     var t = T(l);
