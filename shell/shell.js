@@ -162,7 +162,13 @@
     return sysDark() ? 'dark' : 'light';
   }
   var DEFLANG = { quiz: 'zh' };
+  function queryLang() {
+    var m = (location.search || '').match(/[?&]lang=(en|zh)(?:&|$)/);
+    return m ? m[1] : '';
+  }
   function curLang() {
+    var q = queryLang();
+    if (q) return q;
     var s = null; try { s = localStorage.getItem(lkey); } catch (e) {}
     return s || DEFLANG[key] || (/^zh/.test((navigator.language || '').toLowerCase()) ? 'zh' : 'en');
   }
@@ -272,8 +278,24 @@
     [].slice.call(d.querySelectorAll('.nc-foot-legal')).forEach(function (a) {
       a.textContent = l === 'en' ? 'Disclaimer' : '免责声明';
     });
-    /* 首页标题（内页标题保留，避免破坏 SEO） */
-    if (isHome() && t.title[key]) d.title = t.title[key];
+    /* 页面标题：静态双语页面优先用 data-zh/data-en；首页再回退到壳层字典 */
+    var titleEl = d.querySelector('title');
+    if (titleEl && titleEl.hasAttribute('data-zh') && titleEl.hasAttribute('data-en')) {
+      titleEl.textContent = l === 'en' ? titleEl.getAttribute('data-en') : titleEl.getAttribute('data-zh');
+    } else if (isHome() && t.title[key]) {
+      d.title = t.title[key];
+    }
+    /* 描述、社交卡片与图片 alt 的 data-zh/data-en */
+    [].slice.call(d.querySelectorAll('meta[data-zh][data-en]')).forEach(function (m) {
+      m.setAttribute('content', l === 'en' ? m.getAttribute('data-en') : m.getAttribute('data-zh'));
+    });
+    [].slice.call(d.querySelectorAll('img[data-alt-en]')).forEach(function (img) {
+      var zh = img.getAttribute('data-alt-zh') || img.getAttribute('alt') || '';
+      if (!img.getAttribute('data-alt-zh')) img.setAttribute('data-alt-zh', zh);
+      img.setAttribute('alt', l === 'en' ? (img.getAttribute('data-alt-en') || zh) : zh);
+    });
+    /* 语言按钮读屏状态 */
+    if (lg) lg.setAttribute('aria-pressed', l === 'en' ? 'true' : 'false');
     /* 底部 Tab */
     var bar = d.querySelector('.nc-tabbar');
     if (bar) {
@@ -309,6 +331,7 @@
     if (b) {
       b.textContent = t === 'dark' ? '☀' : '☾';
       b.setAttribute('aria-label', T(curLang())[t === 'dark' ? 'themeLight' : 'themeDark']);
+      b.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
     }
     if (!silent) {
       try { localStorage.setItem('theme', t); } catch (e) {}
@@ -323,6 +346,13 @@
     r.setAttribute('lang', l === 'en' ? 'en' : 'zh-CN');
     applyI18n(l);
     if (!silent) {
+      /* 让 ?lang=en 成为可分享、可被 hreflang 指向的英文 URL；保留 q 等参数 */
+      try {
+        var u = new URL(location.href);
+        if (l === 'en') u.searchParams.set('lang', 'en');
+        else u.searchParams.delete('lang');
+        history.replaceState(null, '', u.toString());
+      } catch (e) {}
       try { d.dispatchEvent(new CustomEvent('ncn:lang', { detail: { lang: l } })); } catch (e) {}
     }
   }
@@ -385,6 +415,9 @@
     applyLang(curLang(), true);
     buildTab(curLang());
     applyI18n(curLang());
+    if ('serviceWorker' in navigator && location.protocol === 'https:') {
+      try { navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function () {}); } catch (e) {}
+    }
     initInstall();
     /* 首次访问（用户从未手动选过）时跟随系统明暗；一旦点过切换，就以用户选择为准。 */
     try {

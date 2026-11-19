@@ -15,7 +15,7 @@
   --ui-line-soft:#eef0f4;
   --ui-ink:#141821;
   --ui-ink2:#5c6577;
-  --ui-ink3:#98a1b0;
+  --ui-ink3:#5f6775;
   --ui-r:10px;
   --ui-r-card:12px;
   --ui-r-lg:14px;
@@ -35,7 +35,7 @@
 [data-theme="dark"],html.dark,.dark{
   --ui-bg:#10141c; --ui-card:#171c25; --ui-surface:#1d2330;
   --ui-line:#29313d; --ui-line-soft:#222936;
-  --ui-ink:#e6eaf2; --ui-ink2:#9aa5b7; --ui-ink3:#6a7488;
+  --ui-ink:#e6eaf2; --ui-ink2:#9aa5b7; --ui-ink3:#8b95a8;
   --ui-shadow:0 1px 2px rgba(0,0,0,.22);
   --ui-shadow-up:0 8px 22px rgba(0,0,0,.34);
 }

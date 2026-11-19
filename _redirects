@@ -1,5 +1,0 @@
-# 合并 Hub 的旧文章 URL → 新 URL（其余旧路径一律 404）
-/article/astro/seasons/ /article/astro/space-time-general/ 301
-/article/astro/space-time/ /article/astro/space-time-general/ 301
-/article/astro/sky-blue/ /article/phy/sky/ 301
-/article/phy/rainbow/ /article/phy/light/ 301

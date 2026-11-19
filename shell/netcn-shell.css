@@ -4,7 +4,7 @@
    页面主体仍用各站自己的 CSS。 */
 
 .nc-shell,.nc-inner,.nc-foot{
-  --nc-ink:#141821; --nc-ink2:#5c6577; --nc-ink3:#98a1b0;
+  --nc-ink:#141821; --nc-ink2:#5c6577; --nc-ink3:#5f6775;
   --nc-line:#e3e6ea; --nc-card:#fff; --nc-field:#fff;
   --nc-soft:rgba(37,99,235,.09); --nc-glow:rgba(37,99,235,.30);
   --nc-ac:#2563eb; --nc-ac2:#7aa2ff;
@@ -16,12 +16,12 @@
 [data-nc-tone="dark"],
 [data-theme="dark"] .nc-shell,[data-theme="dark"] .nc-inner,[data-theme="dark"] .nc-foot,
 .dark .nc-shell,.dark .nc-inner,.dark .nc-foot{
-  --nc-ink:#e6eaf2; --nc-ink2:#9aa5b7; --nc-ink3:#6a7488;
+  --nc-ink:#e6eaf2; --nc-ink2:#9aa5b7; --nc-ink3:#8b95a8;
   --nc-line:#2f3846; --nc-card:#171b22; --nc-field:rgba(255,255,255,.05);
 }
 /* 每站一支主色，深浅各一值，与各站正文 accent 取同一支 */
 [data-nc="nav"]{--nc-ac:#2563eb;--nc-ac2:#7aa2ff;--nc-soft:rgba(37,99,235,.09);--nc-glow:rgba(37,99,235,.30)}
-[data-nc="ask"]{--nc-ac:#0f9d8c;--nc-ac2:#5ee6c8;--nc-soft:rgba(15,157,140,.10);--nc-glow:rgba(15,157,140,.28)}
+[data-nc="ask"]{--nc-ac:#0b6f63;--nc-ac2:#5ee6c8;--nc-soft:rgba(15,157,140,.10);--nc-glow:rgba(15,157,140,.28)}
 [data-nc="quiz"]{--nc-ac:#c2410c;--nc-ac2:#ffb56b;--nc-soft:rgba(194,65,12,.09);--nc-glow:rgba(194,65,12,.26)}
 [data-nc="game"]{--nc-ac:#7c5cff;--nc-ac2:#00f0ff;--nc-soft:rgba(124,92,255,.14);--nc-glow:rgba(124,92,255,.30)}
 [data-nc="sky"]{--nc-ac:#d1432a;--nc-ac2:#ffb08a;--nc-soft:rgba(209,67,42,.10);--nc-glow:rgba(209,67,42,.26)}
@@ -196,7 +196,7 @@
     flex:1 1 0;min-width:0;min-height:48px;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
     border-radius:9px;text-decoration:none;
-    color:var(--ui-ink3,#98a1b0);
+    color:var(--ui-ink3,#5f6775);
     font-size:10.5px;font-weight:750;line-height:1.2;white-space:nowrap;
     transition:background .16s,color .16s,transform .1s;
   }

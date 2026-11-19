@@ -1,31 +1,48 @@
 {
- "name": "问答 · 科学冒险百科",
- "short_name": "问答",
- "start_url": "./",
- "display": "standalone",
- "background_color": "#0b1020",
- "theme_color": "#0F6E56",
- "icons": [
-  {
-   "src": "favicon.ico",
-   "sizes": "48x48",
-   "type": "image/x-icon"
-  },
-  {
-   "src": "assets/icons/icon-192.png",
-   "sizes": "192x192",
-   "type": "image/png"
-  },
-  {
-   "src": "assets/icons/icon-512.png",
-   "sizes": "512x512",
-   "type": "image/png"
-  },
-  {
-   "src": "assets/icons/maskable-512.png",
-   "sizes": "512x512",
-   "type": "image/png",
-   "purpose": "maskable"
-  }
- ]
+  "name": "问答 · 科学冒险百科",
+  "short_name": "问答",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0F6E56",
+  "description": "93 篇双语深度 Hub，按「直接回答 → 机制 → 证据 → 边界」讲透常见科学问题。",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "科学问答",
+      "short_name": "问答",
+      "url": "/?lang=zh",
+      "description": "浏览 93 篇深度文章"
+    },
+    {
+      "name": "Science Q&A",
+      "short_name": "Q&A",
+      "url": "/?lang=en",
+      "description": "Browse 93 deep dives in English"
+    }
+  ]
 }
